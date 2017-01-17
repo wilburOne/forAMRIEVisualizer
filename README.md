@@ -12,7 +12,7 @@ It takes three arguments:
 
 Usage:
 
-java -jar AMRIEVisualizer.jar < directory of event extraction result files> < directory of AMR node edge files> < directory of new AMR annotation files>
+java -jar AMRIEVisualizer.jar < directory of event extraction result files> < directory of AMR node edge files> < directory of outputs: new AMR annotation files>
 
 The new AMR annotations can be further used as input to the AMR Visualizer: https://github.com/panx27/amr-reader
 
