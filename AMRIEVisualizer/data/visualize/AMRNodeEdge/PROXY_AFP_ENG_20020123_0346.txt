@@ -1,0 +1,1408 @@
+1	2001-12-20
+1	2001 @-@ 12 @-@ 20
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2001	1.1	2001	2001
+::node	12	1.2	12	12
+::node	20	1.3	20	20
+::edge	1		date-entity	:year	1.1	2001	2001
+::edge	1		date-entity	:month	1.2	12	12
+::edge	1		date-entity	:day	1.3	20	20
+2	Canada (CA)
+2	Canada ( CA )
+2	0-1.2.1
+::node	"Canada"	1.2.1	"Canada"	Canada
+::node	c	1	country	
+::node	"Canada"	1.1	"Canada"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	Canada	"Canada"
+::edge	1		country	:wiki	1.1		"Canada"
+::edge	1		country	:name	1.2		name
+3	International; terrorism
+3	International ; terrorism
+3	0-1.1 2-1.2
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	t	1.2	terrorism	terrorism
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	terrorism	terrorism
+4	Canadian government's warning of al-Qaeda's capability to launch a cyberattack causes various industries to review their preparedness.
+4	Canadian government 's warning of al @-@ Qaeda 's capability to launch a cyberattack causes various industries to review their preparedness .
+4	0-1.1.1.1.1.2.1 1-1.1.1 1-1.1.1.1 1-1.1.1.1.r 2-1.1.1.r 3-1.1 4-1.1.2.r 5-1.1.2.1.2.1 7-1.1.2.1.2.1 8-1.1.2.1.r 9-1.1.2 10-1.1.2.2.r 11-1.1.2.2 13-1.1.2.2 13-1.1.2.2.2 13-1.1.2.2.2.r 14-1 15-1.2.1.1 16-1.2.1 18-1.2 20-1.2.2
+::node	"Canada"	1.1.1.1.1.1	"Canada"	
+::node	n	1.1.1.1.1.2	name	
+::node	g2	1.1.1.1	govern-01	government
+::node	c5	1.1.2.1	criminal-organization	
+::node	"Canada"	1.1.1.1.1.2.1	"Canada"	Canadian
+::node	"al-Qaeda"	1.1.2.1.2.1	"al-Qaeda"	Qaeda
+::node	a	1.1.2.2	attack-01	cyberattack
+::node	n2	1.1.2.1.2	name	
+::node	c5	1.1.2.2.1	criminal-organization	
+::node	"Al-Qaeda"	1.1.2.1.1	"Al-Qaeda"	
+::node	c3	1.1.2	capable-41	capability
+::node	i	1.2.1	industry	industries
+::node	c	1	cause-01	causes
+::node	p	1.2.2	prepare-02	preparedness
+::node	w	1.1	warn-01	warning
+::node	c4	1.1.2.2.2	cyber	cyberattack
+::node	r	1.2	review-01	review
+::node	c2	1.1.1.1.1	country	
+::node	i	1.2.2.1	industry	
+::node	a	1.2.2.2	attack-01	
+::node	v	1.2.1.1	various	various
+::node	g	1.1.1	government-organization	government
+::edge	1.1.1.1.1		country	:wiki	1.1.1.1.1.1		"Canada"
+::edge	1.1.1.1.1		country	:name	1.1.1.1.1.2		name
+::edge	1.1.1	government	government-organization	:ARG0-of	1.1.1.1	government	govern-01
+::edge	1.1.2	capability	capable-41	:ARG1	1.1.2.1		criminal-organization
+::edge	1.1.1.1.1.2		name	:op1	1.1.1.1.1.2.1	Canadian	"Canada"
+::edge	1.1.2.1.2		name	:op1	1.1.2.1.2.1	Qaeda	"al-Qaeda"
+::edge	1.1.2	capability	capable-41	:ARG2	1.1.2.2	cyberattack	attack-01
+::edge	1.1.2.1		criminal-organization	:name	1.1.2.1.2		name
+::edge	1.1.2.2	cyberattack	attack-01	:ARG0	1.1.2.2.1		criminal-organization
+::edge	1.1.2.1		criminal-organization	:wiki	1.1.2.1.1		"Al-Qaeda"
+::edge	1.1	warning	warn-01	:ARG1	1.1.2	capability	capable-41
+::edge	1.2	review	review-01	:ARG0	1.2.1	industries	industry
+::edge	1.2	review	review-01	:ARG1	1.2.2	preparedness	prepare-02
+::edge	1	causes	cause-01	:ARG0	1.1	warning	warn-01
+::edge	1.1.2.2	cyberattack	attack-01	:mod	1.1.2.2.2	cyberattack	cyber
+::edge	1	causes	cause-01	:ARG1	1.2	review	review-01
+::edge	1.1.1.1	government	govern-01	:ARG1	1.1.1.1.1		country
+::edge	1.2.2	preparedness	prepare-02	:ARG1	1.2.2.1		industry
+::edge	1.2.2	preparedness	prepare-02	:ARG2	1.2.2.2		attack-01
+::edge	1.2.1	industries	industry	:mod	1.2.1.1	various	various
+::edge	1.1	warning	warn-01	:ARG0	1.1.1	government	government-organization
+5	Critical infrastructures including energy and transportation providers cite close work with Government to remain aware of threats and to update accordingly.
+5	Critical infrastructures including energy and transportation providers cite close work with Government to remain aware of threats and to update accordingly .
+5	0-1.1.1 1-1.1 2-1.1.2 3-1.1.2.1.1.1.1 4-1.1.2.1.1.1 5-1.1.2.1.1.1.2 6-1.1.2.1 6-1.1.2.1.1 6-1.1.2.1.1.r 7-1 8-1.2.4 9-1.2 10-1.2.3.r 11-1.2.3 11-1.2.3.1 11-1.2.3.1.r 12-1.2.2.r 13-1.2.2.1 14-1.2.2.1.2 15-1.2.2.1.2.2.r 16-1.2.2.1.2.2 17-1.2.2 19-1.2.2.2 20-1.2.2.2.3
+::node	e	1.1.2.1.1.1.1	energy	energy
+::node	t	1.1.2.1.1.1.2	transportation	transportation
+::node	c3	1.1.2.1	company	providers
+::node	c3	1.2.2.1.1	company	
+::node	a	1.1.2.1.1.1	and	and
+::node	c3	1.2.2.1.2.1	company	
+::node	p	1.1.2.1.1	provide-01	providers
+::node	t2	1.2.2.1.2.2	threat	threats
+::node	i	1.1.2	include-91	including
+::node	c3	1.2.1	company	
+::node	c	1	cite-01	cite
+::node	a2	1.2.2	and	and
+::node	g	1.2.3	government-organization	Government
+::node	c4	1.2.4	close	close
+::node	i2	1.1	infrastructure	infrastructures
+::node	w	1.2	work-01	work
+::node	r	1.2.2.1	remain-01	remain
+::node	u	1.2.2.2	update-01	update
+::node	g2	1.2.3.1	govern-01	Government
+::node	r2	1.2.2.1.2	realize-01	aware
+::node	c3	1.2.2.2.1	company	
+::node	c3	1.2.2.2.2	company	
+::node	a3	1.2.2.2.3	accordingly	accordingly
+::node	c2	1.1.1	critical	Critical
+::edge	1.1.2.1.1.1	and	and	:op1	1.1.2.1.1.1.1	energy	energy
+::edge	1.1.2.1.1.1	and	and	:op2	1.1.2.1.1.1.2	transportation	transportation
+::edge	1.1.2	including	include-91	:ARG1	1.1.2.1	providers	company
+::edge	1.2.2.1	remain	remain-01	:ARG1	1.2.2.1.1		company
+::edge	1.1.2.1.1	providers	provide-01	:ARG1	1.1.2.1.1.1	and	and
+::edge	1.2.2.1.2	aware	realize-01	:ARG0	1.2.2.1.2.1		company
+::edge	1.1.2.1	providers	company	:ARG0-of	1.1.2.1.1	providers	provide-01
+::edge	1.2.2.1.2	aware	realize-01	:ARG1	1.2.2.1.2.2	threats	threat
+::edge	1.1	infrastructures	infrastructure	:ARG2-of	1.1.2	including	include-91
+::edge	1.2	work	work-01	:ARG0	1.2.1		company
+::edge	1.2	work	work-01	:ARG1	1.2.2	and	and
+::edge	1.2	work	work-01	:ARG3	1.2.3	Government	government-organization
+::edge	1.2	work	work-01	:manner	1.2.4	close	close
+::edge	1	cite	cite-01	:ARG0	1.1	infrastructures	infrastructure
+::edge	1	cite	cite-01	:ARG1	1.2	work	work-01
+::edge	1.2.2	and	and	:op1	1.2.2.1	remain	remain-01
+::edge	1.2.2	and	and	:op2	1.2.2.2	update	update-01
+::edge	1.2.3	Government	government-organization	:ARG0-of	1.2.3.1	Government	govern-01
+::edge	1.2.2.1	remain	remain-01	:ARG3	1.2.2.1.2	aware	realize-01
+::edge	1.2.2.2	update	update-01	:ARG0	1.2.2.2.1		company
+::edge	1.2.2.2	update	update-01	:ARG1	1.2.2.2.2		company
+::edge	1.2.2.2	update	update-01	:manner	1.2.2.2.3	accordingly	accordingly
+::edge	1.1	infrastructures	infrastructure	:mod	1.1.1	Critical	critical
+6	A recent government warning that al-Qaeda terrorists could launch a cyberattack on Canadian interests or critical infrastructure has caused many concerned industries to review their security systems.
+6	A recent government warning that al @-@ Qaeda terrorists could launch a cyberattack on Canadian interests or critical infrastructure has caused many concerned industries to review their security systems .
+6	1-1.1.3 2-1.1.1 2-1.1.1.1 2-1.1.1.1.r 3-1.1 4-1.1.2.r 5-1.1.2.1.1.1.1.2.1 7-1.1.2.1.1.1.1.2.1 8-1.1.2.1.1 9-1.1.2 10-1.1.2.1 12-1.1.2.1 12-1.1.2.1.3 12-1.1.2.1.3.r 13-1.1.2.1.2.r 14-1.1.2.1.2.1.1.2.1 15-1.1.2.1.2.1 16-1.1.2.1.2 17-1.1.2.1.2.2.1 18-1.1.2.1.2.2 20-1 21-1.2.1.2 22-1.2.1.1 23-1.2.1 25-1.2 26-1.2.2.2 26-1.2.2.2.r 27-1.2.2.1 28-1.2.2
+::node	i	1.1.2.1.2.1	interest	interests
+::node	i2	1.1.2.1.2.2	infrastructure	infrastructure
+::node	h	1.1.2.1.1.1	have-org-role-91	
+::node	o2	1.1.2.1.2	or	or
+::node	t	1.1.2.1.1	terrorist	terrorists
+::node	"Canada"	1.1.2.1.2.1.1.1	"Canada"	
+::node	n2	1.1.2.1.2.1.1.2	name	
+::node	n	1.1.2.1.1.1.1.2	name	
+::node	"Al-Qaeda"	1.1.2.1.1.1.1.1	"Al-Qaeda"	
+::node	m	1.2.1.2	many	many
+::node	s2	1.2.2.1	security	security
+::node	i3	1.2.2.2	industry	their
+::node	c5	1.2.1.1	concern-01	concerned
+::node	c6	1.1.2.1.1.1.1	criminal-organization	
+::node	g2	1.1.1.1	govern-01	government
+::node	a	1.1.2.1	attack-01	cyberattack
+::node	p	1.1.2	possible	could
+::node	i3	1.2.1	industry	industries
+::node	c	1	cause-01	caused
+::node	r2	1.1.3	recent	recent
+::node	s	1.2.2	system	systems
+::node	w	1.1	warn-01	warning
+::node	c4	1.1.2.1.2.2.1	critical	critical
+::node	c2	1.1.2.1.3	cyber	cyberattack
+::node	r	1.2	review-01	review
+::node	"Canada"	1.1.2.1.2.1.1.2.1	"Canada"	Canadian
+::node	c3	1.1.2.1.2.1.1	country	
+::node	"al-Qaeda"	1.1.2.1.1.1.1.2.1	"al-Qaeda"	Qaeda
+::node	g	1.1.1	government-organization	government
+::edge	1.1.2.1.2	or	or	:op1	1.1.2.1.2.1	interests	interest
+::edge	1.1.2.1.2	or	or	:op2	1.1.2.1.2.2	infrastructure	infrastructure
+::edge	1.1.2.1.1	terrorists	terrorist	:ARG0-of	1.1.2.1.1.1		have-org-role-91
+::edge	1.1.2.1	cyberattack	attack-01	:ARG1	1.1.2.1.2	or	or
+::edge	1.1.2.1	cyberattack	attack-01	:ARG0	1.1.2.1.1	terrorists	terrorist
+::edge	1.1.2.1.2.1.1		country	:wiki	1.1.2.1.2.1.1.1		"Canada"
+::edge	1.1.2.1.2.1.1		country	:name	1.1.2.1.2.1.1.2		name
+::edge	1.1.2.1.1.1.1		criminal-organization	:name	1.1.2.1.1.1.1.2		name
+::edge	1.1.2.1.1.1.1		criminal-organization	:wiki	1.1.2.1.1.1.1.1		"Al-Qaeda"
+::edge	1.2.1	industries	industry	:quant	1.2.1.2	many	many
+::edge	1.2.2	systems	system	:purpose	1.2.2.1	security	security
+::edge	1.2.2	systems	system	:poss	1.2.2.2	their	industry
+::edge	1.2.1	industries	industry	:ARG1-of	1.2.1.1	concerned	concern-01
+::edge	1.1.2.1.1.1		have-org-role-91	:ARG1	1.1.2.1.1.1.1		criminal-organization
+::edge	1.1.1	government	government-organization	:ARG0-of	1.1.1.1	government	govern-01
+::edge	1.1.2	could	possible	:domain	1.1.2.1	cyberattack	attack-01
+::edge	1.1	warning	warn-01	:ARG1	1.1.2	could	possible
+::edge	1.2	review	review-01	:ARG0	1.2.1	industries	industry
+::edge	1.1	warning	warn-01	:time	1.1.3	recent	recent
+::edge	1.2	review	review-01	:ARG1	1.2.2	systems	system
+::edge	1	caused	cause-01	:ARG0	1.1	warning	warn-01
+::edge	1.1.2.1.2.2	infrastructure	infrastructure	:mod	1.1.2.1.2.2.1	critical	critical
+::edge	1.1.2.1	cyberattack	attack-01	:mod	1.1.2.1.3	cyberattack	cyber
+::edge	1	caused	cause-01	:ARG1	1.2	review	review-01
+::edge	1.1.2.1.2.1.1.2		name	:op1	1.1.2.1.2.1.1.2.1	Canadian	"Canada"
+::edge	1.1.2.1.2.1	interests	interest	:poss	1.1.2.1.2.1.1		country
+::edge	1.1.2.1.1.1.1.2		name	:op1	1.1.2.1.1.1.1.2.1	Qaeda	"al-Qaeda"
+::edge	1.1	warning	warn-01	:ARG0	1.1.1	government	government-organization
+7	Vice President of Canadian electricity Association Francis Bradley stated that the company has a warning system for both physical and cyberattacks.
+7	Vice President of Canadian electricity Association Francis Bradley stated that the company has a warning system for both physical and cyberattacks .
+7	0-1.1.3.2.1 1-1.1.3.2 3-1.1.3.1.2.1 4-1.1.3.1.2.2 5-1.1.3.1.2.3 6-1.1.2.1 7-1.1.2.2 8-1 9-1.2.r 11-1.2.1 12-1.1.3 12-1.2 14-1.2.2.1 15-1.2.2 16-1.2.2.1.1.r 17-1.2.2.1.1.1.3 18-1.2.2.1.1.1.1 19-1.2.2.1.1.1 20-1.2.2.1.1 20-1.2.2.1.1.1.2
+::node	"Francis"	1.1.2.1	"Francis"	Francis
+::node	n2	1.1.3.1.2	name	
+::node	v	1.1.3.2.1	vice	Vice
+::node	a	1.2.2.1.1	attack-01	cyberattacks
+::node	"Bradley"	1.1.2.2	"Bradley"	Bradley
+::node	c	1.1.3.1	company	
+::node	p3	1.1.3.2	president	President
+::node	"Electricity"	1.1.3.1.2.2	"Electricity"	electricity
+::node	a2	1.2.2.1.1.1	and	and
+::node	"Association"	1.1.3.1.2.3	"Association"	Association
+::node	p2	1.2.2.1.1.1.1	physical	physical
+::node	b	1.2.2.1.1.1.3	both	both
+::node	"Canadian"	1.1.3.1.2.1	"Canadian"	Canadian
+::node	c2	1.2.2.1.1.1.2	cyber	cyberattacks
+::node	n	1.1.2	name	
+::node	c	1.2.1	company	company
+::node	s	1	state-01	stated
+::node	h2	1.1.3	have-org-role-91	has
+::node	s2	1.2.2	system	system
+::node	p	1.1	person	
+::node	h	1.2	have-03	has
+::node	w	1.2.2.1	warn-01	warning
+::node	-	1.1.3.1.1	-	
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Francis	"Francis"
+::edge	1.1.3.1		company	:name	1.1.3.1.2		name
+::edge	1.1.3.2	President	president	:mod	1.1.3.2.1	Vice	vice
+::edge	1.2.2.1	warning	warn-01	:ARG1	1.2.2.1.1	cyberattacks	attack-01
+::edge	1.1.2		name	:op2	1.1.2.2	Bradley	"Bradley"
+::edge	1.1.3	has	have-org-role-91	:ARG1	1.1.3.1		company
+::edge	1.1.3	has	have-org-role-91	:ARG2	1.1.3.2	President	president
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	electricity	"Electricity"
+::edge	1.2.2.1.1	cyberattacks	attack-01	:manner	1.2.2.1.1.1	and	and
+::edge	1.1.3.1.2		name	:op3	1.1.3.1.2.3	Association	"Association"
+::edge	1.2.2.1.1.1	and	and	:op1	1.2.2.1.1.1.1	physical	physical
+::edge	1.2.2.1.1.1	and	and	:mod	1.2.2.1.1.1.3	both	both
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Canadian	"Canadian"
+::edge	1.2.2.1.1.1	and	and	:op2	1.2.2.1.1.1.2	cyberattacks	cyber
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	has	have-03	:ARG0	1.2.1	company	company
+::edge	1.1		person	:ARG0-of	1.1.3	has	have-org-role-91
+::edge	1.2	has	have-03	:ARG1	1.2.2	system	system
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	has	have-03
+::edge	1.2.2	system	system	:ARG0-of	1.2.2.1	warning	warn-01
+::edge	1.1.3.1		company	:wiki	1.1.3.1.1		-
+::edge	1.1		person	:wiki	1.1.1		-
+8	Bradley stated that the company has been significantly focused on prevention of cyberattacks.
+8	Bradley stated that the company has been significantly focused on prevention of cyberattacks .
+8	0-1.1.2.1 1-1 2-1.2.r 4-1.2.1 7-1.2.3 8-1.2 9-1.2.2.r 10-1.2.2 11-1.2.2.1.r 12-1.2.2.1 12-1.2.2.1.1 12-1.2.2.1.1.r
+::node	n	1.1.2	name	
+::node	c	1.2.1	company	company
+::node	s	1	state-01	stated
+::node	p2	1.2.2	prevent-01	prevention
+::node	s2	1.2.3	significant	significantly
+::node	"Bradley"	1.1.2.1	"Bradley"	Bradley
+::node	c2	1.2.2.1.1	cyber	cyberattacks
+::node	p	1.1	person	
+::node	f	1.2	focus-01	focused
+::node	a	1.2.2.1	attack-01	cyberattacks
+::node	-	1.1.1	-	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	focused	focus-01	:ARG1	1.2.1	company	company
+::edge	1.2	focused	focus-01	:ARG2	1.2.2	prevention	prevent-01
+::edge	1.2	focused	focus-01	:degree	1.2.3	significantly	significant
+::edge	1.1.2		name	:op1	1.1.2.1	Bradley	"Bradley"
+::edge	1.2.2.1	cyberattacks	attack-01	:mod	1.2.2.1.1	cyberattacks	cyber
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	focused	focus-01
+::edge	1.2.2	prevention	prevent-01	:ARG1	1.2.2.1	cyberattacks	attack-01
+::edge	1.1		person	:wiki	1.1.1		-
+9	In a recent interview Bradley stated that many utility firms perform a brief review of their multi-tiered response systems after such warnings are issued.
+9	In a recent interview Bradley stated that many utility firms perform a brief review of their multi @-@ tiered response systems after such warnings are issued .
+9	2-1.3.2 3-1.3 4-1.1.2.1 5-1 6-1.2.r 7-1.2.1.2 8-1.2.1.1 9-1.2.1 10-1.2 12-1.2.2.3 13-1.2.2 14-1.2.2.1.r 15-1.2.2.1 16-1.2.2.2.2 18-1.2.2.2.2 19-1.2.2.2.1 20-1.2.2.2 21-1.2.3 22-1.2.3.1.1 23-1.2.3.1 25-1.2.3.1
+::node	"Bradley"	1.1.2.1	"Bradley"	Bradley
+::node	s3	1.2.3.1.1	such	such
+::node	n	1.1.2	name	
+::node	f	1.2.1	firm	firms
+::node	s	1	state-01	stated
+::node	r	1.2.2	review-01	review
+::node	p	1.3.1	person	
+::node	a	1.2.3	after	after
+::node	r3	1.3.2	recent	recent
+::node	p	1.1	person	
+::node	p2	1.2	perform-01	perform
+::node	i2	1.3	interview-01	interview
+::node	b	1.2.2.3	brief	brief
+::node	m	1.2.1.2	many	many
+::node	f	1.2.2.1	firm	their
+::node	s2	1.2.2.2	system	systems
+::node	w	1.2.3.1	warn-01	issued
+::node	r2	1.2.2.2.1	respond-01	response
+::node	u	1.2.1.1	utility	utility
+::node	m2	1.2.2.2.2	multi-tiered	tiered
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Bradley	"Bradley"
+::edge	1.2.3.1	issued	warn-01	:mod	1.2.3.1.1	such	such
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	perform	perform-01	:ARG0	1.2.1	firms	firm
+::edge	1.2	perform	perform-01	:ARG1	1.2.2	review	review-01
+::edge	1.3	interview	interview-01	:ARG1	1.3.1		person
+::edge	1.2	perform	perform-01	:time	1.2.3	after	after
+::edge	1.3	interview	interview-01	:time	1.3.2	recent	recent
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	perform	perform-01
+::edge	1	stated	state-01	:manner	1.3	interview	interview-01
+::edge	1.2.2	review	review-01	:duration	1.2.2.3	brief	brief
+::edge	1.2.1	firms	firm	:quant	1.2.1.2	many	many
+::edge	1.2.2	review	review-01	:ARG0	1.2.2.1	their	firm
+::edge	1.2.2	review	review-01	:ARG1	1.2.2.2	systems	system
+::edge	1.2.3	after	after	:op1	1.2.3.1	issued	warn-01
+::edge	1.2.2.2	systems	system	:ARG0-of	1.2.2.2.1	response	respond-01
+::edge	1.2.1	firms	firm	:mod	1.2.1.1	utility	utility
+::edge	1.2.2.2	systems	system	:mod	1.2.2.2.2	tiered	multi-tiered
+::edge	1.1		person	:wiki	1.1.1		-
+10	The warning from the Canadian Department of National Defense's office of critical infrastructure protection and emergency service was quietly released on 20 December 2001 and cited no specific threat.
+10	The warning from the Canadian Department of National Defense 's office of critical infrastructure protection and emergency service was quietly released on 20 December 2001 and cited no specific threat .
+10	1-1.1.1 2-1.1.1.1.r 4-1.1.1.1.3.2.1 5-1.1.1.1.3.2.2 6-1.1.1.1.3.2.3 7-1.1.1.1.3.2.4 8-1.1.1.1.3.2.5 9-1.1.1.1.3.r 10-1.1.1.1.2.1 11-1.1.1.1.2.2 12-1.1.1.1.2.3 13-1.1.1.1.2.4 14-1.1.1.1.2.5 15-1.1.1.1.2.6 16-1.1.1.1.2.7 17-1.1.1.1.2.8 19-1.1.2 19-1.1.2.r 20-1.1 21-1.1.3.r 22-1.1.3.3 23-1.1.3.2 23-1.1.3.2.r 24-1.1.3.1 25-1 26-1.2 27-1.2.1 27-1.2.1.r 28-1.2.3.1 29-1.2.3
+::node	g2	1.1.1.1.3	government-organization	
+::node	n	1.1.1.1.2	name	
+::node	-	1.1.1.1.1	-	
+::node	s	1.2.3.1	specific	specific
+::node	"Office"	1.1.1.1.2.1	"Office"	office
+::node	g	1.1.1.1	government-organization	
+::node	"of"	1.1.1.1.2.2	"of"	of
+::node	"Department_of_National_Defence_BLANKETPAIR1"	1.1.1.1.3.1	"Department_of_National_Defence_BLANKETPAIR1"	
+::node	"Critical"	1.1.1.1.2.3	"Critical"	critical
+::node	n2	1.1.1.1.3.2	name	
+::node	"Infrastructure"	1.1.1.1.2.4	"Infrastructure"	infrastructure
+::node	2001	1.1.3.1	2001	2001
+::node	"Protection"	1.1.1.1.2.5	"Protection"	protection
+::node	12	1.1.3.2	12	December
+::node	"and"	1.1.1.1.2.6	"and"	and
+::node	20	1.1.3.3	20	20
+::node	"Emergency"	1.1.1.1.2.7	"Emergency"	emergency
+::node	"Service"	1.1.1.1.2.8	"Service"	service
+::node	q	1.1.2	quiet	quietly
+::node	-	1.2.1	-	no
+::node	a	1	and	and
+::node	d	1.1.3	date-entity	
+::node	w	1.2.2	warn-01	
+::node	t	1.2.3	threat	threat
+::node	r	1.1	release-01	released
+::node	"of"	1.1.1.1.3.2.3	"of"	of
+::node	"National"	1.1.1.1.3.2.4	"National"	National
+::node	c	1.2	cite-01	cited
+::node	"Defense"	1.1.1.1.3.2.5	"Defense"	Defense
+::node	"Canadian"	1.1.1.1.3.2.1	"Canadian"	Canadian
+::node	"Department"	1.1.1.1.3.2.2	"Department"	Department
+::node	w	1.1.1	warn-01	warning
+::edge	1.1.1.1		government-organization	:part-of	1.1.1.1.3		government-organization
+::edge	1.1.1.1		government-organization	:name	1.1.1.1.2		name
+::edge	1.1.1.1		government-organization	:wiki	1.1.1.1.1		-
+::edge	1.2.3	threat	threat	:mod	1.2.3.1	specific	specific
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	office	"Office"
+::edge	1.1.1	warning	warn-01	:ARG0	1.1.1.1		government-organization
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	of	"of"
+::edge	1.1.1.1.3		government-organization	:wiki	1.1.1.1.3.1		"Department_of_National_Defence_BLANKETPAIR1"
+::edge	1.1.1.1.2		name	:op3	1.1.1.1.2.3	critical	"Critical"
+::edge	1.1.1.1.3		government-organization	:name	1.1.1.1.3.2		name
+::edge	1.1.1.1.2		name	:op4	1.1.1.1.2.4	infrastructure	"Infrastructure"
+::edge	1.1.3		date-entity	:year	1.1.3.1	2001	2001
+::edge	1.1.1.1.2		name	:op5	1.1.1.1.2.5	protection	"Protection"
+::edge	1.1.3		date-entity	:month	1.1.3.2	December	12
+::edge	1.1.1.1.2		name	:op6	1.1.1.1.2.6	and	"and"
+::edge	1.1.3		date-entity	:day	1.1.3.3	20	20
+::edge	1.1.1.1.2		name	:op7	1.1.1.1.2.7	emergency	"Emergency"
+::edge	1.1.1.1.2		name	:op8	1.1.1.1.2.8	service	"Service"
+::edge	1.1	released	release-01	:manner	1.1.2	quietly	quiet
+::edge	1.2	cited	cite-01	:polarity	1.2.1	no	-
+::edge	1.1	released	release-01	:time	1.1.3		date-entity
+::edge	1.2	cited	cite-01	:ARG0	1.2.2		warn-01
+::edge	1.2	cited	cite-01	:ARG1	1.2.3	threat	threat
+::edge	1	and	and	:op1	1.1	released	release-01
+::edge	1.1.1.1.3.2		name	:op3	1.1.1.1.3.2.3	of	"of"
+::edge	1.1.1.1.3.2		name	:op4	1.1.1.1.3.2.4	National	"National"
+::edge	1	and	and	:op2	1.2	cited	cite-01
+::edge	1.1.1.1.3.2		name	:op5	1.1.1.1.3.2.5	Defense	"Defense"
+::edge	1.1.1.1.3.2		name	:op1	1.1.1.1.3.2.1	Canadian	"Canadian"
+::edge	1.1.1.1.3.2		name	:op2	1.1.1.1.3.2.2	Department	"Department"
+::edge	1.1	released	release-01	:ARG1	1.1.1	warning	warn-01
+11	Director of threat analysis at the Canadian Department of National Defense's office of critical infrastructure protection and emergency service Brenda hensler-Hobbs stated that following the attacks of 11 September 2001 the Canadian Government specifically examined the potential cyber-capability of al-Qaeda and Osama bin Laden's followers.
+11	Director of threat analysis at the Canadian Department of National Defense 's office of critical infrastructure protection and emergency service Brenda hensler @-@ Hobbs stated that following the attacks of 11 September 2001 the Canadian Government specifically examined the potential cyber @-@ capability of al @-@ Qaeda and Osama bin Laden 's followers .
+11	0-1.1.3.2 1-1.1.3.2.1.r 2-1.1.3.2.1.1 3-1.1.3.2.1 4-1.1.3 6-1.1.3.1.3.2.1 7-1.1.3.1.3.2.2 8-1.1.3.1.3.2.3 9-1.1.3.1.3.2.4 10-1.1.3.1.3.2.5 11-1.1.3.1.3.r 12-1.1.3.1.2.1 13-1.1.3.1.2.2 14-1.1.3.1.2.3 15-1.1.3.1.2.4 16-1.1.3.1.2.5 17-1.1.3.1.2.6 18-1.1.3.1.2.7 19-1.1.3.1.2.8 20-1.1.2.1 23-1.1.2.2 24-1 25-1.2.r 26-1.2.4 28-1.2.4.1 29-1.2.4.1.1.r 30-1.2.4.1.1.3 31-1.2.4.1.1.2 31-1.2.4.1.1.2.r 32-1.2.4.1.1.1 34-1.2.1.1.1.2.1 35-1.2.1 35-1.2.1.1 35-1.2.1.1.r 36-1.2.3 37-1.2 39-1.2.2.3 40-1.2.2.2 42-1.2.2 43-1.2.2.1.r 44-1.2.2.1.1.2.1 46-1.2.2.1.1.2.1 47-1.2.2.1 48-1.2.2.1.2.1.1.2.1 49-1.2.2.1.2.1.1.2.2 50-1.2.2.1.2.1.1.2.3 51-1.2.2.1.2.1.1.r 52-1.2.2.1.2 52-1.2.2.1.2.1 52-1.2.2.1.2.1.r
+::node	a	1.1.3.2.1	analyze-01	analysis
+::node	"Al-Qaeda"	1.2.2.1.1.1	"Al-Qaeda"	
+::node	n5	1.2.2.1.1.2	name	
+::node	n6	1.2.2.1.2.1.1.2	name	
+::node	"Osama_bin_Laden"	1.2.2.1.2.1.1.1	"Osama_bin_Laden"	
+::node	"al-Qaeda"	1.2.2.1.1.2.1	"al-Qaeda"	Qaeda
+::node	g4	1.2.1.1	govern-01	Government
+::node	c4	1.2.2.1.1	criminal-organization	
+::node	g	1.1.3.1	government-organization	
+::node	"and"	1.1.3.1.2.6	"and"	and
+::node	"Emergency"	1.1.3.1.2.7	"Emergency"	emergency
+::node	d2	1.1.3.2	director	Director
+::node	"Service"	1.1.3.1.2.8	"Service"	service
+::node	"of"	1.1.3.1.2.2	"of"	of
+::node	"Critical"	1.1.3.1.2.3	"Critical"	critical
+::node	"Infrastructure"	1.1.3.1.2.4	"Infrastructure"	infrastructure
+::node	"Protection"	1.1.3.1.2.5	"Protection"	protection
+::node	"Office"	1.1.3.1.2.1	"Office"	office
+::node	n	1.1.2	name	
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	at
+::node	c	1.2.1.1.1	country	
+::node	p	1.1	person	
+::node	e	1.2	examine-01	examined
+::node	-	1.1.3.1.1	-	
+::node	-	1.1.1	-	
+::node	"Canada"	1.2.1.1.1.2.1	"Canada"	Canadian
+::node	g2	1.1.3.1.3	government-organization	
+::node	n2	1.1.3.1.2	name	
+::node	"Defense"	1.1.3.1.3.2.5	"Defense"	Defense
+::node	f	1.2.2.1.2.1	follow-02	followers
+::node	"Department"	1.1.3.1.3.2.2	"Department"	Department
+::node	"Canadian"	1.1.3.1.3.2.1	"Canadian"	Canadian
+::node	"National"	1.1.3.1.3.2.4	"National"	National
+::node	"of"	1.1.3.1.3.2.3	"of"	of
+::node	p4	1.2.2.1.2.1.1	person	
+::node	11	1.2.4.1.1.3	11	11
+::node	9	1.2.4.1.1.2	9	September
+::node	2001	1.2.4.1.1.1	2001	2001
+::node	"Bin"	1.2.2.1.2.1.1.2.2	"Bin"	bin
+::node	p2	1.2.2.3	potential	potential
+::node	a3	1.2.4.1	attack-01	attacks
+::node	"Laden"	1.2.2.1.2.1.1.2.3	"Laden"	Laden
+::node	a2	1.2.2.1	and	and
+::node	"Osama"	1.2.2.1.2.1.1.2.1	"Osama"	Osama
+::node	c3	1.2.2.2	cyber	cyber
+::node	p3	1.2.2.1.2	person	followers
+::node	"Brenda"	1.1.2.1	"Brenda"	Brenda
+::node	"Hensler-Hobbs"	1.1.2.2	"Hensler-Hobbs"	Hobbs
+::node	"Canada"	1.2.1.1.1.1	"Canada"	
+::node	n4	1.2.1.1.1.2	name	
+::node	"Department_of_National_Defence_BLANKETPAIR1"	1.1.3.1.3.1	"Department_of_National_Defence_BLANKETPAIR1"	
+::node	n3	1.1.3.1.3.2	name	
+::node	g3	1.2.1	government-organization	Government
+::node	c2	1.2.2	capable-41	capability
+::node	s2	1.2.3	specific	specifically
+::node	f2	1.2.4	follow-01	following
+::node	t	1.1.3.2.1.1	threaten-01	threat
+::node	d	1.2.4.1.1	date-entity	
+::edge	1.1.3.2	Director	director	:topic	1.1.3.2.1	analysis	analyze-01
+::edge	1.2.2.1.1		criminal-organization	:wiki	1.2.2.1.1.1		"Al-Qaeda"
+::edge	1.2.2.1.1		criminal-organization	:name	1.2.2.1.1.2		name
+::edge	1.2.2.1.2.1.1		person	:name	1.2.2.1.2.1.1.2		name
+::edge	1.2.2.1.2.1.1		person	:wiki	1.2.2.1.2.1.1.1		"Osama_bin_Laden"
+::edge	1.2.2.1.1.2		name	:op1	1.2.2.1.1.2.1	Qaeda	"al-Qaeda"
+::edge	1.2.1	Government	government-organization	:ARG0-of	1.2.1.1	Government	govern-01
+::edge	1.2.2.1	and	and	:op1	1.2.2.1.1		criminal-organization
+::edge	1.1.3	at	have-org-role-91	:ARG1	1.1.3.1		government-organization
+::edge	1.1.3.1.2		name	:op6	1.1.3.1.2.6	and	"and"
+::edge	1.1.3.1.2		name	:op7	1.1.3.1.2.7	emergency	"Emergency"
+::edge	1.1.3	at	have-org-role-91	:ARG2	1.1.3.2	Director	director
+::edge	1.1.3.1.2		name	:op8	1.1.3.1.2.8	service	"Service"
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	of	"of"
+::edge	1.1.3.1.2		name	:op3	1.1.3.1.2.3	critical	"Critical"
+::edge	1.1.3.1.2		name	:op4	1.1.3.1.2.4	infrastructure	"Infrastructure"
+::edge	1.1.3.1.2		name	:op5	1.1.3.1.2.5	protection	"Protection"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	office	"Office"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1		person	:ARG0-of	1.1.3	at	have-org-role-91
+::edge	1.2.1.1	Government	govern-01	:ARG1	1.2.1.1.1		country
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	examined	examine-01
+::edge	1.1.3.1		government-organization	:wiki	1.1.3.1.1		-
+::edge	1.1		person	:wiki	1.1.1		-
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	Canadian	"Canada"
+::edge	1.1.3.1		government-organization	:part-of	1.1.3.1.3		government-organization
+::edge	1.1.3.1		government-organization	:name	1.1.3.1.2		name
+::edge	1.1.3.1.3.2		name	:op5	1.1.3.1.3.2.5	Defense	"Defense"
+::edge	1.2.2.1.2	followers	person	:ARG0-of	1.2.2.1.2.1	followers	follow-02
+::edge	1.1.3.1.3.2		name	:op2	1.1.3.1.3.2.2	Department	"Department"
+::edge	1.1.3.1.3.2		name	:op1	1.1.3.1.3.2.1	Canadian	"Canadian"
+::edge	1.1.3.1.3.2		name	:op4	1.1.3.1.3.2.4	National	"National"
+::edge	1.1.3.1.3.2		name	:op3	1.1.3.1.3.2.3	of	"of"
+::edge	1.2.2.1.2.1	followers	follow-02	:ARG1	1.2.2.1.2.1.1		person
+::edge	1.2.4.1.1		date-entity	:day	1.2.4.1.1.3	11	11
+::edge	1.2.4.1.1		date-entity	:month	1.2.4.1.1.2	September	9
+::edge	1.2.4.1.1		date-entity	:year	1.2.4.1.1.1	2001	2001
+::edge	1.2.2.1.2.1.1.2		name	:op2	1.2.2.1.2.1.1.2.2	bin	"Bin"
+::edge	1.2.2	capability	capable-41	:mod	1.2.2.3	potential	potential
+::edge	1.2.4	following	follow-01	:ARG2	1.2.4.1	attacks	attack-01
+::edge	1.2.2.1.2.1.1.2		name	:op3	1.2.2.1.2.1.1.2.3	Laden	"Laden"
+::edge	1.2.2	capability	capable-41	:ARG1	1.2.2.1	and	and
+::edge	1.2.2.1.2.1.1.2		name	:op1	1.2.2.1.2.1.1.2.1	Osama	"Osama"
+::edge	1.2.2	capability	capable-41	:ARG2	1.2.2.2	cyber	cyber
+::edge	1.2.2.1	and	and	:op2	1.2.2.1.2	followers	person
+::edge	1.1.2		name	:op1	1.1.2.1	Brenda	"Brenda"
+::edge	1.1.2		name	:op2	1.1.2.2	Hobbs	"Hensler-Hobbs"
+::edge	1.2.1.1.1		country	:wiki	1.2.1.1.1.1		"Canada"
+::edge	1.2.1.1.1		country	:name	1.2.1.1.1.2		name
+::edge	1.1.3.1.3		government-organization	:wiki	1.1.3.1.3.1		"Department_of_National_Defence_BLANKETPAIR1"
+::edge	1.1.3.1.3		government-organization	:name	1.1.3.1.3.2		name
+::edge	1.2	examined	examine-01	:ARG0	1.2.1	Government	government-organization
+::edge	1.2	examined	examine-01	:ARG1	1.2.2	capability	capable-41
+::edge	1.2	examined	examine-01	:manner	1.2.3	specifically	specific
+::edge	1.2	examined	examine-01	:ARG1-of	1.2.4	following	follow-01
+::edge	1.1.3.2.1	analysis	analyze-01	:ARG1	1.1.3.2.1.1	threat	threaten-01
+::edge	1.2.4.1	attacks	attack-01	:time	1.2.4.1.1		date-entity
+12	Hensler-Hobbs stated that the Canadian government has no knowledge of Al-Qaeda having engaged in cyberattacks in the past but that leader bin Laden has suggested that if he chose to launch cyberattacks he could have the means available to him.
+12	Hensler @-@ Hobbs stated that the Canadian government has no knowledge of Al @-@ Qaeda having engaged in cyberattacks in the past but that leader bin Laden has suggested that if he chose to launch cyberattacks he could have the means available to him .
+12	0-1.1.2.1 2-1.1.2.1 3-1 4-1.2.r 6-1.2.2.2.1.1.2.1 7-1.2.2.2 7-1.2.2.2.1 7-1.2.2.2.1.r 9-1.2.2.1 9-1.2.2.1.r 10-1.2.2 11-1.2.2.3.r 12-1.2.2.3.1.2.1 14-1.2.2.3.1.2.1 16-1.2.2.3 17-1.2.2.3.2.r 18-1.2.2.3.2 18-1.2.2.3.2.1 18-1.2.2.3.2.1.r 19-1.2.2.3.3.r 21-1.2.2.3.3 22-1.2 24-1.2.3.1 24-1.2.3.1.3 24-1.2.3.1.3.r 25-1.2.3.1.2.1 26-1.2.3.1.2.2 27-1.2.3.2.1 28-1.2.3 29-1.2.3.2.r 30-1.2.3.2.1.3.r 32-1.2.3.2.1.3 33-1.2.3.2.1.3.2.r 34-1.2.3.2.1.3.2 35-1.2.3.2.1.3.2 37-1.2.3.2 38-1.2.3.2.1 40-1.2.3.2.1.2.1 41-1.2.3.2.1.2
+::node	e	1.2.2.3	engage-01	engaged
+::node	p4	1.2.3.2	possible	could
+::node	-	1.2.2.1	-	no
+::node	c2	1.2.2.2.1.1	country	
+::node	g	1.2.2.2	government-organization	government
+::node	p3	1.2.3.1	person	leader
+::node	g2	1.2.2.2.1	govern-01	government
+::node	c5	1.2.2.3.1	criminal-organization	
+::node	"Al-Qaeda"	1.2.2.3.1.2.1	"Al-Qaeda"	Qaeda
+::node	a	1.2.2.3.2	attack-01	cyberattacks
+::node	p2	1.2.2.3.3	past	past
+::node	n3	1.2.2.3.1.2	name	
+::node	c3	1.2.2.3.2.1	cyber	cyberattacks
+::node	"Hensler-Hobbs"	1.1.2.1	"Hensler-Hobbs"	Hobbs
+::node	"Al-Qaeda"	1.2.2.3.1.1	"Al-Qaeda"	
+::node	n2	1.2.2.2.1.1.2	name	
+::node	l2	1.2.3.1.3	lead-01	leader
+::node	"Canada"	1.2.2.2.1.1.1	"Canada"	
+::node	"Osama_bin_Laden"	1.2.3.1.1	"Osama_bin_Laden"	
+::node	n4	1.2.3.1.2	name	
+::node	h	1.2.3.2.1	have-03	have
+::node	"Canada"	1.2.2.2.1.1.2.1	"Canada"	Canadian
+::node	n	1.1.2	name	
+::node	p	1.2.1	person	
+::node	s	1	state-01	stated
+::node	k	1.2.2	know-01	knowledge
+::node	s2	1.2.3	suggest-01	suggested
+::node	p	1.1	person	
+::node	"Laden"	1.2.3.1.2.2	"Laden"	Laden
+::node	c5	1.2.3.1.3.1	criminal-organization	
+::node	c	1.2	contrast-01	but
+::node	"bin"	1.2.3.1.2.1	"bin"	bin
+::node	c4	1.2.3.2.1.3	choose-01	chose
+::node	a2	1.2.3.2.1.2	available	available
+::node	p3	1.2.3.2.1.1	person	
+::node	m	1.2.3.2.1.2.1	means	means
+::node	p3	1.2.3.2.1.3.1	person	
+::node	a	1.2.3.2.1.3.2	attack-01	cyberattacks
+::node	-	1.1.1	-	
+::edge	1.2.2	knowledge	know-01	:ARG1	1.2.2.3	engaged	engage-01
+::edge	1.2.3	suggested	suggest-01	:ARG1	1.2.3.2	could	possible
+::edge	1.2.2	knowledge	know-01	:polarity	1.2.2.1	no	-
+::edge	1.2.2.2.1	government	govern-01	:ARG1	1.2.2.2.1.1		country
+::edge	1.2.2	knowledge	know-01	:ARG0	1.2.2.2	government	government-organization
+::edge	1.2.3	suggested	suggest-01	:ARG0	1.2.3.1	leader	person
+::edge	1.2.2.2	government	government-organization	:ARG0-of	1.2.2.2.1	government	govern-01
+::edge	1.2.2.3	engaged	engage-01	:ARG1	1.2.2.3.1		criminal-organization
+::edge	1.2.2.3.1.2		name	:op1	1.2.2.3.1.2.1	Qaeda	"Al-Qaeda"
+::edge	1.2.2.3	engaged	engage-01	:ARG2	1.2.2.3.2	cyberattacks	attack-01
+::edge	1.2.2.3	engaged	engage-01	:time	1.2.2.3.3	past	past
+::edge	1.2.2.3.1		criminal-organization	:name	1.2.2.3.1.2		name
+::edge	1.2.2.3.2	cyberattacks	attack-01	:mod	1.2.2.3.2.1	cyberattacks	cyber
+::edge	1.1.2		name	:op1	1.1.2.1	Hobbs	"Hensler-Hobbs"
+::edge	1.2.2.3.1		criminal-organization	:wiki	1.2.2.3.1.1		"Al-Qaeda"
+::edge	1.2.2.2.1.1		country	:name	1.2.2.2.1.1.2		name
+::edge	1.2.3.1	leader	person	:ARG0-of	1.2.3.1.3	leader	lead-01
+::edge	1.2.2.2.1.1		country	:wiki	1.2.2.2.1.1.1		"Canada"
+::edge	1.2.3.1	leader	person	:wiki	1.2.3.1.1		"Osama_bin_Laden"
+::edge	1.2.3.1	leader	person	:name	1.2.3.1.2		name
+::edge	1.2.3.2	could	possible	:domain	1.2.3.2.1	have	have-03
+::edge	1.2.2.2.1.1.2		name	:op1	1.2.2.2.1.1.2.1	Canadian	"Canada"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	but	contrast-01	:ARG0	1.2.1		person
+::edge	1.2	but	contrast-01	:ARG1	1.2.2	knowledge	know-01
+::edge	1.2	but	contrast-01	:ARG2	1.2.3	suggested	suggest-01
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.2.3.1.2		name	:op2	1.2.3.1.2.2	Laden	"Laden"
+::edge	1.2.3.1.3	leader	lead-01	:ARG1	1.2.3.1.3.1		criminal-organization
+::edge	1	stated	state-01	:ARG1	1.2	but	contrast-01
+::edge	1.2.3.1.2		name	:op1	1.2.3.1.2.1	bin	"bin"
+::edge	1.2.3.2.1	have	have-03	:condition	1.2.3.2.1.3	chose	choose-01
+::edge	1.2.3.2.1	have	have-03	:ARG1	1.2.3.2.1.2	available	available
+::edge	1.2.3.2.1	have	have-03	:ARG0	1.2.3.2.1.1		person
+::edge	1.2.3.2.1.2	available	available	:domain	1.2.3.2.1.2.1	means	means
+::edge	1.2.3.2.1.3	chose	choose-01	:ARG0	1.2.3.2.1.3.1		person
+::edge	1.2.3.2.1.3	chose	choose-01	:ARG1	1.2.3.2.1.3.2	cyberattacks	attack-01
+::edge	1.1		person	:wiki	1.1.1		-
+13	In summary of the recent warning stating that such an attack could be executed in the very near future hensler-Hobbs stated that bin Laden's location was irrelevant because bin Laden possesses the money and supporters necessary to have such an attack executed by others.
+13	In summary of the recent warning stating that such an attack could be executed in the very near future hensler @-@ Hobbs stated that bin Laden 's location was irrelevant because bin Laden possesses the money and supporters necessary to have such an attack executed by others .
+13	1-1.3 2-1.3.1.r 4-1.3.1.2 5-1.3.1 6-1.3.1.1 7-1.3.1.1.1.r 8-1.3.1.1.1.1.1.1 10-1.3.1.1.1.1.1 11-1.3.1.1.1 12-1.3.1.1.1.1.r 13-1.3.1.1.1.1 14-1.3.1.1.1.2.r 16-1.3.1.1.1.2.1.1 17-1.3.1.1.1.2.1 18-1.3.1.1.1.2 21-1.1.2.1 22-1 23-1.2.r 24-1.2.2.1.2.1 25-1.2.2.1.2.2 26-1.2.2.1.r 27-1.2.2 29-1.2 29-1.2.1 29-1.2.1.r 30-1.2.3 31-1.2.3.1.1 32-1.2.3.1.1 33-1.2.3.1 35-1.2.3.1.2.1 36-1.2.3.1.2 37-1.2.3.1.2.2 37-1.2.3.1.2.2.1 37-1.2.3.1.2.2.1.r 38-1.2.3.1.2.3 40-1.2.3.1.2.3.2 41-1.3.1.1.1.1.1.1 43-1.3.1.1.1.1.1 44-1.2.3.1.2.3.2.2 44-1.3.1.1.1.1 45-1.2.3.1.2.3.2.2.1.r 46-1.2.3.1.2.3.2.2.1.1
+::node	v	1.3.1.1.1.2.1.1	very	very
+::node	p2	1.2.3.1.2.3.2.1	person	
+::node	e	1.2.3.1.2.3.2.2	execute-02	executed
+::node	s4	1.3.1.1	state-01	stating
+::node	"bin"	1.2.2.1.2.1	"bin"	bin
+::node	r2	1.3.1.2	recent	recent
+::node	p6	1.3.1.1.1	possible	could
+::node	"Laden"	1.2.2.1.2.2	"Laden"	Laden
+::node	h	1.2.3.1.2.3.2	have-04	have
+::node	p2	1.2.3.1.2.3.1	person	
+::node	s2	1.2.3.1.2.2.1	support-01	supporters
+::node	p2	1.2.2.1	person	
+::node	p3	1.2.3.1	possess-01	possesses
+::node	n2	1.2.2.1.2	name	
+::node	o	1.2.3.1.2.3.2.2.1.1	other	others
+::node	a3	1.2.3.1.2.3.2.2.2	attack-01	
+::node	p5	1.2.3.1.2.3.2.2.1	person	
+::node	"Hensler-Hobbs"	1.1.2.1	"Hensler-Hobbs"	Hobbs
+::node	"Osama_bin_Laden"	1.2.2.1.1	"Osama_bin_Laden"	
+::node	p2	1.2.3.1.1	person	Laden
+::node	f	1.3.1.1.1.2	future	future
+::node	a	1.2.3.1.2	and	and
+::node	e2	1.3.1.1.1.1	execute-02	executed
+::node	a3	1.3.1.1.1.1.1	attack-01	attack
+::node	n4	1.3.1.1.1.2.1	near	near
+::node	n	1.1.2	name	
+::node	-	1.2.1	-	irrelevant
+::node	s	1	state-01	stated
+::node	l	1.2.2	location	location
+::node	p2	1.2.3.1.2.2.1.1	person	
+::node	w	1.3.1	warn-01	warning
+::node	c	1.2.3	cause-01	because
+::node	p	1.1	person	
+::node	p4	1.2.3.1.2.2	person	supporters
+::node	r	1.2	relevant-41	irrelevant
+::node	m	1.2.3.1.2.1	money	money
+::node	s3	1.3	summarize-01	summary
+::node	n3	1.2.3.1.2.3	need-01	necessary
+::node	s5	1.3.1.1.1.1.1.1	such	such
+::node	-	1.1.1	-	
+::edge	1.3.1.1.1.2.1	near	near	:degree	1.3.1.1.1.2.1.1	very	very
+::edge	1.2.3.1.2.3.2	have	have-04	:ARG0	1.2.3.1.2.3.2.1		person
+::edge	1.2.3.1.2.3.2	have	have-04	:ARG1	1.2.3.1.2.3.2.2	executed	execute-02
+::edge	1.3.1	warning	warn-01	:ARG0-of	1.3.1.1	stating	state-01
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	bin	"bin"
+::edge	1.3.1	warning	warn-01	:time	1.3.1.2	recent	recent
+::edge	1.3.1.1	stating	state-01	:ARG1	1.3.1.1.1	could	possible
+::edge	1.2.2.1.2		name	:op2	1.2.2.1.2.2	Laden	"Laden"
+::edge	1.2.3.1.2.3	necessary	need-01	:purpose	1.2.3.1.2.3.2	have	have-04
+::edge	1.2.3.1.2.3	necessary	need-01	:ARG0	1.2.3.1.2.3.1		person
+::edge	1.2.3.1.2.2	supporters	person	:ARG0-of	1.2.3.1.2.2.1	supporters	support-01
+::edge	1.2.2	location	location	:poss	1.2.2.1		person
+::edge	1.2.3	because	cause-01	:ARG0	1.2.3.1	possesses	possess-01
+::edge	1.2.2.1		person	:name	1.2.2.1.2		name
+::edge	1.2.3.1.2.3.2.2.1		person	:mod	1.2.3.1.2.3.2.2.1.1	others	other
+::edge	1.2.3.1.2.3.2.2	executed	execute-02	:ARG1	1.2.3.1.2.3.2.2.2		attack-01
+::edge	1.2.3.1.2.3.2.2	executed	execute-02	:ARG0	1.2.3.1.2.3.2.2.1		person
+::edge	1.1.2		name	:op1	1.1.2.1	Hobbs	"Hensler-Hobbs"
+::edge	1.2.2.1		person	:wiki	1.2.2.1.1		"Osama_bin_Laden"
+::edge	1.2.3.1	possesses	possess-01	:ARG0	1.2.3.1.1	Laden	person
+::edge	1.3.1.1.1	could	possible	:time	1.3.1.1.1.2	future	future
+::edge	1.2.3.1	possesses	possess-01	:ARG1	1.2.3.1.2	and	and
+::edge	1.3.1.1.1	could	possible	:domain	1.3.1.1.1.1	executed	execute-02
+::edge	1.3.1.1.1.1	executed	execute-02	:ARG1	1.3.1.1.1.1.1	attack	attack-01
+::edge	1.3.1.1.1.2	future	future	:mod	1.3.1.1.1.2.1	near	near
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	irrelevant	relevant-41	:polarity	1.2.1	irrelevant	-
+::edge	1.2	irrelevant	relevant-41	:ARG1	1.2.2	location	location
+::edge	1.2.3.1.2.2.1	supporters	support-01	:ARG1	1.2.3.1.2.2.1.1		person
+::edge	1.3	summary	summarize-01	:ARG1	1.3.1	warning	warn-01
+::edge	1.2	irrelevant	relevant-41	:ARG1-of	1.2.3	because	cause-01
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.2.3.1.2	and	and	:op2	1.2.3.1.2.2	supporters	person
+::edge	1	stated	state-01	:ARG1	1.2	irrelevant	relevant-41
+::edge	1.2.3.1.2	and	and	:op1	1.2.3.1.2.1	money	money
+::edge	1	stated	state-01	:manner	1.3	summary	summarize-01
+::edge	1.2.3.1.2	and	and	:ARG1-of	1.2.3.1.2.3	necessary	need-01
+::edge	1.3.1.1.1.1.1	attack	attack-01	:mod	1.3.1.1.1.1.1.1	such	such
+::edge	1.1		person	:wiki	1.1.1		-
+14	A number of al-Qaeda militants including Millennium plot bomber Ahmed Ressam are known to have remained in Canada.
+14	A number of al @-@ Qaeda militants including Millennium plot bomber Ahmed Ressam are known to have remained in Canada .
+14	1-1.1.1.3 3-1.1.1.2.1.1.2.1 5-1.1.1.2.1.1.2.1 6-1.1.1.2 7-1.1.1 8-1.1.1.1.3.2.2.1 9-1.1.1.1 9-1.1.1.1.3 9-1.1.1.1.3.r 10-1.1.1.1.3.1 11-1.1.1.1.2.1 12-1.1.1.1.2.2 14-1 17-1.1 18-1.1.2.r 19-1.1.2.2.1
+::node	"Al-Qaeda"	1.1.1.2.1.1.1	"Al-Qaeda"	
+::node	n	1.1.1.2.1.1.2	name	
+::node	"Canada"	1.1.2.2.1	"Canada"	Canada
+::node	p2	1.1.1.1.3	plot-01	plot
+::node	n3	1.1.1.1.2	name	
+::node	h	1.1.1.2.1	have-org-role-91	
+::node	"Ahmed_Ressam"	1.1.1.1.1	"Ahmed_Ressam"	
+::node	"Millennium"	1.1.1.1.3.2.2.1	"Millennium"	Millennium
+::node	"Ahmed"	1.1.1.1.2.1	"Ahmed"	Ahmed
+::node	p	1.1.1.1	person	plot
+::node	"Ressam"	1.1.1.1.2.2	"Ressam"	Ressam
+::node	b	1.1.1.1.3.1	bomb-01	bomber
+::node	e	1.1.1.1.3.2	event	
+::node	m	1.1.1.2	militant	militants
+::node	"Canada"	1.1.2.1	"Canada"	
+::node	n2	1.1.1.3	number	number
+::node	n5	1.1.2.2	name	
+::node	c2	1.1.1.2.1.1	criminal-organization	
+::node	c	1.1.2	country	
+::node	k	1	know-01	known
+::node	r	1.1	remain-01	remained
+::node	"al-Qaeda"	1.1.1.2.1.1.2.1	"al-Qaeda"	Qaeda
+::node	p	1.1.1.1.3.1.1	person	
+::node	-	1.1.1.1.3.2.1	-	
+::node	n4	1.1.1.1.3.2.2	name	
+::node	i	1.1.1	include-91	including
+::edge	1.1.1.2.1.1		criminal-organization	:wiki	1.1.1.2.1.1.1		"Al-Qaeda"
+::edge	1.1.1.2.1.1		criminal-organization	:name	1.1.1.2.1.1.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Canada	"Canada"
+::edge	1.1.1.1	plot	person	:ARG0-of	1.1.1.1.3	plot	plot-01
+::edge	1.1.1.1	plot	person	:name	1.1.1.1.2		name
+::edge	1.1.1.2	militants	militant	:ARG0-of	1.1.1.2.1		have-org-role-91
+::edge	1.1.1.1	plot	person	:wiki	1.1.1.1.1		"Ahmed_Ressam"
+::edge	1.1.1.1.3.2.2		name	:op1	1.1.1.1.3.2.2.1	Millennium	"Millennium"
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Ahmed	"Ahmed"
+::edge	1.1.1	including	include-91	:ARG1	1.1.1.1	plot	person
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	Ressam	"Ressam"
+::edge	1.1.1.1.3	plot	plot-01	:ARG1	1.1.1.1.3.1	bomber	bomb-01
+::edge	1.1.1.1.3	plot	plot-01	:time	1.1.1.1.3.2		event
+::edge	1.1.1	including	include-91	:ARG2	1.1.1.2	militants	militant
+::edge	1.1.2		country	:wiki	1.1.2.1		"Canada"
+::edge	1.1.1	including	include-91	:ARG3	1.1.1.3	number	number
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.1.2.1		have-org-role-91	:ARG1	1.1.1.2.1.1		criminal-organization
+::edge	1.1	remained	remain-01	:location	1.1.2		country
+::edge	1	known	know-01	:ARG1	1.1	remained	remain-01
+::edge	1.1.1.2.1.1.2		name	:op1	1.1.1.2.1.1.2.1	Qaeda	"al-Qaeda"
+::edge	1.1.1.1.3.1	bomber	bomb-01	:ARG0	1.1.1.1.3.1.1		person
+::edge	1.1.1.1.3.2		event	:wiki	1.1.1.1.3.2.1		-
+::edge	1.1.1.1.3.2		event	:name	1.1.1.1.3.2.2		name
+::edge	1.1	remained	remain-01	:ARG1	1.1.1	including	include-91
+15	Many are located in Montreal.
+15	Many are located in Montreal .
+15	0-1.1 2-1.2.r 4-1.2.2.1
+::node	"Montreal"	1.2.1	"Montreal"	
+::node	p	1	person	
+::node	n	1.2.2	name	
+::node	m	1.1	many	Many
+::node	c	1.2	city	
+::node	"Montreal"	1.2.2.1	"Montreal"	Montreal
+::edge	1.2		city	:wiki	1.2.1		"Montreal"
+::edge	1.2		city	:name	1.2.2		name
+::edge	1		person	:quant	1.1	Many	many
+::edge	1		person	:location	1.2		city
+::edge	1.2.2		name	:op1	1.2.2.1	Montreal	"Montreal"
+16	Hensler-Hobbs stated that the proliferation and availability of Hacker tools and the low skill level needed to conduct cyberattacks demonstrate the ease of launching an attack anywhere.
+16	Hensler @-@ Hobbs stated that the proliferation and availability of Hacker tools and the low skill level needed to conduct cyberattacks demonstrate the ease of launching an attack anywhere .
+16	0-1.1.2.1 2-1.1.2.1 3-1 4-1.2.r 6-1.2.1.1.1 7-1.2.1.1 8-1.2.1.1.2 9-1.2.1.1.1.1.r 10-1.2.1.1.1.1.1 11-1.2.1.1.1.1 12-1.2.1 12-1.2.1.1 12-1.2.1.1.r 14-1.2.1.2.1.1.1 15-1.2.1.2.1.1 16-1.2.1.2.1.1 17-1.2.1.2.1 19-1.2.1.2.2 20-1.2.1.2.2.1 20-1.2.1.2.2.1.1 20-1.2.1.2.2.1.1.r 21-1.2 23-1.2.2 24-1.2.2.1.r 25-1.2.2.1 27-1.2.2.1 28-1.2.2.1.1
+::node	h	1.2.1.1.1.1.1	hack-04	Hacker
+::node	"Hensler-Hobbs"	1.1.2.1	"Hensler-Hobbs"	Hobbs
+::node	a6	1.2.2.1.1	anywhere	anywhere
+::node	t	1.2.1.1.1.1	tool	tools
+::node	t	1.2.1.1.2.1	tool	
+::node	c	1.2.1.2.2	conduct-01	conduct
+::node	l	1.2.1.2.1.1.1	low	low
+::node	n	1.1.2	name	
+::node	a	1.2.1	and	and
+::node	s2	1.2.1.2.1.1	skill-level	level
+::node	s	1	state-01	stated
+::node	a4	1.2.1.2.2.1	attack-01	cyberattacks
+::node	e	1.2.2	ease	ease
+::node	a3	1.2.1.1.2	available	availability
+::node	n2	1.2.1.2.1	need-01	needed
+::node	p2	1.2.1.1.1	proliferate-01	proliferation
+::node	p	1.1	person	
+::node	d	1.2	demonstrate-01	demonstrate
+::node	h2	1.2.1.2	have-purpose-91	
+::node	a5	1.2.2.1	attack-01	attack
+::node	a2	1.2.1.1	and	and
+::node	-	1.1.1	-	
+::node	c2	1.2.1.2.2.1.1	cyber	cyberattacks
+::edge	1.2.1.1.1.1	tools	tool	:purpose	1.2.1.1.1.1.1	Hacker	hack-04
+::edge	1.1.2		name	:op1	1.1.2.1	Hobbs	"Hensler-Hobbs"
+::edge	1.2.2.1	attack	attack-01	:location	1.2.2.1.1	anywhere	anywhere
+::edge	1.2.1.1.1	proliferation	proliferate-01	:ARG0	1.2.1.1.1.1	tools	tool
+::edge	1.2.1.1.2	availability	available	:domain	1.2.1.1.2.1		tool
+::edge	1.2.1.2		have-purpose-91	:ARG2	1.2.1.2.2	conduct	conduct-01
+::edge	1.2.1.2.1.1	level	skill-level	:mod	1.2.1.2.1.1.1	low	low
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	demonstrate	demonstrate-01	:ARG0	1.2.1	and	and
+::edge	1.2.1.2.1	needed	need-01	:ARG1	1.2.1.2.1.1	level	skill-level
+::edge	1.2.1.2.2	conduct	conduct-01	:ARG1	1.2.1.2.2.1	cyberattacks	attack-01
+::edge	1.2	demonstrate	demonstrate-01	:ARG1	1.2.2	ease	ease
+::edge	1.2.1.1	and	and	:op2	1.2.1.1.2	availability	available
+::edge	1.2.1.2		have-purpose-91	:ARG1	1.2.1.2.1	needed	need-01
+::edge	1.2.1.1	and	and	:op1	1.2.1.1.1	proliferation	proliferate-01
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	demonstrate	demonstrate-01
+::edge	1.2.1	and	and	:op2	1.2.1.2		have-purpose-91
+::edge	1.2.2	ease	ease	:domain	1.2.2.1	attack	attack-01
+::edge	1.2.1	and	and	:op1	1.2.1.1	and	and
+::edge	1.1		person	:wiki	1.1.1		-
+::edge	1.2.1.2.2.1	cyberattacks	attack-01	:mod	1.2.1.2.2.1.1	cyberattacks	cyber
+17	Hensler-Hobbs cited the example of the Montreal-based Hacker known as mafiaboy who attacked U.S. websites including Amazon.com in 2000.
+17	Hensler @-@ Hobbs cited the example of the Montreal @-@ based Hacker known as mafiaboy who attacked U.S. websites including Amazon.com in 2000 .
+17	0-1.1.2.1 2-1.1.2.1 3-1 5-1.2 6-1.2.1.r 8-1.2.1.5.1.2.1 10-1.2.1.5 11-1.2.1 11-1.2.1.3 11-1.2.1.3.r 12-1.2.1.2.r 13-1.2.1.2.r 14-1.2.1.2.1 16-1.2.1.4 17-1.2.1.4.1.1.2.1 18-1.2.1.4.1 19-1.2.1.4.1.2 20-1.2.1.4.1.2.1.1 21-1.2.1.4.2.r 22-1.2.1.4.2.1
+::node	"U.S."	1.2.1.4.1.1.2.1	"U.S."	U.S.
+::node	c2	1.2.1.4.1.1	country	
+::node	i	1.2.1.4.1.2	include-91	including
+::node	2000	1.2.1.4.2.1	2000	2000
+::node	d	1.2.1.4.2	date-entity	
+::node	c3	1.2.1.5.1	city	
+::node	w	1.2.1.4.1	website	websites
+::node	"amazon.com"	1.2.1.4.1.2.1.1	"amazon.com"	Amazon.com
+::node	"Montreal"	1.2.1.5.1.2.1	"Montreal"	Montreal
+::node	a	1.2.1.4	attack-01	attacked
+::node	"Montreal"	1.2.1.5.1.1	"Montreal"	
+::node	b	1.2.1.5	base-01	based
+::node	n2	1.2.1.2	name	
+::node	h	1.2.1.3	hack-04	Hacker
+::node	n5	1.2.1.5.1.2	name	
+::node	-	1.2.1.1	-	
+::node	"Hensler-Hobbs"	1.1.2.1	"Hensler-Hobbs"	Hobbs
+::node	n	1.1.2	name	
+::node	p2	1.2.1	person	Hacker
+::node	"United_States"	1.2.1.4.1.1.1	"United_States"	
+::node	c	1	cite-01	cited
+::node	"MafiaBoy"	1.2.1.2.1	"MafiaBoy"	mafiaboy
+::node	p	1.1	person	
+::node	e	1.2	example	example
+::node	-	1.1.1	-	
+::node	n3	1.2.1.4.1.1.2	name	
+::node	u	1.2.1.4.1.2.1	url-entity	
+::edge	1.2.1.4.1.1.2		name	:op1	1.2.1.4.1.1.2.1	U.S.	"U.S."
+::edge	1.2.1.4.1	websites	website	:mod	1.2.1.4.1.1		country
+::edge	1.2.1.4.1	websites	website	:ARG2-of	1.2.1.4.1.2	including	include-91
+::edge	1.2.1.4.2		date-entity	:year	1.2.1.4.2.1	2000	2000
+::edge	1.2.1.4	attacked	attack-01	:time	1.2.1.4.2		date-entity
+::edge	1.2.1.5	based	base-01	:location	1.2.1.5.1		city
+::edge	1.2.1.4	attacked	attack-01	:ARG1	1.2.1.4.1	websites	website
+::edge	1.2.1.4.1.2.1		url-entity	:value	1.2.1.4.1.2.1.1	Amazon.com	"amazon.com"
+::edge	1.2.1.5.1.2		name	:op1	1.2.1.5.1.2.1	Montreal	"Montreal"
+::edge	1.2.1	Hacker	person	:ARG0-of	1.2.1.4	attacked	attack-01
+::edge	1.2.1.5.1		city	:wiki	1.2.1.5.1.1		"Montreal"
+::edge	1.2.1	Hacker	person	:ARG1-of	1.2.1.5	based	base-01
+::edge	1.2.1	Hacker	person	:name	1.2.1.2		name
+::edge	1.2.1	Hacker	person	:ARG0-of	1.2.1.3	Hacker	hack-04
+::edge	1.2.1.5.1		city	:name	1.2.1.5.1.2		name
+::edge	1.2.1	Hacker	person	:wiki	1.2.1.1		-
+::edge	1.1.2		name	:op1	1.1.2.1	Hobbs	"Hensler-Hobbs"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	example	example	:mod	1.2.1	Hacker	person
+::edge	1.2.1.4.1.1		country	:wiki	1.2.1.4.1.1.1		"United_States"
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	mafiaboy	"MafiaBoy"
+::edge	1	cited	cite-01	:ARG0	1.1		person
+::edge	1	cited	cite-01	:ARG1	1.2	example	example
+::edge	1.1		person	:wiki	1.1.1		-
+::edge	1.2.1.4.1.1		country	:name	1.2.1.4.1.1.2		name
+::edge	1.2.1.4.1.2	including	include-91	:ARG1	1.2.1.4.1.2.1		url-entity
+18	Many think that security must be improved at North American critical infrastructures including energy and transportation providers and the financial services sector that are largely interconnected.
+18	Many think that security must be improved at North American critical infrastructures including energy and transportation providers and the financial services sector that are largely interconnected .
+18	0-1.1.1 1-1 2-1.2.r 3-1.2.1.1 4-1.2 6-1.2.1 7-1.2.1.1.1.r 8-1.2.1.1.1.2.2.1 9-1.2.1.1.1.2.2.2 10-1.2.1.1.1.1 11-1.2.1.1.1 12-1.2.1.1.1.3 13-1.2.1.1.1.3.1.1.1.1.1 14-1.2.1.1.1.3.1.1.1.1 15-1.2.1.1.1.3.1.1.1.1.2 16-1.2.1.1.1.3.1.1 16-1.2.1.1.1.3.1.1.1 16-1.2.1.1.1.3.1.1.1.r 17-1.2.1.1.1.3.1.1.1.1 19-1.2.1.1.1.3.1.2.1.1 20-1.2.1.1.1.3.1.2.1 21-1.2.1.1.1.3.1.2 24-1.2.1.1.1.3.1.3.1 25-1.2.1.1.1.3.1.3
+::node	"America"	1.2.1.1.1.2.2.2	"America"	American
+::node	"North_America"	1.2.1.1.1.2.1	"North_America"	
+::node	n	1.2.1.1.1.2.2	name	
+::node	a	1.2.1.1.1.3.1	and	
+::node	"North"	1.2.1.1.1.2.2.1	"North"	North
+::node	t2	1.2.1.1.1.3.1.1.1.1.2	transportation	transportation
+::node	e	1.2.1.1.1.3.1.1.1.1.1	energy	energy
+::node	c	1.2.1.1.1.3.1.1	company	providers
+::node	i3	1.2.1.1.1.3.1.3	interconnect-01	interconnected
+::node	s2	1.2.1.1.1.3.1.2	sector	sector
+::node	l	1.2.1.1.1.3.1.3.1	large	largely
+::node	s3	1.2.1.1.1.3.1.2.1	service-01	services
+::node	p2	1.2.1.1.1.3.1.1.1	provide-01	providers
+::node	f	1.2.1.1.1.3.1.2.1.1	finance	financial
+::node	s	1.2.1.1	security	security
+::node	c2	1.2.1.1.1.1	critical	critical
+::node	c3	1.2.1.1.1.2	continent	
+::node	i2	1.2.1.1.1.3	include-91	including
+::node	i	1.2.1	improve-01	improved
+::node	t	1	think-01	think
+::node	i4	1.2.1.1.1	infrastructure	infrastructures
+::node	p	1.1	person	
+::node	o	1.2	obligate-01	must
+::node	a2	1.2.1.1.1.3.1.1.1.1	and	and
+::node	m	1.1.1	many	Many
+::edge	1.2.1.1.1.2.2		name	:op2	1.2.1.1.1.2.2.2	American	"America"
+::edge	1.2.1.1.1.2		continent	:wiki	1.2.1.1.1.2.1		"North_America"
+::edge	1.2.1.1.1.2		continent	:name	1.2.1.1.1.2.2		name
+::edge	1.2.1.1.1.3	including	include-91	:ARG1	1.2.1.1.1.3.1		and
+::edge	1.2.1.1.1.2.2		name	:op1	1.2.1.1.1.2.2.1	North	"North"
+::edge	1.2.1.1.1	infrastructures	infrastructure	:mod	1.2.1.1.1.1	critical	critical
+::edge	1.2.1.1.1	infrastructures	infrastructure	:location	1.2.1.1.1.2		continent
+::edge	1.2.1.1.1.3.1.1.1.1	and	and	:op2	1.2.1.1.1.3.1.1.1.1.2	transportation	transportation
+::edge	1.2.1.1.1	infrastructures	infrastructure	:ARG2-of	1.2.1.1.1.3	including	include-91
+::edge	1.2.1.1.1.3.1.1.1.1	and	and	:op1	1.2.1.1.1.3.1.1.1.1.1	energy	energy
+::edge	1.2	must	obligate-01	:ARG2	1.2.1	improved	improve-01
+::edge	1.2.1.1.1.3.1		and	:op1	1.2.1.1.1.3.1.1	providers	company
+::edge	1.2.1.1.1.3.1		and	:ARG1-of	1.2.1.1.1.3.1.3	interconnected	interconnect-01
+::edge	1.2.1.1	security	security	:location	1.2.1.1.1	infrastructures	infrastructure
+::edge	1.2.1.1.1.3.1		and	:op2	1.2.1.1.1.3.1.2	sector	sector
+::edge	1	think	think-01	:ARG0	1.1		person
+::edge	1	think	think-01	:ARG1	1.2	must	obligate-01
+::edge	1.2.1.1.1.3.1.3	interconnected	interconnect-01	:degree	1.2.1.1.1.3.1.3.1	largely	large
+::edge	1.2.1.1.1.3.1.1.1	providers	provide-01	:ARG1	1.2.1.1.1.3.1.1.1.1	and	and
+::edge	1.2.1.1.1.3.1.2	sector	sector	:consist-of	1.2.1.1.1.3.1.2.1	services	service-01
+::edge	1.2.1.1.1.3.1.1	providers	company	:ARG0-of	1.2.1.1.1.3.1.1.1	providers	provide-01
+::edge	1.2.1.1.1.3.1.2.1	services	service-01	:ARG1	1.2.1.1.1.3.1.2.1.1	financial	finance
+::edge	1.2.1	improved	improve-01	:ARG1	1.2.1.1	security	security
+::edge	1.1		person	:quant	1.1.1	Many	many
+19	Many businesses began preparing for cyber incidents before the year 2000.
+19	Many businesses began preparing for cyber incidents before the year 2000 .
+19	0-1.1.1 1-1.1 2-1 3-1.2 4-1.2.2.r 5-1.2.2.1 6-1.2.2 7-1.3 9-1.3.1.1.r 10-1.3.1.1
+::node	b2	1.2.1	business	
+::node	b	1	begin-01	began
+::node	i	1.2.2	incident	incidents
+::node	d	1.3.1	date-entity	
+::node	b2	1.1	business	businesses
+::node	p	1.2	prepare-02	preparing
+::node	b3	1.3	before	before
+::node	2000	1.3.1.1	2000	2000
+::node	c	1.2.2.1	cyber	cyber
+::node	m	1.1.1	many	Many
+::edge	1.2	preparing	prepare-02	:ARG0	1.2.1		business
+::edge	1.2	preparing	prepare-02	:ARG1	1.2.2	incidents	incident
+::edge	1.3	before	before	:op1	1.3.1		date-entity
+::edge	1	began	begin-01	:ARG0	1.1	businesses	business
+::edge	1	began	begin-01	:ARG1	1.2	preparing	prepare-02
+::edge	1	began	begin-01	:time	1.3	before	before
+::edge	1.3.1		date-entity	:year	1.3.1.1	2000	2000
+::edge	1.2.2	incidents	incident	:mod	1.2.2.1	cyber	cyber
+::edge	1.1	businesses	business	:quant	1.1.1	Many	many
+20	A separate report issued recently by the U.S. government-funded research group computer science and telecommunications Board stated that cyber security needs considerable improvement.
+20	A separate report issued recently by the U.S. government @-@ funded research group computer science and telecommunications Board stated that cyber security needs considerable improvement .
+20	1-1.1.2 2-1.1 3-1.1.1 4-1.1.1.2 5-1.1.1.1.r 7-1.1.1.1.4.1.1.1.2.1 8-1.1.1.1.4.1 8-1.1.1.1.4.1.1 8-1.1.1.1.4.1.1.r 10-1.1.1.1.4 11-1.1.1.1.3 12-1.1.1.1 13-1.1.1.1.2.1 14-1.1.1.1.2.2 15-1.1.1.1.2.3 16-1.1.1.1.2.4 17-1.1.1.1.2.5 18-1 19-1.2.r 20-1.2.1.1 21-1.2.1 22-1.2 23-1.2.2.2 24-1.2.2
+::node	g2	1.1.1.1.4.1.1	govern-01	government
+::node	"United_States"	1.1.1.1.4.1.1.1.1	"United_States"	
+::node	n2	1.1.1.1.4.1.1.1.2	name	
+::node	r2	1.1.1.1.3	research	research
+::node	n	1.1.1.1.2	name	
+::node	-	1.1.1.1.1	-	
+::node	s3	1.2.2.1	security	
+::node	c3	1.2.2.2	considerable	considerable
+::node	c2	1.2.1.1	cyber	cyber
+::node	"Computer"	1.1.1.1.2.1	"Computer"	computer
+::node	g3	1.1.1.1	group	group
+::node	"Science"	1.1.1.1.2.2	"Science"	science
+::node	"and"	1.1.1.1.2.3	"and"	and
+::node	g	1.1.1.1.4.1	government-organization	government
+::node	r3	1.1.1.2	recent	recently
+::node	"Telecommunications"	1.1.1.1.2.4	"Telecommunications"	telecommunications
+::node	"U.S."	1.1.1.1.4.1.1.1.2.1	"U.S."	U.S.
+::node	"Board"	1.1.1.1.2.5	"Board"	Board
+::node	c	1.1.1.1.4.1.1.1	country	
+::node	f	1.1.1.1.4	fund-01	funded
+::node	s2	1.1.2	separate	separate
+::node	s3	1.2.1	security	security
+::node	s	1	state-01	stated
+::node	i2	1.2.2	improve-01	improvement
+::node	r	1.1	report	report
+::node	n3	1.2	need-01	needs
+::node	i	1.1.1	issue-01	issued
+::edge	1.1.1.1.4.1	government	government-organization	:ARG0-of	1.1.1.1.4.1.1	government	govern-01
+::edge	1.1.1.1.4.1.1.1		country	:wiki	1.1.1.1.4.1.1.1.1		"United_States"
+::edge	1.1.1.1.4.1.1.1		country	:name	1.1.1.1.4.1.1.1.2		name
+::edge	1.1.1.1	group	group	:mod	1.1.1.1.3	research	research
+::edge	1.1.1.1	group	group	:name	1.1.1.1.2		name
+::edge	1.1.1.1	group	group	:wiki	1.1.1.1.1		-
+::edge	1.2.2	improvement	improve-01	:ARG1	1.2.2.1		security
+::edge	1.2.2	improvement	improve-01	:degree	1.2.2.2	considerable	considerable
+::edge	1.2.1	security	security	:mod	1.2.1.1	cyber	cyber
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	computer	"Computer"
+::edge	1.1.1	issued	issue-01	:ARG0	1.1.1.1	group	group
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	science	"Science"
+::edge	1.1.1.1.2		name	:op3	1.1.1.1.2.3	and	"and"
+::edge	1.1.1.1.4	funded	fund-01	:ARG0	1.1.1.1.4.1	government	government-organization
+::edge	1.1.1	issued	issue-01	:time	1.1.1.2	recently	recent
+::edge	1.1.1.1.2		name	:op4	1.1.1.1.2.4	telecommunications	"Telecommunications"
+::edge	1.1.1.1.4.1.1.1.2		name	:op1	1.1.1.1.4.1.1.1.2.1	U.S.	"U.S."
+::edge	1.1.1.1.2		name	:op5	1.1.1.1.2.5	Board	"Board"
+::edge	1.1.1.1.4.1.1	government	govern-01	:ARG1	1.1.1.1.4.1.1.1		country
+::edge	1.1.1.1	group	group	:ARG1-of	1.1.1.1.4	funded	fund-01
+::edge	1.1	report	report	:mod	1.1.2	separate	separate
+::edge	1.2	needs	need-01	:ARG0	1.2.1	security	security
+::edge	1.2	needs	need-01	:ARG1	1.2.2	improvement	improve-01
+::edge	1	stated	state-01	:ARG0	1.1	report	report
+::edge	1	stated	state-01	:ARG1	1.2	needs	need-01
+::edge	1.1	report	report	:ARG1-of	1.1.1	issued	issue-01
+21	For example, according to a Canadian government estimate the love bug launched in May 2000 caused 6.7 billion U.S. dollars in damage and disrupted Canadian government systems.
+21	For example , according to a Canadian government estimate the love bug launched in May 2000 caused 6.7 billion U.S. dollars in damage and disrupted Canadian government systems .
+21	0-1.2.3 1-1.2.3 3-1 4-1 6-1.1.1.1.1.2.1 7-1.1.1 7-1.1.1.1 7-1.1.1.1.r 8-1.1 10-1.2.1.1.1 11-1.2.1.1 12-1.2.1.1.2 13-1.2.1.1.2.1.r 14-1.2.1.1.2.1.2 14-1.2.1.1.2.1.2.r 15-1.2.1.1.2.1.1 16-1.2.1 17-1.2.1.2.1.1 18-1.2.1.2.1.1 19-1.2.1.2.1.2.1.2.1 20-1.2.1.2.1.2 22-1.2.1.2 23-1.2 24-1.2.2 25-1.2.2.2.1.1.1 26-1.2.2.2.1 26-1.2.2.2.1.1 26-1.2.2.2.1.1.r 27-1.2.2.2
+::node	n2	1.2.1.2.1.2.1.2	name	
+::node	"United_States"	1.2.1.2.1.2.1.1	"United_States"	
+::node	"U.S."	1.2.1.2.1.2.1.2.1	"U.S."	U.S.
+::node	5	1.2.1.1.2.1.2	5	May
+::node	2000	1.2.1.1.2.1.1	2000	2000
+::node	c	1.1.1.1.1	country	
+::node	d2	1.2.1.2	damage	damage
+::node	b	1.2.2.1	bug	
+::node	g4	1.2.2.2.1.1	govern-01	government
+::node	s2	1.2.2.2	system	systems
+::node	g3	1.2.2.2.1	government-organization	government
+::node	b	1.2.1.1	bug	bug
+::node	"Canada"	1.1.1.1.1.1	"Canada"	
+::node	n	1.1.1.1.1.2	name	
+::node	g2	1.1.1.1	govern-01	government
+::node	"Canada"	1.1.1.1.1.2.1	"Canada"	Canadian
+::node	d	1.2.1.1.2.1	date-entity	
+::node	c	1.2.2.2.1.1.1	country	Canadian
+::node	c3	1.2.1.2.1.2.1	country	
+::node	c2	1.2.1	cause-01	caused
+::node	6700000000	1.2.1.2.1.1	6700000000	billion
+::node	s	1	say-01	to
+::node	d3	1.2.1.2.1.2	dollar	dollars
+::node	d4	1.2.2	disrupt-01	disrupted
+::node	l2	1.2.1.1.2	launch-01	launched
+::node	m	1.2.1.2.1	monetary-quantity	
+::node	e2	1.2.3	exemplify-01	example
+::node	l	1.2.1.1.1	love	love
+::node	e	1.1	estimate	estimate
+::node	a	1.2	and	and
+::node	g	1.1.1	government-organization	government
+::edge	1.2.1.2.1.2.1		country	:name	1.2.1.2.1.2.1.2		name
+::edge	1.2.1.2.1.2.1		country	:wiki	1.2.1.2.1.2.1.1		"United_States"
+::edge	1.2.1.2.1.2.1.2		name	:op1	1.2.1.2.1.2.1.2.1	U.S.	"U.S."
+::edge	1.2.1.1.2.1		date-entity	:month	1.2.1.1.2.1.2	May	5
+::edge	1.2.1.1.2.1		date-entity	:year	1.2.1.1.2.1.1	2000	2000
+::edge	1.1.1.1	government	govern-01	:ARG1	1.1.1.1.1		country
+::edge	1.2.1	caused	cause-01	:ARG1	1.2.1.2	damage	damage
+::edge	1.2.2	disrupted	disrupt-01	:ARG0	1.2.2.1		bug
+::edge	1.2.2.2.1	government	government-organization	:ARG0-of	1.2.2.2.1.1	government	govern-01
+::edge	1.2.2	disrupted	disrupt-01	:ARG1	1.2.2.2	systems	system
+::edge	1.2.2.2	systems	system	:poss	1.2.2.2.1	government	government-organization
+::edge	1.2.1	caused	cause-01	:ARG0	1.2.1.1	bug	bug
+::edge	1.1.1.1.1		country	:wiki	1.1.1.1.1.1		"Canada"
+::edge	1.1.1.1.1		country	:name	1.1.1.1.1.2		name
+::edge	1.1.1	government	government-organization	:ARG0-of	1.1.1.1	government	govern-01
+::edge	1.1.1.1.1.2		name	:op1	1.1.1.1.1.2.1	Canadian	"Canada"
+::edge	1.2.1.1.2	launched	launch-01	:time	1.2.1.1.2.1		date-entity
+::edge	1.2.2.2.1.1	government	govern-01	:ARG1	1.2.2.2.1.1.1	Canadian	country
+::edge	1.2.1.2.1.2	dollars	dollar	:mod	1.2.1.2.1.2.1		country
+::edge	1.2	and	and	:op1	1.2.1	caused	cause-01
+::edge	1.2.1.2.1		monetary-quantity	:quant	1.2.1.2.1.1	billion	6700000000
+::edge	1.2.1.2.1		monetary-quantity	:unit	1.2.1.2.1.2	dollars	dollar
+::edge	1.2	and	and	:op2	1.2.2	disrupted	disrupt-01
+::edge	1.2.1.1	bug	bug	:ARG1-of	1.2.1.1.2	launched	launch-01
+::edge	1.2.1.2	damage	damage	:quant	1.2.1.2.1		monetary-quantity
+::edge	1.2	and	and	:ARG0-of	1.2.3	example	exemplify-01
+::edge	1.2.1.1	bug	bug	:mod	1.2.1.1.1	love	love
+::edge	1	to	say-01	:ARG0	1.1	estimate	estimate
+::edge	1	to	say-01	:ARG1	1.2	and	and
+::edge	1.1	estimate	estimate	:source	1.1.1	government	government-organization
+22	Bell Canada spokesman Andrew Cole stated that Bell Canada is prepared and remains prepared for various potential situations and scenarios.
+22	Bell Canada spokesman Andrew Cole stated that Bell Canada is prepared and remains prepared for various potential situations and scenarios .
+22	0-1.1.3.1.2.1 1-1.1.3.1.2.2 2-1.1.3.2 3-1.1.2.1 4-1.1.2.2 5-1 6-1.2.r 7-1.2.1.1 8-1.2.1.1 10-1.2.2.2 11-1.2 12-1.2.2 13-1.2.2.2 14-1.2.2.2 15-1.2.2.2 16-1.2.2.2 17-1.2.2.2 18-1.2.2.2 19-1.2.2.2
+::node	"Andrew"	1.1.2.1	"Andrew"	Andrew
+::node	n2	1.1.3.1.2	name	
+::node	"Cole"	1.1.2.2	"Cole"	Cole
+::node	c	1.1.3.1	company	
+::node	s2	1.1.3.2	spokesman	spokesman
+::node	"Canada"	1.1.3.1.2.2	"Canada"	Canada
+::node	p2	1.2.1.2.3	potential	
+::node	s4	1.2.1.2.2	scenario	
+::node	"Bell"	1.1.3.1.2.1	"Bell"	Bell
+::node	v	1.2.1.2.4	various	
+::node	n	1.1.2	name	
+::node	p	1.2.1	prepare-02	
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	
+::node	r	1.2.2	remain-01	remains
+::node	s3	1.2.1.2.1	situation	
+::node	p3	1.1	person	
+::node	a	1.2	and	and
+::node	a2	1.2.1.2	and	
+::node	c	1.2.2.1	company	
+::node	p	1.2.2.2	prepare-02	scenarios
+::node	"Bell_Canada"	1.1.3.1.1	"Bell_Canada"	
+::node	c	1.2.1.1	company	Canada
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Andrew	"Andrew"
+::edge	1.1.3.1		company	:name	1.1.3.1.2		name
+::edge	1.1.2		name	:op2	1.1.2.2	Cole	"Cole"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		company
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	spokesman	spokesman
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	Canada	"Canada"
+::edge	1.2.1.2		and	:mod	1.2.1.2.3		potential
+::edge	1.2.1.2		and	:op2	1.2.1.2.2		scenario
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Bell	"Bell"
+::edge	1.2.1.2		and	:quant	1.2.1.2.4		various
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1		prepare-02
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	and	and	:op2	1.2.2	remains	remain-01
+::edge	1.2.1.2		and	:op1	1.2.1.2.1		situation
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	and	and
+::edge	1.2.1		prepare-02	:ARG2	1.2.1.2		and
+::edge	1.2.2	remains	remain-01	:ARG1	1.2.2.1		company
+::edge	1.2.2	remains	remain-01	:ARG3	1.2.2.2	scenarios	prepare-02
+::edge	1.1.3.1		company	:wiki	1.1.3.1.1		"Bell_Canada"
+::edge	1.2.1		prepare-02	:ARG1	1.2.1.1	Canada	company
+::edge	1.1		person	:wiki	1.1.1		-
+23	Cole stated --
+23	Cole stated --
+23	0-1.1.2.1 1-1
+::node	n	1.1.2	name	
+::node	s	1	state-01	stated
+::node	"Cole"	1.1.2.1	"Cole"	Cole
+::node	p	1.1	person	
+::node	-	1.1.1	-	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Cole	"Cole"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.1		person	:wiki	1.1.1		-
+24	Bell Canada works very closely with the Government and the private sector to be aware of security concerns and to update accordingly.
+24	Bell Canada works very closely with the Government and the private sector to be aware of security concerns and to update accordingly .
+24	0-1.1.2.1 1-1.1.2.2 2-1 3-1.4.1 4-1.4 4-1.4.r 5-1.3.r 7-1.3.1 7-1.3.1.1 7-1.3.1.1.r 8-1.3 10-1.3.2.1 11-1.3.2 14-1.2.1 15-1.2.1.2.r 16-1.2.1.2.1 17-1.2.1.2 18-1.2 20-1.2.2 21-1.2.2.2
+::node	"Bell"	1.1.2.1	"Bell"	Bell
+::node	"Canada"	1.1.2.2	"Canada"	Canada
+::node	g2	1.3.1.1	govern-01	Government
+::node	p	1.3.2.1	private	private
+::node	n	1.1.2	name	
+::node	r	1.2.1	realize-01	aware
+::node	w	1	work-01	works
+::node	u	1.2.2	update-01	update
+::node	g	1.3.1	government-organization	Government
+::node	s2	1.2.1.2.1	security	security
+::node	s	1.3.2	sector	sector
+::node	v	1.4.1	very	very
+::node	c	1.1	company	
+::node	a2	1.2	and	and
+::node	a	1.3	and	and
+::node	c3	1.4	close	closely
+::node	c2	1.2.1.2	concern-01	concerns
+::node	c	1.2.2.1	company	
+::node	a3	1.2.2.2	accordingly	accordingly
+::node	c	1.2.1.1	company	
+::node	"Bell_Canada"	1.1.1	"Bell_Canada"	
+::edge	1.1.2		name	:op1	1.1.2.1	Bell	"Bell"
+::edge	1.1.2		name	:op2	1.1.2.2	Canada	"Canada"
+::edge	1.3.1	Government	government-organization	:ARG0-of	1.3.1.1	Government	govern-01
+::edge	1.3.2	sector	sector	:mod	1.3.2.1	private	private
+::edge	1.1		company	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1	aware	realize-01
+::edge	1.2	and	and	:op2	1.2.2	update	update-01
+::edge	1.3	and	and	:op1	1.3.1	Government	government-organization
+::edge	1.2.1.2	concerns	concern-01	:ARG0	1.2.1.2.1	security	security
+::edge	1.3	and	and	:op2	1.3.2	sector	sector
+::edge	1.4	closely	close	:degree	1.4.1	very	very
+::edge	1	works	work-01	:ARG0	1.1		company
+::edge	1	works	work-01	:ARG1	1.2	and	and
+::edge	1	works	work-01	:ARG3	1.3	and	and
+::edge	1	works	work-01	:manner	1.4	closely	close
+::edge	1.2.1	aware	realize-01	:ARG1	1.2.1.2	concerns	concern-01
+::edge	1.2.2	update	update-01	:ARG0	1.2.2.1		company
+::edge	1.2.2	update	update-01	:manner	1.2.2.2	accordingly	accordingly
+::edge	1.2.1	aware	realize-01	:ARG0	1.2.1.1		company
+::edge	1.1		company	:wiki	1.1.1		"Bell_Canada"
+25	Bell Canada worked closely with U.S. officials and firms after the attacks of 11 September 2001.
+25	Bell Canada worked closely with U.S. officials and firms after the attacks of 11 September 2001 .
+25	0-1.1.2.1 1-1.1.2.2 2-1 3-1.3 3-1.3.r 4-1.2.r 5-1.2.1.1.1.2.1 6-1.2.1.1.2 7-1.2 8-1.2.2 9-1.4 11-1.4.1 12-1.4.1.1.r 13-1.4.1.1.3 14-1.4.1.1.2 14-1.4.1.1.2.r 15-1.4.1.1.1
+::node	"U.S."	1.2.1.1.1.2.1	"U.S."	U.S.
+::node	"Bell"	1.1.2.1	"Bell"	Bell
+::node	"Canada"	1.1.2.2	"Canada"	Canada
+::node	"United_States"	1.2.1.1.1.1	"United_States"	
+::node	n2	1.2.1.1.1.2	name	
+::node	n	1.1.2	name	
+::node	p	1.2.1	person	
+::node	w	1	work-01	worked
+::node	f	1.2.2	firm	firms
+::node	o	1.2.1.1.2	official	officials
+::node	a3	1.4.1	attack-01	attacks
+::node	c3	1.2.1.1.1	country	
+::node	c	1.1	company	
+::node	a	1.2	and	and
+::node	c2	1.3	close	closely
+::node	a2	1.4	after	after
+::node	11	1.4.1.1.3	11	11
+::node	c3	1.2.2.1	country	
+::node	2001	1.4.1.1.1	2001	2001
+::node	9	1.4.1.1.2	9	September
+::node	h	1.2.1.1	have-org-role-91	
+::node	"Bell_Canada"	1.1.1	"Bell_Canada"	
+::node	d	1.4.1.1	date-entity	
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	U.S.	"U.S."
+::edge	1.1.2		name	:op1	1.1.2.1	Bell	"Bell"
+::edge	1.1.2		name	:op2	1.1.2.2	Canada	"Canada"
+::edge	1.2.1.1.1		country	:wiki	1.2.1.1.1.1		"United_States"
+::edge	1.2.1.1.1		country	:name	1.2.1.1.1.2		name
+::edge	1.1		company	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1		person
+::edge	1.2	and	and	:op2	1.2.2	firms	firm
+::edge	1.2.1.1		have-org-role-91	:ARG2	1.2.1.1.2	officials	official
+::edge	1.4	after	after	:op1	1.4.1	attacks	attack-01
+::edge	1.2.1.1		have-org-role-91	:ARG1	1.2.1.1.1		country
+::edge	1	worked	work-01	:ARG0	1.1		company
+::edge	1	worked	work-01	:ARG3	1.2	and	and
+::edge	1	worked	work-01	:manner	1.3	closely	close
+::edge	1	worked	work-01	:time	1.4	after	after
+::edge	1.4.1.1		date-entity	:day	1.4.1.1.3	11	11
+::edge	1.2.2	firms	firm	:source	1.2.2.1		country
+::edge	1.4.1.1		date-entity	:year	1.4.1.1.1	2001	2001
+::edge	1.4.1.1		date-entity	:month	1.4.1.1.2	September	9
+::edge	1.2.1		person	:ARG0-of	1.2.1.1		have-org-role-91
+::edge	1.1		company	:wiki	1.1.1		"Bell_Canada"
+::edge	1.4.1	attacks	attack-01	:time	1.4.1.1		date-entity
+26	Bell Canada provides a total of 26 million phone and Internet connections to a nation of 30 million people.
+26	Bell Canada provides a total of 26 million phone and Internet connections to a nation of 30 million people .
+26	0-1.1.2.1 1-1.1.2.2 2-1 4-1.2 5-1.2.1.r 6-1.2.1.1 7-1.2.1.1 8-1.2.1.2 10-1.2.1.3 11-1.2.1 12-1.3.r 14-1.3 16-1.3.1.1.1 17-1.3.1.1.1 18-1.3.1.1
+::node	"Bell"	1.1.2.1	"Bell"	Bell
+::node	"Canada"	1.1.2.2	"Canada"	Canada
+::node	p4	1.3.1.1	person	people
+::node	30000000	1.3.1.1.1	30000000	million
+::node	n	1.1.2	name	
+::node	c2	1.2.1	connection	connections
+::node	p	1	provide-01	provides
+::node	p3	1.3.1	populate-01	
+::node	c	1.1	company	
+::node	t	1.2	total	total
+::node	n2	1.3	nation	nation
+::node	p2	1.2.1.2	phone	phone
+::node	i	1.2.1.3	internet	Internet
+::node	26000000	1.2.1.1	26000000	million
+::node	"Bell_Canada"	1.1.1	"Bell_Canada"	
+::edge	1.1.2		name	:op1	1.1.2.1	Bell	"Bell"
+::edge	1.1.2		name	:op2	1.1.2.2	Canada	"Canada"
+::edge	1.3.1		populate-01	:ARG2	1.3.1.1	people	person
+::edge	1.3.1.1	people	person	:quant	1.3.1.1.1	million	30000000
+::edge	1.1		company	:name	1.1.2		name
+::edge	1.2	total	total	:quant-of	1.2.1	connections	connection
+::edge	1.3	nation	nation	:ARG1-of	1.3.1		populate-01
+::edge	1	provides	provide-01	:ARG0	1.1		company
+::edge	1	provides	provide-01	:ARG1	1.2	total	total
+::edge	1	provides	provide-01	:ARG2	1.3	nation	nation
+::edge	1.2.1	connections	connection	:mod	1.2.1.2	phone	phone
+::edge	1.2.1	connections	connection	:mod	1.2.1.3	Internet	internet
+::edge	1.2.1	connections	connection	:quant	1.2.1.1	million	26000000
+::edge	1.1		company	:wiki	1.1.1		"Bell_Canada"
+27	Bradley stated --
+27	Bradley stated --
+27	0-1.1.2.1 1-1
+::node	n	1.1.2	name	
+::node	s	1	state-01	stated
+::node	"Bradley"	1.1.2.1	"Bradley"	Bradley
+::node	p	1.1	person	
+::node	-	1.1.1	-	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Bradley	"Bradley"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.1		person	:wiki	1.1.1		-
+28	Electricity firms have strong warning systems that are coordinated by the North American Electric reliability Council.
+28	Electricity firms have strong warning systems that are coordinated by the North American Electric reliability Council .
+28	0-1.1.1 1-1.1 2-1 3-1.2.2 4-1.2.1 5-1.2 8-1.2.3 9-1.2.3.1.r 11-1.2.3.1.2.1 12-1.2.3.1.2.2 13-1.2.3.1.2.3 14-1.2.3.1.2.4 15-1.2.3.1.2.5
+::node	"North_American_Electric_Reliability_Corporation"	1.2.3.1.1	"North_American_Electric_Reliability_Corporation"	
+::node	n	1.2.3.1.2	name	
+::node	w	1.2.1	warn-01	warning
+::node	h	1	have-03	have
+::node	s2	1.2.2	strong	strong
+::node	c	1.2.3	coordinate-01	coordinated
+::node	f	1.1	firm	firms
+::node	"American"	1.2.3.1.2.2	"American"	American
+::node	s	1.2	system	systems
+::node	"North"	1.2.3.1.2.1	"North"	North
+::node	"Reliability"	1.2.3.1.2.4	"Reliability"	reliability
+::node	"Electric"	1.2.3.1.2.3	"Electric"	Electric
+::node	"Council"	1.2.3.1.2.5	"Council"	Council
+::node	o	1.2.3.1	organization	
+::node	e	1.1.1	electricity	Electricity
+::edge	1.2.3.1		organization	:wiki	1.2.3.1.1		"North_American_Electric_Reliability_Corporation"
+::edge	1.2.3.1		organization	:name	1.2.3.1.2		name
+::edge	1.2	systems	system	:ARG0-of	1.2.1	warning	warn-01
+::edge	1.2	systems	system	:mod	1.2.2	strong	strong
+::edge	1.2	systems	system	:ARG1-of	1.2.3	coordinated	coordinate-01
+::edge	1	have	have-03	:ARG0	1.1	firms	firm
+::edge	1.2.3.1.2		name	:op2	1.2.3.1.2.2	American	"American"
+::edge	1	have	have-03	:ARG1	1.2	systems	system
+::edge	1.2.3.1.2		name	:op1	1.2.3.1.2.1	North	"North"
+::edge	1.2.3.1.2		name	:op4	1.2.3.1.2.4	reliability	"Reliability"
+::edge	1.2.3.1.2		name	:op3	1.2.3.1.2.3	Electric	"Electric"
+::edge	1.2.3.1.2		name	:op5	1.2.3.1.2.5	Council	"Council"
+::edge	1.2.3	coordinated	coordinate-01	:ARG0	1.2.3.1		organization
+::edge	1.1	firms	firm	:mod	1.1.1	Electricity	electricity
+29	There has not been a cyber event that has resulted in a loss of power for utility customers.
+29	There has not been a cyber event that has resulted in a loss of power for utility customers .
+29	2-1.1 2-1.1.r 5-1.2.1 6-1.2 9-1 10-1.3.r 12-1.3 13-1.3.2.r 14-1.3.2 15-1.3.1.r 16-1.3.1.1 17-1.3.1
+::node	c2	1.2.1	customer	cyber
+::node	r	1	result-01	resulted
+::node	p	1.2.2	power	
+::node	e	1.1	event	not
+::node	l	1.2	lose-02	event
+::node	-	1.3	-	loss
+::node	u	1.2.1.1	utility	
+::node	c	1.1.1	cyber	
+::edge	1.2	event	lose-02	:ARG0	1.2.1	cyber	customer
+::edge	1.2	event	lose-02	:ARG1	1.2.2		power
+::edge	1	resulted	result-01	:ARG1	1.1	not	event
+::edge	1	resulted	result-01	:ARG2	1.2	event	lose-02
+::edge	1	resulted	result-01	:polarity	1.3	loss	-
+::edge	1.2.1	cyber	customer	:mod	1.2.1.1		utility
+::edge	1.1	not	event	:mod	1.1.1		cyber
+30	There is little possibility that a cyberattack would disable a North American electric grid.
+30	There is little possibility that a cyberattack would disable a North American electric grid .
+30	1-1.2.r 2-1.1 3-1 6-1.2.1 6-1.2.1.1 6-1.2.1.1.r 8-1.2 10-1.2.2.2.2.1 11-1.2.2.2.2.2 12-1.2.2.1 13-1.2.2
+::node	a	1.2.1	attack-01	cyberattack
+::node	p	1	possible	possibility
+::node	g	1.2.2	grid	grid
+::node	l	1.1	little	little
+::node	d	1.2	disable-01	disable
+::node	e	1.2.2.1	electric	electric
+::node	c2	1.2.2.2	continent	
+::node	"North_America"	1.2.2.2.1	"North_America"	
+::node	"America"	1.2.2.2.2.2	"America"	American
+::node	c	1.2.1.1	cyber	cyberattack
+::node	n	1.2.2.2.2	name	
+::node	"North"	1.2.2.2.2.1	"North"	North
+::edge	1.2	disable	disable-01	:ARG0	1.2.1	cyberattack	attack-01
+::edge	1.2	disable	disable-01	:ARG1	1.2.2	grid	grid
+::edge	1	possibility	possible	:degree	1.1	little	little
+::edge	1	possibility	possible	:domain	1.2	disable	disable-01
+::edge	1.2.2	grid	grid	:mod	1.2.2.1	electric	electric
+::edge	1.2.2	grid	grid	:location	1.2.2.2		continent
+::edge	1.2.2.2		continent	:wiki	1.2.2.2.1		"North_America"
+::edge	1.2.2.2.2		name	:op2	1.2.2.2.2.2	American	"America"
+::edge	1.2.1	cyberattack	attack-01	:mod	1.2.1.1	cyberattack	cyber
+::edge	1.2.2.2		continent	:name	1.2.2.2.2		name
+::edge	1.2.2.2.2		name	:op1	1.2.2.2.2.1	North	"North"
+31	Electric companies are well prepared and are making all preparations required to be ready for any physical or cyberattack.
+31	Electric companies are well prepared and are making all preparations required to be ready for any physical or cyberattack .
+31	0-1.1.1.1 1-1.1.1 3-1.1.2 4-1.1 5-1 7-1.2 8-1.3.2 9-1.3 10-1.3.3 13-1.3.4 14-1.3.4.2.r 15-1.3.4.2.3 16-1.3.4.2.1.1 17-1.3.4.2 18-1.3.4.2.1 18-1.3.4.2.2 18-1.3.4.2.2.1 18-1.3.4.2.2.1.r
+::node	e	1.1.1.1	electric	Electric
+::node	c	1.3.4.1	company	
+::node	c2	1.3.4.2.2.1	cyber	cyberattack
+::node	p3	1.3.4.2.1.1	physical	physical
+::node	w	1.1.2	well	well
+::node	c	1.2.1	company	
+::node	a	1	and	and
+::node	c	1.3.1	company	
+::node	a2	1.3.2	all	all
+::node	r	1.3.3	require-01	required
+::node	p	1.1	prepare-02	prepared
+::node	r2	1.3.4	ready-01	ready
+::node	o	1.3.4.2	or	or
+::node	m	1.2	make-01	making
+::node	p2	1.3	prepare-02	preparations
+::node	a4	1.3.4.2.2	attack-01	cyberattack
+::node	a5	1.3.4.2.3	any	any
+::node	a3	1.3.4.2.1	attack-01	cyberattack
+::node	c	1.1.1	company	companies
+::edge	1.1.1	companies	company	:mod	1.1.1.1	Electric	electric
+::edge	1.3.4	ready	ready-01	:ARG1	1.3.4.1		company
+::edge	1.3.4.2.2	cyberattack	attack-01	:mod	1.3.4.2.2.1	cyberattack	cyber
+::edge	1.3.4.2.1	cyberattack	attack-01	:mod	1.3.4.2.1.1	physical	physical
+::edge	1.1	prepared	prepare-02	:manner	1.1.2	well	well
+::edge	1.2	making	make-01	:ARG0	1.2.1		company
+::edge	1.3	preparations	prepare-02	:ARG0	1.3.1		company
+::edge	1.3	preparations	prepare-02	:quant	1.3.2	all	all
+::edge	1.3	preparations	prepare-02	:ARG1-of	1.3.3	required	require-01
+::edge	1	and	and	:op1	1.1	prepared	prepare-02
+::edge	1.3	preparations	prepare-02	:ARG0-of	1.3.4	ready	ready-01
+::edge	1.3.4	ready	ready-01	:ARG2	1.3.4.2	or	or
+::edge	1	and	and	:op2	1.2	making	make-01
+::edge	1	and	and	:op2	1.3	preparations	prepare-02
+::edge	1.3.4.2	or	or	:op2	1.3.4.2.2	cyberattack	attack-01
+::edge	1.3.4.2	or	or	:quant	1.3.4.2.3	any	any
+::edge	1.3.4.2	or	or	:op1	1.3.4.2.1	cyberattack	attack-01
+::edge	1.1	prepared	prepare-02	:ARG0	1.1.1	companies	company
+32	The North American Electric reliability Council's 30 largest utility companies went on their highest alert on September 11 and many still have an increased security presence in effect and plan to extend it further.
+32	The North American Electric reliability Council 's 30 largest utility companies went on their highest alert on September 11 and many still have an increased security presence in effect and plan to extend it further .
+32	0-1.1.1.4.2.1 1-1.1.1.4.2.2 2-1.1.1.4.2.3 3-1.1.1.4.2.4 4-1.1.1.4.2.5 5-1.1.1.4.2.6 6-1.1.1.4.r 7-1.1.1.1 8-1.1.1.3 8-1.1.1.3.1 8-1.1.1.3.1.r 9-1.1.1.2 10-1.1.1 10-1.2.1.1 11-1.1 12-1.1.2.r 13-1.1.2.1 13-1.1.2.1.r 14-1.1.2.2 14-1.1.2.2.1 14-1.1.2.2.1.r 15-1.1.2 16-1.1.3.r 17-1.1.3.1 17-1.1.3.1.r 18-1.1.3.2 19-1 19-1.2 19-1.2.r 20-1.2.1.1.1 21-1.2.1.3 22-1.2.1 24-1.2.1.2.2 25-1.2.1.2.1 26-1.2.1.2 27-1.2.1.2.3.r 28-1.2.1.2.3 29-1.2 30-1.2.2 32-1.2.2.2 34-1.2.2.2.3
+::node	"Reliability"	1.1.1.4.2.5	"Reliability"	reliability
+::node	"Council"	1.1.1.4.2.6	"Council"	Council
+::node	m2	1.1.2.2.1	most	highest
+::node	"American"	1.1.1.4.2.3	"American"	American
+::node	e	1.2.1.2.3	effect-01	effect
+::node	"Electric"	1.1.1.4.2.4	"Electric"	Electric
+::node	i	1.2.1.2.2	increase-01	increased
+::node	"The"	1.1.1.4.2.1	"The"	The
+::node	"North"	1.1.1.4.2.2	"North"	North
+::node	m	1.1.1.3.1	most	largest
+::node	p	1.2.1.2	presence	presence
+::node	c	1.2.2.1	company	
+::node	s	1.2.1.3	still	still
+::node	e2	1.2.2.2	extend-01	extend
+::node	c	1.2.2.2.1	company	
+::node	c2	1.2.1.1	company	companies
+::node	p	1.2.2.2.2	presence	
+::node	f	1.2.2.2.3	further	further
+::node	30	1.1.1.1	30	30
+::node	u	1.1.1.2	utility	utility
+::node	c	1.1.2.1	company	their
+::node	l	1.1.1.3	large	largest
+::node	h	1.1.2.2	high	highest
+::node	9	1.1.3.1	9	September
+::node	o	1.1.1.4	organization	
+::node	11	1.1.3.2	11	11
+::node	n	1.1.1.4.2	name	
+::node	"North_American_Electric_Reliability_Corporation"	1.1.1.4.1	"North_American_Electric_Reliability_Corporation"	
+::node	a2	1.1.2	alert	alert
+::node	h2	1.2.1	have-03	have
+::node	a	1	and	and
+::node	d	1.1.3	date-entity	
+::node	p2	1.2.2	plan-01	plan
+::node	s2	1.2.1.2.1	security	security
+::node	m3	1.2.1.1.1	many	many
+::node	g	1.1	go-08	went
+::node	a3	1.2	and	and
+::node	c	1.1.1	company	companies
+::edge	1.1.1.4.2		name	:op5	1.1.1.4.2.5	reliability	"Reliability"
+::edge	1.1.1.4.2		name	:op6	1.1.1.4.2.6	Council	"Council"
+::edge	1.1.2.2	highest	high	:degree	1.1.2.2.1	highest	most
+::edge	1.1.1.4.2		name	:op3	1.1.1.4.2.3	American	"American"
+::edge	1.2.1.2	presence	presence	:ARG1-of	1.2.1.2.3	effect	effect-01
+::edge	1.1.1.4.2		name	:op4	1.1.1.4.2.4	Electric	"Electric"
+::edge	1.2.1.2	presence	presence	:ARG1-of	1.2.1.2.2	increased	increase-01
+::edge	1.1.1.4.2		name	:op1	1.1.1.4.2.1	The	"The"
+::edge	1.1.1.4.2		name	:op2	1.1.1.4.2.2	North	"North"
+::edge	1.1.1.3	largest	large	:degree	1.1.1.3.1	largest	most
+::edge	1.2.1	have	have-03	:ARG1	1.2.1.2	presence	presence
+::edge	1.2.2	plan	plan-01	:ARG0	1.2.2.1		company
+::edge	1.2.1	have	have-03	:time	1.2.1.3	still	still
+::edge	1.2.2	plan	plan-01	:ARG1	1.2.2.2	extend	extend-01
+::edge	1.2.2.2	extend	extend-01	:ARG0	1.2.2.2.1		company
+::edge	1.2.1	have	have-03	:ARG0	1.2.1.1	companies	company
+::edge	1.2.2.2	extend	extend-01	:ARG1	1.2.2.2.2		presence
+::edge	1.2.2.2	extend	extend-01	:ARG2	1.2.2.2.3	further	further
+::edge	1.1.1	companies	company	:quant	1.1.1.1	30	30
+::edge	1.1.1	companies	company	:mod	1.1.1.2	utility	utility
+::edge	1.1.2	alert	alert	:poss	1.1.2.1	their	company
+::edge	1.1.1	companies	company	:mod	1.1.1.3	largest	large
+::edge	1.1.2	alert	alert	:mod	1.1.2.2	highest	high
+::edge	1.1.3		date-entity	:month	1.1.3.1	September	9
+::edge	1.1.1	companies	company	:poss	1.1.1.4		organization
+::edge	1.1.3		date-entity	:day	1.1.3.2	11	11
+::edge	1.1.1.4		organization	:name	1.1.1.4.2		name
+::edge	1.1.1.4		organization	:wiki	1.1.1.4.1		"North_American_Electric_Reliability_Corporation"
+::edge	1.1	went	go-08	:ARG2	1.1.2	alert	alert
+::edge	1.2	and	and	:op1	1.2.1	have	have-03
+::edge	1.1	went	go-08	:time	1.1.3		date-entity
+::edge	1.2	and	and	:op2	1.2.2	plan	plan-01
+::edge	1.2.1.2	presence	presence	:mod	1.2.1.2.1	security	security
+::edge	1.2.1.1	companies	company	:quant	1.2.1.1.1	many	many
+::edge	1	and	and	:op1	1.1	went	go-08
+::edge	1	and	and	:op2	1.2	and	and
+::edge	1.1	went	go-08	:ARG1	1.1.1	companies	company

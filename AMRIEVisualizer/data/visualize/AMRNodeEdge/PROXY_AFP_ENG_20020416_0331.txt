@@ -1,0 +1,1034 @@
+1	2002-04-16
+1	2002 @-@ 04 @-@ 16
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	4	1.2	4	04
+::node	16	1.3	16	16
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	04	4
+::edge	1		date-entity	:day	1.3	16	16
+2	Tajikistan (TJ); Afghanistan (AF)
+2	Tajikistan ( TJ ) ; Afghanistan ( AF )
+2	0-1.1.2.1 5-1.2.2.1
+::node	n2	1.1.2	name	
+::node	"Afghanistan"	1.2.1	"Afghanistan"	
+::node	a	1	and	
+::node	n	1.2.2	name	
+::node	"Tajikistan"	1.1.2.1	"Tajikistan"	Tajikistan
+::node	c	1.1	country	
+::node	c2	1.2	country	
+::node	"Afghanistan"	1.2.2.1	"Afghanistan"	Afghanistan
+::node	"Tajikistan"	1.1.1	"Tajikistan"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"Afghanistan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Tajikistan	"Tajikistan"
+::edge	1		and	:op1	1.1		country
+::edge	1		and	:op2	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.1		country	:wiki	1.1.1		"Tajikistan"
+3	International; narcotics
+3	International ; narcotics
+3	0-1.1 2-1.2
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	n	1.2	narcotics	narcotics
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	narcotics	narcotics
+4	The number of heroin addicts in Tajikistan has vastly increased over the past five years due to drug trafficking between Afghanistan and Russia and Europe.
+4	The number of heroin addicts in Tajikistan has vastly increased over the past five years due to drug trafficking between Afghanistan and Russia and Europe .
+4	1-1.2.1 2-1.2.1.1.r 3-1.2.1.1.1.1 4-1.2.1.1 4-1.2.1.1.1 4-1.2.1.1.1.r 5-1.2.1.1.2.r 6-1.2.1.1.2.2.1 8-1.2.2 8-1.2.2.r 9-1.2 13-1.2.3.2.1 14-1.2.3.2.2 15-1 16-1 17-1.1.1 18-1.1 20-1.1.2.2.1 21-1.1.3 22-1.1.3.1.2.1 23-1.1.3 24-1.1.3.2.2.1
+::node	n3	1.1.3.2.2	name	
+::node	n4	1.1.3.1.2	name	
+::node	"Europe"	1.1.3.2.1	"Europe"	
+::node	"Afghanistan"	1.1.2.2.1	"Afghanistan"	Afghanistan
+::node	"Tajikistan"	1.2.1.1.2.2.1	"Tajikistan"	Tajikistan
+::node	t3	1.2.3.2	temporal-quantity	
+::node	n6	1.2.3.1	now	
+::node	p	1.2.1.1	person	addicts
+::node	"Afghanistan"	1.1.2.1	"Afghanistan"	
+::node	n5	1.1.2.2	name	
+::node	c6	1.1.3.1	country	
+::node	c7	1.1.3.2	continent	
+::node	h	1.2.1.1.1.1	heroin	heroin
+::node	"Tajikistan"	1.2.1.1.2.1	"Tajikistan"	
+::node	n2	1.2.1.1.2.2	name	
+::node	y	1.2.3.2.2	year	years
+::node	5	1.2.3.2.1	5	five
+::node	"Russia"	1.1.3.1.2.1	"Russia"	Russia
+::node	c5	1.1.2	country	
+::node	n	1.2.1	number-01	number
+::node	c	1	cause-01	to
+::node	a2	1.1.3	and	and
+::node	v	1.2.2	vast	vastly
+::node	c8	1.2.1.1.2	country	
+::node	b	1.2.3	before	
+::node	a3	1.2.1.1.1	addict-01	addicts
+::node	t2	1.1	traffic-01	trafficking
+::node	i2	1.2	increase-01	increased
+::node	"Russia"	1.1.3.1.1	"Russia"	
+::node	"Europe"	1.1.3.2.2.1	"Europe"	Europe
+::node	d2	1.1.1	drug	drug
+::edge	1.1.3.2		continent	:name	1.1.3.2.2		name
+::edge	1.1.3.1		country	:name	1.1.3.1.2		name
+::edge	1.1.3.2		continent	:wiki	1.1.3.2.1		"Europe"
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.1.1.2.2		name	:op1	1.2.1.1.2.2.1	Tajikistan	"Tajikistan"
+::edge	1.2.3		before	:duration	1.2.3.2		temporal-quantity
+::edge	1.2.3		before	:op1	1.2.3.1		now
+::edge	1.2.1	number	number-01	:ARG1	1.2.1.1	addicts	person
+::edge	1.1.2		country	:wiki	1.1.2.1		"Afghanistan"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.3	and	and	:op1	1.1.3.1		country
+::edge	1.1.3	and	and	:op2	1.1.3.2		continent
+::edge	1.2.1.1.1	addicts	addict-01	:ARG2	1.2.1.1.1.1	heroin	heroin
+::edge	1.2.1.1.2		country	:wiki	1.2.1.1.2.1		"Tajikistan"
+::edge	1.2.1.1.2		country	:name	1.2.1.1.2.2		name
+::edge	1.2.3.2		temporal-quantity	:unit	1.2.3.2.2	years	year
+::edge	1.2.3.2		temporal-quantity	:quant	1.2.3.2.1	five	5
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Russia	"Russia"
+::edge	1.1	trafficking	traffic-01	:source	1.1.2		country
+::edge	1.2	increased	increase-01	:ARG1	1.2.1	number	number-01
+::edge	1.1	trafficking	traffic-01	:destination	1.1.3	and	and
+::edge	1.2	increased	increase-01	:manner	1.2.2	vastly	vast
+::edge	1.2.1.1	addicts	person	:location	1.2.1.1.2		country
+::edge	1.2	increased	increase-01	:time	1.2.3		before
+::edge	1.2.1.1	addicts	person	:ARG1-of	1.2.1.1.1	addicts	addict-01
+::edge	1	to	cause-01	:ARG0	1.1	trafficking	traffic-01
+::edge	1	to	cause-01	:ARG1	1.2	increased	increase-01
+::edge	1.1.3.1		country	:wiki	1.1.3.1.1		"Russia"
+::edge	1.1.3.2.2		name	:op1	1.1.3.2.2.1	Europe	"Europe"
+::edge	1.1	trafficking	traffic-01	:ARG1	1.1.1	drug	drug
+5	The number of heroin addicts in Tajikistan has vastly increased over the past five years due to drug trafficking between Afghanistan and Europe.
+5	The number of heroin addicts in Tajikistan has vastly increased over the past five years due to drug trafficking between Afghanistan and Europe .
+5	1-1.2.1 2-1.2.1.1.r 3-1.2.1.1.1.1 4-1.2.1.1 4-1.2.1.1.1 4-1.2.1.1.1.r 5-1.2.1.1.2.r 6-1.2.1.1.2.2.1 8-1.2.2 8-1.2.2.r 9-1.2 13-1.2.3.2.1 14-1.2.3.2.2 15-1 16-1 17-1.1.1 18-1.1 20-1.1.2.2.1 22-1.1.3.2.1
+::node	"Europe"	1.1.3.2.1	"Europe"	Europe
+::node	"Afghanistan"	1.1.2.2.1	"Afghanistan"	Afghanistan
+::node	"Tajikistan"	1.2.1.1.2.2.1	"Tajikistan"	Tajikistan
+::node	t	1.2.3.2	temporal-quantity	
+::node	n5	1.2.3.1	now	
+::node	p	1.2.1.1	person	addicts
+::node	"Afghanistan"	1.1.2.1	"Afghanistan"	
+::node	n4	1.1.2.2	name	
+::node	"Europe"	1.1.3.1	"Europe"	
+::node	n3	1.1.3.2	name	
+::node	h	1.2.1.1.1.1	heroin	heroin
+::node	"Tajikistan"	1.2.1.1.2.1	"Tajikistan"	
+::node	n2	1.2.1.1.2.2	name	
+::node	y	1.2.3.2.2	year	years
+::node	5	1.2.3.2.1	5	five
+::node	c	1.1.2	country	
+::node	n	1.2.1	number-01	number
+::node	c4	1	cause-01	to
+::node	c2	1.1.3	continent	
+::node	v	1.2.2	vast	vastly
+::node	c3	1.2.1.1.2	country	
+::node	b	1.2.3	before	
+::node	a2	1.2.1.1.1	addict-01	addicts
+::node	t2	1.1	traffic-01	trafficking
+::node	i	1.2	increase-01	increased
+::node	d	1.1.1	drug	drug
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	Europe	"Europe"
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.1.1.2.2		name	:op1	1.2.1.1.2.2.1	Tajikistan	"Tajikistan"
+::edge	1.2.3		before	:duration	1.2.3.2		temporal-quantity
+::edge	1.2.3		before	:op1	1.2.3.1		now
+::edge	1.2.1	number	number-01	:ARG1	1.2.1.1	addicts	person
+::edge	1.1.2		country	:wiki	1.1.2.1		"Afghanistan"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.3		continent	:wiki	1.1.3.1		"Europe"
+::edge	1.1.3		continent	:name	1.1.3.2		name
+::edge	1.2.1.1.1	addicts	addict-01	:ARG2	1.2.1.1.1.1	heroin	heroin
+::edge	1.2.1.1.2		country	:wiki	1.2.1.1.2.1		"Tajikistan"
+::edge	1.2.1.1.2		country	:name	1.2.1.1.2.2		name
+::edge	1.2.3.2		temporal-quantity	:unit	1.2.3.2.2	years	year
+::edge	1.2.3.2		temporal-quantity	:quant	1.2.3.2.1	five	5
+::edge	1.1	trafficking	traffic-01	:source	1.1.2		country
+::edge	1.2	increased	increase-01	:ARG1	1.2.1	number	number-01
+::edge	1.1	trafficking	traffic-01	:destination	1.1.3		continent
+::edge	1.2	increased	increase-01	:manner	1.2.2	vastly	vast
+::edge	1.2.1.1	addicts	person	:location	1.2.1.1.2		country
+::edge	1.2	increased	increase-01	:time	1.2.3		before
+::edge	1.2.1.1	addicts	person	:ARG1-of	1.2.1.1.1	addicts	addict-01
+::edge	1	to	cause-01	:ARG0	1.1	trafficking	traffic-01
+::edge	1	to	cause-01	:ARG1	1.2	increased	increase-01
+::edge	1.1	trafficking	traffic-01	:ARG1	1.1.1	drug	drug
+6	The majority of the heroin is grown in neighboring Afghanistan.
+6	The majority of the heroin is grown in neighboring Afghanistan .
+6	1-1.1.1 2-1.1.1.r 4-1.1 6-1 7-1.2.r 8-1.2.3 9-1.2.2.1
+::node	"Afghanistan"	1.2.1	"Afghanistan"	
+::node	g	1	grow-03	grown
+::node	n2	1.2.2	name	
+::node	n	1.2.3	neighbor-01	neighboring
+::node	h	1.1	heroin	heroin
+::node	c	1.2	country	
+::node	"Afghanistan"	1.2.2.1	"Afghanistan"	Afghanistan
+::node	m	1.1.1	majority	majority
+::edge	1.2		country	:wiki	1.2.1		"Afghanistan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.2		country	:ARG1-of	1.2.3	neighboring	neighbor-01
+::edge	1	grown	grow-03	:ARG1	1.1	heroin	heroin
+::edge	1	grown	grow-03	:location	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.1	heroin	heroin	:quant	1.1.1	majority	majority
+7	Afghanistan is the world's top opium producer.
+7	Afghanistan is the world 's top opium producer .
+7	0-1.1.2.1 3-1.3 4-1.3.r 5-1.4 6-1.2 7-1
+::node	n	1.1.2	name	
+::node	p	1	produce-01	producer
+::node	"Afghanistan"	1.1.2.1	"Afghanistan"	Afghanistan
+::node	c	1.1	country	
+::node	o	1.2	opium	opium
+::node	w	1.3	world	world
+::node	t	1.4	top	top
+::node	"Afghanistan"	1.1.1	"Afghanistan"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1	producer	produce-01	:ARG0	1.1		country
+::edge	1	producer	produce-01	:ARG1	1.2	opium	opium
+::edge	1	producer	produce-01	:location	1.3	world	world
+::edge	1	producer	produce-01	:mod	1.4	top	top
+::edge	1.1		country	:wiki	1.1.1		"Afghanistan"
+8	Tajikistan shares a 1300-kilometer (800-mile) border with Afghanistan and has become a transit point for heroin being trafficked into Russia and Europe.
+8	Tajikistan shares a 1300 @-@ kilometer ( 800 @-@ mile ) border with Afghanistan and has become a transit point for heroin being trafficked into Russia and Europe .
+8	0-1.1.1.2.1 1-1.1 3-1.1.2.1.1.1 5-1.1.2.1.1.2 7-1.1.2.1.2.1 9-1.1.2.1.2.2 11-1.1.2 12-1.1.3.r 13-1.1.3.2.1 14-1 16-1.2 18-1.2.2.1 19-1.2.2 20-1.2.2.2.r 21-1.2.2.2.1 23-1.2.2.2 24-1.2.2.2.2.r 25-1.2.2.2.2.1.2.1 26-1.2.2.2.2 27-1.2.2.2.2.2.2.1
+::node	"Afghanistan"	1.1.3.2.1	"Afghanistan"	Afghanistan
+::node	k	1.1.2.1.1.2	kilometer	kilometer
+::node	800	1.1.2.1.2.1	800	800
+::node	m	1.1.2.1.2.2	mile	mile
+::node	1300	1.1.2.1.1.1	1300	1300
+::node	"Russia"	1.2.2.2.2.1.2.1	"Russia"	Russia
+::node	d2	1.1.2.1.2	distance-quantity	
+::node	d	1.1.2.1.1	distance-quantity	
+::node	"Europe"	1.2.2.2.2.2.2.1	"Europe"	Europe
+::node	"Tajikistan"	1.1.1.2.1	"Tajikistan"	Tajikistan
+::node	t	1.2.2.1	transit	transit
+::node	t2	1.2.2.2	traffic-01	trafficked
+::node	h	1.2.2.2.1	heroin	heroin
+::node	c4	1.2.2.2.2.2	continent	
+::node	a3	1.2.2.2.2	and	and
+::node	c3	1.2.2.2.2.1	country	
+::node	"Tajikistan"	1.1.1.1	"Tajikistan"	
+::node	n4	1.1.1.2	name	
+::node	a2	1.1.2.1	and	
+::node	"Afghanistan"	1.1.3.1	"Afghanistan"	
+::node	n3	1.1.3.2	name	
+::node	b	1.1.2	border	border
+::node	c	1.2.1	country	
+::node	a	1	and	and
+::node	c2	1.1.3	country	
+::node	p	1.2.2	point	point
+::node	s	1.1	share-01	shares
+::node	n	1.2.2.2.2.2.2	name	
+::node	b2	1.2	become-01	become
+::node	n2	1.2.2.2.2.1.2	name	
+::node	"Europe"	1.2.2.2.2.2.1	"Europe"	
+::node	"Russia"	1.2.2.2.2.1.1	"Russia"	
+::node	c	1.1.1	country	
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.2.1.1		distance-quantity	:unit	1.1.2.1.1.2	kilometer	kilometer
+::edge	1.1.2.1.2		distance-quantity	:quant	1.1.2.1.2.1	800	800
+::edge	1.1.2.1.2		distance-quantity	:unit	1.1.2.1.2.2	mile	mile
+::edge	1.1.2.1.1		distance-quantity	:quant	1.1.2.1.1.1	1300	1300
+::edge	1.2.2.2.2.1.2		name	:op1	1.2.2.2.2.1.2.1	Russia	"Russia"
+::edge	1.1.2.1		and	:op2	1.1.2.1.2		distance-quantity
+::edge	1.1.2.1		and	:op1	1.1.2.1.1		distance-quantity
+::edge	1.2.2.2.2.2.2		name	:op1	1.2.2.2.2.2.2.1	Europe	"Europe"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Tajikistan	"Tajikistan"
+::edge	1.2.2	point	point	:mod	1.2.2.1	transit	transit
+::edge	1.2.2	point	point	:purpose	1.2.2.2	trafficked	traffic-01
+::edge	1.2.2.2	trafficked	traffic-01	:ARG1	1.2.2.2.1	heroin	heroin
+::edge	1.2.2.2.2	and	and	:op2	1.2.2.2.2.2		continent
+::edge	1.2.2.2	trafficked	traffic-01	:destination	1.2.2.2.2	and	and
+::edge	1.2.2.2.2	and	and	:op1	1.2.2.2.2.1		country
+::edge	1.1.1		country	:wiki	1.1.1.1		"Tajikistan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2	border	border	:duration	1.1.2.1		and
+::edge	1.1.3		country	:wiki	1.1.3.1		"Afghanistan"
+::edge	1.1.3		country	:name	1.1.3.2		name
+::edge	1.1	shares	share-01	:ARG1	1.1.2	border	border
+::edge	1.2	become	become-01	:ARG1	1.2.1		country
+::edge	1.1	shares	share-01	:ARG2	1.1.3		country
+::edge	1.2	become	become-01	:ARG2	1.2.2	point	point
+::edge	1	and	and	:op1	1.1	shares	share-01
+::edge	1.2.2.2.2.2		continent	:name	1.2.2.2.2.2.2		name
+::edge	1	and	and	:op2	1.2	become	become-01
+::edge	1.2.2.2.2.1		country	:name	1.2.2.2.2.1.2		name
+::edge	1.2.2.2.2.2		continent	:wiki	1.2.2.2.2.2.1		"Europe"
+::edge	1.2.2.2.2.1		country	:wiki	1.2.2.2.2.1.1		"Russia"
+::edge	1.1	shares	share-01	:ARG0	1.1.1		country
+9	In 2001 the Russian army and Tajik police confiscated nearly 9 tons of drugs and arrested more than 2000 people.
+9	In 2001 the Russian army and Tajik police confiscated nearly 9 tons of drugs and arrested more than 2000 people .
+9	1-1.3.1 3-1.1.1.1.1.2.1 4-1.1.1.1 5-1.1.1 6-1.1.1.2.1.2.1 7-1.1.1.2 8-1.1 9-1.1.2.1.3 10-1.1.2.1.1 11-1.1.2.1.2 12-1.1.2.1.r 13-1.1.2 14-1 15-1.2 16-1.2.2.1 17-1.2.2.1 18-1.2.2.1.1 19-1.2.2
+::node	"Tajikistan"	1.1.1.2.1.2.1	"Tajikistan"	Tajik
+::node	t	1.1.2.1.2	ton	tons
+::node	9	1.1.2.1.1	9	9
+::node	c3	1.1.1.2.1	country	
+::node	c2	1.1.1.1.1	country	
+::node	m2	1.2.2.1	more-than	than
+::node	"Russia"	1.1.1.1.1.1	"Russia"	
+::node	n3	1.1.1.1.1.2	name	
+::node	a3	1.1.1.1	army	army
+::node	p	1.1.1.2	police	police
+::node	m	1.1.2.1	mass-quantity	
+::node	2000	1.2.2.1.1	2000	2000
+::node	"Russia"	1.1.1.1.1.2.1	"Russia"	Russian
+::node	n2	1.1.1.2.1.2	name	
+::node	"Tajikistan"	1.1.1.2.1.1	"Tajikistan"	
+::node	d2	1.1.2	drug	drugs
+::node	a2	1.2.1	and	
+::node	a	1	and	and
+::node	p2	1.2.2	person	people
+::node	2001	1.3.1	2001	2001
+::node	c	1.1	confiscate-01	confiscated
+::node	n	1.1.2.1.3	near	nearly
+::node	a4	1.2	arrest-01	arrested
+::node	d	1.3	date-entity	
+::node	a2	1.1.1	and	and
+::edge	1.1.1.1.1		country	:wiki	1.1.1.1.1.1		"Russia"
+::edge	1.1.1.1.1		country	:name	1.1.1.1.1.2		name
+::edge	1.1.1	and	and	:op1	1.1.1.1	army	army
+::edge	1.1.1	and	and	:op2	1.1.1.2	police	police
+::edge	1.1.1.2.1.2		name	:op1	1.1.1.2.1.2.1	Tajik	"Tajikistan"
+::edge	1.1.2	drugs	drug	:quant	1.1.2.1		mass-quantity
+::edge	1.2.2.1	than	more-than	:op1	1.2.2.1.1	2000	2000
+::edge	1.1.1.1.1.2		name	:op1	1.1.1.1.1.2.1	Russian	"Russia"
+::edge	1.1.2.1		mass-quantity	:unit	1.1.2.1.2	tons	ton
+::edge	1.1.2.1		mass-quantity	:quant	1.1.2.1.1	9	9
+::edge	1.1.1.2.1		country	:name	1.1.1.2.1.2		name
+::edge	1.1.1.2.1		country	:wiki	1.1.1.2.1.1		"Tajikistan"
+::edge	1.1	confiscated	confiscate-01	:ARG1	1.1.2	drugs	drug
+::edge	1.2	arrested	arrest-01	:ARG0	1.2.1		and
+::edge	1.2	arrested	arrest-01	:ARG1	1.2.2	people	person
+::edge	1.3		date-entity	:year	1.3.1	2001	2001
+::edge	1	and	and	:op1	1.1	confiscated	confiscate-01
+::edge	1.1.2.1		mass-quantity	:mod	1.1.2.1.3	nearly	near
+::edge	1	and	and	:op2	1.2	arrested	arrest-01
+::edge	1	and	and	:time	1.3		date-entity
+::edge	1.1.1.2	police	police	:mod	1.1.1.2.1		country
+::edge	1.1.1.1	army	army	:mod	1.1.1.1.1		country
+::edge	1.2.2	people	person	:quant	1.2.2.1	than	more-than
+::edge	1.1	confiscated	confiscate-01	:ARG0	1.1.1	and	and
+10	The Russian army guards Tajikistan's border with Afghanistan.
+10	The Russian army guards Tajikistan 's border with Afghanistan .
+10	1-1.1.1.2.1 2-1.1 3-1 4-1.2.1.1.2.1 6-1.2 7-1.2.1.r 8-1.2.1.2.2.1
+::node	"Russia"	1.1.1.1	"Russia"	
+::node	n3	1.1.1.2	name	
+::node	"Tajikistan"	1.2.1.1.2.1	"Tajikistan"	Tajikistan
+::node	n	1.2.1.2.2	name	
+::node	a2	1.2.1	and	
+::node	g	1	guard-01	guards
+::node	"Afghanistan"	1.2.1.2.2.1	"Afghanistan"	Afghanistan
+::node	n2	1.2.1.1.2	name	
+::node	"Afghanistan"	1.2.1.2.1	"Afghanistan"	
+::node	"Tajikistan"	1.2.1.1.1	"Tajikistan"	
+::node	a	1.1	army	army
+::node	b	1.2	border	border
+::node	"Russia"	1.1.1.2.1	"Russia"	Russian
+::node	c3	1.2.1.2	country	
+::node	c2	1.2.1.1	country	
+::node	c	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"Russia"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Tajikistan	"Tajikistan"
+::edge	1.2.1.2		country	:name	1.2.1.2.2		name
+::edge	1.2	border	border	:poss	1.2.1		and
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.2.1.2		country	:wiki	1.2.1.2.1		"Afghanistan"
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"Tajikistan"
+::edge	1	guards	guard-01	:ARG0	1.1	army	army
+::edge	1	guards	guard-01	:ARG1	1.2	border	border
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Russian	"Russia"
+::edge	1.2.1		and	:op2	1.2.1.2		country
+::edge	1.2.1		and	:op1	1.2.1.1		country
+::edge	1.1	army	army	:poss	1.1.1		country
+11	The majority of Tajikistan's heroin addicts live in cities and are aged between 18 and 25.
+11	The majority of Tajikistan 's heroin addicts live in cities and are aged between 18 and 25 .
+11	1-1.1.1.2 2-1.1.1.2.r 3-1.1.1.3.2.1 4-1.1.1.3.r 5-1.1.1.1.1 6-1.1.1 6-1.1.1.1 6-1.1.1.1.r 7-1.1 8-1.1.2.r 9-1.1.2 10-1 12-1.2 13-1.2.2 14-1.2.2.1 15-1.2.2 16-1.2.2.2
+::node	a	1.1.1.1	addict-01	addicts
+::node	m	1.1.1.2	majority	majority
+::node	c	1.1.1.3	country	
+::node	n	1.1.1.3.2	name	
+::node	c2	1.1.2	city	cities
+::node	m	1.2.1	majority	
+::node	a2	1	and	and
+::node	b	1.2.2	between	and
+::node	l	1.1	live-01	live
+::node	a3	1.2	age-01	aged
+::node	"Tajikistan"	1.1.1.3.1	"Tajikistan"	
+::node	h	1.1.1.1.1	heroin	heroin
+::node	18	1.2.2.1	18	18
+::node	25	1.2.2.2	25	25
+::node	p	1.1.1	person	addicts
+::node	"Tajikistan"	1.1.1.3.2.1	"Tajikistan"	Tajikistan
+::edge	1.1.1	addicts	person	:ARG1-of	1.1.1.1	addicts	addict-01
+::edge	1.1.1	addicts	person	:quant	1.1.1.2	majority	majority
+::edge	1.1.1	addicts	person	:poss	1.1.1.3		country
+::edge	1.1.1.3		country	:name	1.1.1.3.2		name
+::edge	1.1	live	live-01	:location	1.1.2	cities	city
+::edge	1.2	aged	age-01	:ARG1	1.2.1		majority
+::edge	1.2	aged	age-01	:ARG2	1.2.2	and	between
+::edge	1	and	and	:op1	1.1	live	live-01
+::edge	1	and	and	:op2	1.2	aged	age-01
+::edge	1.1.1.3		country	:wiki	1.1.1.3.1		"Tajikistan"
+::edge	1.1.1.1	addicts	addict-01	:ARG2	1.1.1.1.1	heroin	heroin
+::edge	1.2.2	and	between	:op1	1.2.2.1	18	18
+::edge	1.2.2	and	between	:op2	1.2.2.2	25	25
+::edge	1.1	live	live-01	:ARG0	1.1.1	addicts	person
+::edge	1.1.1.3.2		name	:op1	1.1.1.3.2.1	Tajikistan	"Tajikistan"
+12	75 percent of Tajikistan's population lives in rural areas, where heroin addicts are frequently ostracized.
+12	75 percent of Tajikistan 's population lives in rural areas , where heroin addicts are frequently ostracized .
+12	0-1.1.1.2.1 1-1.1.1.2 3-1.1.1.1.1.2.1 4-1.1.1.1.1.r 5-1.1.1.1 6-1 7-1.2.r 8-1.2.1 9-1.2 11-1.2.2.r 12-1.2.2.1.1.1 13-1.2.2.1 13-1.2.2.1.1 13-1.2.2.1.1.r 15-1.2.2.2 15-1.2.2.2.r 16-1.2.2
+::node	"Tajikistan"	1.1.1.1.1.1	"Tajikistan"	
+::node	n	1.1.1.1.1.2	name	
+::node	p3	1.1.1.1	population	population
+::node	p4	1.1.1.2	percentage-entity	percent
+::node	a2	1.2.2.1.1	addict-01	addicts
+::node	"Tajikistan"	1.1.1.1.1.2.1	"Tajikistan"	Tajikistan
+::node	h	1.2.2.1.1.1	heroin	heroin
+::node	r	1.2.1	rural	rural
+::node	l	1	live-01	lives
+::node	o	1.2.2	ostracize-01	ostracized
+::node	p2	1.1	person	
+::node	a	1.2	area	areas
+::node	75	1.1.1.2.1	75	75
+::node	c	1.1.1.1.1	country	
+::node	p	1.2.2.1	person	addicts
+::node	f	1.2.2.2	frequent	frequently
+::node	i	1.1.1	include-91	
+::edge	1.1.1.1.1		country	:wiki	1.1.1.1.1.1		"Tajikistan"
+::edge	1.1.1.1.1		country	:name	1.1.1.1.1.2		name
+::edge	1.1.1		include-91	:ARG2	1.1.1.1	population	population
+::edge	1.1.1		include-91	:ARG3	1.1.1.2	percent	percentage-entity
+::edge	1.2.2.1	addicts	person	:ARG1-of	1.2.2.1.1	addicts	addict-01
+::edge	1.1.1.1.1.2		name	:op1	1.1.1.1.1.2.1	Tajikistan	"Tajikistan"
+::edge	1.2.2.1.1	addicts	addict-01	:ARG2	1.2.2.1.1.1	heroin	heroin
+::edge	1.2	areas	area	:mod	1.2.1	rural	rural
+::edge	1.2	areas	area	:location-of	1.2.2	ostracized	ostracize-01
+::edge	1	lives	live-01	:ARG1	1.1		person
+::edge	1	lives	live-01	:location	1.2	areas	area
+::edge	1.1.1.2	percent	percentage-entity	:value	1.1.1.2.1	75	75
+::edge	1.1.1.1	population	population	:poss	1.1.1.1.1		country
+::edge	1.2.2	ostracized	ostracize-01	:ARG1	1.2.2.1	addicts	person
+::edge	1.2.2	ostracized	ostracize-01	:manner	1.2.2.2	frequently	frequent
+::edge	1.1		person	:ARG1-of	1.1.1		include-91
+13	Head of a public drug clinic in Dushanbe, Tajikistan Andrei Onishchenko, stated --
+13	Head of a public drug clinic in Dushanbe , Tajikistan Andrei Onishchenko , stated --
+13	0-1.1 0-1.1.3 0-1.1.3.r 1-1.1.3.1.r 3-1.1.3.1.2 4-1.1.3.1.1 5-1.1.3.1 6-1.1.3.1.4.r 7-1.1.3.1.4.2.1 9-1.1.3.1.3.2.1 10-1.1.2.1 11-1.1.2.2 13-1
+::node	c3	1.1.3.1.4	city	
+::node	c2	1.1.3.1.3	country	
+::node	"Andrei"	1.1.2.1	"Andrei"	Andrei
+::node	p2	1.1.3.1.2	public	public
+::node	"Onishchenko"	1.1.2.2	"Onishchenko"	Onishchenko
+::node	c	1.1.3.1	clinic	clinic
+::node	"Tajikistan"	1.1.3.1.3.1	"Tajikistan"	
+::node	n3	1.1.3.1.3.2	name	
+::node	"Dushanbe"	1.1.3.1.4.1	"Dushanbe"	
+::node	n2	1.1.3.1.4.2	name	
+::node	"Tajikistan"	1.1.3.1.3.2.1	"Tajikistan"	Tajikistan
+::node	n	1.1.2	name	
+::node	s	1	state-01	stated
+::node	h	1.1.3	head-01	Head
+::node	p	1.1	person	Head
+::node	"Dushanbe"	1.1.3.1.4.2.1	"Dushanbe"	Dushanbe
+::node	d	1.1.3.1.1	drug	drug
+::node	-	1.1.1	-	
+::edge	1.1.3.1	clinic	clinic	:location	1.1.3.1.4		city
+::edge	1.1.3.1	clinic	clinic	:location	1.1.3.1.3		country
+::edge	1.1.2		name	:op1	1.1.2.1	Andrei	"Andrei"
+::edge	1.1.3.1	clinic	clinic	:mod	1.1.3.1.2	public	public
+::edge	1.1.2		name	:op2	1.1.2.2	Onishchenko	"Onishchenko"
+::edge	1.1.3	Head	head-01	:ARG1	1.1.3.1	clinic	clinic
+::edge	1.1.3.1.3		country	:wiki	1.1.3.1.3.1		"Tajikistan"
+::edge	1.1.3.1.3		country	:name	1.1.3.1.3.2		name
+::edge	1.1.3.1.4		city	:wiki	1.1.3.1.4.1		"Dushanbe"
+::edge	1.1.3.1.4		city	:name	1.1.3.1.4.2		name
+::edge	1.1.3.1.3.2		name	:op1	1.1.3.1.3.2.1	Tajikistan	"Tajikistan"
+::edge	1.1	Head	person	:name	1.1.2		name
+::edge	1.1	Head	person	:ARG0-of	1.1.3	Head	head-01
+::edge	1	stated	state-01	:ARG0	1.1	Head	person
+::edge	1.1.3.1.4.2		name	:op1	1.1.3.1.4.2.1	Dushanbe	"Dushanbe"
+::edge	1.1.3.1	clinic	clinic	:mod	1.1.3.1.1	drug	drug
+::edge	1.1	Head	person	:wiki	1.1.1		-
+14	There are 5000 heroin addicts officially registered in Tajikistan, compared with 57 in 1997.
+14	There are 5000 heroin addicts officially registered in Tajikistan , compared with 57 in 1997 .
+14	2-1.1.1 3-1.1.2.1 3-1.4.2.1 4-1.1 4-1.1.2 4-1.1.2.r 4-1.4 4-1.4.2 4-1.4.2.r 5-1.2 5-1.2.r 6-1 7-1.3.r 8-1.3.2.1 10-1.4.r 12-1.4.1 13-1.4.3.r 14-1.4.3.1
+::node	h	1.1.2.1	heroin	heroin
+::node	"Tajikistan"	1.3.2.1	"Tajikistan"	Tajikistan
+::node	a	1.1.2	addict-01	addicts
+::node	r	1	register-02	registered
+::node	"Tajikistan"	1.3.1	"Tajikistan"	
+::node	n	1.3.2	name	
+::node	57	1.4.1	57	57
+::node	a2	1.4.2	addict-01	addicts
+::node	p	1.1	person	addicts
+::node	d	1.4.3	date-entity	
+::node	o	1.2	official	officially
+::node	c	1.3	country	
+::node	p2	1.4	person	addicts
+::node	h2	1.4.2.1	heroin	heroin
+::node	1997	1.4.3.1	1997	1997
+::node	5000	1.1.1	5000	5000
+::edge	1.1.2	addicts	addict-01	:ARG2	1.1.2.1	heroin	heroin
+::edge	1.3.2		name	:op1	1.3.2.1	Tajikistan	"Tajikistan"
+::edge	1.1	addicts	person	:ARG1-of	1.1.2	addicts	addict-01
+::edge	1.3		country	:wiki	1.3.1		"Tajikistan"
+::edge	1.3		country	:name	1.3.2		name
+::edge	1.4	addicts	person	:quant	1.4.1	57	57
+::edge	1.4	addicts	person	:ARG1-of	1.4.2	addicts	addict-01
+::edge	1	registered	register-02	:ARG1	1.1	addicts	person
+::edge	1.4	addicts	person	:time	1.4.3		date-entity
+::edge	1	registered	register-02	:manner	1.2	officially	official
+::edge	1	registered	register-02	:location	1.3		country
+::edge	1	registered	register-02	:compared-to	1.4	addicts	person
+::edge	1.4.2	addicts	addict-01	:ARG2	1.4.2.1	heroin	heroin
+::edge	1.4.3		date-entity	:year	1.4.3.1	1997	1997
+::edge	1.1	addicts	person	:quant	1.1.1	5000	5000
+15	The actual figure is seven times greater than the official number.
+15	The actual figure is seven times greater than the official number .
+15	1-1.1.1 2-1.1 4-1.2.1 5-1.2 9-1.2.2.1 10-1.2.2
+::node	7	1.2.1	7	seven
+::node	e	1	equal-01	
+::node	n2	1.2.2	number	number
+::node	f	1.1	figure	figure
+::node	p	1.2	product-of	times
+::node	o	1.2.2.1	official	official
+::node	a	1.1.1	actual	actual
+::edge	1.2	times	product-of	:op1	1.2.1	seven	7
+::edge	1.2	times	product-of	:op2	1.2.2	number	number
+::edge	1		equal-01	:ARG1	1.1	figure	figure
+::edge	1		equal-01	:ARG2	1.2	times	product-of
+::edge	1.2.2	number	number	:mod	1.2.2.1	official	official
+::edge	1.1	figure	figure	:mod	1.1.1	actual	actual
+16	The low cost and availability of heroin are among the causes of the addiction problem.
+16	The low cost and availability of heroin are among the causes of the addiction problem .
+16	1-1.1.1.1 2-1.1.1 3-1.1 4-1.1.2 5-1.1.2.1.r 6-1.1.2.1 8-1 10-1.2 11-1.2.1.r 13-1.2.1.1 14-1.2.1
+::node	a3	1.1.2	availability	availability
+::node	p	1.2.1	problem	problem
+::node	i	1	include-91	among
+::node	l	1.1.1.1	low	low
+::node	h	1.1.2.1	heroin	heroin
+::node	a2	1.1	and	and
+::node	c	1.2	cause-01	causes
+::node	a	1.2.1.1	addict-01	addiction
+::node	c2	1.1.1	cost-01	cost
+::edge	1.1	and	and	:op2	1.1.2	availability	availability
+::edge	1.2	causes	cause-01	:ARG1	1.2.1	problem	problem
+::edge	1.1.1	cost	cost-01	:ARG2	1.1.1.1	low	low
+::edge	1.1.2	availability	availability	:poss	1.1.2.1	heroin	heroin
+::edge	1	among	include-91	:ARG1	1.1	and	and
+::edge	1	among	include-91	:ARG2	1.2	causes	cause-01
+::edge	1.2.1	problem	problem	:topic	1.2.1.1	addiction	addict-01
+::edge	1.1	and	and	:op1	1.1.1	cost	cost-01
+17	One dose of heroin costs less than a dollar in Tajikistan, which is less than the price of a bottle of the local vodka.
+17	One dose of heroin costs less than a dollar in Tajikistan , which is less than the price of a bottle of the local vodka .
+17	0-1.1.1 0-1.2.1.1 1-1.1 2-1.1.2.r 3-1.1.2 4-1 5-1.2 6-1.2 6-1.2.2 6-1.2.2.r 7-1.2.1.1 8-1.2.1.2 9-1.3.r 10-1.3.2.1 14-1.2.2 15-1.2.2.1.r 17-1.2.2.1 18-1.2.2.1.1.r 20-1.2.2.1.1.2 21-1.2.2.1.1.2.r 23-1.2.2.1.1.1 24-1.2.2.1.1
+::node	v	1.2.2.1.1	vodka	vodka
+::node	l3	1.2.2.1.1.1	local	local
+::node	b	1.2.2.1.1.2	bottle	bottle
+::node	"Tajikistan"	1.3.2.1	"Tajikistan"	Tajikistan
+::node	h	1.1.2	heroin	heroin
+::node	m	1.2.1	monetary-quantity	
+::node	c	1	cost-01	costs
+::node	l2	1.2.2	less-than	less
+::node	"Tajikistan"	1.3.1	"Tajikistan"	
+::node	n	1.3.2	name	
+::node	d	1.1	dose-01	dose
+::node	l	1.2	less-than	than
+::node	c2	1.3	country	
+::node	d2	1.2.1.2	dollar	dollar
+::node	p	1.2.2.1	price-01	price
+::node	1	1.2.1.1	1	a
+::node	1	1.1.1	1	One
+::edge	1.2.2.1	price	price-01	:ARG1	1.2.2.1.1	vodka	vodka
+::edge	1.2.2.1.1	vodka	vodka	:mod	1.2.2.1.1.1	local	local
+::edge	1.2.2.1.1	vodka	vodka	:quant	1.2.2.1.1.2	bottle	bottle
+::edge	1.3.2		name	:op1	1.3.2.1	Tajikistan	"Tajikistan"
+::edge	1.1	dose	dose-01	:ARG2	1.1.2	heroin	heroin
+::edge	1.2	than	less-than	:op1	1.2.1		monetary-quantity
+::edge	1.2	than	less-than	:quant	1.2.2	less	less-than
+::edge	1.3		country	:wiki	1.3.1		"Tajikistan"
+::edge	1.3		country	:name	1.3.2		name
+::edge	1	costs	cost-01	:ARG1	1.1	dose	dose-01
+::edge	1	costs	cost-01	:ARG2	1.2	than	less-than
+::edge	1	costs	cost-01	:location	1.3		country
+::edge	1.2.1		monetary-quantity	:unit	1.2.1.2	dollar	dollar
+::edge	1.2.2	less	less-than	:compared-to	1.2.2.1	price	price-01
+::edge	1.2.1		monetary-quantity	:quant	1.2.1.1	a	1
+::edge	1.1	dose	dose-01	:quant	1.1.1	One	1
+18	an addict who has been using heroin for 2 years needs to use 3 grams of heroin every 24 hours.
+18	an addict who has been using heroin for 2 years needs to use 3 grams of heroin every 24 hours .
+18	1-1.1 1-1.1.2 1-1.1.2.r 5-1.1.1 6-1.1.1.1 7-1.1.1.2.r 8-1.1.1.2.1 9-1.1.1.2.2 10-1 12-1.2 13-1.2.1.1.1 14-1.2.1.1.2 15-1.2.1.1.r 16-1.2.1 17-1.2.2.3 18-1.2.2.1 19-1.2.2.2
+::node	h	1.1.1.1	heroin	heroin
+::node	t	1.1.1.2	temporal-quantity	
+::node	a	1.1.2	addict-01	addict
+::node	h2	1.2.1	heroin	heroin
+::node	n	1	need-01	needs
+::node	t2	1.2.2	temporal-quantity	
+::node	3	1.2.1.1.2	3	grams
+::node	g	1.2.1.1.1	gram	3
+::node	p	1.1	person	addict
+::node	u2	1.2	use-01	use
+::node	2	1.1.1.2.2	2	years
+::node	e	1.2.2.3	every	every
+::node	y	1.1.1.2.1	year	2
+::node	h3	1.2.2.1	hour	24
+::node	24	1.2.2.2	24	hours
+::node	m	1.2.1.1	mass-quantity	
+::node	u	1.1.1	use-01	using
+::edge	1.1.1	using	use-01	:ARG1	1.1.1.1	heroin	heroin
+::edge	1.1.1	using	use-01	:duration	1.1.1.2		temporal-quantity
+::edge	1.1	addict	person	:ARG1-of	1.1.2	addict	addict-01
+::edge	1.2	use	use-01	:ARG1	1.2.1	heroin	heroin
+::edge	1.2	use	use-01	:frequency	1.2.2		temporal-quantity
+::edge	1.2.1.1		mass-quantity	:quant	1.2.1.1.2	grams	3
+::edge	1.2.1.1		mass-quantity	:unit	1.2.1.1.1	3	gram
+::edge	1	needs	need-01	:ARG0	1.1	addict	person
+::edge	1	needs	need-01	:ARG1	1.2	use	use-01
+::edge	1.1.1.2		temporal-quantity	:quant	1.1.1.2.2	years	2
+::edge	1.2.2		temporal-quantity	:mod	1.2.2.3	every	every
+::edge	1.1.1.2		temporal-quantity	:unit	1.1.1.2.1	2	year
+::edge	1.2.2		temporal-quantity	:unit	1.2.2.1	24	hour
+::edge	1.2.2		temporal-quantity	:quant	1.2.2.2	hours	24
+::edge	1.2.1	heroin	heroin	:quant	1.2.1.1		mass-quantity
+::edge	1.1	addict	person	:ARG0-of	1.1.1	using	use-01
+19	3 grams of heroin costs 70 somonis or 30 dollars.
+19	3 grams of heroin costs 70 somonis or 30 dollars .
+19	0-1.1.1.1 1-1.1.1.2 2-1.1.1.r 3-1.1 4-1 5-1.2.1.1 6-1.2.1.2 7-1.2 8-1.2.2.1 9-1.2.2.2
+::node	m2	1.2.1	monetary-quantity	
+::node	c	1	cost-01	costs
+::node	m	1.2.2	monetary-quantity	
+::node	3	1.1.1.1	3	3
+::node	g	1.1.1.2	gram	grams
+::node	h	1.1	heroin	heroin
+::node	o	1.2	or	or
+::node	s	1.2.1.2	somoni	somonis
+::node	30	1.2.2.1	30	30
+::node	d	1.2.2.2	dollar	dollars
+::node	70	1.2.1.1	70	70
+::node	m3	1.1.1	mass-quantity	
+::edge	1.2	or	or	:op1	1.2.1		monetary-quantity
+::edge	1.2	or	or	:op2	1.2.2		monetary-quantity
+::edge	1.1.1		mass-quantity	:quant	1.1.1.1	3	3
+::edge	1.1.1		mass-quantity	:unit	1.1.1.2	grams	gram
+::edge	1	costs	cost-01	:ARG1	1.1	heroin	heroin
+::edge	1	costs	cost-01	:ARG2	1.2	or	or
+::edge	1.2.1		monetary-quantity	:unit	1.2.1.2	somonis	somoni
+::edge	1.2.2		monetary-quantity	:quant	1.2.2.1	30	30
+::edge	1.2.2		monetary-quantity	:unit	1.2.2.2	dollars	dollar
+::edge	1.2.1		monetary-quantity	:quant	1.2.1.1	70	70
+::edge	1.1	heroin	heroin	:quant	1.1.1		mass-quantity
+20	an addict is willing to commit any crime to pay for heroin.
+20	an addict is willing to commit any crime to pay for heroin .
+20	1-1.1 1-1.1.1 1-1.1.1.r 3-1 5-1.2 6-1.2.2.1 7-1.2.2 9-1.2.3 10-1.2.3.2.r 11-1.2.3.2
+::node	p	1.2.1	person	
+::node	w	1	will-02	willing
+::node	c2	1.2.2	crime	crime
+::node	p2	1.2.3	pay-01	pay
+::node	p	1.1	person	addict
+::node	c	1.2	commit-02	commit
+::node	h	1.2.3.2	heroin	heroin
+::node	a2	1.2.2.1	any	any
+::node	p	1.2.3.1	person	
+::node	a	1.1.1	addict-01	addict
+::edge	1.2	commit	commit-02	:ARG0	1.2.1		person
+::edge	1.2	commit	commit-02	:ARG1	1.2.2	crime	crime
+::edge	1.2	commit	commit-02	:purpose	1.2.3	pay	pay-01
+::edge	1	willing	will-02	:ARG0	1.1	addict	person
+::edge	1	willing	will-02	:ARG1	1.2	commit	commit-02
+::edge	1.2.3	pay	pay-01	:ARG3	1.2.3.2	heroin	heroin
+::edge	1.2.2	crime	crime	:mod	1.2.2.1	any	any
+::edge	1.2.3	pay	pay-01	:ARG0	1.2.3.1		person
+::edge	1.1	addict	person	:ARG1-of	1.1.1	addict	addict-01
+21	Afghan heroin is the strongest in the world because it is made from poppies cultivated at high altitudes and therefore subjected to high doses of ultra-violet light.
+21	Afghan heroin is the strongest in the world because it is made from poppies cultivated at high altitudes and therefore subjected to high doses of ultra @-@ violet light .
+21	0-1.2.1.2.1 1-1.2 4-1.2.2 4-1.2.2.1 4-1.2.2.1.r 5-1.2.3.r 7-1.2.3 8-1 9-1.1.1 11-1.1 12-1.1.2.r 13-1.1.2 14-1.1.2.1 15-1.1.2.1.1.r 16-1.1.2.1.1.1 17-1.1.2.1.1 19-1.1.3 20-1.1.3.1 21-1.1.3.1.2.r 22-1.1.3.1.2.2 23-1.1.3.1.2 24-1.1.3.1.2.1.r 25-1.1.3.1.2.1.1 27-1.1.3.1.2.1.1 28-1.1.3.1.2.1
+::node	c3	1.1.2.1	cultivate-01	cultivated
+::node	d	1.1.3.1.2	dose-01	doses
+::node	s2	1.1.3.1	subject-01	subjected
+::node	h2	1.1.2.1.1.1	high	high
+::node	h3	1.1.3.1.2.2	high	high
+::node	a	1.1.2.1.1	altitude	altitudes
+::node	l	1.1.3.1.2.1	light	light
+::node	p	1.1.2	poppy	poppies
+::node	c2	1.2.1	country	
+::node	c	1	cause-01	because
+::node	i	1.1.3	infer-01	therefore
+::node	u	1.1.3.1.2.1.1	ultra-violet	violet
+::node	s	1.2.2	strong	strongest
+::node	"Afghanistan"	1.2.1.2.1	"Afghanistan"	Afghan
+::node	w	1.2.3	world	world
+::node	m2	1.1	make-01	made
+::node	h	1.2	heroin	heroin
+::node	n	1.2.1.2	name	
+::node	m	1.2.2.1	most	strongest
+::node	p	1.1.3.1.1	poppy	
+::node	"Afghanistan"	1.2.1.1	"Afghanistan"	
+::node	h	1.1.1	heroin	it
+::edge	1.1.2	poppies	poppy	:ARG1-of	1.1.2.1	cultivated	cultivate-01
+::edge	1.1.3.1	subjected	subject-01	:ARG2	1.1.3.1.2	doses	dose-01
+::edge	1.1.3	therefore	infer-01	:ARG1	1.1.3.1	subjected	subject-01
+::edge	1.1.2.1.1	altitudes	altitude	:mod	1.1.2.1.1.1	high	high
+::edge	1.1.3.1.2	doses	dose-01	:mod	1.1.3.1.2.2	high	high
+::edge	1.1.2.1	cultivated	cultivate-01	:location	1.1.2.1.1	altitudes	altitude
+::edge	1.1.3.1.2	doses	dose-01	:ARG2	1.1.3.1.2.1	light	light
+::edge	1.1	made	make-01	:ARG2	1.1.2	poppies	poppy
+::edge	1.2	heroin	heroin	:poss	1.2.1		country
+::edge	1.1	made	make-01	:ARG2-of	1.1.3	therefore	infer-01
+::edge	1.1.3.1.2.1	light	light	:mod	1.1.3.1.2.1.1	violet	ultra-violet
+::edge	1.2	heroin	heroin	:mod	1.2.2	strongest	strong
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Afghan	"Afghanistan"
+::edge	1.2	heroin	heroin	:location	1.2.3	world	world
+::edge	1	because	cause-01	:ARG0	1.1	made	make-01
+::edge	1	because	cause-01	:ARG1	1.2	heroin	heroin
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.2	strongest	strong	:degree	1.2.2.1	strongest	most
+::edge	1.1.3.1	subjected	subject-01	:ARG1	1.1.3.1.1		poppy
+::edge	1.2.1		country	:wiki	1.2.1.1		"Afghanistan"
+::edge	1.1	made	make-01	:ARG1	1.1.1	it	heroin
+22	A person who takes a daily dose of Afghan heroin has a life expectancy of between 5 and 7 years and many commit suicide before that.
+22	A person who takes a daily dose of Afghan heroin has a life expectancy of between 5 and 7 years and many commit suicide before that .
+22	1-1.1.1 3-1.1 4-1.1.2.2.1.1 5-1.1.1.1.1.2.1 5-1.1.1.1.1.2.2 5-1.1.2.2 5-1.1.2.2.1 5-1.1.2.2.1.1 5-1.1.2.2.1.1.r 5-1.1.2.2.1.2 5-1.1.2.2.1.2.r 5-1.1.2.2.1.r 6-1.1.2 7-1.1.2.1.r 8-1.1.2.1.1.2.1 9-1.1.2.1 10-1.1.1.1 12-1.1.1.1.1.1 13-1.1.1.1.1 14-1.1.1.1.1.2.r 15-1.1.1.1.1.2 16-1.1.1.1.1.2.1.1 17-1.1.1.1.1.2 18-1.1.1.1.1.2.2.1 19-1.1.1.1.1.2.1.2 19-1.1.1.1.1.2.2.2 20-1 21-1.2.1 22-1.2 23-1.2.2 24-1.2.3
+::node	5	1.1.1.1.1.2.1.1	5	5
+::node	n	1.1.2.1.1.2	name	
+::node	"Afghanistan"	1.1.2.1.1.1	"Afghanistan"	
+::node	t4	1.1.2.2.1	temporal-quantity	daily
+::node	c	1.1.2.1.1	country	
+::node	y2	1.1.1.1.1.2.2.2	year	years
+::node	y	1.1.1.1.1.2.1.2	year	years
+::node	7	1.1.1.1.1.2.2.1	7	7
+::node	1	1.1.2.2.1.1	1	daily
+::node	d2	1.1.2.2.1.2	day	daily
+::node	e	1.1.1.1.1	expectancy	expectancy
+::node	e	1.2.3.1	expectancy	
+::node	i	1.2.1.1	include-91	
+::node	l	1.1.1.1.1.1	life	life
+::node	b	1.1.1.1.1.2	between	and
+::node	"Afghanistan"	1.1.2.1.1.2.1	"Afghanistan"	Afghan
+::node	h2	1.1.1.1	have-03	has
+::node	h	1.1.2.1	heroin	heroin
+::node	t2	1.1.1.1.1.2.1	temporal-quantity	daily
+::node	r	1.1.2.2	rate-entity-91	daily
+::node	t3	1.1.1.1.1.2.2	temporal-quantity	daily
+::node	d	1.1.2	dose-01	dose
+::node	m	1.2.1	many	many
+::node	a	1	and	and
+::node	s	1.2.2	suicide	suicide
+::node	b2	1.2.3	before	before
+::node	p	1.2.1.1.1	person	
+::node	t	1.1	take-01	takes
+::node	c2	1.2	commit-02	commit
+::node	p	1.1.1	person	person
+::edge	1.1.1.1.1.2.1	daily	temporal-quantity	:quant	1.1.1.1.1.2.1.1	5	5
+::edge	1.1.2.1.1		country	:name	1.1.2.1.1.2		name
+::edge	1.1.2.1.1		country	:wiki	1.1.2.1.1.1		"Afghanistan"
+::edge	1.1.2.2	daily	rate-entity-91	:ARG3	1.1.2.2.1	daily	temporal-quantity
+::edge	1.1.2.1	heroin	heroin	:poss	1.1.2.1.1		country
+::edge	1.1.1.1.1.2.2	daily	temporal-quantity	:unit	1.1.1.1.1.2.2.2	years	year
+::edge	1.1.1.1.1.2.1	daily	temporal-quantity	:unit	1.1.1.1.1.2.1.2	years	year
+::edge	1.1.1.1.1.2.2	daily	temporal-quantity	:quant	1.1.1.1.1.2.2.1	7	7
+::edge	1.1.2.2.1	daily	temporal-quantity	:quant	1.1.2.2.1.1	daily	1
+::edge	1.1.2.2.1	daily	temporal-quantity	:unit	1.1.2.2.1.2	daily	day
+::edge	1.1.1.1	has	have-03	:ARG1	1.1.1.1.1	expectancy	expectancy
+::edge	1.2.3	before	before	:op1	1.2.3.1		expectancy
+::edge	1.2.1	many	many	:ARG1-of	1.2.1.1		include-91
+::edge	1.1.1.1.1	expectancy	expectancy	:mod	1.1.1.1.1.1	life	life
+::edge	1.1.1.1.1	expectancy	expectancy	:quant	1.1.1.1.1.2	and	between
+::edge	1.1.2.1.1.2		name	:op1	1.1.2.1.1.2.1	Afghan	"Afghanistan"
+::edge	1.1.1	person	person	:ARG0-of	1.1.1.1	has	have-03
+::edge	1.1.2	dose	dose-01	:ARG2	1.1.2.1	heroin	heroin
+::edge	1.1.1.1.1.2	and	between	:op1	1.1.1.1.1.2.1	daily	temporal-quantity
+::edge	1.1.2	dose	dose-01	:frequency	1.1.2.2	daily	rate-entity-91
+::edge	1.1.1.1.1.2	and	between	:op2	1.1.1.1.1.2.2	daily	temporal-quantity
+::edge	1.1	takes	take-01	:ARG1	1.1.2	dose	dose-01
+::edge	1.2	commit	commit-02	:ARG0	1.2.1	many	many
+::edge	1.2	commit	commit-02	:ARG1	1.2.2	suicide	suicide
+::edge	1.2	commit	commit-02	:time	1.2.3	before	before
+::edge	1.2.1.1		include-91	:ARG2	1.2.1.1.1		person
+::edge	1	and	and	:op1	1.1	takes	take-01
+::edge	1	and	and	:op2	1.2	commit	commit-02
+::edge	1.1	takes	take-01	:ARG0	1.1.1	person	person
+23	The Tajik State pays 25 dirams (a few cents) per day for every person in the rehabilitation clinics.
+23	The Tajik State pays 25 dirams ( a few cents ) per day for every person in the rehabilitation clinics .
+23	1-1.1.2.1 2-1.1.2.2 3-1 4-1.3.1.1 5-1.3.1.2 12-1.3.2.2 13-1.2.r 14-1.2.1 15-1.2 16-1.2.2.r 18-1.2.2.1 19-1.2.2
+::node	"Tajik"	1.1.2.1	"Tajik"	Tajik
+::node	"State"	1.1.2.2	"State"	State
+::node	25	1.3.1.1	25	25
+::node	d	1.3.1.2	diram	dirams
+::node	1	1.3.2.1	1	
+::node	d2	1.3.2.2	day	day
+::node	n	1.1.2	name	
+::node	e	1.2.1	every	every
+::node	p	1	pay-01	pays
+::node	c3	1.2.2	clinic	clinics
+::node	m	1.3.1	monetary-quantity	
+::node	t	1.3.2	temporal-quantity	
+::node	c	1.1	country	
+::node	p2	1.2	person	person
+::node	r2	1.3	rate-entity-91	
+::node	r	1.2.2.1	rehabilitation	rehabilitation
+::node	"Tajikistan"	1.1.1	"Tajikistan"	
+::edge	1.1.2		name	:op1	1.1.2.1	Tajik	"Tajik"
+::edge	1.1.2		name	:op2	1.1.2.2	State	"State"
+::edge	1.3.1		monetary-quantity	:quant	1.3.1.1	25	25
+::edge	1.3.1		monetary-quantity	:unit	1.3.1.2	dirams	diram
+::edge	1.3.2		temporal-quantity	:quant	1.3.2.1		1
+::edge	1.3.2		temporal-quantity	:unit	1.3.2.2	day	day
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	person	person	:mod	1.2.1	every	every
+::edge	1.2	person	person	:location	1.2.2	clinics	clinic
+::edge	1.3		rate-entity-91	:ARG1	1.3.1		monetary-quantity
+::edge	1.3		rate-entity-91	:ARG3	1.3.2		temporal-quantity
+::edge	1	pays	pay-01	:ARG0	1.1		country
+::edge	1	pays	pay-01	:ARG3	1.2	person	person
+::edge	1	pays	pay-01	:frequency	1.3		rate-entity-91
+::edge	1.2.2	clinics	clinic	:mod	1.2.2.1	rehabilitation	rehabilitation
+::edge	1.1		country	:wiki	1.1.1		"Tajikistan"
+24	The percentage of relapses is very high due to the lack of followup treatment and unemployment among young people.
+24	The percentage of relapses is very high due to the lack of followup treatment and unemployment among young people .
+24	1-1.2.1 3-1.2.1.1.1 4-1.2.1.r 5-1.2.2 6-1.2 7-1 8-1 10-1.1.1 11-1.1.1.1.r 12-1.1.1.1.1 13-1.1.1.1 14-1.1 15-1.1.2.1 16-1.2.1.1 17-1.1.2.2.1 18-1.1.2.2
+::node	t	1.1.1.1	treat-03	treatment
+::node	-	1.1.2.1	-	unemployment
+::node	p2	1.1.2.2	person	people
+::node	y	1.1.2.2.1	young	young
+::node	e	1.1.2	employ-01	
+::node	p	1.2.1	percentage	percentage
+::node	c	1	cause-01	to
+::node	v	1.2.2	very	very
+::node	r	1.2.1.1.1	relapse-01	relapses
+::node	a	1.1	and	and
+::node	h	1.2	high	high
+::node	f	1.1.1.1.1	followup	followup
+::node	i	1.2.1.1	include-91	among
+::node	l	1.1.1	lack-01	lack
+::edge	1.1.1	lack	lack-01	:ARG1	1.1.1.1	treatment	treat-03
+::edge	1.1.2		employ-01	:polarity	1.1.2.1	unemployment	-
+::edge	1.1.2		employ-01	:ARG1	1.1.2.2	people	person
+::edge	1.1.2.2	people	person	:mod	1.1.2.2.1	young	young
+::edge	1.1	and	and	:op2	1.1.2		employ-01
+::edge	1.2	high	high	:domain	1.2.1	percentage	percentage
+::edge	1.2	high	high	:degree	1.2.2	very	very
+::edge	1.2.1.1	among	include-91	:ARG1	1.2.1.1.1	relapses	relapse-01
+::edge	1	to	cause-01	:ARG0	1.1	and	and
+::edge	1	to	cause-01	:ARG1	1.2	high	high
+::edge	1.1.1.1	treatment	treat-03	:mod	1.1.1.1.1	followup	followup
+::edge	1.2.1	percentage	percentage	:ARG3-of	1.2.1.1	among	include-91
+::edge	1.1	and	and	:op1	1.1.1	lack	lack-01
+25	Head of a Tajik government agency that fights drug trafficking Avaz yuldachev stated that heroin users are ill and need treatment.
+25	Head of a Tajik government agency that fights drug trafficking Avaz yuldachev stated that heroin users are ill and need treatment .
+25	0-1.1 0-1.1.3 0-1.1.3.r 1-1.1.3.1.r 3-1.1.3.1.1.1.1.2.1 4-1.1.3.1.1 4-1.1.3.1.1.1 4-1.1.3.1.1.1.r 5-1.1.3.1 7-1.1.3.1.2 8-1.1.3.1.2.1.1 9-1.1.3.1.2.1 10-1.1.2.1 11-1.1.2.2 12-1 13-1.2.r 14-1.2.1.1.1.1 15-1.2.1.1 15-1.2.1.1.1 15-1.2.1.1.1.r 17-1.2.1 18-1.2 19-1.2.2 20-1.2.2.2
+::node	f	1.1.3.1.2	fight-01	fights
+::node	n3	1.1.3.1.1.1.1.2	name	
+::node	"Tajikistan"	1.1.3.1.1.1.1.1	"Tajikistan"	
+::node	p2	1.2.2.1	person	
+::node	t	1.2.2.2	treat-03	treatment
+::node	p2	1.2.1.1	person	users
+::node	"Avaz"	1.1.2.1	"Avaz"	Avaz
+::node	"Yuldachev"	1.1.2.2	"Yuldachev"	yuldachev
+::node	a2	1.1.3.1	agency	agency
+::node	h2	1.2.1.1.1.1	heroin	heroin
+::node	c	1.1.3.1.1.1.1	country	
+::node	g2	1.1.3.1.1.1	govern-01	government
+::node	t2	1.1.3.1.2.1	traffic-01	trafficking
+::node	n	1.1.2	name	
+::node	i	1.2.1	ill-41	ill
+::node	s	1	state-01	stated
+::node	h	1.1.3	head-01	Head
+::node	d	1.1.3.1.2.1.1	drug	drug
+::node	n2	1.2.2	need-01	need
+::node	u	1.2.1.1.1	use-01	users
+::node	p	1.1	person	Head
+::node	"Tajikistan"	1.1.3.1.1.1.1.2.1	"Tajikistan"	Tajik
+::node	a	1.2	and	and
+::node	g	1.1.3.1.1	government-organization	government
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Avaz	"Avaz"
+::edge	1.1.3.1	agency	agency	:ARG0-of	1.1.3.1.2	fights	fight-01
+::edge	1.1.2		name	:op2	1.1.2.2	yuldachev	"Yuldachev"
+::edge	1.1.3	Head	head-01	:ARG1	1.1.3.1	agency	agency
+::edge	1.2.1.1.1	users	use-01	:ARG1	1.2.1.1.1.1	heroin	heroin
+::edge	1.1.3.1.1.1.1		country	:name	1.1.3.1.1.1.1.2		name
+::edge	1.1.3.1.1.1.1		country	:wiki	1.1.3.1.1.1.1.1		"Tajikistan"
+::edge	1.1.3.1.1.1	government	govern-01	:ARG1	1.1.3.1.1.1.1		country
+::edge	1.1.3.1.1	government	government-organization	:ARG0-of	1.1.3.1.1.1	government	govern-01
+::edge	1.1.3.1.2	fights	fight-01	:ARG1	1.1.3.1.2.1	trafficking	traffic-01
+::edge	1.1	Head	person	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1	ill	ill-41
+::edge	1.1	Head	person	:ARG0-of	1.1.3	Head	head-01
+::edge	1.1.3.1.2.1	trafficking	traffic-01	:ARG1	1.1.3.1.2.1.1	drug	drug
+::edge	1.2	and	and	:op2	1.2.2	need	need-01
+::edge	1.2.1.1	users	person	:ARG0-of	1.2.1.1.1	users	use-01
+::edge	1	stated	state-01	:ARG0	1.1	Head	person
+::edge	1.1.3.1.1.1.1.2		name	:op1	1.1.3.1.1.1.1.2.1	Tajik	"Tajikistan"
+::edge	1	stated	state-01	:ARG1	1.2	and	and
+::edge	1.2.2	need	need-01	:ARG0	1.2.2.1		person
+::edge	1.2.2	need	need-01	:ARG1	1.2.2.2	treatment	treat-03
+::edge	1.1.3.1	agency	agency	:mod	1.1.3.1.1	government	government-organization
+::edge	1.2.1	ill	ill-41	:ARG1	1.2.1.1	users	person
+::edge	1.1	Head	person	:wiki	1.1.1		-
+26	Anvar, a 14-year-old boy from Dushanbe, used heroin for three years before being hospitalized in Onishchenko's drug clinic.
+26	Anvar , a 14 @-@ year @-@ old boy from Dushanbe , used heroin for three years before being hospitalized in Onishchenko 's drug clinic .
+26	0-1.1.2.1 3-1.1.4.1 5-1.1.4.2 7-1.1.4.r 8-1.1 9-1.1.3.r 10-1.1.3.2.1 12-1 13-1.2 14-1.3.r 15-1.3.1 16-1.3.2 17-1.4 19-1.4.1 20-1.4.1.2.r 21-1.4.1.2.2.2.1 22-1.4.1.2.2.r 23-1.4.1.2.1 24-1.4.1.2
+::node	"Dushanbe"	1.1.3.2.1	"Dushanbe"	Dushanbe
+::node	"Onishchenko"	1.4.1.2.2.2.1	"Onishchenko"	Onishchenko
+::node	c3	1.4.1.2.2	city	
+::node	d	1.4.1.2.1	drug	drug
+::node	"Anvar"	1.1.2.1	"Anvar"	Anvar
+::node	"Dushanbe"	1.1.3.1	"Dushanbe"	
+::node	n2	1.1.3.2	name	
+::node	14	1.1.4.1	14	14
+::node	y2	1.1.4.2	year	year
+::node	n3	1.1.2	name	
+::node	u	1	use-01	used
+::node	c	1.1.3	city	
+::node	3	1.3.1	3	three
+::node	t2	1.1.4	temporal-quantity	
+::node	y	1.3.2	year	years
+::node	h2	1.4.1	hospitalize-01	hospitalized
+::node	b2	1.1	boy	boy
+::node	h	1.2	heroin	heroin
+::node	t	1.3	temporal-quantity	
+::node	b	1.4	before	before
+::node	c2	1.4.1.2	clinic	clinic
+::node	n	1.4.1.2.2.2	name	
+::node	-	1.4.1.2.2.1	-	
+::node	-	1.1.1	-	
+::node	b2	1.4.1.1	boy	
+::edge	1.1.2		name	:op1	1.1.2.1	Anvar	"Anvar"
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	Dushanbe	"Dushanbe"
+::edge	1.1.3		city	:wiki	1.1.3.1		"Dushanbe"
+::edge	1.1.3		city	:name	1.1.3.2		name
+::edge	1.1.4		temporal-quantity	:quant	1.1.4.1	14	14
+::edge	1.1.4		temporal-quantity	:unit	1.1.4.2	year	year
+::edge	1.4.1.2.2.2		name	:op1	1.4.1.2.2.2.1	Onishchenko	"Onishchenko"
+::edge	1.1	boy	boy	:name	1.1.2		name
+::edge	1.1	boy	boy	:source	1.1.3		city
+::edge	1.3		temporal-quantity	:quant	1.3.1	three	3
+::edge	1.1	boy	boy	:age	1.1.4		temporal-quantity
+::edge	1.3		temporal-quantity	:unit	1.3.2	years	year
+::edge	1.4	before	before	:op1	1.4.1	hospitalized	hospitalize-01
+::edge	1	used	use-01	:ARG0	1.1	boy	boy
+::edge	1	used	use-01	:ARG1	1.2	heroin	heroin
+::edge	1	used	use-01	:duration	1.3		temporal-quantity
+::edge	1	used	use-01	:time	1.4	before	before
+::edge	1.4.1.2	clinic	clinic	:poss	1.4.1.2.2		city
+::edge	1.4.1.2	clinic	clinic	:mod	1.4.1.2.1	drug	drug
+::edge	1.4.1	hospitalized	hospitalize-01	:location	1.4.1.2	clinic	clinic
+::edge	1.4.1.2.2		city	:name	1.4.1.2.2.2		name
+::edge	1.4.1.2.2		city	:wiki	1.4.1.2.2.1		-
+::edge	1.1	boy	boy	:wiki	1.1.1		-
+::edge	1.4.1	hospitalized	hospitalize-01	:ARG1	1.4.1.1		boy
+27	Anvar said --
+27	Anvar said --
+27	0-1.1.2.1 1-1
+::node	n	1.1.2	name	
+::node	s	1	say-01	said
+::node	"Anvar"	1.1.2.1	"Anvar"	Anvar
+::node	p	1.1	person	
+::node	-	1.1.1	-	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Anvar	"Anvar"
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1.1		person	:wiki	1.1.1		-
+28	He sniffed a white substance he found in his backyard and was unable to stop.
+28	He sniffed a white substance he found in his backyard and was unable to stop .
+28	0-1.1.1 1-1.1 3-1.1.2.1 4-1.1.2 5-1.1.2.2.1 6-1.1.2.2 7-1.1.2.2.2.r 8-1.1.2.2.2.1 8-1.1.2.2.2.1.r 9-1.1.2.2.2 10-1 11-1.2.2.r 12-1.2 12-1.2.1 12-1.2.1.r 14-1.2.2
+::node	w	1.1.2.1	white	white
+::node	f	1.1.2.2	find-01	found
+::node	h	1.1.2.2.1	he	he
+::node	s2	1.1.2	substance	substance
+::node	-	1.2.1	-	unable
+::node	a	1	and	and
+::node	s3	1.2.2	stop-01	stop
+::node	s	1.1	sniff-01	sniffed
+::node	b	1.1.2.2.2	backyard	backyard
+::node	p	1.2	possible	unable
+::node	h	1.1.2.2.2.1	he	his
+::node	h	1.2.2.1	he	
+::node	s	1.2.2.2	sniff-01	
+::node	h	1.1.1	he	He
+::edge	1.1.2	substance	substance	:mod	1.1.2.1	white	white
+::edge	1.1.2	substance	substance	:ARG1-of	1.1.2.2	found	find-01
+::edge	1.1.2.2	found	find-01	:ARG0	1.1.2.2.1	he	he
+::edge	1.1	sniffed	sniff-01	:ARG1	1.1.2	substance	substance
+::edge	1.2	unable	possible	:polarity	1.2.1	unable	-
+::edge	1.2	unable	possible	:domain	1.2.2	stop	stop-01
+::edge	1	and	and	:op1	1.1	sniffed	sniff-01
+::edge	1.1.2.2	found	find-01	:location	1.1.2.2.2	backyard	backyard
+::edge	1	and	and	:op2	1.2	unable	possible
+::edge	1.1.2.2.2	backyard	backyard	:poss	1.1.2.2.2.1	his	he
+::edge	1.2.2	stop	stop-01	:ARG0	1.2.2.1		he
+::edge	1.2.2	stop	stop-01	:ARG1	1.2.2.2		sniff-01
+::edge	1.1	sniffed	sniff-01	:ARG0	1.1.1	He	he
+29	He stopped going to school.
+29	He stopped going to school .
+29	0-1.1 1-1 2-1.2 3-1.2.1.r 4-1.2.1
+::node	s2	1.2.1	school	school
+::node	s	1	stop-01	stopped
+::node	h	1.1	he	He
+::node	g	1.2	go-02	going
+::edge	1.2	going	go-02	:ARG4	1.2.1	school	school
+::edge	1	stopped	stop-01	:ARG0	1.1	He	he
+::edge	1	stopped	stop-01	:ARG1	1.2	going	go-02
+30	He stole from the local market to get money for more heroin.
+30	He stole from the local market to get money for more heroin .
+30	0-1.1 1-1 2-1.2.r 4-1.2.1 5-1.2 7-1.3 8-1.3.2 9-1.3.3.r 10-1.3.3.1 11-1.3.3
+::node	l	1.2.1	local	local
+::node	s	1	steal-01	stole
+::node	h	1.3.1	he	
+::node	m2	1.3.2	money	money
+::node	h2	1.3.3	heroin	heroin
+::node	h	1.1	he	He
+::node	m	1.2	market	market
+::node	g	1.3	get-01	get
+::node	m3	1.3.3.1	more	more
+::edge	1.2	market	market	:mod	1.2.1	local	local
+::edge	1.3	get	get-01	:ARG0	1.3.1		he
+::edge	1.3	get	get-01	:ARG1	1.3.2	money	money
+::edge	1.3	get	get-01	:ARG4	1.3.3	heroin	heroin
+::edge	1	stole	steal-01	:ARG0	1.1	He	he
+::edge	1	stole	steal-01	:ARG2	1.2	market	market
+::edge	1	stole	steal-01	:purpose	1.3	get	get-01
+::edge	1.3.3	heroin	heroin	:quant	1.3.3.1	more	more
+31	Drug traffickers face the death penalty under Tajik law.
+31	Drug traffickers face the death penalty under Tajik law .
+31	0-1.1.1.1 1-1.1 1-1.1.1 1-1.1.1.r 2-1 4-1.2.1 5-1.2 6-1.3.r 7-1.3.1.2.1 8-1.3
+::node	d2	1.2.1	death	death
+::node	f	1	face-01	face
+::node	c	1.3.1	country	
+::node	d	1.1.1.1	drug	Drug
+::node	p	1.1	person	traffickers
+::node	"Tajikistan"	1.3.1.2.1	"Tajikistan"	Tajik
+::node	p2	1.2	penalty	penalty
+::node	l	1.3	law	law
+::node	"Tajikistan"	1.3.1.1	"Tajikistan"	
+::node	n	1.3.1.2	name	
+::node	t	1.1.1	traffic-01	traffickers
+::edge	1.2	penalty	penalty	:mod	1.2.1	death	death
+::edge	1.3	law	law	:poss	1.3.1		country
+::edge	1.1.1	traffickers	traffic-01	:ARG1	1.1.1.1	Drug	drug
+::edge	1	face	face-01	:ARG0	1.1	traffickers	person
+::edge	1.3.1.2		name	:op1	1.3.1.2.1	Tajik	"Tajikistan"
+::edge	1	face	face-01	:ARG1	1.2	penalty	penalty
+::edge	1	face	face-01	:prep-under	1.3	law	law
+::edge	1.3.1		country	:wiki	1.3.1.1		"Tajikistan"
+::edge	1.3.1		country	:name	1.3.1.2		name
+::edge	1.1	traffickers	person	:ARG0-of	1.1.1	traffickers	traffic-01
+32	Tajikistan has 6.2 million inhabitants.
+32	Tajikistan has 6.2 million inhabitants .
+32	0-1.2.2.1 2-1.1.1 3-1.1.1 4-1 4-1.1 4-1.1.r
+::node	"Tajikistan"	1.2.1	"Tajikistan"	
+::node	i	1	inhabit-01	inhabitants
+::node	n	1.2.2	name	
+::node	p	1.1	person	inhabitants
+::node	c	1.2	country	
+::node	"Tajikistan"	1.2.2.1	"Tajikistan"	Tajikistan
+::node	6200000	1.1.1	6200000	million
+::edge	1.2		country	:wiki	1.2.1		"Tajikistan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1	inhabitants	inhabit-01	:ARG0	1.1	inhabitants	person
+::edge	1	inhabitants	inhabit-01	:ARG1	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	Tajikistan	"Tajikistan"
+::edge	1.1	inhabitants	person	:quant	1.1.1	million	6200000

@@ -1,0 +1,930 @@
+1	2002-04-07
+1	2002 @-@ 04 @-@ 07
+1	0-1.1 2-1.2 4-1.3
+::node	d2	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	4	1.2	4	04
+::node	7	1.3	7	07
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	04	4
+::edge	1		date-entity	:day	1.3	07	7
+2	Japan (JP); China (CN)
+2	Japan ( JP ) ; China ( CN )
+2	0-1.1.2.1 5-1.2.2.1
+::node	n	1.1.2	name	
+::node	"China"	1.2.1	"China"	
+::node	a	1	and	
+::node	n2	1.2.2	name	
+::node	"Japan"	1.1.2.1	"Japan"	Japan
+::node	c	1.1	country	
+::node	c2	1.2	country	
+::node	"China"	1.2.2.1	"China"	China
+::node	"Japan"	1.1.1	"Japan"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"China"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Japan	"Japan"
+::edge	1		and	:op1	1.1		country
+::edge	1		and	:op2	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	China	"China"
+::edge	1.1		country	:wiki	1.1.1		"Japan"
+3	International; politics; Government; weapons
+3	International ; politics ; Government ; weapons
+3	0-1.1 2-1.2 4-1.3 4-1.3.1 4-1.3.1.r 6-1.4
+::node	a	1	and	
+::node	g2	1.3.1	govern-01	Government
+::node	i	1.1	international	International
+::node	p	1.2	politics	politics
+::node	g	1.3	government-organization	Government
+::node	w	1.4	weapon	weapons
+::edge	1.3	Government	government-organization	:ARG0-of	1.3.1	Government	govern-01
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	politics	politics
+::edge	1		and	:op3	1.3	Government	government-organization
+::edge	1		and	:op4	1.4	weapons	weapon
+4	Japanese opposition Liberal Party chief Ichiro Ozawa announced that Japan is able to arm itself with nuclear weapons overnight if China proceeds with excessive military build-up.
+4	Japanese opposition Liberal Party chief Ichiro Ozawa announced that Japan is able to arm itself with nuclear weapons overnight if China proceeds with excessive military build @-@ up .
+4	1-1.1.3.1 1-1.1.3.1.4 1-1.1.3.1.4.r 2-1.1.3.1.2.1 3-1.1.3.1.2.2 4-1.1.3.2 5-1.1.2.1 6-1.1.2.2 7-1 9-1.1.3.1.3.2.1 10-1.2.1.r 11-1.2 13-1.2.1 15-1.2.1.3.r 16-1.2.1.3.1 17-1.2.1.3 18-1.2.1.4 19-1.2.2.r 20-1.2.2.1.2.1 21-1.2.2 22-1.2.2.2.r 23-1.2.2.2.3 24-1.2.2.2.2 25-1.2.2.2 27-1.2.2.2
+::node	o3	1.1.3.1.4	oppose-01	opposition
+::node	c2	1.1.3.1.3	country	
+::node	n2	1.1.3.1.2	name	
+::node	"China"	1.2.2.1.2.1	"China"	China
+::node	"Japan"	1.1.3.1.3.2.1	"Japan"	Japan
+::node	n4	1.2.1.3.1	nucleus	nuclear
+::node	o2	1.2.1.4	overnight	overnight
+::node	c2	1.2.1.2	country	
+::node	c3	1.2.2.1	country	
+::node	w	1.2.1.3	weapon	weapons
+::node	b	1.2.2.2	build-05	up
+::node	n5	1.2.2.1.2	name	
+::node	c3	1.2.2.2.1	country	
+::node	c2	1.2.1.1	country	
+::node	m	1.2.2.2.2	military	military
+::node	e	1.2.2.2.3	excessive	excessive
+::node	"Ichiro"	1.1.2.1	"Ichiro"	Ichiro
+::node	"China"	1.2.2.1.1	"China"	
+::node	"Ozawa"	1.1.2.2	"Ozawa"	Ozawa
+::node	p	1.1.3.1	political-party	opposition
+::node	c	1.1.3.2	chief	chief
+::node	"Party"	1.1.3.1.2.2	"Party"	Party
+::node	"Japan"	1.1.3.1.3.1	"Japan"	
+::node	n3	1.1.3.1.3.2	name	
+::node	"Liberal"	1.1.3.1.2.1	"Liberal"	Liberal
+::node	n	1.1.2	name	
+::node	a2	1.2.1	arm-01	arm
+::node	a	1	announce-01	announced
+::node	h	1.1.3	have-org-role-91	
+::node	p3	1.2.2	proceed-01	proceeds
+::node	p4	1.1	person	
+::node	p2	1.2	possible	able
+::node	"Liberal_Democratic_Party_BLANKETPAIR2"	1.1.3.1.1	"Liberal_Democratic_Party_BLANKETPAIR2"	
+::node	"Ichirō_Ozawa"	1.1.1	"Ichirō_Ozawa"	
+::edge	1.1.3.1	opposition	political-party	:ARG0-of	1.1.3.1.4	opposition	oppose-01
+::edge	1.1.3.1	opposition	political-party	:mod	1.1.3.1.3		country
+::edge	1.1.3.1	opposition	political-party	:name	1.1.3.1.2		name
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	China	"China"
+::edge	1.1.3.1.3.2		name	:op1	1.1.3.1.3.2.1	Japan	"Japan"
+::edge	1.2.1.3	weapons	weapon	:mod	1.2.1.3.1	nuclear	nucleus
+::edge	1.2.1	arm	arm-01	:time	1.2.1.4	overnight	overnight
+::edge	1.2.1	arm	arm-01	:ARG1	1.2.1.2		country
+::edge	1.2.2	proceeds	proceed-01	:ARG0	1.2.2.1		country
+::edge	1.2.1	arm	arm-01	:ARG2	1.2.1.3	weapons	weapon
+::edge	1.2.2	proceeds	proceed-01	:ARG1	1.2.2.2	up	build-05
+::edge	1.2.2.1		country	:name	1.2.2.1.2		name
+::edge	1.2.2.2	up	build-05	:ARG0	1.2.2.2.1		country
+::edge	1.2.1	arm	arm-01	:ARG0	1.2.1.1		country
+::edge	1.2.2.2	up	build-05	:ARG1	1.2.2.2.2	military	military
+::edge	1.2.2.2	up	build-05	:degree	1.2.2.2.3	excessive	excessive
+::edge	1.1.2		name	:op1	1.1.2.1	Ichiro	"Ichiro"
+::edge	1.2.2.1		country	:wiki	1.2.2.1.1		"China"
+::edge	1.1.2		name	:op2	1.1.2.2	Ozawa	"Ozawa"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1	opposition	political-party
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	chief	chief
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	Party	"Party"
+::edge	1.1.3.1.3		country	:wiki	1.1.3.1.3.1		"Japan"
+::edge	1.1.3.1.3		country	:name	1.1.3.1.3.2		name
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Liberal	"Liberal"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	able	possible	:domain	1.2.1	arm	arm-01
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	able	possible	:condition	1.2.2	proceeds	proceed-01
+::edge	1	announced	announce-01	:ARG0	1.1		person
+::edge	1	announced	announce-01	:ARG1	1.2	able	possible
+::edge	1.1.3.1	opposition	political-party	:wiki	1.1.3.1.1		"Liberal_Democratic_Party_BLANKETPAIR2"
+::edge	1.1		person	:wiki	1.1.1		"Ichirō_Ozawa"
+5	7 April 2002 -- Japanese opposition Liberal Party chief Ichiro Ozawa has announced that Japan is able to arm itself with nuclear weapons overnight.
+5	7 April 2002 -- Japanese opposition Liberal Party chief Ichiro Ozawa has announced that Japan is able to arm itself with nuclear weapons overnight .
+5	0-1.3.3 1-1.3.2 1-1.3.2.r 2-1.3.1 5-1.1.3.1 5-1.1.3.1.4 5-1.1.3.1.4.r 6-1.1.3.1.2.1 7-1.1.3.1.2.2 8-1.1.3.2 9-1.1.2.1 10-1.1.2.2 11-1.1.3 12-1 14-1.1.3.1.3.2.1 15-1.2.1.r 16-1.2 18-1.2.1 20-1.2.1.3.r 21-1.2.1.3.1 22-1.2.1.3 23-1.2.1.4
+::node	o3	1.1.3.1.4	oppose-01	opposition
+::node	c2	1.1.3.1.3	country	
+::node	n2	1.1.3.1.2	name	
+::node	"Japan"	1.1.3.1.3.2.1	"Japan"	Japan
+::node	n4	1.2.1.3.1	nucleus	nuclear
+::node	o2	1.2.1.4	overnight	overnight
+::node	c2	1.2.1.2	country	
+::node	w	1.2.1.3	weapon	weapons
+::node	c2	1.2.1.1	country	
+::node	"Ichiro"	1.1.2.1	"Ichiro"	Ichiro
+::node	"Ozawa"	1.1.2.2	"Ozawa"	Ozawa
+::node	p	1.1.3.1	political-party	opposition
+::node	c	1.1.3.2	chief	chief
+::node	"Party"	1.1.3.1.2.2	"Party"	Party
+::node	"Japan"	1.1.3.1.3.1	"Japan"	
+::node	n3	1.1.3.1.3.2	name	
+::node	"Liberal"	1.1.3.1.2.1	"Liberal"	Liberal
+::node	n	1.1.2	name	
+::node	a2	1.2.1	arm-01	arm
+::node	a	1	announce-01	announced
+::node	h	1.1.3	have-org-role-91	has
+::node	2002	1.3.1	2002	2002
+::node	4	1.3.2	4	April
+::node	7	1.3.3	7	7
+::node	p3	1.1	person	
+::node	p2	1.2	possible	able
+::node	d2	1.3	date-entity	
+::node	"Liberal_Democratic_Party_BLANKETPAIR2"	1.1.3.1.1	"Liberal_Democratic_Party_BLANKETPAIR2"	
+::node	"Ichirō_Ozawa"	1.1.1	"Ichirō_Ozawa"	
+::edge	1.1.3.1	opposition	political-party	:ARG0-of	1.1.3.1.4	opposition	oppose-01
+::edge	1.1.3.1	opposition	political-party	:mod	1.1.3.1.3		country
+::edge	1.1.3.1	opposition	political-party	:name	1.1.3.1.2		name
+::edge	1.1.3.1.3.2		name	:op1	1.1.3.1.3.2.1	Japan	"Japan"
+::edge	1.2.1.3	weapons	weapon	:mod	1.2.1.3.1	nuclear	nucleus
+::edge	1.2.1	arm	arm-01	:time	1.2.1.4	overnight	overnight
+::edge	1.2.1	arm	arm-01	:ARG1	1.2.1.2		country
+::edge	1.2.1	arm	arm-01	:ARG2	1.2.1.3	weapons	weapon
+::edge	1.2.1	arm	arm-01	:ARG0	1.2.1.1		country
+::edge	1.1.2		name	:op1	1.1.2.1	Ichiro	"Ichiro"
+::edge	1.1.2		name	:op2	1.1.2.2	Ozawa	"Ozawa"
+::edge	1.1.3	has	have-org-role-91	:ARG1	1.1.3.1	opposition	political-party
+::edge	1.1.3	has	have-org-role-91	:ARG2	1.1.3.2	chief	chief
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	Party	"Party"
+::edge	1.1.3.1.3		country	:wiki	1.1.3.1.3.1		"Japan"
+::edge	1.1.3.1.3		country	:name	1.1.3.1.3.2		name
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Liberal	"Liberal"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	able	possible	:domain	1.2.1	arm	arm-01
+::edge	1.1		person	:ARG0-of	1.1.3	has	have-org-role-91
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.3		date-entity	:month	1.3.2	April	4
+::edge	1.3		date-entity	:day	1.3.3	7	7
+::edge	1	announced	announce-01	:ARG0	1.1		person
+::edge	1	announced	announce-01	:ARG1	1.2	able	possible
+::edge	1	announced	announce-01	:time	1.3		date-entity
+::edge	1.1.3.1	opposition	political-party	:wiki	1.1.3.1.1		"Liberal_Democratic_Party_BLANKETPAIR2"
+::edge	1.1		person	:wiki	1.1.1		"Ichirō_Ozawa"
+6	Japan will arm itself with nuclear weapons if China proceeds with excessive military expansion.
+6	Japan will arm itself with nuclear weapons if China proceeds with excessive military expansion .
+6	0-1.1.2.1 2-1 4-1.3.r 5-1.3.1 6-1.3 7-1.4.r 8-1.4.1.2.1 9-1.4 12-1.4.2.2 13-1.4.2
+::node	e2	1.4.2.3	excess	
+::node	"Japan"	1.1.2.1	"Japan"	Japan
+::node	n	1.1.2	name	
+::node	a	1	arm-01	arm
+::node	n3	1.3.1	nucleus	nuclear
+::node	c2	1.4.1	country	
+::node	e	1.4.2	expand-01	expansion
+::node	c	1.1	country	
+::node	c	1.2	country	
+::node	w	1.3	weapon	weapons
+::node	p	1.4	proceed-01	proceeds
+::node	"China"	1.4.1.2.1	"China"	China
+::node	n2	1.4.1.2	name	
+::node	c2	1.4.2.1	country	
+::node	m	1.4.2.2	military	military
+::node	"Japan"	1.1.1	"Japan"	
+::node	"China"	1.4.1.1	"China"	
+::edge	1.4.2	expansion	expand-01	:degree	1.4.2.3		excess
+::edge	1.1.2		name	:op1	1.1.2.1	Japan	"Japan"
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.3	weapons	weapon	:mod	1.3.1	nuclear	nucleus
+::edge	1.4	proceeds	proceed-01	:ARG0	1.4.1		country
+::edge	1.4	proceeds	proceed-01	:ARG1	1.4.2	expansion	expand-01
+::edge	1	arm	arm-01	:ARG0	1.1		country
+::edge	1	arm	arm-01	:ARG1	1.2		country
+::edge	1	arm	arm-01	:ARG2	1.3	weapons	weapon
+::edge	1	arm	arm-01	:condition	1.4	proceeds	proceed-01
+::edge	1.4.1.2		name	:op1	1.4.1.2.1	China	"China"
+::edge	1.4.1		country	:name	1.4.1.2		name
+::edge	1.4.2	expansion	expand-01	:ARG0	1.4.2.1		country
+::edge	1.4.2	expansion	expand-01	:ARG1	1.4.2.2	military	military
+::edge	1.1		country	:wiki	1.1.1		"Japan"
+::edge	1.4.1		country	:wiki	1.4.1.1		"China"
+7	Ozawa discussed Japan's nuclear weapons during a meeting with a Chinese community party intelligence division official.
+7	Ozawa discussed Japan 's nuclear weapons during a meeting with a Chinese community party intelligence division official .
+7	0-1.1.2.1 1-1 2-1.2.2.2.1 3-1.2.2.r 4-1.2.1 5-1.2 6-1.3.r 8-1.3 9-1.3.2.r 11-1.3.2.1.1.1.2.2.1 12-1.3.2.1.1.1.1 13-1.3.2.1.1.1 14-1.3.2.1.1.2 15-1.3.2.1.1 16-1.3.2.1.2
+::node	d2	1.3.2.1.1	division	division
+::node	"Ozawa"	1.1.2.1	"Ozawa"	Ozawa
+::node	o	1.3.2.1.2	official	official
+::node	c2	1.3.2.1.1.1.1	community	community
+::node	h	1.3.2.1	have-org-role-91	
+::node	c3	1.3.2.1.1.1.2	country	
+::node	i	1.3.2.1.1.2	intelligence	intelligence
+::node	p2	1.3.2.1.1.1	party	party
+::node	"China"	1.3.2.1.1.1.2.1	"China"	
+::node	n4	1.3.2.1.1.1.2.2	name	
+::node	n	1.1.2	name	
+::node	n2	1.2.1	nucleus	nuclear
+::node	d	1	discuss-01	discussed
+::node	c	1.2.2	country	
+::node	p	1.3.1	person	
+::node	p3	1.3.2	person	
+::node	p	1.1	person	
+::node	w	1.2	weapon	weapons
+::node	"China"	1.3.2.1.1.1.2.2.1	"China"	Chinese
+::node	m	1.3	meet-03	meeting
+::node	"Japan"	1.2.2.1	"Japan"	
+::node	n3	1.2.2.2	name	
+::node	"Japan"	1.2.2.2.1	"Japan"	Japan
+::node	"Ichirō_Ozawa"	1.1.1	"Ichirō_Ozawa"	
+::edge	1.3.2.1		have-org-role-91	:ARG1	1.3.2.1.1	division	division
+::edge	1.1.2		name	:op1	1.1.2.1	Ozawa	"Ozawa"
+::edge	1.3.2.1		have-org-role-91	:ARG2	1.3.2.1.2	official	official
+::edge	1.3.2.1.1.1	party	party	:mod	1.3.2.1.1.1.1	community	community
+::edge	1.3.2		person	:ARG0-of	1.3.2.1		have-org-role-91
+::edge	1.3.2.1.1.1	party	party	:mod	1.3.2.1.1.1.2		country
+::edge	1.3.2.1.1	division	division	:topic	1.3.2.1.1.2	intelligence	intelligence
+::edge	1.3.2.1.1	division	division	:part-of	1.3.2.1.1.1	party	party
+::edge	1.3.2.1.1.1.2		country	:wiki	1.3.2.1.1.1.2.1		"China"
+::edge	1.3.2.1.1.1.2		country	:name	1.3.2.1.1.1.2.2		name
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	weapons	weapon	:mod	1.2.1	nuclear	nucleus
+::edge	1.2	weapons	weapon	:poss	1.2.2		country
+::edge	1.3	meeting	meet-03	:ARG0	1.3.1		person
+::edge	1.3	meeting	meet-03	:ARG1	1.3.2		person
+::edge	1	discussed	discuss-01	:ARG0	1.1		person
+::edge	1	discussed	discuss-01	:ARG1	1.2	weapons	weapon
+::edge	1.3.2.1.1.1.2.2		name	:op1	1.3.2.1.1.1.2.2.1	Chinese	"China"
+::edge	1	discussed	discuss-01	:time	1.3	meeting	meet-03
+::edge	1.2.2		country	:wiki	1.2.2.1		"Japan"
+::edge	1.2.2		country	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Japan	"Japan"
+::edge	1.1		person	:wiki	1.1.1		"Ichirō_Ozawa"
+8	Ozawa's warning could provoke strong reaction from China and Asia.
+8	Ozawa 's warning could provoke strong reaction from China and Asia .
+8	0-1.1.1.1.2.1 1-1.1.1.1.r 2-1.1.1 3-1 4-1.1 5-1.1.2.2 6-1.1.2 7-1.1.2.1.r 8-1.1.2.1.1.2.1 9-1.1.2.1 10-1.1.2.1.2.2.1
+::node	"Ozawa"	1.1.1.1.2.1	"Ozawa"	Ozawa
+::node	"China"	1.1.2.1.1.2.1	"China"	China
+::node	p3	1.1.1.1	person	
+::node	a	1.1.2.1	and	and
+::node	n2	1.1.2.1.1.2	name	
+::node	"Asia"	1.1.2.1.2.1	"Asia"	
+::node	s	1.1.2.2	strong	strong
+::node	n3	1.1.2.1.2.2	name	
+::node	"China"	1.1.2.1.1.1	"China"	
+::node	c2	1.1.2.1.2	continent	
+::node	c	1.1.2.1.1	country	
+::node	r	1.1.2	react-01	reaction
+::node	p	1	possible	could
+::node	p2	1.1	provoke-01	provoke
+::node	"Asia"	1.1.2.1.2.2.1	"Asia"	Asia
+::node	n	1.1.1.1.2	name	
+::node	"Ichirō_Ozawa"	1.1.1.1.1	"Ichirō_Ozawa"	
+::node	w	1.1.1	warn-01	warning
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Ozawa	"Ozawa"
+::edge	1.1.2.1.1.2		name	:op1	1.1.2.1.1.2.1	China	"China"
+::edge	1.1.1	warning	warn-01	:ARG0	1.1.1.1		person
+::edge	1.1.2	reaction	react-01	:ARG0	1.1.2.1	and	and
+::edge	1.1.2.1.1		country	:name	1.1.2.1.1.2		name
+::edge	1.1.2.1.2		continent	:wiki	1.1.2.1.2.1		"Asia"
+::edge	1.1.2	reaction	react-01	:manner	1.1.2.2	strong	strong
+::edge	1.1.2.1.2		continent	:name	1.1.2.1.2.2		name
+::edge	1.1.2.1.1		country	:wiki	1.1.2.1.1.1		"China"
+::edge	1.1.2.1	and	and	:op2	1.1.2.1.2		continent
+::edge	1.1.2.1	and	and	:op1	1.1.2.1.1		country
+::edge	1.1	provoke	provoke-01	:ARG1	1.1.2	reaction	react-01
+::edge	1	could	possible	:domain	1.1	provoke	provoke-01
+::edge	1.1.2.1.2.2		name	:op1	1.1.2.1.2.2.1	Asia	"Asia"
+::edge	1.1.1.1		person	:name	1.1.1.1.2		name
+::edge	1.1.1.1		person	:wiki	1.1.1.1.1		"Ichirō_Ozawa"
+::edge	1.1	provoke	provoke-01	:ARG0	1.1.1	warning	warn-01
+9	Asia is on alert to signs of Japan's military revival.
+9	Asia is on alert to signs of Japan 's military revival .
+9	0-1.1.2.1 3-1 4-1.2.r 5-1.2 5-1.2.1 5-1.2.1.r 6-1.2.1.1.r 7-1.2.1.1.1.2.1 8-1.2.1.1.1.r 9-1.2.1.1.2 10-1.2.1.1
+::node	"Japan"	1.2.1.1.1.2.1	"Japan"	Japan
+::node	"Asia"	1.1.2.1	"Asia"	Asia
+::node	"Japan"	1.2.1.1.1.1	"Japan"	
+::node	n2	1.2.1.1.1.2	name	
+::node	c2	1.2.1.1.2.1	country	
+::node	n	1.1.2	name	
+::node	s	1.2.1	signal-01	signs
+::node	a	1	alert-01	alert
+::node	m	1.2.1.1.2	military	military
+::node	c2	1.2.1.1.1	country	
+::node	c	1.1	continent	
+::node	t	1.2	thing	signs
+::node	r	1.2.1.1	revive-01	revival
+::node	"Asia"	1.1.1	"Asia"	
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	Japan	"Japan"
+::edge	1.1.2		name	:op1	1.1.2.1	Asia	"Asia"
+::edge	1.2.1.1.1		country	:wiki	1.2.1.1.1.1		"Japan"
+::edge	1.2.1.1.1		country	:name	1.2.1.1.1.2		name
+::edge	1.2.1.1.2	military	military	:poss	1.2.1.1.2.1		country
+::edge	1.1		continent	:name	1.1.2		name
+::edge	1.2	signs	thing	:ARG0-of	1.2.1	signs	signal-01
+::edge	1.2.1.1	revival	revive-01	:ARG1	1.2.1.1.2	military	military
+::edge	1.2.1.1	revival	revive-01	:ARG0	1.2.1.1.1		country
+::edge	1	alert	alert-01	:ARG1	1.1		continent
+::edge	1	alert	alert-01	:ARG2	1.2	signs	thing
+::edge	1.2.1	signs	signal-01	:ARG1	1.2.1.1	revival	revive-01
+::edge	1.1		continent	:wiki	1.1.1		"Asia"
+10	6 April 2002 -- in a lecture in the provincial city of Fukuoka Ozawa stated --
+10	6 April 2002 -- in a lecture in the provincial city of Fukuoka Ozawa stated --
+10	0-1.3.3 1-1.3.2 1-1.3.2.r 2-1.3.1 6-1.2 7-1.2.2.r 9-1.2.2.3 10-1.2.2 12-1.2.2.2.1 13-1.1.2.1 14-1
+::node	"Ozawa"	1.1.2.1	"Ozawa"	Ozawa
+::node	n	1.1.2	name	
+::node	p	1.2.1	person	
+::node	s	1	state-01	stated
+::node	c	1.2.2	city	city
+::node	2002	1.3.1	2002	2002
+::node	4	1.3.2	4	April
+::node	6	1.3.3	6	6
+::node	p	1.1	person	
+::node	l	1.2	lecture-01	lecture
+::node	d2	1.3	date-entity	
+::node	p2	1.2.2.3	province	provincial
+::node	"Fukuoka"	1.2.2.1	"Fukuoka"	
+::node	n2	1.2.2.2	name	
+::node	"Fukuoka"	1.2.2.2.1	"Fukuoka"	Fukuoka
+::node	"Ichirō_Ozawa"	1.1.1	"Ichirō_Ozawa"	
+::edge	1.1.2		name	:op1	1.1.2.1	Ozawa	"Ozawa"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	lecture	lecture-01	:ARG0	1.2.1		person
+::edge	1.2	lecture	lecture-01	:location	1.2.2	city	city
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.3		date-entity	:month	1.3.2	April	4
+::edge	1.3		date-entity	:day	1.3.3	6	6
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:location	1.2	lecture	lecture-01
+::edge	1	stated	state-01	:time	1.3		date-entity
+::edge	1.2.2	city	city	:location	1.2.2.3	provincial	province
+::edge	1.2.2	city	city	:wiki	1.2.2.1		"Fukuoka"
+::edge	1.2.2	city	city	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Fukuoka	"Fukuoka"
+::edge	1.1		person	:wiki	1.1.1		"Ichirō_Ozawa"
+11	China is expanding its military power to attempt to join the ranks of the superpowers.
+11	China is expanding its military power to attempt to join the ranks of the superpowers .
+11	0-1.1.2.1 2-1 3-1.2.2 3-1.2.2.r 4-1.2.1 5-1.2 7-1.3 9-1.3.2 11-1.3.2.2 12-1.3.2.2.1.r 14-1.3.2.2.1
+::node	"China"	1.1.2.1	"China"	China
+::node	s	1.3.2.2.1	superpower	superpowers
+::node	c	1.3.2.1	country	
+::node	r	1.3.2.2	rank	ranks
+::node	n	1.1.2	name	
+::node	m	1.2.1	military	military
+::node	e	1	expand-01	expanding
+::node	c	1.2.2	country	its
+::node	c	1.3.1	country	
+::node	j	1.3.2	join-01	join
+::node	c	1.1	country	
+::node	p	1.2	power	power
+::node	a	1.3	attempt-01	attempt
+::node	"China"	1.1.1	"China"	
+::edge	1.1.2		name	:op1	1.1.2.1	China	"China"
+::edge	1.3.2.2	ranks	rank	:mod	1.3.2.2.1	superpowers	superpower
+::edge	1.3.2	join	join-01	:ARG0	1.3.2.1		country
+::edge	1.3.2	join	join-01	:ARG1	1.3.2.2	ranks	rank
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	power	power	:mod	1.2.1	military	military
+::edge	1.2	power	power	:poss	1.2.2	its	country
+::edge	1.3	attempt	attempt-01	:ARG0	1.3.1		country
+::edge	1.3	attempt	attempt-01	:ARG1	1.3.2	join	join-01
+::edge	1	expanding	expand-01	:ARG0	1.1		country
+::edge	1	expanding	expand-01	:ARG1	1.2	power	power
+::edge	1	expanding	expand-01	:purpose	1.3	attempt	attempt-01
+::edge	1.1		country	:wiki	1.1.1		"China"
+12	China is trying to become a military Power like the US.
+12	China is trying to become a military Power like the US .
+12	0-1.1.2.1 2-1 4-1.2 6-1.2.2.1 7-1.2.2 8-1.2.2.2.r 10-1.2.2.2.2.1
+::node	"China"	1.1.2.1	"China"	China
+::node	n	1.1.2	name	
+::node	c	1.2.1	country	
+::node	t	1	try-01	trying
+::node	p	1.2.2	power	Power
+::node	c	1.1	country	
+::node	b	1.2	become-01	become
+::node	m	1.2.2.1	military	military
+::node	c2	1.2.2.2	country	
+::node	"United_States"	1.2.2.2.1	"United_States"	
+::node	n2	1.2.2.2.2	name	
+::node	"US"	1.2.2.2.2.1	"US"	US
+::node	"China"	1.1.1	"China"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	become	become-01	:ARG1	1.2.1		country
+::edge	1.2	become	become-01	:ARG2	1.2.2	Power	power
+::edge	1.1.2		name	:op1	1.1.2.1	China	"China"
+::edge	1	trying	try-01	:ARG0	1.1		country
+::edge	1	trying	try-01	:ARG1	1.2	become	become-01
+::edge	1.2.2	Power	power	:mod	1.2.2.1	military	military
+::edge	1.2.2	Power	power	:example	1.2.2.2		country
+::edge	1.2.2.2		country	:wiki	1.2.2.2.1		"United_States"
+::edge	1.2.2.2		country	:name	1.2.2.2.2		name
+::edge	1.2.2.2.2		name	:op1	1.2.2.2.2.1	US	"US"
+::edge	1.1		country	:wiki	1.1.1		"China"
+13	That Ozawa told an unnamed Chinese visitor that if China expands its military power Japanese people will get hysterical.
+13	That Ozawa told an unnamed Chinese visitor that if China expands its military power Japanese people will get hysterical .
+13	1-1.1.2.1 2-1 4-1.3.2 4-1.3.2.1 4-1.3.2.1.r 5-1.3.3.2.1 6-1.3 6-1.3.1 6-1.3.1.r 7-1.2.r 8-1.2.3.r 9-1.2.3.1 10-1.2.3 11-1.2.3.2.2 11-1.2.3.2.2.r 12-1.2.3.2.1 13-1.2.3.2 14-1.2.1.1.2.1 15-1.2.1 17-1.2 18-1.2.2
+::node	-	1.3.2.1	-	unnamed
+::node	"China"	1.3.3.1	"China"	
+::node	n3	1.3.3.2	name	
+::node	"China"	1.3.3.2.1	"China"	Chinese
+::node	p4	1.2.3.2	power	power
+::node	c	1.2.3.1	country	China
+::node	c2	1.2.1.1	country	
+::node	"Ozawa"	1.1.2.1	"Ozawa"	Ozawa
+::node	"Japan"	1.2.1.1.2.1	"Japan"	Japanese
+::node	c	1.2.3.2.2	country	its
+::node	m	1.2.3.2.1	military	military
+::node	n	1.1.2	name	
+::node	p3	1.2.1	person	people
+::node	t	1	tell-01	told
+::node	h	1.2.2	hysterical	hysterical
+::node	v	1.3.1	visit-01	visitor
+::node	n4	1.2.1.1.2	name	
+::node	e	1.2.3	expand-01	expands
+::node	n2	1.3.2	name-01	unnamed
+::node	"Japan"	1.2.1.1.1	"Japan"	
+::node	c	1.3.3	country	
+::node	p	1.1	person	
+::node	g	1.2	get-03	get
+::node	p2	1.3	person	visitor
+::node	"Ichirō_Ozawa"	1.1.1	"Ichirō_Ozawa"	
+::edge	1.1.2		name	:op1	1.1.2.1	Ozawa	"Ozawa"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Japanese	"Japan"
+::edge	1.2.3.2	power	power	:poss	1.2.3.2.2	its	country
+::edge	1.3.2	unnamed	name-01	:polarity	1.3.2.1	unnamed	-
+::edge	1.3.3		country	:wiki	1.3.3.1		"China"
+::edge	1.2.3.2	power	power	:mod	1.2.3.2.1	military	military
+::edge	1.3.3		country	:name	1.3.3.2		name
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	get	get-03	:ARG1	1.2.1	people	person
+::edge	1.2	get	get-03	:ARG2	1.2.2	hysterical	hysterical
+::edge	1.3	visitor	person	:ARG0-of	1.3.1	visitor	visit-01
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.2	get	get-03	:condition	1.2.3	expands	expand-01
+::edge	1.3	visitor	person	:ARG1-of	1.3.2	unnamed	name-01
+::edge	1.3.3.2		name	:op1	1.3.3.2.1	Chinese	"China"
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"Japan"
+::edge	1.3	visitor	person	:mod	1.3.3		country
+::edge	1	told	tell-01	:ARG0	1.1		person
+::edge	1	told	tell-01	:ARG1	1.2	get	get-03
+::edge	1	told	tell-01	:ARG2	1.3	visitor	person
+::edge	1.2.3	expands	expand-01	:ARG1	1.2.3.2	power	power
+::edge	1.2.3	expands	expand-01	:ARG0	1.2.3.1	China	country
+::edge	1.2.1	people	person	:mod	1.2.1.1		country
+::edge	1.1		person	:wiki	1.1.1		"Ichirō_Ozawa"
+14	Japan can easily produce nuclear warheads.
+14	Japan can easily produce nuclear warheads .
+14	0-1.1.1.2.1 1-1 2-1.1.3 2-1.1.3.r 3-1.1 4-1.1.2.1 5-1.1.2
+::node	w	1.1.2	warhead	warheads
+::node	p	1	possible	can
+::node	e	1.1.3	easy	easily
+::node	"Japan"	1.1.1.1	"Japan"	
+::node	n	1.1.1.2	name	
+::node	n2	1.1.2.1	nucleus	nuclear
+::node	p2	1.1	produce-01	produce
+::node	"Japan"	1.1.1.2.1	"Japan"	Japan
+::node	c	1.1.1	country	
+::edge	1.1	produce	produce-01	:ARG1	1.1.2	warheads	warhead
+::edge	1.1	produce	produce-01	:manner	1.1.3	easily	easy
+::edge	1.1.1		country	:wiki	1.1.1.1		"Japan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2	warheads	warhead	:mod	1.1.2.1	nuclear	nucleus
+::edge	1	can	possible	:domain	1.1	produce	produce-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Japan	"Japan"
+::edge	1.1	produce	produce-01	:ARG0	1.1.1		country
+15	Japan can produce thousands of nuclear warheads overnight.
+15	Japan can produce thousands of nuclear warheads overnight .
+15	0-1.1.1.2.1 1-1 2-1.1 3-1.1.2.2 3-1.1.2.2.1 3-1.1.2.2.1.r 4-1.1.2.2.r 5-1.1.2.1 6-1.1.2 7-1.1.3
+::node	w	1.1.2	warhead	warheads
+::node	p	1	possible	can
+::node	o	1.1.3	overnight	overnight
+::node	"Japan"	1.1.1.1	"Japan"	
+::node	n	1.1.1.2	name	
+::node	n2	1.1.2.1	nucleus	nuclear
+::node	p2	1.1	produce-01	produce
+::node	m2	1.1.2.2	multiple	thousands
+::node	"Japan"	1.1.1.2.1	"Japan"	Japan
+::node	1000	1.1.2.2.1	1000	thousands
+::node	c	1.1.1	country	
+::edge	1.1	produce	produce-01	:ARG1	1.1.2	warheads	warhead
+::edge	1.1	produce	produce-01	:time	1.1.3	overnight	overnight
+::edge	1.1.1		country	:wiki	1.1.1.1		"Japan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2	warheads	warhead	:mod	1.1.2.1	nuclear	nucleus
+::edge	1	can	possible	:domain	1.1	produce	produce-01
+::edge	1.1.2	warheads	warhead	:quant	1.1.2.2	thousands	multiple
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Japan	"Japan"
+::edge	1.1.2.2	thousands	multiple	:op1	1.1.2.2.1	thousands	1000
+::edge	1.1	produce	produce-01	:ARG0	1.1.1		country
+16	Japan may have enough plutonium at nuclear power plants for 3000 or 4000 rounds.
+16	Japan may have enough plutonium at nuclear power plants for 3000 or 4000 rounds .
+16	0-1.1.1.2.1 1-1 2-1.1 3-1.1.2.1 4-1.1.2 5-1.1.2.2.r 6-1.1.2.2.1.1 7-1.1.2.2.1 8-1.1.2.2 9-1.1.3.r 10-1.1.3.1.1 11-1.1.3.1 12-1.1.3.1.2 13-1.1.3
+::node	"Japan"	1.1.1.1	"Japan"	
+::node	n	1.1.1.2	name	
+::node	e	1.1.2.1	enough	enough
+::node	4000	1.1.3.1.2	4000	4000
+::node	p3	1.1.2.2	plant	plants
+::node	o	1.1.3.1	or	or
+::node	p4	1.1.2.2.1	power-01	power
+::node	p2	1.1.2	plutonium	plutonium
+::node	p	1	possible	may
+::node	r	1.1.3	round	rounds
+::node	h	1.1	have-03	have
+::node	n2	1.1.2.2.1.1	nucleus	nuclear
+::node	"Japan"	1.1.1.2.1	"Japan"	Japan
+::node	3000	1.1.3.1.1	3000	3000
+::node	c	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"Japan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2	plutonium	plutonium	:quant	1.1.2.1	enough	enough
+::edge	1.1.3.1	or	or	:op2	1.1.3.1.2	4000	4000
+::edge	1.1.2	plutonium	plutonium	:location	1.1.2.2	plants	plant
+::edge	1.1.3	rounds	round	:quant	1.1.3.1	or	or
+::edge	1.1.2.2	plants	plant	:ARG0-of	1.1.2.2.1	power	power-01
+::edge	1.1	have	have-03	:ARG1	1.1.2	plutonium	plutonium
+::edge	1.1	have	have-03	:beneficiary	1.1.3	rounds	round
+::edge	1	may	possible	:domain	1.1	have	have-03
+::edge	1.1.2.2.1	power	power-01	:mod	1.1.2.2.1.1	nuclear	nucleus
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Japan	"Japan"
+::edge	1.1.3.1	or	or	:op1	1.1.3.1.1	3000	3000
+::edge	1.1	have	have-03	:ARG0	1.1.1		country
+17	If Japan rises to the occasion Japan will never be beaten even in terms of military power.
+17	If Japan rises to the occasion Japan will never be beaten even in terms of military power .
+17	0-1.4.r 1-1.4.1 2-1.4 3-1.4.2.r 5-1.4.2 6-1.4.1 8-1.1 8-1.1.r 8-1.5 10-1 11-1.3.2 15-1.3.1 16-1.3
+::node	"Japan"	1.2.1	"Japan"	
+::node	b	1	beat-03	beaten
+::node	n	1.2.2	name	
+::node	m	1.3.1	military	military
+::node	e2	1.3.2	even	even
+::node	c	1.4.1	country	Japan
+::node	o	1.4.2	occasion	occasion
+::node	-	1.1	-	never
+::node	c	1.2	country	
+::node	p	1.3	power	power
+::node	r	1.4	rise-01	rises
+::node	e	1.5	ever	never
+::node	"Japan"	1.2.2.1	"Japan"	
+::edge	1.2		country	:wiki	1.2.1		"Japan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3	power	power	:mod	1.3.1	military	military
+::edge	1.3	power	power	:mod	1.3.2	even	even
+::edge	1.4	rises	rise-01	:ARG1	1.4.1	Japan	country
+::edge	1.4	rises	rise-01	:ARG4	1.4.2	occasion	occasion
+::edge	1	beaten	beat-03	:polarity	1.1	never	-
+::edge	1	beaten	beat-03	:ARG1	1.2		country
+::edge	1	beaten	beat-03	:ARG2	1.3	power	power
+::edge	1	beaten	beat-03	:condition	1.4	rises	rise-01
+::edge	1	beaten	beat-03	:time	1.5	never	ever
+::edge	1.2.2		name	:op1	1.2.2.1		"Japan"
+18	Ozawa wants a fully democratic China and a society in which China and Japan can coexist.
+18	Ozawa wants a fully democratic China and a society in which China and Japan can coexist .
+18	0-1.1.2.1 1-1 3-1.2.1.3.1 4-1.2.1.3 5-1.2.1.2.1 6-1.2 8-1.2.2 11-1.2.2.1.1.1 12-1.2 13-1.2.2.1.1.2.2.1 14-1.2.2.1 15-1.2.2.1.1
+::node	"Ozawa"	1.1.2.1	"Ozawa"	Ozawa
+::node	c2	1.2.2.1.1	coexist-01	coexist
+::node	"Japan"	1.2.2.1.1.2.2.1	"Japan"	Japan
+::node	c	1.2.2.1.1.1	country	China
+::node	c3	1.2.2.1.1.2	country	
+::node	f	1.2.1.3.1	full	fully
+::node	n4	1.2.2.1.1.2.2	name	
+::node	"Japan"	1.2.2.1.1.2.1	"Japan"	
+::node	n	1.1.2	name	
+::node	c	1.2.1	country	
+::node	w	1	want-01	wants
+::node	s	1.2.2	society	society
+::node	"China"	1.2.1.2.1	"China"	China
+::node	p	1.1	person	
+::node	a	1.2	and	and
+::node	n2	1.2.1.2	name	
+::node	p3	1.2.2.1	possible	can
+::node	d	1.2.1.3	democracy	democratic
+::node	"China"	1.2.1.1	"China"	
+::node	"Ichirō_Ozawa"	1.1.1	"Ichirō_Ozawa"	
+::edge	1.1.2		name	:op1	1.1.2.1	Ozawa	"Ozawa"
+::edge	1.2.2.1	can	possible	:domain	1.2.2.1.1	coexist	coexist-01
+::edge	1.2.2.1.1.2.2		name	:op1	1.2.2.1.1.2.2.1	Japan	"Japan"
+::edge	1.2.2.1.1	coexist	coexist-01	:ARG1	1.2.2.1.1.1	China	country
+::edge	1.2.2.1.1	coexist	coexist-01	:ARG2	1.2.2.1.1.2		country
+::edge	1.2.1.3	democratic	democracy	:degree	1.2.1.3.1	fully	full
+::edge	1.2.2.1.1.2		country	:name	1.2.2.1.1.2.2		name
+::edge	1.2.2.1.1.2		country	:wiki	1.2.2.1.1.2.1		"Japan"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1		country
+::edge	1.2	and	and	:op2	1.2.2	society	society
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	China	"China"
+::edge	1	wants	want-01	:ARG0	1.1		person
+::edge	1	wants	want-01	:ARG1	1.2	and	and
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.2	society	society	:location-of	1.2.2.1	can	possible
+::edge	1.2.1		country	:mod	1.2.1.3	democratic	democracy
+::edge	1.2.1		country	:wiki	1.2.1.1		"China"
+::edge	1.1		person	:wiki	1.1.1		"Ichirō_Ozawa"
+19	The introduction of democracy to China is essential to world peace.
+19	The introduction of democracy to China is essential to world peace .
+19	1-1 2-1.1.r 3-1.1 4-1.2.r 5-1.2.2.1 7-1.3 8-1.3.1.r 9-1.3.1.1 10-1.3.1
+::node	"China"	1.2.1	"China"	
+::node	i	1	introduce-02	introduction
+::node	n	1.2.2	name	
+::node	p	1.3.1	peace	peace
+::node	d	1.1	democracy	democracy
+::node	c	1.2	country	
+::node	e	1.3	essential	essential
+::node	w	1.3.1.1	world	world
+::node	"China"	1.2.2.1	"China"	China
+::edge	1.2		country	:wiki	1.2.1		"China"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3	essential	essential	:purpose	1.3.1	peace	peace
+::edge	1	introduction	introduce-02	:ARG1	1.1	democracy	democracy
+::edge	1	introduction	introduce-02	:ARG2	1.2		country
+::edge	1	introduction	introduce-02	:mod	1.3	essential	essential
+::edge	1.3.1	peace	peace	:mod	1.3.1.1	world	world
+::edge	1.2.2		name	:op1	1.2.2.1	China	"China"
+20	A breakdown of order in China will lead to significant global turmoil.
+20	A breakdown of order in China will lead to significant global turmoil .
+20	1-1.1 2-1.1.1.r 3-1.1.1 4-1.1.1.1.r 5-1.1.1.1.2.1 7-1 8-1.2.r 9-1.2.2 10-1.2.1 11-1.2
+::node	g	1.2.1	globe	global
+::node	l	1	lead-03	lead
+::node	"China"	1.1.1.1.2.1	"China"	China
+::node	s	1.2.2	significant	significant
+::node	c	1.1.1.1	country	
+::node	b	1.1	break-12	breakdown
+::node	t	1.2	turmoil	turmoil
+::node	n	1.1.1.1.2	name	
+::node	"China"	1.1.1.1.1	"China"	
+::node	o	1.1.1	order	order
+::edge	1.2	turmoil	turmoil	:location	1.2.1	global	globe
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	China	"China"
+::edge	1.2	turmoil	turmoil	:mod	1.2.2	significant	significant
+::edge	1.1.1	order	order	:location	1.1.1.1		country
+::edge	1	lead	lead-03	:ARG0	1.1	breakdown	break-12
+::edge	1	lead	lead-03	:ARG2	1.2	turmoil	turmoil
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"China"
+::edge	1.1	breakdown	break-12	:ARG1	1.1.1	order	order
+21	A breakdown of order in China will be worse than in Afghanistan or Yugoslavia.
+21	A breakdown of order in China will be worse than in Afghanistan or Yugoslavia .
+21	1-1.2 1-1.3 2-1.2.1.r 3-1.2.1 4-1.2.2.r 5-1.2.2.2.1 7-1.2.r 8-1 8-1.1 8-1.1.r 9-1.3.r 10-1.3.2.r 11-1.3.2.1.2.1 12-1.3.2 13-1.3.2.2.2.1
+::node	n3	1.3.2.2.2	name	
+::node	"Afghanistan"	1.3.2.1.1	"Afghanistan"	
+::node	n2	1.3.2.1.2	name	
+::node	"Yugoslavia"	1.3.2.2.1	"Yugoslavia"	
+::node	c2	1.3.2.1	country	
+::node	c3	1.3.2.2	country	
+::node	"Afghanistan"	1.3.2.1.2.1	"Afghanistan"	Afghanistan
+::node	o	1.2.1	order	order
+::node	b	1	bad	worse
+::node	c	1.2.2	country	
+::node	o	1.3.1	order	
+::node	o2	1.3.2	or	or
+::node	m	1.1	more	worse
+::node	b2	1.2	break-12	breakdown
+::node	b3	1.3	break-12	breakdown
+::node	"Yugoslavia"	1.3.2.2.2.1	"Yugoslavia"	Yugoslavia
+::node	"China"	1.2.2.1	"China"	
+::node	n	1.2.2.2	name	
+::node	"China"	1.2.2.2.1	"China"	China
+::edge	1.3.2.2		country	:name	1.3.2.2.2		name
+::edge	1.3.2.1		country	:wiki	1.3.2.1.1		"Afghanistan"
+::edge	1.3.2.1		country	:name	1.3.2.1.2		name
+::edge	1.3.2.2		country	:wiki	1.3.2.2.1		"Yugoslavia"
+::edge	1.3.2	or	or	:op1	1.3.2.1		country
+::edge	1.3.2	or	or	:op2	1.3.2.2		country
+::edge	1.3.2.1.2		name	:op1	1.3.2.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.2	breakdown	break-12	:ARG1	1.2.1	order	order
+::edge	1.2	breakdown	break-12	:location	1.2.2		country
+::edge	1.3	breakdown	break-12	:ARG1	1.3.1		order
+::edge	1.3	breakdown	break-12	:location	1.3.2	or	or
+::edge	1	worse	bad	:degree	1.1	worse	more
+::edge	1	worse	bad	:domain	1.2	breakdown	break-12
+::edge	1	worse	bad	:compared-to	1.3	breakdown	break-12
+::edge	1.3.2.2.2		name	:op1	1.3.2.2.2.1	Yugoslavia	"Yugoslavia"
+::edge	1.2.2		country	:wiki	1.2.2.1		"China"
+::edge	1.2.2		country	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	China	"China"
+22	Japanese newspapers expressed concern about the repercussions of Ozawa's remarks.
+22	Japanese newspapers expressed concern about the repercussions of Ozawa 's remarks .
+22	0-1.1.1.2.1 1-1.1 2-1 3-1.2 4-1.2.1.r 6-1.2.1 8-1.2.1.1.1.1.2.1 9-1.2.1.1.1.1.r 10-1.2.1.1.1
+::node	"Ichirō_Ozawa"	1.2.1.1.1.1.1	"Ichirō_Ozawa"	
+::node	n3	1.2.1.1.1.1.2	name	
+::node	"Japan"	1.1.1.1	"Japan"	
+::node	n2	1.1.1.2	name	
+::node	p	1.2.1.1.1.1	person	
+::node	r	1.2.1	repercussion	repercussions
+::node	e	1	express-01	expressed
+::node	n	1.2.2	newspaper	
+::node	r2	1.2.1.1.1	remark-01	remarks
+::node	n	1.1	newspaper	newspapers
+::node	"Ozawa"	1.2.1.1.1.1.2.1	"Ozawa"	Ozawa
+::node	c2	1.2	concern-01	concern
+::node	"Japan"	1.1.1.2.1	"Japan"	Japanese
+::node	c3	1.2.1.1	cause-01	
+::node	c	1.1.1	country	
+::edge	1.2.1.1.1.1		person	:wiki	1.2.1.1.1.1.1		"Ichirō_Ozawa"
+::edge	1.2.1.1.1.1		person	:name	1.2.1.1.1.1.2		name
+::edge	1.1.1		country	:wiki	1.1.1.1		"Japan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.2.1.1.1	remarks	remark-01	:ARG0	1.2.1.1.1.1		person
+::edge	1.2	concern	concern-01	:ARG0	1.2.1	repercussions	repercussion
+::edge	1.2	concern	concern-01	:ARG1	1.2.2		newspaper
+::edge	1.2.1.1		cause-01	:ARG0	1.2.1.1.1	remarks	remark-01
+::edge	1	expressed	express-01	:ARG0	1.1	newspapers	newspaper
+::edge	1.2.1.1.1.1.2		name	:op1	1.2.1.1.1.1.2.1	Ozawa	"Ozawa"
+::edge	1	expressed	express-01	:ARG1	1.2	concern	concern-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Japanese	"Japan"
+::edge	1.2.1	repercussions	repercussion	:ARG1-of	1.2.1.1		cause-01
+::edge	1.1	newspapers	newspaper	:mod	1.1.1		country
+23	Conservative daily newspaper Sankei Shimbun stated that Ozawa's nuclear armament threats are an attempt to subdue China.
+23	Conservative daily newspaper Sankei Shimbun stated that Ozawa 's nuclear armament threats are an attempt to subdue China .
+23	0-1.1.4 1-1.1.3 1-1.1.3.1 1-1.1.3.1.r 1-1.1.3.2 1-1.1.3.2.r 2-1.1 3-1.1.2.1 4-1.1.2.2 5-1 6-1.2.r 7-1.2.1.2.1 8-1.2.1.r 9-1.2.2.1 10-1.2.2 11-1.2 14-1.2.3 16-1.2.3.2 17-1.2.3.2.2.2.1
+::node	"China"	1.2.3.2.2.2.1	"China"	China
+::node	s2	1.2.3.2	subdue-01	subdue
+::node	n	1.2.1.2	name	
+::node	n4	1.2.2.1	nucleus	nuclear
+::node	p	1.2.3.1	person	
+::node	"Ichirō_Ozawa"	1.2.1.1	"Ichirō_Ozawa"	
+::node	"Sankei"	1.1.2.1	"Sankei"	Sankei
+::node	"Shimbun"	1.1.2.2	"Shimbun"	Shimbun
+::node	1	1.1.3.1	1	daily
+::node	d	1.1.3.2	day	daily
+::node	c2	1.2.3.2.2	country	
+::node	p	1.2.3.2.1	person	
+::node	n3	1.1.2	name	
+::node	p	1.2.1	person	
+::node	s	1	state-01	stated
+::node	t	1.1.3	temporal-quantity	daily
+::node	a	1.2.2	arm-01	armament
+::node	c	1.1.4	conservative	Conservative
+::node	"Ozawa"	1.2.1.2.1	"Ozawa"	Ozawa
+::node	a2	1.2.3	attempt-01	attempt
+::node	n2	1.1	newspaper	newspaper
+::node	t2	1.2	threaten-01	threats
+::node	n5	1.2.3.2.2.2	name	
+::node	"China"	1.2.3.2.2.1	"China"	
+::node	"Sankei_Shimbun"	1.1.1	"Sankei_Shimbun"	
+::edge	1.1.2		name	:op1	1.1.2.1	Sankei	"Sankei"
+::edge	1.1.2		name	:op2	1.1.2.2	Shimbun	"Shimbun"
+::edge	1.1.3	daily	temporal-quantity	:quant	1.1.3.1	daily	1
+::edge	1.1.3	daily	temporal-quantity	:unit	1.1.3.2	daily	day
+::edge	1.2.3.2	subdue	subdue-01	:ARG1	1.2.3.2.2		country
+::edge	1.2.3.2	subdue	subdue-01	:ARG0	1.2.3.2.1		person
+::edge	1.2.3.2.2.2		name	:op1	1.2.3.2.2.2.1	China	"China"
+::edge	1.1	newspaper	newspaper	:name	1.1.2		name
+::edge	1.2	threats	threaten-01	:ARG0	1.2.1		person
+::edge	1.1	newspaper	newspaper	:frequency	1.1.3	daily	temporal-quantity
+::edge	1.2	threats	threaten-01	:ARG1	1.2.2	armament	arm-01
+::edge	1.1	newspaper	newspaper	:mod	1.1.4	Conservative	conservative
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Ozawa	"Ozawa"
+::edge	1.2	threats	threaten-01	:purpose	1.2.3	attempt	attempt-01
+::edge	1	stated	state-01	:ARG0	1.1	newspaper	newspaper
+::edge	1	stated	state-01	:ARG1	1.2	threats	threaten-01
+::edge	1.2.3	attempt	attempt-01	:ARG1	1.2.3.2	subdue	subdue-01
+::edge	1.2.3.2.2		country	:name	1.2.3.2.2.2		name
+::edge	1.2.1		person	:name	1.2.1.2		name
+::edge	1.2.2	armament	arm-01	:mod	1.2.2.1	nuclear	nucleus
+::edge	1.2.3.2.2		country	:wiki	1.2.3.2.2.1		"China"
+::edge	1.2.3	attempt	attempt-01	:ARG0	1.2.3.1		person
+::edge	1.2.1		person	:wiki	1.2.1.1		"Ichirō_Ozawa"
+::edge	1.1	newspaper	newspaper	:wiki	1.1.1		"Sankei_Shimbun"
+24	Sankei Shimbun stated that Ozawa's remarks are likely to cause contention in Japan and abroad.
+24	Sankei Shimbun stated that Ozawa 's remarks are likely to cause contention in Japan and abroad .
+24	0-1.1.2.1 1-1.1.2.2 2-1 3-1.2.r 4-1.2.1.1.1.2.1 5-1.2.1.1.1.r 6-1.2.1.1 7-1.2.1.r 8-1.2 9-1.2.1 10-1.2.1 11-1.2.1.2 12-1.2.1.2.1.r 13-1.2.1.2.1.1.2.1 14-1.2.1.2.1 15-1.2.1.2.1.2
+::node	"Ozawa"	1.2.1.1.1.2.1	"Ozawa"	Ozawa
+::node	"Sankei"	1.1.2.1	"Sankei"	Sankei
+::node	"Shimbun"	1.1.2.2	"Shimbun"	Shimbun
+::node	"Ichirō_Ozawa"	1.2.1.1.1.1	"Ichirō_Ozawa"	
+::node	n3	1.2.1.1.1.2	name	
+::node	"Japan"	1.2.1.2.1.1.2.1	"Japan"	Japan
+::node	n4	1.2.1.2.1.1.2	name	
+::node	"Japan"	1.2.1.2.1.1.1	"Japan"	
+::node	n2	1.1.2	name	
+::node	c	1.2.1	cause-01	cause
+::node	c3	1.2.1.2.1.1	country	
+::node	s	1	state-01	stated
+::node	a2	1.2.1.2.1.2	abroad	abroad
+::node	a	1.2.1.2.1	and	and
+::node	p	1.2.1.1.1	person	
+::node	n	1.1	newspaper	
+::node	l	1.2	likely	likely
+::node	c2	1.2.1.2	contention	contention
+::node	r	1.2.1.1	remark-01	remarks
+::node	"Sankei_Shimbun"	1.1.1	"Sankei_Shimbun"	
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	Ozawa	"Ozawa"
+::edge	1.1.2		name	:op1	1.1.2.1	Sankei	"Sankei"
+::edge	1.1.2		name	:op2	1.1.2.2	Shimbun	"Shimbun"
+::edge	1.2.1.1.1		person	:wiki	1.2.1.1.1.1		"Ichirō_Ozawa"
+::edge	1.2.1.1.1		person	:name	1.2.1.1.1.2		name
+::edge	1.2.1.2.1.1.2		name	:op1	1.2.1.2.1.1.2.1	Japan	"Japan"
+::edge	1.2.1.2.1.1		country	:name	1.2.1.2.1.1.2		name
+::edge	1.2.1.2.1.1		country	:wiki	1.2.1.2.1.1.1		"Japan"
+::edge	1.1		newspaper	:name	1.1.2		name
+::edge	1.2	likely	likely	:domain	1.2.1	cause	cause-01
+::edge	1.2.1.2.1	and	and	:op1	1.2.1.2.1.1		country
+::edge	1.2.1.2.1	and	and	:op2	1.2.1.2.1.2	abroad	abroad
+::edge	1.2.1.2	contention	contention	:location	1.2.1.2.1	and	and
+::edge	1.2.1.1	remarks	remark-01	:ARG0	1.2.1.1.1		person
+::edge	1	stated	state-01	:ARG0	1.1		newspaper
+::edge	1	stated	state-01	:ARG1	1.2	likely	likely
+::edge	1.2.1	cause	cause-01	:ARG1	1.2.1.2	contention	contention
+::edge	1.2.1	cause	cause-01	:ARG0	1.2.1.1	remarks	remark-01
+::edge	1.1		newspaper	:wiki	1.1.1		"Sankei_Shimbun"
+25	Influential daily newspaper Asahi Shimbun anticipates a backlash from the Chinese government and others.
+25	Influential daily newspaper Asahi Shimbun anticipates a backlash from the Chinese government and others .
+25	0-1.1.4 1-1.1.3 1-1.1.3.1 1-1.1.3.1.r 1-1.1.3.2 1-1.1.3.2.r 2-1.1 3-1.1.2.1 4-1.1.2.2 5-1 7-1.2 8-1.2.1.r 10-1.2.1.1.1.1.2.1 11-1.2.1.1 11-1.2.1.1.1 11-1.2.1.1.1.r 12-1.2.1 13-1.2.1.2
+::node	"China"	1.2.1.1.1.1.1	"China"	
+::node	n3	1.2.1.1.1.1.2	name	
+::node	"Asahi"	1.1.2.1	"Asahi"	Asahi
+::node	"Shimbun"	1.1.2.2	"Shimbun"	Shimbun
+::node	1	1.1.3.1	1	daily
+::node	d	1.1.3.2	day	daily
+::node	c	1.2.1.1.1.1	country	
+::node	n2	1.1.2	name	
+::node	a2	1.2.1	and	and
+::node	a	1	anticipate-01	anticipates
+::node	t	1.1.3	temporal-quantity	daily
+::node	i	1.1.4	influence-01	Influential
+::node	g2	1.2.1.1.1	govern-01	government
+::node	n	1.1	newspaper	newspaper
+::node	"China"	1.2.1.1.1.1.2.1	"China"	Chinese
+::node	b	1.2	backlash	backlash
+::node	o	1.2.1.2	other	others
+::node	g	1.2.1.1	government-organization	government
+::node	"Asahi_Shimbun"	1.1.1	"Asahi_Shimbun"	
+::edge	1.2.1.1.1.1		country	:wiki	1.2.1.1.1.1.1		"China"
+::edge	1.2.1.1.1.1		country	:name	1.2.1.1.1.1.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Asahi	"Asahi"
+::edge	1.1.2		name	:op2	1.1.2.2	Shimbun	"Shimbun"
+::edge	1.1.3	daily	temporal-quantity	:quant	1.1.3.1	daily	1
+::edge	1.1.3	daily	temporal-quantity	:unit	1.1.3.2	daily	day
+::edge	1.2.1.1.1	government	govern-01	:ARG1	1.2.1.1.1.1		country
+::edge	1.1	newspaper	newspaper	:name	1.1.2		name
+::edge	1.2	backlash	backlash	:source	1.2.1	and	and
+::edge	1.1	newspaper	newspaper	:frequency	1.1.3	daily	temporal-quantity
+::edge	1.1	newspaper	newspaper	:ARG0-of	1.1.4	Influential	influence-01
+::edge	1.2.1.1	government	government-organization	:ARG0-of	1.2.1.1.1	government	govern-01
+::edge	1	anticipates	anticipate-01	:ARG0	1.1	newspaper	newspaper
+::edge	1.2.1.1.1.1.2		name	:op1	1.2.1.1.1.1.2.1	Chinese	"China"
+::edge	1	anticipates	anticipate-01	:ARG1	1.2	backlash	backlash
+::edge	1.2.1	and	and	:op2	1.2.1.2	others	other
+::edge	1.2.1	and	and	:op1	1.2.1.1	government	government-organization
+::edge	1.1	newspaper	newspaper	:wiki	1.1.1		"Asahi_Shimbun"
+26	Ozawa is a renowned advocate of a strong armed forces.
+26	Ozawa is a renowned advocate of a strong armed forces .
+26	0-1.1.2.1 3-1.3 4-1 5-1.2.r 7-1.2.2 8-1.2.1 9-1.2
+::node	n	1.1.2	name	
+::node	a2	1.2.1	arm-01	armed
+::node	a	1	advocate-01	advocate
+::node	s	1.2.2	strong	strong
+::node	"Ozawa"	1.1.2.1	"Ozawa"	Ozawa
+::node	p	1.1	person	
+::node	f	1.2	force	forces
+::node	r	1.3	renowned	renowned
+::node	"Ichirō_Ozawa"	1.1.1	"Ichirō_Ozawa"	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	forces	force	:ARG1-of	1.2.1	armed	arm-01
+::edge	1.2	forces	force	:mod	1.2.2	strong	strong
+::edge	1.1.2		name	:op1	1.1.2.1	Ozawa	"Ozawa"
+::edge	1	advocate	advocate-01	:ARG0	1.1		person
+::edge	1	advocate	advocate-01	:ARG1	1.2	forces	force
+::edge	1	advocate	advocate-01	:mod	1.3	renowned	renowned
+::edge	1.1		person	:wiki	1.1.1		"Ichirō_Ozawa"
+27	Ozawa is a conservative.
+27	Ozawa is a conservative .
+27	0-1.1.2.1 1-1.1.r 3-1
+::node	n	1.1.2	name	
+::node	c	1	conservative	conservative
+::node	"Ozawa"	1.1.2.1	"Ozawa"	Ozawa
+::node	p	1.1	person	
+::node	"Ichirō_Ozawa"	1.1.1	"Ichirō_Ozawa"	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Ozawa	"Ozawa"
+::edge	1	conservative	conservative	:domain	1.1		person
+::edge	1.1		person	:wiki	1.1.1		"Ichirō_Ozawa"
+28	Ozawa is a former secretary general of the ruling Liberal Democratic Party.
+28	Ozawa is a former secretary general of the ruling Liberal Democratic Party .
+28	0-1.1.2.1 3-1.4 4-1.3 5-1.3.1 6-1 8-1.2 8-1.2.3 8-1.2.3.r 9-1.2.2.1 10-1.2.2.2 11-1.2.2.3
+::node	"Ozawa"	1.1.2.1	"Ozawa"	Ozawa
+::node	n2	1.1.2	name	
+::node	"Liberal_Democratic_Party_BLANKETPAIR1"	1.2.1	"Liberal_Democratic_Party_BLANKETPAIR1"	
+::node	h	1	have-org-role-91	of
+::node	n	1.2.2	name	
+::node	g	1.3.1	general	general
+::node	r	1.2.3	rule-03	ruling
+::node	p2	1.1	person	
+::node	p	1.2	political-party	ruling
+::node	s	1.3	secretary	secretary
+::node	f	1.4	former	former
+::node	"Party"	1.2.2.3	"Party"	Party
+::node	"Liberal"	1.2.2.1	"Liberal"	Liberal
+::node	"Democratic"	1.2.2.2	"Democratic"	Democratic
+::node	"Ichirō_Ozawa"	1.1.1	"Ichirō_Ozawa"	
+::edge	1.1.2		name	:op1	1.1.2.1	Ozawa	"Ozawa"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	ruling	political-party	:wiki	1.2.1		"Liberal_Democratic_Party_BLANKETPAIR1"
+::edge	1.2	ruling	political-party	:name	1.2.2		name
+::edge	1.3	secretary	secretary	:mod	1.3.1	general	general
+::edge	1.2	ruling	political-party	:ARG0-of	1.2.3	ruling	rule-03
+::edge	1	of	have-org-role-91	:ARG0	1.1		person
+::edge	1	of	have-org-role-91	:ARG1	1.2	ruling	political-party
+::edge	1	of	have-org-role-91	:ARG2	1.3	secretary	secretary
+::edge	1	of	have-org-role-91	:time	1.4	former	former
+::edge	1.2.2		name	:op3	1.2.2.3	Party	"Party"
+::edge	1.2.2		name	:op1	1.2.2.1	Liberal	"Liberal"
+::edge	1.2.2		name	:op2	1.2.2.2	Democratic	"Democratic"
+::edge	1.1		person	:wiki	1.1.1		"Ichirō_Ozawa"

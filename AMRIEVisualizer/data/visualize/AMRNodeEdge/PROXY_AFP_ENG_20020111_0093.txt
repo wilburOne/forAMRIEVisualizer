@@ -1,0 +1,1462 @@
+1	2002-01-11
+1	2002 @-@ 01 @-@ 11
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	1	1.2	1	01
+::node	11	1.3	11	11
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	01	1
+::edge	1		date-entity	:day	1.3	11	11
+2	South Korea (KR)
+2	South Korea ( KR )
+2	0-1.2.1 1-1.2.2
+::node	"South"	1.2.1	"South"	South
+::node	c	1	country	
+::node	"Korea"	1.2.2	"Korea"	Korea
+::node	"South_Korea"	1.1	"South_Korea"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	South	"South"
+::edge	1.2		name	:op2	1.2.2	Korea	"Korea"
+::edge	1		country	:wiki	1.1		"South_Korea"
+::edge	1		country	:name	1.2		name
+3	International; politics; Telecom
+3	International ; politics ; Telecom
+3	0-1.1 2-1.2 4-1.3
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	p	1.2	politics	politics
+::node	t	1.3	telecom	Telecom
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	politics	politics
+::edge	1		and	:op3	1.3	Telecom	telecom
+4	South Koreans rallied on January 11, 2002 in support of their right to eat dog meat.
+4	South Koreans rallied on January 11 , 2002 in support of their right to eat dog meat .
+4	0-1.1.1.2.1 1-1.1.1.2.2 2-1 3-1.3.r 4-1.3.2 4-1.3.2.r 5-1.3.3 7-1.3.1 8-1.2.r 9-1.2 12-1.2.2 14-1.2.2.1 15-1.2.2.1.2.1 16-1.2.2.1.2
+::node	"South_Korea"	1.1.1.1	"South_Korea"	
+::node	n	1.1.1.2	name	
+::node	p	1.2.2.1.1	person	
+::node	d2	1.2.2.1.2.1	dog	dog
+::node	p	1.2.1	person	
+::node	r	1	rally-01	rallied
+::node	e2	1.2.2	entitle-01	right
+::node	2002	1.3.1	2002	2002
+::node	1	1.3.2	1	January
+::node	11	1.3.3	11	11
+::node	p	1.1	person	
+::node	s	1.2	support-01	support
+::node	d	1.3	date-entity	
+::node	"Korea"	1.1.1.2.2	"Korea"	Koreans
+::node	"South"	1.1.1.2.1	"South"	South
+::node	e	1.2.2.1	eat-01	eat
+::node	p	1.2.2.2	person	
+::node	m	1.2.2.1.2	meat	meat
+::node	c	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"South_Korea"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.2.2.1	eat	eat-01	:ARG0	1.2.2.1.1		person
+::edge	1.2.2.1.2	meat	meat	:consist-of	1.2.2.1.2.1	dog	dog
+::edge	1.2	support	support-01	:ARG0	1.2.1		person
+::edge	1.2	support	support-01	:ARG1	1.2.2	right	entitle-01
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.3		date-entity	:month	1.3.2	January	1
+::edge	1.3		date-entity	:day	1.3.3	11	11
+::edge	1	rallied	rally-01	:ARG1	1.1		person
+::edge	1	rallied	rally-01	:ARG2	1.2	support	support-01
+::edge	1	rallied	rally-01	:time	1.3		date-entity
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Koreans	"Korea"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	South	"South"
+::edge	1.2.2	right	entitle-01	:ARG1	1.2.2.1	eat	eat-01
+::edge	1.2.2	right	entitle-01	:ARG2	1.2.2.2		person
+::edge	1.2.2.1	eat	eat-01	:ARG1	1.2.2.1.2	meat	meat
+::edge	1.1		person	:source	1.1.1		country
+5	They threatened an Internet war as part of a campaign to defend the traditional cuisine.
+5	They threatened an Internet war as part of a campaign to defend the traditional cuisine .
+5	0-1.1 1-1 3-1.2.2 4-1.2 6-1.2.3.r 9-1.2.3 11-1.2.3.2 13-1.2.3.2.2.1 14-1.2.3.2.2
+::node	t2	1.2.1	they	
+::node	t	1	threaten-01	threatened
+::node	i	1.2.2	internet	Internet
+::node	c	1.2.3	campaign-01	campaign
+::node	t2	1.1	they	They
+::node	w	1.2	war-01	war
+::node	d	1.2.3.2	defend-01	defend
+::node	c2	1.2.3.2.2	cuisine	cuisine
+::node	t3	1.2.3.2.2.1	traditional	traditional
+::node	t2	1.2.3.1	they	
+::node	t2	1.2.3.2.1	they	
+::edge	1.2	war	war-01	:ARG0	1.2.1		they
+::edge	1.2	war	war-01	:mod	1.2.2	Internet	internet
+::edge	1.2	war	war-01	:part-of	1.2.3	campaign	campaign-01
+::edge	1	threatened	threaten-01	:ARG0	1.1	They	they
+::edge	1	threatened	threaten-01	:ARG1	1.2	war	war-01
+::edge	1.2.3	campaign	campaign-01	:ARG1	1.2.3.2	defend	defend-01
+::edge	1.2.3.2	defend	defend-01	:ARG1	1.2.3.2.2	cuisine	cuisine
+::edge	1.2.3.2.2	cuisine	cuisine	:mod	1.2.3.2.2.1	traditional	traditional
+::edge	1.2.3	campaign	campaign-01	:ARG0	1.2.3.1		they
+::edge	1.2.3.2	defend	defend-01	:ARG0	1.2.3.2.1		they
+6	South Koreans rallied on January 11, 2002 in support of their right to eat dog meat.
+6	South Koreans rallied on January 11 , 2002 in support of their right to eat dog meat .
+6	0-1.1.1.2.1 1-1.1.1.2.2 2-1 3-1.3.r 4-1.3.2 4-1.3.2.r 5-1.3.3 7-1.3.1 8-1.2.r 9-1.2 12-1.2.2 14-1.2.2.1 15-1.2.2.1.2.1 16-1.2.2.1.2
+::node	"South_Korea"	1.1.1.1	"South_Korea"	
+::node	n	1.1.1.2	name	
+::node	p	1.2.2.1.1	person	
+::node	d2	1.2.2.1.2.1	dog	dog
+::node	p	1.2.1	person	
+::node	r	1	rally-01	rallied
+::node	e2	1.2.2	entitle-01	right
+::node	2002	1.3.1	2002	2002
+::node	1	1.3.2	1	January
+::node	11	1.3.3	11	11
+::node	p	1.1	person	
+::node	s	1.2	support-01	support
+::node	d	1.3	date-entity	
+::node	"Korea"	1.1.1.2.2	"Korea"	Koreans
+::node	"South"	1.1.1.2.1	"South"	South
+::node	e	1.2.2.1	eat-01	eat
+::node	p	1.2.2.2	person	
+::node	m	1.2.2.1.2	meat	meat
+::node	c	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"South_Korea"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.2.2.1	eat	eat-01	:ARG0	1.2.2.1.1		person
+::edge	1.2.2.1.2	meat	meat	:consist-of	1.2.2.1.2.1	dog	dog
+::edge	1.2	support	support-01	:ARG0	1.2.1		person
+::edge	1.2	support	support-01	:ARG1	1.2.2	right	entitle-01
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.3		date-entity	:month	1.3.2	January	1
+::edge	1.3		date-entity	:day	1.3.3	11	11
+::edge	1	rallied	rally-01	:ARG1	1.1		person
+::edge	1	rallied	rally-01	:ARG2	1.2	support	support-01
+::edge	1	rallied	rally-01	:time	1.3		date-entity
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Koreans	"Korea"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	South	"South"
+::edge	1.2.2	right	entitle-01	:ARG1	1.2.2.1	eat	eat-01
+::edge	1.2.2	right	entitle-01	:ARG2	1.2.2.2		person
+::edge	1.2.2.1	eat	eat-01	:ARG1	1.2.2.1.2	meat	meat
+::edge	1.1		person	:source	1.1.1		country
+7	They threatened an Internet war as part of a campaign to defend the traditional cuisine.
+7	They threatened an Internet war as part of a campaign to defend the traditional cuisine .
+7	0-1.1 1-1 3-1.2.2 4-1.2 6-1.2.3.r 9-1.2.3 11-1.2.3.2 13-1.2.3.2.2.1 14-1.2.3.2.2
+::node	t2	1.2.1	they	
+::node	t	1	threaten-01	threatened
+::node	i	1.2.2	internet	Internet
+::node	c	1.2.3	campaign-01	campaign
+::node	t2	1.1	they	They
+::node	w	1.2	war-01	war
+::node	d	1.2.3.2	defend-01	defend
+::node	c2	1.2.3.2.2	cuisine	cuisine
+::node	t3	1.2.3.2.2.1	traditional	traditional
+::node	t2	1.2.3.1	they	
+::node	t2	1.2.3.2.1	they	
+::edge	1.2	war	war-01	:ARG0	1.2.1		they
+::edge	1.2	war	war-01	:mod	1.2.2	Internet	internet
+::edge	1.2	war	war-01	:part-of	1.2.3	campaign	campaign-01
+::edge	1	threatened	threaten-01	:ARG0	1.1	They	they
+::edge	1	threatened	threaten-01	:ARG1	1.2	war	war-01
+::edge	1.2.3	campaign	campaign-01	:ARG1	1.2.3.2	defend	defend-01
+::edge	1.2.3.2	defend	defend-01	:ARG1	1.2.3.2.2	cuisine	cuisine
+::edge	1.2.3.2.2	cuisine	cuisine	:mod	1.2.3.2.2.1	traditional	traditional
+::edge	1.2.3	campaign	campaign-01	:ARG0	1.2.3.1		they
+::edge	1.2.3.2	defend	defend-01	:ARG0	1.2.3.2.1		they
+8	A nationalist group has vowed cyber hostilities against U.S. based media company Warner Bros. and one of France's state-run television channels.
+8	A nationalist group has vowed cyber hostilities against U.S. based media company Warner Bros . and one of France 's state @-@ run television channels .
+8	1-1.1.1 2-1.1 4-1 5-1.2.3 8-1.2.2.1.4.1.2.1 9-1.2.2.1.4 10-1.2.2.1.3 11-1.2.2.1 12-1.2.2.1.2.1 15-1.2.2 16-1.2.2.2.1.1 18-1.2.2.2.1.4.2.1 19-1.2.2.2.1.4.r 20-1.2.2.2.1.3.1 22-1.2.2.2.1.3 23-1.2.2.2.1.2 24-1.2.2.2.1
+::node	"Warner"	1.2.2.1.2.1	"Warner"	Warner
+::node	"Bros."	1.2.2.1.2.2	"Bros."	
+::node	c5	1.2.2.1.4.1	country	
+::node	"U.S."	1.2.2.1.4.1.2.1	"U.S."	U.S.
+::node	c	1.2.2.1	company	company
+::node	1	1.2.2.2.1.1	1	one
+::node	i	1.2.2.2	include-91	
+::node	n2	1.2.2.1.2	name	
+::node	c2	1.2.2.2.1	channel	channels
+::node	r	1.2.2.2.1.3	run-01	run
+::node	m	1.2.2.1.3	media	media
+::node	t	1.2.2.2.1.2	television	television
+::node	"France"	1.2.2.2.1.4.2.1	"France"	France
+::node	b	1.2.2.1.4	base-01	based
+::node	c3	1.2.2.2.1.4	country	
+::node	"Warner_Bros."	1.2.2.1.1	"Warner_Bros."	
+::node	n3	1.2.2.2.1.4.2	name	
+::node	"France"	1.2.2.2.1.4.1	"France"	
+::node	s	1.2.2.2.1.3.1	state	state
+::node	g	1.2.1	group	
+::node	v	1	vow-01	vowed
+::node	a2	1.2.2	and	and
+::node	c4	1.2.3	cyber	cyber
+::node	g	1.1	group	group
+::node	a	1.2	attack-01	
+::node	n4	1.2.2.1.4.1.2	name	
+::node	"United_States"	1.2.2.1.4.1.1	"United_States"	
+::node	n	1.1.1	nationalist	nationalist
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	Warner	"Warner"
+::edge	1.2.2.1.2		name	:op2	1.2.2.1.2.2		"Bros."
+::edge	1.2.2.1.4	based	base-01	:location	1.2.2.1.4.1		country
+::edge	1.2.2.1.4.1.2		name	:op1	1.2.2.1.4.1.2.1	U.S.	"U.S."
+::edge	1.2.2	and	and	:op1	1.2.2.1	company	company
+::edge	1.2.2.2.1	channels	channel	:quant	1.2.2.2.1.1	one	1
+::edge	1.2.2	and	and	:op2	1.2.2.2		include-91
+::edge	1.2.2.1	company	company	:name	1.2.2.1.2		name
+::edge	1.2.2.2		include-91	:ARG2	1.2.2.2.1	channels	channel
+::edge	1.2.2.2.1	channels	channel	:ARG1-of	1.2.2.2.1.3	run	run-01
+::edge	1.2.2.1	company	company	:mod	1.2.2.1.3	media	media
+::edge	1.2.2.2.1	channels	channel	:mod	1.2.2.2.1.2	television	television
+::edge	1.2.2.2.1.4.2		name	:op1	1.2.2.2.1.4.2.1	France	"France"
+::edge	1.2.2.1	company	company	:ARG1-of	1.2.2.1.4	based	base-01
+::edge	1.2.2.2.1	channels	channel	:poss	1.2.2.2.1.4		country
+::edge	1.2.2.1	company	company	:wiki	1.2.2.1.1		"Warner_Bros."
+::edge	1.2.2.2.1.4		country	:name	1.2.2.2.1.4.2		name
+::edge	1.2.2.2.1.4		country	:wiki	1.2.2.2.1.4.1		"France"
+::edge	1.2.2.2.1.3	run	run-01	:ARG0	1.2.2.2.1.3.1	state	state
+::edge	1.2		attack-01	:ARG0	1.2.1		group
+::edge	1.2		attack-01	:ARG1	1.2.2	and	and
+::edge	1.2		attack-01	:mod	1.2.3	cyber	cyber
+::edge	1	vowed	vow-01	:ARG0	1.1	group	group
+::edge	1	vowed	vow-01	:ARG1	1.2		attack-01
+::edge	1.2.2.1.4.1		country	:name	1.2.2.1.4.1.2		name
+::edge	1.2.2.1.4.1		country	:wiki	1.2.2.1.4.1.1		"United_States"
+::edge	1.1	group	group	:mod	1.1.1	nationalist	nationalist
+9	The activists accuse the organizations of being culturally-biased and insulting.
+9	The activists accuse the organizations of being culturally @-@ biased and insulting .
+9	1-1.1 2-1 4-1.2 5-1.3.r 7-1.3.1.2 9-1.3.1 10-1.3 11-1.3.2
+::node	a	1	accuse-01	accuse
+::node	b	1.3.1	bias-01	biased
+::node	i	1.3.2	insult-01	insulting
+::node	a2	1.1	activist	activists
+::node	o	1.2	organization	organizations
+::node	a3	1.3	and	and
+::node	o	1.3.1.1	organization	
+::node	c	1.3.1.2	cultural	culturally
+::node	o	1.3.2.1	organization	
+::node	a2	1.3.2.2	activist	
+::edge	1.3	and	and	:op1	1.3.1	biased	bias-01
+::edge	1.3	and	and	:op2	1.3.2	insulting	insult-01
+::edge	1	accuse	accuse-01	:ARG0	1.1	activists	activist
+::edge	1	accuse	accuse-01	:ARG1	1.2	organizations	organization
+::edge	1	accuse	accuse-01	:ARG2	1.3	and	and
+::edge	1.3.1	biased	bias-01	:ARG1	1.3.1.1		organization
+::edge	1.3.1	biased	bias-01	:mod	1.3.1.2	culturally	cultural
+::edge	1.3.2	insulting	insult-01	:ARG0	1.3.2.1		organization
+::edge	1.3.2	insulting	insult-01	:ARG1	1.3.2.2		activist
+10	A South Korean group has announced a campaign backed by food scientists to promote the eating of dog meat.
+10	A South Korean group has announced a campaign backed by food scientists to promote the eating of dog meat .
+10	1-1.1.1.2.1 2-1.1.1.2.2 3-1.1 5-1 7-1.2 8-1.2.2 9-1.2.2.1.r 10-1.2.2.1.1 11-1.2.2.1 13-1.2.1 15-1.2.1.1 16-1.2.1.1.1.r 17-1.2.1.1.1.1 18-1.2.1.1.1
+::node	"South_Korea"	1.1.1.1	"South_Korea"	
+::node	n	1.1.1.2	name	
+::node	f	1.2.2.1.1	food	food
+::node	d	1.2.1.1.1.1	dog	dog
+::node	p	1.2.1	promote-02	promote
+::node	a	1	announce-01	announced
+::node	b	1.2.2	back-01	backed
+::node	m	1.2.1.1.1	meat	meat
+::node	g	1.1	group	group
+::node	c2	1.2	campaign-01	campaign
+::node	"Korea"	1.1.1.2.2	"Korea"	Korean
+::node	"South"	1.1.1.2.1	"South"	South
+::node	s	1.2.2.1	scientist	scientists
+::node	e	1.2.1.1	eat-01	eating
+::node	c	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"South_Korea"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.2.2.1	scientists	scientist	:mod	1.2.2.1.1	food	food
+::edge	1.2.1.1.1	meat	meat	:consist-of	1.2.1.1.1.1	dog	dog
+::edge	1.2	campaign	campaign-01	:ARG1	1.2.1	promote	promote-02
+::edge	1.2	campaign	campaign-01	:ARG1-of	1.2.2	backed	back-01
+::edge	1.2.1.1	eating	eat-01	:ARG1	1.2.1.1.1	meat	meat
+::edge	1	announced	announce-01	:ARG0	1.1	group	group
+::edge	1	announced	announce-01	:ARG1	1.2	campaign	campaign-01
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Korean	"Korea"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	South	"South"
+::edge	1.2.2	backed	back-01	:ARG0	1.2.2.1	scientists	scientist
+::edge	1.2.1	promote	promote-02	:ARG1	1.2.1.1	eating	eat-01
+::edge	1.1	group	group	:source	1.1.1		country
+11	This announcement was in response to increasing foreign criticism of the way dogs are slaughtered in South Korea.
+11	This announcement was in response to increasing foreign criticism of the way dogs are slaughtered in South Korea .
+11	0-1.2.2 1-1.2 1-1.2.1 1-1.2.1.r 4-1 5-1.1.r 6-1.1 7-1.1.1.1 8-1.1.1 9-1.1.1.2.r 11-1.1.1.2 12-1.1.1.2.1.1 14-1.1.1.2.1 15-1.1.1.2.1.2.r 16-1.1.1.2.1.2.2.1 17-1.1.1.2.1.2.2.2
+::node	n	1.1.1.2.1.2.2	name	
+::node	f	1.1.1.1	foreign	foreign
+::node	w	1.1.1.2	way	way
+::node	"South_Korea"	1.1.1.2.1.2.1	"South_Korea"	
+::node	"South"	1.1.1.2.1.2.2.1	"South"	South
+::node	"Korea"	1.1.1.2.1.2.2.2	"Korea"	Korea
+::node	c2	1.1.1.2.1.2	country	
+::node	d	1.1.1.2.1.1	dog	dogs
+::node	a	1.2.1	announce-01	announcement
+::node	r	1	respond-01	response
+::node	t2	1.2.2	this	This
+::node	i	1.1	increase-01	increasing
+::node	t	1.2	thing	announcement
+::node	s	1.1.1.2.1	slaughter-01	slaughtered
+::node	c	1.1.1	criticize-01	criticism
+::edge	1.1.1.2.1.2		country	:name	1.1.1.2.1.2.2		name
+::edge	1.1.1	criticism	criticize-01	:ARG0	1.1.1.1	foreign	foreign
+::edge	1.1.1	criticism	criticize-01	:ARG1	1.1.1.2	way	way
+::edge	1.1.1.2.1.2		country	:wiki	1.1.1.2.1.2.1		"South_Korea"
+::edge	1.1.1.2.1.2.2		name	:op1	1.1.1.2.1.2.2.1	South	"South"
+::edge	1.1.1.2.1.2.2		name	:op2	1.1.1.2.1.2.2.2	Korea	"Korea"
+::edge	1.1.1.2.1	slaughtered	slaughter-01	:location	1.1.1.2.1.2		country
+::edge	1.1.1.2.1	slaughtered	slaughter-01	:ARG1	1.1.1.2.1.1	dogs	dog
+::edge	1.2	announcement	thing	:ARG1-of	1.2.1	announcement	announce-01
+::edge	1.2	announcement	thing	:mod	1.2.2	This	this
+::edge	1	response	respond-01	:ARG1	1.1	increasing	increase-01
+::edge	1	response	respond-01	:ARG2	1.2	announcement	thing
+::edge	1.1.1.2	way	way	:purpose	1.1.1.2.1	slaughtered	slaughter-01
+::edge	1.1	increasing	increase-01	:ARG1	1.1.1	criticism	criticize-01
+12	The killing of dogs for restaurants has become a more popular topic than the football World Cup finals.
+12	The killing of dogs for restaurants has become a more popular topic than the football World Cup finals .
+12	1-1.1 2-1.1.1.r 3-1.1.1 4-1.1.2.r 5-1.1.2 7-1 9-1.2.1.1 10-1.2.1 11-1.2 12-1.2.1.1.1.r 14-1.2.1.1.1.1.3 15-1.2.1.1.1.1.2.1 16-1.2.1.1.1.1.2.2 17-1.2.1.1.1
+::node	"FIFA_World_Cup"	1.2.1.1.1.1.1	"FIFA_World_Cup"	
+::node	n	1.2.1.1.1.1.2	name	
+::node	f	1.2.1.1.1.1.3	football	football
+::node	g	1.2.1.1.1.1	game	
+::node	r	1.1.2	restaurant	restaurants
+::node	p	1.2.1	popular-41	popular
+::node	b	1	become-01	become
+::node	f3	1.2.1.1.1	final	finals
+::node	k	1.1	kill-01	killing
+::node	"World"	1.2.1.1.1.1.2.1	"World"	World
+::node	t	1.2	topic	topic
+::node	"Cup"	1.2.1.1.1.1.2.2	"Cup"	Cup
+::node	m	1.2.1.1	more	more
+::node	d	1.1.1	dog	dogs
+::edge	1.2.1.1.1.1		game	:wiki	1.2.1.1.1.1.1		"FIFA_World_Cup"
+::edge	1.2.1.1.1.1		game	:name	1.2.1.1.1.1.2		name
+::edge	1.2.1.1.1.1		game	:mod	1.2.1.1.1.1.3	football	football
+::edge	1.2.1.1.1	finals	final	:subevent-of	1.2.1.1.1.1		game
+::edge	1.1	killing	kill-01	:purpose	1.1.2	restaurants	restaurant
+::edge	1.2	topic	topic	:ARG1-of	1.2.1	popular	popular-41
+::edge	1.2.1.1	more	more	:compared-to	1.2.1.1.1	finals	final
+::edge	1	become	become-01	:ARG1	1.1	killing	kill-01
+::edge	1.2.1.1.1.1.2		name	:op1	1.2.1.1.1.1.2.1	World	"World"
+::edge	1	become	become-01	:ARG2	1.2	topic	topic
+::edge	1.2.1.1.1.1.2		name	:op2	1.2.1.1.1.1.2.2	Cup	"Cup"
+::edge	1.2.1	popular	popular-41	:degree	1.2.1.1	more	more
+::edge	1.1	killing	kill-01	:ARG1	1.1.1	dogs	dog
+13	The World Cup finals are to be co-hosted by South Korea and Japan this year.
+13	The World Cup finals are to be co @-@ hosted by South Korea and Japan this year .
+13	1-1.2.1.2.1 2-1.2.1.2.2 3-1.2 9-1 10-1.1.r 11-1.1.1.2.1 12-1.1.1.2.2 13-1.1 14-1.1.2.2.1 15-1.3.1 16-1.3
+::node	"South_Korea"	1.1.1.1	"South_Korea"	
+::node	n	1.1.1.2	name	
+::node	"Japan"	1.1.2.1	"Japan"	
+::node	n2	1.1.2.2	name	
+::node	"Japan"	1.1.2.2.1	"Japan"	Japan
+::node	"Cup"	1.2.1.2.2	"Cup"	Cup
+::node	c2	1.1.2	country	
+::node	g	1.2.1	game	
+::node	h	1	host-01	hosted
+::node	t	1.3.1	this	this
+::node	"World"	1.2.1.2.1	"World"	World
+::node	a	1.1	and	and
+::node	f	1.2	final	finals
+::node	y	1.3	year	year
+::node	"Korea"	1.1.1.2.2	"Korea"	Korea
+::node	"South"	1.1.1.2.1	"South"	South
+::node	n3	1.2.1.2	name	
+::node	"FIFA_World_Cup"	1.2.1.1	"FIFA_World_Cup"	
+::node	c	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"South_Korea"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		country	:wiki	1.1.2.1		"Japan"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Japan	"Japan"
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	Cup	"Cup"
+::edge	1.1	and	and	:op2	1.1.2		country
+::edge	1.2	finals	final	:subevent-of	1.2.1		game
+::edge	1.3	year	year	:mod	1.3.1	this	this
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	World	"World"
+::edge	1	hosted	host-01	:ARG0	1.1	and	and
+::edge	1	hosted	host-01	:ARG1	1.2	finals	final
+::edge	1	hosted	host-01	:time	1.3	year	year
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Korea	"Korea"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	South	"South"
+::edge	1.2.1		game	:name	1.2.1.2		name
+::edge	1.2.1		game	:wiki	1.2.1.1		"FIFA_World_Cup"
+::edge	1.1	and	and	:op1	1.1.1		country
+14	The debate was partly fueled by FIFA, football's international governing body.
+14	The debate was partly fueled by FIFA , football 's international governing body .
+14	1-1.2 4-1 5-1.1.r 6-1.1.2.1 8-1.1.3.1 9-1.1.3.1.r 10-1.1.4 11-1.1.3 12-1.1
+::node	n	1.1.2	name	
+::node	f	1	fuel-01	fueled
+::node	g	1.1.3	govern-01	governing
+::node	i	1.1.4	international	international
+::node	"FIFA"	1.1.2.1	"FIFA"	FIFA
+::node	b	1.1	body	body
+::node	f2	1.1.3.1	football	football
+::node	d	1.2	debate-01	debate
+::node	p	1.3	part	
+::node	"FIFA"	1.1.1	"FIFA"	
+::edge	1.1	body	body	:name	1.1.2		name
+::edge	1.1	body	body	:ARG0-of	1.1.3	governing	govern-01
+::edge	1.1	body	body	:mod	1.1.4	international	international
+::edge	1.1.2		name	:op1	1.1.2.1	FIFA	"FIFA"
+::edge	1	fueled	fuel-01	:ARG0	1.1	body	body
+::edge	1.1.3	governing	govern-01	:ARG1	1.1.3.1	football	football
+::edge	1	fueled	fuel-01	:ARG1	1.2	debate	debate-01
+::edge	1	fueled	fuel-01	:degree	1.3		part
+::edge	1.1	body	body	:wiki	1.1.1		"FIFA"
+15	FIFA urged South Korea to prevent the inhumane killing of dogs.
+15	FIFA urged South Korea to prevent the inhumane killing of dogs .
+15	0-1.1.2.1 1-1 2-1.2.2.1 3-1.2.2.2 5-1.3 7-1.3.2.2 7-1.3.2.2.1 7-1.3.2.2.1.r 8-1.3.2 9-1.3.2.1.r 10-1.3.2.1
+::node	"FIFA"	1.1.2.1	"FIFA"	FIFA
+::node	-	1.3.2.2.1	-	inhumane
+::node	d	1.3.2.1	dog	dogs
+::node	h	1.3.2.2	humane	inhumane
+::node	n	1.1.2	name	
+::node	"South_Korea"	1.2.1	"South_Korea"	
+::node	u	1	urge-01	urged
+::node	n2	1.2.2	name	
+::node	c	1.3.1	country	
+::node	k	1.3.2	kill-01	killing
+::node	o	1.1	organization	
+::node	c	1.2	country	
+::node	p	1.3	prevent-01	prevent
+::node	"South"	1.2.2.1	"South"	South
+::node	"Korea"	1.2.2.2	"Korea"	Korea
+::node	"FIFA"	1.1.1	"FIFA"	
+::edge	1.1.2		name	:op1	1.1.2.1	FIFA	"FIFA"
+::edge	1.3.2.2	inhumane	humane	:polarity	1.3.2.2.1	inhumane	-
+::edge	1.3.2	killing	kill-01	:ARG1	1.3.2.1	dogs	dog
+::edge	1.3.2	killing	kill-01	:manner	1.3.2.2	inhumane	humane
+::edge	1.1		organization	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"South_Korea"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3	prevent	prevent-01	:ARG0	1.3.1		country
+::edge	1.3	prevent	prevent-01	:ARG1	1.3.2	killing	kill-01
+::edge	1	urged	urge-01	:ARG0	1.1		organization
+::edge	1	urged	urge-01	:ARG1	1.2		country
+::edge	1	urged	urge-01	:ARG2	1.3	prevent	prevent-01
+::edge	1.2.2		name	:op1	1.2.2.1	South	"South"
+::edge	1.2.2		name	:op2	1.2.2.2	Korea	"Korea"
+::edge	1.1		organization	:wiki	1.1.1		"FIFA"
+16	South Koreans are angered by the international pressure on their traditional cuisine.
+16	South Koreans are angered by the international pressure on their traditional cuisine .
+16	0-1.2.1.2.1 1-1.2.1.2.2 3-1 4-1.1.r 6-1.1.1 7-1.1 8-1.1.2.r 9-1.1.2.1 9-1.1.2.1.r 10-1.1.2.2 11-1.1.2
+::node	c2	1.1.2	cuisine	cuisine
+::node	c	1.2.1	country	
+::node	a	1	anger-01	angered
+::node	"South"	1.2.1.2.1	"South"	South
+::node	p	1.1.2.1	person	their
+::node	p2	1.1	pressure-01	pressure
+::node	t	1.1.2.2	traditional	traditional
+::node	p	1.2	person	
+::node	n	1.2.1.2	name	
+::node	"South_Korea"	1.2.1.1	"South_Korea"	
+::node	"Korea"	1.2.1.2.2	"Korea"	Koreans
+::node	i	1.1.1	international	international
+::edge	1.1	pressure	pressure-01	:ARG1	1.1.2	cuisine	cuisine
+::edge	1.2		person	:source	1.2.1		country
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	South	"South"
+::edge	1.1.2	cuisine	cuisine	:poss	1.1.2.1	their	person
+::edge	1	angered	anger-01	:ARG0	1.1	pressure	pressure-01
+::edge	1.1.2	cuisine	cuisine	:mod	1.1.2.2	traditional	traditional
+::edge	1	angered	anger-01	:ARG1	1.2		person
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.1		country	:wiki	1.2.1.1		"South_Korea"
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	Koreans	"Korea"
+::edge	1.1	pressure	pressure-01	:ARG0	1.1.1	international	international
+17	The organizers of South Korean website antijapan.wo.ro vowed to paralyze the websites of Warner Bros. (www.wpix.com) and the French state television network (www.francetv.fr) on January 19, 2002.
+17	The organizers of South Korean website antijapan.wo.ro vowed to paralyze the websites of Warner Bros . ( www.wpix.com ) and the French state television network ( www.francetv.fr ) on January 19 , 2002 .
+17	1-1.1 1-1.1.1 1-1.1.1.r 2-1.1.1.1.r 3-1.1.1.1.2.1.2.1 4-1.1.1.1.2.1.2.2 5-1.1.1.1.2 5-1.2.2.2.2 6-1.1.1.1.1 7-1 9-1.2 11-1.2.2.1.2 12-1.2.2.1.2.1.r 13-1.2.2.1.2.1.2.1 17-1.2.2.1.1 19-1.2.2 21-1.2.2.2.2.1.2.1.2.1 22-1.2.2.2.2.1.2 23-1.2.2.2.2.1.1 24-1.2.2.2.2.1 26-1.2.2.2.1 28-1.2.3.r 29-1.2.3.2 29-1.2.3.2.r 30-1.2.3.3 32-1.2.3.1
+::node	"France"	1.2.2.2.2.1.2.1.1	"France"	
+::node	c3	1.2.2.2.2.1.2.1	country	
+::node	n4	1.2.2.2.2.1.2.1.2	name	
+::node	c2	1.2.2.1.2.1	company	
+::node	"France"	1.2.2.2.2.1.2.1.2.1	"France"	French
+::node	"Bros."	1.2.2.1.2.1.2.2	"Bros."	
+::node	"Warner"	1.2.2.1.2.1.2.1	"Warner"	Warner
+::node	n2	1.2.2.1.2.1.2	name	
+::node	"Warner_Bros."	1.2.2.1.2.1.1	"Warner_Bros."	
+::node	1	1.2.3.2	1	January
+::node	w	1.1.1.1.2	website	website
+::node	19	1.2.3.3	19	19
+::node	"antijapan.wo.ro"	1.1.1.1.1	"antijapan.wo.ro"	antijapan.wo.ro
+::node	u2	1.2.2.1	url-entity	
+::node	u3	1.2.2.2	url-entity	
+::node	2002	1.2.3.1	2002	2002
+::node	w2	1.2.2.1.2	website	websites
+::node	"www.francetv.fr"	1.2.2.2.1	"www.francetv.fr"	www.francetv.fr
+::node	w3	1.2.2.2.2	website	website
+::node	n3	1.2.2.2.2.1	network	network
+::node	c	1.1.1.1.2.1	country	
+::node	u	1.1.1.1	url-entity	
+::node	"www.wpix.com"	1.2.2.1.1	"www.wpix.com"	www.wpix.com
+::node	"South"	1.1.1.1.2.1.2.1	"South"	South
+::node	"Korea"	1.1.1.1.2.1.2.2	"Korea"	Korean
+::node	"South_Korea"	1.1.1.1.2.1.1	"South_Korea"	
+::node	n	1.1.1.1.2.1.2	name	
+::node	p	1.2.1	person	
+::node	v	1	vow-01	vowed
+::node	a	1.2.2	and	and
+::node	d	1.2.3	date-entity	
+::node	p	1.1	person	organizers
+::node	p2	1.2	paralyze-01	paralyze
+::node	s	1.2.2.2.2.1.2	state	state
+::node	t	1.2.2.2.2.1.1	television	television
+::node	o	1.1.1	organize-01	organizers
+::edge	1.2.2.2.2.1.2.1		country	:wiki	1.2.2.2.2.1.2.1.1		"France"
+::edge	1.2.2.2.2.1.2	state	state	:part-of	1.2.2.2.2.1.2.1		country
+::edge	1.2.2.2.2.1.2.1		country	:name	1.2.2.2.2.1.2.1.2		name
+::edge	1.2.2.1.2	websites	website	:poss	1.2.2.1.2.1		company
+::edge	1.2.2.2.2.1.2.1.2		name	:op1	1.2.2.2.2.1.2.1.2.1	French	"France"
+::edge	1.2.2.1.2.1.2		name	:op2	1.2.2.1.2.1.2.2		"Bros."
+::edge	1.2.2.1.2.1.2		name	:op1	1.2.2.1.2.1.2.1	Warner	"Warner"
+::edge	1.2.2.1.2.1		company	:name	1.2.2.1.2.1.2		name
+::edge	1.2.2.1.2.1		company	:wiki	1.2.2.1.2.1.1		"Warner_Bros."
+::edge	1.2.3		date-entity	:month	1.2.3.2	January	1
+::edge	1.1.1.1		url-entity	:domain	1.1.1.1.2	website	website
+::edge	1.2.3		date-entity	:day	1.2.3.3	19	19
+::edge	1.1.1.1		url-entity	:value	1.1.1.1.1	antijapan.wo.ro	"antijapan.wo.ro"
+::edge	1.2.2	and	and	:op1	1.2.2.1		url-entity
+::edge	1.2.2	and	and	:op2	1.2.2.2		url-entity
+::edge	1.2.3		date-entity	:year	1.2.3.1	2002	2002
+::edge	1.2.2.1		url-entity	:domain	1.2.2.1.2	websites	website
+::edge	1.2.2.2		url-entity	:value	1.2.2.2.1	www.francetv.fr	"www.francetv.fr"
+::edge	1.2.2.2		url-entity	:domain	1.2.2.2.2	website	website
+::edge	1.2.2.2.2	website	website	:poss	1.2.2.2.2.1	network	network
+::edge	1.1.1.1.2	website	website	:source	1.1.1.1.2.1		country
+::edge	1.1.1	organizers	organize-01	:ARG1	1.1.1.1		url-entity
+::edge	1.2.2.1		url-entity	:value	1.2.2.1.1	www.wpix.com	"www.wpix.com"
+::edge	1.1.1.1.2.1.2		name	:op1	1.1.1.1.2.1.2.1	South	"South"
+::edge	1.1.1.1.2.1.2		name	:op2	1.1.1.1.2.1.2.2	Korean	"Korea"
+::edge	1.1.1.1.2.1		country	:wiki	1.1.1.1.2.1.1		"South_Korea"
+::edge	1.1.1.1.2.1		country	:name	1.1.1.1.2.1.2		name
+::edge	1.2	paralyze	paralyze-01	:ARG0	1.2.1		person
+::edge	1.2	paralyze	paralyze-01	:ARG1	1.2.2	and	and
+::edge	1.2	paralyze	paralyze-01	:time	1.2.3		date-entity
+::edge	1	vowed	vow-01	:ARG0	1.1	organizers	person
+::edge	1	vowed	vow-01	:ARG1	1.2	paralyze	paralyze-01
+::edge	1.2.2.2.2.1	network	network	:poss	1.2.2.2.2.1.2	state	state
+::edge	1.2.2.2.2.1	network	network	:medium	1.2.2.2.2.1.1	television	television
+::edge	1.1	organizers	person	:ARG0-of	1.1.1	organizers	organize-01
+18	The organizers of the South Korean website accused the broadcasters of falsely describing South Koreans and their food culture as barbaric.
+18	The organizers of the South Korean website accused the broadcasters of falsely describing South Koreans and their food culture as barbaric .
+18	1-1.1 1-1.1.1 1-1.1.1.r 2-1.1.1.1.r 4-1.1.1.1.1.2.1 5-1.1.1.1.1.2.2 6-1.1.1.1 7-1 9-1.2 9-1.2.1 9-1.2.1.r 10-1.3.r 11-1.3.4 11-1.3.4.r 12-1.3 13-1.1.1.1.1.2.1 14-1.1.1.1.1.2.2 15-1.3.2 16-1.3.2.2.2 16-1.3.2.2.2.r 17-1.3.2.2.1 18-1.3.2.2 19-1.3.3.r 20-1.3.3
+::node	"South_Korea"	1.1.1.1.1.1	"South_Korea"	
+::node	p3	1.3.2.2.2	person	their
+::node	n	1.1.1.1.1.2	name	
+::node	w	1.1.1.1	website	website
+::node	c	1.3.2.1.1	country	
+::node	f2	1.3.2.2.1	food	food
+::node	"South"	1.1.1.1.1.2.1	"South"	South
+::node	"Korea"	1.1.1.1.1.2.2	"Korea"	Koreans
+::node	p3	1.3.2.1	person	
+::node	c3	1.3.2.2	culture	culture
+::node	b	1.2.1	broadcast-01	broadcasters
+::node	a	1	accuse-01	accused
+::node	p2	1.3.1	person	
+::node	a2	1.3.2	and	and
+::node	b2	1.3.3	barbaric	barbaric
+::node	p	1.1	person	organizers
+::node	f	1.3.4	false	falsely
+::node	p2	1.2	person	broadcasters
+::node	d	1.3	describe-01	describing
+::node	c	1.1.1.1.1	country	
+::node	o	1.1.1	organize-01	organizers
+::edge	1.1.1.1.1		country	:wiki	1.1.1.1.1.1		"South_Korea"
+::edge	1.3.2.2	culture	culture	:poss	1.3.2.2.2	their	person
+::edge	1.1.1.1.1		country	:name	1.1.1.1.1.2		name
+::edge	1.1.1	organizers	organize-01	:ARG1	1.1.1.1	website	website
+::edge	1.3.2.1		person	:source	1.3.2.1.1		country
+::edge	1.3.2.2	culture	culture	:mod	1.3.2.2.1	food	food
+::edge	1.1.1.1.1.2		name	:op1	1.1.1.1.1.2.1	South	"South"
+::edge	1.1.1.1.1.2		name	:op2	1.1.1.1.1.2.2	Koreans	"Korea"
+::edge	1.3.2	and	and	:op1	1.3.2.1		person
+::edge	1.3.2	and	and	:op2	1.3.2.2	culture	culture
+::edge	1.2	broadcasters	person	:ARG0-of	1.2.1	broadcasters	broadcast-01
+::edge	1.3	describing	describe-01	:ARG0	1.3.1		person
+::edge	1.3	describing	describe-01	:ARG1	1.3.2	and	and
+::edge	1.3	describing	describe-01	:ARG2	1.3.3	barbaric	barbaric
+::edge	1	accused	accuse-01	:ARG0	1.1	organizers	person
+::edge	1.3	describing	describe-01	:manner	1.3.4	falsely	false
+::edge	1	accused	accuse-01	:ARG1	1.2	broadcasters	person
+::edge	1	accused	accuse-01	:ARG2	1.3	describing	describe-01
+::edge	1.1.1.1	website	website	:source	1.1.1.1.1		country
+::edge	1.1	organizers	person	:ARG0-of	1.1.1	organizers	organize-01
+19	The anti-Japan group stated that South Korean culture is under attack.
+19	The anti @-@ Japan group stated that South Korean culture is under attack .
+19	1-1.1.1 3-1.1.1.1.2.1 4-1.1 5-1 6-1.2.r 7-1.2.1.1.2.1 8-1.2.1.1.2.2 9-1.2.1 12-1.2
+::node	"Japan"	1.1.1.1.2.1	"Japan"	Japan
+::node	c3	1.1.1.1	country	
+::node	"South"	1.2.1.1.2.1	"South"	South
+::node	"Korea"	1.2.1.1.2.2	"Korea"	Korean
+::node	c	1.2.1	culture	culture
+::node	s	1	state-01	stated
+::node	n	1.2.1.1.2	name	
+::node	"South_Korea"	1.2.1.1.1	"South_Korea"	
+::node	g	1.1	group	group
+::node	a	1.2	attack-01	attack
+::node	n2	1.1.1.1.2	name	
+::node	"Japan"	1.1.1.1.1	"Japan"	
+::node	c2	1.2.1.1	country	
+::node	o	1.1.1	oppose-01	anti
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Japan	"Japan"
+::edge	1.1.1	anti	oppose-01	:ARG1	1.1.1.1		country
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	South	"South"
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	Korean	"Korea"
+::edge	1.2	attack	attack-01	:ARG1	1.2.1	culture	culture
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"South_Korea"
+::edge	1	stated	state-01	:ARG0	1.1	group	group
+::edge	1	stated	state-01	:ARG1	1.2	attack	attack-01
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Japan"
+::edge	1.2.1	culture	culture	:source	1.2.1.1		country
+::edge	1.1	group	group	:ARG0-of	1.1.1	anti	oppose-01
+20	The statement was made to gain supporters to join the lobbying.
+20	The statement was made to gain supporters to join the lobbying .
+20	1-1.1 3-1.1 5-1.2 6-1.2.1 6-1.2.1.1 6-1.2.1.1.r 8-1.2.2 10-1.2.2.2
+::node	p	1.2.1	person	supporters
+::node	h	1	have-purpose-91	
+::node	j	1.2.2	join-02	join
+::node	s	1.1	state-01	made
+::node	g	1.2	gain-02	gain
+::node	p	1.2.2.1	person	
+::node	l	1.2.2.2	lobby-01	lobbying
+::node	s2	1.2.1.1	support-01	supporters
+::edge	1.2	gain	gain-02	:ARG1	1.2.1	supporters	person
+::edge	1.2	gain	gain-02	:purpose	1.2.2	join	join-02
+::edge	1		have-purpose-91	:ARG1	1.1	made	state-01
+::edge	1		have-purpose-91	:ARG2	1.2	gain	gain-02
+::edge	1.2.2	join	join-02	:ARG0	1.2.2.1		person
+::edge	1.2.2	join	join-02	:ARG1	1.2.2.2	lobbying	lobby-01
+::edge	1.2.1	supporters	person	:ARG0-of	1.2.1.1	supporters	support-01
+21	Cyber warfare has become a common weapon for South Koreans.
+21	Cyber warfare has become a common weapon for South Koreans .
+21	0-1.1.1 1-1.1 3-1 5-1.2.1 6-1.2 7-1.3.r 8-1.3.1.2.1 9-1.3.1.2.2
+::node	c2	1.2.1	common	common
+::node	b	1	become-01	become
+::node	c3	1.3.1	country	
+::node	w	1.1	warfare	warfare
+::node	"South"	1.3.1.2.1	"South"	South
+::node	w2	1.2	weapon	weapon
+::node	"Korea"	1.3.1.2.2	"Korea"	Koreans
+::node	p	1.3	person	
+::node	"South_Korea"	1.3.1.1	"South_Korea"	
+::node	n	1.3.1.2	name	
+::node	c	1.1.1	cyber	Cyber
+::edge	1.2	weapon	weapon	:mod	1.2.1	common	common
+::edge	1.3		person	:source	1.3.1		country
+::edge	1	become	become-01	:ARG1	1.1	warfare	warfare
+::edge	1.3.1.2		name	:op1	1.3.1.2.1	South	"South"
+::edge	1	become	become-01	:ARG2	1.2	weapon	weapon
+::edge	1.3.1.2		name	:op2	1.3.1.2.2	Koreans	"Korea"
+::edge	1	become	become-01	:beneficiary	1.3		person
+::edge	1.3.1		country	:wiki	1.3.1.1		"South_Korea"
+::edge	1.3.1		country	:name	1.3.1.2		name
+::edge	1.1	warfare	warfare	:mod	1.1.1	Cyber	cyber
+22	They are one of the most Internet savvy nations in the world.
+22	They are one of the most Internet savvy nations in the world .
+22	0-1.1 2-1.3 5-1.2.1.2 6-1.2.1.1 7-1.2.1 8-1.2 9-1.2.2.r 11-1.2.2
+::node	s	1.2.1	savvy-01	savvy
+::node	i	1	include-91	
+::node	w	1.2.2	world	world
+::node	t	1.1	they	They
+::node	n	1.2	nation	nations
+::node	o	1.3	one	one
+::node	m	1.2.1.2	most	most
+::node	i2	1.2.1.1	internet	Internet
+::edge	1.2	nations	nation	:ARG0-of	1.2.1	savvy	savvy-01
+::edge	1.2	nations	nation	:location	1.2.2	world	world
+::edge	1		include-91	:ARG1	1.1	They	they
+::edge	1		include-91	:ARG2	1.2	nations	nation
+::edge	1		include-91	:ARG3	1.3	one	one
+::edge	1.2.1	savvy	savvy-01	:degree	1.2.1.2	most	most
+::edge	1.2.1	savvy	savvy-01	:ARG1	1.2.1.1	Internet	internet
+23	South Korean cyber campaigners disabled Japanese education ministry websites last year in a protest against history books accused of skimming Japan's wartime record in Asia.
+23	South Korean cyber campaigners disabled Japanese education ministry websites last year in a protest against history books accused of skimming Japan 's wartime record in Asia .
+23	0-1.1.2.2.1 1-1.1.2.2.2 2-1.1.1.1 3-1.1 3-1.1.1 3-1.1.1.r 4-1 5-1.2.1.2.2.1 6-1.2.1.1 7-1.2.1 8-1.2 9-1.3.1 10-1.3 11-1.4.r 13-1.4 14-1.4.2.r 15-1.4.2.1 16-1.4.2 17-1.4.2.2 18-1.4.2.2.1.r 19-1.4.2.2.1 20-1.4.2.2.1.2.2 21-1.4.2.2.1.2.2.r 22-1.4.2.2.1.2.1 23-1.4.2.2.1.2 24-1.4.2.2.1.2.3.r 25-1.4.2.2.1.2.3.2.1
+::node	"South"	1.1.2.2.1	"South"	South
+::node	n2	1.2.1.2.2	name	
+::node	c4	1.2.1.2	country	
+::node	e	1.2.1.1	education	education
+::node	c2	1.1.1.1	cyber	cyber
+::node	"South_Korea"	1.1.2.1	"South_Korea"	
+::node	n	1.1.2.2	name	
+::node	b	1.4.2.2.1.1	book	
+::node	r	1.4.2.2.1.2	record	record
+::node	s	1.4.2.2.1	skim-01	skimming
+::node	c3	1.1.2	country	
+::node	m	1.2.1	ministry	ministry
+::node	w2	1.4.2.2.1.2.1	wartime	wartime
+::node	d	1	disable-01	disabled
+::node	"Japan"	1.2.1.2.2.1	"Japan"	Japanese
+::node	l	1.3.1	last	last
+::node	"Japan"	1.2.1.2.1	"Japan"	
+::node	c	1.4.1	campaign-01	
+::node	c5	1.4.2.2.1.2.3	continent	
+::node	b	1.4.2	book	books
+::node	c4	1.4.2.2.1.2.2	country	Japan
+::node	p	1.1	person	campaigners
+::node	"Asia"	1.4.2.2.1.2.3.1	"Asia"	
+::node	"Korea"	1.1.2.2.2	"Korea"	Korean
+::node	w	1.2	website	websites
+::node	n3	1.4.2.2.1.2.3.2	name	
+::node	y	1.3	year	year
+::node	p2	1.4	protest-01	protest
+::node	h	1.4.2.1	history	history
+::node	a	1.4.2.2	accuse-01	accused
+::node	"Asia"	1.4.2.2.1.2.3.2.1	"Asia"	Asia
+::node	c	1.1.1	campaign-01	campaigners
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	South	"South"
+::edge	1.2.1.2		country	:name	1.2.1.2.2		name
+::edge	1.2.1	ministry	ministry	:part-of	1.2.1.2		country
+::edge	1.2.1	ministry	ministry	:mod	1.2.1.1	education	education
+::edge	1.1.1	campaigners	campaign-01	:mod	1.1.1.1	cyber	cyber
+::edge	1.1.2		country	:wiki	1.1.2.1		"South_Korea"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.4.2.2.1	skimming	skim-01	:ARG0	1.4.2.2.1.1		book
+::edge	1.4.2.2.1	skimming	skim-01	:ARG1	1.4.2.2.1.2	record	record
+::edge	1.4.2.2	accused	accuse-01	:ARG2	1.4.2.2.1	skimming	skim-01
+::edge	1.1	campaigners	person	:source	1.1.2		country
+::edge	1.2	websites	website	:poss	1.2.1	ministry	ministry
+::edge	1.4.2.2.1.2	record	record	:mod	1.4.2.2.1.2.1	wartime	wartime
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	Japanese	"Japan"
+::edge	1.3	year	year	:mod	1.3.1	last	last
+::edge	1.2.1.2		country	:wiki	1.2.1.2.1		"Japan"
+::edge	1.4	protest	protest-01	:ARG0	1.4.1		campaign-01
+::edge	1.4.2.2.1.2	record	record	:location	1.4.2.2.1.2.3		continent
+::edge	1.4	protest	protest-01	:ARG1	1.4.2	books	book
+::edge	1.4.2.2.1.2	record	record	:poss	1.4.2.2.1.2.2	Japan	country
+::edge	1	disabled	disable-01	:ARG0	1.1	campaigners	person
+::edge	1.4.2.2.1.2.3		continent	:wiki	1.4.2.2.1.2.3.1		"Asia"
+::edge	1.1.2.2		name	:op2	1.1.2.2.2	Korean	"Korea"
+::edge	1	disabled	disable-01	:ARG1	1.2	websites	website
+::edge	1.4.2.2.1.2.3		continent	:name	1.4.2.2.1.2.3.2		name
+::edge	1	disabled	disable-01	:time	1.3	year	year
+::edge	1	disabled	disable-01	:purpose	1.4	protest	protest-01
+::edge	1.4.2	books	book	:topic	1.4.2.1	history	history
+::edge	1.4.2	books	book	:ARG1-of	1.4.2.2	accused	accuse-01
+::edge	1.4.2.2.1.2.3.2		name	:op1	1.4.2.2.1.2.3.2.1	Asia	"Asia"
+::edge	1.1	campaigners	person	:ARG0-of	1.1.1	campaigners	campaign-01
+24	The nationalist group was formed to campaign against Japan.
+24	The nationalist group was formed to campaign against Japan .
+24	1-1.1.1 2-1.1 4-1 6-1.2 7-1.2.2 8-1.2.2.1.2.1
+::node	g	1.2.1	group	
+::node	f	1	form-01	formed
+::node	a	1.2.2	against	against
+::node	"Japan"	1.2.2.1.1	"Japan"	
+::node	g	1.1	group	group
+::node	c	1.2	campaign-01	campaign
+::node	"Japan"	1.2.2.1.2.1	"Japan"	Japan
+::node	c2	1.2.2.1	country	
+::node	n2	1.2.2.1.2	name	
+::node	n	1.1.1	nationalist	nationalist
+::edge	1.2	campaign	campaign-01	:ARG0	1.2.1		group
+::edge	1.2	campaign	campaign-01	:ARG1	1.2.2	against	against
+::edge	1.2.2.1		country	:wiki	1.2.2.1.1		"Japan"
+::edge	1	formed	form-01	:ARG1	1.1	group	group
+::edge	1	formed	form-01	:purpose	1.2	campaign	campaign-01
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	Japan	"Japan"
+::edge	1.2.2	against	against	:op1	1.2.2.1		country
+::edge	1.2.2.1		country	:name	1.2.2.1.2		name
+::edge	1.1	group	group	:mod	1.1.1	nationalist	nationalist
+25	The group said the foreign broadcasters are battering the eating dogmeat culture and that it is insulting behavior.
+25	The group said the foreign broadcasters are battering the eating dogmeat culture and that it is insulting behavior .
+25	1-1.1 2-1 4-1.2.1.1.1.1 5-1.2.1.1 5-1.2.1.1.1 5-1.2.1.1.1.r 7-1.2.1 9-1.2.1.2.1 11-1.2.1.2 12-1.2 16-1.2.2.2 17-1.2.2
+::node	f	1.2.1.1.1.1	foreign	foreign
+::node	d	1.2.1.2.1.1.1	dog	
+::node	b	1.2.1	batter-01	battering
+::node	m	1.2.1.2.1.1	meat	
+::node	s	1	say-01	said
+::node	b3	1.2.2	behave-01	behavior
+::node	e	1.2.1.2.1	eat-01	eating
+::node	b2	1.2.1.1.1	broadcast-01	broadcasters
+::node	g	1.1	group	group
+::node	a	1.2	and	and
+::node	c	1.2.1.2	culture	culture
+::node	p	1.2.2.1	person	
+::node	i	1.2.2.2	insult-01	insulting
+::node	p	1.2.2.2.1	person	
+::node	p	1.2.1.1	person	broadcasters
+::node	g	1.2.2.2.2	group	
+::edge	1.2.1.1.1	broadcasters	broadcast-01	:mod	1.2.1.1.1.1	foreign	foreign
+::edge	1.2.1.2.1.1		meat	:consist-of	1.2.1.2.1.1.1		dog
+::edge	1.2	and	and	:op1	1.2.1	battering	batter-01
+::edge	1.2.1.2.1	eating	eat-01	:ARG1	1.2.1.2.1.1		meat
+::edge	1.2	and	and	:op2	1.2.2	behavior	behave-01
+::edge	1.2.1.2	culture	culture	:mod	1.2.1.2.1	eating	eat-01
+::edge	1.2.1.1	broadcasters	person	:ARG0-of	1.2.1.1.1	broadcasters	broadcast-01
+::edge	1	said	say-01	:ARG0	1.1	group	group
+::edge	1	said	say-01	:ARG1	1.2	and	and
+::edge	1.2.1	battering	batter-01	:ARG1	1.2.1.2	culture	culture
+::edge	1.2.2	behavior	behave-01	:ARG0	1.2.2.1		person
+::edge	1.2.2	behavior	behave-01	:ARG1	1.2.2.2	insulting	insult-01
+::edge	1.2.2.2	insulting	insult-01	:ARG0	1.2.2.2.1		person
+::edge	1.2.1	battering	batter-01	:ARG0	1.2.1.1	broadcasters	person
+::edge	1.2.2.2	insulting	insult-01	:ARG1	1.2.2.2.2		group
+26	It tramples on a tradition of one country.
+26	It tramples on a tradition of one country .
+26	0-1.1 1-1 2-1.2.r 4-1.2 5-1.2.1.r 6-1.2.1.1 7-1.2.1
+::node	c	1.2.1	country	country
+::node	t	1	trample-01	tramples
+::node	i	1.1	it	It
+::node	t2	1.2	tradition	tradition
+::node	1	1.2.1.1	1	one
+::edge	1.2	tradition	tradition	:poss	1.2.1	country	country
+::edge	1	tramples	trample-01	:ARG0	1.1	It	it
+::edge	1	tramples	trample-01	:ARG1	1.2	tradition	tradition
+::edge	1.2.1	country	country	:quant	1.2.1.1	one	1
+27	The group said the foreign broadcasters do not show any remorse for their culture of eating snails and horses.
+27	The group said the foreign broadcasters do not show any remorse for their culture of eating snails and horses .
+27	1-1.1 2-1 4-1.2.2.2 5-1.2.2 5-1.2.2.1 5-1.2.2.1.r 7-1.2.1 7-1.2.1.r 8-1.2 9-1.2.3.1 10-1.2.3 11-1.2.3.2.r 12-1.2.3.2.1 12-1.2.3.2.1.r 13-1.2.3.2 14-1.2.3.2.2.r 15-1.2.3.2.2 16-1.2.3.2.2.1.1 17-1.2.3.2.2.1 18-1.2.3.2.2.1.2
+::node	p	1.2.1	person	not
+::node	s	1	say-01	said
+::node	r	1.2.2	remorse	broadcasters
+::node	-	1.2.3	-	remorse
+::node	g	1.1	group	group
+::node	s2	1.2	show-01	show
+::node	h	1.2.2.2.2.1.2	horse	
+::node	f	1.2.1.2	foreign	
+::node	a	1.2.2.1	any	broadcasters
+::node	s3	1.2.2.2.2.1.1	snail	
+::node	c	1.2.2.2	culture	foreign
+::node	p	1.2.2.2.1	person	
+::node	b	1.2.1.1	broadcast-01	
+::node	e2	1.2.2.2.2	eat-01	
+::node	a2	1.2.2.2.2.1	and	
+::edge	1.2	show	show-01	:ARG0	1.2.1	not	person
+::edge	1.2	show	show-01	:ARG1	1.2.2	broadcasters	remorse
+::edge	1.2	show	show-01	:polarity	1.2.3	remorse	-
+::edge	1	said	say-01	:ARG0	1.1	group	group
+::edge	1	said	say-01	:ARG1	1.2	show	show-01
+::edge	1.2.2.2.2.1		and	:op2	1.2.2.2.2.1.2		horse
+::edge	1.2.1	not	person	:source	1.2.1.2		foreign
+::edge	1.2.2	broadcasters	remorse	:mod	1.2.2.1	broadcasters	any
+::edge	1.2.2.2.2.1		and	:op1	1.2.2.2.2.1.1		snail
+::edge	1.2.2	broadcasters	remorse	:topic	1.2.2.2	foreign	culture
+::edge	1.2.2.2	foreign	culture	:poss	1.2.2.2.1		person
+::edge	1.2.1	not	person	:ARG0-of	1.2.1.1		broadcast-01
+::edge	1.2.2.2	foreign	culture	:mod	1.2.2.2.2		eat-01
+::edge	1.2.2.2.2		eat-01	:ARG1	1.2.2.2.2.1		and
+28	The cyber attack is to show the power of South Koreans and Asians against the West's sense of superiority and ignorance of South Korea's history.
+28	The cyber attack is to show the power of South Koreans and Asians against the West 's sense of superiority and ignorance of South Korea 's history .
+28	1-1.1.1 2-1.1 5-1.2 7-1.2.1 8-1.2.1.1.r 9-1.2.1.1.1.1.2.1 10-1.2.1.1.1.1.2.2 11-1.2.1.1 12-1.2.1.1.2.1.2.1 13-1.2.1.2.r 15-1.2.1.2.1.1.2.1 16-1.2.1.2.1.1.r 17-1.2.1.2.1 18-1.2.1.2.1.2.r 19-1.2.1.2.1.2 20-1.2.1.2 21-1.2.1.2.2 22-1.2.1.2.2.1.r 23-1.2.1.2.2.1.1 24-1.2.1.2.2.1.1 25-1.2.1.2.2.1.1.r 26-1.2.1.2.2.1
+::node	"South_Korea"	1.2.1.1.1.1.1	"South_Korea"	
+::node	n	1.2.1.1.1.1.2	name	
+::node	"West"	1.2.1.2.1.1.2.1	"West"	West
+::node	i	1.2.1.2.2	ignorance	ignorance
+::node	n2	1.2.1.1.2.1.2	name	
+::node	"Asia"	1.2.1.1.2.1.1	"Asia"	
+::node	a3	1.2.1.2	and	and
+::node	a2	1.2.1.1	and	and
+::node	c2	1.2.1.1.1.1	country	
+::node	c3	1.2.1.1.2.1	continent	
+::node	"Asia"	1.2.1.1.2.1.2.1	"Asia"	Asians
+::node	n3	1.2.1.2.1.1.2	name	
+::node	"Western_world"	1.2.1.2.1.1.1	"Western_world"	
+::node	p	1.2.1	power	power
+::node	w	1.2.1.2.1.1	world-region	
+::node	h2	1	have-purpose-91	
+::node	s3	1.2.1.2.1.2	superior	superiority
+::node	h	1.2.1.2.2.1	history	history
+::node	p3	1.2.1.1.2	person	
+::node	s2	1.2.1.2.1	sense-01	sense
+::node	p2	1.2.1.1.1	person	
+::node	a	1.1	attack-01	attack
+::node	"South"	1.2.1.1.1.1.2.1	"South"	South
+::node	s	1.2	show-01	show
+::node	"Korea"	1.2.1.1.1.1.2.2	"Korea"	Koreans
+::node	c	1.1.1	cyber	cyber
+::node	c2	1.2.1.2.2.1.1	country	Korea
+::edge	1.2.1.1.1.1		country	:wiki	1.2.1.1.1.1.1		"South_Korea"
+::edge	1.2.1.1.1.1		country	:name	1.2.1.1.1.1.2		name
+::edge	1.2.1.2.1.1.2		name	:op1	1.2.1.2.1.1.2.1	West	"West"
+::edge	1.2.1.2	and	and	:op2	1.2.1.2.2	ignorance	ignorance
+::edge	1.2.1.1.2.1		continent	:name	1.2.1.1.2.1.2		name
+::edge	1.2.1.1.2.1		continent	:wiki	1.2.1.1.2.1.1		"Asia"
+::edge	1.2.1	power	power	:prep-against	1.2.1.2	and	and
+::edge	1.2.1	power	power	:poss	1.2.1.1	and	and
+::edge	1.2.1.1.1		person	:source	1.2.1.1.1.1		country
+::edge	1.2.1.1.2		person	:source	1.2.1.1.2.1		continent
+::edge	1.2.1.1.2.1.2		name	:op1	1.2.1.1.2.1.2.1	Asians	"Asia"
+::edge	1.2.1.2.1.1		world-region	:name	1.2.1.2.1.1.2		name
+::edge	1.2.1.2.1.1		world-region	:wiki	1.2.1.2.1.1.1		"Western_world"
+::edge	1.2	show	show-01	:ARG1	1.2.1	power	power
+::edge	1.2.1.2.1	sense	sense-01	:ARG0	1.2.1.2.1.1		world-region
+::edge	1.2.1.2.1	sense	sense-01	:ARG1	1.2.1.2.1.2	superiority	superior
+::edge	1.2.1.2.2	ignorance	ignorance	:topic	1.2.1.2.2.1	history	history
+::edge	1.2.1.1	and	and	:op2	1.2.1.1.2		person
+::edge	1.2.1.2	and	and	:op1	1.2.1.2.1	sense	sense-01
+::edge	1.2.1.1	and	and	:op1	1.2.1.1.1		person
+::edge	1		have-purpose-91	:ARG1	1.1	attack	attack-01
+::edge	1.2.1.1.1.1.2		name	:op1	1.2.1.1.1.1.2.1	South	"South"
+::edge	1		have-purpose-91	:ARG2	1.2	show	show-01
+::edge	1.2.1.1.1.1.2		name	:op2	1.2.1.1.1.1.2.2	Koreans	"Korea"
+::edge	1.1	attack	attack-01	:mod	1.1.1	cyber	cyber
+::edge	1.2.1.2.2.1	history	history	:poss	1.2.1.2.2.1.1	Korea	country
+29	Another group said they will launch an association next Monday of around 100 dog meat restaurant owners in the Seoul region and hold a seminar to promote the dish.
+29	Another group said they will launch an association next Monday of around 100 dog meat restaurant owners in the Seoul region and hold a seminar to promote the dish .
+29	0-1.1.1 1-1.1 2-1 3-1.2.1.1 5-1.2.1 7-1.2.1.2 8-1.2.1.3.2 9-1.2.1.3.1 10-1.2.1.2.1.r 11-1.2.1.2.1.1 12-1.2.1.2.1.1.1 13-1.2.1.2.1.2.1.1.1 14-1.2.1.2.1.2.1.1 15-1.2.1.2.1.2.1 16-1.2.1.2.1 16-1.2.1.2.1.2 16-1.2.1.2.1.2.r 17-1.2.1.2.1.3.r 19-1.2.1.2.1.3.1.2.1 20-1.2.1.2.1.3 21-1.2 22-1.2.2 24-1.2.2.2 26-1.2.2.2.1
+::node	m	1.2.1.2.1.2.1.1	meat	meat
+::node	n	1.2.1.3.2	next	next
+::node	m2	1.2.1.3.1	monday	Monday
+::node	d2	1.2.1.2.1.2.1.1.1	dog	dog
+::node	n2	1.2.1.2.1.3.1.2	name	
+::node	"Seoul"	1.2.1.2.1.3.1.1	"Seoul"	
+::node	a3	1.2.1.2	association	association
+::node	g	1.2.2.1	group	
+::node	m	1.2.2.2.1.1	meat	
+::node	d	1.2.1.3	date-entity	
+::node	s2	1.2.2.2	seminar	seminar
+::node	p2	1.2.2.2.1	promote-02	promote
+::node	g	1.2.1.1	group	they
+::node	c	1.2.1.2.1.3.1	city	
+::node	r	1.2.1.2.1.2.1	restaurant	restaurant
+::node	100	1.2.1.2.1.1.1	100	100
+::node	l	1.2.1	launch-01	launch
+::node	a4	1.2.1.2.1.1	around	around
+::node	s	1	say-01	said
+::node	o	1.2.1.2.1.2	own-01	owners
+::node	"Seoul"	1.2.1.2.1.3.1.2.1	"Seoul"	Seoul
+::node	h	1.2.2	hold-04	hold
+::node	p	1.2.1.2.1	person	owners
+::node	g	1.1	group	group
+::node	a2	1.2	and	and
+::node	r2	1.2.1.2.1.3	region	region
+::node	a	1.1.1	another	Another
+::edge	1.2.1.2.1.2.1	restaurant	restaurant	:mod	1.2.1.2.1.2.1.1	meat	meat
+::edge	1.2.1.3		date-entity	:mod	1.2.1.3.2	next	next
+::edge	1.2.1.3		date-entity	:weekday	1.2.1.3.1	Monday	monday
+::edge	1.2.1.2.1.2.1.1	meat	meat	:consist-of	1.2.1.2.1.2.1.1.1	dog	dog
+::edge	1.2.1.2.1.3.1		city	:name	1.2.1.2.1.3.1.2		name
+::edge	1.2.1.2.1.3.1		city	:wiki	1.2.1.2.1.3.1.1		"Seoul"
+::edge	1.2.1	launch	launch-01	:ARG1	1.2.1.2	association	association
+::edge	1.2.2	hold	hold-04	:ARG0	1.2.2.1		group
+::edge	1.2.2.2.1	promote	promote-02	:ARG1	1.2.2.2.1.1		meat
+::edge	1.2.1	launch	launch-01	:time	1.2.1.3		date-entity
+::edge	1.2.2	hold	hold-04	:ARG1	1.2.2.2	seminar	seminar
+::edge	1.2.2.2	seminar	seminar	:ARG0-of	1.2.2.2.1	promote	promote-02
+::edge	1.2.1	launch	launch-01	:ARG0	1.2.1.1	they	group
+::edge	1.2.1.2.1.3	region	region	:part	1.2.1.2.1.3.1		city
+::edge	1.2.1.2.1.2	owners	own-01	:ARG1	1.2.1.2.1.2.1	restaurant	restaurant
+::edge	1.2.1.2.1.1	around	around	:op1	1.2.1.2.1.1.1	100	100
+::edge	1.2	and	and	:op1	1.2.1	launch	launch-01
+::edge	1.2.1.2.1	owners	person	:quant	1.2.1.2.1.1	around	around
+::edge	1.2.1.2.1	owners	person	:ARG0-of	1.2.1.2.1.2	owners	own-01
+::edge	1.2.1.2.1.3.1.2		name	:op1	1.2.1.2.1.3.1.2.1	Seoul	"Seoul"
+::edge	1.2	and	and	:op2	1.2.2	hold	hold-04
+::edge	1.2.1.2	association	association	:consist-of	1.2.1.2.1	owners	person
+::edge	1	said	say-01	:ARG0	1.1	group	group
+::edge	1	said	say-01	:ARG1	1.2	and	and
+::edge	1.2.1.2.1	owners	person	:location	1.2.1.2.1.3	region	region
+::edge	1.1	group	group	:mod	1.1.1	Another	another
+30	Food scientist at Chung Chong College an Yong-geun said he would introduce some 350 different kinds of culinary art with dog meat.
+30	Food scientist at Chung Chong College an Yong @-@ geun said he would introduce some 350 different kinds of culinary art with dog meat .
+30	0-1.1.3.2.1 1-1.1.3.2 2-1.1.3 3-1.1.3.1.2.1 4-1.1.3.1.2.2 5-1.1.3.1.2.3 6-1.1.2.1 7-1.1.2.2 10-1 11-1.2.1 13-1.2 14-1.2.2.3.2 15-1.2.2.3.2.1 16-1.2.2.3.1 17-1.2.2.3 19-1.2.2.1 20-1.2.2 21-1.2.2.2.r 22-1.2.2.2.1 23-1.2.2.2
+::node	n2	1.1.3.1.2	name	
+::node	f	1.1.3.2.1	food	Food
+::node	k	1.2.2.3	kind	kinds
+::node	c	1.2.2.1	culinary	culinary
+::node	m	1.2.2.2	meat	meat
+::node	d	1.2.2.2.1	dog	dog
+::node	d2	1.2.2.3.1	differ-02	different
+::node	s3	1.2.2.3.2	some	some
+::node	350	1.2.2.3.2.1	350	350
+::node	"An"	1.1.2.1	"An"	an
+::node	"Yong-Geun"	1.1.2.2	"Yong-Geun"	Yong
+::node	u	1.1.3.1	university	
+::node	s2	1.1.3.2	scientist	scientist
+::node	"Chong"	1.1.3.1.2.2	"Chong"	Chong
+::node	"College"	1.1.3.1.2.3	"College"	College
+::node	"Chung"	1.1.3.1.2.1	"Chung"	Chung
+::node	n	1.1.2	name	
+::node	p	1.2.1	person	he
+::node	s	1	say-01	said
+::node	h	1.1.3	have-org-role-91	at
+::node	a	1.2.2	art	art
+::node	p	1.1	person	
+::node	i	1.2	introduce-01	introduce
+::node	"Chung_Cheong_University"	1.1.3.1.1	"Chung_Cheong_University"	
+::node	-	1.1.1	-	
+::edge	1.2.2.3.2	some	some	:op1	1.2.2.3.2.1	350	350
+::edge	1.1.2		name	:op1	1.1.2.1	an	"An"
+::edge	1.1.3.1		university	:name	1.1.3.1.2		name
+::edge	1.1.3.2	scientist	scientist	:topic	1.1.3.2.1	Food	food
+::edge	1.1.2		name	:op2	1.1.2.2	Yong	"Yong-Geun"
+::edge	1.1.3	at	have-org-role-91	:ARG1	1.1.3.1		university
+::edge	1.1.3	at	have-org-role-91	:ARG2	1.1.3.2	scientist	scientist
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	Chong	"Chong"
+::edge	1.1.3.1.2		name	:op3	1.1.3.1.2.3	College	"College"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Chung	"Chung"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	introduce	introduce-01	:ARG0	1.2.1	he	person
+::edge	1.1		person	:ARG0-of	1.1.3	at	have-org-role-91
+::edge	1.2	introduce	introduce-01	:ARG1	1.2.2	art	art
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	introduce	introduce-01
+::edge	1.2.2	art	art	:consist-of	1.2.2.3	kinds	kind
+::edge	1.2.2	art	art	:mod	1.2.2.1	culinary	culinary
+::edge	1.2.2	art	art	:accompanier	1.2.2.2	meat	meat
+::edge	1.1.3.1		university	:wiki	1.1.3.1.1		"Chung_Cheong_University"
+::edge	1.2.2.2	meat	meat	:consist-of	1.2.2.2.1	dog	dog
+::edge	1.2.2.3	kinds	kind	:ARG1-of	1.2.2.3.1	different	differ-02
+::edge	1.2.2.3	kinds	kind	:quant	1.2.2.3.2	some	some
+::edge	1.1		person	:wiki	1.1.1		-
+31	French actress-turned activist Brigitte Bardot and other animal rights campaigners call to stop the South Korean practice of eating dogs.
+31	French actress @-@ turned activist Brigitte Bardot and other animal rights campaigners call to stop the South Korean practice of eating dogs .
+31	0-1.1.1.3.2.1 1-1.1.1.4.2 1-1.1.1.4.2.1 1-1.1.1.4.2.1.r 3-1.1.1.4 4-1.1.1.4.1 5-1.1.1.2.1 6-1.1.1.2.2 7-1.1 8-1.1.2.2 9-1.1.2.1.1.1 10-1.1.2.1.1 11-1.1.2 11-1.1.2.1 11-1.1.2.1.r 12-1 14-1.2 16-1.2.1.1.2.1 17-1.2.1.1.2.2 18-1.2.1 19-1.2.1.2.r 20-1.2.1.2 21-1.2.1.2.1
+::node	a4	1.1.2.1.1.1	animal	animal
+::node	r	1.1.2.1.1	right	rights
+::node	a2	1.1.1.4.2.1	act-01	actress
+::node	"Bardot"	1.1.1.2.2	"Bardot"	Bardot
+::node	"France"	1.1.1.3.1	"France"	
+::node	"Brigitte"	1.1.1.2.1	"Brigitte"	Brigitte
+::node	e	1.2.1.2	eat-01	eating
+::node	c4	1.2.1.1	country	
+::node	"Brigitte_Bardot"	1.1.1.1	"Brigitte_Bardot"	
+::node	n	1.1.1.2	name	
+::node	c3	1.1.2.1	campaign-01	campaigners
+::node	c2	1.1.1.3	country	
+::node	o	1.1.2.2	other	other
+::node	t	1.1.1.4	turn-02	turned
+::node	p2	1.1.1.4.2	person	actress
+::node	"South"	1.2.1.1.2.1	"South"	South
+::node	n2	1.1.1.3.2	name	
+::node	a3	1.1.1.4.1	activist	activist
+::node	"Korea"	1.2.1.1.2.2	"Korea"	Korean
+::node	p3	1.1.2	person	campaigners
+::node	p4	1.2.1	practice-01	practice
+::node	c	1	call-03	call
+::node	n3	1.2.1.1.2	name	
+::node	d	1.2.1.2.1	dog	dogs
+::node	"South_Korea"	1.2.1.1.1	"South_Korea"	
+::node	a	1.1	and	and
+::node	s	1.2	stop-01	stop
+::node	p	1.1.1	person	
+::node	"France"	1.1.1.3.2.1	"France"	French
+::edge	1.1.2.1.1	rights	right	:poss	1.1.2.1.1.1	animal	animal
+::edge	1.1.2.1	campaigners	campaign-01	:ARG1	1.1.2.1.1	rights	right
+::edge	1.1.1.4.2	actress	person	:ARG0-of	1.1.1.4.2.1	actress	act-01
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Bardot	"Bardot"
+::edge	1.1.1.3		country	:wiki	1.1.1.3.1		"France"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Brigitte	"Brigitte"
+::edge	1.2.1	practice	practice-01	:ARG1	1.2.1.2	eating	eat-01
+::edge	1.2.1	practice	practice-01	:ARG0	1.2.1.1		country
+::edge	1.1.1		person	:wiki	1.1.1.1		"Brigitte_Bardot"
+::edge	1.1.1		person	:name	1.1.1.2		name
+::edge	1.1.2	campaigners	person	:ARG0-of	1.1.2.1	campaigners	campaign-01
+::edge	1.1.1		person	:source	1.1.1.3		country
+::edge	1.1.2	campaigners	person	:mod	1.1.2.2	other	other
+::edge	1.1.1		person	:ARG1-of	1.1.1.4	turned	turn-02
+::edge	1.1.1.4	turned	turn-02	:ARG3	1.1.1.4.2	actress	person
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	South	"South"
+::edge	1.1.1.3		country	:name	1.1.1.3.2		name
+::edge	1.1.1.4	turned	turn-02	:ARG2	1.1.1.4.1	activist	activist
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	Korean	"Korea"
+::edge	1.1	and	and	:op2	1.1.2	campaigners	person
+::edge	1.2	stop	stop-01	:ARG1	1.2.1	practice	practice-01
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.2.1.2	eating	eat-01	:ARG1	1.2.1.2.1	dogs	dog
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"South_Korea"
+::edge	1	call	call-03	:ARG0	1.1	and	and
+::edge	1	call	call-03	:ARG1	1.2	stop	stop-01
+::edge	1.1	and	and	:op1	1.1.1		person
+::edge	1.1.1.3.2		name	:op1	1.1.1.3.2.1	French	"France"
+32	FIFA president Sepp Blatter sent a letter last November to South Korea's World Cup organizing committee calling for immediate and decisive measures against cruelty to dogs.
+32	FIFA president Sepp Blatter sent a letter last November to South Korea 's World Cup organizing committee calling for immediate and decisive measures against cruelty to dogs .
+32	0-1.1.3.1.2.1 1-1.1.3.2 2-1.1.2.1 3-1.1.2.2 4-1 6-1.2 7-1.5.2 8-1.5.1 8-1.5.1.r 9-1.3.r 10-1.3.2.2.1 11-1.3.2.2.2 12-1.3.2.r 13-1.3.1.1.2.1 14-1.3.1.1.2.2 15-1.3.1 16-1.3 17-1.4 18-1.4.2.r 19-1.4.2.2 21-1.4.2.3 22-1.4.2 23-1.4.2.1 24-1.4.2.1.1 25-1.4.2.1.1.1.r 26-1.4.2.1.1.1
+::node	"Korea"	1.3.2.2.2	"Korea"	Korea
+::node	d	1.4.2.3	decisive	decisive
+::node	n2	1.1.3.1.2	name	
+::node	"South"	1.3.2.2.1	"South"	South
+::node	g	1.3.1.1	game	
+::node	"South_Korea"	1.3.2.1	"South_Korea"	
+::node	n4	1.3.2.2	name	
+::node	"FIFA_World_Cup"	1.3.1.1.1	"FIFA_World_Cup"	
+::node	d2	1.4.2.1.1.1	dog	dogs
+::node	"Sepp"	1.1.2.1	"Sepp"	Sepp
+::node	"Blatter"	1.1.2.2	"Blatter"	Blatter
+::node	o	1.1.3.1	organization	
+::node	p2	1.1.3.2	president	president
+::node	c4	1.4.2.1.1	cruel	cruelty
+::node	"World"	1.3.1.1.2.1	"World"	World
+::node	"Cup"	1.3.1.1.2.2	"Cup"	Cup
+::node	"FIFA"	1.1.3.1.2.1	"FIFA"	FIFA
+::node	n	1.1.2	name	
+::node	s	1	send-01	sent
+::node	h	1.1.3	have-org-role-91	
+::node	o2	1.3.1	organize-01	organizing
+::node	c2	1.3.2	country	
+::node	p	1.4.1	person	
+::node	m	1.4.2	measure	measures
+::node	11	1.5.1	11	November
+::node	p	1.1	person	
+::node	n3	1.3.1.1.2	name	
+::node	l2	1.5.2	last	last
+::node	l	1.2	letter	letter
+::node	c	1.3	committee	committee
+::node	c3	1.4	call-03	calling
+::node	d3	1.5	date-entity	
+::node	"FIFA"	1.1.3.1.1	"FIFA"	
+::node	c5	1.4.2.1	counter-01	against
+::node	i	1.4.2.2	immediate	immediate
+::node	"Sepp_Blatter"	1.1.1	"Sepp_Blatter"	
+::edge	1.3.2.2		name	:op2	1.3.2.2.2	Korea	"Korea"
+::edge	1.4.2	measures	measure	:mod	1.4.2.3	decisive	decisive
+::edge	1.1.3.1		organization	:name	1.1.3.1.2		name
+::edge	1.3.2.2		name	:op1	1.3.2.2.1	South	"South"
+::edge	1.3.1	organizing	organize-01	:ARG1	1.3.1.1		game
+::edge	1.3.2		country	:wiki	1.3.2.1		"South_Korea"
+::edge	1.3.2		country	:name	1.3.2.2		name
+::edge	1.3.1.1		game	:wiki	1.3.1.1.1		"FIFA_World_Cup"
+::edge	1.4.2.1.1	cruelty	cruel	:beneficiary	1.4.2.1.1.1	dogs	dog
+::edge	1.1.2		name	:op1	1.1.2.1	Sepp	"Sepp"
+::edge	1.1.2		name	:op2	1.1.2.2	Blatter	"Blatter"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		organization
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	president	president
+::edge	1.4.2.1	against	counter-01	:ARG1	1.4.2.1.1	cruelty	cruel
+::edge	1.3.1.1.2		name	:op1	1.3.1.1.2.1	World	"World"
+::edge	1.3.1.1.2		name	:op2	1.3.1.1.2.2	Cup	"Cup"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	FIFA	"FIFA"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.3	committee	committee	:ARG0-of	1.3.1	organizing	organize-01
+::edge	1.3	committee	committee	:poss	1.3.2		country
+::edge	1.4	calling	call-03	:ARG0	1.4.1		person
+::edge	1.4	calling	call-03	:ARG1	1.4.2	measures	measure
+::edge	1.5		date-entity	:month	1.5.1	November	11
+::edge	1	sent	send-01	:ARG0	1.1		person
+::edge	1.3.1.1		game	:name	1.3.1.1.2		name
+::edge	1.5		date-entity	:mod	1.5.2	last	last
+::edge	1	sent	send-01	:ARG1	1.2	letter	letter
+::edge	1	sent	send-01	:ARG2	1.3	committee	committee
+::edge	1	sent	send-01	:purpose	1.4	calling	call-03
+::edge	1	sent	send-01	:time	1.5		date-entity
+::edge	1.1.3.1		organization	:wiki	1.1.3.1.1		"FIFA"
+::edge	1.4.2	measures	measure	:purpose	1.4.2.1	against	counter-01
+::edge	1.4.2	measures	measure	:mod	1.4.2.2	immediate	immediate
+::edge	1.1		person	:wiki	1.1.1		"Sepp_Blatter"
+33	It was ahead of the World Cup which starts May 31, 2002.
+33	It was ahead of the World Cup which starts May 31 , 2002 .
+33	0-1.1 1-1.1.r 2-1 3-1.2.r 5-1.2.2.1 6-1.2.2.2 8-1.2 8-1.2.3 8-1.2.3.r 9-1.2.3.1.2 9-1.2.3.1.2.r 10-1.2.3.1.3 12-1.2.3.1.1
+::node	"FIFA_World_Cup"	1.2.1	"FIFA_World_Cup"	
+::node	a	1	ahead	ahead
+::node	n	1.2.2	name	
+::node	s	1.2.3	start-01	starts
+::node	i	1.1	it	It
+::node	g	1.2	game	starts
+::node	31	1.2.3.1.3	31	31
+::node	"World"	1.2.2.1	"World"	World
+::node	2002	1.2.3.1.1	2002	2002
+::node	"Cup"	1.2.2.2	"Cup"	Cup
+::node	d	1.2.3.1	date-entity	
+::node	5	1.2.3.1.2	5	May
+::edge	1.2	starts	game	:wiki	1.2.1		"FIFA_World_Cup"
+::edge	1.2	starts	game	:name	1.2.2		name
+::edge	1.2	starts	game	:ARG1-of	1.2.3	starts	start-01
+::edge	1	ahead	ahead	:domain	1.1	It	it
+::edge	1	ahead	ahead	:compared-to	1.2	starts	game
+::edge	1.2.3.1		date-entity	:day	1.2.3.1.3	31	31
+::edge	1.2.2		name	:op1	1.2.2.1	World	"World"
+::edge	1.2.3.1		date-entity	:year	1.2.3.1.1	2002	2002
+::edge	1.2.2		name	:op2	1.2.2.2	Cup	"Cup"
+::edge	1.2.3	starts	start-01	:time	1.2.3.1		date-entity
+::edge	1.2.3.1		date-entity	:month	1.2.3.1.2	May	5
+34	Head of the Korean Football Association and a FIFA vice president Chung Mong-Joon said FIFA should not intervene in the eating habits of a sovereign nation.
+34	Head of the Korean Football Association and a FIFA vice president Chung Mong @-@ Joon said FIFA should not intervene in the eating habits of a sovereign nation .
+34	0-1.1 0-1.1.3 0-1.1.3.r 1-1.1.3.1.r 3-1.1.3.1.2.1 4-1.1.3.1.2.2 5-1.1.3.1.2.3 8-1.1.4.1.2.1 9-1.1.4.2.1 10-1.1.4.2 11-1.1.2.1 12-1.1.2.2 14-1.1.2.2 15-1 16-1.1.4.1.2.1 17-1.2 18-1.2.1.1 18-1.2.1.1.r 19-1.2.1 20-1.2.1.3.r 22-1.2.1.3.2 23-1.2.1.3 24-1.2.1.3.1.r 26-1.2.1.3.1.1 27-1.2.1.3.1
+::node	n2	1.1.3.1.2	name	
+::node	s2	1.2.1.3.1.1	sovereign	sovereign
+::node	e	1.2.1.3.2	eat-01	eating
+::node	n4	1.2.1.3.1	nation	nation
+::node	"FIFA"	1.1.4.1.1	"FIFA"	
+::node	n3	1.1.4.1.2	name	
+::node	v	1.1.4.2.1	vice	vice
+::node	"FIFA"	1.1.4.1.2.1	"FIFA"	FIFA
+::node	o2	1.2.1.2	organization	
+::node	h2	1.2.1.3	habit	habits
+::node	-	1.2.1.1	-	not
+::node	"Chung"	1.1.2.1	"Chung"	Chung
+::node	"Mong-Joon"	1.1.2.2	"Mong-Joon"	Joon
+::node	o	1.1.3.1	organization	
+::node	o2	1.1.4.1	organization	
+::node	p2	1.1.4.2	president	president
+::node	"Football"	1.1.3.1.2.2	"Football"	Football
+::node	"Association"	1.1.3.1.2.3	"Association"	Association
+::node	"Korean"	1.1.3.1.2.1	"Korean"	Korean
+::node	n	1.1.2	name	
+::node	i	1.2.1	intervene-01	intervene
+::node	s	1	say-01	said
+::node	h	1.1.3	head-01	Head
+::node	h3	1.1.4	have-org-role-91	
+::node	p	1.1	person	Head
+::node	r	1.2	recommend-01	should
+::node	"Korea_Football_Association"	1.1.3.1.1	"Korea_Football_Association"	
+::node	"Chung_Mong-joon"	1.1.1	"Chung_Mong-joon"	
+::edge	1.1.3.1		organization	:name	1.1.3.1.2		name
+::edge	1.2.1.3.1	nation	nation	:mod	1.2.1.3.1.1	sovereign	sovereign
+::edge	1.2.1.3	habits	habit	:topic	1.2.1.3.2	eating	eat-01
+::edge	1.2.1.3	habits	habit	:poss	1.2.1.3.1	nation	nation
+::edge	1.1.4.1		organization	:wiki	1.1.4.1.1		"FIFA"
+::edge	1.1.4.1		organization	:name	1.1.4.1.2		name
+::edge	1.1.4.2	president	president	:mod	1.1.4.2.1	vice	vice
+::edge	1.1.4.1.2		name	:op1	1.1.4.1.2.1	FIFA	"FIFA"
+::edge	1.2.1	intervene	intervene-01	:ARG0	1.2.1.2		organization
+::edge	1.2.1	intervene	intervene-01	:ARG1	1.2.1.3	habits	habit
+::edge	1.2.1	intervene	intervene-01	:polarity	1.2.1.1	not	-
+::edge	1.1.2		name	:op1	1.1.2.1	Chung	"Chung"
+::edge	1.1.2		name	:op2	1.1.2.2	Joon	"Mong-Joon"
+::edge	1.1.3	Head	head-01	:ARG1	1.1.3.1		organization
+::edge	1.1.4		have-org-role-91	:ARG1	1.1.4.1		organization
+::edge	1.1.4		have-org-role-91	:ARG2	1.1.4.2	president	president
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	Football	"Football"
+::edge	1.1.3.1.2		name	:op3	1.1.3.1.2.3	Association	"Association"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Korean	"Korean"
+::edge	1.1	Head	person	:name	1.1.2		name
+::edge	1.2	should	recommend-01	:ARG1	1.2.1	intervene	intervene-01
+::edge	1.1	Head	person	:ARG0-of	1.1.3	Head	head-01
+::edge	1.1	Head	person	:ARG0-of	1.1.4		have-org-role-91
+::edge	1	said	say-01	:ARG0	1.1	Head	person
+::edge	1	said	say-01	:ARG1	1.2	should	recommend-01
+::edge	1.1.3.1		organization	:wiki	1.1.3.1.1		"Korea_Football_Association"
+::edge	1.1	Head	person	:wiki	1.1.1		"Chung_Mong-joon"
+35	South Korean officials said most dogs used for eating were killed instantly by electrocution.
+35	South Korean officials said most dogs used for eating were killed instantly by electrocution .
+35	0-1.1.1.1.2.1 1-1.1.1.1.2.2 2-1.1.1.2 3-1 4-1.2.1.1 5-1.2.1 6-1.2.1.2 7-1.2.1.2.1.r 8-1.2.1.2.1 10-1.2 11-1.2.3 11-1.2.3.r 12-1.2.2.r 13-1.2.2
+::node	"South"	1.1.1.1.2.1	"South"	South
+::node	c	1.1.1.1	country	
+::node	"Korea"	1.1.1.1.2.2	"Korea"	Korean
+::node	o	1.1.1.2	official	officials
+::node	d	1.2.1	dog	dogs
+::node	s	1	say-01	said
+::node	e2	1.2.2	electrocution	electrocution
+::node	e	1.2.1.2.1	eat-01	eating
+::node	i	1.2.3	instant	instantly
+::node	p	1.1	person	
+::node	k	1.2	kill-01	killed
+::node	n	1.1.1.1.2	name	
+::node	"South_Korea"	1.1.1.1.1	"South_Korea"	
+::node	u	1.2.1.2	use-01	used
+::node	m	1.2.1.1	most	most
+::node	h	1.1.1	have-org-role-91	
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	South	"South"
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		country
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	Korean	"Korea"
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.2	killed	kill-01	:ARG1	1.2.1	dogs	dog
+::edge	1.2	killed	kill-01	:ARG2	1.2.2	electrocution	electrocution
+::edge	1.2.1.2	used	use-01	:ARG2	1.2.1.2.1	eating	eat-01
+::edge	1.2	killed	kill-01	:manner	1.2.3	instantly	instant
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	killed	kill-01
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"South_Korea"
+::edge	1.2.1	dogs	dog	:ARG1-of	1.2.1.2	used	use-01
+::edge	1.2.1	dogs	dog	:quant	1.2.1.1	most	most
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+36	Activists contend many slaughterhouses in the countryside are not controlled.
+36	Activists contend many slaughterhouses in the countryside are not controlled .
+36	0-1.1 1-1 2-1.2.2.1 3-1.2.2 4-1.2.2.2.r 6-1.2.2.2 8-1.2.1 8-1.2.1.r 9-1.2
+::node	s	1.2.1	slaughterhouse	not
+::node	c	1	contend-01	contend
+::node	-	1.2.2	-	slaughterhouses
+::node	a	1.1	activist	Activists
+::node	c2	1.2	control-01	controlled
+::node	c3	1.2.1.2	countryside	
+::node	m	1.2.1.1	many	
+::edge	1.2	controlled	control-01	:ARG1	1.2.1	not	slaughterhouse
+::edge	1.2	controlled	control-01	:polarity	1.2.2	slaughterhouses	-
+::edge	1	contend	contend-01	:ARG0	1.1	Activists	activist
+::edge	1	contend	contend-01	:ARG1	1.2	controlled	control-01
+::edge	1.2.1	not	slaughterhouse	:location	1.2.1.2		countryside
+::edge	1.2.1	not	slaughterhouse	:quant	1.2.1.1		many
+37	They strangle dogs, hang them by a rope and beat them in line with traditional practice to make the meat more tender.
+37	They strangle dogs , hang them by a rope and beat them in line with traditional practice to make the meat more tender .
+37	0-1.1.1 1-1.1 2-1.1.2 4-1.2 5-1.2.1 6-1.2.3.r 8-1.2.3 9-1 10-1.3 11-1.3.1 12-1.3.3.r 13-1.3.3 14-1.3.4.r 15-1.3.4.1 16-1.3.4 18-1.3.5 20-1.3.5.2.1 21-1.3.5.2.2 22-1.3.5.2
+::node	m2	1.3.5.2.1	meat	meat
+::node	m3	1.3.5.2.2	more	more
+::node	t2	1.3.4.1	traditional	traditional
+::node	d	1.1.2	dog	dogs
+::node	t	1.2.1	they	them
+::node	a	1	and	and
+::node	d	1.2.2	dog	
+::node	t	1.3.1	they	them
+::node	r	1.2.3	rope	rope
+::node	d	1.3.2	dog	
+::node	l	1.3.3	line-02	line
+::node	s	1.1	strangle-01	strangle
+::node	p	1.3.4	practice-01	practice
+::node	t	1.3.5.1	they	
+::node	h	1.2	hang-01	hang
+::node	m	1.3.5	make-02	make
+::node	t3	1.3.5.2	tender	tender
+::node	b	1.3	beat-01	beat
+::node	t	1.1.1	they	They
+::edge	1.3.5.2	tender	tender	:domain	1.3.5.2.1	meat	meat
+::edge	1.3.5.2	tender	tender	:degree	1.3.5.2.2	more	more
+::edge	1.3.4	practice	practice-01	:mod	1.3.4.1	traditional	traditional
+::edge	1.1	strangle	strangle-01	:ARG1	1.1.2	dogs	dog
+::edge	1.2	hang	hang-01	:ARG0	1.2.1	them	they
+::edge	1.2	hang	hang-01	:ARG1	1.2.2		dog
+::edge	1.3	beat	beat-01	:ARG0	1.3.1	them	they
+::edge	1.2	hang	hang-01	:instrument	1.2.3	rope	rope
+::edge	1.3	beat	beat-01	:ARG1	1.3.2		dog
+::edge	1.3	beat	beat-01	:ARG1-of	1.3.3	line	line-02
+::edge	1	and	and	:op1	1.1	strangle	strangle-01
+::edge	1.3	beat	beat-01	:accompanier	1.3.4	practice	practice-01
+::edge	1.3.5	make	make-02	:ARG0	1.3.5.1		they
+::edge	1	and	and	:op2	1.2	hang	hang-01
+::edge	1.3	beat	beat-01	:purpose	1.3.5	make	make-02
+::edge	1.3.5	make	make-02	:ARG1	1.3.5.2	tender	tender
+::edge	1	and	and	:op3	1.3	beat	beat-01
+::edge	1.1	strangle	strangle-01	:ARG0	1.1.1	They	they
+38	Dog restaurants were told to close or go into the backstreets when Seoul hosted the 1988 Olympics.
+38	Dog restaurants were told to close or go into the backstreets when Seoul hosted the 1988 Olympics .
+38	0-1.2.1 1-1.2 3-1 4-1.1.r 5-1.1.1 6-1.1 7-1.1.2 8-1.1.2.2.r 10-1.1.2.2 11-1.3.2.3.r 11-1.3.r 12-1.3.1.2.1 13-1.3 15-1.3.2.3.1 16-1.3.2.2.1
+::node	1988	1.3.2.3.1	1988	1988
+::node	r	1.1.1.1	restaurant	
+::node	r	1.1.2.1	restaurant	
+::node	"Olympics"	1.3.2.2.1	"Olympics"	Olympics
+::node	b	1.1.2.2	backstreet	backstreets
+::node	"Seoul"	1.3.1.1	"Seoul"	
+::node	n	1.3.1.2	name	
+::node	"Olympic_Games"	1.3.2.1	"Olympic_Games"	
+::node	n2	1.3.2.2	name	
+::node	d2	1.3.2.3	date-entity	
+::node	g	1.1.2	go-01	go
+::node	d	1.2.1	dog	Dog
+::node	t	1	tell-01	told
+::node	c2	1.3.1	city	
+::node	g2	1.3.2	game	
+::node	o	1.1	or	or
+::node	"Seoul"	1.3.1.2.1	"Seoul"	Seoul
+::node	r	1.2	restaurant	restaurants
+::node	h	1.3	host-01	hosted
+::node	c	1.1.1	close-01	close
+::edge	1.3.2.3		date-entity	:year	1.3.2.3.1	1988	1988
+::edge	1.1.1	close	close-01	:ARG1	1.1.1.1		restaurant
+::edge	1.1.2	go	go-01	:ARG1	1.1.2.1		restaurant
+::edge	1.3.2.2		name	:op1	1.3.2.2.1	Olympics	"Olympics"
+::edge	1.1.2	go	go-01	:ARG4	1.1.2.2	backstreets	backstreet
+::edge	1.3.1		city	:wiki	1.3.1.1		"Seoul"
+::edge	1.3.1		city	:name	1.3.1.2		name
+::edge	1.3.2		game	:wiki	1.3.2.1		"Olympic_Games"
+::edge	1.3.2		game	:name	1.3.2.2		name
+::edge	1.3.2		game	:time	1.3.2.3		date-entity
+::edge	1.1	or	or	:op2	1.1.2	go	go-01
+::edge	1.2	restaurants	restaurant	:mod	1.2.1	Dog	dog
+::edge	1.3	hosted	host-01	:ARG0	1.3.1		city
+::edge	1.3	hosted	host-01	:ARG1	1.3.2		game
+::edge	1	told	tell-01	:ARG1	1.1	or	or
+::edge	1.3.1.2		name	:op1	1.3.1.2.1	Seoul	"Seoul"
+::edge	1	told	tell-01	:ARG2	1.2	restaurants	restaurant
+::edge	1	told	tell-01	:time	1.3	hosted	host-01
+::edge	1.1	or	or	:op1	1.1.1	close	close-01
+39	No similar move is planned for the World Cup.
+39	No similar move is planned for the World Cup .
+39	0-1.1 0-1.1.r 1-1.2.1 2-1.2 4-1 5-1.3.r 7-1.3.2.1 8-1.3.2.2
+::node	r	1.2.1	resemble-01	similar
+::node	p	1	plan-01	planned
+::node	"FIFA_World_Cup"	1.3.1	"FIFA_World_Cup"	
+::node	n	1.3.2	name	
+::node	-	1.1	-	No
+::node	m	1.2	move	move
+::node	g	1.3	game	
+::node	"World"	1.3.2.1	"World"	World
+::node	"Cup"	1.3.2.2	"Cup"	Cup
+::edge	1.2	move	move	:ARG1-of	1.2.1	similar	resemble-01
+::edge	1.3		game	:wiki	1.3.1		"FIFA_World_Cup"
+::edge	1.3		game	:name	1.3.2		name
+::edge	1	planned	plan-01	:polarity	1.1	No	-
+::edge	1	planned	plan-01	:ARG1	1.2	move	move
+::edge	1	planned	plan-01	:ARG2	1.3		game
+::edge	1.3.2		name	:op1	1.3.2.1	World	"World"
+::edge	1.3.2		name	:op2	1.3.2.2	Cup	"Cup"
+40	The authorities say the practice is slowly disappearing in Korea.
+40	The authorities say the practice is slowly disappearing in Korea .
+40	1-1.1 2-1 4-1.2.1 6-1.2.2 7-1.2 8-1.2.3.r 9-1.2.3.2.1
+::node	p	1.2.1	practice-01	practice
+::node	s	1	say-01	say
+::node	s2	1.2.2	slow-41	slowly
+::node	c	1.2.3	country	
+::node	a	1.1	authority	authorities
+::node	d	1.2	disappear-01	disappearing
+::node	n	1.2.3.2	name	
+::node	"Korea"	1.2.3.1	"Korea"	
+::node	"Korea"	1.2.3.2.1	"Korea"	Korea
+::edge	1.2	disappearing	disappear-01	:ARG1	1.2.1	practice	practice-01
+::edge	1.2	disappearing	disappear-01	:ARG2-of	1.2.2	slowly	slow-41
+::edge	1.2	disappearing	disappear-01	:location	1.2.3		country
+::edge	1	say	say-01	:ARG0	1.1	authorities	authority
+::edge	1	say	say-01	:ARG1	1.2	disappearing	disappear-01
+::edge	1.2.3		country	:name	1.2.3.2		name
+::edge	1.2.3		country	:wiki	1.2.3.1		"Korea"
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	Korea	"Korea"
+41	A recent survey stated that about one million dogs are sold every year for food in South Korea and 92 percent of men aged 20 and above and 68 percent of adult women have tasted dog meat.
+41	A recent survey stated that about one million dogs are sold every year for food in South Korea and 92 percent of men aged 20 and above and 68 percent of adult women have tasted dog meat .
+41	1-1.1.1 2-1.1 3-1 4-1.2.r 5-1.2.1.1.1 6-1.2.1.1.1.1 6-1.2.1.4.1 7-1.2.1.1.1.1 8-1.2.1.1 10-1.2.1 11-1.2.1.4.3 12-1.2.1.4.2 12-1.2.2.1.1.1.1.1.1.2 15-1.2.1.3.r 16-1.2.1.3.2.1 17-1.2.1.3.2.2 18-1.2.2.1 19-1.2.2.1.1.1.2.1 20-1.2.2.1.1.1.2 22-1.2.2.1.1 22-1.2.2.1.1.1.1 23-1.2.2.1.1.1.1.1.r 24-1.2.2.1.1.1.1.1.1.1 25-1.2.2.1 27-1.2.2.1 28-1.2.2.1.2.1.2.1 29-1.2.2.1.2.1.2 31-1.2.2.1.2.1.1.1 32-1.2.2.1.2 32-1.2.2.1.2.1.1 34-1.2.2 35-1.2.2.2.1 36-1.2.2.2
+::node	"South"	1.2.1.3.2.1	"South"	South
+::node	y2	1.2.2.1.1.1.1.1.1.2	year	year
+::node	"Korea"	1.2.1.3.2.2	"Korea"	Korea
+::node	20	1.2.2.1.1.1.1.1.1.1	20	20
+::node	i	1.2.2.1.1.1	include-91	
+::node	i2	1.2.2.1.2.1	include-91	
+::node	n	1.2.1.3.2	name	
+::node	y	1.2.1.4.2	year	year
+::node	m3	1.2.2.1.1.1.1	man	men
+::node	"South_Korea"	1.2.1.3.1	"South_Korea"	
+::node	e2	1.2.1.4.3	every	every
+::node	68	1.2.2.1.2.1.2.1	68	68
+::node	a3	1.2.2.1.2.1.1.1	adult	adult
+::node	1	1.2.1.4.1	1	one
+::node	p	1.2.2.1.1.1.2	percentage-entity	percent
+::node	p2	1.2.2.1.2.1.2	percentage-entity	percent
+::node	w2	1.2.2.1.2.1.1	woman	women
+::node	t2	1.2.1.4	temporal-quantity	
+::node	e	1.2.1.2	eat-01	
+::node	a2	1.2.2.1	and	and
+::node	t3	1.2.2.1.1.1.1.1.1	temporal-quantity	
+::node	c	1.2.1.3	country	
+::node	m	1.2.2.2	meat	meat
+::node	w	1.2.2.1.2	woman	women
+::node	d	1.2.2.2.1	dog	dog
+::node	d	1.2.1.1	dog	dogs
+::node	m2	1.2.2.1.1	man	men
+::node	1000000	1.2.1.1.1.1	1000000	million
+::node	92	1.2.2.1.1.1.2.1	92	92
+::node	a5	1.2.2.1.1.1.1.1	at-least	
+::node	s3	1.2.1	sell-01	sold
+::node	s	1	state-01	stated
+::node	t	1.2.2	taste-01	tasted
+::node	d	1.2.1.2.1	dog	
+::node	a4	1.2.1.1.1	about	about
+::node	s2	1.1	survey-01	survey
+::node	a	1.2	and	
+::node	r	1.1.1	recent	recent
+::edge	1.2.1.3.2		name	:op1	1.2.1.3.2.1	South	"South"
+::edge	1.2.2.1.1.1.1.1.1		temporal-quantity	:unit	1.2.2.1.1.1.1.1.1.2	year	year
+::edge	1.2.1.3.2		name	:op2	1.2.1.3.2.2	Korea	"Korea"
+::edge	1.2.2.1.1.1.1.1.1		temporal-quantity	:quant	1.2.2.1.1.1.1.1.1.1	20	20
+::edge	1.2.2.1.1	men	man	:ARG1-of	1.2.2.1.1.1		include-91
+::edge	1.2.2.1.2	women	woman	:ARG1-of	1.2.2.1.2.1		include-91
+::edge	1.2.1.3		country	:name	1.2.1.3.2		name
+::edge	1.2.1.4		temporal-quantity	:unit	1.2.1.4.2	year	year
+::edge	1.2.2.1.1.1		include-91	:ARG2	1.2.2.1.1.1.1	men	man
+::edge	1.2.1.3		country	:wiki	1.2.1.3.1		"South_Korea"
+::edge	1.2.1.4		temporal-quantity	:mod	1.2.1.4.3	every	every
+::edge	1.2.2.1.2.1.2	percent	percentage-entity	:value	1.2.2.1.2.1.2.1	68	68
+::edge	1.2.2.1.2.1.1	women	woman	:mod	1.2.2.1.2.1.1.1	adult	adult
+::edge	1.2.1.4		temporal-quantity	:quant	1.2.1.4.1	one	1
+::edge	1.2.2.1.1.1		include-91	:ARG3	1.2.2.1.1.1.2	percent	percentage-entity
+::edge	1.2.2.1.2.1		include-91	:ARG3	1.2.2.1.2.1.2	percent	percentage-entity
+::edge	1.2.2.1.2.1		include-91	:ARG2	1.2.2.1.2.1.1	women	woman
+::edge	1.2.1	sold	sell-01	:frequency	1.2.1.4		temporal-quantity
+::edge	1.2.1	sold	sell-01	:purpose	1.2.1.2		eat-01
+::edge	1.2.2	tasted	taste-01	:ARG0	1.2.2.1	and	and
+::edge	1.2.2.1.1.1.1.1		at-least	:op1	1.2.2.1.1.1.1.1.1		temporal-quantity
+::edge	1.2.1	sold	sell-01	:location	1.2.1.3		country
+::edge	1.2.2	tasted	taste-01	:ARG1	1.2.2.2	meat	meat
+::edge	1.2.2.1	and	and	:op2	1.2.2.1.2	women	woman
+::edge	1.2.2.2	meat	meat	:consist-of	1.2.2.2.1	dog	dog
+::edge	1.2.1	sold	sell-01	:ARG1	1.2.1.1	dogs	dog
+::edge	1.2.2.1	and	and	:op1	1.2.2.1.1	men	man
+::edge	1.2.1.1.1	about	about	:op1	1.2.1.1.1.1	million	1000000
+::edge	1.2.2.1.1.1.2	percent	percentage-entity	:value	1.2.2.1.1.1.2.1	92	92
+::edge	1.2.2.1.1.1.1	men	man	:age	1.2.2.1.1.1.1.1		at-least
+::edge	1.2		and	:op1	1.2.1	sold	sell-01
+::edge	1.2		and	:op2	1.2.2	tasted	taste-01
+::edge	1.2.1.2		eat-01	:ARG1	1.2.1.2.1		dog
+::edge	1.2.1.1	dogs	dog	:quant	1.2.1.1.1	about	about
+::edge	1	stated	state-01	:ARG0	1.1	survey	survey-01
+::edge	1	stated	state-01	:ARG1	1.2		and
+::edge	1.1	survey	survey-01	:time	1.1.1	recent	recent

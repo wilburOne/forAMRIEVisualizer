@@ -1,0 +1,1408 @@
+1	2002-06-29
+1	2002 @-@ 06 @-@ 29
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	6	1.2	6	06
+::node	29	1.3	29	29
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	06	6
+::edge	1		date-entity	:day	1.3	29	29
+2	India (IN)
+2	India ( IN )
+2	0-1.2.1
+::node	"India"	1.2.1	"India"	India
+::node	c	1	country	
+::node	"India"	1.1	"India"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	India	"India"
+::edge	1		country	:wiki	1.1		"India"
+::edge	1		country	:name	1.2		name
+3	International; military; war and conflict; weapons; technology
+3	International ; military ; war and conflict ; weapons ; technology
+3	0-1.1 2-1.2 4-1.3.1 5-1.3 6-1.3.2 8-1.4 10-1.5
+::node	a	1	and	
+::node	w	1.3.1	war-01	war
+::node	c	1.3.2	conflict-01	conflict
+::node	i	1.1	international	International
+::node	m	1.2	military	military
+::node	a2	1.3	and	and
+::node	w2	1.4	weapon	weapons
+::node	t	1.5	technology	technology
+::edge	1.3	and	and	:op1	1.3.1	war	war-01
+::edge	1.3	and	and	:op2	1.3.2	conflict	conflict-01
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	military	military
+::edge	1		and	:op3	1.3	and	and
+::edge	1		and	:op4	1.4	weapons	weapon
+::edge	1		and	:op5	1.5	technology	technology
+4	Indian government tests Russian rocket amid efforts to increase defense against possible Pakistani attacks.
+4	Indian government tests Russian rocket amid efforts to increase defense against possible Pakistani attacks .
+4	0-1.1.1.1.2.1 1-1.1 1-1.1.1 1-1.1.1.r 2-1 3-1.2.1.2.1 4-1.2 6-1.3 8-1.3.2 9-1.3.2.2 11-1.3.2.2.2.2 12-1.3.2.2.2.1.1.2.1 13-1.3.2.2.2
+::node	a	1.3.2.2.2	attack-01	attacks
+::node	g	1.3.2.2.1	government-organization	
+::node	n3	1.3.2.2.2.1.1.2	name	
+::node	"Pakistan"	1.3.2.2.2.1.1.1	"Pakistan"	
+::node	g	1.3.2.1	government-organization	
+::node	d	1.3.2.2	defend-01	defense
+::node	p	1.3.2.2.2.1	person	
+::node	n	1.1.1.1.2	name	
+::node	"Pakistan"	1.3.2.2.2.1.1.2.1	"Pakistan"	Pakistani
+::node	"India"	1.1.1.1.1	"India"	
+::node	n2	1.2.1.2	name	
+::node	p2	1.3.2.2.2.2	possible	possible
+::node	"Russia"	1.2.1.1	"Russia"	
+::node	"India"	1.1.1.1.2.1	"India"	Indian
+::node	c	1.1.1.1	country	
+::node	c3	1.3.2.2.2.1.1	country	
+::node	c2	1.2.1	country	
+::node	t	1	test-01	tests
+::node	g	1.3.1	government-organization	
+::node	"Russia"	1.2.1.2.1	"Russia"	Russian
+::node	i	1.3.2	increase-01	increase
+::node	g	1.1	government-organization	government
+::node	r	1.2	rocket	rocket
+::node	t2	1.3	try-01	efforts
+::node	g2	1.1.1	govern-01	government
+::edge	1.3.2.2	defense	defend-01	:ARG3	1.3.2.2.2	attacks	attack-01
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Indian	"India"
+::edge	1.1.1	government	govern-01	:ARG1	1.1.1.1		country
+::edge	1.3.2.2	defense	defend-01	:ARG0	1.3.2.2.1		government-organization
+::edge	1.3.2.2.2.1.1		country	:name	1.3.2.2.2.1.1.2		name
+::edge	1.3.2.2.2.1.1		country	:wiki	1.3.2.2.2.1.1.1		"Pakistan"
+::edge	1.3.2	increase	increase-01	:ARG0	1.3.2.1		government-organization
+::edge	1.3.2	increase	increase-01	:ARG1	1.3.2.2	defense	defend-01
+::edge	1.3.2.2.2.1		person	:mod	1.3.2.2.2.1.1		country
+::edge	1.2	rocket	rocket	:mod	1.2.1		country
+::edge	1.3	efforts	try-01	:ARG0	1.3.1		government-organization
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Russian	"Russia"
+::edge	1.3	efforts	try-01	:ARG1	1.3.2	increase	increase-01
+::edge	1	tests	test-01	:ARG0	1.1	government	government-organization
+::edge	1	tests	test-01	:ARG1	1.2	rocket	rocket
+::edge	1	tests	test-01	:time	1.3	efforts	try-01
+::edge	1.3.2.2.2	attacks	attack-01	:ARG0	1.3.2.2.2.1		person
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.3.2.2.2.1.1.2		name	:op1	1.3.2.2.2.1.1.2.1	Pakistani	"Pakistan"
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"India"
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.3.2.2.2	attacks	attack-01	:mod	1.3.2.2.2.2	possible	possible
+::edge	1.2.1		country	:wiki	1.2.1.1		"Russia"
+::edge	1.1	government	government-organization	:ARG0-of	1.1.1	government	govern-01
+5	Indian Defense Ministry has increased spending on defense purchases.
+5	Indian Defense Ministry has increased spending on defense purchases .
+5	0-1.1.2.2.1 1-1.1.1 2-1.1 4-1 5-1.2 6-1.2.1.r 7-1.2.1.1.1 8-1.2.1 8-1.2.1.1 8-1.2.1.1.r
+::node	c	1.1.2	country	
+::node	t	1.2.1	thing	purchases
+::node	i	1	increase-01	increased
+::node	"India"	1.1.2.1	"India"	
+::node	d2	1.2.1.1.1	defend-01	defense
+::node	m	1.1	ministry	Ministry
+::node	n	1.1.2.2	name	
+::node	s	1.2	spend-01	spending
+::node	"India"	1.1.2.2.1	"India"	Indian
+::node	p	1.2.1.1	purchase-01	purchases
+::node	d	1.1.1	defense	Defense
+::edge	1.1	Ministry	ministry	:mod	1.1.2		country
+::edge	1.2	spending	spend-01	:ARG1	1.2.1	purchases	thing
+::edge	1.1.2		country	:wiki	1.1.2.1		"India"
+::edge	1.2.1.1	purchases	purchase-01	:purpose	1.2.1.1.1	defense	defend-01
+::edge	1	increased	increase-01	:ARG0	1.1	Ministry	ministry
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1	increased	increase-01	:ARG1	1.2	spending	spend-01
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Indian	"India"
+::edge	1.2.1	purchases	thing	:ARG1-of	1.2.1.1	purchases	purchase-01
+::edge	1.1	Ministry	ministry	:mod	1.1.1	Defense	defense
+6	On 29 June 2009 Indian government test-fired the multiple-role Russian-made rocket system known as Smerch from a missile testing range in the eastern state of Orissa.
+6	On 29 June 2009 Indian government test @-@ fired the multiple @-@ role Russian @-@ made rocket system known as Smerch from a missile testing range in the eastern state of Orissa .
+6	1-1.4.3 2-1.4.2 2-1.4.2.r 3-1.4.1 4-1.1.1.1.2.1 5-1.1 5-1.1.1 5-1.1.1.r 6-1.3 8-1 10-1.2.3.1 12-1.2.3 13-1.2.2.1.2.1 15-1.2.2 16-1.2.1 17-1.2 18-1.2.4 18-1.2.4.1.2.r 19-1.2.4.1.2.r 20-1.2.4.1.2.1 21-1.5.r 23-1.5.1.1 24-1.5.1 25-1.5 26-1.5.2.r 28-1.5.2 29-1.5.2.1 31-1.5.2.1.2.1
+::node	"Russia"	1.2.2.1.2.1	"Russia"	Russian
+::node	"Odisha"	1.5.2.1.1	"Odisha"	
+::node	n3	1.5.2.1.2	name	
+::node	"Smerch"	1.2.4.1.2.1	"Smerch"	Smerch
+::node	p	1.2.4.1	product	
+::node	n4	1.1.1.1.2	name	
+::node	"India"	1.1.1.1.1	"India"	
+::node	c	1.2.2.1	country	
+::node	m2	1.2.3.1	multiple	multiple
+::node	n	1.2.2.1.2	name	
+::node	"Orissa"	1.5.2.1.2.1	"Orissa"	Orissa
+::node	"India"	1.1.1.1.2.1	"India"	Indian
+::node	c2	1.1.1.1	country	
+::node	"Russia"	1.2.2.1.1	"Russia"	
+::node	m3	1.5.1.1	missile	missile
+::node	s2	1.5.2.1	state	state
+::node	r	1.2.1	rocket	rocket
+::node	f	1	fire-01	fired
+::node	m	1.2.2	make-01	made
+::node	g	1.3.1	government-organization	
+::node	r3	1.2.3	role	role
+::node	s	1.3.2	system	
+::node	2009	1.4.1	2009	2009
+::node	k	1.2.4	know-01	known
+::node	6	1.4.2	6	June
+::node	t2	1.5.1	test-01	testing
+::node	g	1.1	government-organization	government
+::node	29	1.4.3	29	29
+::node	e2	1.5.2	east	eastern
+::node	s	1.2	system	system
+::node	t	1.3	test-01	test
+::node	d	1.4	date-entity	
+::node	r2	1.5	range	range
+::node	"BM-30_Smerch"	1.2.4.1.1	"BM-30_Smerch"	
+::node	n6	1.2.4.1.2	name	
+::node	g2	1.1.1	govern-01	government
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	Russian	"Russia"
+::edge	1.5.2.1	state	state	:wiki	1.5.2.1.1		"Odisha"
+::edge	1.5.2.1	state	state	:name	1.5.2.1.2		name
+::edge	1.2.4.1.2		name	:op1	1.2.4.1.2.1	Smerch	"Smerch"
+::edge	1.2.4	known	know-01	:ARG2	1.2.4.1		product
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"India"
+::edge	1.2.2	made	make-01	:ARG0	1.2.2.1		country
+::edge	1.2.3	role	role	:quant	1.2.3.1	multiple	multiple
+::edge	1.2.2.1		country	:name	1.2.2.1.2		name
+::edge	1.5.2.1.2		name	:op1	1.5.2.1.2.1	Orissa	"Orissa"
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Indian	"India"
+::edge	1.1.1	government	govern-01	:ARG1	1.1.1.1		country
+::edge	1.2.2.1		country	:wiki	1.2.2.1.1		"Russia"
+::edge	1.5.1	testing	test-01	:ARG1	1.5.1.1	missile	missile
+::edge	1.5.2	eastern	east	:part-of	1.5.2.1	state	state
+::edge	1.2	system	system	:mod	1.2.1	rocket	rocket
+::edge	1.2	system	system	:ARG1-of	1.2.2	made	make-01
+::edge	1.3	test	test-01	:ARG0	1.3.1		government-organization
+::edge	1.2	system	system	:mod	1.2.3	role	role
+::edge	1.3	test	test-01	:ARG1	1.3.2		system
+::edge	1.4		date-entity	:year	1.4.1	2009	2009
+::edge	1.2	system	system	:ARG1-of	1.2.4	known	know-01
+::edge	1.4		date-entity	:month	1.4.2	June	6
+::edge	1.5	range	range	:purpose	1.5.1	testing	test-01
+::edge	1	fired	fire-01	:ARG0	1.1	government	government-organization
+::edge	1.4		date-entity	:day	1.4.3	29	29
+::edge	1.5	range	range	:location	1.5.2	eastern	east
+::edge	1	fired	fire-01	:ARG1	1.2	system	system
+::edge	1	fired	fire-01	:purpose	1.3	test	test-01
+::edge	1	fired	fire-01	:time	1.4		date-entity
+::edge	1	fired	fire-01	:location	1.5	range	range
+::edge	1.2.4.1		product	:wiki	1.2.4.1.1		"BM-30_Smerch"
+::edge	1.2.4.1		product	:name	1.2.4.1.2		name
+::edge	1.1	government	government-organization	:ARG0-of	1.1.1	government	govern-01
+7	Officials said a contingent of Russian military experts was also at the site of the launch.
+7	Officials said a contingent of Russian military experts was also at the site of the launch .
+7	0-1.1.1.1 1-1 3-1.2 4-1.2.1.r 5-1.2.1.2.1.1.2.1 6-1.2.1.2.1 7-1.2.1.1 9-1.2.3 10-1.2.2.r 12-1.2.2 13-1.2.2.1.r 15-1.2.2.1
+::node	o	1.1.1.1	official	Officials
+::node	"Russia"	1.2.1.2.1.1.2.1	"Russia"	Russian
+::node	n	1.2.1.2.1.1.2	name	
+::node	"Russia"	1.2.1.2.1.1.1	"Russia"	
+::node	p	1.2.1	person	
+::node	c2	1.2.1.2.1.1	country	
+::node	s	1	say-01	said
+::node	s2	1.2.2	site	site
+::node	m2	1.2.1.2.1	military	military
+::node	a	1.2.3	also	also
+::node	p2	1.1	person	
+::node	c	1.2	contingent	contingent
+::node	h2	1.2.1.2	have-org-role-91	
+::node	l	1.2.2.1	launch-01	launch
+::node	e2	1.2.1.1	expert-41	experts
+::node	h	1.1.1	have-org-role-91	
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.1	Officials	official
+::edge	1.2.1.2.1.1.2		name	:op1	1.2.1.2.1.1.2.1	Russian	"Russia"
+::edge	1.2.1.2.1.1		country	:name	1.2.1.2.1.1.2		name
+::edge	1.2.1.2.1.1		country	:wiki	1.2.1.2.1.1.1		"Russia"
+::edge	1.2	contingent	contingent	:consist-of	1.2.1		person
+::edge	1.2.1.2.1	military	military	:poss	1.2.1.2.1.1		country
+::edge	1.2	contingent	contingent	:location	1.2.2	site	site
+::edge	1.2.1.2		have-org-role-91	:ARG1	1.2.1.2.1	military	military
+::edge	1.2	contingent	contingent	:mod	1.2.3	also	also
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	contingent	contingent
+::edge	1.2.1		person	:ARG0-of	1.2.1.2		have-org-role-91
+::edge	1.2.2	site	site	:location-of	1.2.2.1	launch	launch-01
+::edge	1.2.1		person	:ARG1-of	1.2.1.1	experts	expert-41
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+8	One Ministry official stated the smart rocket has a maximum range of 90 kilometers (56 miles) and is capable of striking targets in the air or on land.
+8	One Ministry official stated the smart rocket has a maximum range of 90 kilometers ( 56 miles ) and is capable of striking targets in the air or on land .
+8	0-1.1.1 1-1.1.2.1 2-1.1.2.2 3-1 5-1.2.1.1.1 6-1.2.1.1 9-1.2.1.2.3 10-1.2.1 12-1.2.1.2.1 13-1.2.1.2.2 18-1.2 20-1.2.2 21-1.2.2.2.r 22-1.2.2.2 23-1.2.2.2.1 24-1.2.2.2.1.1.r 26-1.2.2.2.1.1.1 27-1.2.2.2.1.1 29-1.2.2.2.1.1.2
+::node	m3	1.1.2.1	ministry	Ministry
+::node	o	1.1.2.2	official	official
+::node	l	1.2.2.2.1.1.2	land	land
+::node	a2	1.2.2.2.1.1.1	air	air
+::node	m2	1.2.1.2.3	maximum	maximum
+::node	k	1.2.1.2.2	kilometer	kilometers
+::node	h	1.1.2	have-org-role-91	
+::node	r	1.2.1	range-01	range
+::node	s	1	state-01	stated
+::node	c	1.2.2	capable-41	capable
+::node	90	1.2.1.2.1	90	90
+::node	s2	1.2.1.1.1	smart	smart
+::node	p	1.1	person	
+::node	a	1.2	and	and
+::node	d	1.2.1.2	distance-quantity	
+::node	r2	1.2.2.1	rocket	
+::node	o2	1.2.2.2.1.1	or	or
+::node	s3	1.2.2.2	strike-01	striking
+::node	t	1.2.2.2.1	target	targets
+::node	r2	1.2.1.1	rocket	rocket
+::node	r2	1.2.2.2.2	rocket	
+::node	1	1.1.1	1	One
+::edge	1.1.2		have-org-role-91	:ARG1	1.1.2.1	Ministry	ministry
+::edge	1.1.2		have-org-role-91	:ARG2	1.1.2.2	official	official
+::edge	1.2.2.2.1.1	or	or	:op2	1.2.2.2.1.1.2	land	land
+::edge	1.2.2.2.1.1	or	or	:op1	1.2.2.2.1.1.1	air	air
+::edge	1.2.1.2		distance-quantity	:mod	1.2.1.2.3	maximum	maximum
+::edge	1.2.1.2		distance-quantity	:unit	1.2.1.2.2	kilometers	kilometer
+::edge	1.1		person	:ARG0-of	1.1.2		have-org-role-91
+::edge	1.2	and	and	:op1	1.2.1	range	range-01
+::edge	1.2	and	and	:op2	1.2.2	capable	capable-41
+::edge	1.2.1.2		distance-quantity	:quant	1.2.1.2.1	90	90
+::edge	1.2.1.1	rocket	rocket	:mod	1.2.1.1.1	smart	smart
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	and	and
+::edge	1.2.1	range	range-01	:ARG2	1.2.1.2		distance-quantity
+::edge	1.2.2	capable	capable-41	:ARG1	1.2.2.1		rocket
+::edge	1.2.2.2.1	targets	target	:location	1.2.2.2.1.1	or	or
+::edge	1.2.2	capable	capable-41	:ARG2	1.2.2.2	striking	strike-01
+::edge	1.2.2.2	striking	strike-01	:ARG1	1.2.2.2.1	targets	target
+::edge	1.2.1	range	range-01	:ARG1	1.2.1.1	rocket	rocket
+::edge	1.2.2.2	striking	strike-01	:ARG2	1.2.2.2.2		rocket
+::edge	1.1		person	:quant	1.1.1	One	1
+9	Indian government has developed an array of guided and ballistic missiles and is reportedly experimenting with a maritime cruise missile that can carry nuclear warheads.
+9	Indian government has developed an array of guided and ballistic missiles and is reportedly experimenting with a maritime cruise missile that can carry nuclear warheads .
+9	0-1.1.1.1.1.2.1 1-1.1.1 1-1.1.1.1 1-1.1.1.1.r 3-1.1 5-1.1.2 6-1.1.2.1.r 7-1.1.2.1.1.1 8-1.1.2.1 10-1.1.2.1.1 10-1.1.2.1.2 11-1 11-1.1.2.1 13-1.2.3 14-1.2 15-1.2.2.r 17-1.2.2.1 18-1.2.2.2 19-1.2.2 21-1.2.2.3.2 22-1.2.2.3 23-1.2.2.3.1.1 24-1.2.2.3.1
+::node	"India"	1.1.1.1.1.1	"India"	
+::node	n	1.1.1.1.1.2	name	
+::node	g2	1.1.1.1	govern-01	government
+::node	a3	1.1.2.1	and	and
+::node	n2	1.2.2.3.1.1	nucleus	nuclear
+::node	"India"	1.1.1.1.1.2.1	"India"	Indian
+::node	b	1.1.2.1.2.1	ballist	
+::node	g3	1.1.2.1.1.1	guide-01	guided
+::node	m2	1.1.2.1.2	missile	missiles
+::node	m	1.1.2.1.1	missile	missiles
+::node	a2	1.1.2	array	array
+::node	g	1.2.1	government-organization	
+::node	a	1	and	and
+::node	m3	1.2.2	missile	missile
+::node	r	1.2.3	report-01	reportedly
+::node	d	1.1	develop-02	developed
+::node	e	1.2	experiment-01	experimenting
+::node	c3	1.2.2.3	carry-01	carry
+::node	c	1.1.1.1.1	country	
+::node	m4	1.2.2.1	maritime	maritime
+::node	c2	1.2.2.2	cruise-01	cruise
+::node	w	1.2.2.3.1	warhead	warheads
+::node	p	1.2.2.3.2	possible	can
+::node	g	1.1.1	government-organization	government
+::edge	1.1.1.1.1		country	:wiki	1.1.1.1.1.1		"India"
+::edge	1.1.1.1.1		country	:name	1.1.1.1.1.2		name
+::edge	1.1.1	government	government-organization	:ARG0-of	1.1.1.1	government	govern-01
+::edge	1.1.2	array	array	:consist-of	1.1.2.1	and	and
+::edge	1.2.2.3.1	warheads	warhead	:mod	1.2.2.3.1.1	nuclear	nucleus
+::edge	1.1.1.1.1.2		name	:op1	1.1.1.1.1.2.1	Indian	"India"
+::edge	1.1.2.1.2	missiles	missile	:mod	1.1.2.1.2.1		ballist
+::edge	1.1.2.1.1	missiles	missile	:ARG1-of	1.1.2.1.1.1	guided	guide-01
+::edge	1.1.2.1	and	and	:op2	1.1.2.1.2	missiles	missile
+::edge	1.1.2.1	and	and	:op1	1.1.2.1.1	missiles	missile
+::edge	1.1	developed	develop-02	:ARG1	1.1.2	array	array
+::edge	1.2	experimenting	experiment-01	:ARG0	1.2.1		government-organization
+::edge	1.2	experimenting	experiment-01	:ARG1	1.2.2	missile	missile
+::edge	1.2	experimenting	experiment-01	:ARG1-of	1.2.3	reportedly	report-01
+::edge	1	and	and	:op1	1.1	developed	develop-02
+::edge	1	and	and	:op2	1.2	experimenting	experiment-01
+::edge	1.2.2	missile	missile	:ARG0-of	1.2.2.3	carry	carry-01
+::edge	1.1.1.1	government	govern-01	:ARG1	1.1.1.1.1		country
+::edge	1.2.2	missile	missile	:mod	1.2.2.1	maritime	maritime
+::edge	1.2.2	missile	missile	:ARG0-of	1.2.2.2	cruise	cruise-01
+::edge	1.2.2.3	carry	carry-01	:ARG1	1.2.2.3.1	warheads	warhead
+::edge	1.2.2.3	carry	carry-01	:mod	1.2.2.3.2	can	possible
+::edge	1.1	developed	develop-02	:ARG0	1.1.1	government	government-organization
+10	Indian Defense Secretary Yogendra Narain stated --
+10	Indian Defense Secretary Yogendra Narain stated --
+10	0-1.1.3.1.2.1 1-1.1.3.2.1 2-1.1.3.2 3-1.1.2.1 4-1.1.2.2 5-1
+::node	"Yogendra"	1.1.2.1	"Yogendra"	Yogendra
+::node	n2	1.1.3.1.2	name	
+::node	d	1.1.3.2.1	defense	Defense
+::node	"Narain"	1.1.2.2	"Narain"	Narain
+::node	c	1.1.3.1	country	
+::node	s2	1.1.3.2	secretary	Secretary
+::node	"India"	1.1.3.1.2.1	"India"	Indian
+::node	n	1.1.2	name	
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	
+::node	p	1.1	person	
+::node	"India"	1.1.3.1.1	"India"	
+::node	-	1.1.1	-	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.1.2		name	:op1	1.1.2.1	Yogendra	"Yogendra"
+::edge	1.1.3.1		country	:name	1.1.3.1.2		name
+::edge	1.1.3.2	Secretary	secretary	:mod	1.1.3.2.1	Defense	defense
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.1.2		name	:op2	1.1.2.2	Narain	"Narain"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		country
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	Secretary	secretary
+::edge	1.1.3.1		country	:wiki	1.1.3.1.1		"India"
+::edge	1.1		person	:wiki	1.1.1		-
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Indian	"India"
+11	There is a missile threat to India.
+11	There is a missile threat to India .
+11	3-1.1 4-1 5-1.2.r 6-1.2.2.1
+::node	"India"	1.2.1	"India"	
+::node	t	1	threaten-01	threat
+::node	n	1.2.2	name	
+::node	m	1.1	missile	missile
+::node	c	1.2	country	
+::node	"India"	1.2.2.1	"India"	India
+::edge	1.2		country	:wiki	1.2.1		"India"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1	threat	threaten-01	:ARG0	1.1	missile	missile
+::edge	1	threat	threaten-01	:ARG2	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	India	"India"
+12	Indian government is giving top priority to a system for missile defense.
+12	Indian government is giving top priority to a system for missile defense .
+12	0-1.1.1.1.2.1 1-1.1 1-1.1.1 1-1.1.1.r 4-1.3 8-1.2 9-1.2.1.r 10-1.2.1.1 11-1.2.1
+::node	d	1.2.1	defend-01	defense
+::node	p	1	prioritize-01	
+::node	"India"	1.1.1.1.2.1	"India"	Indian
+::node	c	1.1.1.1	country	
+::node	g	1.1	government-organization	government
+::node	s	1.2	system	system
+::node	t	1.3	top	top
+::node	n	1.1.1.1.2	name	
+::node	"India"	1.1.1.1.1	"India"	
+::node	m	1.2.1.1	missile	missile
+::node	g2	1.1.1	govern-01	government
+::edge	1.2	system	system	:purpose	1.2.1	defense	defend-01
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Indian	"India"
+::edge	1.1.1	government	govern-01	:ARG1	1.1.1.1		country
+::edge	1		prioritize-01	:ARG0	1.1	government	government-organization
+::edge	1		prioritize-01	:ARG1	1.2	system	system
+::edge	1		prioritize-01	:mod	1.3	top	top
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"India"
+::edge	1.2.1	defense	defend-01	:mod	1.2.1.1	missile	missile
+::edge	1.1	government	government-organization	:ARG0-of	1.1.1	government	govern-01
+13	Indian government is simultaneously upgrading land and air surveillance systems.
+13	Indian government is simultaneously upgrading land and air surveillance systems .
+13	0-1.1.1.1.2.1 1-1.1 1-1.1.1 1-1.1.1.r 3-1.3 4-1 5-1.2.1.1.1 6-1.2 7-1.2.2.1.1 8-1.2.1.1 8-1.2.2.1 9-1.2.1 9-1.2.2
+::node	"India"	1.1.1.1.2.1	"India"	Indian
+::node	c	1.1.1.1	country	
+::node	a2	1.2.2.1.1	air	air
+::node	s2	1.2.1	system	systems
+::node	u	1	upgrade-01	upgrading
+::node	s4	1.2.2	system	systems
+::node	l	1.2.1.1.1	land	land
+::node	g	1.1	government-organization	government
+::node	a	1.2	and	and
+::node	s	1.3	simultaneous	simultaneously
+::node	n	1.1.1.1.2	name	
+::node	"India"	1.1.1.1.1	"India"	
+::node	s5	1.2.2.1	surveil-01	surveillance
+::node	s3	1.2.1.1	surveil-01	surveillance
+::node	g2	1.1.1	govern-01	government
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Indian	"India"
+::edge	1.1.1	government	govern-01	:ARG1	1.1.1.1		country
+::edge	1.2.2.1	surveillance	surveil-01	:ARG1	1.2.2.1.1	air	air
+::edge	1.2	and	and	:op1	1.2.1	systems	system
+::edge	1.2	and	and	:op2	1.2.2	systems	system
+::edge	1.2.1.1	surveillance	surveil-01	:ARG1	1.2.1.1.1	land	land
+::edge	1	upgrading	upgrade-01	:ARG0	1.1	government	government-organization
+::edge	1	upgrading	upgrade-01	:ARG1	1.2	and	and
+::edge	1	upgrading	upgrade-01	:time	1.3	simultaneously	simultaneous
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"India"
+::edge	1.2.2	systems	system	:ARG0-of	1.2.2.1	surveillance	surveil-01
+::edge	1.2.1	systems	system	:ARG0-of	1.2.1.1	surveillance	surveil-01
+::edge	1.1	government	government-organization	:ARG0-of	1.1.1	government	govern-01
+14	Indian Defense Ministry has increased defense spending for new purchases by 33 percent.
+14	Indian Defense Ministry has increased defense spending for new purchases by 33 percent .
+14	0-1.1.2.2.1 1-1.1.1 2-1.1 4-1 5-1.2.2 6-1.2 7-1.2.1.r 8-1.2.1.2 9-1.2.1 9-1.2.1.1 9-1.2.1.1.r 10-1.3.r 11-1.3.1 12-1.3
+::node	"India"	1.1.2.1	"India"	
+::node	n	1.1.2.2	name	
+::node	"India"	1.1.2.2.1	"India"	Indian
+::node	c	1.1.2	country	
+::node	t	1.2.1	thing	purchases
+::node	i	1	increase-01	increased
+::node	d2	1.2.2	defend-01	defense
+::node	33	1.3.1	33	33
+::node	m	1.1	ministry	Ministry
+::node	s	1.2	spend-01	spending
+::node	p2	1.3	percentage-entity	percent
+::node	n2	1.2.1.2	new	new
+::node	p	1.2.1.1	purchase-01	purchases
+::node	d	1.1.1	defense	Defense
+::edge	1.1.2		country	:wiki	1.1.2.1		"India"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Indian	"India"
+::edge	1.1	Ministry	ministry	:mod	1.1.2		country
+::edge	1.2	spending	spend-01	:ARG1	1.2.1	purchases	thing
+::edge	1.2	spending	spend-01	:purpose	1.2.2	defense	defend-01
+::edge	1.3	percent	percentage-entity	:value	1.3.1	33	33
+::edge	1	increased	increase-01	:ARG0	1.1	Ministry	ministry
+::edge	1	increased	increase-01	:ARG1	1.2	spending	spend-01
+::edge	1	increased	increase-01	:ARG2	1.3	percent	percentage-entity
+::edge	1.2.1	purchases	thing	:mod	1.2.1.2	new	new
+::edge	1.2.1	purchases	thing	:ARG1-of	1.2.1.1	purchases	purchase-01
+::edge	1.1	Ministry	ministry	:mod	1.1.1	Defense	defense
+15	There has been a sharp increase in Indian Defense Ministry's purchases of military hardware including night vision devices, unmanned aerial vehicles and other anti-terrorism devices.
+15	There has been a sharp increase in Indian Defense Ministry 's purchases of military hardware including night vision devices , unmanned aerial vehicles and other anti @-@ terrorism devices .
+15	4-1.2 5-1 6-1.1.r 7-1.1.1.2.2.1 8-1.1.1.1 9-1.1.1 10-1.1.1.r 11-1.1 12-1.1.2.r 13-1.1.2.1 14-1.1.2 15-1.1.2.2 16-1.1.2.2.1.1.1.1 17-1.1.2.2.1.1.1 18-1.1.2.2.1.1 20-1.1.2.2.1.2.1 20-1.1.2.2.1.2.1.1 20-1.1.2.2.1.2.1.1.r 21-1.1.2.2.1.2.2 22-1.1.2.2.1.2 23-1.1.2.2.1 24-1.1.2.2.1.3.1 25-1.1.2.2.1.3.2 27-1.1.2.2.1.3.2.1 28-1.1.2.2.1.3
+::node	d	1.1.1.1	defense	Defense
+::node	c2	1.1.2.2.1.3.2	counter-01	anti
+::node	c	1.1.1.2	country	
+::node	m2	1.1.2.1	military	military
+::node	i2	1.1.2.2	include-01	including
+::node	a	1.1.2.2.1	and	and
+::node	n2	1.1.2.2.1.1.1.1	night	night
+::node	"India"	1.1.1.2.2.1	"India"	Indian
+::node	m3	1.1.2.2.1.2.1	man-01	unmanned
+::node	a2	1.1.2.2.1.2.2	aerial	aerial
+::node	o	1.1.2.2.1.3.1	other	other
+::node	s2	1.1.2.2.1.1.1	see-01	vision
+::node	h	1.1.2	hardware	hardware
+::node	d3	1.1.2.2.1.3	device	devices
+::node	i	1	increase-01	increase
+::node	p	1.1	purchase-01	purchases
+::node	t	1.1.2.2.1.3.2.1	terrorism	terrorism
+::node	s	1.2	sharp	sharp
+::node	d2	1.1.2.2.1.1	device	devices
+::node	v2	1.1.2.2.1.2	vehicle	vehicles
+::node	n	1.1.1.2.2	name	
+::node	-	1.1.2.2.1.2.1.1	-	unmanned
+::node	"India"	1.1.1.2.1	"India"	
+::node	m	1.1.1	ministry	Ministry
+::edge	1.1.1	Ministry	ministry	:mod	1.1.1.1	Defense	defense
+::edge	1.1.2.2.1.3	devices	device	:ARG0-of	1.1.2.2.1.3.2	anti	counter-01
+::edge	1.1.1	Ministry	ministry	:mod	1.1.1.2		country
+::edge	1.1.2	hardware	hardware	:mod	1.1.2.1	military	military
+::edge	1.1.2	hardware	hardware	:ARG2-of	1.1.2.2	including	include-01
+::edge	1.1.2.2	including	include-01	:ARG1	1.1.2.2.1	and	and
+::edge	1.1.2.2.1.1.1	vision	see-01	:time	1.1.2.2.1.1.1.1	night	night
+::edge	1.1.1.2.2		name	:op1	1.1.1.2.2.1	Indian	"India"
+::edge	1.1.2.2.1.2	vehicles	vehicle	:ARG1-of	1.1.2.2.1.2.1	unmanned	man-01
+::edge	1.1.2.2.1.2	vehicles	vehicle	:mod	1.1.2.2.1.2.2	aerial	aerial
+::edge	1.1.2.2.1.3	devices	device	:mod	1.1.2.2.1.3.1	other	other
+::edge	1.1.2.2.1.1	devices	device	:purpose	1.1.2.2.1.1.1	vision	see-01
+::edge	1.1	purchases	purchase-01	:ARG1	1.1.2	hardware	hardware
+::edge	1.1.2.2.1	and	and	:op3	1.1.2.2.1.3	devices	device
+::edge	1	increase	increase-01	:ARG1	1.1	purchases	purchase-01
+::edge	1.1.2.2.1.3.2	anti	counter-01	:ARG1	1.1.2.2.1.3.2.1	terrorism	terrorism
+::edge	1	increase	increase-01	:manner	1.2	sharp	sharp
+::edge	1.1.2.2.1	and	and	:op1	1.1.2.2.1.1	devices	device
+::edge	1.1.2.2.1	and	and	:op2	1.1.2.2.1.2	vehicles	vehicle
+::edge	1.1.1.2		country	:name	1.1.1.2.2		name
+::edge	1.1.2.2.1.2.1	unmanned	man-01	:polarity	1.1.2.2.1.2.1.1	unmanned	-
+::edge	1.1.1.2		country	:wiki	1.1.1.2.1		"India"
+::edge	1.1	purchases	purchase-01	:ARG0	1.1.1	Ministry	ministry
+16	Narain also stated the Indian Defense Ministry has sought government approval to allow the Ministry to carry forward unutilized military budgetary allocations from 1 fiscal year to another.
+16	Narain also stated the Indian Defense Ministry has sought government approval to allow the Ministry to carry forward unutilized military budgetary allocations from 1 fiscal year to another .
+16	0-1.1.2.1 1-1.3 2-1 4-1.2.1.2.2.1 5-1.2.1.1 6-1.2.1 8-1.2 9-1.2.2.1 9-1.2.2.1.1 9-1.2.2.1.1.r 10-1.2.2 12-1.2.2.2 14-1.2.2.2.2.1 15-1.2.2.2.2.5.r 16-1.2.2.2.2 17-1.2.2.2.2.3 19-1.2.2.2.2.2.1.1.1 20-1.2.2.2.2.2.1.1 21-1.2.2.2.2.2 21-1.2.2.2.2.2.1 21-1.2.2.2.2.2.1.r 22-1.2.2.2.2.4.r 24-1.2.2.2.2.4.1.1 24-1.2.2.2.2.5.1.1 25-1.2.2.2.2.4.1 25-1.2.2.2.2.5.1 26-1.2.2.2.2.5.1.2.r 26-1.2.2.2.2.5.r 27-1.2.2.2.2.5.1.2
+::node	c	1.2.2.1.1.1	country	
+::node	f4	1.2.2.2.2.5.1.1	finance	fiscal
+::node	a5	1.2.2.2.2.5.1.2	another	another
+::node	n2	1.2.1.2.2	name	
+::node	b	1.2.2.2.2.2.1.1	budget	budgetary
+::node	d3	1.2.2.2.2.5	date-entity	
+::node	-	1.2.2.2.2.2.2.1	-	
+::node	c	1.2.1.2	country	
+::node	g	1.2.2.1	government-organization	government
+::node	a3	1.2.2.2	allow-01	allow
+::node	g	1.2.2.2.1	government-organization	
+::node	t	1.2.2.2.2.2	thing	allocations
+::node	d	1.2.1.1	defense	Defense
+::node	c2	1.2.2.2.2	carry-01	carry
+::node	m	1.2.2.2.2.1	ministry	Ministry
+::node	d2	1.2.2.2.2.4	date-entity	
+::node	f	1.2.2.2.2.3	forward	forward
+::node	"Narain"	1.1.2.1	"Narain"	Narain
+::node	g2	1.2.2.1.1	govern-01	government
+::node	m2	1.2.2.2.2.2.1.1.1	military	military
+::node	n	1.1.2	name	
+::node	m	1.2.1	ministry	Ministry
+::node	s	1	state-01	stated
+::node	"India"	1.2.1.2.2.1	"India"	Indian
+::node	a2	1.2.2	approve-01	approval
+::node	"India"	1.2.1.2.1	"India"	
+::node	p	1.1	person	
+::node	u	1.2.2.2.2.2.2	utilize-01	
+::node	s2	1.2	seek-01	sought
+::node	a4	1.2.2.2.2.2.1	allocate-01	allocations
+::node	y4	1.2.2.2.2.5.1	year	year
+::node	a	1.3	also	also
+::node	y3	1.2.2.2.2.4.1	year	year
+::node	f3	1.2.2.2.2.4.1.1	finance	fiscal
+::node	-	1.1.1	-	
+::edge	1.2.2.1.1	government	govern-01	:ARG1	1.2.2.1.1.1		country
+::edge	1.2.2.2.2.5.1	year	year	:mod	1.2.2.2.2.5.1.1	fiscal	finance
+::edge	1.2.2.2.2.5.1	year	year	:mod	1.2.2.2.2.5.1.2	another	another
+::edge	1.2.1.2		country	:name	1.2.1.2.2		name
+::edge	1.2.2.2.2.2.1	allocations	allocate-01	:ARG2	1.2.2.2.2.2.1.1	budgetary	budget
+::edge	1.2.2.2.2	carry	carry-01	:destination	1.2.2.2.2.5		date-entity
+::edge	1.2.2.2.2.2.2		utilize-01	:polarity	1.2.2.2.2.2.2.1		-
+::edge	1.2.1	Ministry	ministry	:mod	1.2.1.2		country
+::edge	1.2.2	approval	approve-01	:ARG0	1.2.2.1	government	government-organization
+::edge	1.2.2	approval	approve-01	:ARG1	1.2.2.2	allow	allow-01
+::edge	1.2.2.2	allow	allow-01	:ARG0	1.2.2.2.1		government-organization
+::edge	1.2.2.2.2	carry	carry-01	:ARG1	1.2.2.2.2.2	allocations	thing
+::edge	1.2.1	Ministry	ministry	:mod	1.2.1.1	Defense	defense
+::edge	1.2.2.2	allow	allow-01	:ARG1	1.2.2.2.2	carry	carry-01
+::edge	1.2.2.2.2	carry	carry-01	:ARG0	1.2.2.2.2.1	Ministry	ministry
+::edge	1.2.2.2.2	carry	carry-01	:source	1.2.2.2.2.4		date-entity
+::edge	1.2.2.2.2	carry	carry-01	:direction	1.2.2.2.2.3	forward	forward
+::edge	1.1.2		name	:op1	1.1.2.1	Narain	"Narain"
+::edge	1.2.2.1	government	government-organization	:ARG0-of	1.2.2.1.1	government	govern-01
+::edge	1.2.2.2.2.2.1.1	budgetary	budget	:poss	1.2.2.2.2.2.1.1.1	military	military
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	sought	seek-01	:ARG0	1.2.1	Ministry	ministry
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	Indian	"India"
+::edge	1.2	sought	seek-01	:ARG1	1.2.2	approval	approve-01
+::edge	1.2.1.2		country	:wiki	1.2.1.2.1		"India"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.2.2.2.2.2	allocations	thing	:ARG1-of	1.2.2.2.2.2.2		utilize-01
+::edge	1	stated	state-01	:ARG1	1.2	sought	seek-01
+::edge	1.2.2.2.2.2	allocations	thing	:ARG1-of	1.2.2.2.2.2.1	allocations	allocate-01
+::edge	1.2.2.2.2.5		date-entity	:calendar	1.2.2.2.2.5.1	year	year
+::edge	1	stated	state-01	:mod	1.3	also	also
+::edge	1.2.2.2.2.4		date-entity	:calendar	1.2.2.2.2.4.1	year	year
+::edge	1.2.2.2.2.4.1	year	year	:mod	1.2.2.2.2.4.1.1	fiscal	finance
+::edge	1.1		person	:wiki	1.1.1		-
+17	Narain stated that carrying forward the military budget was a long-standing convention in France and Italy.
+17	Narain stated that carrying forward the military budget was a long @-@ standing convention in France and Italy .
+17	0-1.1.2.1 1-1 2-1.2.r 3-1.2.1 4-1.2.1.2 6-1.2.1.1.1 7-1.2.1.1 8-1.2.1.r 10-1.2.2.1 12-1.2.2 13-1.2 14-1.2.2.2.r 15-1.2.2.2.1.2.1 16-1.2.2.2 17-1.2.2.2.2.2.1
+::node	"Narain"	1.1.2.1	"Narain"	Narain
+::node	"France"	1.2.2.2.1.2.1	"France"	France
+::node	n	1.1.2	name	
+::node	c2	1.2.1	carry-01	carrying
+::node	s	1	state-01	stated
+::node	s2	1.2.2	stand-04	standing
+::node	m	1.2.1.1.1	military	military
+::node	p	1.1	person	
+::node	c	1.2	convention	convention
+::node	"Italy"	1.2.2.2.2.2.1	"Italy"	Italy
+::node	f	1.2.1.2	forward	forward
+::node	l	1.2.2.1	long	long
+::node	"France"	1.2.2.2.1.1	"France"	
+::node	a	1.2.2.2	and	and
+::node	c3	1.2.2.2.1	country	
+::node	n3	1.2.2.2.2.2	name	
+::node	b	1.2.1.1	budget	budget
+::node	n2	1.2.2.2.1.2	name	
+::node	c4	1.2.2.2.2	country	
+::node	"Italy"	1.2.2.2.2.1	"Italy"	
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Narain	"Narain"
+::edge	1.2.2.2.1.2		name	:op1	1.2.2.2.1.2.1	France	"France"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	convention	convention	:domain	1.2.1	carrying	carry-01
+::edge	1.2	convention	convention	:ARG1-of	1.2.2	standing	stand-04
+::edge	1.2.1.1	budget	budget	:poss	1.2.1.1.1	military	military
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	convention	convention
+::edge	1.2.2.2.2.2		name	:op1	1.2.2.2.2.2.1	Italy	"Italy"
+::edge	1.2.1	carrying	carry-01	:direction	1.2.1.2	forward	forward
+::edge	1.2.2	standing	stand-04	:duration	1.2.2.1	long	long
+::edge	1.2.2.2.1		country	:wiki	1.2.2.2.1.1		"France"
+::edge	1.2.2	standing	stand-04	:location	1.2.2.2	and	and
+::edge	1.2.2.2	and	and	:op1	1.2.2.2.1		country
+::edge	1.2.2.2.2		country	:name	1.2.2.2.2.2		name
+::edge	1.2.1	carrying	carry-01	:ARG1	1.2.1.1	budget	budget
+::edge	1.2.2.2.1		country	:name	1.2.2.2.1.2		name
+::edge	1.2.2.2	and	and	:op2	1.2.2.2.2		country
+::edge	1.2.2.2.2		country	:wiki	1.2.2.2.2.1		"Italy"
+::edge	1.1		person	:wiki	1.1.1		-
+18	The defense ministry has been criticized for not utilizing funds made available every year for acquisitions of latest equipment including the missile defense shield.
+18	The defense ministry has been criticized for not utilizing funds made available every year for acquisitions of latest equipment including the missile defense shield .
+18	1-1.1.1 2-1.1 5-1 6-1.2.r 7-1.2.1 7-1.2.1.r 8-1.2 9-1.2.3 10-1.2.3.2 11-1.2.3.1 13-1.2.3.1.1.2.2 15-1.2.3.2 16-1.2.3.2.1.r 17-1.2.3.2.1.1 17-1.2.3.2.1.1.1 17-1.2.3.2.1.1.1.r 18-1.2.3.2.1 19-1.2.3.2.1.2 21-1.2.3.2.1.2.1.1.1 22-1.2.3.2.1.2.1.2 23-1.2.3.2.1.2.1 23-1.2.3.2.1.2.1.1 23-1.2.3.2.1.2.1.1.r
+::node	y	1.2.3.1.1.2.2	year	year
+::node	r	1.2.3.1.1	rate-entity-91	
+::node	1	1.2.3.1.1.2.1	1	
+::node	e2	1.2.3.2.1	equipment	equipment
+::node	-	1.2.1	-	not
+::node	c	1	criticize-01	criticized
+::node	m	1.2.2	ministry	
+::node	m3	1.2.3.2.1.2.1.1.1	missile	missile
+::node	f	1.2.3	fund	funds
+::node	1	1.2.3.1.1.1	1	
+::node	m2	1.2.3.2.1.1.1	most	latest
+::node	s	1.2.3.2.1.2.1.1	shield-01	shield
+::node	m	1.1	ministry	ministry
+::node	d2	1.2.3.2.1.2.1.2	defend	defense
+::node	u	1.2	utilize-01	utilizing
+::node	t2	1.2.3.1.1.2	temporal-quantity	
+::node	a2	1.2.3.2	acquire-01	acquisitions
+::node	i	1.2.3.2.1.2	include-01	including
+::node	a	1.2.3.1	available	available
+::node	l	1.2.3.2.1.1	late	latest
+::node	t	1.2.3.2.1.2.1	thing	shield
+::node	d	1.1.1	defense	defense
+::edge	1.2.3.1.1.2		temporal-quantity	:unit	1.2.3.1.1.2.2	year	year
+::edge	1.2.3.1	available	available	:frequency	1.2.3.1.1		rate-entity-91
+::edge	1.2.3.1.1.2		temporal-quantity	:quant	1.2.3.1.1.2.1		1
+::edge	1.2.3.2	acquisitions	acquire-01	:ARG1	1.2.3.2.1	equipment	equipment
+::edge	1.2	utilizing	utilize-01	:polarity	1.2.1	not	-
+::edge	1.2	utilizing	utilize-01	:ARG0	1.2.2		ministry
+::edge	1.2.3.2.1.2.1.1	shield	shield-01	:ARG2	1.2.3.2.1.2.1.1.1	missile	missile
+::edge	1.2	utilizing	utilize-01	:ARG1	1.2.3	funds	fund
+::edge	1.2.3.1.1		rate-entity-91	:ARG1	1.2.3.1.1.1		1
+::edge	1.2.3.2.1.1	latest	late	:degree	1.2.3.2.1.1.1	latest	most
+::edge	1.2.3.2.1.2.1	shield	thing	:ARG0-of	1.2.3.2.1.2.1.1	shield	shield-01
+::edge	1	criticized	criticize-01	:ARG1	1.1	ministry	ministry
+::edge	1.2.3.2.1.2.1	shield	thing	:purpose	1.2.3.2.1.2.1.2	defense	defend
+::edge	1	criticized	criticize-01	:ARG2	1.2	utilizing	utilize-01
+::edge	1.2.3.1.1		rate-entity-91	:ARG2	1.2.3.1.1.2		temporal-quantity
+::edge	1.2.3	funds	fund	:ARG3-of	1.2.3.2	acquisitions	acquire-01
+::edge	1.2.3.2.1	equipment	equipment	:ARG2-of	1.2.3.2.1.2	including	include-01
+::edge	1.2.3	funds	fund	:mod	1.2.3.1	available	available
+::edge	1.2.3.2.1	equipment	equipment	:mod	1.2.3.2.1.1	latest	late
+::edge	1.2.3.2.1.2	including	include-01	:ARG1	1.2.3.2.1.2.1	shield	thing
+::edge	1.1	ministry	ministry	:mod	1.1.1	defense	defense
+19	The Hindu newspaper stated Indian government had already acquired an early warning system to counter the threat of a missile attack by Pakistani government.
+19	The Hindu newspaper stated Indian government had already acquired an early warning system to counter the threat of a missile attack by Pakistani government .
+19	1-1.1.1.2.1 2-1.1 3-1 4-1.2.1.1.1.2.1 5-1.2.1 5-1.2.1.1 5-1.2.1.1.r 7-1.2.3 8-1.2 10-1.2.2.1.1 11-1.2.2.1 12-1.2.2 14-1.2.4 16-1.2.4.2 17-1.2.4.2.2.r 19-1.2.4.2.2.2 20-1.2.4.2.2 21-1.2.4.2.2.1.r 22-1.2.4.2.2.1.1.1.2.1 23-1.2.4.2.2.1 23-1.2.4.2.2.1.1 23-1.2.4.2.2.1.1.r
+::node	"India"	1.2.1.1.1.2.1	"India"	Indian
+::node	g4	1.2.4.2.2.1.1	govern-01	government
+::node	"Pakistan"	1.2.4.2.2.1.1.1.1	"Pakistan"	
+::node	n4	1.2.4.2.2.1.1.1.2	name	
+::node	g	1.2.4.1	government-organization	
+::node	"Hindu"	1.1.1.2.1	"Hindu"	Hindu
+::node	t	1.2.4.2	threaten-01	threat
+::node	c3	1.2.4.2.2.1.1.1	country	
+::node	w	1.2.2.1	warn-01	warning
+::node	g2	1.2.1.1	govern-01	government
+::node	"Hindu"	1.1.1.1	"Hindu"	
+::node	m	1.2.4.2.2.2	missile	missile
+::node	n2	1.1.1.2	name	
+::node	e	1.2.2.1.1	early	early
+::node	g3	1.2.4.2.2.1	government-organization	government
+::node	"India"	1.2.1.1.1.1	"India"	
+::node	n3	1.2.1.1.1.2	name	
+::node	g	1.2.1	government-organization	government
+::node	s	1	state-01	stated
+::node	s2	1.2.2	system	system
+::node	a2	1.2.3	already	already
+::node	c	1.2.1.1.1	country	
+::node	c2	1.2.4	counter-01	counter
+::node	n	1.1	newspaper	newspaper
+::node	a	1.2	acquire-01	acquired
+::node	"Pakistan"	1.2.4.2.2.1.1.1.2.1	"Pakistan"	Pakistani
+::node	g3	1.2.4.2.1	government-organization	
+::node	a3	1.2.4.2.2	attack-01	attack
+::node	r	1.1.1	religious-group	
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	Indian	"India"
+::edge	1.2.4.2.2.1	government	government-organization	:ARG0-of	1.2.4.2.2.1.1	government	govern-01
+::edge	1.2.4.2.2.1.1.1		country	:wiki	1.2.4.2.2.1.1.1.1		"Pakistan"
+::edge	1.2.4.2.2.1.1.1		country	:name	1.2.4.2.2.1.1.1.2		name
+::edge	1.2.4	counter	counter-01	:ARG0	1.2.4.1		government-organization
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Hindu	"Hindu"
+::edge	1.2.4	counter	counter-01	:ARG1	1.2.4.2	threat	threaten-01
+::edge	1.2.4.2.2.1.1	government	govern-01	:ARG1	1.2.4.2.2.1.1.1		country
+::edge	1.2.2	system	system	:ARG0-of	1.2.2.1	warning	warn-01
+::edge	1.2.1	government	government-organization	:ARG0-of	1.2.1.1	government	govern-01
+::edge	1.1.1		religious-group	:wiki	1.1.1.1		"Hindu"
+::edge	1.2.4.2.2	attack	attack-01	:instrument	1.2.4.2.2.2	missile	missile
+::edge	1.1.1		religious-group	:name	1.1.1.2		name
+::edge	1.2.2.1	warning	warn-01	:time	1.2.2.1.1	early	early
+::edge	1.2.4.2.2	attack	attack-01	:ARG0	1.2.4.2.2.1	government	government-organization
+::edge	1.2.1.1.1		country	:wiki	1.2.1.1.1.1		"India"
+::edge	1.2.1.1.1		country	:name	1.2.1.1.1.2		name
+::edge	1.2	acquired	acquire-01	:ARG0	1.2.1	government	government-organization
+::edge	1.2	acquired	acquire-01	:ARG1	1.2.2	system	system
+::edge	1.2	acquired	acquire-01	:time	1.2.3	already	already
+::edge	1.2.1.1	government	govern-01	:ARG1	1.2.1.1.1		country
+::edge	1.2	acquired	acquire-01	:purpose	1.2.4	counter	counter-01
+::edge	1	stated	state-01	:ARG0	1.1	newspaper	newspaper
+::edge	1	stated	state-01	:ARG1	1.2	acquired	acquire-01
+::edge	1.2.4.2.2.1.1.1.2		name	:op1	1.2.4.2.2.1.1.1.2.1	Pakistani	"Pakistan"
+::edge	1.2.4.2	threat	threaten-01	:ARG0	1.2.4.2.1		government-organization
+::edge	1.2.4.2	threat	threaten-01	:ARG1	1.2.4.2.2	attack	attack-01
+::edge	1.1	newspaper	newspaper	:mod	1.1.1		religious-group
+20	Narain stated on 28 June 2002 that Indian government had already acquired Israeli Green Pine radars that are capable of simultaneously track several in-flight missiles.
+20	Narain stated on 28 June 2002 that Indian government had already acquired Israeli Green Pine radars that are capable of simultaneously track several in @-@ flight missiles .
+20	0-1.1.2.1 1-1 2-1.3.r 3-1.3.3 4-1.3.2 4-1.3.2.r 5-1.3.1 6-1.2.r 7-1.2.1.1.1.2.1 8-1.2.1 8-1.2.1.1 8-1.2.1.1.r 10-1.2.3 11-1.2 12-1.2.2.3.2.1 13-1.2.2.2.1 14-1.2.2.2.2 15-1.2.2 18-1.2.2.4 19-1.2.2.4.1.r 20-1.2.2.4.1.3 21-1.2.2.4.1 22-1.2.2.4.1.2.1 25-1.2.2.4.1.2.2 26-1.2.2.4.1.2
+::node	"India"	1.2.1.1.1.2.1	"India"	Indian
+::node	c2	1.2.2.3	country	
+::node	c3	1.2.2.4	capable-41	capable
+::node	"EL/M-2080_Green_Pine"	1.2.2.1	"EL/M-2080_Green_Pine"	
+::node	n4	1.2.2.2	name	
+::node	"Green"	1.2.2.2.1	"Green"	Green
+::node	g2	1.2.1.1	govern-01	government
+::node	"Pine"	1.2.2.2.2	"Pine"	Pine
+::node	"Israel"	1.2.2.3.1	"Israel"	
+::node	n3	1.2.2.3.2	name	
+::node	t	1.2.2.4.1	track-01	track
+::node	"Israel"	1.2.2.3.2.1	"Israel"	Israeli
+::node	"Narain"	1.1.2.1	"Narain"	Narain
+::node	"India"	1.2.1.1.1.1	"India"	
+::node	n2	1.2.1.1.1.2	name	
+::node	n	1.1.2	name	
+::node	g	1.2.1	government-organization	government
+::node	r	1.2.2.4.1.1	radar	
+::node	s	1	state-01	stated
+::node	r	1.2.2	radar	radars
+::node	2002	1.3.1	2002	2002
+::node	s3	1.2.2.4.1.3	simultaneous	simultaneously
+::node	a2	1.2.3	already	already
+::node	6	1.3.2	6	June
+::node	c	1.2.1.1.1	country	
+::node	m	1.2.2.4.1.2	missile	missiles
+::node	28	1.3.3	28	28
+::node	p	1.1	person	
+::node	a	1.2	acquire-01	acquired
+::node	s2	1.2.2.4.1.2.1	several	several
+::node	f	1.2.2.4.1.2.2	fly-01	flight
+::node	d	1.3	date-entity	
+::node	-	1.1.1	-	
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	Indian	"India"
+::edge	1.2.2	radars	radar	:mod	1.2.2.3		country
+::edge	1.2.2	radars	radar	:ARG1-of	1.2.2.4	capable	capable-41
+::edge	1.2.2	radars	radar	:wiki	1.2.2.1		"EL/M-2080_Green_Pine"
+::edge	1.2.2	radars	radar	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Green	"Green"
+::edge	1.2.1	government	government-organization	:ARG0-of	1.2.1.1	government	govern-01
+::edge	1.2.2.2		name	:op2	1.2.2.2.2	Pine	"Pine"
+::edge	1.2.2.3		country	:wiki	1.2.2.3.1		"Israel"
+::edge	1.2.2.3		country	:name	1.2.2.3.2		name
+::edge	1.2.2.4	capable	capable-41	:ARG2	1.2.2.4.1	track	track-01
+::edge	1.2.2.3.2		name	:op1	1.2.2.3.2.1	Israeli	"Israel"
+::edge	1.1.2		name	:op1	1.1.2.1	Narain	"Narain"
+::edge	1.2.1.1.1		country	:wiki	1.2.1.1.1.1		"India"
+::edge	1.2.1.1.1		country	:name	1.2.1.1.1.2		name
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	acquired	acquire-01	:ARG0	1.2.1	government	government-organization
+::edge	1.2.2.4.1	track	track-01	:ARG0	1.2.2.4.1.1		radar
+::edge	1.2	acquired	acquire-01	:ARG1	1.2.2	radars	radar
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2.2.4.1	track	track-01	:time	1.2.2.4.1.3	simultaneously	simultaneous
+::edge	1.2	acquired	acquire-01	:time	1.2.3	already	already
+::edge	1.3		date-entity	:month	1.3.2	June	6
+::edge	1.2.1.1	government	govern-01	:ARG1	1.2.1.1.1		country
+::edge	1.2.2.4.1	track	track-01	:ARG1	1.2.2.4.1.2	missiles	missile
+::edge	1.3		date-entity	:day	1.3.3	28	28
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	acquired	acquire-01
+::edge	1.2.2.4.1.2	missiles	missile	:quant	1.2.2.4.1.2.1	several	several
+::edge	1.2.2.4.1.2	missiles	missile	:ARG1-of	1.2.2.4.1.2.2	flight	fly-01
+::edge	1	stated	state-01	:time	1.3		date-entity
+::edge	1.1		person	:wiki	1.1.1		-
+21	The Hindustan Times daily reported that India had petitioned Israeli Government to allow the Government of New Delhi to either buy or borrow the Israeli government's new Ofek-5 spy satellite and acquire Israel's Arrow anti-missile systems.
+21	The Hindustan Times daily reported that India had petitioned Israeli Government to allow the Government of New Delhi to either buy or borrow the Israeli government 's new Ofek @-@ 5 spy satellite and acquire Israel 's Arrow anti @-@ missile systems .
+21	1-1.1.2.1 2-1.1.2.2 3-1.1.2.3 4-1 5-1.2.r 6-1.2.1.2.1 8-1.2 9-1.2.2.1.1.1.2.1 10-1.2.2.1.1.r 12-1.2.2 14-1.2.2.1 14-1.2.2.1.1 14-1.2.2.1.1.r 15-1.2.2.2.r 16-1.2.2.2.1.1.1.1.1.2.1 17-1.2.2.2.1.1.1.1.1.2.2 20-1.2.2.2.1.1 21-1.2.2.2.1 22-1.2.2.2.1.2 24-1.2.2.1.1.1.2.1 25-1.2.2.2.1.1.1 25-1.2.2.2.1.1.1.1 25-1.2.2.2.1.1.1.1.r 27-1.2.2.2.1.1.2.4 28-1.2.2.2.1.1.2.2.1 30-1.2.2.2.1.1.2.2.1 31-1.2.2.2.1.1.2.3 32-1.2.2.2.1.1.2 33-1.2.2.2 34-1.2.2.2.2 35-1.2.2.2.2.2.3 36-1.2.2.2.2.2.3.r 37-1.2.2.2.2.2.2.1 38-1.2.2.2.2.2.4 40-1.2.2.2.2.2.4.1 41-1.2.2.2.2.2
+::node	"New_Delhi"	1.2.2.2.1.1.1.1.1.1	"New_Delhi"	
+::node	"New"	1.2.2.2.1.1.1.1.1.2.1	"New"	New
+::node	"Delhi"	1.2.2.2.1.1.1.1.1.2.2	"Delhi"	Delhi
+::node	c2	1.2.2.1.1.1	country	
+::node	"Ofek-5"	1.2.2.2.1.1.2.2.1	"Ofek-5"	5
+::node	"Israel"	1.2.2.1.1.1.1	"Israel"	
+::node	n4	1.2.2.1.1.1.2	name	
+::node	m	1.2.2.2.2.2.4.1	missile	missile
+::node	"Arrow"	1.2.2.2.2.2.2.1	"Arrow"	Arrow
+::node	n	1.2.1.2	name	
+::node	g	1.2.2.1	government-organization	Government
+::node	b	1.2.2.2.1.1	buy-01	buy
+::node	a2	1.2.2.2	and	and
+::node	o	1.2.2.2.1	or	or
+::node	s3	1.2.2.2.2.2	system	systems
+::node	"India"	1.2.1.1	"India"	
+::node	b2	1.2.2.2.1.2	borrow-01	borrow
+::node	a3	1.2.2.2.2	acquire-01	acquire
+::node	g3	1.2.2.2.2.1	government-organization	
+::node	n5	1.2.2.2.1.1.1.1.1.2	name	
+::node	"Hindustan"	1.1.2.1	"Hindustan"	Hindustan
+::node	g2	1.2.2.1.1	govern-01	Government
+::node	"Times"	1.1.2.2	"Times"	Times
+::node	"Daily"	1.1.2.3	"Daily"	daily
+::node	s	1.2.2.2.1.2.2	satellite	
+::node	"Israel"	1.2.2.1.1.1.2.1	"Israel"	Israeli
+::node	s	1.2.2.2.1.1.2	satellite	satellite
+::node	n6	1.2.2.2.1.1.2.4	new	new
+::node	g3	1.2.2.2.1.2.1	government-organization	
+::node	g3	1.2.2.2.1.1.1	government-organization	government
+::node	s2	1.2.2.2.1.1.2.3	spy-01	spy
+::node	g	1.2.2.2.1.1.2.5	government-organization	
+::node	g4	1.2.2.2.1.1.1.1	govern-01	government
+::node	n7	1.2.2.2.1.1.2.2	name	
+::node	"Ofeq"	1.2.2.2.1.1.2.1	"Ofeq"	
+::node	n3	1.1.2	name	
+::node	c	1.2.1	country	
+::node	r	1	report-01	reported
+::node	a	1.2.2	allow-01	allow
+::node	"India"	1.2.1.2.1	"India"	India
+::node	n2	1.1	newspaper	
+::node	n8	1.2.2.2.2.2.2	name	
+::node	p	1.2	petition-01	petitioned
+::node	"Arrow_BLANKETPAIR1"	1.2.2.2.2.2.1	"Arrow_BLANKETPAIR1"	
+::node	c4	1.2.2.2.2.2.4	counter-01	anti
+::node	c2	1.2.2.2.2.2.3	country	Israel
+::node	c3	1.2.2.2.1.1.1.1.1	city	
+::node	"Hindustan_Times"	1.1.1	"Hindustan_Times"	
+::edge	1.2.2.2.1.1.1.1.1		city	:wiki	1.2.2.2.1.1.1.1.1.1		"New_Delhi"
+::edge	1.2.2.2.1.1.1.1.1.2		name	:op1	1.2.2.2.1.1.1.1.1.2.1	New	"New"
+::edge	1.2.2.2.1.1.1.1.1.2		name	:op2	1.2.2.2.1.1.1.1.1.2.2	Delhi	"Delhi"
+::edge	1.2.2.1.1	Government	govern-01	:ARG1	1.2.2.1.1.1		country
+::edge	1.2.2.2.1.1.2.2		name	:op1	1.2.2.2.1.1.2.2.1	5	"Ofek-5"
+::edge	1.2.2.1.1.1		country	:wiki	1.2.2.1.1.1.1		"Israel"
+::edge	1.2.2.1.1.1		country	:name	1.2.2.1.1.1.2		name
+::edge	1.2.2.2.2.2.4	anti	counter-01	:ARG1	1.2.2.2.2.2.4.1	missile	missile
+::edge	1.2.2.2.2.2.2		name	:op1	1.2.2.2.2.2.2.1	Arrow	"Arrow"
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.2	allow	allow-01	:ARG0	1.2.2.1	Government	government-organization
+::edge	1.2.2.2.1	or	or	:op1	1.2.2.2.1.1	buy	buy-01
+::edge	1.2.2	allow	allow-01	:ARG1	1.2.2.2	and	and
+::edge	1.2.2.2	and	and	:op1	1.2.2.2.1	or	or
+::edge	1.2.2.2.2	acquire	acquire-01	:ARG1	1.2.2.2.2.2	systems	system
+::edge	1.2.1		country	:wiki	1.2.1.1		"India"
+::edge	1.2.2.2.1	or	or	:op2	1.2.2.2.1.2	borrow	borrow-01
+::edge	1.2.2.2	and	and	:op2	1.2.2.2.2	acquire	acquire-01
+::edge	1.2.2.2.2	acquire	acquire-01	:ARG0	1.2.2.2.2.1		government-organization
+::edge	1.2.2.2.1.1.1.1.1		city	:name	1.2.2.2.1.1.1.1.1.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Hindustan	"Hindustan"
+::edge	1.2.2.1	Government	government-organization	:ARG0-of	1.2.2.1.1	Government	govern-01
+::edge	1.1.2		name	:op2	1.1.2.2	Times	"Times"
+::edge	1.1.2		name	:op3	1.1.2.3	daily	"Daily"
+::edge	1.2.2.2.1.2	borrow	borrow-01	:ARG1	1.2.2.2.1.2.2		satellite
+::edge	1.2.2.1.1.1.2		name	:op1	1.2.2.1.1.1.2.1	Israeli	"Israel"
+::edge	1.2.2.2.1.1	buy	buy-01	:ARG1	1.2.2.2.1.1.2	satellite	satellite
+::edge	1.2.2.2.1.1.2	satellite	satellite	:mod	1.2.2.2.1.1.2.4	new	new
+::edge	1.2.2.2.1.2	borrow	borrow-01	:ARG0	1.2.2.2.1.2.1		government-organization
+::edge	1.2.2.2.1.1	buy	buy-01	:ARG0	1.2.2.2.1.1.1	government	government-organization
+::edge	1.2.2.2.1.1.2	satellite	satellite	:ARG0-of	1.2.2.2.1.1.2.3	spy	spy-01
+::edge	1.2.2.2.1.1.2	satellite	satellite	:poss	1.2.2.2.1.1.2.5		government-organization
+::edge	1.2.2.2.1.1.1	government	government-organization	:ARG0-of	1.2.2.2.1.1.1.1	government	govern-01
+::edge	1.2.2.2.1.1.2	satellite	satellite	:name	1.2.2.2.1.1.2.2		name
+::edge	1.2.2.2.1.1.2	satellite	satellite	:wiki	1.2.2.2.1.1.2.1		"Ofeq"
+::edge	1.1		newspaper	:name	1.1.2		name
+::edge	1.2	petitioned	petition-01	:ARG0	1.2.1		country
+::edge	1.2	petitioned	petition-01	:ARG1	1.2.2	allow	allow-01
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	India	"India"
+::edge	1	reported	report-01	:ARG0	1.1		newspaper
+::edge	1.2.2.2.2.2	systems	system	:name	1.2.2.2.2.2.2		name
+::edge	1	reported	report-01	:ARG1	1.2	petitioned	petition-01
+::edge	1.2.2.2.2.2	systems	system	:wiki	1.2.2.2.2.2.1		"Arrow_BLANKETPAIR1"
+::edge	1.2.2.2.2.2	systems	system	:ARG0-of	1.2.2.2.2.2.4	anti	counter-01
+::edge	1.2.2.2.2.2	systems	system	:poss	1.2.2.2.2.2.3	Israel	country
+::edge	1.2.2.2.1.1.1.1	government	govern-01	:ARG1	1.2.2.2.1.1.1.1.1		city
+::edge	1.1		newspaper	:wiki	1.1.1		"Hindustan_Times"
+22	The Times reported that Israeli government rejected both requests and that Israeli government stated the Ofek-5 could not be moved from the satellite's Iran-Syria-Iraq trajectory and the Arrow was still being developed.
+22	The Times reported that Israeli government rejected both requests and that Israeli government stated the Ofek @-@ 5 could not be moved from the satellite 's Iran @-@ Syria @-@ Iraq trajectory and the Arrow was still being developed .
+22	1-1.1.2.1 2-1 3-1.2.r 4-1.2.1.1.1.1.2.1 5-1.2.1.1 5-1.2.1.1.1 5-1.2.1.1.1.r 6-1.2.1 7-1.2.1.2.2 8-1.2.1.2 8-1.2.1.2.1 8-1.2.1.2.1.r 11-1.2.1.1.1.1.2.1 12-1.2.1.1 12-1.2.1.1.1 12-1.2.1.1.1.r 13-1.2.2 15-1.2.2.2.1.2.1.2.1 17-1.2.2.2.1.2.1.2.1 18-1.2.2.2.1 19-1.2.2.2.1.1 19-1.2.2.2.1.1.r 20-1.2.2.2.1.2.r 21-1.2.2.2.1.2 22-1.2.2.2.1.2.2.r 24-1.2.2.2.1.2.2.1 25-1.2.2.2.1.2.2.1.r 25-1.2.2.2.1.2.r 26-1.2.2.2.1.2.2.2.2.1 28-1.2.2.2.1.2.2.3.2.1 30-1.2.2.2.1.2.2.4.2.1 31-1.2.2.2.1.2.2 32-1.2.2.2 34-1.2.2.2.2.1.2.1 36-1.2.2.2.2.2 38-1.2.2.2.2
+::node	"Israel"	1.2.1.1.1.1.1	"Israel"	
+::node	n8	1.2.1.1.1.1.2	name	
+::node	"Syria"	1.2.2.2.1.2.2.3.2.1	"Syria"	Syria
+::node	"Arrow"	1.2.2.2.2.1.2.1	"Arrow"	Arrow
+::node	b	1.2.1.2.2	both	both
+::node	"Ofek-5"	1.2.2.2.1.2.1.2.1	"Ofek-5"	5
+::node	"Iran"	1.2.2.2.1.2.2.2.2.1	"Iran"	Iran
+::node	t	1.2.1.2	thing	requests
+::node	g	1.2.2.1	government-organization	
+::node	-	1.2.2.2.1.1	-	not
+::node	a2	1.2.2.2	and	and
+::node	p	1.2.2.2.1	possible	could
+::node	s3	1.2.2.2.2.2	still	still
+::node	g	1.2.1.1	government-organization	government
+::node	m	1.2.2.2.1.2	move-01	moved
+::node	d	1.2.2.2.2	develop-02	developed
+::node	p2	1.2.2.2.2.1	product	
+::node	"Times"	1.1.2.1	"Times"	Times
+::node	c4	1.2.1.1.1.1	country	
+::node	"Iran"	1.2.2.2.1.2.2.2.1	"Iran"	
+::node	t3	1.2.2.2.1.2.2	trajectory	trajectory
+::node	s2	1.2.2.2.1.2.1	satellite	
+::node	n2	1.1.2	name	
+::node	r2	1.2.1	reject-01	rejected
+::node	r	1	report-01	reported
+::node	s	1.2.2	state-01	stated
+::node	r3	1.2.1.2.1	request-01	requests
+::node	g2	1.2.1.1.1	govern-01	government
+::node	n	1.1	newspaper	
+::node	"Israel"	1.2.1.1.1.1.2.1	"Israel"	Israeli
+::node	a	1.2	and	
+::node	n7	1.2.2.2.2.1.2	name	
+::node	"Iraq"	1.2.2.2.1.2.2.4.2.1	"Iraq"	Iraq
+::node	c	1.2.2.2.1.2.2.2	country	
+::node	n6	1.2.2.2.1.2.2.4.2	name	
+::node	c2	1.2.2.2.1.2.2.3	country	
+::node	n4	1.2.2.2.1.2.2.2.2	name	
+::node	"Syria"	1.2.2.2.1.2.2.3.1	"Syria"	
+::node	c3	1.2.2.2.1.2.2.4	country	
+::node	"Arrow_BLANKETPAIR1"	1.2.2.2.2.1.1	"Arrow_BLANKETPAIR1"	
+::node	n5	1.2.2.2.1.2.2.3.2	name	
+::node	"Iraq"	1.2.2.2.1.2.2.4.1	"Iraq"	
+::node	"Ofeq"	1.2.2.2.1.2.1.1	"Ofeq"	
+::node	"Hindustan_Times"	1.1.1	"Hindustan_Times"	
+::node	n3	1.2.2.2.1.2.1.2	name	
+::node	s2	1.2.2.2.1.2.2.1	satellite	satellite
+::edge	1.2.1.1.1.1		country	:wiki	1.2.1.1.1.1.1		"Israel"
+::edge	1.2.1.1.1.1		country	:name	1.2.1.1.1.1.2		name
+::edge	1.2.2.2.1.2.2.3.2		name	:op1	1.2.2.2.1.2.2.3.2.1	Syria	"Syria"
+::edge	1.2.2.2.2.1.2		name	:op1	1.2.2.2.2.1.2.1	Arrow	"Arrow"
+::edge	1.2.1.2	requests	thing	:mod	1.2.1.2.2	both	both
+::edge	1.2.2.2.1.2.1.2		name	:op1	1.2.2.2.1.2.1.2.1	5	"Ofek-5"
+::edge	1.2.2.2.1.2.2.2.2		name	:op1	1.2.2.2.1.2.2.2.2.1	Iran	"Iran"
+::edge	1.2.1	rejected	reject-01	:ARG1	1.2.1.2	requests	thing
+::edge	1.2.2	stated	state-01	:ARG0	1.2.2.1		government-organization
+::edge	1.2.2.2.1	could	possible	:polarity	1.2.2.2.1.1	not	-
+::edge	1.2.2	stated	state-01	:ARG1	1.2.2.2	and	and
+::edge	1.2.2.2	and	and	:op1	1.2.2.2.1	could	possible
+::edge	1.2.2.2.2	developed	develop-02	:mod	1.2.2.2.2.2	still	still
+::edge	1.2.1	rejected	reject-01	:ARG0	1.2.1.1	government	government-organization
+::edge	1.2.2.2.1	could	possible	:domain	1.2.2.2.1.2	moved	move-01
+::edge	1.2.2.2	and	and	:op2	1.2.2.2.2	developed	develop-02
+::edge	1.2.2.2.2	developed	develop-02	:ARG1	1.2.2.2.2.1		product
+::edge	1.1.2		name	:op1	1.1.2.1	Times	"Times"
+::edge	1.2.1.1.1	government	govern-01	:ARG1	1.2.1.1.1.1		country
+::edge	1.2.2.2.1.2.2.2		country	:wiki	1.2.2.2.1.2.2.2.1		"Iran"
+::edge	1.2.2.2.1.2	moved	move-01	:source	1.2.2.2.1.2.2	trajectory	trajectory
+::edge	1.2.2.2.1.2	moved	move-01	:ARG1	1.2.2.2.1.2.1		satellite
+::edge	1.1		newspaper	:name	1.1.2		name
+::edge	1.2		and	:op1	1.2.1	rejected	reject-01
+::edge	1.2		and	:op2	1.2.2	stated	state-01
+::edge	1.2.1.2	requests	thing	:ARG1-of	1.2.1.2.1	requests	request-01
+::edge	1.2.1.1	government	government-organization	:ARG0-of	1.2.1.1.1	government	govern-01
+::edge	1	reported	report-01	:ARG0	1.1		newspaper
+::edge	1.2.1.1.1.1.2		name	:op1	1.2.1.1.1.1.2.1	Israeli	"Israel"
+::edge	1	reported	report-01	:ARG1	1.2		and
+::edge	1.2.2.2.2.1		product	:name	1.2.2.2.2.1.2		name
+::edge	1.2.2.2.1.2.2.4.2		name	:op1	1.2.2.2.1.2.2.4.2.1	Iraq	"Iraq"
+::edge	1.2.2.2.1.2.2	trajectory	trajectory	:path	1.2.2.2.1.2.2.2		country
+::edge	1.2.2.2.1.2.2.4		country	:name	1.2.2.2.1.2.2.4.2		name
+::edge	1.2.2.2.1.2.2	trajectory	trajectory	:path	1.2.2.2.1.2.2.3		country
+::edge	1.2.2.2.1.2.2.2		country	:name	1.2.2.2.1.2.2.2.2		name
+::edge	1.2.2.2.1.2.2.3		country	:wiki	1.2.2.2.1.2.2.3.1		"Syria"
+::edge	1.2.2.2.1.2.2	trajectory	trajectory	:path	1.2.2.2.1.2.2.4		country
+::edge	1.2.2.2.2.1		product	:wiki	1.2.2.2.2.1.1		"Arrow_BLANKETPAIR1"
+::edge	1.2.2.2.1.2.2.3		country	:name	1.2.2.2.1.2.2.3.2		name
+::edge	1.2.2.2.1.2.2.4		country	:wiki	1.2.2.2.1.2.2.4.1		"Iraq"
+::edge	1.2.2.2.1.2.1		satellite	:wiki	1.2.2.2.1.2.1.1		"Ofeq"
+::edge	1.1		newspaper	:wiki	1.1.1		"Hindustan_Times"
+::edge	1.2.2.2.1.2.1		satellite	:name	1.2.2.2.1.2.1.2		name
+::edge	1.2.2.2.1.2.2	trajectory	trajectory	:poss	1.2.2.2.1.2.2.1	satellite	satellite
+23	The Times also reported that Israeli defense ministry's director general Amos Yaron visited New Delhi twice last month in response to the Indian Defense Ministry's requests.
+23	The Times also reported that Israeli defense ministry 's director general Amos Yaron visited New Delhi twice last month in response to the Indian Defense Ministry 's requests .
+23	1-1.1.2.1 2-1.3 3-1 4-1.2.r 5-1.2.1.3.1.2.2.1 6-1.2.1.3.1.1 7-1.2.1.3.1 8-1.2.1.3 9-1.2.1.3.2 10-1.2.1.3.2.1 11-1.2.1.2.1 12-1.2.1.2.2 13-1.2 14-1.2.2.2.1 15-1.2.2.2.2 16-1.2.4.1 16-1.2.4.r 17-1.2.4.2.2.1 18-1.2.4.2 18-1.2.4.2.2 18-1.2.4.2.2.r 19-1.2.3.r 20-1.2.3 21-1.2.3.1.r 23-1.2.3.1.1.1.2.2.1 24-1.2.3.1.1.1.1 25-1.2.3.1.1.1 26-1.2.3.1.1.1.r 27-1.2.3.1 27-1.2.3.1.1 27-1.2.3.1.1.r
+::node	d2	1.2.1.3.1.1	defense	defense
+::node	c	1.2.1.3.1.2	country	
+::node	g2	1.2.1.3.2.1	general	general
+::node	c3	1.2.3.1.1.1.2	country	
+::node	d3	1.2.3.1.1.1.1	defense	Defense
+::node	d	1.2.1.3.2	director	director
+::node	"India"	1.2.3.1.1.1.2.1	"India"	
+::node	"Yaron"	1.2.1.2.2	"Yaron"	Yaron
+::node	m2	1.2.1.3.1	ministry	ministry
+::node	n6	1.2.3.1.1.1.2.2	name	
+::node	"Israel"	1.2.1.3.1.2.1	"Israel"	
+::node	"Israel"	1.2.1.3.1.2.2.1	"Israel"	Israeli
+::node	2	1.2.4.1	2	twice
+::node	n4	1.2.1.3.1.2.2	name	
+::node	t2	1.2.4.2	temporal-quantity	month
+::node	n3	1.2.1.2	name	
+::node	"New_Delhi"	1.2.2.1	"New_Delhi"	
+::node	h	1.2.1.3	have-org-role-91	's
+::node	n5	1.2.2.2	name	
+::node	t	1.2.3.1	thing	requests
+::node	"New"	1.2.2.2.1	"New"	New
+::node	"Amos_Yaron"	1.2.1.1	"Amos_Yaron"	
+::node	"Delhi"	1.2.2.2.2	"Delhi"	Delhi
+::node	"Times"	1.1.2.1	"Times"	Times
+::node	l	1.2.4.2.2.1	last	last
+::node	r3	1.2.3.1.1	request-01	requests
+::node	"India"	1.2.3.1.1.1.2.2.1	"India"	Indian
+::node	n2	1.1.2	name	
+::node	p	1.2.1	person	
+::node	r	1	report-01	reported
+::node	c2	1.2.2	city	
+::node	"Amos"	1.2.1.2.1	"Amos"	Amos
+::node	r2	1.2.3	respond-01	response
+::node	m3	1.2.3.1.1.1	ministry	Ministry
+::node	r4	1.2.4	rate-entity-91	
+::node	n	1.1	newspaper	
+::node	v	1.2	visit-01	visited
+::node	a	1.3	also	also
+::node	1	1.2.4.2.1	1	
+::node	m	1.2.4.2.2	month	month
+::node	"Hindustan_Times"	1.1.1	"Hindustan_Times"	
+::edge	1.2.1.3.1	ministry	ministry	:topic	1.2.1.3.1.1	defense	defense
+::edge	1.2.1.3.1	ministry	ministry	:poss	1.2.1.3.1.2		country
+::edge	1.2.1.3.2	director	director	:mod	1.2.1.3.2.1	general	general
+::edge	1.2.3.1.1.1	Ministry	ministry	:poss	1.2.3.1.1.1.2		country
+::edge	1.2.3.1.1.1	Ministry	ministry	:topic	1.2.3.1.1.1.1	Defense	defense
+::edge	1.2.1.3	's	have-org-role-91	:ARG2	1.2.1.3.2	director	director
+::edge	1.2.3.1.1.1.2		country	:wiki	1.2.3.1.1.1.2.1		"India"
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	Yaron	"Yaron"
+::edge	1.2.1.3	's	have-org-role-91	:ARG1	1.2.1.3.1	ministry	ministry
+::edge	1.2.3.1.1.1.2		country	:name	1.2.3.1.1.1.2.2		name
+::edge	1.2.1.3.1.2		country	:wiki	1.2.1.3.1.2.1		"Israel"
+::edge	1.2.1.3.1.2.2		name	:op1	1.2.1.3.1.2.2.1	Israeli	"Israel"
+::edge	1.2.4		rate-entity-91	:ARG1	1.2.4.1	twice	2
+::edge	1.2.1.3.1.2		country	:name	1.2.1.3.1.2.2		name
+::edge	1.2.4		rate-entity-91	:ARG2	1.2.4.2	month	temporal-quantity
+::edge	1.2.1		person	:name	1.2.1.2		name
+::edge	1.2.2		city	:wiki	1.2.2.1		"New_Delhi"
+::edge	1.2.1		person	:ARG0-of	1.2.1.3	's	have-org-role-91
+::edge	1.2.2		city	:name	1.2.2.2		name
+::edge	1.2.3	response	respond-01	:ARG1	1.2.3.1	requests	thing
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	New	"New"
+::edge	1.2.1		person	:wiki	1.2.1.1		"Amos_Yaron"
+::edge	1.2.2.2		name	:op2	1.2.2.2.2	Delhi	"Delhi"
+::edge	1.1.2		name	:op1	1.1.2.1	Times	"Times"
+::edge	1.2.4.2.2	month	month	:mod	1.2.4.2.2.1	last	last
+::edge	1.2.3.1	requests	thing	:ARG1-of	1.2.3.1.1	requests	request-01
+::edge	1.2.3.1.1.1.2.2		name	:op1	1.2.3.1.1.1.2.2.1	Indian	"India"
+::edge	1.1		newspaper	:name	1.1.2		name
+::edge	1.2	visited	visit-01	:ARG0	1.2.1		person
+::edge	1.2	visited	visit-01	:ARG1	1.2.2		city
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Amos	"Amos"
+::edge	1.2	visited	visit-01	:ARG2-of	1.2.3	response	respond-01
+::edge	1.2.3.1.1	requests	request-01	:ARG0	1.2.3.1.1.1	Ministry	ministry
+::edge	1.2	visited	visit-01	:frequency	1.2.4		rate-entity-91
+::edge	1	reported	report-01	:ARG0	1.1		newspaper
+::edge	1	reported	report-01	:ARG1	1.2	visited	visit-01
+::edge	1	reported	report-01	:mod	1.3	also	also
+::edge	1.2.4.2	month	temporal-quantity	:quant	1.2.4.2.1		1
+::edge	1.2.4.2	month	temporal-quantity	:unit	1.2.4.2.2	month	month
+::edge	1.1		newspaper	:wiki	1.1.1		"Hindustan_Times"
+24	Narain did not reveal names of countries India is negotiating with to acquire the missile shield.
+24	Narain did not reveal names of countries India is negotiating with to acquire the missile shield .
+24	0-1.2.2.1 2-1.1 2-1.1.r 3-1 4-1.3 4-1.3.1 4-1.3.1.r 5-1.3.1.1.r 6-1.3.1.1 7-1.3.1.1.1.1.2.1 9-1.3.1.1.1 12-1.3.1.1.1.2 14-1.3.1.1.1.2.2.1.1 15-1.3.1.1.1.2.2 15-1.3.1.1.1.2.2.1 15-1.3.1.1.1.2.2.1.r
+::node	s	1.3.1.1.1.2.2.1	shield-01	shield
+::node	c	1.3.1.1	country	countries
+::node	a	1.3.1.1.1.2	acquire-01	acquire
+::node	n3	1.3.1.1.1	negotiate-01	negotiating
+::node	c2	1.3.1.1.1.1	country	
+::node	"India"	1.3.1.1.1.1.1	"India"	
+::node	t2	1.3.1.1.1.2.2	thing	shield
+::node	n4	1.3.1.1.1.1.2	name	
+::node	c2	1.3.1.1.1.2.1	country	
+::node	-	1.2.1	-	
+::node	r	1	reveal-01	reveal
+::node	n	1.2.2	name	
+::node	n2	1.3.1	name-01	names
+::node	m	1.3.1.1.1.2.2.1.1	missile	missile
+::node	-	1.1	-	not
+::node	p	1.2	person	
+::node	t	1.3	thing	names
+::node	"India"	1.3.1.1.1.1.2.1	"India"	India
+::node	"Narain"	1.2.2.1	"Narain"	Narain
+::edge	1.3.1.1.1.2.2	shield	thing	:ARG0-of	1.3.1.1.1.2.2.1	shield	shield-01
+::edge	1.3.1	names	name-01	:ARG1	1.3.1.1	countries	country
+::edge	1.3.1.1.1	negotiating	negotiate-01	:ARG2	1.3.1.1.1.2	acquire	acquire-01
+::edge	1.3.1.1	countries	country	:ARG1-of	1.3.1.1.1	negotiating	negotiate-01
+::edge	1.3.1.1.1	negotiating	negotiate-01	:ARG0	1.3.1.1.1.1		country
+::edge	1.3.1.1.1.1		country	:wiki	1.3.1.1.1.1.1		"India"
+::edge	1.3.1.1.1.2	acquire	acquire-01	:ARG1	1.3.1.1.1.2.2	shield	thing
+::edge	1.3.1.1.1.1		country	:name	1.3.1.1.1.1.2		name
+::edge	1.3.1.1.1.2	acquire	acquire-01	:ARG0	1.3.1.1.1.2.1		country
+::edge	1.2		person	:wiki	1.2.1		-
+::edge	1.2		person	:name	1.2.2		name
+::edge	1.3	names	thing	:ARG2-of	1.3.1	names	name-01
+::edge	1.3.1.1.1.2.2.1	shield	shield-01	:ARG2	1.3.1.1.1.2.2.1.1	missile	missile
+::edge	1	reveal	reveal-01	:polarity	1.1	not	-
+::edge	1	reveal	reveal-01	:ARG0	1.2		person
+::edge	1	reveal	reveal-01	:ARG1	1.3	names	thing
+::edge	1.3.1.1.1.1.2		name	:op1	1.3.1.1.1.1.2.1	India	"India"
+::edge	1.2.2		name	:op1	1.2.2.1	Narain	"Narain"
+25	On 28 June 2002 Narain stated that New Delhi was discussing the issue with the United States.
+25	On 28 June 2002 Narain stated that New Delhi was discussing the issue with the United States .
+25	1-1.3.2 2-1.3.3 2-1.3.3.r 3-1.3.1 4-1.1.2.1 5-1 6-1.2.r 7-1.2.1.2.1 8-1.2.1.2.2 10-1.2 12-1.2.2 13-1.2.3.r 15-1.2.3.2.1 16-1.2.3.2.2
+::node	"Narain"	1.1.2.1	"Narain"	Narain
+::node	"States"	1.2.3.2.2	"States"	States
+::node	"United"	1.2.3.2.1	"United"	United
+::node	"Delhi"	1.2.1.2.2	"Delhi"	Delhi
+::node	n	1.1.2	name	
+::node	c	1.2.1	city	
+::node	s	1	state-01	stated
+::node	i	1.2.2	issue	issue
+::node	2002	1.3.1	2002	2002
+::node	"New"	1.2.1.2.1	"New"	New
+::node	c2	1.2.3	country	
+::node	28	1.3.2	28	28
+::node	6	1.3.3	6	June
+::node	p	1.1	person	
+::node	d2	1.2	discuss-01	discussing
+::node	d	1.3	date-entity	
+::node	n3	1.2.3.2	name	
+::node	n2	1.2.1.2	name	
+::node	"United_States"	1.2.3.1	"United_States"	
+::node	"New_Delhi"	1.2.1.1	"New_Delhi"	
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Narain	"Narain"
+::edge	1.2.3.2		name	:op2	1.2.3.2.2	States	"States"
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	United	"United"
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	Delhi	"Delhi"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	discussing	discuss-01	:ARG0	1.2.1		city
+::edge	1.2	discussing	discuss-01	:ARG1	1.2.2	issue	issue
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	New	"New"
+::edge	1.2	discussing	discuss-01	:ARG2	1.2.3		country
+::edge	1.3		date-entity	:day	1.3.2	28	28
+::edge	1.3		date-entity	:month	1.3.3	June	6
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	discussing	discuss-01
+::edge	1	stated	state-01	:time	1.3		date-entity
+::edge	1.2.3		country	:name	1.2.3.2		name
+::edge	1.2.1		city	:name	1.2.1.2		name
+::edge	1.2.3		country	:wiki	1.2.3.1		"United_States"
+::edge	1.2.1		city	:wiki	1.2.1.1		"New_Delhi"
+::edge	1.1		person	:wiki	1.1.1		-
+26	Indian government's attempts to upgrade systems to counter missile attacks occurs as Indian and Pakistani governments have placed about 1 million troops on India-Pakistan borders since December 2001.
+26	Indian government 's attempts to upgrade systems to counter missile attacks occurs as Indian and Pakistani governments have placed about 1 million troops on India @-@ Pakistan borders since December 2001 .
+26	1-1.1 1-1.1.1 1-1.1.1.r 3-1 5-1.2 6-1.2.2 8-1.2.2.1 9-1.2.2.1.1.1 10-1.2.2.1.1 12-1.3.4.r 12-1.3.r 13-1.3.1.1 14-1.3.1 15-1.3.1.2.1.1.2.1 16-1.3.1.2 16-1.3.1.2.1 16-1.3.1.2.1.r 18-1.3 18-1.3.3 18-1.3.3.r 19-1.3.2.1 20-1.3.2.1.1 21-1.3.2.1.1 22-1.3.2 23-1.1.1.1.r 24-1.1.1.1.2.1 26-1.3.3.1.1.2 27-1.3.3.1.1 28-1.3.4 29-1.3.4.1.2 29-1.3.4.1.2.r 30-1.3.4.1.1
+::node	1000000	1.3.2.1.1	1000000	million
+::node	m	1.2.2.1.1.1	missile	missile
+::node	g	1.3.1.1	government-organization	Indian
+::node	n	1.3.1.2.1.1.2	name	
+::node	g3	1.3.1.2	government-organization	governments
+::node	"Pakistan"	1.3.1.2.1.1.1	"Pakistan"	
+::node	a4	1.3.2.1	about	about
+::node	b2	1.3.3.1	be-located-at-91	
+::node	d	1.3.4.1	date-entity	
+::node	"Pakistan"	1.3.1.2.1.1.2.1	"Pakistan"	Pakistani
+::node	b	1.3.3.1.1	border-01	borders
+::node	n2	1.1.1.1.2	name	
+::node	"India"	1.1.1.1.1	"India"	
+::node	c	1.2.2.1	counter-01	counter
+::node	2001	1.3.4.1.1	2001	2001
+::node	12	1.3.4.1.2	12	December
+::node	"India"	1.1.1.1.2.1	"India"	India
+::node	c3	1.1.1.1	country	
+::node	a2	1.2.2.1.1	attack-01	attacks
+::node	g	1.2.1	government-organization	
+::node	c2	1.3.3.1.1.2	country	Pakistan
+::node	a	1	attempt-01	attempts
+::node	s	1.2.2	system	systems
+::node	a3	1.3.1	and	and
+::node	c3	1.3.3.1.1.1	country	
+::node	t	1.3.2	troop	troops
+::node	l	1.3.3	location	placed
+::node	g	1.1	government-organization	government
+::node	g4	1.3.1.2.1	govern-01	governments
+::node	c2	1.3.1.2.1.1	country	
+::node	s2	1.3.4	since	since
+::node	u	1.2	upgrade-01	upgrade
+::node	p	1.3	place-01	placed
+::node	g2	1.1.1	govern-01	government
+::edge	1.3.2.1	about	about	:op1	1.3.2.1.1	million	1000000
+::edge	1.2.2.1.1	attacks	attack-01	:instrument	1.2.2.1.1.1	missile	missile
+::edge	1.3.1	and	and	:op1	1.3.1.1	Indian	government-organization
+::edge	1.3.1.2.1.1		country	:name	1.3.1.2.1.1.2		name
+::edge	1.3.1	and	and	:op2	1.3.1.2	governments	government-organization
+::edge	1.3.1.2.1.1		country	:wiki	1.3.1.2.1.1.1		"Pakistan"
+::edge	1.3.2	troops	troop	:quant	1.3.2.1	about	about
+::edge	1.3.3	placed	location	:ARG2-of	1.3.3.1		be-located-at-91
+::edge	1.3.4	since	since	:op1	1.3.4.1		date-entity
+::edge	1.3.1.2.1.1.2		name	:op1	1.3.1.2.1.1.2.1	Pakistani	"Pakistan"
+::edge	1.3.3.1		be-located-at-91	:ARG1	1.3.3.1.1	borders	border-01
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"India"
+::edge	1.2.2	systems	system	:ARG0-of	1.2.2.1	counter	counter-01
+::edge	1.3.4.1		date-entity	:year	1.3.4.1.1	2001	2001
+::edge	1.3.4.1		date-entity	:month	1.3.4.1.2	December	12
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	India	"India"
+::edge	1.1.1	government	govern-01	:ARG1	1.1.1.1		country
+::edge	1.2.2.1	counter	counter-01	:ARG1	1.2.2.1.1	attacks	attack-01
+::edge	1.2	upgrade	upgrade-01	:ARG0	1.2.1		government-organization
+::edge	1.3.3.1.1	borders	border-01	:ARG2	1.3.3.1.1.2	Pakistan	country
+::edge	1.2	upgrade	upgrade-01	:ARG1	1.2.2	systems	system
+::edge	1.3	placed	place-01	:ARG0	1.3.1	and	and
+::edge	1.3.3.1.1	borders	border-01	:ARG1	1.3.3.1.1.1		country
+::edge	1.3	placed	place-01	:ARG1	1.3.2	troops	troop
+::edge	1.3	placed	place-01	:ARG2	1.3.3	placed	location
+::edge	1	attempts	attempt-01	:ARG0	1.1	government	government-organization
+::edge	1.3.1.2	governments	government-organization	:ARG0-of	1.3.1.2.1	governments	govern-01
+::edge	1.3.1.2.1	governments	govern-01	:ARG1	1.3.1.2.1.1		country
+::edge	1.3	placed	place-01	:time	1.3.4	since	since
+::edge	1	attempts	attempt-01	:ARG1	1.2	upgrade	upgrade-01
+::edge	1	attempts	attempt-01	:time	1.3	placed	place-01
+::edge	1.1	government	government-organization	:ARG0-of	1.1.1	government	govern-01
+27	In May 2001 Pakistan test-fired 3 missiles capable of carrying nuclear warheads.
+27	In May 2001 Pakistan test @-@ fired 3 missiles capable of carrying nuclear warheads .
+27	1-1.4.2 1-1.4.2.r 2-1.4.1 3-1.1.2.1 4-1.3 6-1 7-1.2.1 8-1.2 9-1.2.2 10-1.2.2.1.r 11-1.2.2.1 12-1.2.2.1.2.1 13-1.2.2.1.2
+::node	"Pakistan"	1.1.2.1	"Pakistan"	Pakistan
+::node	m	1.2.2.1.1	missile	
+::node	n2	1.2.2.1.2.1	nucleus	nuclear
+::node	n	1.1.2	name	
+::node	3	1.2.1	3	3
+::node	f	1	fire-01	fired
+::node	c2	1.2.2	capable-41	capable
+::node	c	1.3.1	country	
+::node	m	1.3.2	missile	
+::node	2001	1.4.1	2001	2001
+::node	5	1.4.2	5	May
+::node	c	1.1	country	
+::node	m	1.2	missile	missiles
+::node	t	1.3	test-01	test
+::node	d	1.4	date-entity	
+::node	c3	1.2.2.1	carry-01	carrying
+::node	w	1.2.2.1.2	warhead	warheads
+::node	"Pakistan"	1.1.1	"Pakistan"	
+::edge	1.1.2		name	:op1	1.1.2.1	Pakistan	"Pakistan"
+::edge	1.2.2.1	carrying	carry-01	:ARG0	1.2.2.1.1		missile
+::edge	1.2.2.1.2	warheads	warhead	:mod	1.2.2.1.2.1	nuclear	nucleus
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	missiles	missile	:quant	1.2.1	3	3
+::edge	1.2	missiles	missile	:ARG1-of	1.2.2	capable	capable-41
+::edge	1.3	test	test-01	:ARG0	1.3.1		country
+::edge	1.3	test	test-01	:ARG1	1.3.2		missile
+::edge	1.4		date-entity	:year	1.4.1	2001	2001
+::edge	1.4		date-entity	:month	1.4.2	May	5
+::edge	1	fired	fire-01	:ARG0	1.1		country
+::edge	1	fired	fire-01	:ARG1	1.2	missiles	missile
+::edge	1	fired	fire-01	:purpose	1.3	test	test-01
+::edge	1	fired	fire-01	:time	1.4		date-entity
+::edge	1.2.2	capable	capable-41	:ARG2	1.2.2.1	carrying	carry-01
+::edge	1.2.2.1	carrying	carry-01	:ARG1	1.2.2.1.2	warheads	warhead
+::edge	1.1		country	:wiki	1.1.1		"Pakistan"
+28	Since independence from British rule in 1947 Indian and Pakistani governments have fought 2 of 3 wars over Kashmir.
+28	Since independence from British rule in 1947 Indian and Pakistani governments have fought 2 of 3 wars over Kashmir .
+28	0-1.4 1-1.4.1 2-1.4.1.1.r 3-1.4.1.1.1.2.1 4-1.4.1.1 5-1.4.1.2.r 6-1.4.1.2.1 7-1.1.1.1.2.1 8-1.3.2 9-1.2.1.1.2.1 10-1.1 10-1.1.1 10-1.1.1.r 10-1.2 10-1.2.1 10-1.2.1.r 12-1 13-1.3.1 15-1.3.4.1.1 16-1.3 16-1.3.4.1 18-1.3.3.2.1
+::node	g	1.3.2.1	government-organization	
+::node	"Britain"	1.4.1.1.1.2.1	"Britain"	British
+::node	g3	1.3.2.2	government-organization	
+::node	"Kashmir"	1.3.3.1	"Kashmir"	
+::node	n3	1.3.3.2	name	
+::node	w2	1.3.4.1	war-01	wars
+::node	"Kashmir"	1.3.3.2.1	"Kashmir"	Kashmir
+::node	n	1.1.1.1.2	name	
+::node	"India"	1.1.1.1.1	"India"	
+::node	c4	1.4.1.1.1	country	
+::node	1947	1.4.1.2.1	1947	1947
+::node	3	1.3.4.1.1	3	3
+::node	c2	1.2.1.1	country	
+::node	"India"	1.1.1.1.2.1	"India"	Indian
+::node	c	1.1.1.1	country	
+::node	"Pakistan"	1.2.1.1.2.1	"Pakistan"	Pakistani
+::node	n4	1.4.1.1.1.2	name	
+::node	"United_Kingdom"	1.4.1.1.1.1	"United_Kingdom"	
+::node	g4	1.2.1	govern-01	governments
+::node	f	1	fight-01	fought
+::node	2	1.3.1	2	2
+::node	n2	1.2.1.1.2	name	
+::node	a	1.3.2	and	and
+::node	i2	1.4.1	independence	independence
+::node	"Pakistan"	1.2.1.1.1	"Pakistan"	
+::node	w3	1.3.3	world-region	
+::node	g	1.1	government-organization	governments
+::node	i	1.3.4	include-91	
+::node	g3	1.2	government-organization	governments
+::node	w	1.3	war-01	wars
+::node	s	1.4	since	Since
+::node	d	1.4.1.2	date-entity	
+::node	g2	1.1.1	govern-01	governments
+::node	r	1.4.1.1	rule-03	rule
+::edge	1.3.2	and	and	:op1	1.3.2.1		government-organization
+::edge	1.4.1.1.1.2		name	:op1	1.4.1.1.1.2.1	British	"Britain"
+::edge	1.3.2	and	and	:op2	1.3.2.2		government-organization
+::edge	1.3.3		world-region	:wiki	1.3.3.1		"Kashmir"
+::edge	1.3.3		world-region	:name	1.3.3.2		name
+::edge	1.3.4		include-91	:ARG2	1.3.4.1	wars	war-01
+::edge	1.3.3.2		name	:op1	1.3.3.2.1	Kashmir	"Kashmir"
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"India"
+::edge	1.4.1.1	rule	rule-03	:ARG0	1.4.1.1.1		country
+::edge	1.4.1.2		date-entity	:year	1.4.1.2.1	1947	1947
+::edge	1.3.4.1	wars	war-01	:quant	1.3.4.1.1	3	3
+::edge	1.2.1	governments	govern-01	:ARG1	1.2.1.1		country
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Indian	"India"
+::edge	1.1.1	governments	govern-01	:ARG1	1.1.1.1		country
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Pakistani	"Pakistan"
+::edge	1.4.1.1.1		country	:name	1.4.1.1.1.2		name
+::edge	1.4.1.1.1		country	:wiki	1.4.1.1.1.1		"United_Kingdom"
+::edge	1.2	governments	government-organization	:ARG0-of	1.2.1	governments	govern-01
+::edge	1.3	wars	war-01	:quant	1.3.1	2	2
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.3	wars	war-01	:ARG0	1.3.2	and	and
+::edge	1.4	Since	since	:op1	1.4.1	independence	independence
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"Pakistan"
+::edge	1.3	wars	war-01	:ARG1	1.3.3		world-region
+::edge	1	fought	fight-01	:ARG0	1.1	governments	government-organization
+::edge	1.3	wars	war-01	:ARG1-of	1.3.4		include-91
+::edge	1	fought	fight-01	:ARG1	1.2	governments	government-organization
+::edge	1	fought	fight-01	:time	1.3	wars	war-01
+::edge	1	fought	fight-01	:time	1.4	Since	since
+::edge	1.4.1	independence	independence	:time	1.4.1.2		date-entity
+::edge	1.1	governments	government-organization	:ARG0-of	1.1.1	governments	govern-01
+::edge	1.4.1	independence	independence	:prep-from	1.4.1.1	rule	rule-03
+29	Indian and Pakistani governments nearly engaged in a fourth conflict in 1999.
+29	Indian and Pakistani governments nearly engaged in a fourth conflict in 1999 .
+29	0-1.1.1.1.1.2.1 1-1.1 2-1.1.2.1.1.2.1 3-1.1.1 3-1.1.1.1 3-1.1.1.1.r 3-1.1.2 3-1.1.2.1 3-1.1.2.1.r 4-1.3 5-1 6-1.2.r 8-1.2.1 8-1.2.1.1 8-1.2.1.1.r 9-1.2 10-1.4.r 11-1.4.1
+::node	"India"	1.1.1.1.1.1	"India"	
+::node	n	1.1.1.1.1.2	name	
+::node	"Pakistan"	1.1.2.1.1.2.1	"Pakistan"	Pakistani
+::node	g2	1.1.1.1	govern-01	governments
+::node	g4	1.1.2.1	govern-01	governments
+::node	"India"	1.1.1.1.1.2.1	"India"	Indian
+::node	n2	1.1.2.1.1.2	name	
+::node	"Pakistan"	1.1.2.1.1.1	"Pakistan"	
+::node	c2	1.1.2.1.1	country	
+::node	g3	1.1.2	government-organization	governments
+::node	o	1.2.1	ordinal-entity	fourth
+::node	e	1	engage-01	engaged
+::node	1999	1.4.1	1999	1999
+::node	a	1.1	and	and
+::node	c3	1.2	conflict-01	conflict
+::node	n3	1.3	near	nearly
+::node	d	1.4	date-entity	
+::node	c	1.1.1.1.1	country	
+::node	4	1.2.1.1	4	fourth
+::node	g	1.1.1	government-organization	governments
+::edge	1.1.1.1.1		country	:wiki	1.1.1.1.1.1		"India"
+::edge	1.1.1.1.1		country	:name	1.1.1.1.1.2		name
+::edge	1.1.2.1.1.2		name	:op1	1.1.2.1.1.2.1	Pakistani	"Pakistan"
+::edge	1.1.1	governments	government-organization	:ARG0-of	1.1.1.1	governments	govern-01
+::edge	1.1.2	governments	government-organization	:ARG0-of	1.1.2.1	governments	govern-01
+::edge	1.1.1.1.1.2		name	:op1	1.1.1.1.1.2.1	Indian	"India"
+::edge	1.1.2.1.1		country	:name	1.1.2.1.1.2		name
+::edge	1.1.2.1.1		country	:wiki	1.1.2.1.1.1		"Pakistan"
+::edge	1.1.2.1	governments	govern-01	:ARG1	1.1.2.1.1		country
+::edge	1.1	and	and	:op2	1.1.2	governments	government-organization
+::edge	1.2	conflict	conflict-01	:ord	1.2.1	fourth	ordinal-entity
+::edge	1.4		date-entity	:year	1.4.1	1999	1999
+::edge	1	engaged	engage-01	:ARG0	1.1	and	and
+::edge	1	engaged	engage-01	:ARG2	1.2	conflict	conflict-01
+::edge	1	engaged	engage-01	:degree	1.3	nearly	near
+::edge	1	engaged	engage-01	:time	1.4		date-entity
+::edge	1.1.1.1	governments	govern-01	:ARG1	1.1.1.1.1		country
+::edge	1.2.1	fourth	ordinal-entity	:value	1.2.1.1	fourth	4
+::edge	1.1	and	and	:op1	1.1.1	governments	government-organization
+30	Indian and Pakistani governments each conducted nuclear tests in May 1998.
+30	Indian and Pakistani governments each conducted nuclear tests in May 1998 .
+30	0-1.1.1.1.1.2.1 1-1 2-1.2.1.1.1.2.1 3-1.1.1 3-1.1.1.1 3-1.1.1.1.r 3-1.2.1 3-1.2.1.1 3-1.2.1.1.r 5-1.1 5-1.2 6-1.1.2 6-1.2.2 7-1.1 9-1.3.2 9-1.3.2.r 10-1.3.1
+::node	"India"	1.1.1.1.1.1	"India"	
+::node	n	1.1.1.1.1.2	name	
+::node	"Pakistan"	1.2.1.1.1.2.1	"Pakistan"	Pakistani
+::node	g2	1.1.1.1	govern-01	governments
+::node	"India"	1.1.1.1.1.2.1	"India"	Indian
+::node	"Pakistan"	1.2.1.1.1.1	"Pakistan"	
+::node	n2	1.2.1.1.1.2	name	
+::node	n3	1.1.2	nucleus	nuclear
+::node	g3	1.2.1	government-organization	governments
+::node	a2	1	and	and
+::node	n4	1.2.2	nucleus	nuclear
+::node	1998	1.3.1	1998	1998
+::node	5	1.3.2	5	May
+::node	c3	1.2.1.1.1	country	
+::node	t2	1.1	test-01	tests
+::node	t3	1.2	test-01	conducted
+::node	d	1.3	date-entity	
+::node	c2	1.1.1.1.1	country	
+::node	g4	1.2.1.1	govern-01	governments
+::node	g	1.1.1	government-organization	governments
+::edge	1.1.1.1.1		country	:wiki	1.1.1.1.1.1		"India"
+::edge	1.1.1.1.1		country	:name	1.1.1.1.1.2		name
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	Pakistani	"Pakistan"
+::edge	1.1.1	governments	government-organization	:ARG0-of	1.1.1.1	governments	govern-01
+::edge	1.1.1.1.1.2		name	:op1	1.1.1.1.1.2.1	Indian	"India"
+::edge	1.2.1.1.1		country	:wiki	1.2.1.1.1.1		"Pakistan"
+::edge	1.2.1.1.1		country	:name	1.2.1.1.1.2		name
+::edge	1.1	tests	test-01	:ARG1	1.1.2	nuclear	nucleus
+::edge	1.2	conducted	test-01	:ARG0	1.2.1	governments	government-organization
+::edge	1.2	conducted	test-01	:ARG1	1.2.2	nuclear	nucleus
+::edge	1.3		date-entity	:year	1.3.1	1998	1998
+::edge	1.3		date-entity	:month	1.3.2	May	5
+::edge	1.2.1.1	governments	govern-01	:ARG1	1.2.1.1.1		country
+::edge	1	and	and	:op1	1.1	tests	test-01
+::edge	1	and	and	:op2	1.2	conducted	test-01
+::edge	1	and	and	:time	1.3		date-entity
+::edge	1.1.1.1	governments	govern-01	:ARG1	1.1.1.1.1		country
+::edge	1.2.1	governments	government-organization	:ARG0-of	1.2.1.1	governments	govern-01
+::edge	1.1	tests	test-01	:ARG0	1.1.1	governments	government-organization

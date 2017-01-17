@@ -1,0 +1,1542 @@
+1	2002-06-10
+1	2002 @-@ 06 @-@ 10
+1	0-1.1 2-1.2 4-1.3
+::node	d2	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	6	1.2	6	06
+::node	10	1.3	10	10
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	06	6
+::edge	1		date-entity	:day	1.3	10	10
+2	Myanmar (MM)
+2	Myanmar ( MM )
+2	0-1.2.1
+::node	"Myanmar"	1.2.1	"Myanmar"	Myanmar
+::node	c	1	country	
+::node	"Burma"	1.1	"Burma"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	Myanmar	"Myanmar"
+::edge	1		country	:wiki	1.1		"Burma"
+::edge	1		country	:name	1.2		name
+3	Narcotics; media
+3	Narcotics ; media
+3	0-1.1 2-1.2
+::node	a	1	and	
+::node	n	1.1	narcotic	Narcotics
+::node	m	1.2	media	media
+::edge	1		and	:op1	1.1	Narcotics	narcotic
+::edge	1		and	:op2	1.2	media	media
+4	AFP, members of international and local press, and United Nations representatives and diplomats witnessed Myanmar destroy illicit drugs the authorities captured.
+4	AFP , members of international and local press , and United Nations representatives and diplomats witnessed Myanmar destroy illicit drugs the authorities captured .
+4	0-1.1.1.2.1 2-1.1.2 3-1.1.2.1.r 4-1.1.2.1.2.1 5-1.1.2.1 6-1.1.2.1.1.1 7-1.1.2.1.1 7-1.1.2.1.2 9-1.1.2.1 10-1.1.3.1.1.2.1 11-1.1.3.1.1.2.2 12-1.1.3 12-1.1.3.1 12-1.1.3.1.r 13-1.1 14-1.1.4 15-1 16-1.2.1.2.1 17-1.2 18-1.2.2.1 19-1.2.2 21-1.2.2.2.1 22-1.2.2.2
+::node	i	1.1.2.1.2.1	international	international
+::node	l	1.1.2.1.1.1	local	local
+::node	p2	1.1.2.1.2	press	press
+::node	p	1.1.2.1.1	press	press
+::node	"AFP"	1.1.1.2.1	"AFP"	AFP
+::node	n5	1.2.1.2	name	
+::node	i2	1.2.2.1	illicit	illicit
+::node	c3	1.2.2.2	capture-01	captured
+::node	a3	1.2.2.2.1	authority	authorities
+::node	"Burma"	1.2.1.1	"Burma"	
+::node	"Agence_France-Presse"	1.1.1.1	"Agence_France-Presse"	
+::node	n3	1.1.1.2	name	
+::node	a2	1.1.2.1	and	and
+::node	r	1.1.3.1	represent-01	representatives
+::node	o3	1.1.4.1	organization	
+::node	"United_Nations"	1.1.3.1.1.1	"United_Nations"	
+::node	"Nations"	1.1.3.1.1.2.2	"Nations"	Nations
+::node	n4	1.1.3.1.1.2	name	
+::node	"United"	1.1.3.1.1.2.1	"United"	United
+::node	m	1.1.2	member	members
+::node	c2	1.2.1	country	
+::node	w	1	witness-01	witnessed
+::node	p3	1.1.3	person	representatives
+::node	d3	1.2.2	drug	drugs
+::node	d	1.1.4	diplomat	diplomats
+::node	"Myanmar"	1.2.1.2.1	"Myanmar"	Myanmar
+::node	a	1.1	and	and
+::node	d2	1.2	destroy-01	destroy
+::node	o3	1.1.3.1.1	organization	
+::node	p4	1.1.1	publication	
+::edge	1.1.2.1.2	press	press	:mod	1.1.2.1.2.1	international	international
+::edge	1.1.2.1.1	press	press	:mod	1.1.2.1.1.1	local	local
+::edge	1.1.2.1	and	and	:op2	1.1.2.1.2	press	press
+::edge	1.1.2.1	and	and	:op1	1.1.2.1.1	press	press
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	AFP	"AFP"
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.2	drugs	drug	:mod	1.2.2.1	illicit	illicit
+::edge	1.2.2	drugs	drug	:ARG1-of	1.2.2.2	captured	capture-01
+::edge	1.2.2.2	captured	capture-01	:ARG0	1.2.2.2.1	authorities	authority
+::edge	1.2.1		country	:wiki	1.2.1.1		"Burma"
+::edge	1.1.1		publication	:wiki	1.1.1.1		"Agence_France-Presse"
+::edge	1.1.1		publication	:name	1.1.1.2		name
+::edge	1.1.2	members	member	:poss	1.1.2.1	and	and
+::edge	1.1.3	representatives	person	:ARG0-of	1.1.3.1	representatives	represent-01
+::edge	1.1.4	diplomats	diplomat	:mod	1.1.4.1		organization
+::edge	1.1.3.1.1		organization	:wiki	1.1.3.1.1.1		"United_Nations"
+::edge	1.1.3.1.1.2		name	:op2	1.1.3.1.1.2.2	Nations	"Nations"
+::edge	1.1.3.1.1		organization	:name	1.1.3.1.1.2		name
+::edge	1.1.3.1.1.2		name	:op1	1.1.3.1.1.2.1	United	"United"
+::edge	1.1	and	and	:op2	1.1.2	members	member
+::edge	1.2	destroy	destroy-01	:ARG0	1.2.1		country
+::edge	1.1	and	and	:op3	1.1.3	representatives	person
+::edge	1.2	destroy	destroy-01	:ARG1	1.2.2	drugs	drug
+::edge	1.1	and	and	:op4	1.1.4	diplomats	diplomat
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Myanmar	"Myanmar"
+::edge	1	witnessed	witness-01	:ARG0	1.1	and	and
+::edge	1	witnessed	witness-01	:ARG1	1.2	destroy	destroy-01
+::edge	1.1.3.1	representatives	represent-01	:ARG1	1.1.3.1.1		organization
+::edge	1.1	and	and	:op1	1.1.1		publication
+5	Junta spokesman Colonel Hla Min stated that Myanmar became poor because of their trying to be so clean.
+5	Junta spokesman Colonel Hla Min stated that Myanmar became poor because of their trying to be so clean .
+5	0-1.1.4.1 1-1.1.4.2 2-1.1.3.1 3-1.1.2.1 4-1.1.2.2 5-1 6-1.2.r 7-1.2.1.1.2.1 8-1.2.2 9-1.2.2.2 10-1.2 13-1.2.1 14-1.2 16-1.2 17-1.2.1.2
+::node	"Hla"	1.1.2.1	"Hla"	Hla
+::node	"Min"	1.1.2.2	"Min"	Min
+::node	c	1.1.3.1	colonel	Colonel
+::node	j	1.1.4.1	junta	Junta
+::node	s2	1.1.4.2	spokesman	spokesman
+::node	"Myanmar"	1.2.1.1.2.1	"Myanmar"	Myanmar
+::node	c4	1.2.1.2.2	country	
+::node	n4	1.1.2	name	
+::node	t	1.2.1	try-01	trying
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	
+::node	b	1.2.2	become-01	became
+::node	h2	1.1.4	have-org-role-91	
+::node	n6	1.2.1.1.2	name	
+::node	c4	1.2.1.2.1	country	
+::node	"Burma"	1.2.1.1.1	"Burma"	
+::node	p	1.1	person	
+::node	c3	1.2	cause-01	so
+::node	c5	1.2.1.2	clean-01	clean
+::node	c4	1.2.2.1	country	
+::node	p2	1.2.2.2	poor	poor
+::node	c4	1.2.1.1	country	
+::node	"Hla_Min"	1.1.1	"Hla_Min"	
+::edge	1.1.2		name	:op1	1.1.2.1	Hla	"Hla"
+::edge	1.1.2		name	:op2	1.1.2.2	Min	"Min"
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.1	Colonel	colonel
+::edge	1.1.4		have-org-role-91	:ARG1	1.1.4.1	Junta	junta
+::edge	1.1.4		have-org-role-91	:ARG2	1.1.4.2	spokesman	spokesman
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Myanmar	"Myanmar"
+::edge	1.2.1.2	clean	clean-01	:ARG1	1.2.1.2.2		country
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	so	cause-01	:ARG0	1.2.1	trying	try-01
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	so	cause-01	:ARG1	1.2.2	became	become-01
+::edge	1.1		person	:ARG0-of	1.1.4		have-org-role-91
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.2.1.2	clean	clean-01	:ARG0	1.2.1.2.1		country
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"Burma"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	so	cause-01
+::edge	1.2.1	trying	try-01	:ARG1	1.2.1.2	clean	clean-01
+::edge	1.2.2	became	become-01	:ARG1	1.2.2.1		country
+::edge	1.2.2	became	become-01	:ARG2	1.2.2.2	poor	poor
+::edge	1.2.1	trying	try-01	:ARG0	1.2.1.1		country
+::edge	1.1		person	:wiki	1.1.1		"Hla_Min"
+6	Min took pictures of millions of dollars worth of poppy seeds, refined drugs and precursor chemicals curling up in smoke.
+6	Min took pictures of millions of dollars worth of poppy seeds , refined drugs and precursor chemicals curling up in smoke .
+6	0-1.1.2.1 4-1.2.5.1.1 4-1.2.5.1.1.1 4-1.2.5.1.1.1.r 6-1.2.5.1.2 7-1.2.5 9-1.2.1.1 10-1.2.1 12-1.2.2.1 13-1.2.2 14-1.2 15-1.2.3.1 16-1.2.3 17-1.2.4 18-1.2.4 19-1.2.4.1.r 20-1.2.4.1
+::node	"Min"	1.1.2.1	"Min"	Min
+::node	m4	1.2.5.1.1	multiple	millions
+::node	d3	1.2.5.1.2	dollar	dollars
+::node	n2	1.1.2	name	
+::node	s	1.2.1	seed	seeds
+::node	p2	1	photograph-01	
+::node	d2	1.2.2	drug	drugs
+::node	c	1.2.3	chemical	chemicals
+::node	c2	1.2.4	curl-02	up
+::node	p3	1.1	person	
+::node	v	1.2.5	value-01	worth
+::node	a	1.2	and	and
+::node	s2	1.2.4.1	smoke	smoke
+::node	1000000	1.2.5.1.1.1	1000000	millions
+::node	m3	1.2.5.1	monetary-quantity	
+::node	r	1.2.2.1	refine-01	refined
+::node	p5	1.2.3.1	precursor	precursor
+::node	p4	1.2.1.1	poppy	poppy
+::node	"Hla_Min"	1.1.1	"Hla_Min"	
+::edge	1.1.2		name	:op1	1.1.2.1	Min	"Min"
+::edge	1.2.5.1		monetary-quantity	:quant	1.2.5.1.1	millions	multiple
+::edge	1.2.5.1		monetary-quantity	:unit	1.2.5.1.2	dollars	dollar
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1	seeds	seed
+::edge	1.2	and	and	:op2	1.2.2	drugs	drug
+::edge	1.2	and	and	:op3	1.2.3	chemicals	chemical
+::edge	1.2	and	and	:ARG1-of	1.2.4	up	curl-02
+::edge	1		photograph-01	:ARG0	1.1		person
+::edge	1.2	and	and	:ARG1-of	1.2.5	worth	value-01
+::edge	1		photograph-01	:ARG1	1.2	and	and
+::edge	1.2.4	up	curl-02	:consist-of	1.2.4.1	smoke	smoke
+::edge	1.2.5.1.1	millions	multiple	:op1	1.2.5.1.1.1	millions	1000000
+::edge	1.2.5	worth	value-01	:ARG2	1.2.5.1		monetary-quantity
+::edge	1.2.2	drugs	drug	:ARG1-of	1.2.2.1	refined	refine-01
+::edge	1.2.3	chemicals	chemical	:mod	1.2.3.1	precursor	precursor
+::edge	1.2.1	seeds	seed	:mod	1.2.1.1	poppy	poppy
+::edge	1.1		person	:wiki	1.1.1		"Hla_Min"
+7	AFP, members of international and local press, and United Nations representatives and diplomats witnessed Myanmar destroy illicit drugs the authorities captured.
+7	AFP , members of international and local press , and United Nations representatives and diplomats witnessed Myanmar destroy illicit drugs the authorities captured .
+7	0-1.1.1.2.1 2-1.1.2 3-1.1.2.1.r 4-1.1.2.1.2.1 5-1.1.2.1 6-1.1.2.1.1.1 7-1.1.2.1.1 7-1.1.2.1.2 9-1.1.2.1 10-1.1.3.1.1.2.1 11-1.1.3.1.1.2.2 12-1.1.3 12-1.1.3.1 12-1.1.3.1.r 13-1.1 14-1.1.4 15-1 16-1.2.1.2.1 17-1.2 18-1.2.2.1 19-1.2.2 21-1.2.2.2.1 22-1.2.2.2
+::node	i	1.1.2.1.2.1	international	international
+::node	l	1.1.2.1.1.1	local	local
+::node	p2	1.1.2.1.2	press	press
+::node	p	1.1.2.1.1	press	press
+::node	"AFP"	1.1.1.2.1	"AFP"	AFP
+::node	n6	1.2.1.2	name	
+::node	i2	1.2.2.1	illicit	illicit
+::node	c5	1.2.2.2	capture-01	captured
+::node	a3	1.2.2.2.1	authority	authorities
+::node	"Burma"	1.2.1.1	"Burma"	
+::node	"Agence_France-Presse"	1.1.1.1	"Agence_France-Presse"	
+::node	n4	1.1.1.2	name	
+::node	a2	1.1.2.1	and	and
+::node	r	1.1.3.1	represent-01	representatives
+::node	o2	1.1.4.1	organization	
+::node	"United_Nations"	1.1.3.1.1.1	"United_Nations"	
+::node	"Nations"	1.1.3.1.1.2.2	"Nations"	Nations
+::node	n5	1.1.3.1.1.2	name	
+::node	"United"	1.1.3.1.1.2.1	"United"	United
+::node	m	1.1.2	member	members
+::node	c4	1.2.1	country	
+::node	w	1	witness-01	witnessed
+::node	p3	1.1.3	person	representatives
+::node	d3	1.2.2	drug	drugs
+::node	d	1.1.4	diplomat	diplomats
+::node	"Myanmar"	1.2.1.2.1	"Myanmar"	Myanmar
+::node	a	1.1	and	and
+::node	d2	1.2	destroy-01	destroy
+::node	o2	1.1.3.1.1	organization	
+::node	p4	1.1.1	publication	
+::edge	1.1.2.1.2	press	press	:mod	1.1.2.1.2.1	international	international
+::edge	1.1.2.1.1	press	press	:mod	1.1.2.1.1.1	local	local
+::edge	1.1.2.1	and	and	:op2	1.1.2.1.2	press	press
+::edge	1.1.2.1	and	and	:op1	1.1.2.1.1	press	press
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	AFP	"AFP"
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.2	drugs	drug	:mod	1.2.2.1	illicit	illicit
+::edge	1.2.2	drugs	drug	:ARG1-of	1.2.2.2	captured	capture-01
+::edge	1.2.2.2	captured	capture-01	:ARG0	1.2.2.2.1	authorities	authority
+::edge	1.2.1		country	:wiki	1.2.1.1		"Burma"
+::edge	1.1.1		publication	:wiki	1.1.1.1		"Agence_France-Presse"
+::edge	1.1.1		publication	:name	1.1.1.2		name
+::edge	1.1.2	members	member	:poss	1.1.2.1	and	and
+::edge	1.1.3	representatives	person	:ARG0-of	1.1.3.1	representatives	represent-01
+::edge	1.1.4	diplomats	diplomat	:mod	1.1.4.1		organization
+::edge	1.1.3.1.1		organization	:wiki	1.1.3.1.1.1		"United_Nations"
+::edge	1.1.3.1.1.2		name	:op2	1.1.3.1.1.2.2	Nations	"Nations"
+::edge	1.1.3.1.1		organization	:name	1.1.3.1.1.2		name
+::edge	1.1.3.1.1.2		name	:op1	1.1.3.1.1.2.1	United	"United"
+::edge	1.1	and	and	:op2	1.1.2	members	member
+::edge	1.2	destroy	destroy-01	:ARG0	1.2.1		country
+::edge	1.1	and	and	:op3	1.1.3	representatives	person
+::edge	1.2	destroy	destroy-01	:ARG1	1.2.2	drugs	drug
+::edge	1.1	and	and	:op4	1.1.4	diplomats	diplomat
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Myanmar	"Myanmar"
+::edge	1	witnessed	witness-01	:ARG0	1.1	and	and
+::edge	1	witnessed	witness-01	:ARG1	1.2	destroy	destroy-01
+::edge	1.1.3.1	representatives	represent-01	:ARG1	1.1.3.1.1		organization
+::edge	1.1	and	and	:op1	1.1.1		publication
+8	Min said Myanmar would be one of the richest countries in the region if they were as corrupt as outsiders claimed.
+8	Min said Myanmar would be one of the richest countries in the region if they were as corrupt as outsiders claimed .
+8	0-1.1.2.1 1-1 2-1.2.2.1 5-1.2.3.2 8-1.2.3.1.1 8-1.2.3.1.1.1 8-1.2.3.1.1.1.r 9-1.2.3.1 10-1.2.3.1.2.r 12-1.2.3.1.2 13-1.2.3.3.r 14-1.2.3.3.1 17-1.2.3.3 18-1.2.3.3.2.r 19-1.2.3.3.2.1 20-1.2.3.3.2
+::node	"Min"	1.1.2.1	"Min"	Min
+::node	c2	1.2.3.3.1	country	they
+::node	c5	1.2.3.3.2	claim-01	claimed
+::node	r	1.2.3.1.1	rich	richest
+::node	r2	1.2.3.1.2	region	region
+::node	o	1.2.3.3.2.1	outsider	outsiders
+::node	n3	1.1.2	name	
+::node	"Burma"	1.2.1	"Burma"	
+::node	s	1	say-01	said
+::node	n4	1.2.2	name	
+::node	i	1.2.3	include-91	
+::node	m	1.2.3.1.1.1	most	richest
+::node	p2	1.1	person	
+::node	c2	1.2	country	
+::node	o2	1.2.3.2	one	one
+::node	c4	1.2.3.3	corrupt-01	corrupt
+::node	"Myanmar"	1.2.2.1	"Myanmar"	Myanmar
+::node	c3	1.2.3.1	country	countries
+::node	"Hla_Min"	1.1.1	"Hla_Min"	
+::edge	1.1.2		name	:op1	1.1.2.1	Min	"Min"
+::edge	1.2.3.3	corrupt	corrupt-01	:ARG1	1.2.3.3.1	they	country
+::edge	1.2.3.3	corrupt	corrupt-01	:degree	1.2.3.3.2	claimed	claim-01
+::edge	1.2.3.1	countries	country	:mod	1.2.3.1.1	richest	rich
+::edge	1.2.3.1	countries	country	:location	1.2.3.1.2	region	region
+::edge	1.2.3.3.2	claimed	claim-01	:ARG0	1.2.3.3.2.1	outsiders	outsider
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"Burma"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.2		country	:ARG1-of	1.2.3		include-91
+::edge	1.2.3.1.1	richest	rich	:degree	1.2.3.1.1.1	richest	most
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2		country
+::edge	1.2.3		include-91	:ARG3	1.2.3.2	one	one
+::edge	1.2.3		include-91	:condition	1.2.3.3	corrupt	corrupt-01
+::edge	1.2.2		name	:op1	1.2.2.1	Myanmar	"Myanmar"
+::edge	1.2.3		include-91	:ARG2	1.2.3.1	countries	country
+::edge	1.1		person	:wiki	1.1.1		"Hla_Min"
+9	Hla Min stated that illicit drugs worth some 50 billion dollars have been destroyed by authorities since 1974.
+9	Hla Min stated that illicit drugs worth some 50 billion dollars have been destroyed by authorities since 1974 .
+9	0-1.1.2.1 1-1.1.2.2 2-1 3-1.2.r 4-1.2.2.1 5-1.2.2 6-1.2.2.2 7-1.2.2.2.1 8-1.2.2.2.1.1.1 9-1.2.2.2.1.1.1 10-1.2.2.2.1.1.2 13-1.2 14-1.2.1.r 15-1.2.1 16-1.2.3 17-1.2.3.1.1
+::node	"Hla"	1.1.2.1	"Hla"	Hla
+::node	"Min"	1.1.2.2	"Min"	Min
+::node	d5	1.2.2.2.1.1.2	dollar	dollars
+::node	50000000000	1.2.2.2.1.1.1	50000000000	billion
+::node	1974	1.2.3.1.1	1974	1974
+::node	n	1.1.2	name	
+::node	a	1.2.1	authority	authorities
+::node	s2	1	state-01	stated
+::node	d4	1.2.2	drug	drugs
+::node	s4	1.2.3	since	since
+::node	p	1.1	person	
+::node	d3	1.2	destroy-01	destroyed
+::node	i	1.2.2.1	illicit	illicit
+::node	m2	1.2.2.2.1.1	monetary-quantity	
+::node	v	1.2.2.2	value-01	worth
+::node	d6	1.2.3.1	date-entity	
+::node	s3	1.2.2.2.1	some	some
+::node	"Hla_Min"	1.1.1	"Hla_Min"	
+::edge	1.1.2		name	:op1	1.1.2.1	Hla	"Hla"
+::edge	1.1.2		name	:op2	1.1.2.2	Min	"Min"
+::edge	1.2.2.2.1.1		monetary-quantity	:unit	1.2.2.2.1.1.2	dollars	dollar
+::edge	1.2.2.2.1.1		monetary-quantity	:quant	1.2.2.2.1.1.1	billion	50000000000
+::edge	1.2.3.1		date-entity	:year	1.2.3.1.1	1974	1974
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	destroyed	destroy-01	:ARG0	1.2.1	authorities	authority
+::edge	1.2	destroyed	destroy-01	:ARG1	1.2.2	drugs	drug
+::edge	1.2	destroyed	destroy-01	:time	1.2.3	since	since
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	destroyed	destroy-01
+::edge	1.2.2	drugs	drug	:mod	1.2.2.1	illicit	illicit
+::edge	1.2.2.2.1	some	some	:op1	1.2.2.2.1.1		monetary-quantity
+::edge	1.2.2	drugs	drug	:ARG1-of	1.2.2.2	worth	value-01
+::edge	1.2.3	since	since	:op1	1.2.3.1		date-entity
+::edge	1.2.2.2	worth	value-01	:ARG2	1.2.2.2.1	some	some
+::edge	1.1		person	:wiki	1.1.1		"Hla_Min"
+10	Min said it was enough to pay Myanmar's national debt ten times over.
+10	Min said it was enough to pay Myanmar 's national debt ten times over .
+10	0-1.1.2.1 1-1 4-1.2 6-1.2.1.1 7-1.2.1.1.2.2.2.1 8-1.2.1.1.2.2.r 9-1.2.1.1.2.1 10-1.2.1.1.2 11-1.2.1.1.1.1 12-1.2.1.1.1
+::node	"Min"	1.1.2.1	"Min"	Min
+::node	10	1.2.1.1.1.1	10	ten
+::node	d	1.2.1.1.1.2	debt	
+::node	n	1.2.1.1.2.1	nation	national
+::node	c2	1.2.1.1.2.2	country	
+::node	n3	1.1.2	name	
+::node	e2	1.2.1	enable-01	
+::node	s	1	say-01	said
+::node	d	1.2.1.1.2	debt	debt
+::node	p	1.2.1.1.1	product-of	times
+::node	p2	1.1	person	
+::node	n5	1.2.1.1.2.2.2	name	
+::node	e	1.2	enough	enough
+::node	"Burma"	1.2.1.1.2.2.1	"Burma"	
+::node	"Myanmar"	1.2.1.1.2.2.2.1	"Myanmar"	Myanmar
+::node	p3	1.2.1.1	pay-01	pay
+::node	"Hla_Min"	1.1.1	"Hla_Min"	
+::edge	1.1.2		name	:op1	1.1.2.1	Min	"Min"
+::edge	1.2.1.1.1	times	product-of	:op1	1.2.1.1.1.1	ten	10
+::edge	1.2.1.1.1	times	product-of	:op2	1.2.1.1.1.2		debt
+::edge	1.2.1.1.2	debt	debt	:mod	1.2.1.1.2.1	national	nation
+::edge	1.2.1.1.2	debt	debt	:poss	1.2.1.1.2.2		country
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	enough	enough	:ARG0-of	1.2.1		enable-01
+::edge	1.2.1.1	pay	pay-01	:ARG3	1.2.1.1.2	debt	debt
+::edge	1.2.1.1	pay	pay-01	:ARG1	1.2.1.1.1	times	product-of
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1.2.1.1.2.2		country	:name	1.2.1.1.2.2.2		name
+::edge	1	said	say-01	:ARG1	1.2	enough	enough
+::edge	1.2.1.1.2.2		country	:wiki	1.2.1.1.2.2.1		"Burma"
+::edge	1.2.1.1.2.2.2		name	:op1	1.2.1.1.2.2.2.1	Myanmar	"Myanmar"
+::edge	1.2.1		enable-01	:ARG1	1.2.1.1	pay	pay-01
+::edge	1.1		person	:wiki	1.1.1		"Hla_Min"
+11	Drug-burning ceremonies are regular events in Myanmar.
+11	Drug @-@ burning ceremonies are regular events in Myanmar .
+11	0-1.2.1.1 2-1.2.1 3-1.2 4-1.2.r 5-1.1 6-1 7-1.3.r 8-1.3.2.1
+::node	b	1.2.1	burn-01	burning
+::node	e	1	event	events
+::node	"Burma"	1.3.1	"Burma"	
+::node	n2	1.3.2	name	
+::node	r	1.1	regular	regular
+::node	c2	1.2	ceremony	ceremonies
+::node	c3	1.3	country	
+::node	"Myanmar"	1.3.2.1	"Myanmar"	Myanmar
+::node	d	1.2.1.1	drug	Drug
+::edge	1.2	ceremonies	ceremony	:purpose	1.2.1	burning	burn-01
+::edge	1.3		country	:wiki	1.3.1		"Burma"
+::edge	1.3		country	:name	1.3.2		name
+::edge	1	events	event	:frequency	1.1	regular	regular
+::edge	1	events	event	:domain	1.2	ceremonies	ceremony
+::edge	1	events	event	:location	1.3		country
+::edge	1.3.2		name	:op1	1.3.2.1	Myanmar	"Myanmar"
+::edge	1.2.1	burning	burn-01	:ARG1	1.2.1.1	Drug	drug
+12	Critics argue that it does not reflect the massive drug industry in the country.
+12	Critics argue that it does not reflect the massive drug industry in the country .
+12	0-1.1 1-1 2-1.2.r 3-1.2.2 5-1.2.1 5-1.2.1.r 6-1.2 8-1.2.3.2 9-1.2.3.1 10-1.2.3 11-1.2.3.3.r 13-1.2.3.3
+::node	i	1.2.1	it	not
+::node	a	1	argue-01	argue
+::node	i2	1.2.2	industry	it
+::node	-	1.2.3	-	industry
+::node	c	1.1	critic	Critics
+::node	r	1.2	reflect-01	reflect
+::node	c2	1.2.2.3	country	
+::node	d	1.2.2.1	drug	
+::node	m	1.2.2.2	massive	
+::edge	1.2	reflect	reflect-01	:ARG1	1.2.1	not	it
+::edge	1.2	reflect	reflect-01	:ARG2	1.2.2	it	industry
+::edge	1.2	reflect	reflect-01	:polarity	1.2.3	industry	-
+::edge	1	argue	argue-01	:ARG0	1.1	Critics	critic
+::edge	1	argue	argue-01	:ARG1	1.2	reflect	reflect-01
+::edge	1.2.2	it	industry	:location	1.2.2.3		country
+::edge	1.2.2	it	industry	:mod	1.2.2.1		drug
+::edge	1.2.2	it	industry	:mod	1.2.2.2		massive
+13	Resident Representative of the UN's Drug Control Program (UNDCP) Jean-Luc Lemahieu said this one is different.
+13	Resident Representative of the UN 's Drug Control Program ( UNDCP ) Jean @-@ Luc Lemahieu said this one is different .
+13	0-1.1.4 0-1.1.4.r 1-1.1 1-1.1.3 1-1.1.3.r 2-1.1.3.1.r 4-1.1.3.1.2.1 5-1.1.3.1.2.1 6-1.1.3.1.2.2 7-1.1.3.1.2.3 8-1.1.3.1.2.4 10-1.1.3.1.2.2 10-1.1.3.1.2.3 10-1.1.3.1.2.4 12-1.1.2.1 14-1.1.2.1 15-1.1.2.2 16-1 17-1.2.1.1 18-1.2.1 20-1.2
+::node	"Jean-Luc"	1.1.2.1	"Jean-Luc"	Luc
+::node	n5	1.1.3.1.2	name	
+::node	"Lemahieu"	1.1.2.2	"Lemahieu"	Lemahieu
+::node	o3	1.1.3.1	organization	
+::node	"Drug"	1.1.3.1.2.2	"Drug"	UNDCP
+::node	"Control"	1.1.3.1.2.3	"Control"	UNDCP
+::node	"Program"	1.1.3.1.2.4	"Program"	UNDCP
+::node	"UN's"	1.1.3.1.2.1	"UN's"	's
+::node	n4	1.1.2	name	
+::node	o4	1.2.1	one	one
+::node	s	1	say-01	said
+::node	r	1.1.3	represent-01	Representative
+::node	r2	1.1.4	reside-01	Resident
+::node	p2	1.1	person	Representative
+::node	d	1.2	differ-02	different
+::node	"United_Nations_Office_on_Drugs_and_Crime"	1.1.3.1.1	"United_Nations_Office_on_Drugs_and_Crime"	
+::node	t	1.2.1.1	this	this
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Luc	"Jean-Luc"
+::edge	1.1.3.1		organization	:name	1.1.3.1.2		name
+::edge	1.1.2		name	:op2	1.1.2.2	Lemahieu	"Lemahieu"
+::edge	1.1.3	Representative	represent-01	:ARG1	1.1.3.1		organization
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	UNDCP	"Drug"
+::edge	1.1.3.1.2		name	:op3	1.1.3.1.2.3	UNDCP	"Control"
+::edge	1.1.3.1.2		name	:op4	1.1.3.1.2.4	UNDCP	"Program"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	's	"UN's"
+::edge	1.1	Representative	person	:name	1.1.2		name
+::edge	1.2	different	differ-02	:ARG1	1.2.1	one	one
+::edge	1.1	Representative	person	:ARG0-of	1.1.3	Representative	represent-01
+::edge	1.1	Representative	person	:ARG0-of	1.1.4	Resident	reside-01
+::edge	1	said	say-01	:ARG0	1.1	Representative	person
+::edge	1	said	say-01	:ARG1	1.2	different	differ-02
+::edge	1.1.3.1		organization	:wiki	1.1.3.1.1		"United_Nations_Office_on_Drugs_and_Crime"
+::edge	1.2.1	one	one	:mod	1.2.1.1	this	this
+::edge	1.1	Representative	person	:wiki	1.1.1		-
+14	Almost 102 tons of poppy seeds were burnt in the capital of Myanmar's northern Shan state at this ceremony.
+14	Almost 102 tons of poppy seeds were burnt in the capital of Myanmar 's northern Shan state at this ceremony .
+14	0-1.1.2 1-1.1.2.1.1 2-1.1.2.1.2 3-1.1.2.r 4-1.1.1 5-1.1 7-1 8-1.2.r 10-1.2.1.2 11-1.2.1 12-1.2.1.1.3.1.2.1 13-1.2.1.1.3.1.r 14-1.2.1.1.3 15-1.2.1.1.2.1 16-1.2.1.1 17-1.3.r 18-1.3.1 19-1.3
+::node	m	1.1.2.1	mass-quantity	
+::node	"Myanmar"	1.2.1.1.3.1.2.1	"Myanmar"	Myanmar
+::node	"Shan"	1.2.1.1.2.1	"Shan"	Shan
+::node	n3	1.2.1.1.3.1.2	name	
+::node	c2	1.2.1.1.3.1	country	
+::node	"Burma"	1.2.1.1.3.1.1	"Burma"	
+::node	t	1.1.2.1.2	ton	tons
+::node	102	1.1.2.1.1	102	102
+::node	n2	1.2.1.1.3	north	northern
+::node	a	1.1.2	almost	Almost
+::node	h	1.2.1	have-org-role-91	of
+::node	b	1	burn-01	burnt
+::node	t2	1.3.1	this	this
+::node	n	1.2.1.1.2	name	
+::node	"Shan_State"	1.2.1.1.1	"Shan_State"	
+::node	s	1.1	seed	seeds
+::node	c4	1.2	city	
+::node	c3	1.3	ceremony	ceremony
+::node	c	1.2.1.2	capital	capital
+::node	s2	1.2.1.1	state	state
+::node	p	1.1.1	poppy	poppy
+::edge	1.1.2	Almost	almost	:op1	1.1.2.1		mass-quantity
+::edge	1.2.1.1.3.1.2		name	:op1	1.2.1.1.3.1.2.1	Myanmar	"Myanmar"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Shan	"Shan"
+::edge	1.2.1.1.3.1		country	:name	1.2.1.1.3.1.2		name
+::edge	1.2.1.1.3	northern	north	:part-of	1.2.1.1.3.1		country
+::edge	1.2.1.1.3.1		country	:wiki	1.2.1.1.3.1.1		"Burma"
+::edge	1.1.2.1		mass-quantity	:unit	1.1.2.1.2	tons	ton
+::edge	1.1.2.1		mass-quantity	:quant	1.1.2.1.1	102	102
+::edge	1.2.1.1	state	state	:location	1.2.1.1.3	northern	north
+::edge	1.1	seeds	seed	:quant	1.1.2	Almost	almost
+::edge	1.2		city	:ARG0-of	1.2.1	of	have-org-role-91
+::edge	1.3	ceremony	ceremony	:mod	1.3.1	this	this
+::edge	1.2.1.1	state	state	:name	1.2.1.1.2		name
+::edge	1.2.1.1	state	state	:wiki	1.2.1.1.1		"Shan_State"
+::edge	1	burnt	burn-01	:ARG1	1.1	seeds	seed
+::edge	1	burnt	burn-01	:location	1.2		city
+::edge	1	burnt	burn-01	:location	1.3	ceremony	ceremony
+::edge	1.2.1	of	have-org-role-91	:ARG2	1.2.1.2	capital	capital
+::edge	1.2.1	of	have-org-role-91	:ARG1	1.2.1.1	state	state
+::edge	1.1	seeds	seed	:mod	1.1.1	poppy	poppy
+15	The ceremony also included 249 kilograms of opium, 102 kilograms of morphine powder, three kilograms of solid morphine and various precursor chemicals.
+15	The ceremony also included 249 kilograms of opium , 102 kilograms of morphine powder , three kilograms of solid morphine and various precursor chemicals .
+15	1-1.2 2-1.3 3-1 4-1.1.1.1.1 5-1.1.1.1.2 6-1.1.1.1.r 7-1.1.1 9-1.1.2.1.1 10-1.1.2.1.2 11-1.1.2.1.r 12-1.1.2 13-1.1.2.2 15-1.1.3.2.1 16-1.1.3.2.2 17-1.1.3.2.r 18-1.1.3.1 19-1.1.2 19-1.1.3 20-1.1 21-1.1.4.2 22-1.1.4.1 23-1.1.4
+::node	m5	1.1.1.1	mass-quantity	
+::node	k3	1.1.3.2.2	kilogram	kilograms
+::node	m4	1.1.2.1	mass-quantity	
+::node	3	1.1.3.2.1	3	three
+::node	p	1.1.2.2	powder-01	powder
+::node	s	1.1.3.1	solid	solid
+::node	m	1.1.3.2	mass-quantity	
+::node	p2	1.1.4.1	precursor	precursor
+::node	v	1.1.4.2	various	various
+::node	k2	1.1.2.1.2	kilogram	kilograms
+::node	102	1.1.2.1.1	102	102
+::node	m3	1.1.2	morphine	morphine
+::node	i	1	include-01	included
+::node	m2	1.1.3	morphine	morphine
+::node	c2	1.1.4	chemical	chemicals
+::node	a2	1.1	and	and
+::node	c	1.2	ceremony	ceremony
+::node	a	1.3	also	also
+::node	k	1.1.1.1.2	kilogram	kilograms
+::node	249	1.1.1.1.1	249	249
+::node	o	1.1.1	opium	opium
+::edge	1.1.1	opium	opium	:quant	1.1.1.1		mass-quantity
+::edge	1.1.3.2		mass-quantity	:unit	1.1.3.2.2	kilograms	kilogram
+::edge	1.1.2	morphine	morphine	:quant	1.1.2.1		mass-quantity
+::edge	1.1.3.2		mass-quantity	:quant	1.1.3.2.1	three	3
+::edge	1.1.2	morphine	morphine	:ARG1-of	1.1.2.2	powder	powder-01
+::edge	1.1.3	morphine	morphine	:mod	1.1.3.1	solid	solid
+::edge	1.1.3	morphine	morphine	:quant	1.1.3.2		mass-quantity
+::edge	1.1.4	chemicals	chemical	:mod	1.1.4.1	precursor	precursor
+::edge	1.1.4	chemicals	chemical	:mod	1.1.4.2	various	various
+::edge	1.1.2.1		mass-quantity	:unit	1.1.2.1.2	kilograms	kilogram
+::edge	1.1.2.1		mass-quantity	:quant	1.1.2.1.1	102	102
+::edge	1.1	and	and	:op2	1.1.2	morphine	morphine
+::edge	1.1	and	and	:op3	1.1.3	morphine	morphine
+::edge	1.1	and	and	:op4	1.1.4	chemicals	chemical
+::edge	1	included	include-01	:ARG1	1.1	and	and
+::edge	1	included	include-01	:ARG2	1.2	ceremony	ceremony
+::edge	1	included	include-01	:mod	1.3	also	also
+::edge	1.1.1.1		mass-quantity	:unit	1.1.1.1.2	kilograms	kilogram
+::edge	1.1.1.1		mass-quantity	:quant	1.1.1.1.1	249	249
+::edge	1.1	and	and	:op1	1.1.1	opium	opium
+16	Lemahieu said that this ceremony had less processed opium and heroin than opium seeds.
+16	Lemahieu said that this ceremony had less processed opium and heroin than opium seeds .
+16	0-1.1.2.1 1-1 2-1.2.r 3-1.2.1.1 4-1.2.1 5-1.2 6-1.2.2 7-1.2.2.1.3 8-1.2.2.1.1 9-1.2.2.1 10-1.2.2.1.2 11-1.2.2.2.r 12-1.2.2.2.1 13-1.2.2.2
+::node	"Lemahieu"	1.1.2.1	"Lemahieu"	Lemahieu
+::node	o	1.2.2.1.1	opium	opium
+::node	n2	1.1.2	name	
+::node	c	1.2.1	ceremony	ceremony
+::node	s	1	say-01	said
+::node	l	1.2.2	less	less
+::node	p2	1.1	person	
+::node	h	1.2	have-03	had
+::node	a	1.2.2.1	and	and
+::node	s2	1.2.2.2	seed	seeds
+::node	h2	1.2.2.1.2	heroin	heroin
+::node	o	1.2.2.2.1	opium	opium
+::node	t	1.2.1.1	this	this
+::node	p	1.2.2.1.3	process-01	processed
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Lemahieu	"Lemahieu"
+::edge	1.2.2.1	and	and	:op1	1.2.2.1.1	opium	opium
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	had	have-03	:ARG0	1.2.1	ceremony	ceremony
+::edge	1.2	had	have-03	:ARG1	1.2.2	less	less
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	had	have-03
+::edge	1.2.2	less	less	:degree-of	1.2.2.1	and	and
+::edge	1.2.2	less	less	:compared-to	1.2.2.2	seeds	seed
+::edge	1.2.2.1	and	and	:op2	1.2.2.1.2	heroin	heroin
+::edge	1.2.2.2	seeds	seed	:part-of	1.2.2.2.1	opium	opium
+::edge	1.2.1	ceremony	ceremony	:mod	1.2.1.1	this	this
+::edge	1.2.2.1	and	and	:ARG1-of	1.2.2.1.3	processed	process-01
+::edge	1.1		person	:wiki	1.1.1		-
+17	It made it more symbolic and indicated the willingness of those directly involved to eliminate the opium.
+17	It made it more symbolic and indicated the willingness of those directly involved to eliminate the opium .
+17	0-1.2.1 1-1.1 2-1.2.1 3-1.1.1.1 4-1.1.1 5-1 6-1.2 8-1.2.2 11-1.2.2.1.1.1 11-1.2.2.1.1.1.r 12-1.2.2.1.1 14-1.2.2.2 16-1.2.2.2.2
+::node	m2	1.1.1.1	more	more
+::node	i4	1.2.2.1.1	involve-01	involved
+::node	d	1.2.2.1.1.1	direct	directly
+::node	i	1.2.1	it	it
+::node	a	1	and	and
+::node	w	1.2.2	will-02	willingness
+::node	m	1.1	make-02	made
+::node	i3	1.2	indicate-01	indicated
+::node	p	1.2.2.1	person	
+::node	e	1.2.2.2	eliminate-01	eliminate
+::node	p	1.2.2.2.1	person	
+::node	o	1.2.2.2.2	opium	opium
+::node	s	1.1.1	symbolize-01	symbolic
+::edge	1.2	indicated	indicate-01	:ARG0	1.2.1	it	it
+::edge	1.2	indicated	indicate-01	:ARG1	1.2.2	willingness	will-02
+::edge	1.1.1	symbolic	symbolize-01	:degree	1.1.1.1	more	more
+::edge	1.2.2.1		person	:ARG1-of	1.2.2.1.1	involved	involve-01
+::edge	1	and	and	:op1	1.1	made	make-02
+::edge	1	and	and	:op2	1.2	indicated	indicate-01
+::edge	1.2.2.1.1	involved	involve-01	:manner	1.2.2.1.1.1	directly	direct
+::edge	1.2.2	willingness	will-02	:ARG0	1.2.2.1		person
+::edge	1.2.2	willingness	will-02	:ARG1	1.2.2.2	eliminate	eliminate-01
+::edge	1.2.2.2	eliminate	eliminate-01	:ARG0	1.2.2.2.1		person
+::edge	1.2.2.2	eliminate	eliminate-01	:ARG1	1.2.2.2.2	opium	opium
+::edge	1.1	made	make-02	:ARG1	1.1.1	symbolic	symbolize-01
+18	The destruction forms part of the Central Committee for Drug Abuse Control's project new destiny.
+18	The destruction forms part of the Central Committee for Drug Abuse Control 's project new destiny .
+18	1-1.1 2-1 3-1.2 4-1.2.1.r 6-1.2.1.2.1.2.1 7-1.2.1.2.1.2.2 8-1.2.1.2.1.2.3 9-1.2.1.2.1.2.4 10-1.2.1.2.1.2.5 11-1.2.1.2.1.2.6 12-1.2.1.2.1.r 13-1.2.1.2 14-1.2.1.1 15-1.2.1
+::node	"Control"	1.2.1.2.1.2.6	"Control"	Control
+::node	"Abuse"	1.2.1.2.1.2.5	"Abuse"	Abuse
+::node	"Drug"	1.2.1.2.1.2.4	"Drug"	Drug
+::node	"for"	1.2.1.2.1.2.3	"for"	for
+::node	"Committee"	1.2.1.2.1.2.2	"Committee"	Committee
+::node	"Central"	1.2.1.2.1.2.1	"Central"	Central
+::node	d2	1.2.1	destiny	destiny
+::node	-	1.2.1.2.1.1	-	
+::node	f	1	form-02	forms
+::node	n3	1.2.1.2.1.2	name	
+::node	g	1.2.1.2.1	government-organization	
+::node	d	1.1	destroy-01	destruction
+::node	p	1.2	part	part
+::node	p2	1.2.1.2	project	project
+::node	n2	1.2.1.1	new	new
+::edge	1.2.1.2.1.2		name	:op6	1.2.1.2.1.2.6	Control	"Control"
+::edge	1.2.1.2.1.2		name	:op5	1.2.1.2.1.2.5	Abuse	"Abuse"
+::edge	1.2.1.2.1.2		name	:op4	1.2.1.2.1.2.4	Drug	"Drug"
+::edge	1.2.1.2.1.2		name	:op3	1.2.1.2.1.2.3	for	"for"
+::edge	1.2.1.2.1.2		name	:op2	1.2.1.2.1.2.2	Committee	"Committee"
+::edge	1.2.1.2.1.2		name	:op1	1.2.1.2.1.2.1	Central	"Central"
+::edge	1.2	part	part	:part-of	1.2.1	destiny	destiny
+::edge	1.2.1.2.1		government-organization	:wiki	1.2.1.2.1.1		-
+::edge	1.2.1.2.1		government-organization	:name	1.2.1.2.1.2		name
+::edge	1.2.1.2	project	project	:poss	1.2.1.2.1		government-organization
+::edge	1	forms	form-02	:ARG0	1.1	destruction	destroy-01
+::edge	1	forms	form-02	:ARG1	1.2	part	part
+::edge	1.2.1	destiny	destiny	:poss	1.2.1.2	project	project
+::edge	1.2.1	destiny	destiny	:mod	1.2.1.1	new	new
+19	It aims to prevent poppy cultivation by distributing seeds for substitution crops.
+19	It aims to prevent poppy cultivation by distributing seeds for substitution crops .
+19	0-1.1 1-1 3-1.2 4-1.2.2.1 5-1.2.2 6-1.2.3.r 7-1.2.3 8-1.2.3.2 9-1.2.3.3.r 10-1.2.3.3.1 11-1.2.3.3
+::node	i	1.2.1	it	
+::node	a	1	aim-01	aims
+::node	c	1.2.2	cultivate-01	cultivation
+::node	d	1.2.3	distribute-01	distributing
+::node	i	1.1	it	It
+::node	p	1.2	prevent-01	prevent
+::node	s	1.2.3.2	seed	seeds
+::node	s2	1.2.3.3.1	substitute-01	substitution
+::node	c2	1.2.3.3	crop	crops
+::node	p2	1.2.2.1	poppy	poppy
+::node	i	1.2.3.1	it	
+::edge	1.2	prevent	prevent-01	:ARG0	1.2.1		it
+::edge	1.2	prevent	prevent-01	:ARG1	1.2.2	cultivation	cultivate-01
+::edge	1.2	prevent	prevent-01	:manner	1.2.3	distributing	distribute-01
+::edge	1	aims	aim-01	:ARG0	1.1	It	it
+::edge	1	aims	aim-01	:ARG1	1.2	prevent	prevent-01
+::edge	1.2.3	distributing	distribute-01	:ARG1	1.2.3.2	seeds	seed
+::edge	1.2.3.3	crops	crop	:ARG1-of	1.2.3.3.1	substitution	substitute-01
+::edge	1.2.3	distributing	distribute-01	:purpose	1.2.3.3	crops	crop
+::edge	1.2.2	cultivation	cultivate-01	:ARG1	1.2.2.1	poppy	poppy
+::edge	1.2.3	distributing	distribute-01	:ARG0	1.2.3.1		it
+20	Farmers have been asked to grow seven kinds of alternative crops across 21,969 acres (8,891 hectares) of land instead of opium.
+20	Farmers have been asked to grow seven kinds of alternative crops across 21,969 acres ( 8,891 hectares ) of land instead of opium .
+20	0-1.2 0-1.2.1 0-1.2.1.r 3-1 5-1.1 6-1.1.2.2.1 7-1.1.2.2 8-1.1.2.2.r 9-1.1.2.1 10-1.1.2 11-1.1.3 12-1.1.3.1.1.1 13-1.1.3.1.1.2 15-1.1.3.1.2.1 16-1.1.3.1.2.2 19-1.1.3.1 20-1.1.4 21-1.1.4 22-1.1.4.1
+::node	a5	1.1.2.1	alternative	alternative
+::node	a3	1.1.3.1.2	area-quantity	
+::node	k	1.1.2.2	kind	kinds
+::node	l	1.1.3.1	land	land
+::node	o	1.1.4.1	opium	opium
+::node	h	1.1.3.1.2.2	hectare	hectares
+::node	7	1.1.2.2.1	7	seven
+::node	21969	1.1.3.1.1.1	21969	21,969
+::node	a2	1.1.3.1.1.2	acre	acres
+::node	8891	1.1.3.1.2.1	8891	8,891
+::node	c	1.1.2	crop	crops
+::node	f	1.2.1	farm-01	Farmers
+::node	a4	1	ask-02	asked
+::node	a6	1.1.3	across	across
+::node	i	1.1.4	instead-of-91	of
+::node	g	1.1	grow-03	grow
+::node	p	1.2	person	Farmers
+::node	a	1.1.3.1.1	area-quantity	
+::node	p	1.1.1	person	
+::edge	1.1.2	crops	crop	:mod	1.1.2.1	alternative	alternative
+::edge	1.1.3.1	land	land	:op2	1.1.3.1.2		area-quantity
+::edge	1.1.2	crops	crop	:mod	1.1.2.2	kinds	kind
+::edge	1.1.3	across	across	:op1	1.1.3.1	land	land
+::edge	1.1.4	of	instead-of-91	:ARG2	1.1.4.1	opium	opium
+::edge	1.1.3.1.2		area-quantity	:unit	1.1.3.1.2.2	hectares	hectare
+::edge	1.1.2.2	kinds	kind	:quant	1.1.2.2.1	seven	7
+::edge	1.1.3.1.1		area-quantity	:quant	1.1.3.1.1.1	21,969	21969
+::edge	1.1.3.1.1		area-quantity	:unit	1.1.3.1.1.2	acres	acre
+::edge	1.1.3.1.2		area-quantity	:quant	1.1.3.1.2.1	8,891	8891
+::edge	1.1	grow	grow-03	:ARG1	1.1.2	crops	crop
+::edge	1.2	Farmers	person	:ARG0-of	1.2.1	Farmers	farm-01
+::edge	1.1	grow	grow-03	:location	1.1.3	across	across
+::edge	1.1	grow	grow-03	:ARG1-of	1.1.4	of	instead-of-91
+::edge	1	asked	ask-02	:ARG1	1.1	grow	grow-03
+::edge	1	asked	ask-02	:ARG2	1.2	Farmers	person
+::edge	1.1.3.1	land	land	:op1	1.1.3.1.1		area-quantity
+::edge	1.1	grow	grow-03	:ARG0	1.1.1		person
+21	Global narcotics authorities declared Myanmar the world's largest producer of opium in 2001.
+21	Global narcotics authorities declared Myanmar the world 's largest producer of opium in 2001 .
+21	0-1.1.2 1-1.1.1 2-1.1 3-1 4-1.2.1.2.1 6-1.2.3.2 7-1.2.3.2.r 8-1.2.3 8-1.2.3.1 8-1.2.3.1.r 9-1.2 10-1.2.2.r 11-1.2.2 12-1.2.4.r 13-1.2.4.1
+::node	g	1.1.2	globe	Global
+::node	c2	1.2.1	country	
+::node	d2	1	declare-01	declared
+::node	o	1.2.2	opium	opium
+::node	"Myanmar"	1.2.1.2.1	"Myanmar"	Myanmar
+::node	l	1.2.3	large	largest
+::node	d3	1.2.4	date-entity	
+::node	a	1.1	authority	authorities
+::node	p	1.2	produce-01	producer
+::node	w	1.2.3.2	world	world
+::node	2001	1.2.4.1	2001	2001
+::node	n3	1.2.1.2	name	
+::node	m	1.2.3.1	most	largest
+::node	"Burma"	1.2.1.1	"Burma"	
+::node	n2	1.1.1	narcotic	narcotics
+::edge	1.1	authorities	authority	:extent	1.1.2	Global	globe
+::edge	1.2	producer	produce-01	:ARG0	1.2.1		country
+::edge	1.2	producer	produce-01	:ARG1	1.2.2	opium	opium
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Myanmar	"Myanmar"
+::edge	1.2	producer	produce-01	:mod	1.2.3	largest	large
+::edge	1.2	producer	produce-01	:time	1.2.4		date-entity
+::edge	1	declared	declare-01	:ARG0	1.1	authorities	authority
+::edge	1	declared	declare-01	:ARG1	1.2	producer	produce-01
+::edge	1.2.3	largest	large	:compared-to	1.2.3.2	world	world
+::edge	1.2.4		date-entity	:year	1.2.4.1	2001	2001
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.3	largest	large	:degree	1.2.3.1	largest	most
+::edge	1.2.1		country	:wiki	1.2.1.1		"Burma"
+::edge	1.1	authorities	authority	:mod	1.1.1	narcotics	narcotic
+22	They accounted for as much as 60 percent of global supply.
+22	They accounted for as much as 60 percent of global supply .
+22	0-1.1 1-1 2-1.2.r 3-1.2.2 4-1.2.2 5-1.2.2 6-1.2.2.1.1 7-1.2.2.1 8-1.2.2.r 9-1.2.1 10-1.2
+::node	g	1.2.1	globe	global
+::node	a	1	account-01	accounted
+::node	a2	1.2.2	as-much-as	as
+::node	60	1.2.2.1.1	60	60
+::node	t	1.1	they	They
+::node	s	1.2	supply-01	supply
+::node	p2	1.2.2.1	percentage-entity	percent
+::edge	1.2	supply	supply-01	:ARG2	1.2.1	global	globe
+::edge	1.2	supply	supply-01	:quant	1.2.2	as	as-much-as
+::edge	1.2.2.1	percent	percentage-entity	:value	1.2.2.1.1	60	60
+::edge	1	accounted	account-01	:ARG0	1.1	They	they
+::edge	1	accounted	account-01	:ARG1	1.2	supply	supply-01
+::edge	1.2.2	as	as-much-as	:op1	1.2.2.1	percent	percentage-entity
+23	Myanmar beat Afghanistan because the Taliban militia's enforced ban on opium poppies decreased Afghan production by 90 percent.
+23	Myanmar beat Afghanistan because the Taliban militia 's enforced ban on opium poppies decreased Afghan production by 90 percent .
+23	0-1.1.2.1 1-1 2-1.2.2.1 3-1.3 5-1.3.1.1.1.1.2.1 6-1.3.1.1.1 7-1.3.1.1.1.r 8-1.3.1.1.3 9-1.3.1.1 10-1.3.1.1.2.r 11-1.3.1.1.2.1 12-1.3.1.1.2 13-1.3.1 14-1.3.1.2.1 15-1.3.1.2 16-1.3.1.3.r 17-1.3.1.3.1 18-1.3.1.3
+::node	"Myanmar"	1.1.2.1	"Myanmar"	Myanmar
+::node	b2	1.3.1.1	ban-01	ban
+::node	p4	1.3.1.2	produce-01	production
+::node	o	1.3.1.1.2.1	opium	opium
+::node	p	1.3.1.3	percentage-entity	percent
+::node	m	1.3.1.1.1	militia	militia
+::node	c3	1.3.1.1.1.1	criminal-organization	
+::node	"Taliban"	1.3.1.1.1.1.1	"Taliban"	
+::node	n3	1.3.1.1.1.1.2	name	
+::node	n	1.1.2	name	
+::node	"Afghanistan"	1.2.1	"Afghanistan"	
+::node	b	1	beat-03	beat
+::node	n2	1.2.2	name	
+::node	d	1.3.1	decrease-01	decreased
+::node	c	1.1	country	
+::node	p3	1.3.1.1.2	poppy	poppies
+::node	c2	1.3.1.2.1	country	Afghan
+::node	c2	1.2	country	
+::node	e	1.3.1.1.3	enforce-01	enforced
+::node	90	1.3.1.3.1	90	90
+::node	c5	1.3	cause-01	because
+::node	"Taliban"	1.3.1.1.1.1.2.1	"Taliban"	Taliban
+::node	"Afghanistan"	1.2.2.1	"Afghanistan"	Afghanistan
+::node	"Burma"	1.1.1	"Burma"	
+::edge	1.1.2		name	:op1	1.1.2.1	Myanmar	"Myanmar"
+::edge	1.3.1	decreased	decrease-01	:ARG0	1.3.1.1	ban	ban-01
+::edge	1.3.1	decreased	decrease-01	:ARG1	1.3.1.2	production	produce-01
+::edge	1.3.1.1.2	poppies	poppy	:source-of	1.3.1.1.2.1	opium	opium
+::edge	1.3.1	decreased	decrease-01	:ARG2	1.3.1.3	percent	percentage-entity
+::edge	1.3.1.1	ban	ban-01	:ARG0	1.3.1.1.1	militia	militia
+::edge	1.3.1.1.1	militia	militia	:mod	1.3.1.1.1.1		criminal-organization
+::edge	1.3.1.1.1.1		criminal-organization	:wiki	1.3.1.1.1.1.1		"Taliban"
+::edge	1.3.1.1.1.1		criminal-organization	:name	1.3.1.1.1.1.2		name
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"Afghanistan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3	because	cause-01	:ARG0	1.3.1	decreased	decrease-01
+::edge	1	beat	beat-03	:ARG0	1.1		country
+::edge	1.3.1.1	ban	ban-01	:ARG1	1.3.1.1.2	poppies	poppy
+::edge	1.3.1.2	production	produce-01	:ARG0	1.3.1.2.1	Afghan	country
+::edge	1	beat	beat-03	:ARG1	1.2		country
+::edge	1.3.1.1	ban	ban-01	:ARG1-of	1.3.1.1.3	enforced	enforce-01
+::edge	1.3.1.3	percent	percentage-entity	:value	1.3.1.3.1	90	90
+::edge	1	beat	beat-03	:ARG1-of	1.3	because	cause-01
+::edge	1.3.1.1.1.1.2		name	:op1	1.3.1.1.1.1.2.1	Taliban	"Taliban"
+::edge	1.2.2		name	:op1	1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.1		country	:wiki	1.1.1		"Burma"
+24	Critics said the Myanmar regime overlooks much of the production and trafficking in drugs by ethnic insurgent groups.
+24	Critics said the Myanmar regime overlooks much of the production and trafficking in drugs by ethnic insurgent groups .
+24	1-1 3-1.2.1.1.1.2.1 4-1.2.1 5-1.2 6-1.2.2.3 7-1.2.2.r 9-1.2.2.1 10-1.2.2 11-1.2.2.2 12-1.2.2.1.2.r 13-1.2.2.1.2 14-1.2.2.1.1.r 15-1.2.2.1.1.1.1 16-1.2.2.1.1.1 17-1.2.2.1.1
+::node	"Myanmar"	1.2.1.1.1.2.1	"Myanmar"	Myanmar
+::node	g2	1.2.2.1.1	group	groups
+::node	"Burma"	1.2.1.1.1.1	"Burma"	
+::node	n	1.2.1.1.1.2	name	
+::node	i	1.2.2.1.1.1	insurgent	insurgent
+::node	e	1.2.2.1.1.1.1	ethnic	ethnic
+::node	r	1.2.1	regime	regime
+::node	s	1	say-01	said
+::node	a	1.2.2	and	and
+::node	c	1.2.1.1.1	country	
+::node	p	1.1	person	
+::node	o	1.2	overlook-01	overlooks
+::node	m	1.2.2.3	much	much
+::node	p2	1.2.2.1	produce-01	production
+::node	t	1.2.2.2	traffic-01	trafficking
+::node	d	1.2.2.1.2	drug	drugs
+::node	g2	1.2.2.2.1	group	
+::node	g	1.2.1.1	govern-01	
+::node	d	1.2.2.2.2	drug	
+::node	c2	1.1.1	criticize-01	
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	Myanmar	"Myanmar"
+::edge	1.2.2.1	production	produce-01	:ARG0	1.2.2.1.1	groups	group
+::edge	1.2.1.1.1		country	:wiki	1.2.1.1.1.1		"Burma"
+::edge	1.2.1.1.1		country	:name	1.2.1.1.1.2		name
+::edge	1.2.2.1.1	groups	group	:consist-of	1.2.2.1.1.1	insurgent	insurgent
+::edge	1.2.2.1.1.1	insurgent	insurgent	:mod	1.2.2.1.1.1.1	ethnic	ethnic
+::edge	1.2	overlooks	overlook-01	:ARG0	1.2.1	regime	regime
+::edge	1.2	overlooks	overlook-01	:ARG1	1.2.2	and	and
+::edge	1.2.1.1		govern-01	:ARG1	1.2.1.1.1		country
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	overlooks	overlook-01
+::edge	1.2.2	and	and	:degree	1.2.2.3	much	much
+::edge	1.2.2	and	and	:op1	1.2.2.1	production	produce-01
+::edge	1.2.2	and	and	:op2	1.2.2.2	trafficking	traffic-01
+::edge	1.2.2.1	production	produce-01	:ARG1	1.2.2.1.2	drugs	drug
+::edge	1.2.2.2	trafficking	traffic-01	:ARG0	1.2.2.2.1		group
+::edge	1.2.1	regime	regime	:ARG0-of	1.2.1.1		govern-01
+::edge	1.2.2.2	trafficking	traffic-01	:ARG1	1.2.2.2.2		drug
+::edge	1.1		person	:ARG0-of	1.1.1		criticize-01
+25	In particular the largest armed drug militia in the world the United Wa State Army.
+25	In particular the largest armed drug militia in the world the United Wa State Army .
+25	1-1.1.3 3-1.1.4.2 3-1.1.4.2.1 3-1.1.4.2.1.r 4-1 5-1.1.4.1 6-1.1.4 7-1.1.4.2.1.1.r 9-1.1.4.2.1.1 11-1.1.2.1 12-1.1.2.2 13-1.1.2.3 14-1.1.2.4
+::node	"United"	1.1.2.1	"United"	United
+::node	"Wa"	1.1.2.2	"Wa"	Wa
+::node	"State"	1.1.2.3	"State"	State
+::node	d	1.1.4.1	drug	drug
+::node	w	1.1.4.2.1.1	world	world
+::node	"Army"	1.1.2.4	"Army"	Army
+::node	l	1.1.4.2	large	largest
+::node	n	1.1.2	name	
+::node	a	1	arm-01	armed
+::node	p	1.1.3	particular	particular
+::node	m	1.1.4	militia	militia
+::node	m2	1.1.4.2.1	most	largest
+::node	o	1.1	organization	
+::node	"United_Wa_State_Army"	1.1.1	"United_Wa_State_Army"	
+::edge	1.1.2		name	:op1	1.1.2.1	United	"United"
+::edge	1.1.2		name	:op2	1.1.2.2	Wa	"Wa"
+::edge	1.1.2		name	:op3	1.1.2.3	State	"State"
+::edge	1.1.4	militia	militia	:purpose	1.1.4.1	drug	drug
+::edge	1.1.4.2.1	largest	most	:location	1.1.4.2.1.1	world	world
+::edge	1.1.2		name	:op4	1.1.2.4	Army	"Army"
+::edge	1.1.4	militia	militia	:mod	1.1.4.2	largest	large
+::edge	1.1		organization	:name	1.1.2		name
+::edge	1.1		organization	:mod	1.1.3	particular	particular
+::edge	1.1		organization	:domain	1.1.4	militia	militia
+::edge	1.1.4.2	largest	large	:degree	1.1.4.2.1	largest	most
+::edge	1	armed	arm-01	:ARG1	1.1		organization
+::edge	1.1		organization	:wiki	1.1.1		"United_Wa_State_Army"
+26	Myanmar's Home Minister Colonel Tin Hlaing said the success of project new destiny is evidenced by the tons of poppy seeds that have been turned in rather than seized.
+26	Myanmar 's Home Minister Colonel Tin Hlaing said the success of project new destiny is evidenced by the tons of poppy seeds that have been turned in rather than seized .
+26	0-1.1.3.1.2.1 1-1.1.3 2-1.1.3.2.1 3-1.1.3.2 4-1.1.4.1 5-1.1.2.1 6-1.1.2.2 7-1 9-1.2.2 11-1.2.2.1.2.1 12-1.2.2.1.2.2 13-1.2.2.1.2.3 15-1.2 18-1.2.1.1.1.2.1.2 19-1.2.1.1.1.2.r 20-1.2.1.1.1.1 21-1.2.1.1.1 25-1.2.1.1 26-1.2.1.1 29-1.2.1.2
+::node	m2	1.2.1.1.1.2.1	mass-quantity	
+::node	1	1.2.1.1.1.2.1.1	1	
+::node	n	1.1.3.1.2	name	
+::node	h2	1.1.3.2.1	home	Home
+::node	t2	1.2.1.1.1.2.1.2	ton	tons
+::node	"Project"	1.2.2.1.2.1	"Project"	project
+::node	"New"	1.2.2.1.2.2	"New"	new
+::node	"Destiny"	1.2.2.1.2.3	"Destiny"	destiny
+::node	s4	1.2.1.2	seize-01	seized
+::node	p2	1.2.2.1	project	
+::node	n4	1.2.2.1.2	name	
+::node	t	1.2.1.1	turn-06	in
+::node	"Tin"	1.1.2.1	"Tin"	Tin
+::node	-	1.2.2.1.1	-	
+::node	"Hlaing"	1.1.2.2	"Hlaing"	Hlaing
+::node	c	1.1.3.1	country	
+::node	m	1.1.3.2	minister	Minister
+::node	c3	1.1.4.1	colonel	Colonel
+::node	p3	1.2.1.1.1.1	poppy	poppy
+::node	m3	1.2.1.1.1.2	multiple	
+::node	"Myanmar"	1.1.3.1.2.1	"Myanmar"	Myanmar
+::node	n3	1.1.2	name	
+::node	i	1.2.1	instead-of-91	
+::node	s	1	say-01	said
+::node	h	1.1.3	have-org-role-91	's
+::node	s2	1.2.2	succeed-01	success
+::node	h3	1.1.4	have-org-role-91	
+::node	s3	1.2.1.2.1	seed	
+::node	s3	1.2.1.1.1	seed	seeds
+::node	p	1.1	person	
+::node	e	1.2	evidence-01	evidenced
+::node	"Burma"	1.1.3.1.1	"Burma"	
+::node	"Tin_Hlaing"	1.1.1	"Tin_Hlaing"	
+::edge	1.2.1.1.1.2		multiple	:op1	1.2.1.1.1.2.1		mass-quantity
+::edge	1.2.1.1.1.2.1		mass-quantity	:quant	1.2.1.1.1.2.1.1		1
+::edge	1.1.3.1		country	:name	1.1.3.1.2		name
+::edge	1.1.3.2	Minister	minister	:topic	1.1.3.2.1	Home	home
+::edge	1.2.1.1.1.2.1		mass-quantity	:unit	1.2.1.1.1.2.1.2	tons	ton
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	project	"Project"
+::edge	1.2.2.1.2		name	:op2	1.2.2.1.2.2	new	"New"
+::edge	1.2.2.1.2		name	:op3	1.2.2.1.2.3	destiny	"Destiny"
+::edge	1.2.1		instead-of-91	:ARG2	1.2.1.2	seized	seize-01
+::edge	1.2.2	success	succeed-01	:ARG0	1.2.2.1		project
+::edge	1.2.2.1		project	:name	1.2.2.1.2		name
+::edge	1.2.1		instead-of-91	:ARG1	1.2.1.1	in	turn-06
+::edge	1.1.2		name	:op1	1.1.2.1	Tin	"Tin"
+::edge	1.2.2.1		project	:wiki	1.2.2.1.1		-
+::edge	1.1.2		name	:op2	1.1.2.2	Hlaing	"Hlaing"
+::edge	1.1.3	's	have-org-role-91	:ARG1	1.1.3.1		country
+::edge	1.1.3	's	have-org-role-91	:ARG2	1.1.3.2	Minister	minister
+::edge	1.1.4		have-org-role-91	:ARG2	1.1.4.1	Colonel	colonel
+::edge	1.2.1.1.1	seeds	seed	:part-of	1.2.1.1.1.1	poppy	poppy
+::edge	1.2.1.1.1	seeds	seed	:quant	1.2.1.1.1.2		multiple
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Myanmar	"Myanmar"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	evidenced	evidence-01	:ARG0	1.2.1		instead-of-91
+::edge	1.1		person	:ARG0-of	1.1.3	's	have-org-role-91
+::edge	1.2	evidenced	evidence-01	:ARG1	1.2.2	success	succeed-01
+::edge	1.1		person	:ARG0-of	1.1.4		have-org-role-91
+::edge	1.2.1.2	seized	seize-01	:ARG1	1.2.1.2.1		seed
+::edge	1.2.1.1	in	turn-06	:ARG1	1.2.1.1.1	seeds	seed
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	evidenced	evidence-01
+::edge	1.1.3.1		country	:wiki	1.1.3.1.1		"Burma"
+::edge	1.1		person	:wiki	1.1.1		"Tin_Hlaing"
+27	Hlaing stated his confidence in the drug scourge that threatens the world will not find a place in Myanmar if the local population is committed to this sort of cooperation.
+27	Hlaing stated his confidence in the drug scourge that threatens the world will not find a place in Myanmar if the local population is committed to this sort of cooperation .
+27	0-1.1.2.1 1-1 2-1.2.1 2-1.2.1.r 3-1.2 4-1.2.2.r 6-1.2.2.2.1 7-1.2.2.2 9-1.2.2.2.2 11-1.2.2.2.2.1 13-1.2.2.1 13-1.2.2.1.r 14-1.2.2 16-1.2.2.3 17-1.2.2.3.1.r 18-1.2.2.3.1.2.1 19-1.2.2.4.r 21-1.2.2.4.1.1.1 22-1.2.2.4.1 22-1.2.2.4.1.1 22-1.2.2.4.1.1.r 24-1.2.2.4 25-1.2.2.4.2.r 26-1.2.2.4.2.2.1 27-1.2.2.4.2.2 28-1.2.2.4.2.2.r 29-1.2.2.4.2
+::node	t2	1.2.2.4.2.2.1	this	this
+::node	p2	1.2.2.3	place	place
+::node	c3	1.2.2.4	commit-01	committed
+::node	-	1.2.2.1	-	not
+::node	s2	1.2.2.2	scourge	scourge
+::node	d	1.2.2.2.1	drug	drug
+::node	t	1.2.2.2.2	threaten-01	threatens
+::node	w	1.2.2.2.2.1	world	world
+::node	c	1.2.2.3.1	country	
+::node	"Myanmar"	1.2.2.3.1.2.1	"Myanmar"	Myanmar
+::node	p3	1.2.2.4.1	person	population
+::node	c4	1.2.2.4.2	cooperate-01	cooperation
+::node	n	1.2.2.3.1.2	name	
+::node	"Hlaing"	1.1.2.1	"Hlaing"	Hlaing
+::node	"Burma"	1.2.2.3.1.1	"Burma"	
+::node	n2	1.1.2	name	
+::node	p	1.2.1	person	his
+::node	p4	1.2.2.4.1.1	populate-01	population
+::node	s	1	state-01	stated
+::node	f	1.2.2	find-01	find
+::node	s3	1.2.2.4.2.2	sort	sort
+::node	p3	1.2.2.4.2.1	person	
+::node	p	1.1	person	
+::node	l	1.2.2.4.1.1.1	local	local
+::node	c2	1.2	confident-41	confidence
+::node	"Tin_Hlaing"	1.1.1	"Tin_Hlaing"	
+::edge	1.2.2.4.2.2	sort	sort	:mod	1.2.2.4.2.2.1	this	this
+::edge	1.2.2	find	find-01	:ARG1	1.2.2.3	place	place
+::edge	1.2.2	find	find-01	:condition	1.2.2.4	committed	commit-01
+::edge	1.2.2	find	find-01	:polarity	1.2.2.1	not	-
+::edge	1.2.2	find	find-01	:ARG0	1.2.2.2	scourge	scourge
+::edge	1.2.2.2	scourge	scourge	:consist-of	1.2.2.2.1	drug	drug
+::edge	1.2.2.2	scourge	scourge	:ARG0-of	1.2.2.2.2	threatens	threaten-01
+::edge	1.2.2.2.2	threatens	threaten-01	:ARG2	1.2.2.2.2.1	world	world
+::edge	1.2.2.3	place	place	:location	1.2.2.3.1		country
+::edge	1.2.2.3.1.2		name	:op1	1.2.2.3.1.2.1	Myanmar	"Myanmar"
+::edge	1.2.2.4	committed	commit-01	:ARG1	1.2.2.4.1	population	person
+::edge	1.2.2.4	committed	commit-01	:ARG2	1.2.2.4.2	cooperation	cooperate-01
+::edge	1.2.2.3.1		country	:name	1.2.2.3.1.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Hlaing	"Hlaing"
+::edge	1.2.2.3.1		country	:wiki	1.2.2.3.1.1		"Burma"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	confidence	confident-41	:ARG1	1.2.1	his	person
+::edge	1.2.2.4.1	population	person	:ARG2-of	1.2.2.4.1.1	population	populate-01
+::edge	1.2	confidence	confident-41	:ARG2	1.2.2	find	find-01
+::edge	1.2.2.4.2	cooperation	cooperate-01	:mod	1.2.2.4.2.2	sort	sort
+::edge	1.2.2.4.2	cooperation	cooperate-01	:ARG0	1.2.2.4.2.1		person
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.2.2.4.1.1	population	populate-01	:ARG1	1.2.2.4.1.1.1	local	local
+::edge	1	stated	state-01	:ARG1	1.2	confidence	confident-41
+::edge	1.1		person	:wiki	1.1.1		"Tin_Hlaing"
+28	Lauk Kai is one of the regime's showpieces for its previous crop substitution programs.
+28	Lauk Kai is one of the regime 's showpieces for its previous crop substitution programs .
+28	0-1.1.2.1 1-1.1.2.2 3-1.3 6-1.2.1 7-1.2.1.r 8-1.2 9-1.2.2.r 10-1.2.2.3 10-1.2.2.3.r 11-1.2.2.1 12-1.2.2.2.1 13-1.2.2.2 14-1.2.2
+::node	"Lauk"	1.1.2.1	"Lauk"	Lauk
+::node	"Kai"	1.1.2.2	"Kai"	Kai
+::node	n	1.1.2	name	
+::node	r	1.2.1	regime	regime
+::node	i	1	include-91	
+::node	p	1.2.2	program	programs
+::node	c	1.1	city	
+::node	s	1.2	showpiece	showpieces
+::node	o	1.3	one	one
+::node	r	1.2.2.3	regime	its
+::node	p2	1.2.2.1	previous	previous
+::node	s2	1.2.2.2	substitute-01	substitution
+::node	c2	1.2.2.2.1	crop	crop
+::node	"Laukkai"	1.1.1	"Laukkai"	
+::edge	1.1.2		name	:op1	1.1.2.1	Lauk	"Lauk"
+::edge	1.1.2		name	:op2	1.1.2.2	Kai	"Kai"
+::edge	1.1		city	:name	1.1.2		name
+::edge	1.2	showpieces	showpiece	:poss	1.2.1	regime	regime
+::edge	1.2	showpieces	showpiece	:purpose	1.2.2	programs	program
+::edge	1		include-91	:ARG1	1.1		city
+::edge	1		include-91	:ARG2	1.2	showpieces	showpiece
+::edge	1		include-91	:ARG3	1.3	one	one
+::edge	1.2.2	programs	program	:poss	1.2.2.3	its	regime
+::edge	1.2.2	programs	program	:time	1.2.2.1	previous	previous
+::edge	1.2.2	programs	program	:purpose	1.2.2.2	substitution	substitute-01
+::edge	1.2.2.2	substitution	substitute-01	:ARG1	1.2.2.2.1	crop	crop
+::edge	1.1		city	:wiki	1.1.1		"Laukkai"
+29	It has expanses of rubber trees, fruit orchards and paddy where poppies used to thrive.
+29	It has expanses of rubber trees , fruit orchards and paddy where poppies used to thrive .
+29	0-1.1 1-1 2-1.2.1 3-1.2.1.1.r 4-1.2.1.1.1 5-1.2.1.1 7-1.2.2.1 8-1.2.2 9-1.2 10-1.2.3 11-1.2.3.1.r 12-1.2.3.1.1 15-1.2.3.1
+::node	e	1.2.1	expanse	expanses
+::node	h	1	have-03	has
+::node	o	1.2.2	orchard	orchards
+::node	p	1.2.3	paddy	paddy
+::node	r	1.2.1.1.1	rubber	rubber
+::node	i	1.1	it	It
+::node	a	1.2	and	and
+::node	f	1.2.2.1	fruit	fruit
+::node	p2	1.2.3.1.1	poppy	poppies
+::node	t2	1.2.3.1	thrive-01	thrive
+::node	p3	1.2.3.1.2	previous	
+::node	t	1.2.1.1	tree	trees
+::edge	1.2	and	and	:op1	1.2.1	expanses	expanse
+::edge	1.2	and	and	:op2	1.2.2	orchards	orchard
+::edge	1.2	and	and	:op3	1.2.3	paddy	paddy
+::edge	1.2.1.1	trees	tree	:source-of	1.2.1.1.1	rubber	rubber
+::edge	1	has	have-03	:ARG0	1.1	It	it
+::edge	1	has	have-03	:ARG1	1.2	and	and
+::edge	1.2.2	orchards	orchard	:source-of	1.2.2.1	fruit	fruit
+::edge	1.2.3.1	thrive	thrive-01	:ARG1	1.2.3.1.1	poppies	poppy
+::edge	1.2.3	paddy	paddy	:location-of	1.2.3.1	thrive	thrive-01
+::edge	1.2.3.1	thrive	thrive-01	:time	1.2.3.1.2		previous
+::edge	1.2.1	expanses	expanse	:consist-of	1.2.1.1	trees	tree
+30	The poppies yielded the raw ingredient for heroin.
+30	The poppies yielded the raw ingredient for heroin .
+30	1-1.1 2-1 4-1.2.1 5-1.2 6-1.2.2.r 7-1.2.2
+::node	r	1.2.1	raw	raw
+::node	y	1	yield-01	yielded
+::node	h	1.2.2	heroin	heroin
+::node	p	1.1	poppy	poppies
+::node	i	1.2	ingredient	ingredient
+::edge	1.2	ingredient	ingredient	:mod	1.2.1	raw	raw
+::edge	1.2	ingredient	ingredient	:purpose	1.2.2	heroin	heroin
+::edge	1	yielded	yield-01	:ARG0	1.1	poppies	poppy
+::edge	1	yielded	yield-01	:ARG1	1.2	ingredient	ingredient
+31	Lauk Kai is located in the infamous Golden Triangle.
+31	Lauk Kai is located in the infamous Golden Triangle .
+31	0-1.1.2.1 1-1.1.2.2 3-1 4-1.2.r 6-1.2.3 7-1.2.2.1 8-1.2.2.2
+::node	n	1.1.2	name	
+::node	"Golden_Triangle_BLANKETPAIR2"	1.2.1	"Golden_Triangle_BLANKETPAIR2"	
+::node	l	1	locate-01	located
+::node	n2	1.2.2	name	
+::node	i	1.2.3	infamous	infamous
+::node	"Lauk"	1.1.2.1	"Lauk"	Lauk
+::node	c	1.1	city	
+::node	"Kai"	1.1.2.2	"Kai"	Kai
+::node	w	1.2	world-region	
+::node	"Golden"	1.2.2.1	"Golden"	Golden
+::node	"Triangle"	1.2.2.2	"Triangle"	Triangle
+::node	"Laukkai"	1.1.1	"Laukkai"	
+::edge	1.1		city	:name	1.1.2		name
+::edge	1.2		world-region	:wiki	1.2.1		"Golden_Triangle_BLANKETPAIR2"
+::edge	1.2		world-region	:name	1.2.2		name
+::edge	1.2		world-region	:mod	1.2.3	infamous	infamous
+::edge	1.1.2		name	:op1	1.1.2.1	Lauk	"Lauk"
+::edge	1	located	locate-01	:ARG1	1.1		city
+::edge	1.1.2		name	:op2	1.1.2.2	Kai	"Kai"
+::edge	1	located	locate-01	:location	1.2		world-region
+::edge	1.2.2		name	:op1	1.2.2.1	Golden	"Golden"
+::edge	1.2.2		name	:op2	1.2.2.2	Triangle	"Triangle"
+::edge	1.1		city	:wiki	1.1.1		"Laukkai"
+32	Reformed drug lord and leader of the Kokang phone Kyar Shin pledged commitment to the government program.
+32	Reformed drug lord and leader of the Kokang phone Kyar Shin pledged commitment to the government program .
+32	0-1.1.3 1-1.1.3.1.1 2-1.1.3.1 4-1.1 4-1.1.4 4-1.1.4.r 5-1.1.4.1.r 7-1.1.4.1.2.1 8-1.1.2.1 9-1.1.2.2 10-1.1.2.3 11-1 12-1.2 13-1.2.2.r 15-1.2.2.1 15-1.2.2.1.1 15-1.2.2.1.1.r 16-1.2.2
+::node	"Phone"	1.1.2.1	"Phone"	phone
+::node	g2	1.2.2.1.1	govern-01	government
+::node	"Kyar"	1.1.2.2	"Kyar"	Kyar
+::node	l	1.1.3.1	lord	lord
+::node	"Shin"	1.1.2.3	"Shin"	Shin
+::node	e	1.1.4.1	ethnic-group	
+::node	n	1.1.2	name	
+::node	p2	1.2.1	person	
+::node	p	1	pledge-01	pledged
+::node	r	1.1.3	reform-01	Reformed
+::node	p3	1.2.2	program	program
+::node	l2	1.1.4	lead-02	leader
+::node	"Kokang"	1.1.4.1.1	"Kokang"	
+::node	n2	1.1.4.1.2	name	
+::node	p2	1.1	person	leader
+::node	c	1.2	commit-01	commitment
+::node	"Kokang"	1.1.4.1.2.1	"Kokang"	Kokang
+::node	g	1.2.2.1	government-organization	government
+::node	d	1.1.3.1.1	drug	drug
+::node	"Pheung_Kya-shin"	1.1.1	"Pheung_Kya-shin"	
+::edge	1.1.2		name	:op1	1.1.2.1	phone	"Phone"
+::edge	1.2.2.1	government	government-organization	:ARG0-of	1.2.2.1.1	government	govern-01
+::edge	1.1.2		name	:op2	1.1.2.2	Kyar	"Kyar"
+::edge	1.1.3	Reformed	reform-01	:ARG3	1.1.3.1	lord	lord
+::edge	1.1.2		name	:op3	1.1.2.3	Shin	"Shin"
+::edge	1.1.4	leader	lead-02	:ARG1	1.1.4.1		ethnic-group
+::edge	1.1	leader	person	:name	1.1.2		name
+::edge	1.2	commitment	commit-01	:ARG1	1.2.1		person
+::edge	1.1	leader	person	:ARG1-of	1.1.3	Reformed	reform-01
+::edge	1.2	commitment	commit-01	:ARG2	1.2.2	program	program
+::edge	1.1	leader	person	:ARG0-of	1.1.4	leader	lead-02
+::edge	1.1.4.1		ethnic-group	:wiki	1.1.4.1.1		"Kokang"
+::edge	1.1.4.1		ethnic-group	:name	1.1.4.1.2		name
+::edge	1	pledged	pledge-01	:ARG0	1.1	leader	person
+::edge	1	pledged	pledge-01	:ARG1	1.2	commitment	commit-01
+::edge	1.1.4.1.2		name	:op1	1.1.4.1.2.1	Kokang	"Kokang"
+::edge	1.2.2	program	program	:mod	1.2.2.1	government	government-organization
+::edge	1.1.3.1	lord	lord	:mod	1.1.3.1.1	drug	drug
+::edge	1.1	leader	person	:wiki	1.1.1		"Pheung_Kya-shin"
+33	The Kokang comprise the majority of the population in Myanmar.
+33	The Kokang comprise the majority of the population in Myanmar .
+33	1-1.2.2.1 2-1 4-1.1 5-1.1.1.r 7-1.1.1 7-1.1.1.1 7-1.1.1.1.r 8-1.1.1.1.1.r 9-1.1.1.1.1.2.1
+::node	"Burma"	1.1.1.1.1.1	"Burma"	
+::node	"Kokang"	1.2.1	"Kokang"	
+::node	c2	1	comprise-01	comprise
+::node	n	1.1.1.1.1.2	name	
+::node	n2	1.2.2	name	
+::node	p2	1.1.1.1	populate-01	population
+::node	m	1.1	majority	majority
+::node	"Myanmar"	1.1.1.1.1.2.1	"Myanmar"	Myanmar
+::node	e	1.2	ethnic-group	
+::node	c	1.1.1.1.1	country	
+::node	"Kokang"	1.2.2.1	"Kokang"	Kokang
+::node	p	1.1.1	person	population
+::edge	1.1.1.1.1		country	:wiki	1.1.1.1.1.1		"Burma"
+::edge	1.2		ethnic-group	:wiki	1.2.1		"Kokang"
+::edge	1.1.1.1.1		country	:name	1.1.1.1.1.2		name
+::edge	1.2		ethnic-group	:name	1.2.2		name
+::edge	1.1.1	population	person	:ARG2-of	1.1.1.1	population	populate-01
+::edge	1	comprise	comprise-01	:ARG1	1.1	majority	majority
+::edge	1.1.1.1.1.2		name	:op1	1.1.1.1.1.2.1	Myanmar	"Myanmar"
+::edge	1	comprise	comprise-01	:ARG2	1.2		ethnic-group
+::edge	1.1.1.1	population	populate-01	:ARG1	1.1.1.1.1		country
+::edge	1.2.2		name	:op1	1.2.2.1	Kokang	"Kokang"
+::edge	1.1	majority	majority	:part-of	1.1.1	population	person
+34	Phone Kyar Shin predicts that starting today there will be no destruction ceremony in the future because no more poppy will be grown.
+34	Phone Kyar Shin predicts that starting today there will be no destruction ceremony in the future because no more poppy will be grown .
+34	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 3-1 4-1.2.r 5-1.2.4 6-1.2.4.1 10-1.2.1 10-1.2.1.r 11-1.2.3 12-1.2 13-1.2.2.r 15-1.2.2 16-1.2.5 17-1.2.5.1.1 17-1.2.5.1.1.r 18-1.2.5.1.2.1 19-1.2.5.1.2 22-1.2.5.1
+::node	"Phone"	1.1.2.1	"Phone"	Phone
+::node	"Kyar"	1.1.2.2	"Kyar"	Kyar
+::node	-	1.2.5.1.1	-	no
+::node	"Shin"	1.1.2.3	"Shin"	Shin
+::node	p4	1.2.5.1.2	poppy	poppy
+::node	n2	1.1.2	name	
+::node	-	1.2.1	-	no
+::node	p2	1	predict-01	predicts
+::node	f	1.2.2	future	future
+::node	d	1.2.3	destroy-01	destruction
+::node	s	1.2.4	start-01	starting
+::node	p3	1.1	person	
+::node	c2	1.2.5	cause-01	because
+::node	c	1.2	ceremony	ceremony
+::node	t	1.2.4.1	today	today
+::node	g	1.2.5.1	grow-03	grown
+::node	m	1.2.5.1.2.1	more	more
+::node	"Pheung_Kya-shin"	1.1.1	"Pheung_Kya-shin"	
+::edge	1.1.2		name	:op1	1.1.2.1	Phone	"Phone"
+::edge	1.1.2		name	:op2	1.1.2.2	Kyar	"Kyar"
+::edge	1.2.5.1	grown	grow-03	:polarity	1.2.5.1.1	no	-
+::edge	1.1.2		name	:op3	1.1.2.3	Shin	"Shin"
+::edge	1.2.5.1	grown	grow-03	:ARG1	1.2.5.1.2	poppy	poppy
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	ceremony	ceremony	:polarity	1.2.1	no	-
+::edge	1.2	ceremony	ceremony	:time	1.2.2	future	future
+::edge	1.2	ceremony	ceremony	:purpose	1.2.3	destruction	destroy-01
+::edge	1.2	ceremony	ceremony	:ARG1-of	1.2.4	starting	start-01
+::edge	1	predicts	predict-01	:ARG0	1.1		person
+::edge	1.2	ceremony	ceremony	:ARG1-of	1.2.5	because	cause-01
+::edge	1	predicts	predict-01	:ARG1	1.2	ceremony	ceremony
+::edge	1.2.4	starting	start-01	:time	1.2.4.1	today	today
+::edge	1.2.5	because	cause-01	:ARG0	1.2.5.1	grown	grow-03
+::edge	1.2.5.1.2	poppy	poppy	:quant	1.2.5.1.2.1	more	more
+::edge	1.1		person	:wiki	1.1.1		"Pheung_Kya-shin"
+35	Phone Kyar Shin said this at another ceremony that destroyed more than 12 tons of poppy seed.
+35	Phone Kyar Shin said this at another ceremony that destroyed more than 12 tons of poppy seed .
+35	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 3-1 4-1.2 5-1.3.r 6-1.3.2 7-1.3 9-1.3.1 10-1.3.1.1.2 11-1.3.1.1.2 12-1.3.1.1.2.1.1 13-1.3.1.1.2.1.2 14-1.3.1.1.2.r 15-1.3.1.1.1 16-1.3.1.1
+::node	"Phone"	1.1.2.1	"Phone"	Phone
+::node	"Kyar"	1.1.2.2	"Kyar"	Kyar
+::node	"Shin"	1.1.2.3	"Shin"	Shin
+::node	s2	1.3.1.1	seed	seed
+::node	m2	1.3.1.1.2.1	mass-quantity	
+::node	p2	1.3.1.1.1	poppy	poppy
+::node	n	1.1.2	name	
+::node	t	1.3.1.1.2.1.2	ton	tons
+::node	s	1	say-01	said
+::node	d	1.3.1	destroy-01	destroyed
+::node	12	1.3.1.1.2.1.1	12	12
+::node	a	1.3.2	another	another
+::node	p	1.1	person	
+::node	m	1.3.1.1.2	more-than	than
+::node	t2	1.2	this	this
+::node	c	1.3	ceremony	ceremony
+::node	"Pheung_Kya-shin"	1.1.1	"Pheung_Kya-shin"	
+::edge	1.1.2		name	:op1	1.1.2.1	Phone	"Phone"
+::edge	1.1.2		name	:op2	1.1.2.2	Kyar	"Kyar"
+::edge	1.1.2		name	:op3	1.1.2.3	Shin	"Shin"
+::edge	1.3.1	destroyed	destroy-01	:ARG1	1.3.1.1	seed	seed
+::edge	1.3.1.1.2	than	more-than	:op1	1.3.1.1.2.1		mass-quantity
+::edge	1.3.1.1	seed	seed	:part-of	1.3.1.1.1	poppy	poppy
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.3.1.1.2.1		mass-quantity	:unit	1.3.1.1.2.1.2	tons	ton
+::edge	1.3	ceremony	ceremony	:ARG0-of	1.3.1	destroyed	destroy-01
+::edge	1.3.1.1.2.1		mass-quantity	:quant	1.3.1.1.2.1.1	12	12
+::edge	1.3	ceremony	ceremony	:mod	1.3.2	another	another
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1.3.1.1	seed	seed	:quant	1.3.1.1.2	than	more-than
+::edge	1	said	say-01	:ARG1	1.2	this	this
+::edge	1	said	say-01	:location	1.3	ceremony	ceremony
+::edge	1.1		person	:wiki	1.1.1		"Pheung_Kya-shin"
+36	Phone Kyar Shin appealed for help from the international community.
+36	Phone Kyar Shin appealed for help from the international community .
+36	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 3-1 4-1.3.r 5-1.3 6-1.2.r 8-1.2.1 9-1.2
+::node	n2	1.1.2	name	
+::node	i	1.2.1	international	international
+::node	a	1	appeal-02	appealed
+::node	"Phone"	1.1.2.1	"Phone"	Phone
+::node	p2	1.1	person	
+::node	"Kyar"	1.1.2.2	"Kyar"	Kyar
+::node	"Shin"	1.1.2.3	"Shin"	Shin
+::node	c	1.2	community	community
+::node	h	1.3	help-01	help
+::node	"Pheung_Kya-shin"	1.1.1	"Pheung_Kya-shin"	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	community	community	:location	1.2.1	international	international
+::edge	1.1.2		name	:op1	1.1.2.1	Phone	"Phone"
+::edge	1	appealed	appeal-02	:ARG0	1.1		person
+::edge	1.1.2		name	:op2	1.1.2.2	Kyar	"Kyar"
+::edge	1.1.2		name	:op3	1.1.2.3	Shin	"Shin"
+::edge	1	appealed	appeal-02	:ARG1	1.2	community	community
+::edge	1	appealed	appeal-02	:ARG2	1.3	help	help-01
+::edge	1.1		person	:wiki	1.1.1		"Pheung_Kya-shin"
+37	The international community is reluctant to give help.
+37	The international community is reluctant to give help .
+37	1-1.1.1 2-1.1 4-1.3 6-1 7-1.2
+::node	g	1	give-01	give
+::node	c	1.1	community	community
+::node	h	1.2	help-01	help
+::node	r	1.3	reluctant	reluctant
+::node	i	1.1.1	international	international
+::edge	1	give	give-01	:ARG0	1.1	community	community
+::edge	1	give	give-01	:ARG1	1.2	help	help-01
+::edge	1	give	give-01	:manner	1.3	reluctant	reluctant
+::edge	1.1	community	community	:location	1.1.1	international	international
+38	Phone Kyar Shin requested the distinguished guests to understand Myanmar's situation more and give practical advice and support.
+38	Phone Kyar Shin requested the distinguished guests to understand Myanmar 's situation more and give practical advice and support .
+38	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 3-1 5-1.2.1.1.1 6-1.2.1.1 7-1.2.1 8-1.2.1 9-1.2.1.2.1.2.1 10-1.2.1.2.1.r 11-1.2.1.2 12-1.2.1.3 13-1.2 13-1.2.2 13-1.2.2.r 14-1.2.2.2 15-1.2.2.1.2 16-1.2.2.1 17-1.2.2 18-1.2.2.2
+::node	"Phone"	1.1.2.1	"Phone"	Phone
+::node	g	1.2.2.1.1	guest	
+::node	"Kyar"	1.1.2.2	"Kyar"	Kyar
+::node	"Shin"	1.1.2.3	"Shin"	Shin
+::node	"Myanmar"	1.2.1.2.1.2.1	"Myanmar"	Myanmar
+::node	n	1.1.2	name	
+::node	u	1.2.1	understand-01	understand
+::node	"Burma"	1.2.1.2.1.1	"Burma"	
+::node	r	1	request-01	requested
+::node	n2	1.2.1.2.1.2	name	
+::node	a2	1.2.2	and	and
+::node	c	1.2.1.2.1	country	
+::node	d	1.2.1.1.1	distinguish-01	distinguished
+::node	p	1.1	person	
+::node	a	1.2	and	and
+::node	s	1.2.1.2	situation	situation
+::node	a3	1.2.2.1	advise-01	advice
+::node	m	1.2.1.3	more	more
+::node	s2	1.2.2.2	support-01	support
+::node	p2	1.2.2.1.2	practical	practical
+::node	g	1.2.2.2.1	guest	
+::node	g	1.2.1.1	guest	guests
+::node	"Pheung_Kya-shin"	1.1.1	"Pheung_Kya-shin"	
+::edge	1.1.2		name	:op1	1.1.2.1	Phone	"Phone"
+::edge	1.2.2.1	advice	advise-01	:ARG0	1.2.2.1.1		guest
+::edge	1.1.2		name	:op2	1.1.2.2	Kyar	"Kyar"
+::edge	1.1.2		name	:op3	1.1.2.3	Shin	"Shin"
+::edge	1.2.1.2.1.2		name	:op1	1.2.1.2.1.2.1	Myanmar	"Myanmar"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1	understand	understand-01
+::edge	1.2.1.2.1		country	:wiki	1.2.1.2.1.1		"Burma"
+::edge	1.2.1.2.1		country	:name	1.2.1.2.1.2		name
+::edge	1.2	and	and	:op2	1.2.2	and	and
+::edge	1.2.1.2	situation	situation	:poss	1.2.1.2.1		country
+::edge	1.2.1.1	guests	guest	:ARG1-of	1.2.1.1.1	distinguished	distinguish-01
+::edge	1	requested	request-01	:ARG0	1.1		person
+::edge	1	requested	request-01	:ARG1	1.2	and	and
+::edge	1.2.1	understand	understand-01	:ARG1	1.2.1.2	situation	situation
+::edge	1.2.2	and	and	:op1	1.2.2.1	advice	advise-01
+::edge	1.2.1	understand	understand-01	:degree	1.2.1.3	more	more
+::edge	1.2.2	and	and	:op2	1.2.2.2	support	support-01
+::edge	1.2.2.1	advice	advise-01	:mod	1.2.2.1.2	practical	practical
+::edge	1.2.2.2	support	support-01	:ARG0	1.2.2.2.1		guest
+::edge	1.2.1	understand	understand-01	:ARG0	1.2.1.1	guests	guest
+::edge	1.1		person	:wiki	1.1.1		"Pheung_Kya-shin"
+39	UNDCP's Lemahieu when asked by AFP what impact project New Destiny had on the international community hoped it would have a positive impact and that some additional funds would come forward.
+39	UNDCP 's Lemahieu when asked by AFP what impact project New Destiny had on the international community hoped it would have a positive impact and that some additional funds would come forward .
+39	0-1.1.3.1.2.1 1-1.1.3 2-1.1.2.1 3-1.3.2 3-1.3.r 4-1.3 5-1.3.1.r 6-1.3.1.2.1 7-1.3.2 8-1.3.2.1 9-1.3.2.1.1 10-1.3.2.1.1.2.1 11-1.3.2.1.1.2.2 12-1.3.2.1 13-1.3.2.1.2.r 15-1.3.2.1.2.1 16-1.3.2.1.2 17-1 18-1.2.1.1 20-1.2.1 22-1.2.1.2 23-1.2.1 24-1.2 25-1.2.r 26-1.2.2.1.2 27-1.2.2.1.1 28-1.2.2.1 30-1.2.2 31-1.2.2.2
+::node	p3	1.3.2.1.1	project	project
+::node	n	1.1.3.1.2	name	
+::node	c2	1.3.2.1.2	community	community
+::node	"Agence_France-Presse"	1.3.1.1	"Agence_France-Presse"	
+::node	n3	1.3.1.2	name	
+::node	i	1.3.2.1	impact-01	had
+::node	n5	1.3.2.1.1.2	name	
+::node	i2	1.3.2.1.2.1	international	international
+::node	-	1.3.2.1.1.1	-	
+::node	p4	1.2.1.2	positive	positive
+::node	f	1.2.2.1	fund	funds
+::node	f2	1.2.2.2	forward	forward
+::node	s	1.2.2.1.2	some	some
+::node	p3	1.2.1.1	project	it
+::node	"Lemahieu"	1.1.2.1	"Lemahieu"	Lemahieu
+::node	a3	1.2.2.1.1	additional	additional
+::node	o	1.1.3.1	organization	
+::node	"Destiny"	1.3.2.1.1.2.2	"Destiny"	Destiny
+::node	"New"	1.3.2.1.1.2.1	"New"	New
+::node	"UNDCP"	1.1.3.1.2.1	"UNDCP"	UNDCP
+::node	n2	1.1.2	name	
+::node	i3	1.2.1	impact-01	impact
+::node	h	1	hope-01	hoped
+::node	h2	1.1.3	have-org-role-91	's
+::node	c3	1.2.2	come-03	come
+::node	p2	1.3.1	publication	
+::node	a4	1.3.2	amr-unknown	what
+::node	p	1.3.3	person	
+::node	p	1.1	person	
+::node	"AFP"	1.3.1.2.1	"AFP"	AFP
+::node	a	1.2	and	and
+::node	a2	1.3	ask-01	asked
+::node	"United_Nations_Office_on_Drugs_and_Crime"	1.1.3.1.1	"United_Nations_Office_on_Drugs_and_Crime"	
+::node	-	1.1.1	-	
+::edge	1.3.2.1	had	impact-01	:ARG0	1.3.2.1.1	project	project
+::edge	1.1.3.1		organization	:name	1.1.3.1.2		name
+::edge	1.3.2.1	had	impact-01	:ARG1	1.3.2.1.2	community	community
+::edge	1.3.1		publication	:wiki	1.3.1.1		"Agence_France-Presse"
+::edge	1.3.1		publication	:name	1.3.1.2		name
+::edge	1.3.2	what	amr-unknown	:manner-of	1.3.2.1	had	impact-01
+::edge	1.3.2.1.1	project	project	:name	1.3.2.1.1.2		name
+::edge	1.3.2.1.2	community	community	:location	1.3.2.1.2.1	international	international
+::edge	1.3.2.1.1	project	project	:wiki	1.3.2.1.1.1		-
+::edge	1.2.1	impact	impact-01	:mod	1.2.1.2	positive	positive
+::edge	1.2.2	come	come-03	:ARG1	1.2.2.1	funds	fund
+::edge	1.2.2	come	come-03	:path	1.2.2.2	forward	forward
+::edge	1.2.2.1	funds	fund	:quant	1.2.2.1.2	some	some
+::edge	1.2.1	impact	impact-01	:ARG0	1.2.1.1	it	project
+::edge	1.1.2		name	:op1	1.1.2.1	Lemahieu	"Lemahieu"
+::edge	1.2.2.1	funds	fund	:mod	1.2.2.1.1	additional	additional
+::edge	1.1.3	's	have-org-role-91	:ARG1	1.1.3.1		organization
+::edge	1.3.2.1.1.2		name	:op2	1.3.2.1.1.2.2	Destiny	"Destiny"
+::edge	1.3.2.1.1.2		name	:op1	1.3.2.1.1.2.1	New	"New"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	UNDCP	"UNDCP"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1	impact	impact-01
+::edge	1.1		person	:ARG0-of	1.1.3	's	have-org-role-91
+::edge	1.2	and	and	:op2	1.2.2	come	come-03
+::edge	1.3	asked	ask-01	:ARG0	1.3.1		publication
+::edge	1.3	asked	ask-01	:ARG1	1.3.2	what	amr-unknown
+::edge	1.3	asked	ask-01	:ARG2	1.3.3		person
+::edge	1	hoped	hope-01	:ARG0	1.1		person
+::edge	1.3.1.2		name	:op1	1.3.1.2.1	AFP	"AFP"
+::edge	1	hoped	hope-01	:ARG1	1.2	and	and
+::edge	1	hoped	hope-01	:time	1.3	asked	ask-01
+::edge	1.1.3.1		organization	:wiki	1.1.3.1.1		"United_Nations_Office_on_Drugs_and_Crime"
+::edge	1.1		person	:wiki	1.1.1		-
+40	Lemahieu said so much depends on the political situation in this country.
+40	Lemahieu said so much depends on the political situation in this country .
+40	0-1.1.2.1 1-1 2-1.2.1.1 3-1.2.1 4-1.2 5-1.2.2.r 7-1.2.2.1 8-1.2.2 9-1.2.2.2.r 10-1.2.2.2.1 11-1.2.2.2
+::node	n	1.1.2	name	
+::node	m	1.2.1	much	much
+::node	s	1	say-01	said
+::node	s3	1.2.2	situation	situation
+::node	"Lemahieu"	1.1.2.1	"Lemahieu"	Lemahieu
+::node	p	1.1	person	
+::node	d	1.2	depend-01	depends
+::node	p2	1.2.2.1	political	political
+::node	c	1.2.2.2	country	country
+::node	t	1.2.2.2.1	this	this
+::node	s2	1.2.1.1	so	so
+::node	-	1.1.1	-	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	depends	depend-01	:ARG0	1.2.1	much	much
+::edge	1.2	depends	depend-01	:ARG1	1.2.2	situation	situation
+::edge	1.1.2		name	:op1	1.1.2.1	Lemahieu	"Lemahieu"
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	depends	depend-01
+::edge	1.2.2	situation	situation	:mod	1.2.2.1	political	political
+::edge	1.2.2	situation	situation	:location	1.2.2.2	country	country
+::edge	1.2.2.2	country	country	:mod	1.2.2.2.1	this	this
+::edge	1.2.1	much	much	:degree	1.2.1.1	so	so
+::edge	1.1		person	:wiki	1.1.1		-
+41	There is hope for further political change following the May 6 release of pro-democracy leader Aung San Suu Kyi from 19 months house arrest.
+41	There is hope for further political change following the May 6 release of pro @-@ democracy leader Aung San Suu Kyi from 19 months house arrest .
+41	2-1.1 3-1.1.1.r 4-1.1.1.2 5-1.1.1.1 6-1.1.1 7-1 9-1.2.3.2 9-1.2.3.2.r 10-1.2.3.1 11-1.2 12-1.2.1.r 13-1.2.1.4 15-1.2.1.4.1 16-1.2.1 16-1.2.1.3 16-1.2.1.3.r 17-1.2.1.2.1 18-1.2.1.2.2 19-1.2.1.2.3 20-1.2.1.2.4 21-1.2.2.r 22-1.2.2.2.1 23-1.2.2.2.2 24-1.2.2.1 25-1.2.2
+::node	p2	1.1.1.1	political	political
+::node	f2	1.1.1.2	further-01	further
+::node	"Suu"	1.2.1.2.3	"Suu"	Suu
+::node	"San"	1.2.1.2.2	"San"	San
+::node	"Kyi"	1.2.1.2.4	"Kyi"	Kyi
+::node	d2	1.2.1.4.1	democracy	democracy
+::node	p	1.2.1	person	leader
+::node	f	1	follow-01	following
+::node	a	1.2.2	arrest	arrest
+::node	"Aung"	1.2.1.2.1	"Aung"	Aung
+::node	d	1.2.3	date-entity	
+::node	h	1.1	hope-01	hope
+::node	r	1.2	release-01	release
+::node	f3	1.2.1.4	favor-01	pro
+::node	5	1.2.3.2	5	May
+::node	n	1.2.1.2	name	
+::node	h2	1.2.2.1	house	house
+::node	l	1.2.1.3	lead-02	leader
+::node	t2	1.2.2.2	temporal-quantity	
+::node	6	1.2.3.1	6	6
+::node	19	1.2.2.2.1	19	19
+::node	"Aung_San_Suu_Kyi"	1.2.1.1	"Aung_San_Suu_Kyi"	
+::node	m2	1.2.2.2.2	month	months
+::node	c	1.1.1	change-01	change
+::edge	1.1.1	change	change-01	:ARG1	1.1.1.1	political	political
+::edge	1.1.1	change	change-01	:ARG1-of	1.1.1.2	further	further-01
+::edge	1.2.1.2		name	:op3	1.2.1.2.3	Suu	"Suu"
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	San	"San"
+::edge	1.2.1.2		name	:op4	1.2.1.2.4	Kyi	"Kyi"
+::edge	1.2.1.4	pro	favor-01	:ARG1	1.2.1.4.1	democracy	democracy
+::edge	1.2	release	release-01	:ARG1	1.2.1	leader	person
+::edge	1.2	release	release-01	:ARG2	1.2.2	arrest	arrest
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Aung	"Aung"
+::edge	1.2	release	release-01	:time	1.2.3		date-entity
+::edge	1	following	follow-01	:ARG1	1.1	hope	hope-01
+::edge	1	following	follow-01	:ARG2	1.2	release	release-01
+::edge	1.2.1	leader	person	:ARG0-of	1.2.1.4	pro	favor-01
+::edge	1.2.3		date-entity	:month	1.2.3.2	May	5
+::edge	1.2.1	leader	person	:name	1.2.1.2		name
+::edge	1.2.2	arrest	arrest	:mod	1.2.2.1	house	house
+::edge	1.2.1	leader	person	:ARG0-of	1.2.1.3	leader	lead-02
+::edge	1.2.2	arrest	arrest	:duration	1.2.2.2		temporal-quantity
+::edge	1.2.3		date-entity	:day	1.2.3.1	6	6
+::edge	1.2.2.2		temporal-quantity	:quant	1.2.2.2.1	19	19
+::edge	1.2.1	leader	person	:wiki	1.2.1.1		"Aung_San_Suu_Kyi"
+::edge	1.2.2.2		temporal-quantity	:unit	1.2.2.2.2	months	month
+::edge	1.1	hope	hope-01	:ARG1	1.1.1	change	change-01
+42	The regime seeks the United States approval for the project.
+42	The regime seeks the United States approval for the project .
+42	1-1.1 2-1 4-1.3.2.1 5-1.3.2.2 6-1.2 7-1.2.2.r 9-1.2.2
+::node	c	1.2.1	country	
+::node	s	1	seek-01	seeks
+::node	p	1.2.2	project	project
+::node	"United_States"	1.3.1	"United_States"	
+::node	n	1.3.2	name	
+::node	r	1.1	regime	regime
+::node	a	1.2	approve-01	approval
+::node	c	1.3	country	
+::node	"United"	1.3.2.1	"United"	United
+::node	"States"	1.3.2.2	"States"	States
+::edge	1.2	approval	approve-01	:ARG0	1.2.1		country
+::edge	1.2	approval	approve-01	:ARG1	1.2.2	project	project
+::edge	1.3		country	:wiki	1.3.1		"United_States"
+::edge	1.3		country	:name	1.3.2		name
+::edge	1	seeks	seek-01	:ARG0	1.1	regime	regime
+::edge	1	seeks	seek-01	:ARG1	1.2	approval	approve-01
+::edge	1	seeks	seek-01	:ARG2	1.3		country
+::edge	1.3.2		name	:op1	1.3.2.1	United	"United"
+::edge	1.3.2		name	:op2	1.3.2.2	States	"States"
+43	Its global announcement comes via the regime's newly-appointed public relations firm in Washington.
+43	Its global announcement comes via the regime 's newly @-@ appointed public relations firm in Washington .
+43	1-1.1.2 2-1.1 2-1.1.1 2-1.1.1.r 3-1 4-1.2.r 6-1.2.1 7-1.2.1.r 8-1.2.2.1 10-1.2.2 11-1.2.3.1 12-1.2.3 13-1.2 14-1.2.4.r 15-1.2.4.2.1
+::node	f	1.2.2.1.1	firm	
+::node	g	1.1.2	globe	global
+::node	r	1.2.1	regime	regime
+::node	c2	1	come-01	comes
+::node	a2	1.2.2	appoint-01	appointed
+::node	r2	1.2.3	relate-02	relations
+::node	c	1.2.4	city	
+::node	t	1.1	thing	announcement
+::node	f	1.2	firm	firm
+::node	"Washington,_D.C."	1.2.4.1	"Washington,_D.C."	
+::node	n	1.2.4.2	name	
+::node	n2	1.2.2.1	new-41	newly
+::node	"Washington"	1.2.4.2.1	"Washington"	Washington
+::node	p	1.2.3.1	public	public
+::node	a	1.1.1	announce-01	announcement
+::edge	1.2.2.1	newly	new-41	:ARG1	1.2.2.1.1		firm
+::edge	1.1	announcement	thing	:mod	1.1.2	global	globe
+::edge	1.2	firm	firm	:poss	1.2.1	regime	regime
+::edge	1.2	firm	firm	:ARG1-of	1.2.2	appointed	appoint-01
+::edge	1.2	firm	firm	:purpose	1.2.3	relations	relate-02
+::edge	1.2	firm	firm	:location	1.2.4		city
+::edge	1	comes	come-01	:ARG1	1.1	announcement	thing
+::edge	1	comes	come-01	:path	1.2	firm	firm
+::edge	1.2.4		city	:wiki	1.2.4.1		"Washington,_D.C."
+::edge	1.2.4		city	:name	1.2.4.2		name
+::edge	1.2.2	appointed	appoint-01	:ARG2-of	1.2.2.1	newly	new-41
+::edge	1.2.4.2		name	:op1	1.2.4.2.1	Washington	"Washington"
+::edge	1.2.3	relations	relate-02	:ARG2	1.2.3.1	public	public
+::edge	1.1	announcement	thing	:ARG1-of	1.1.1	announcement	announce-01
+44	The US charge d'affaires Priscilla Clapp said maybe because it has to be a multi-faceted, sustained effort for it to work and that there should be measurable results.
+44	The US charge d'affaires Priscilla Clapp said maybe because it has to be a multi @-@ faceted , sustained effort for it to work and that there should be measurable results .
+44	1-1.1.3.1.2.1 2-1.1.3.2 4-1.1.2.1 5-1.1.2.2 6-1 7-1.2.1 7-1.2.2.1.2 8-1.2.1.1 9-1.2.1.1.1.1.3 10-1.2.1.1.1 10-1.2.1.1.1.2 10-1.2.1.1.1.2.r 11-1.2.1.1.1 14-1.2.1.1.1.1.2 16-1.2.1.1.1.1.2 18-1.2.1.1.1.1.1 19-1.2.1.1.1.1 21-1.2.1.1.1.2.1.1 23-1.2.1.1.1.2.1 24-1.2 27-1.2.2 29-1.2.2.1 30-1.2.2.1.1
+::node	s2	1.2.1.1.1.1.1	sustain-01	sustained
+::node	m	1.2.1.1.1.1.2	multi-faceted	faceted
+::node	w	1.2.1.1.1.2.1	work-09	work
+::node	i	1.2.1.1.1.1.3	it	it
+::node	i	1.2.1.1.1.2.1.1	it	it
+::node	n2	1.1.3.1.2	name	
+::node	m2	1.2.2.1	measure-01	measurable
+::node	p2	1.2.2.1.2	possible	maybe
+::node	c3	1.2.1.1	cause-01	because
+::node	"Priscilla"	1.1.2.1	"Priscilla"	Priscilla
+::node	r2	1.2.2.1.1	result	results
+::node	"Clapp"	1.1.2.2	"Clapp"	Clapp
+::node	c	1.1.3.1	country	
+::node	c2	1.1.3.2	charge-d-affaires	charge
+::node	e	1.2.1.1.1.1	effort	effort
+::node	h2	1.2.1.1.1.2	have-condition-91	has
+::node	"US"	1.1.3.1.2.1	"US"	US
+::node	n	1.1.2	name	
+::node	p3	1.2.1	possible	maybe
+::node	s	1	say-01	said
+::node	h	1.1.3	have-org-role-91	
+::node	r	1.2.2	recommend-01	should
+::node	o	1.2.1.1.1	obligate-01	to
+::node	p	1.1	person	
+::node	a	1.2	and	and
+::node	"United_States"	1.1.3.1.1	"United_States"	
+::node	"Priscilla_A._Clapp"	1.1.1	"Priscilla_A._Clapp"	
+::edge	1.2.1.1.1.1	effort	effort	:ARG1-of	1.2.1.1.1.1.1	sustained	sustain-01
+::edge	1.2.1.1.1.1	effort	effort	:mod	1.2.1.1.1.1.2	faceted	multi-faceted
+::edge	1.2.1.1.1.2	has	have-condition-91	:ARG1	1.2.1.1.1.2.1	work	work-09
+::edge	1.2.1.1.1.1	effort	effort	:domain	1.2.1.1.1.1.3	it	it
+::edge	1.2.1.1.1.2.1	work	work-09	:ARG0	1.2.1.1.1.2.1.1	it	it
+::edge	1.1.3.1		country	:name	1.1.3.1.2		name
+::edge	1.2.2	should	recommend-01	:ARG1	1.2.2.1	measurable	measure-01
+::edge	1.2.2.1	measurable	measure-01	:mod	1.2.2.1.2	maybe	possible
+::edge	1.2.1	maybe	possible	:domain	1.2.1.1	because	cause-01
+::edge	1.1.2		name	:op1	1.1.2.1	Priscilla	"Priscilla"
+::edge	1.2.2.1	measurable	measure-01	:ARG1	1.2.2.1.1	results	result
+::edge	1.1.2		name	:op2	1.1.2.2	Clapp	"Clapp"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		country
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	charge	charge-d-affaires
+::edge	1.2.1.1.1	to	obligate-01	:ARG2	1.2.1.1.1.1	effort	effort
+::edge	1.2.1.1.1	to	obligate-01	:ARG2-of	1.2.1.1.1.2	has	have-condition-91
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	US	"US"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1	maybe	possible
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	and	and	:op2	1.2.2	should	recommend-01
+::edge	1.2.1.1	because	cause-01	:ARG0	1.2.1.1.1	to	obligate-01
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	and	and
+::edge	1.1.3.1		country	:wiki	1.1.3.1.1		"United_States"
+::edge	1.1		person	:wiki	1.1.1		"Priscilla_A._Clapp"

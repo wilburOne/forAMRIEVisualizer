@@ -1,0 +1,1452 @@
+1	2002-06-26
+1	2002 @-@ 06 @-@ 26
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	6	1.2	6	06
+::node	26	1.3	26	26
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	06	6
+::edge	1		date-entity	:day	1.3	26	26
+2	Myanmar (MM); Cambodia (KH); Afghanistan (AF); China (CN); Indonesia (ID); Thailand (TH)
+2	Myanmar ( MM ) ; Cambodia ( KH ) ; Afghanistan ( AF ) ; China ( CN ) ; Indonesia ( ID ) ; Thailand ( TH )
+2	0-1.1.2.1 5-1.2.2.1 10-1.3.2.1 15-1.4.2.1 20-1.5.2.1 25-1.6.2.1
+::node	"Afghanistan"	1.3.2.1	"Afghanistan"	Afghanistan
+::node	"Cambodia"	1.2.2.1	"Cambodia"	Cambodia
+::node	"Thailand"	1.6.2.1	"Thailand"	Thailand
+::node	"Myanmar"	1.1.2.1	"Myanmar"	Myanmar
+::node	"Indonesia"	1.5.2.1	"Indonesia"	Indonesia
+::node	n	1.1.2	name	
+::node	"Cambodia"	1.2.1	"Cambodia"	
+::node	a	1	and	
+::node	n2	1.2.2	name	
+::node	"Afghanistan"	1.3.1	"Afghanistan"	
+::node	n3	1.3.2	name	
+::node	"China"	1.4.1	"China"	
+::node	n4	1.4.2	name	
+::node	"Indonesia"	1.5.1	"Indonesia"	
+::node	c	1.1	country	
+::node	n5	1.5.2	name	
+::node	"Thailand"	1.6.1	"Thailand"	
+::node	c2	1.2	country	
+::node	n6	1.6.2	name	
+::node	c3	1.3	country	
+::node	c4	1.4	country	
+::node	c5	1.5	country	
+::node	c6	1.6	country	
+::node	"China"	1.4.2.1	"China"	China
+::node	"Burma"	1.1.1	"Burma"	
+::edge	1.1.2		name	:op1	1.1.2.1	Myanmar	"Myanmar"
+::edge	1.3.2		name	:op1	1.3.2.1	Afghanistan	"Afghanistan"
+::edge	1.5.2		name	:op1	1.5.2.1	Indonesia	"Indonesia"
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"Cambodia"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3		country	:wiki	1.3.1		"Afghanistan"
+::edge	1.3		country	:name	1.3.2		name
+::edge	1.4		country	:wiki	1.4.1		"China"
+::edge	1.4		country	:name	1.4.2		name
+::edge	1.5		country	:wiki	1.5.1		"Indonesia"
+::edge	1		and	:op1	1.1		country
+::edge	1.5		country	:name	1.5.2		name
+::edge	1.6		country	:wiki	1.6.1		"Thailand"
+::edge	1		and	:op2	1.2		country
+::edge	1.6		country	:name	1.6.2		name
+::edge	1		and	:op3	1.3		country
+::edge	1		and	:op4	1.4		country
+::edge	1		and	:op5	1.5		country
+::edge	1		and	:op6	1.6		country
+::edge	1.2.2		name	:op1	1.2.2.1	Cambodia	"Cambodia"
+::edge	1.4.2		name	:op1	1.4.2.1	China	"China"
+::edge	1.6.2		name	:op1	1.6.2.1	Thailand	"Thailand"
+::edge	1.1		country	:wiki	1.1.1		"Burma"
+3	Narcotics; crime; international
+3	Narcotics ; crime ; international
+3	0-1.1 2-1.2 4-1.3
+::node	a	1	and	
+::node	n	1.1	narcotic	Narcotics
+::node	c	1.2	crime	crime
+::node	i	1.3	international	international
+::edge	1		and	:op1	1.1	Narcotics	narcotic
+::edge	1		and	:op2	1.2	crime	crime
+::edge	1		and	:op3	1.3	international	international
+4	Asian countries participated in United Nations International Day against Drug Abuse and Illicit Trafficking on 26 June 2002 by executing drug traffickers and burning narcotics worth 1 billion U.S. dollars.
+4	Asian countries participated in United Nations International Day against Drug Abuse and Illicit Trafficking on 26 June 2002 by executing drug traffickers and burning narcotics worth 1 billion U.S. dollars .
+4	0-1.1.1.2.1 1-1.1 2-1 3-1.2.r 4-1.2.2.1 5-1.2.2.2 6-1.2.2.3 7-1.2.2.4 8-1.2.2.5 9-1.2.2.6 10-1.2.2.7 11-1.2.2.8 12-1.2.2.9 13-1.2.2.10 15-1.2.3.3 16-1.2.3.2 16-1.2.3.2.r 17-1.2.3.1 18-1.3.r 19-1.3.1 20-1.3.1.2.1.1 21-1.3.1.2 21-1.3.1.2.1 21-1.3.1.2.1.r 22-1.3 23-1.3.2 24-1.3.2.2 26-1.3.2.2.1.1.1 27-1.3.2.2.1.1.1 28-1.3.2.2.1.1.2.1.2.1 29-1.3.2.2.1.1.2
+::node	c2	1.3.2.2.1	cost-01	
+::node	c	1.3.1.1	country	
+::node	p2	1.3.1.2	person	traffickers
+::node	c	1.3.2.1	country	
+::node	n3	1.3.2.2	narcotic	narcotics
+::node	"U.S."	1.3.2.2.1.1.2.1.2.1	"U.S."	U.S.
+::node	n4	1.3.2.2.1.1.2.1.2	name	
+::node	"United_States"	1.3.2.2.1.1.2.1.1	"United_States"	
+::node	1000000000	1.3.2.2.1.1.1	1000000000	billion
+::node	"International"	1.2.2.3	"International"	International
+::node	6	1.2.3.2	6	June
+::node	"Asia"	1.1.1.2.1	"Asia"	Asian
+::node	"Day"	1.2.2.4	"Day"	Day
+::node	26	1.2.3.3	26	26
+::node	m	1.3.2.2.1.1	monetary-quantity	
+::node	"United"	1.2.2.1	"United"	United
+::node	"Nations"	1.2.2.2	"Nations"	Nations
+::node	2002	1.2.3.1	2002	2002
+::node	d2	1.3.2.2.1.1.2	dollar	dollars
+::node	"Trafficking"	1.2.2.10	"Trafficking"	Trafficking
+::node	"Asia"	1.1.1.1	"Asia"	
+::node	"Illicit"	1.2.2.9	"Illicit"	Illicit
+::node	n	1.1.1.2	name	
+::node	c3	1.3.2.2.1.1.2.1	country	
+::node	"Abuse"	1.2.2.7	"Abuse"	Abuse
+::node	"and"	1.2.2.8	"and"	and
+::node	"against"	1.2.2.5	"against"	against
+::node	"Drug"	1.2.2.6	"Drug"	Drug
+::node	"International_Day_against_Drug_Abuse_and_Illicit_Trafficking"	1.2.1	"International_Day_against_Drug_Abuse_and_Illicit_Trafficking"	
+::node	p	1	participate-01	participated
+::node	n2	1.2.2	name	
+::node	e	1.3.1	execute-01	executing
+::node	d	1.2.3	date-entity	
+::node	b	1.3.2	burn-01	burning
+::node	c	1.1	country	countries
+::node	t	1.3.1.2.1	traffic-01	traffickers
+::node	d3	1.3.1.2.1.1	drug	drug
+::node	f	1.2	festival	
+::node	a	1.3	and	and
+::node	c4	1.1.1	continent	
+::edge	1.3.2.2	narcotics	narcotic	:ARG1-of	1.3.2.2.1		cost-01
+::edge	1.3.1	executing	execute-01	:ARG0	1.3.1.1		country
+::edge	1.3.1	executing	execute-01	:ARG1	1.3.1.2	traffickers	person
+::edge	1.3.2	burning	burn-01	:ARG0	1.3.2.1		country
+::edge	1.3.2	burning	burn-01	:ARG1	1.3.2.2	narcotics	narcotic
+::edge	1.3.2.2.1.1.2.1.2		name	:op1	1.3.2.2.1.1.2.1.2.1	U.S.	"U.S."
+::edge	1.3.2.2.1.1.2.1		country	:name	1.3.2.2.1.1.2.1.2		name
+::edge	1.3.2.2.1.1.2.1		country	:wiki	1.3.2.2.1.1.2.1.1		"United_States"
+::edge	1.3.2.2.1.1		monetary-quantity	:quant	1.3.2.2.1.1.1	billion	1000000000
+::edge	1.2.2		name	:op3	1.2.2.3	International	"International"
+::edge	1.2.3		date-entity	:month	1.2.3.2	June	6
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Asian	"Asia"
+::edge	1.2.2		name	:op4	1.2.2.4	Day	"Day"
+::edge	1.2.3		date-entity	:day	1.2.3.3	26	26
+::edge	1.3.2.2.1		cost-01	:ARG2	1.3.2.2.1.1		monetary-quantity
+::edge	1.2.2		name	:op1	1.2.2.1	United	"United"
+::edge	1.2.2		name	:op2	1.2.2.2	Nations	"Nations"
+::edge	1.2.3		date-entity	:year	1.2.3.1	2002	2002
+::edge	1.3.2.2.1.1		monetary-quantity	:unit	1.3.2.2.1.1.2	dollars	dollar
+::edge	1.2.2		name	:op10	1.2.2.10	Trafficking	"Trafficking"
+::edge	1.1.1		continent	:wiki	1.1.1.1		"Asia"
+::edge	1.2.2		name	:op9	1.2.2.9	Illicit	"Illicit"
+::edge	1.1.1		continent	:name	1.1.1.2		name
+::edge	1.3.2.2.1.1.2	dollars	dollar	:mod	1.3.2.2.1.1.2.1		country
+::edge	1.2.2		name	:op7	1.2.2.7	Abuse	"Abuse"
+::edge	1.2.2		name	:op8	1.2.2.8	and	"and"
+::edge	1.2.2		name	:op5	1.2.2.5	against	"against"
+::edge	1.2.2		name	:op6	1.2.2.6	Drug	"Drug"
+::edge	1.2		festival	:wiki	1.2.1		"International_Day_against_Drug_Abuse_and_Illicit_Trafficking"
+::edge	1.2		festival	:name	1.2.2		name
+::edge	1.3	and	and	:op1	1.3.1	executing	execute-01
+::edge	1.2		festival	:time	1.2.3		date-entity
+::edge	1.3	and	and	:op2	1.3.2	burning	burn-01
+::edge	1	participated	participate-01	:ARG0	1.1	countries	country
+::edge	1.3.1.2	traffickers	person	:ARG0-of	1.3.1.2.1	traffickers	traffic-01
+::edge	1.3.1.2.1	traffickers	traffic-01	:ARG1	1.3.1.2.1.1	drug	drug
+::edge	1	participated	participate-01	:ARG1	1.2		festival
+::edge	1	participated	participate-01	:manner	1.3	and	and
+::edge	1.1	countries	country	:location	1.1.1		continent
+5	Participating countries adopted tough positions in order to demonstrate commitment to eradicating the problem.
+5	Participating countries adopted tough positions in order to demonstrate commitment to eradicating the problem .
+5	0-1.1.1 1-1.1 2-1 3-1.2.1 4-1.2 5-1.3.r 6-1.3.r 7-1.3.r 8-1.3 9-1.3.2 10-1.3.2.2.r 11-1.3.2.2 13-1.3.2.2.2
+::node	t	1.2.1	tough	tough
+::node	p3	1.3.2.2.2	problem	problem
+::node	a	1	adopt-01	adopted
+::node	c	1.3.1	country	
+::node	c2	1.3.2	commit-01	commitment
+::node	c	1.3.2.2.1	country	
+::node	c	1.1	country	countries
+::node	p2	1.2	position	positions
+::node	d	1.3	demonstrate-01	demonstrate
+::node	c	1.3.2.1	country	
+::node	e	1.3.2.2	eradicate-01	eradicating
+::node	p	1.1.1	participate-01	Participating
+::edge	1.2	positions	position	:mod	1.2.1	tough	tough
+::edge	1.3.2.2	eradicating	eradicate-01	:ARG1	1.3.2.2.2	problem	problem
+::edge	1.3	demonstrate	demonstrate-01	:ARG0	1.3.1		country
+::edge	1.3	demonstrate	demonstrate-01	:ARG1	1.3.2	commitment	commit-01
+::edge	1.3.2.2	eradicating	eradicate-01	:ARG0	1.3.2.2.1		country
+::edge	1	adopted	adopt-01	:ARG0	1.1	countries	country
+::edge	1	adopted	adopt-01	:ARG1	1.2	positions	position
+::edge	1	adopted	adopt-01	:purpose	1.3	demonstrate	demonstrate-01
+::edge	1.3.2	commitment	commit-01	:ARG0	1.3.2.1		country
+::edge	1.3.2	commitment	commit-01	:ARG1	1.3.2.2	eradicating	eradicate-01
+::edge	1.1	countries	country	:ARG0-of	1.1.1	Participating	participate-01
+7	The China News Service reported that on 25 June 2002 14 people were sentenced to death in Chengdu, China and that 9 of those sentenced were immediately taken to the execution grounds and shot.
+7	The China News Service reported that on 25 June 2002 14 people were sentenced to death in Chengdu , China and that 9 of those sentenced were immediately taken to the execution grounds and shot .
+7	1-1.1.2.1 2-1.1.2.2 3-1.1.2.3 4-1 6-1.2.r 7-1.2.4.3 8-1.2.4.2 8-1.2.4.2.r 9-1.2.4.1 10-1.2.1.1 11-1.2.1 11-1.2.1.2.1 13-1.2 15-1.2.2 17-1.2.3.2.1 19-1.2.3.3.2.1 22-1.2.1.2.1.1 25-1.2 27-1.2.1.2.1.2.2 28-1.2.1.2.1.2 29-1.2.1.2.1.2.1.r 31-1.2.1.2.1.2.1.1 32-1.2.1.2.1.2.1 34-1.2.1.2.1.3
+::node	e	1.2.1.2.1.2.1.1	execute-01	execution
+::node	"China"	1.2.3.3.2.1	"China"	China
+::node	n2	1.2.3.2	name	
+::node	2002	1.2.4.1	2002	2002
+::node	c2	1.2.3.3	country	
+::node	6	1.2.4.2	6	June
+::node	i	1.2.1.2	include-91	
+::node	"Chengdu"	1.2.3.1	"Chengdu"	
+::node	14	1.2.1.1	14	14
+::node	"China"	1.1.2.1	"China"	China
+::node	"News"	1.1.2.2	"News"	News
+::node	"Service"	1.1.2.3	"Service"	Service
+::node	25	1.2.4.3	25	25
+::node	"China"	1.2.3.3.1	"China"	
+::node	n3	1.2.3.3.2	name	
+::node	"Chengdu"	1.2.3.2.1	"Chengdu"	Chengdu
+::node	i2	1.2.1.2.1.2.2	immediate	immediately
+::node	g2	1.2.1.2.1.2.1	grounds	grounds
+::node	n	1.1.2	name	
+::node	p	1.2.1	person	people
+::node	9	1.2.1.2.1.1	9	9
+::node	r	1	report-01	reported
+::node	t	1.2.1.2.1.2	take-01	taken
+::node	d	1.2.2	die-01	death
+::node	p2	1.2.1.2.1	person	people
+::node	c	1.2.3	city	
+::node	d2	1.2.4	date-entity	
+::node	g	1.1	government-organization	
+::node	s	1.2	sentence-01	sentenced
+::node	s2	1.2.1.2.1.3	shoot-02	shot
+::node	"China_News_Service"	1.1.1	"China_News_Service"	
+::edge	1.2.1.2.1.2.1	grounds	grounds	:location-of	1.2.1.2.1.2.1.1	execution	execute-01
+::edge	1.2.3.3.2		name	:op1	1.2.3.3.2.1	China	"China"
+::edge	1.2.3		city	:name	1.2.3.2		name
+::edge	1.2.4		date-entity	:year	1.2.4.1	2002	2002
+::edge	1.2.3		city	:part-of	1.2.3.3		country
+::edge	1.2.4		date-entity	:month	1.2.4.2	June	6
+::edge	1.2.1	people	person	:ARG2-of	1.2.1.2		include-91
+::edge	1.2.3		city	:wiki	1.2.3.1		"Chengdu"
+::edge	1.2.1	people	person	:quant	1.2.1.1	14	14
+::edge	1.1.2		name	:op1	1.1.2.1	China	"China"
+::edge	1.1.2		name	:op2	1.1.2.2	News	"News"
+::edge	1.1.2		name	:op3	1.1.2.3	Service	"Service"
+::edge	1.2.4		date-entity	:day	1.2.4.3	25	25
+::edge	1.2.3.3		country	:wiki	1.2.3.3.1		"China"
+::edge	1.2.3.3		country	:name	1.2.3.3.2		name
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	Chengdu	"Chengdu"
+::edge	1.2.1.2.1.2	taken	take-01	:time	1.2.1.2.1.2.2	immediately	immediate
+::edge	1.2.1.2.1.2	taken	take-01	:destination	1.2.1.2.1.2.1	grounds	grounds
+::edge	1.1		government-organization	:name	1.1.2		name
+::edge	1.2	sentenced	sentence-01	:ARG1	1.2.1	people	person
+::edge	1.2.1.2.1	people	person	:quant	1.2.1.2.1.1	9	9
+::edge	1.2.1.2.1	people	person	:ARG1-of	1.2.1.2.1.2	taken	take-01
+::edge	1.2	sentenced	sentence-01	:ARG2	1.2.2	death	die-01
+::edge	1.2.1.2		include-91	:ARG1	1.2.1.2.1	people	person
+::edge	1.2	sentenced	sentence-01	:location	1.2.3		city
+::edge	1.2	sentenced	sentence-01	:time	1.2.4		date-entity
+::edge	1	reported	report-01	:ARG0	1.1		government-organization
+::edge	1	reported	report-01	:ARG1	1.2	sentenced	sentence-01
+::edge	1.2.1.2.1	people	person	:ARG1-of	1.2.1.2.1.3	shot	shoot-02
+::edge	1.1		government-organization	:wiki	1.1.1		"China_News_Service"
+8	The China News Service report stated that in recent years in Chengdu the number of drug crimes has increased.
+8	The China News Service report stated that in recent years in Chengdu the number of drug crimes has increased .
+8	1-1.1.1.1.2.1 2-1.1.1.1.2.2 3-1.1.1.1.2.3 4-1.1 4-1.1.1 4-1.1.1.r 5-1 7-1.2.r 8-1.2.3.1 9-1.2.3 11-1.2.2.2.1 15-1.2.1.1.1 16-1.2.1.1 17-1.2.1 18-1.2
+::node	"China"	1.1.1.1.2.1	"China"	China
+::node	g	1.1.1.1	government-organization	
+::node	"News"	1.1.1.1.2.2	"News"	News
+::node	"Service"	1.1.1.1.2.3	"Service"	Service
+::node	h	1.2.1	have-quant-91	has
+::node	s	1	state-01	stated
+::node	c2	1.2.2	city	
+::node	y	1.2.3	year	years
+::node	d	1.2.1.1.1	drug	drug
+::node	t	1.1	thing	report
+::node	i	1.2	increase-01	increased
+::node	n	1.1.1.1.2	name	
+::node	"China_News_Service"	1.1.1.1.1	"China_News_Service"	
+::node	"Chengdu"	1.2.2.1	"Chengdu"	
+::node	n2	1.2.2.2	name	
+::node	r2	1.2.3.1	recent	recent
+::node	"Chengdu"	1.2.2.2.1	"Chengdu"	Chengdu
+::node	c	1.2.1.1	crime	crimes
+::node	r	1.1.1	report-01	report
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	China	"China"
+::edge	1.1.1	report	report-01	:ARG0	1.1.1.1		government-organization
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	News	"News"
+::edge	1.1.1.1.2		name	:op3	1.1.1.1.2.3	Service	"Service"
+::edge	1.2	increased	increase-01	:ARG2	1.2.1	has	have-quant-91
+::edge	1.2	increased	increase-01	:location	1.2.2		city
+::edge	1.2	increased	increase-01	:time	1.2.3	years	year
+::edge	1.2.1.1	crimes	crime	:mod	1.2.1.1.1	drug	drug
+::edge	1	stated	state-01	:ARG0	1.1	report	thing
+::edge	1	stated	state-01	:ARG1	1.2	increased	increase-01
+::edge	1.1.1.1		government-organization	:name	1.1.1.1.2		name
+::edge	1.1.1.1		government-organization	:wiki	1.1.1.1.1		"China_News_Service"
+::edge	1.2.2		city	:wiki	1.2.2.1		"Chengdu"
+::edge	1.2.2		city	:name	1.2.2.2		name
+::edge	1.2.3	years	year	:time	1.2.3.1	recent	recent
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Chengdu	"Chengdu"
+::edge	1.2.1	has	have-quant-91	:ARG1	1.2.1.1	crimes	crime
+::edge	1.1	report	thing	:ARG1-of	1.1.1	report	report-01
+9	The report stated that the drug situation in Chengdu is becoming serious as drug criminals are establishing connections with criminals outside the province.
+9	The report stated that the drug situation in Chengdu is becoming serious as drug criminals are establishing connections with criminals outside the province .
+9	1-1.1 1-1.1.1 1-1.1.1.r 2-1 3-1.2.r 5-1.2.1.1 6-1.2.1 7-1.2.1.2.r 8-1.2.1.2.2.1 10-1.2 11-1.2.2 13-1.2.3.1.1.1 14-1.2.3.1.1 16-1.2.3.1 17-1.2.3.1.2 18-1.2.3.1.2.2.r 19-1.2.3.1.2.2 20-1.2.3.1.2.2.1 22-1.2.3.1.2.2.1.1
+::node	c3	1.2.3.1.1	criminal	criminals
+::node	c4	1.2.3.1.2	connect-01	connections
+::node	n	1.2.1.2.2	name	
+::node	s2	1.2.1	situation	situation
+::node	s	1	state-01	stated
+::node	"Chengdu"	1.2.1.2.2.1	"Chengdu"	Chengdu
+::node	s3	1.2.2	serious-41	serious
+::node	p	1.2.3.1.2.2.1.1	province	province
+::node	c	1.2.3.1.2.2.1.1.1	city	
+::node	"Chengdu"	1.2.1.2.1	"Chengdu"	
+::node	c2	1.2.3	cause-01	
+::node	d2	1.2.3.1.1.1	drug	drug
+::node	o	1.2.3.1.2.2.1	outside	outside
+::node	t	1.1	thing	report
+::node	c5	1.2.3.1.2.2	criminal	criminals
+::node	b	1.2	become-01	becoming
+::node	c3	1.2.3.1.2.1	criminal	
+::node	c	1.2.1.2	city	
+::node	s2	1.2.2.1	situation	
+::node	e	1.2.3.1	establish-01	establishing
+::node	d	1.2.1.1	drug	drug
+::node	r	1.1.1	report-01	report
+::edge	1.2.3.1	establishing	establish-01	:ARG0	1.2.3.1.1	criminals	criminal
+::edge	1.2.3.1	establishing	establish-01	:ARG1	1.2.3.1.2	connections	connect-01
+::edge	1.2.1.2		city	:name	1.2.1.2.2		name
+::edge	1.2	becoming	become-01	:ARG1	1.2.1	situation	situation
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	Chengdu	"Chengdu"
+::edge	1.2	becoming	become-01	:ARG2	1.2.2	serious	serious-41
+::edge	1.2.3.1.2.2.1	outside	outside	:op1	1.2.3.1.2.2.1.1	province	province
+::edge	1.2.3.1.2.2.1.1	province	province	:poss-of	1.2.3.1.2.2.1.1.1		city
+::edge	1.2.1.2		city	:wiki	1.2.1.2.1		"Chengdu"
+::edge	1.2	becoming	become-01	:ARG1-of	1.2.3		cause-01
+::edge	1.2.3.1.1	criminals	criminal	:mod	1.2.3.1.1.1	drug	drug
+::edge	1.2.3.1.2.2	criminals	criminal	:location	1.2.3.1.2.2.1	outside	outside
+::edge	1	stated	state-01	:ARG0	1.1	report	thing
+::edge	1.2.3.1.2	connections	connect-01	:ARG1	1.2.3.1.2.2	criminals	criminal
+::edge	1	stated	state-01	:ARG1	1.2	becoming	become-01
+::edge	1.2.3.1.2	connections	connect-01	:ARG1	1.2.3.1.2.1		criminal
+::edge	1.2.1	situation	situation	:location	1.2.1.2		city
+::edge	1.2.2	serious	serious-41	:ARG1	1.2.2.1		situation
+::edge	1.2.3		cause-01	:ARG0	1.2.3.1	establishing	establish-01
+::edge	1.2.1	situation	situation	:mod	1.2.1.1	drug	drug
+::edge	1.1	report	thing	:ARG1-of	1.1.1	report	report-01
+10	Chengdu is the capital of the southwest Sichuan Province.
+10	Chengdu is the capital of the southwest Sichuan Province .
+10	0-1.1.2.1 1-1 3-1.3 4-1 6-1.2 7-1.2.1.2.1 8-1.2.1
+::node	n	1.1.2	name	
+::node	p	1.2.1	province	Province
+::node	h	1	have-org-role-91	of
+::node	"Sichuan"	1.2.1.2.1	"Sichuan"	Sichuan
+::node	"Chengdu"	1.1.2.1	"Chengdu"	Chengdu
+::node	c2	1.1	city	
+::node	s2	1.2	southwest	southwest
+::node	c3	1.3	capital	capital
+::node	n2	1.2.1.2	name	
+::node	"Sichuan"	1.2.1.1	"Sichuan"	
+::node	"Chengdu"	1.1.1	"Chengdu"	
+::edge	1.1		city	:name	1.1.2		name
+::edge	1.2	southwest	southwest	:part-of	1.2.1	Province	province
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Sichuan	"Sichuan"
+::edge	1.1.2		name	:op1	1.1.2.1	Chengdu	"Chengdu"
+::edge	1	of	have-org-role-91	:ARG0	1.1		city
+::edge	1	of	have-org-role-91	:ARG1	1.2	southwest	southwest
+::edge	1	of	have-org-role-91	:ARG2	1.3	capital	capital
+::edge	1.2.1	Province	province	:name	1.2.1.2		name
+::edge	1.2.1	Province	province	:wiki	1.2.1.1		"Sichuan"
+::edge	1.1		city	:wiki	1.1.1		"Chengdu"
+11	At least 36 more drug criminals have been reported executed in China in the past week to mark World Anti-drugs day.
+11	At least 36 more drug criminals have been reported executed in China in the past week to mark World Anti @-@ drugs day .
+11	0-1.1.1.2 1-1.1.1.2 2-1.1.1.2.1 3-1.1.1.3 4-1.1.1.1 5-1.1.1 8-1 9-1.1 10-1.1.2.r 11-1.1.2.2.1 15-1.1.3.2.2 17-1.1.4 18-1.1.4.2.2.1 19-1.1.4.2.2.2 21-1.1.4.2.2.2 22-1.1.4.2.2.3
+::node	d	1.1.1.1	drug	drug
+::node	w	1.1.3.2.2	week	week
+::node	a	1.1.1.2	at-least	least
+::node	"China"	1.1.2.1	"China"	
+::node	1	1.1.3.2.1	1	
+::node	m	1.1.1.3	more	more
+::node	n	1.1.2.2	name	
+::node	n3	1.1.3.1	now	
+::node	"World"	1.1.4.2.2.1	"World"	World
+::node	t	1.1.3.2	temporal-quantity	
+::node	e	1.1.4.1	execute-01	
+::node	f	1.1.4.2	festival	
+::node	"Day"	1.1.4.2.2.3	"Day"	day
+::node	"Anti-drugs"	1.1.4.2.2.2	"Anti-drugs"	drugs
+::node	"China"	1.1.2.2.1	"China"	China
+::node	c2	1.1.2	country	
+::node	n2	1.1.4.2.2	name	
+::node	r	1	report-01	reported
+::node	b	1.1.3	before	
+::node	m2	1.1.4	mark-01	mark
+::node	"International_Day_against_Drug_Abuse_and_Illicit_Trafficking"	1.1.4.2.1	"International_Day_against_Drug_Abuse_and_Illicit_Trafficking"	
+::node	e	1.1	execute-01	executed
+::node	36	1.1.1.2.1	36	36
+::node	c	1.1.1	criminal	criminals
+::edge	1.1.1	criminals	criminal	:mod	1.1.1.1	drug	drug
+::edge	1.1.3.2		temporal-quantity	:unit	1.1.3.2.2	week	week
+::edge	1.1.1	criminals	criminal	:quant	1.1.1.2	least	at-least
+::edge	1.1.2		country	:wiki	1.1.2.1		"China"
+::edge	1.1.3.2		temporal-quantity	:quant	1.1.3.2.1		1
+::edge	1.1.1	criminals	criminal	:mod	1.1.1.3	more	more
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.3		before	:op1	1.1.3.1		now
+::edge	1.1.4.2.2		name	:op1	1.1.4.2.2.1	World	"World"
+::edge	1.1.3		before	:duration	1.1.3.2		temporal-quantity
+::edge	1.1.4	mark	mark-01	:ARG0	1.1.4.1		execute-01
+::edge	1.1.4	mark	mark-01	:ARG1	1.1.4.2		festival
+::edge	1.1.4.2.2		name	:op3	1.1.4.2.2.3	day	"Day"
+::edge	1.1.4.2.2		name	:op2	1.1.4.2.2.2	drugs	"Anti-drugs"
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	China	"China"
+::edge	1.1	executed	execute-01	:location	1.1.2		country
+::edge	1.1.4.2		festival	:name	1.1.4.2.2		name
+::edge	1.1	executed	execute-01	:time	1.1.3		before
+::edge	1.1	executed	execute-01	:purpose	1.1.4	mark	mark-01
+::edge	1.1.4.2		festival	:wiki	1.1.4.2.1		"International_Day_against_Drug_Abuse_and_Illicit_Trafficking"
+::edge	1	reported	report-01	:ARG1	1.1	executed	execute-01
+::edge	1.1.1.2	least	at-least	:op1	1.1.1.2.1	36	36
+::edge	1.1	executed	execute-01	:ARG1	1.1.1	criminals	criminal
+12	In total China executed at least 50 drug criminals as part of the observance.
+12	In total China executed at least 50 drug criminals as part of the observance .
+12	1-1.2.2.2 2-1.1.2.1 3-1 4-1.2.2 5-1.2.2 6-1.2.2.1 7-1.2.1 8-1.2 11-1.3.r 13-1.3
+::node	n	1.1.2	name	
+::node	d	1.2.1	drug	drug
+::node	e	1	execute-01	executed
+::node	a	1.2.2	at-least	least
+::node	"China"	1.1.2.1	"China"	China
+::node	c	1.1	country	
+::node	c2	1.2	criminal	criminals
+::node	o	1.3	observance	observance
+::node	50	1.2.2.1	50	50
+::node	t	1.2.2.2	total-01	total
+::node	"China"	1.1.1	"China"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	criminals	criminal	:mod	1.2.1	drug	drug
+::edge	1.2	criminals	criminal	:quant	1.2.2	least	at-least
+::edge	1.1.2		name	:op1	1.1.2.1	China	"China"
+::edge	1	executed	execute-01	:ARG0	1.1		country
+::edge	1	executed	execute-01	:ARG1	1.2	criminals	criminal
+::edge	1	executed	execute-01	:purpose	1.3	observance	observance
+::edge	1.2.2	least	at-least	:op1	1.2.2.1	50	50
+::edge	1.2.2	least	at-least	:ARG2-of	1.2.2.2	total	total-01
+::edge	1.1		country	:wiki	1.1.1		"China"
+13	Indonesian President Megawati Sukarnoputri adopted a strict position calling for the death sentence for drug traffickers.
+13	Indonesian President Megawati Sukarnoputri adopted a strict position calling for the death sentence for drug traffickers .
+13	0-1.1.3.1.2.1 1-1.1.3.2 2-1.1.2.1 3-1.1.2.2 4-1 6-1.2.1 7-1.2 8-1.2.2 9-1.2.2.1.r 11-1.2.2.1.2 12-1.2.2.1 13-1.2.2.1.1.r 14-1.2.2.1.1.1.1 15-1.2.2.1.1 15-1.2.2.1.1.1 15-1.2.2.1.1.1.r
+::node	"Megawati"	1.1.2.1	"Megawati"	Megawati
+::node	n2	1.1.3.1.2	name	
+::node	p3	1.2.2.1.1	person	traffickers
+::node	"Sukarnoputri"	1.1.2.2	"Sukarnoputri"	Sukarnoputri
+::node	c	1.1.3.1	country	
+::node	p4	1.1.3.2	president	President
+::node	t	1.2.2.1.1.1	traffic-01	traffickers
+::node	p3	1.2.2.1.2.1	person	
+::node	d	1.2.2.1.1.1.1	drug	drug
+::node	"Indonesia"	1.1.3.1.2.1	"Indonesia"	Indonesian
+::node	n	1.1.2	name	
+::node	s	1.2.1	strict	strict
+::node	a	1	adopt-01	adopted
+::node	h	1.1.3	have-org-role-91	
+::node	c2	1.2.2	call-03	calling
+::node	p	1.1	person	
+::node	p2	1.2	position	position
+::node	s2	1.2.2.1	sentence-01	sentence
+::node	"Indonesia"	1.1.3.1.1	"Indonesia"	
+::node	d2	1.2.2.1.2	die-01	death
+::node	"Megawati_Sukarnoputri"	1.1.1	"Megawati_Sukarnoputri"	
+::edge	1.1.2		name	:op1	1.1.2.1	Megawati	"Megawati"
+::edge	1.1.3.1		country	:name	1.1.3.1.2		name
+::edge	1.2.2.1	sentence	sentence-01	:ARG1	1.2.2.1.1	traffickers	person
+::edge	1.1.2		name	:op2	1.1.2.2	Sukarnoputri	"Sukarnoputri"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		country
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	President	president
+::edge	1.2.2.1.1	traffickers	person	:ARG0-of	1.2.2.1.1.1	traffickers	traffic-01
+::edge	1.2.2.1.2	death	die-01	:ARG1	1.2.2.1.2.1		person
+::edge	1.2.2.1.1.1	traffickers	traffic-01	:ARG1	1.2.2.1.1.1.1	drug	drug
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Indonesian	"Indonesia"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	position	position	:mod	1.2.1	strict	strict
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	position	position	:ARG0-of	1.2.2	calling	call-03
+::edge	1	adopted	adopt-01	:ARG0	1.1		person
+::edge	1	adopted	adopt-01	:ARG1	1.2	position	position
+::edge	1.2.2	calling	call-03	:ARG1	1.2.2.1	sentence	sentence-01
+::edge	1.1.3.1		country	:wiki	1.1.3.1.1		"Indonesia"
+::edge	1.2.2.1	sentence	sentence-01	:ARG2	1.2.2.1.2	death	die-01
+::edge	1.1		person	:wiki	1.1.1		"Megawati_Sukarnoputri"
+14	Megawati stated --
+14	Megawati stated --
+14	0-1.1.2.1 1-1
+::node	n	1.1.2	name	
+::node	s	1	state-01	stated
+::node	"Megawati"	1.1.2.1	"Megawati"	Megawati
+::node	p	1.1	person	
+::node	"Megawati_Sukarnoputri"	1.1.1	"Megawati_Sukarnoputri"	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Megawati	"Megawati"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.1		person	:wiki	1.1.1		"Megawati_Sukarnoputri"
+15	Life sentences and other prison sentences are no longer sufficient for those who distribute drugs.
+15	Life sentences and other prison sentences are no longer sufficient for those who distribute drugs .
+15	0-1.2.1.1.1 1-1.2.1 1-1.2.2 2-1.2 3-1.2.2.2 4-1.2.1.1 4-1.2.2.1 5-1.2.1 5-1.2.2 7-1.1 7-1.1.r 9-1 10-1.3.r 11-1.3.1 13-1.3.2 14-1.3.2.1
+::node	p	1.1.1.1	prison	
+::node	p2	1.1.2.1	prison	
+::node	o	1.1.2.2	other	
+::node	s3	1.1.2	sentence-01	
+::node	t	1.2.1	that	sentences
+::node	s	1	suffice-01	sufficient
+::node	d	1.2.2	distribute-01	sentences
+::node	a	1.1	and	no
+::node	p3	1.2	person	and
+::node	-	1.3	-	
+::node	l	1.1.1.1.1	life	
+::node	d2	1.2.2.1	drug	prison
+::node	s2	1.1.1	sentence-01	
+::edge	1.1	no	and	:op2	1.1.2		sentence-01
+::edge	1.2	and	person	:mod	1.2.1	sentences	that
+::edge	1.2	and	person	:ARG0-of	1.2.2	sentences	distribute-01
+::edge	1.1.1		sentence-01	:ARG2	1.1.1.1		prison
+::edge	1.1.2		sentence-01	:ARG2	1.1.2.1		prison
+::edge	1	sufficient	suffice-01	:ARG0	1.1	no	and
+::edge	1.1.2		sentence-01	:mod	1.1.2.2		other
+::edge	1	sufficient	suffice-01	:ARG1	1.2	and	person
+::edge	1	sufficient	suffice-01	:polarity	1.3		-
+::edge	1.1.1.1		prison	:duration	1.1.1.1.1		life
+::edge	1.2.2	sentences	distribute-01	:ARG1	1.2.2.1	prison	drug
+::edge	1.1	no	and	:op1	1.1.1		sentence-01
+16	No sentence is sufficient other than the death sentence.
+16	No sentence is sufficient other than the death sentence .
+16	0-1.1.1 0-1.1.1.r 1-1.1.2 3-1.1 3-1.2 4-1.1.2.1 7-1.2.1.1 8-1.2.1
+::node	-	1.1.2	-	sentence
+::node	s2	1.2.1	sentence-01	sentence
+::node	c	1	contrast-01	
+::node	o	1.1.1.1	other	
+::node	s4	1.1	suffice-01	sufficient
+::node	s	1.2	suffice-01	sufficient
+::node	d	1.2.1.1	die-01	death
+::node	s3	1.1.1	sentence-01	No
+::edge	1.1	sufficient	suffice-01	:polarity	1.1.2	sentence	-
+::edge	1.2	sufficient	suffice-01	:ARG0	1.2.1	sentence	sentence-01
+::edge	1.1.1	No	sentence-01	:mod	1.1.1.1		other
+::edge	1		contrast-01	:ARG1	1.1	sufficient	suffice-01
+::edge	1		contrast-01	:ARG2	1.2	sufficient	suffice-01
+::edge	1.2.1	sentence	sentence-01	:ARG2	1.2.1.1	death	die-01
+::edge	1.1	sufficient	suffice-01	:ARG0	1.1.1	No	sentence-01
+17	The military junta of Myanmar burned narcotics it said were worth more than 1 billion U.S. dollars in its latest attempt to convince critics it is committed to eradicating their drug problem.
+17	The military junta of Myanmar burned narcotics it said were worth more than 1 billion U.S. dollars in its latest attempt to convince critics it is committed to eradicating their drug problem .
+17	1-1.1.1 2-1.1 3-1.1.2.r 4-1.1.2.2.1 5-1 6-1.2 7-1.2.1.2.1 8-1.2.1.2 11-1.2.1.1.1 12-1.2.1.1.1 13-1.2.1.1.1.1 14-1.2.1.1.1.1 15-1.2.1.1.2.1.2.1 16-1.2.1.1.2 17-1.3.r 18-1.3.1 18-1.3.1.r 19-1.3.3 19-1.3.3.1 19-1.3.3.1.r 20-1.3 22-1.3.2 26-1.3.2.3 27-1.3.2.3.2.r 28-1.3.2.3.2 29-1.3.2.3.2.2.2 29-1.3.2.3.2.2.2.r 30-1.3.2.3.2.2.1 31-1.3.2.3.2.2
+::node	j	1.3.2.3.1	junta	
+::node	e	1.3.2.3.2	eradicate-01	eradicating
+::node	d2	1.3.2.3.2.2.1	drug	drug
+::node	c6	1.3.2.2.1	criticize-01	
+::node	j	1.3.2.3.2.2.2	junta	their
+::node	j	1.3.2.1	junta	
+::node	"Myanmar"	1.1.2.2.1	"Myanmar"	Myanmar
+::node	p2	1.3.2.2	person	
+::node	m4	1.3.3.1	most	latest
+::node	c5	1.3.2.3	commit-01	committed
+::node	n3	1.2.1.1.2.1.2	name	
+::node	"United_States"	1.2.1.1.2.1.1	"United_States"	
+::node	s	1.2.1.2	say-01	said
+::node	m2	1.2.1.1	monetary-quantity	
+::node	"Burma"	1.1.2.1	"Burma"	
+::node	n	1.1.2.2	name	
+::node	1000000000	1.2.1.1.1.1	1000000000	billion
+::node	c3	1.2.1.1.2.1	country	
+::node	"U.S."	1.2.1.1.2.1.2.1	"U.S."	U.S.
+::node	p	1.3.2.3.2.2	problem	problem
+::node	j	1.3.2.3.2.1	junta	
+::node	c	1.1.2	country	
+::node	c2	1.2.1	cost-01	
+::node	b	1	burn-01	burned
+::node	j	1.3.1	junta	its
+::node	d	1.2.1.1.2	dollar	dollars
+::node	j	1.2.1.2.1	junta	it
+::node	c4	1.3.2	convince-01	convince
+::node	m3	1.2.1.1.1	more-than	than
+::node	l	1.3.3	late	latest
+::node	j	1.1	junta	junta
+::node	n2	1.2	narcotic	narcotics
+::node	a	1.3	attempt-01	attempt
+::node	m	1.1.1	military	military
+::edge	1.3.2.3	committed	commit-01	:ARG1	1.3.2.3.1		junta
+::edge	1.3.2.3	committed	commit-01	:ARG2	1.3.2.3.2	eradicating	eradicate-01
+::edge	1.3.2.3.2.2	problem	problem	:topic	1.3.2.3.2.2.1	drug	drug
+::edge	1.3.2.2		person	:ARG0-of	1.3.2.2.1		criticize-01
+::edge	1.3.2.3.2.2	problem	problem	:poss	1.3.2.3.2.2.2	their	junta
+::edge	1.3.2	convince	convince-01	:ARG0	1.3.2.1		junta
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Myanmar	"Myanmar"
+::edge	1.3.2	convince	convince-01	:ARG1	1.3.2.2		person
+::edge	1.3.3	latest	late	:degree	1.3.3.1	latest	most
+::edge	1.3.2	convince	convince-01	:ARG2	1.3.2.3	committed	commit-01
+::edge	1.2.1.1.2.1		country	:name	1.2.1.1.2.1.2		name
+::edge	1.2.1.1.2.1		country	:wiki	1.2.1.1.2.1.1		"United_States"
+::edge	1.2.1		cost-01	:ARG1-of	1.2.1.2	said	say-01
+::edge	1.2.1		cost-01	:ARG2	1.2.1.1		monetary-quantity
+::edge	1.1.2		country	:wiki	1.1.2.1		"Burma"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.2.1.1.1	than	more-than	:op1	1.2.1.1.1.1	billion	1000000000
+::edge	1.2.1.1.2	dollars	dollar	:mod	1.2.1.1.2.1		country
+::edge	1.2.1.1.2.1.2		name	:op1	1.2.1.1.2.1.2.1	U.S.	"U.S."
+::edge	1.3.2.3.2	eradicating	eradicate-01	:ARG1	1.3.2.3.2.2	problem	problem
+::edge	1.3.2.3.2	eradicating	eradicate-01	:ARG0	1.3.2.3.2.1		junta
+::edge	1.1	junta	junta	:poss	1.1.2		country
+::edge	1.2	narcotics	narcotic	:ARG1-of	1.2.1		cost-01
+::edge	1.3	attempt	attempt-01	:ARG0	1.3.1	its	junta
+::edge	1.2.1.1		monetary-quantity	:unit	1.2.1.1.2	dollars	dollar
+::edge	1.2.1.2	said	say-01	:ARG0	1.2.1.2.1	it	junta
+::edge	1.3	attempt	attempt-01	:ARG1	1.3.2	convince	convince-01
+::edge	1.2.1.1		monetary-quantity	:quant	1.2.1.1.1	than	more-than
+::edge	1.3	attempt	attempt-01	:mod	1.3.3	latest	late
+::edge	1	burned	burn-01	:ARG0	1.1	junta	junta
+::edge	1	burned	burn-01	:ARG1	1.2	narcotics	narcotic
+::edge	1	burned	burn-01	:time	1.3	attempt	attempt-01
+::edge	1.1	junta	junta	:mod	1.1.1	military	military
+18	The junta accompanied by military pageant ignited an incinerator into which workers shoveled bags of heroin bricks and amphetamines.
+18	The junta accompanied by military pageant ignited an incinerator into which workers shoveled bags of heroin bricks and amphetamines .
+18	1-1.1 2-1.1.1 3-1.1.1.1.r 4-1.1.1.1.1 5-1.1.1.1 6-1 8-1.2 8-1.2.1 8-1.2.1.r 9-1.2.2.r 11-1.2.2.1 11-1.2.2.1.1 11-1.2.2.1.1.r 12-1.2.2 13-1.2.2.2.1.2 14-1.2.2.2.1.2.r 15-1.2.2.2.1.1 16-1.2.2.2.1 17-1.2.2.2 18-1.2.2.2.2
+::node	p	1.1.1.1	pageant	pageant
+::node	w	1.2.2.1.1	work-01	workers
+::node	i2	1.2.1	incinerate-01	incinerator
+::node	i	1	ignite-01	ignited
+::node	s	1.2.2	shovel-01	shoveled
+::node	j	1.1	junta	junta
+::node	t	1.2	thing	incinerator
+::node	m	1.1.1.1.1	military	military
+::node	p2	1.2.2.1	person	workers
+::node	h	1.2.2.2.1.1	heroin	heroin
+::node	a2	1.2.2.2	and	and
+::node	b	1.2.2.2.1	brick	bricks
+::node	b2	1.2.2.2.1.2	bag	bags
+::node	a3	1.2.2.2.2	amphetamine	amphetamines
+::node	b2	1.2.2.2.2.1	bag	
+::node	a	1.1.1	accompany-01	accompanied
+::edge	1.1.1	accompanied	accompany-01	:ARG0	1.1.1.1	pageant	pageant
+::edge	1.2.2.1	workers	person	:ARG0-of	1.2.2.1.1	workers	work-01
+::edge	1.2	incinerator	thing	:ARG0-of	1.2.1	incinerator	incinerate-01
+::edge	1.2	incinerator	thing	:destination-of	1.2.2	shoveled	shovel-01
+::edge	1	ignited	ignite-01	:ARG0	1.1	junta	junta
+::edge	1	ignited	ignite-01	:ARG1	1.2	incinerator	thing
+::edge	1.1.1.1	pageant	pageant	:mod	1.1.1.1.1	military	military
+::edge	1.2.2	shoveled	shovel-01	:ARG0	1.2.2.1	workers	person
+::edge	1.2.2.2.1	bricks	brick	:consist-of	1.2.2.2.1.1	heroin	heroin
+::edge	1.2.2	shoveled	shovel-01	:ARG1	1.2.2.2	and	and
+::edge	1.2.2.2	and	and	:op1	1.2.2.2.1	bricks	brick
+::edge	1.2.2.2.1	bricks	brick	:quant	1.2.2.2.1.2	bags	bag
+::edge	1.2.2.2	and	and	:op2	1.2.2.2.2	amphetamines	amphetamine
+::edge	1.2.2.2.2	amphetamines	amphetamine	:quant	1.2.2.2.2.1		bag
+::edge	1.1	junta	junta	:ARG1-of	1.1.1	accompanied	accompany-01
+19	Myanmar's top ruler Senior General Than Shwe and international diplomats attended the burning ceremony in Yangon.
+19	Myanmar 's top ruler Senior General Than Shwe and international diplomats attended the burning ceremony in Yangon .
+19	0-1.1.1.3.1.2.1 1-1.1.1.5 2-1.1.1.4 3-1.1.1.5.3 4-1.1.1.5.2.1 5-1.1.1.5.2 6-1.1.1.2.1 7-1.1.1.2.2 8-1.1 9-1.1.2.1 10-1.1.2.2.1 11-1 13-1.2.1 14-1.2 15-1.2.2.r 16-1.2.2.2.1
+::node	d	1.1.2.2.1	diplomat	diplomats
+::node	"Shwe"	1.1.1.2.2	"Shwe"	Shwe
+::node	c	1.1.1.3.1	country	
+::node	"Than"	1.1.1.2.1	"Than"	Than
+::node	"Yangon"	1.2.2.1	"Yangon"	
+::node	n3	1.2.2.2	name	
+::node	"Yangon"	1.2.2.2.1	"Yangon"	Yangon
+::node	s	1.1.1.5.2.1	senior	Senior
+::node	"Than_Shwe"	1.1.1.1	"Than_Shwe"	
+::node	n	1.1.1.2	name	
+::node	i	1.1.2.1	international	international
+::node	r	1.1.1.3	rule-03	
+::node	r	1.1.1.5.3	rule-03	ruler
+::node	h2	1.1.2.2	have-org-role-91	
+::node	t	1.1.1.4	top	top
+::node	g	1.1.1.5.2	general	General
+::node	h	1.1.1.5	have-org-role-91	's
+::node	c	1.1.1.5.1	country	
+::node	"Myanmar"	1.1.1.3.1.2.1	"Myanmar"	Myanmar
+::node	p2	1.1.2	person	
+::node	b	1.2.1	burn-01	burning
+::node	a	1	attend-01	attended
+::node	c3	1.2.2	city	
+::node	a2	1.1	and	and
+::node	c2	1.2	ceremony	ceremony
+::node	"Burma"	1.1.1.3.1.1	"Burma"	
+::node	p	1.1.1	person	
+::node	n2	1.1.1.3.1.2	name	
+::edge	1.1.2.2		have-org-role-91	:ARG2	1.1.2.2.1	diplomats	diplomat
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Shwe	"Shwe"
+::edge	1.1.1.3		rule-03	:ARG1	1.1.1.3.1		country
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Than	"Than"
+::edge	1.2.2		city	:wiki	1.2.2.1		"Yangon"
+::edge	1.2.2		city	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Yangon	"Yangon"
+::edge	1.1.1.5.2	General	general	:mod	1.1.1.5.2.1	Senior	senior
+::edge	1.1.1		person	:wiki	1.1.1.1		"Than_Shwe"
+::edge	1.1.1		person	:name	1.1.1.2		name
+::edge	1.1.2		person	:mod	1.1.2.1	international	international
+::edge	1.1.1		person	:ARG0-of	1.1.1.3		rule-03
+::edge	1.1.1.5	's	have-org-role-91	:ARG3	1.1.1.5.3	ruler	rule-03
+::edge	1.1.2		person	:ARG0-of	1.1.2.2		have-org-role-91
+::edge	1.1.1		person	:mod	1.1.1.4	top	top
+::edge	1.1.1.5	's	have-org-role-91	:ARG2	1.1.1.5.2	General	general
+::edge	1.1.1		person	:ARG0-of	1.1.1.5	's	have-org-role-91
+::edge	1.1.1.5	's	have-org-role-91	:ARG1	1.1.1.5.1		country
+::edge	1.1.1.3.1.2		name	:op1	1.1.1.3.1.2.1	Myanmar	"Myanmar"
+::edge	1.1	and	and	:op2	1.1.2		person
+::edge	1.2	ceremony	ceremony	:location-of	1.2.1	burning	burn-01
+::edge	1.2	ceremony	ceremony	:location	1.2.2		city
+::edge	1	attended	attend-01	:ARG0	1.1	and	and
+::edge	1	attended	attend-01	:ARG1	1.2	ceremony	ceremony
+::edge	1.1.1.3.1		country	:wiki	1.1.1.3.1.1		"Burma"
+::edge	1.1	and	and	:op1	1.1.1		person
+::edge	1.1.1.3.1		country	:name	1.1.1.3.1.2		name
+20	3027 kilograms (6650 pounds) of opium, 240 kilograms of heroin, 434 kilograms of marijuana, 34.9 million amphetamine tablets, 4 million ephedrine tablets and 2865 kilograms of powdered ephedrine were burned.
+20	3027 kilograms ( 6650 pounds ) of opium , 240 kilograms of heroin , 434 kilograms of marijuana , 34.9 million amphetamine tablets , 4 million ephedrine tablets and 2865 kilograms of powdered ephedrine were burned .
+20	0-1.1.1.1.1 1-1.1.1.1.2 7-1.1.1 9-1.1.2.1.1 10-1.1.2.1.2 11-1.1.2.1.r 12-1.1.2 14-1.1.3.1.1 15-1.1.3.1.2 16-1.1.3.1.r 17-1.1.3 19-1.1.4.1 20-1.1.4.1 21-1.1.4.2 22-1.1.4 24-1.1.5.1 25-1.1.5.1 26-1.1.5.2 27-1.1.5 28-1.1 29-1.1.6.2.1 30-1.1.6.2.2 31-1.1.6.2.r 32-1.1.6.1 33-1.1.6 35-1
+::node	434	1.1.3.1.2	434	kilograms
+::node	240	1.1.2.1.2	240	kilograms
+::node	k2	1.1.2.1.1	kilogram	240
+::node	m5	1.1.6.2	mass-quantity	
+::node	3027	1.1.1.1.2	3027	kilograms
+::node	k	1.1.1.1.1	kilogram	3027
+::node	m	1.1.1.1	mass-quantity	
+::node	m2	1.1.2.1	mass-quantity	
+::node	m4	1.1.3.1	mass-quantity	
+::node	a2	1.1.4.1	amphetamine	million
+::node	34900000	1.1.4.2	34900000	amphetamine
+::node	e	1.1.5.1	ephedrine	million
+::node	4000000	1.1.5.2	4000000	ephedrine
+::node	p	1.1.6.1	powder-01	powdered
+::node	2865	1.1.6.2.2	2865	kilograms
+::node	k4	1.1.6.2.1	kilogram	2865
+::node	h	1.1.2	heroin	heroin
+::node	b	1	burn-01	burned
+::node	m3	1.1.3	marijuana	marijuana
+::node	t	1.1.4	tablet	tablets
+::node	t2	1.1.5	tablet	tablets
+::node	a	1.1	and	and
+::node	e2	1.1.6	ephedrine	ephedrine
+::node	k3	1.1.3.1.1	kilogram	434
+::node	o	1.1.1	opium	opium
+::edge	1.1.1	opium	opium	:quant	1.1.1.1		mass-quantity
+::edge	1.1.2	heroin	heroin	:quant	1.1.2.1		mass-quantity
+::edge	1.1.3.1		mass-quantity	:quant	1.1.3.1.2	kilograms	434
+::edge	1.1.3	marijuana	marijuana	:quant	1.1.3.1		mass-quantity
+::edge	1.1.4	tablets	tablet	:consist-of	1.1.4.1	million	amphetamine
+::edge	1.1.4	tablets	tablet	:quant	1.1.4.2	amphetamine	34900000
+::edge	1.1.5	tablets	tablet	:consist-of	1.1.5.1	million	ephedrine
+::edge	1.1.5	tablets	tablet	:quant	1.1.5.2	ephedrine	4000000
+::edge	1.1.6	ephedrine	ephedrine	:ARG1-of	1.1.6.1	powdered	powder-01
+::edge	1.1.2.1		mass-quantity	:quant	1.1.2.1.2	kilograms	240
+::edge	1.1.6.2		mass-quantity	:quant	1.1.6.2.2	kilograms	2865
+::edge	1.1.2.1		mass-quantity	:unit	1.1.2.1.1	240	kilogram
+::edge	1.1.6.2		mass-quantity	:unit	1.1.6.2.1	2865	kilogram
+::edge	1.1	and	and	:op2	1.1.2	heroin	heroin
+::edge	1.1	and	and	:op3	1.1.3	marijuana	marijuana
+::edge	1.1	and	and	:op4	1.1.4	tablets	tablet
+::edge	1.1	and	and	:op5	1.1.5	tablets	tablet
+::edge	1	burned	burn-01	:ARG1	1.1	and	and
+::edge	1.1	and	and	:op6	1.1.6	ephedrine	ephedrine
+::edge	1.1.6	ephedrine	ephedrine	:quant	1.1.6.2		mass-quantity
+::edge	1.1.1.1		mass-quantity	:quant	1.1.1.1.2	kilograms	3027
+::edge	1.1.1.1		mass-quantity	:unit	1.1.1.1.1	3027	kilogram
+::edge	1.1.3.1		mass-quantity	:unit	1.1.3.1.1	434	kilogram
+::edge	1.1	and	and	:op1	1.1.1	opium	opium
+21	Myanmar anti-drugs official Brigadier-General Zaw Win stated in a speech before the burning that the Myanmar government is aware of the serious threat that drugs pose and considers it a national duty to do all it can to eradicate the problem.
+21	Myanmar anti @-@ drugs official Brigadier @-@ General Zaw Win stated in a speech before the burning that the Myanmar government is aware of the serious threat that drugs pose and considers it a national duty to do all it can to eradicate the problem .
+21	0-1.1.3.1.2.1 1-1.1.3.2.1 3-1.1.3.2.1.1 4-1.1.3.2 5-1.1.4.2 7-1.1.4.2 8-1.1.2.1 9-1.1.2.2 10-1 14-1.3.2 16-1.3.2.1 19-1.3.1 20-1.2 20-1.2.1 20-1.2.1.r 22-1.2.2 23-1.2.2.1.r 25-1.2.2.1.2 26-1.2.2.1 28-1.2.2.1.1 29-1.2.2.1 31-1.2.3 34-1.2.3.1.1 35-1.2.3.1 42-1.2.3.1.2 44-1.2.3.1.2.1
+::node	n	1.1.3.1.2	name	
+::node	o2	1.1.3.2.1	oppose-01	anti
+::node	b3	1.3.2.1	burn-01	burning
+::node	t	1.2.2.1	threaten-01	pose
+::node	d2	1.2.3.1	duty	duty
+::node	s3	1.2.2.1.2	serious	serious
+::node	c	1.2.1.1	country	
+::node	"Zaw"	1.1.2.1	"Zaw"	Zaw
+::node	d	1.2.2.1.1	drug	drugs
+::node	"Win"	1.1.2.2	"Win"	Win
+::node	c	1.1.3.1	country	
+::node	o	1.1.3.2	official	official
+::node	c	1.1.4.1	country	
+::node	b	1.1.4.2	brigadier-general	General
+::node	n3	1.2.3.1.1	nation	national
+::node	e	1.2.3.1.2	eradicate-01	eradicate
+::node	"Myanmar"	1.1.3.1.2.1	"Myanmar"	Myanmar
+::node	n2	1.1.2	name	
+::node	g2	1.2.1	govern-01	government
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	
+::node	r	1.2.2	realize-01	aware
+::node	p2	1.3.1	person	Myanmar
+::node	h2	1.1.4	have-org-role-91	
+::node	c2	1.2.3	consider-01	considers
+::node	b2	1.3.2	before	before
+::node	p2	1.1	person	
+::node	g	1.2	government-organization	government
+::node	p	1.2.3.1.2.1	problem	problem
+::node	s2	1.3	speak-01	
+::node	d3	1.1.3.2.1.1	drug	drugs
+::node	"Burma"	1.1.3.1.1	"Burma"	
+::node	-	1.1.1	-	
+::edge	1.1.3.1		country	:name	1.1.3.1.2		name
+::edge	1.1.3.2	official	official	:ARG0-of	1.1.3.2.1	anti	oppose-01
+::edge	1.3.2	before	before	:op1	1.3.2.1	burning	burn-01
+::edge	1.2.2	aware	realize-01	:ARG1	1.2.2.1	pose	threaten-01
+::edge	1.2.3	considers	consider-01	:ARG1	1.2.3.1	duty	duty
+::edge	1.2.2.1	pose	threaten-01	:mod	1.2.2.1.2	serious	serious
+::edge	1.2.1	government	govern-01	:ARG1	1.2.1.1		country
+::edge	1.1.2		name	:op1	1.1.2.1	Zaw	"Zaw"
+::edge	1.2.2.1	pose	threaten-01	:ARG0	1.2.2.1.1	drugs	drug
+::edge	1.1.2		name	:op2	1.1.2.2	Win	"Win"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		country
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	official	official
+::edge	1.1.4		have-org-role-91	:ARG1	1.1.4.1		country
+::edge	1.1.4		have-org-role-91	:ARG2	1.1.4.2	General	brigadier-general
+::edge	1.2.3.1	duty	duty	:poss	1.2.3.1.1	national	nation
+::edge	1.2.3.1	duty	duty	:domain	1.2.3.1.2	eradicate	eradicate-01
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Myanmar	"Myanmar"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	government	government-organization	:ARG0-of	1.2.1	government	govern-01
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	government	government-organization	:ARG0-of	1.2.2	aware	realize-01
+::edge	1.3		speak-01	:ARG0	1.3.1	Myanmar	person
+::edge	1.1		person	:ARG0-of	1.1.4		have-org-role-91
+::edge	1.2	government	government-organization	:ARG0-of	1.2.3	considers	consider-01
+::edge	1.3		speak-01	:time	1.3.2	before	before
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	government	government-organization
+::edge	1.2.3.1.2	eradicate	eradicate-01	:ARG1	1.2.3.1.2.1	problem	problem
+::edge	1	stated	state-01	:time	1.3		speak-01
+::edge	1.1.3.2.1	anti	oppose-01	:ARG1	1.1.3.2.1.1	drugs	drug
+::edge	1.1.3.1		country	:wiki	1.1.3.1.1		"Burma"
+::edge	1.1		person	:wiki	1.1.1		-
+22	U.S. Drug Enforcement Agency officials helped conduct spot checks to verify the destruction.
+22	U.S. Drug Enforcement Agency officials helped conduct spot checks to verify the destruction .
+22	0-1.1.1.1.2.1 1-1.1.1.1.2.2 2-1.1.1.1.2.3 3-1.1.1.1.2.4 4-1.1.1.2 5-1 6-1.2 7-1.2.2.3 8-1.2.2 10-1.2.2.2 12-1.2.2.2.2
+::node	"U.S."	1.1.1.1.2.1	"U.S."	U.S.
+::node	g	1.1.1.1	government-organization	
+::node	"Drug"	1.1.1.1.2.2	"Drug"	Drug
+::node	"Enforcement"	1.1.1.1.2.3	"Enforcement"	Enforcement
+::node	o	1.1.1.2	official	officials
+::node	"Agency"	1.1.1.1.2.4	"Agency"	Agency
+::node	p	1.2.1	person	
+::node	h	1	help-01	helped
+::node	c2	1.2.2	check-01	checks
+::node	p	1.1	person	
+::node	c	1.2	conduct-01	conduct
+::node	s	1.2.2.3	spot	spot
+::node	n	1.1.1.1.2	name	
+::node	"Drug_Enforcement_Administration"	1.1.1.1.1	"Drug_Enforcement_Administration"	
+::node	p	1.2.2.1	person	
+::node	v	1.2.2.2	verify-01	verify
+::node	p	1.2.2.2.1	person	
+::node	d	1.2.2.2.2	destroy-01	destruction
+::node	h2	1.1.1	have-org-role-91	
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	U.S.	"U.S."
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		government-organization
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	Drug	"Drug"
+::edge	1.1.1.1.2		name	:op3	1.1.1.1.2.3	Enforcement	"Enforcement"
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.1.1.1.2		name	:op4	1.1.1.1.2.4	Agency	"Agency"
+::edge	1.2	conduct	conduct-01	:ARG0	1.2.1		person
+::edge	1.2	conduct	conduct-01	:ARG1	1.2.2	checks	check-01
+::edge	1	helped	help-01	:ARG0	1.1		person
+::edge	1	helped	help-01	:ARG1	1.2	conduct	conduct-01
+::edge	1.2.2	checks	check-01	:mod	1.2.2.3	spot	spot
+::edge	1.1.1.1		government-organization	:name	1.1.1.1.2		name
+::edge	1.1.1.1		government-organization	:wiki	1.1.1.1.1		"Drug_Enforcement_Administration"
+::edge	1.2.2	checks	check-01	:ARG0	1.2.2.1		person
+::edge	1.2.2	checks	check-01	:ARG2	1.2.2.2	verify	verify-01
+::edge	1.2.2.2	verify	verify-01	:ARG0	1.2.2.2.1		person
+::edge	1.2.2.2	verify	verify-01	:ARG1	1.2.2.2.2	destruction	destroy-01
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+23	Myanmar is the world's largest producer of illicit opium according to the latest U.S. State Department anti-narcotics report.
+23	Myanmar is the world 's largest producer of illicit opium according to the latest U.S. State Department anti @-@ narcotics report .
+23	0-1.2.1.2.1 3-1.2.1.3 3-1.2.4 5-1.2.3 5-1.2.3.1 5-1.2.3.1.r 6-1.2 7-1.2.2.r 8-1.2.2.1 9-1.2.2 10-1 11-1 13-1.1.2 13-1.1.2.1 13-1.1.2.1.r 14-1.1.1.1.2.1 15-1.1.1.1.2.2 16-1.1.1.1.2.3 17-1.1.1.2 19-1.1.1.2.1 20-1.1 20-1.1.1 20-1.1.1.r
+::node	"U.S."	1.1.1.1.2.1	"U.S."	U.S.
+::node	g	1.1.1.1	government-organization	
+::node	"State"	1.1.1.1.2.2	"State"	State
+::node	"Department"	1.1.1.1.2.3	"Department"	Department
+::node	o2	1.1.1.2	oppose-01	anti
+::node	m2	1.1.2.1	most	latest
+::node	l2	1.1.2	late	latest
+::node	c	1.2.1	country	
+::node	s	1	say-01	to
+::node	o	1.2.2	opium	opium
+::node	"Myanmar"	1.2.1.2.1	"Myanmar"	Myanmar
+::node	l	1.2.3	large	largest
+::node	w2	1.2.4	world	world
+::node	t	1.1	thing	report
+::node	p	1.2	produce-01	producer
+::node	n	1.1.1.1.2	name	
+::node	n3	1.1.1.2.1	narcotic	narcotics
+::node	"United_States_Department_of_State"	1.1.1.1.1	"United_States_Department_of_State"	
+::node	n2	1.2.1.2	name	
+::node	i	1.2.2.1	illicit	illicit
+::node	w	1.2.1.3	world	world
+::node	m	1.2.3.1	most	largest
+::node	"Burma"	1.2.1.1	"Burma"	
+::node	r	1.1.1	report-01	report
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	U.S.	"U.S."
+::edge	1.1.1	report	report-01	:ARG0	1.1.1.1		government-organization
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	State	"State"
+::edge	1.1.1.1.2		name	:op3	1.1.1.1.2.3	Department	"Department"
+::edge	1.1.1	report	report-01	:ARG0-of	1.1.1.2	anti	oppose-01
+::edge	1.1.2	latest	late	:degree	1.1.2.1	latest	most
+::edge	1.1	report	thing	:mod	1.1.2	latest	late
+::edge	1.2	producer	produce-01	:ARG0	1.2.1		country
+::edge	1.2	producer	produce-01	:ARG1	1.2.2	opium	opium
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Myanmar	"Myanmar"
+::edge	1.2	producer	produce-01	:degree	1.2.3	largest	large
+::edge	1.2	producer	produce-01	:compared-to	1.2.4	world	world
+::edge	1	to	say-01	:ARG0	1.1	report	thing
+::edge	1	to	say-01	:ARG1	1.2	producer	produce-01
+::edge	1.1.1.1		government-organization	:name	1.1.1.1.2		name
+::edge	1.1.1.2	anti	oppose-01	:ARG1	1.1.1.2.1	narcotics	narcotic
+::edge	1.1.1.1		government-organization	:wiki	1.1.1.1.1		"United_States_Department_of_State"
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.2	opium	opium	:mod	1.2.2.1	illicit	illicit
+::edge	1.2.1		country	:poss	1.2.1.3	world	world
+::edge	1.2.3	largest	large	:degree	1.2.3.1	largest	most
+::edge	1.2.1		country	:wiki	1.2.1.1		"Burma"
+::edge	1.1	report	thing	:ARG1-of	1.1.1	report	report-01
+24	Myanmar is also the primary source of amphetamine-type stimulants in Asia.
+24	Myanmar is also the primary source of amphetamine @-@ type stimulants in Asia .
+24	0-1.2.2.1 1-1 2-1.5 4-1.3 5-1 7-1.1.1 9-1.1.1 10-1.1 12-1.4.2.1
+::node	"Burma"	1.2.1	"Burma"	
+::node	b	1	be-from-91	source
+::node	n	1.2.2	name	
+::node	"Asia"	1.4.1	"Asia"	
+::node	n2	1.4.2	name	
+::node	s	1.1	stimulant	stimulants
+::node	c	1.2	country	
+::node	p	1.3	primary	primary
+::node	c2	1.4	continent	
+::node	a3	1.5	also	also
+::node	"Myanmar"	1.2.2.1	"Myanmar"	Myanmar
+::node	"Asia"	1.4.2.1	"Asia"	Asia
+::node	a	1.1.1	amphetamine-type	type
+::edge	1.2		country	:wiki	1.2.1		"Burma"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.4		continent	:wiki	1.4.1		"Asia"
+::edge	1.4		continent	:name	1.4.2		name
+::edge	1	source	be-from-91	:ARG1	1.1	stimulants	stimulant
+::edge	1	source	be-from-91	:ARG2	1.2		country
+::edge	1	source	be-from-91	:mod	1.3	primary	primary
+::edge	1	source	be-from-91	:location	1.4		continent
+::edge	1	source	be-from-91	:mod	1.5	also	also
+::edge	1.2.2		name	:op1	1.2.2.1	Myanmar	"Myanmar"
+::edge	1.4.2		name	:op1	1.4.2.1	Asia	"Asia"
+::edge	1.1	stimulants	stimulant	:mod	1.1.1	type	amphetamine-type
+25	Critics claim narcotics trade finances Myanmar's military government but the Government states it is doing all it can to restrict drug trade and wants more international help to do so.
+25	Critics claim narcotics trade finances Myanmar 's military government but the Government states it is doing all it can to restrict drug trade and wants more international help to do so .
+25	1-1.1 2-1.1.2.1 3-1.1.2 4-1.1.2.2 5-1.1.2.2.1.1.1.2.1 6-1.1.2.2.1.1.1.r 7-1.1.2.2.1.2 8-1.1.2.2.1 8-1.1.2.2.1.1 8-1.1.2.2.1.1.r 9-1 11-1.2.1 11-1.2.1.1 11-1.2.1.1.r 11-1.2.2.2.2.1 12-1.2 15-1.2.2.1.2 20-1.2.2.1 22-1.2.2.1.2 23-1.2.2 24-1.2.2.2 25-1.2.2.2.2.4 26-1.2.2.2.2.1.1 27-1.2.2.2.2 29-1.1.2
+::node	g	1.1.2.2.1	government-organization	government
+::node	c4	1.1.2.2.1.1.1	country	
+::node	g2	1.1.2.2.1.1	govern-01	government
+::node	"Myanmar"	1.1.2.2.1.1.1.2.1	"Myanmar"	Myanmar
+::node	m	1.1.2.2.1.2	military	military
+::node	r	1.2.2.1	restrict-01	restrict
+::node	w	1.2.2.2	want-01	wants
+::node	t	1.2.2.1.2	trade-01	trade
+::node	g3	1.2.2.2.1	government-organization	
+::node	r	1.2.2.2.2.2	restrict-01	
+::node	g4	1.2.1.1	govern-01	Government
+::node	h	1.2.2.2.2	help-01	help
+::node	g5	1.2.2.2.2.1	government-organization	Government
+::node	m2	1.2.2.2.2.4	more	more
+::node	g3	1.2.2.2.2.3	government-organization	
+::node	c3	1.1.1.1	criticize-01	
+::node	n	1.1.2.1	narcotic	narcotics
+::node	g3	1.2.2.1.1	government-organization	
+::node	f	1.1.2.2	finance-01	finances
+::node	"Burma"	1.1.2.2.1.1.1.1	"Burma"	
+::node	n2	1.1.2.2.1.1.1.2	name	
+::node	t	1.1.2	trade-01	do
+::node	g3	1.2.1	government-organization	Government
+::node	c	1	contrast-01	but
+::node	a	1.2.2	and	and
+::node	c4	1.2.1.1.1	country	
+::node	c2	1.1	claim-01	claim
+::node	s	1.2	state-01	states
+::node	i	1.2.2.2.2.1.1	international	international
+::node	p	1.1.1	person	
+::edge	1.1.2.2	finances	finance-01	:ARG1	1.1.2.2.1	government	government-organization
+::edge	1.1.2.2.1.1	government	govern-01	:ARG1	1.1.2.2.1.1.1		country
+::edge	1.1.2.2.1	government	government-organization	:ARG0-of	1.1.2.2.1.1	government	govern-01
+::edge	1.1.2.2.1.1.1.2		name	:op1	1.1.2.2.1.1.1.2.1	Myanmar	"Myanmar"
+::edge	1.1.2.2.1	government	government-organization	:mod	1.1.2.2.1.2	military	military
+::edge	1.2.2	and	and	:op1	1.2.2.1	restrict	restrict-01
+::edge	1.2.2	and	and	:op2	1.2.2.2	wants	want-01
+::edge	1.2.2.1	restrict	restrict-01	:ARG1	1.2.2.1.2	trade	trade-01
+::edge	1.2.2.2	wants	want-01	:ARG0	1.2.2.2.1		government-organization
+::edge	1.2.2.2.2	help	help-01	:ARG1	1.2.2.2.2.2		restrict-01
+::edge	1.2.1	Government	government-organization	:ARG0-of	1.2.1.1	Government	govern-01
+::edge	1.2.2.2	wants	want-01	:ARG1	1.2.2.2.2	help	help-01
+::edge	1.2.2.2.2	help	help-01	:ARG0	1.2.2.2.2.1	Government	government-organization
+::edge	1.2.2.2.2	help	help-01	:degree	1.2.2.2.2.4	more	more
+::edge	1.2.2.2.2	help	help-01	:ARG2	1.2.2.2.2.3		government-organization
+::edge	1.1.1		person	:ARG0-of	1.1.1.1		criticize-01
+::edge	1.1.2	do	trade-01	:ARG1	1.1.2.1	narcotics	narcotic
+::edge	1.2.2.1	restrict	restrict-01	:ARG0	1.2.2.1.1		government-organization
+::edge	1.1.2	do	trade-01	:ARG0-of	1.1.2.2	finances	finance-01
+::edge	1.1.2.2.1.1.1		country	:wiki	1.1.2.2.1.1.1.1		"Burma"
+::edge	1.1.2.2.1.1.1		country	:name	1.1.2.2.1.1.1.2		name
+::edge	1.1	claim	claim-01	:ARG1	1.1.2	do	trade-01
+::edge	1.2	states	state-01	:ARG0	1.2.1	Government	government-organization
+::edge	1.2	states	state-01	:ARG1	1.2.2	and	and
+::edge	1.2.1.1	Government	govern-01	:ARG1	1.2.1.1.1		country
+::edge	1	but	contrast-01	:ARG1	1.1	claim	claim-01
+::edge	1	but	contrast-01	:ARG2	1.2	states	state-01
+::edge	1.2.2.2.2.1	Government	government-organization	:mod	1.2.2.2.2.1.1	international	international
+::edge	1.1	claim	claim-01	:ARG0	1.1.1		person
+26	In Thailand Princess ubolratana presided over the burning of more than 870 tons of seized drugs.
+26	In Thailand Princess ubolratana presided over the burning of more than 870 tons of seized drugs .
+26	1-1.3.2.1 2-1.1 3-1.1.2.1 4-1 7-1.2 8-1.2.1.r 9-1.2.1.2 10-1.2.1.2 11-1.2.1.2.1.1 12-1.2.1.2.1.2 13-1.2.1.2.r 14-1.2.1.1 15-1.2.1
+::node	"Ubolratana"	1.1.2.1	"Ubolratana"	ubolratana
+::node	"Thailand"	1.3.2.1	"Thailand"	Thailand
+::node	n	1.1.2	name	
+::node	d	1.2.1	drug	drugs
+::node	870	1.2.1.2.1.1	870	870
+::node	p	1	preside-01	presided
+::node	t	1.2.1.2.1.2	ton	tons
+::node	"Thailand"	1.3.1	"Thailand"	
+::node	m	1.2.1.2.1	mass-quantity	
+::node	n2	1.3.2	name	
+::node	p2	1.1	princess	Princess
+::node	b	1.2	burn-01	burning
+::node	c	1.3	country	
+::node	m2	1.2.1.2	more-than	than
+::node	s	1.2.1.1	seize-01	seized
+::node	"Ubolratana_Rajakanya"	1.1.1	"Ubolratana_Rajakanya"	
+::edge	1.1.2		name	:op1	1.1.2.1	ubolratana	"Ubolratana"
+::edge	1.3.2		name	:op1	1.3.2.1	Thailand	"Thailand"
+::edge	1.1	Princess	princess	:name	1.1.2		name
+::edge	1.2	burning	burn-01	:ARG1	1.2.1	drugs	drug
+::edge	1.2.1.2.1		mass-quantity	:quant	1.2.1.2.1.1	870	870
+::edge	1.2.1.2.1		mass-quantity	:unit	1.2.1.2.1.2	tons	ton
+::edge	1.3		country	:wiki	1.3.1		"Thailand"
+::edge	1.2.1.2	than	more-than	:op1	1.2.1.2.1		mass-quantity
+::edge	1.3		country	:name	1.3.2		name
+::edge	1	presided	preside-01	:ARG0	1.1	Princess	princess
+::edge	1	presided	preside-01	:ARG1	1.2	burning	burn-01
+::edge	1	presided	preside-01	:location	1.3		country
+::edge	1.2.1	drugs	drug	:quant	1.2.1.2	than	more-than
+::edge	1.2.1	drugs	drug	:ARG1-of	1.2.1.1	seized	seize-01
+::edge	1.1	Princess	princess	:wiki	1.1.1		"Ubolratana_Rajakanya"
+27	Health Minister Sudarat Keyuraphan reported to Princess ubolratana that the event was meant to demonstrate the Government's strong determination to eradicate the drug problem.
+27	Health Minister Sudarat Keyuraphan reported to Princess ubolratana that the event was meant to demonstrate the Government 's strong determination to eradicate the drug problem .
+27	0-1.1.3.1.1 1-1.1.3.1 2-1.1.2.1 3-1.1.2.2 4-1 5-1.3.r 6-1.3.3.1 7-1.3.2.1 8-1.2.r 10-1.2.1 12-1.2 14-1.2.2 16-1.2.2.2.1 16-1.2.2.2.1.1 16-1.2.2.2.1.1.r 17-1.2.2.2.1.r 18-1.2.2.2.3 19-1.2.2.2 21-1.2.2.2.2 23-1.2.2.2.2.2.1 24-1.2.2.2.2.2
+::node	"Ubolratana"	1.3.2.1	"Ubolratana"	ubolratana
+::node	p4	1.3.3.1	princess	Princess
+::node	e	1.2.2.1	event	
+::node	g2	1.2.2.2.1.1	govern-01	Government
+::node	d2	1.2.2.2	determine-01	determination
+::node	g	1.2.2.2.1	government-organization	Government
+::node	p2	1.2.2.2.2.2	problem	problem
+::node	e2	1.2.2.2.2	eradicate-01	eradicate
+::node	g	1.2.2.2.2.1	government-organization	
+::node	s	1.2.2.2.3	strong	strong
+::node	"Sudarat"	1.1.2.1	"Sudarat"	Sudarat
+::node	"Keyuraphan"	1.1.2.2	"Keyuraphan"	Keyuraphan
+::node	m	1.1.3.1	minister	Minister
+::node	n	1.1.2	name	
+::node	e	1.2.1	event	event
+::node	r	1	report-01	reported
+::node	h2	1.1.3	have-org-role-91	
+::node	d	1.2.2	demonstrate-01	demonstrate
+::node	"Ubolratana_Rajakanya"	1.3.1	"Ubolratana_Rajakanya"	
+::node	n2	1.3.2	name	
+::node	h3	1.3.3	have-org-role-91	
+::node	p3	1.1	person	
+::node	m2	1.2	mean-01	meant
+::node	d3	1.2.2.2.2.2.1	drug	drug
+::node	p	1.3	person	
+::node	h	1.1.3.1.1	health	Health
+::node	"Sudarat_Keyuraphan"	1.1.1	"Sudarat_Keyuraphan"	
+::edge	1.3.2		name	:op1	1.3.2.1	ubolratana	"Ubolratana"
+::edge	1.3.3		have-org-role-91	:ARG2	1.3.3.1	Princess	princess
+::edge	1.2.2	demonstrate	demonstrate-01	:ARG0	1.2.2.1		event
+::edge	1.2.2.2.1	Government	government-organization	:ARG0-of	1.2.2.2.1.1	Government	govern-01
+::edge	1.2.2	demonstrate	demonstrate-01	:ARG1	1.2.2.2	determination	determine-01
+::edge	1.2.2.2	determination	determine-01	:ARG0	1.2.2.2.1	Government	government-organization
+::edge	1.2.2.2.2	eradicate	eradicate-01	:ARG1	1.2.2.2.2.2	problem	problem
+::edge	1.2.2.2	determination	determine-01	:ARG1	1.2.2.2.2	eradicate	eradicate-01
+::edge	1.2.2.2.2	eradicate	eradicate-01	:ARG0	1.2.2.2.2.1		government-organization
+::edge	1.2.2.2	determination	determine-01	:manner	1.2.2.2.3	strong	strong
+::edge	1.1.2		name	:op1	1.1.2.1	Sudarat	"Sudarat"
+::edge	1.1.2		name	:op2	1.1.2.2	Keyuraphan	"Keyuraphan"
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.1	Minister	minister
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	meant	mean-01	:ARG1	1.2.1	event	event
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	meant	mean-01	:ARG2	1.2.2	demonstrate	demonstrate-01
+::edge	1.3		person	:wiki	1.3.1		"Ubolratana_Rajakanya"
+::edge	1.3		person	:name	1.3.2		name
+::edge	1.3		person	:ARG0-of	1.3.3		have-org-role-91
+::edge	1	reported	report-01	:ARG0	1.1		person
+::edge	1	reported	report-01	:ARG1	1.2	meant	mean-01
+::edge	1.2.2.2.2.2	problem	problem	:topic	1.2.2.2.2.2.1	drug	drug
+::edge	1	reported	report-01	:ARG2	1.3		person
+::edge	1.1.3.1	Minister	minister	:mod	1.1.3.1.1	Health	health
+::edge	1.1		person	:wiki	1.1.1		"Sudarat_Keyuraphan"
+28	In Kabul on 25 June 2002 the Head of the United Nations Drug Control Program (UNDCP) Bernard Frahi stated --
+28	In Kabul on 25 June 2002 the Head of the United Nations Drug Control Program ( UNDCP ) Bernard Frahi stated --
+28	1-1.2.2.1 3-1.3.3 4-1.3.2 4-1.3.2.r 5-1.3.1 7-1.1 7-1.1.3 7-1.1.3.r 8-1.1.3.1.r 10-1.1.3.1.2.1 11-1.1.3.1.2.2 12-1.1.3.1.2.3 13-1.1.3.1.2.4 14-1.1.3.1.2.5 18-1.1.2.1 19-1.1.2.2 20-1
+::node	"Bernard"	1.1.2.1	"Bernard"	Bernard
+::node	n2	1.1.3.1.2	name	
+::node	"Frahi"	1.1.2.2	"Frahi"	Frahi
+::node	o	1.1.3.1	organization	
+::node	"Nations"	1.1.3.1.2.2	"Nations"	Nations
+::node	"Drug"	1.1.3.1.2.3	"Drug"	Drug
+::node	"Control"	1.1.3.1.2.4	"Control"	Control
+::node	"Program"	1.1.3.1.2.5	"Program"	Program
+::node	"United"	1.1.3.1.2.1	"United"	United
+::node	n4	1.1.2	name	
+::node	"Kabul"	1.2.1	"Kabul"	
+::node	s	1	state-01	stated
+::node	h2	1.1.3	head-01	Head
+::node	n3	1.2.2	name	
+::node	2002	1.3.1	2002	2002
+::node	6	1.3.2	6	June
+::node	25	1.3.3	25	25
+::node	p	1.1	person	Head
+::node	c	1.2	city	
+::node	d	1.3	date-entity	
+::node	"Kabul"	1.2.2.1	"Kabul"	Kabul
+::node	"United_Nations_Office_on_Drugs_and_Crime"	1.1.3.1.1	"United_Nations_Office_on_Drugs_and_Crime"	
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Bernard	"Bernard"
+::edge	1.1.3.1		organization	:name	1.1.3.1.2		name
+::edge	1.1.2		name	:op2	1.1.2.2	Frahi	"Frahi"
+::edge	1.1.3	Head	head-01	:ARG1	1.1.3.1		organization
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	Nations	"Nations"
+::edge	1.1.3.1.2		name	:op3	1.1.3.1.2.3	Drug	"Drug"
+::edge	1.1.3.1.2		name	:op4	1.1.3.1.2.4	Control	"Control"
+::edge	1.1.3.1.2		name	:op5	1.1.3.1.2.5	Program	"Program"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	United	"United"
+::edge	1.1	Head	person	:name	1.1.2		name
+::edge	1.2		city	:wiki	1.2.1		"Kabul"
+::edge	1.1	Head	person	:ARG0-of	1.1.3	Head	head-01
+::edge	1.2		city	:name	1.2.2		name
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.3		date-entity	:month	1.3.2	June	6
+::edge	1.3		date-entity	:day	1.3.3	25	25
+::edge	1	stated	state-01	:ARG0	1.1	Head	person
+::edge	1	stated	state-01	:location	1.2		city
+::edge	1	stated	state-01	:time	1.3		date-entity
+::edge	1.2.2		name	:op1	1.2.2.1	Kabul	"Kabul"
+::edge	1.1.3.1		organization	:wiki	1.1.3.1.1		"United_Nations_Office_on_Drugs_and_Crime"
+::edge	1.1	Head	person	:wiki	1.1.1		-
+29	War-torn Afghanistan continues to be the top supplier of heroin to Europe and the producer of almost all the opiates consumed in Central Asia.
+29	War @-@ torn Afghanistan continues to be the top supplier of heroin to Europe and the producer of almost all the opiates consumed in Central Asia .
+29	0-1.1.1.1.3.1 2-1.1.1.1 2-1.1.1.1.3 2-1.1.1.1.3.r 3-1.1.1.1.2.1 4-1 8-1.1.1.4 9-1.1.1 10-1.1.1.2.r 11-1.1.1.2 12-1.1.1.3.r 13-1.1.1.3.2.1 14-1.1 16-1.1.2 17-1.1.2.2.r 18-1.1.2.2.1.1 19-1.1.2.2.1 21-1.1.2.2 22-1.1.2.2.2 23-1.1.2.2.2.1.r 24-1.1.2.2.2.1.2.1 25-1.1.2.2.2.1.2.2
+::node	"Asia"	1.1.2.2.2.1.2.2	"Asia"	Asia
+::node	"Central"	1.1.2.2.2.1.2.1	"Central"	Central
+::node	a2	1.1.2.2.1	all	all
+::node	a3	1.1.2.2.1.1	almost	almost
+::node	w3	1.1.2.2.2.1	world-region	
+::node	t	1.1.1.1.3	tear-01	torn
+::node	"Europe"	1.1.1.3.1	"Europe"	
+::node	n	1.1.1.1.2	name	
+::node	"Afghanistan"	1.1.1.1.1	"Afghanistan"	
+::node	"Central_Asia"	1.1.2.2.2.1.1	"Central_Asia"	
+::node	n3	1.1.2.2.2.1.2	name	
+::node	"Afghanistan"	1.1.1.1.2.1	"Afghanistan"	Afghanistan
+::node	c2	1.1.1.1	country	torn
+::node	w	1.1.1.1.3.1	war	War
+::node	h	1.1.1.2	heroin	heroin
+::node	c2	1.1.2.1	country	
+::node	c4	1.1.1.3	continent	
+::node	o	1.1.2.2	opiate	opiates
+::node	t2	1.1.1.4	top	top
+::node	n2	1.1.1.3.2	name	
+::node	p	1.1.2	produce-01	producer
+::node	c	1	continue-01	continues
+::node	a	1.1	and	and
+::node	c3	1.1.2.2.2	consume-01	consumed
+::node	s	1.1.1	supply-01	supplier
+::node	"Europe"	1.1.1.3.2.1	"Europe"	Europe
+::edge	1.1.2.2.2.1.2		name	:op2	1.1.2.2.2.1.2.2	Asia	"Asia"
+::edge	1.1.2.2.2.1.2		name	:op1	1.1.2.2.2.1.2.1	Central	"Central"
+::edge	1.1.2.2	opiates	opiate	:quant	1.1.2.2.1	all	all
+::edge	1.1.2.2.1	all	all	:degree	1.1.2.2.1.1	almost	almost
+::edge	1.1.2.2.2	consumed	consume-01	:location	1.1.2.2.2.1		world-region
+::edge	1.1.1.1	torn	country	:ARG1-of	1.1.1.1.3	torn	tear-01
+::edge	1.1.1.3		continent	:wiki	1.1.1.3.1		"Europe"
+::edge	1.1.1.1	torn	country	:name	1.1.1.1.2		name
+::edge	1.1.1.1	torn	country	:wiki	1.1.1.1.1		"Afghanistan"
+::edge	1.1.2.2.2.1		world-region	:wiki	1.1.2.2.2.1.1		"Central_Asia"
+::edge	1.1.2.2.2.1		world-region	:name	1.1.2.2.2.1.2		name
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.1	supplier	supply-01	:ARG0	1.1.1.1	torn	country
+::edge	1.1.1.1.3	torn	tear-01	:ARG0	1.1.1.1.3.1	War	war
+::edge	1.1.1	supplier	supply-01	:ARG1	1.1.1.2	heroin	heroin
+::edge	1.1.2	producer	produce-01	:ARG0	1.1.2.1		country
+::edge	1.1.1	supplier	supply-01	:ARG2	1.1.1.3		continent
+::edge	1.1.2	producer	produce-01	:ARG1	1.1.2.2	opiates	opiate
+::edge	1.1.1	supplier	supply-01	:mod	1.1.1.4	top	top
+::edge	1.1.1.3		continent	:name	1.1.1.3.2		name
+::edge	1.1	and	and	:op2	1.1.2	producer	produce-01
+::edge	1	continues	continue-01	:ARG1	1.1	and	and
+::edge	1.1.2.2	opiates	opiate	:ARG1-of	1.1.2.2.2	consumed	consume-01
+::edge	1.1	and	and	:op1	1.1.1	supplier	supply-01
+::edge	1.1.1.3.2		name	:op1	1.1.1.3.2.1	Europe	"Europe"
+30	Afghanistan is the source of approximately 70 to 90 per cent of the heroin found in European markets.
+30	Afghanistan is the source of approximately 70 to 90 per cent of the heroin found in European markets .
+30	0-1.2.2.1 1-1 3-1 5-1.1.1.2 6-1.1.1.1.1 8-1.1.1.1.2 9-1.1.1 10-1.1.1 11-1.1.1.r 13-1.1 14-1.1.2 15-1.1.2.1.r 16-1.1.2.1.1.2.1 17-1.1.2.1
+::node	"Europe"	1.1.2.1.1.2.1	"Europe"	European
+::node	b2	1.1.1.1	between	
+::node	a	1.1.1.2	approximate	approximately
+::node	m	1.1.2.1	market	markets
+::node	n2	1.1.2.1.1.2	name	
+::node	"Europe"	1.1.2.1.1.1	"Europe"	
+::node	c2	1.1.2.1.1	continent	
+::node	f	1.1.2	find-01	found
+::node	"Afghanistan"	1.2.1	"Afghanistan"	
+::node	b	1	be-from-91	source
+::node	n	1.2.2	name	
+::node	h	1.1	heroin	heroin
+::node	c	1.2	country	
+::node	90	1.1.1.1.2	90	90
+::node	70	1.1.1.1.1	70	70
+::node	"Afghanistan"	1.2.2.1	"Afghanistan"	Afghanistan
+::node	p	1.1.1	percentage-entity	cent
+::edge	1.1.2.1.1.2		name	:op1	1.1.2.1.1.2.1	European	"Europe"
+::edge	1.1.1	cent	percentage-entity	:value	1.1.1.1		between
+::edge	1.1.1	cent	percentage-entity	:mod	1.1.1.2	approximately	approximate
+::edge	1.1.2	found	find-01	:location	1.1.2.1	markets	market
+::edge	1.1.2.1.1		continent	:name	1.1.2.1.1.2		name
+::edge	1.1.2.1.1		continent	:wiki	1.1.2.1.1.1		"Europe"
+::edge	1.1.2.1	markets	market	:mod	1.1.2.1.1		continent
+::edge	1.1	heroin	heroin	:ARG1-of	1.1.2	found	find-01
+::edge	1.2		country	:wiki	1.2.1		"Afghanistan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1	source	be-from-91	:ARG1	1.1	heroin	heroin
+::edge	1	source	be-from-91	:ARG2	1.2		country
+::edge	1.1.1.1		between	:op2	1.1.1.1.2	90	90
+::edge	1.1.1.1		between	:op1	1.1.1.1.1	70	70
+::edge	1.2.2		name	:op1	1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.1	heroin	heroin	:quant	1.1.1	cent	percentage-entity
+31	No country is immune from the issue of drug-abuse.
+31	No country is immune from the issue of drug @-@ abuse .
+31	0-1.1.1 0-1.1.1.r 1-1.1 2-1.1.r 3-1 4-1.2.r 6-1.2 7-1.2.1.r 8-1.2.1.1 10-1.2.1
+::node	a	1.2.1	abuse-01	abuse
+::node	i	1	immune	immune
+::node	c	1.1	country	country
+::node	i2	1.2	issue	issue
+::node	d	1.2.1.1	drug	drug
+::node	-	1.1.1	-	No
+::edge	1.2	issue	issue	:topic	1.2.1	abuse	abuse-01
+::edge	1	immune	immune	:domain	1.1	country	country
+::edge	1	immune	immune	:prep-from	1.2	issue	issue
+::edge	1.2.1	abuse	abuse-01	:ARG1	1.2.1.1	drug	drug
+::edge	1.1	country	country	:polarity	1.1.1	No	-
+32	Newly-elected president of Afghanistan Hamid Karzai has vowed to eradicate poppy cultivation from Afghanistan.
+32	Newly @-@ elected president of Afghanistan Hamid Karzai has vowed to eradicate poppy cultivation from Afghanistan .
+32	0-1.1.4.2.1 2-1.1.3 3-1.1.4.2 5-1.1.4.1.2.1 6-1.1.2.1 7-1.1.2.2 8-1.1.4 9-1 11-1.2 12-1.2.2.1 13-1.2.2 14-1.2.2.2.r 15-1.2.2.2
+::node	"Hamid"	1.1.2.1	"Hamid"	Hamid
+::node	"Karzai"	1.1.2.2	"Karzai"	Karzai
+::node	c	1.1.4.1	country	
+::node	p3	1.1.4.2	president	president
+::node	n	1.1.2	name	
+::node	p	1.2.1	person	
+::node	v	1	vow-01	vowed
+::node	e2	1.1.3	elect-01	elected
+::node	c2	1.2.2	cultivate-01	cultivation
+::node	h	1.1.4	have-org-role-91	has
+::node	"Afghanistan"	1.1.4.1.1	"Afghanistan"	
+::node	n2	1.1.4.1.2	name	
+::node	n3	1.1.4.2.1	new-41	Newly
+::node	p	1.1	person	
+::node	e	1.2	eradicate-01	eradicate
+::node	"Afghanistan"	1.1.4.1.2.1	"Afghanistan"	Afghanistan
+::node	p2	1.2.2.1	poppy	poppy
+::node	c	1.2.2.2	country	Afghanistan
+::node	"Hamid_Karzai"	1.1.1	"Hamid_Karzai"	
+::edge	1.1.2		name	:op1	1.1.2.1	Hamid	"Hamid"
+::edge	1.1.2		name	:op2	1.1.2.2	Karzai	"Karzai"
+::edge	1.1.4	has	have-org-role-91	:ARG1	1.1.4.1		country
+::edge	1.1.4	has	have-org-role-91	:ARG2	1.1.4.2	president	president
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	eradicate	eradicate-01	:ARG0	1.2.1		person
+::edge	1.1		person	:ARG1-of	1.1.3	elected	elect-01
+::edge	1.2	eradicate	eradicate-01	:ARG1	1.2.2	cultivation	cultivate-01
+::edge	1.1		person	:ARG0-of	1.1.4	has	have-org-role-91
+::edge	1.1.4.1		country	:wiki	1.1.4.1.1		"Afghanistan"
+::edge	1.1.4.1		country	:name	1.1.4.1.2		name
+::edge	1.1.4.2	president	president	:ARG1-of	1.1.4.2.1	Newly	new-41
+::edge	1	vowed	vow-01	:ARG0	1.1		person
+::edge	1	vowed	vow-01	:ARG1	1.2	eradicate	eradicate-01
+::edge	1.1.4.1.2		name	:op1	1.1.4.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.2	cultivation	cultivate-01	:ARG1	1.2.2.1	poppy	poppy
+::edge	1.2.2	cultivation	cultivate-01	:location	1.2.2.2	Afghanistan	country
+::edge	1.1		person	:wiki	1.1.1		"Hamid_Karzai"
+33	In Cambodia several hundred people marched through the capital Phnom Penh to appeal for an end to growing drug use.
+33	In Cambodia several hundred people marched through the capital Phnom Penh to appeal for an end to growing drug use .
+33	1-1.4.2.1 2-1.1.1 3-1.1.1.1 4-1.1 5-1 6-1.2.r 8-1.2.3.2 9-1.2.2.1 10-1.2.2.2 12-1.3 13-1.3.2.r 15-1.3.2 17-1.3.2.1.2 18-1.3.2.1.1 19-1.3.2.1 19-1.3.r
+::node	100	1.1.1.1	100	hundred
+::node	d	1.3.2.1.1	drug	drug
+::node	g	1.3.2.1.2	grow-01	growing
+::node	u	1.3.2.1	use-01	use
+::node	"Phnom_Penh"	1.2.1	"Phnom_Penh"	
+::node	m	1	march-01	marched
+::node	n	1.2.2	name	
+::node	p	1.3.1	person	
+::node	h	1.2.3	have-org-role-91	
+::node	e	1.3.2	end-01	end
+::node	"Cambodia"	1.4.1	"Cambodia"	
+::node	n2	1.4.2	name	
+::node	p	1.1	person	people
+::node	c	1.2	city	
+::node	a	1.3	appeal-02	appeal
+::node	c2	1.4	country	
+::node	c3	1.2.3.2	capital	capital
+::node	"Phnom"	1.2.2.1	"Phnom"	Phnom
+::node	"Penh"	1.2.2.2	"Penh"	Penh
+::node	c2	1.2.3.1	country	
+::node	"Cambodia"	1.4.2.1	"Cambodia"	Cambodia
+::node	s	1.1.1	several	several
+::edge	1.1.1	several	several	:op1	1.1.1.1	hundred	100
+::edge	1.3.2.1	use	use-01	:ARG1	1.3.2.1.1	drug	drug
+::edge	1.3.2.1	use	use-01	:ARG1-of	1.3.2.1.2	growing	grow-01
+::edge	1.3.2	end	end-01	:ARG1	1.3.2.1	use	use-01
+::edge	1.2		city	:wiki	1.2.1		"Phnom_Penh"
+::edge	1.2		city	:name	1.2.2		name
+::edge	1.3	appeal	appeal-02	:ARG0	1.3.1		person
+::edge	1.2		city	:ARG0-of	1.2.3		have-org-role-91
+::edge	1.3	appeal	appeal-02	:ARG2	1.3.2	end	end-01
+::edge	1.4		country	:wiki	1.4.1		"Cambodia"
+::edge	1.4		country	:name	1.4.2		name
+::edge	1	marched	march-01	:ARG0	1.1	people	person
+::edge	1	marched	march-01	:path	1.2		city
+::edge	1	marched	march-01	:purpose	1.3	appeal	appeal-02
+::edge	1	marched	march-01	:location	1.4		country
+::edge	1.2.3		have-org-role-91	:ARG2	1.2.3.2	capital	capital
+::edge	1.2.2		name	:op1	1.2.2.1	Phnom	"Phnom"
+::edge	1.2.2		name	:op2	1.2.2.2	Penh	"Penh"
+::edge	1.2.3		have-org-role-91	:ARG1	1.2.3.1		country
+::edge	1.4.2		name	:op1	1.4.2.1	Cambodia	"Cambodia"
+::edge	1.1	people	person	:quant	1.1.1	several	several
+34	United Nations Office for Drug Control and Crime Prevention official Bengt juhlin stated that people are uniting this day to demonstrate to the world a commitment to fighting drug abuse.
+34	United Nations Office for Drug Control and Crime Prevention official Bengt juhlin stated that people are uniting this day to demonstrate to the world a commitment to fighting drug abuse .
+34	0-1.1.3.1.2.1 1-1.1.3.1.2.2 2-1.1.3.1.2.3 3-1.1.3.1.2.4 4-1.1.3.1.2.5 5-1.1.3.1.2.6 6-1.1.3.1.2.7 7-1.1.3.1.2.8 8-1.1.3.1.2.9 9-1.1.3.2 10-1.1.2.1 11-1.1.2.2 12-1 13-1.2.r 14-1.2.1 16-1.2 17-1.2.2.1 18-1.2.2 20-1.2.3 21-1.2.3.3.r 23-1.2.3.3 25-1.2.3.2 26-1.2.3.2.2.r 27-1.2.3.2.2 28-1.2.3.2.2.2.1 29-1.2.3.2.2.2
+::node	n2	1.1.3.1.2	name	
+::node	d3	1.2.3.2.2.2.1	drug	drug
+::node	c	1.2.3.2	commit-01	commitment
+::node	w	1.2.3.3	world	world
+::node	t	1.2.2.1	this	this
+::node	p	1.2.3.1	person	
+::node	"Bengt"	1.1.2.1	"Bengt"	Bengt
+::node	"Juhlin"	1.1.2.2	"Juhlin"	juhlin
+::node	o2	1.1.3.1	organization	
+::node	"Control"	1.1.3.1.2.6	"Control"	Control
+::node	"and"	1.1.3.1.2.7	"and"	and
+::node	o	1.1.3.2	official	official
+::node	"Crime"	1.1.3.1.2.8	"Crime"	Crime
+::node	"Prevention"	1.1.3.1.2.9	"Prevention"	Prevention
+::node	"Nations"	1.1.3.1.2.2	"Nations"	Nations
+::node	f	1.2.3.2.2	fight-01	fighting
+::node	"Office"	1.1.3.1.2.3	"Office"	Office
+::node	"for"	1.1.3.1.2.4	"for"	for
+::node	"Drug"	1.1.3.1.2.5	"Drug"	Drug
+::node	p	1.2.3.2.1	person	
+::node	"United"	1.1.3.1.2.1	"United"	United
+::node	n	1.1.2	name	
+::node	p	1.2.1	person	people
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	
+::node	d	1.2.2	day	day
+::node	d2	1.2.3	demonstrate-01	demonstrate
+::node	p2	1.1	person	
+::node	u	1.2	unite-01	uniting
+::node	a	1.2.3.2.2.2	abuse-01	abuse
+::node	p	1.2.3.2.2.1	person	
+::node	"United_Nations_Office_on_Drugs_and_Crime"	1.1.3.1.1	"United_Nations_Office_on_Drugs_and_Crime"	
+::node	-	1.1.1	-	
+::edge	1.1.3.1		organization	:name	1.1.3.1.2		name
+::edge	1.2.3.2.2.2	abuse	abuse-01	:ARG1	1.2.3.2.2.2.1	drug	drug
+::edge	1.2.3	demonstrate	demonstrate-01	:ARG1	1.2.3.2	commitment	commit-01
+::edge	1.2.3	demonstrate	demonstrate-01	:ARG2	1.2.3.3	world	world
+::edge	1.2.2	day	day	:mod	1.2.2.1	this	this
+::edge	1.2.3	demonstrate	demonstrate-01	:ARG0	1.2.3.1		person
+::edge	1.1.2		name	:op1	1.1.2.1	Bengt	"Bengt"
+::edge	1.1.2		name	:op2	1.1.2.2	juhlin	"Juhlin"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		organization
+::edge	1.1.3.1.2		name	:op6	1.1.3.1.2.6	Control	"Control"
+::edge	1.1.3.1.2		name	:op7	1.1.3.1.2.7	and	"and"
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	official	official
+::edge	1.1.3.1.2		name	:op8	1.1.3.1.2.8	Crime	"Crime"
+::edge	1.1.3.1.2		name	:op9	1.1.3.1.2.9	Prevention	"Prevention"
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	Nations	"Nations"
+::edge	1.2.3.2	commitment	commit-01	:ARG1	1.2.3.2.2	fighting	fight-01
+::edge	1.1.3.1.2		name	:op3	1.1.3.1.2.3	Office	"Office"
+::edge	1.1.3.1.2		name	:op4	1.1.3.1.2.4	for	"for"
+::edge	1.1.3.1.2		name	:op5	1.1.3.1.2.5	Drug	"Drug"
+::edge	1.2.3.2	commitment	commit-01	:ARG0	1.2.3.2.1		person
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	United	"United"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	uniting	unite-01	:ARG1	1.2.1	people	person
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	uniting	unite-01	:time	1.2.2	day	day
+::edge	1.2	uniting	unite-01	:purpose	1.2.3	demonstrate	demonstrate-01
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	uniting	unite-01
+::edge	1.2.3.2.2	fighting	fight-01	:ARG1	1.2.3.2.2.2	abuse	abuse-01
+::edge	1.2.3.2.2	fighting	fight-01	:ARG0	1.2.3.2.2.1		person
+::edge	1.1.3.1		organization	:wiki	1.1.3.1.1		"United_Nations_Office_on_Drugs_and_Crime"
+::edge	1.1		person	:wiki	1.1.1		-
+35	Juhlin stated that Cambodia's past reputation as 1 of the few Southeast Asian countries without a drug problem is no longer accurate as drug abuse in the country is rapidly increasing.
+35	Juhlin stated that Cambodia 's past reputation as 1 of the few Southeast Asian countries without a drug problem is no longer accurate as drug abuse in the country is rapidly increasing .
+35	0-1.1.2.1 1-1 2-1.2.r 3-1.2.2.1.3.1 4-1.2.2.r 5-1.2.2.2 6-1.2.2 8-1.2.2.1.1 11-1.2.2.1.4.1.2 12-1.2.2.1.4.1.1.2.1 13-1.2.2.1.4.1.1.2.2 14-1.2.2.1.4.1 15-1.2.2.1.4.1.3.1 15-1.2.2.1.4.1.3.1.r 17-1.2.2.1.4.1.3.2.1 18-1.2.2.1.4.1.3.2 19-1.2.2.r 20-1.2.1 20-1.2.1.r 22-1.2 24-1.2.3.1.1.1 25-1.2.3.1.1 28-1.2.2.1.4.1 29-1.2.2.r 30-1.2.3.1.2 30-1.2.3.1.2.r 31-1.2.3.1
+::node	"Cambodia"	1.2.2.1.3.1	"Cambodia"	Cambodia
+::node	"Asia"	1.2.2.1.4.1.1.2.2	"Asia"	Asian
+::node	c2	1.2.2.1.4.1	country	country
+::node	"Southeast"	1.2.2.1.4.1.1.2.1	"Southeast"	Southeast
+::node	n3	1.2.2.1.4.1.1.2	name	
+::node	-	1.2.2.1.4.1.3.1	-	without
+::node	c	1.2.2.1	country	
+::node	p3	1.2.2.1.4.1.3.2	problem	problem
+::node	p2	1.2.2.2	past	past
+::node	i2	1.2.3.1	increase-01	increasing
+::node	"Cambodia"	1.2.2.1.2	"Cambodia"	
+::node	n2	1.2.2.1.3	name	
+::node	i	1.2.2.1.4	include-91	
+::node	"Southeast_Asia"	1.2.2.1.4.1.1.1	"Southeast_Asia"	
+::node	"Juhlin"	1.1.2.1	"Juhlin"	Juhlin
+::node	1	1.2.2.1.1	1	1
+::node	d	1.2.2.1.4.1.3.2.1	drug	drug
+::node	a2	1.2.3.1.1	abuse-01	abuse
+::node	r2	1.2.3.1.2	rapid	rapidly
+::node	n	1.1.2	name	
+::node	-	1.2.1	-	no
+::node	s	1	state-01	stated
+::node	r	1.2.2	reputation	reputation
+::node	c3	1.2.3	cause-01	
+::node	d2	1.2.3.1.1.1	drug	drug
+::node	p	1.1	person	
+::node	a	1.2	accurate	accurate
+::node	h	1.2.2.1.4.1.3	have-03	
+::node	f	1.2.2.1.4.1.2	few	few
+::node	w	1.2.2.1.4.1.1	world-region	
+::node	-	1.1.1	-	
+::edge	1.2.2.1.3		name	:op1	1.2.2.1.3.1	Cambodia	"Cambodia"
+::edge	1.2.2.1.4.1.1.2		name	:op2	1.2.2.1.4.1.1.2.2	Asian	"Asia"
+::edge	1.2.2.1.4		include-91	:ARG1	1.2.2.1.4.1	country	country
+::edge	1.2.2.1.4.1.1.2		name	:op1	1.2.2.1.4.1.1.2.1	Southeast	"Southeast"
+::edge	1.2.2.1.4.1.1		world-region	:name	1.2.2.1.4.1.1.2		name
+::edge	1.2.2.1.4.1.3		have-03	:polarity	1.2.2.1.4.1.3.1	without	-
+::edge	1.2.2	reputation	reputation	:poss	1.2.2.1		country
+::edge	1.2.2.1.4.1.3		have-03	:ARG1	1.2.2.1.4.1.3.2	problem	problem
+::edge	1.2.2	reputation	reputation	:mod	1.2.2.2	past	past
+::edge	1.2.3		cause-01	:ARG0	1.2.3.1	increasing	increase-01
+::edge	1.2.2.1		country	:wiki	1.2.2.1.2		"Cambodia"
+::edge	1.2.2.1		country	:name	1.2.2.1.3		name
+::edge	1.2.2.1		country	:ARG2-of	1.2.2.1.4		include-91
+::edge	1.2.2.1.4.1.1		world-region	:wiki	1.2.2.1.4.1.1.1		"Southeast_Asia"
+::edge	1.1.2		name	:op1	1.1.2.1	Juhlin	"Juhlin"
+::edge	1.2.2.1		country	:quant	1.2.2.1.1	1	1
+::edge	1.2.2.1.4.1.3.2	problem	problem	:topic	1.2.2.1.4.1.3.2.1	drug	drug
+::edge	1.2.3.1	increasing	increase-01	:ARG1	1.2.3.1.1	abuse	abuse-01
+::edge	1.2.3.1	increasing	increase-01	:manner	1.2.3.1.2	rapidly	rapid
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	accurate	accurate	:polarity	1.2.1	no	-
+::edge	1.2	accurate	accurate	:domain	1.2.2	reputation	reputation
+::edge	1.2	accurate	accurate	:ARG1-of	1.2.3		cause-01
+::edge	1.2.3.1.1	abuse	abuse-01	:ARG1	1.2.3.1.1.1	drug	drug
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	accurate	accurate
+::edge	1.2.2.1.4.1	country	country	:ARG0-of	1.2.2.1.4.1.3		have-03
+::edge	1.2.2.1.4.1	country	country	:quant	1.2.2.1.4.1.2	few	few
+::edge	1.2.2.1.4.1	country	country	:location	1.2.2.1.4.1.1		world-region
+::edge	1.1		person	:wiki	1.1.1		-

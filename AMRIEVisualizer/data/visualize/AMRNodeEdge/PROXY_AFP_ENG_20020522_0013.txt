@@ -1,0 +1,888 @@
+1	2002-05-21
+1	2002 @-@ 05 @-@ 21
+1	0-1.1 2-1.2 4-1.3
+::node	d2	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	5	1.2	5	05
+::node	21	1.3	21	21
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	05	5
+::edge	1		date-entity	:day	1.3	21	21
+2	Viet Nam (VN); Taiwan (TW)
+2	Viet Nam ( VN ) ; Taiwan ( TW )
+2	0-1.1.2.1 1-1.1.2.2 6-1.2.2.1
+::node	n	1.1.2	name	
+::node	"Taiwan"	1.2.1	"Taiwan"	
+::node	a	1	and	
+::node	n2	1.2.2	name	
+::node	"Viet"	1.1.2.1	"Viet"	Viet
+::node	c	1.1	country	
+::node	"Nam"	1.1.2.2	"Nam"	Nam
+::node	c2	1.2	country	
+::node	"Taiwan"	1.2.2.1	"Taiwan"	Taiwan
+::node	"Vietnam"	1.1.1	"Vietnam"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"Taiwan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Viet	"Viet"
+::edge	1		and	:op1	1.1		country
+::edge	1.1.2		name	:op2	1.1.2.2	Nam	"Nam"
+::edge	1		and	:op2	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	Taiwan	"Taiwan"
+::edge	1.1		country	:wiki	1.1.1		"Vietnam"
+3	International; narcotics; crime
+3	International ; narcotics ; crime
+3	0-1.1 2-1.2 4-1.3
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	n	1.2	narcotics	narcotics
+::node	c	1.3	crime	crime
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	narcotics	narcotics
+::edge	1		and	:op3	1.3	crime	crime
+4	Taiwan national executed in Vietnam for drug manufacture and trafficking.
+4	Taiwan national executed in Vietnam for drug manufacture and trafficking .
+4	0-1.1.1.2.1 1-1.1.2 2-1 3-1.2.r 4-1.2.2.1 6-1.3.1.1.1 7-1.3.1.1 8-1.3.1 9-1.3.1.2
+::node	"Taiwan"	1.1.1.1	"Taiwan"	
+::node	n2	1.1.1.2	name	
+::node	m	1.3.1.1	manufacture-01	manufacture
+::node	t	1.3.1.2	trafficking	trafficking
+::node	d	1.3.1.1.1	drug	drug
+::node	n	1.1.2	nation	national
+::node	"Vietnam"	1.2.1	"Vietnam"	
+::node	e	1	execute-01	executed
+::node	n3	1.2.2	name	
+::node	a	1.3.1	and	and
+::node	p	1.1	person	
+::node	c2	1.2	country	
+::node	c3	1.3	cause-01	
+::node	"Taiwan"	1.1.1.2.1	"Taiwan"	Taiwan
+::node	"Vietnam"	1.2.2.1	"Vietnam"	Vietnam
+::node	c	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"Taiwan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.3.1	and	and	:op1	1.3.1.1	manufacture	manufacture-01
+::edge	1.3.1	and	and	:op2	1.3.1.2	trafficking	trafficking
+::edge	1.3.1.1	manufacture	manufacture-01	:ARG1	1.3.1.1.1	drug	drug
+::edge	1.1		person	:mod	1.1.2	national	nation
+::edge	1.2		country	:wiki	1.2.1		"Vietnam"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3		cause-01	:ARG0	1.3.1	and	and
+::edge	1	executed	execute-01	:ARG1	1.1		person
+::edge	1	executed	execute-01	:location	1.2		country
+::edge	1	executed	execute-01	:ARG1-of	1.3		cause-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Taiwan	"Taiwan"
+::edge	1.2.2		name	:op1	1.2.2.1	Vietnam	"Vietnam"
+::edge	1.1		person	:source	1.1.1		country
+5	Police in the strict communist country discovered his methamphetamine manufacturing plant disguised as a soap factory and sentenced him to death in 1997.
+5	Police in the strict communist country discovered his methamphetamine manufacturing plant disguised as a soap factory and sentenced him to death in 1997 .
+5	0-1.1.1 1-1.1.1.1.r 3-1.1.1.1.1.1 4-1.1.1.1.1 5-1.1.1.1 6-1.1 7-1.1.2.3 7-1.1.2.3.r 8-1.1.2.1.1 9-1.1.2.1 10-1.1.2 11-1.1.2.2 12-1.1.2.2.1.r 12-1.2.4.r 14-1.1.2.2.1.1 15-1.1.2.2.1 16-1 17-1.2 18-1.2.3.1 20-1.2.3 22-1.2.4.1
+::node	s	1.1.1.1.1.1	strict	strict
+::node	c	1.1.1.1	country	country
+::node	m	1.1.2.1	manufacture-01	manufacturing
+::node	d3	1.1.2.2	disguise-01	disguised
+::node	h	1.1.2.3	he	his
+::node	f	1.1.2.2.1	factory	factory
+::node	m2	1.1.2.1.1	methamphetamine	methamphetamine
+::node	p3	1.1.2	plant	plant
+::node	p	1.2.1	police	
+::node	a	1	and	and
+::node	h	1.2.2	he	
+::node	d4	1.2.3	die-01	death
+::node	d5	1.2.4	date-entity	
+::node	d2	1.1	discover-01	discovered
+::node	s3	1.2	sentence-01	sentenced
+::node	s2	1.1.2.2.1.1	soap	soap
+::node	1997	1.2.4.1	1997	1997
+::node	c2	1.1.1.1.1	communist	communist
+::node	h	1.2.3.1	he	him
+::node	p	1.1.1	police	Police
+::edge	1.1.1.1.1	communist	communist	:mod	1.1.1.1.1.1	strict	strict
+::edge	1.1.1	Police	police	:location	1.1.1.1	country	country
+::edge	1.1.2	plant	plant	:purpose	1.1.2.1	manufacturing	manufacture-01
+::edge	1.1.2	plant	plant	:ARG1-of	1.1.2.2	disguised	disguise-01
+::edge	1.1.2	plant	plant	:poss	1.1.2.3	his	he
+::edge	1.1.2.2	disguised	disguise-01	:ARG2	1.1.2.2.1	factory	factory
+::edge	1.1.2.1	manufacturing	manufacture-01	:ARG1	1.1.2.1.1	methamphetamine	methamphetamine
+::edge	1.1	discovered	discover-01	:ARG1	1.1.2	plant	plant
+::edge	1.2	sentenced	sentence-01	:ARG0	1.2.1		police
+::edge	1.2	sentenced	sentence-01	:ARG1	1.2.2		he
+::edge	1.2	sentenced	sentence-01	:ARG2	1.2.3	death	die-01
+::edge	1.2	sentenced	sentence-01	:time	1.2.4		date-entity
+::edge	1	and	and	:op1	1.1	discovered	discover-01
+::edge	1	and	and	:op2	1.2	sentenced	sentence-01
+::edge	1.1.2.2.1	factory	factory	:mod	1.1.2.2.1.1	soap	soap
+::edge	1.2.4		date-entity	:year	1.2.4.1	1997	1997
+::edge	1.1.1.1	country	country	:mod	1.1.1.1.1	communist	communist
+::edge	1.2.3	death	die-01	:ARG1	1.2.3.1	him	he
+::edge	1.1	discovered	discover-01	:ARG0	1.1.1	Police	police
+6	On 22 May 2002 officials stated that Taiwan National Chen Chi Tien was executed by firing squad in Vietnam's 8th execution of a foreigner.
+6	On 22 May 2002 officials stated that Taiwan National Chen Chi Tien was executed by firing squad in Vietnam 's 8 th execution of a foreigner .
+6	1-1.3.3 2-1.3.2 2-1.3.2.r 3-1.3.1 4-1.1.1.1 5-1 6-1.2.r 7-1.2.1.3.2.1 8-1.2.1.4 9-1.2.1.2.1 10-1.2.1.2.2 11-1.2.1.2.3 13-1.2 15-1.2.2.1 16-1.2.2 18-1.2.3.1.2.1 19-1.2.3.1.r 20-1.2.3.2.1 20-1.2.3.2.1.1 20-1.2.3.2.1.1.r 21-1.2.3.2.1 22-1.2 22-1.2.3 22-1.2.3.r 25-1.1 25-1.2.3.2 25-1.2.3.2.2 25-1.2.3.2.2.r
+::node	"Taiwan"	1.2.1.3.2.1	"Taiwan"	Taiwan
+::node	"Tien"	1.2.1.2.3	"Tien"	Tien
+::node	n3	1.2.1.3.2	name	
+::node	"Chi"	1.2.1.2.2	"Chi"	Chi
+::node	"Taiwan"	1.2.1.3.1	"Taiwan"	
+::node	n	1.2.1.4	nation	National
+::node	p3	1.2.3.2	person	foreigner
+::node	n2	1.2.1.2	name	
+::node	f	1.2.2.1	fire-01	firing
+::node	c	1.2.1.3	country	
+::node	c2	1.2.3.1	country	
+::node	-	1.2.1.1	-	
+::node	o	1.1.1.1	official	officials
+::node	f2	1.2.3.2.2	foreign	foreigner
+::node	"Vietnam"	1.2.3.1.1	"Vietnam"	
+::node	n4	1.2.3.1.2	name	
+::node	o2	1.2.3.2.1	ordinal-entity	th
+::node	p	1.2.1	person	
+::node	s	1	state-01	stated
+::node	s2	1.2.2	squad	squad
+::node	2002	1.3.1	2002	2002
+::node	"Chen"	1.2.1.2.1	"Chen"	Chen
+::node	e2	1.2.3	execute-01	execution
+::node	5	1.3.2	5	May
+::node	22	1.3.3	22	22
+::node	p2	1.1	person	foreigner
+::node	e	1.2	execute-01	execution
+::node	"Vietnam"	1.2.3.1.2.1	"Vietnam"	Vietnam
+::node	d2	1.3	date-entity	
+::node	8	1.2.3.2.1.1	8	8
+::node	h	1.1.1	have-org-role-91	
+::edge	1.2.1.3.2		name	:op1	1.2.1.3.2.1	Taiwan	"Taiwan"
+::edge	1.2.1.2		name	:op3	1.2.1.2.3	Tien	"Tien"
+::edge	1.2.1.3		country	:name	1.2.1.3.2		name
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	Chi	"Chi"
+::edge	1.2.1.3		country	:wiki	1.2.1.3.1		"Taiwan"
+::edge	1.2.1		person	:mod	1.2.1.4	National	nation
+::edge	1.2.3	execution	execute-01	:ARG1	1.2.3.2	foreigner	person
+::edge	1.2.1		person	:name	1.2.1.2		name
+::edge	1.2.2	squad	squad	:ARG0-of	1.2.2.1	firing	fire-01
+::edge	1.2.1		person	:source	1.2.1.3		country
+::edge	1.2.3	execution	execute-01	:ARG0	1.2.3.1		country
+::edge	1.2.1		person	:wiki	1.2.1.1		-
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.1	officials	official
+::edge	1.2.3.2	foreigner	person	:mod	1.2.3.2.2	foreigner	foreign
+::edge	1.2.3.1		country	:wiki	1.2.3.1.1		"Vietnam"
+::edge	1.2.3.1		country	:name	1.2.3.1.2		name
+::edge	1.2.3.2	foreigner	person	:ord	1.2.3.2.1	th	ordinal-entity
+::edge	1.2	execution	execute-01	:ARG1	1.2.1		person
+::edge	1.2	execution	execute-01	:ARG2	1.2.2	squad	squad
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Chen	"Chen"
+::edge	1.2	execution	execute-01	:mod	1.2.3	execution	execute-01
+::edge	1.3		date-entity	:month	1.3.2	May	5
+::edge	1.3		date-entity	:day	1.3.3	22	22
+::edge	1	stated	state-01	:ARG0	1.1	foreigner	person
+::edge	1	stated	state-01	:ARG1	1.2	execution	execute-01
+::edge	1.2.3.1.2		name	:op1	1.2.3.1.2.1	Vietnam	"Vietnam"
+::edge	1	stated	state-01	:time	1.3		date-entity
+::edge	1.2.3.2.1	th	ordinal-entity	:value	1.2.3.2.1.1	8	8
+::edge	1.1	foreigner	person	:ARG0-of	1.1.1		have-org-role-91
+7	Chen was sentenced to death in 1997 for the illegal manufacture of methamphetamines disguised as a soap manufacturing plant.
+7	Chen was sentenced to death in 1997 for the illegal manufacture of methamphetamines disguised as a soap manufacturing plant .
+7	0-1.1.2.1 2-1 3-1.2.r 4-1.2 5-1.4.r 6-1.4.1 7-1.3.r 9-1.3.2 9-1.3.2.1 9-1.3.2.1.r 10-1.3 11-1.3.1.r 12-1.3.1 13-1.3.3 14-1.3.3.1.r 16-1.3.3.1.1.1 17-1.3.3.1.1 18-1.3.3.1
+::node	"Chen"	1.1.2.1	"Chen"	Chen
+::node	-	1.3.2.1	-	illegal
+::node	p2	1.3.3.1	plant	plant
+::node	n	1.1.2	name	
+::node	p	1.2.1	person	
+::node	s	1	sentence-01	sentenced
+::node	m2	1.3.1	methamphetamine	methamphetamines
+::node	m3	1.3.3.1.1	manufacture-01	manufacturing
+::node	s2	1.3.3.1.1.1	soap	soap
+::node	l	1.3.2	law	illegal
+::node	1997	1.4.1	1997	1997
+::node	d3	1.3.3	disguise-01	disguised
+::node	p	1.1	person	
+::node	d2	1.2	die-01	death
+::node	m	1.3	manufacture-01	manufacture
+::node	d	1.4	date-entity	
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Chen	"Chen"
+::edge	1.3.2	illegal	law	:polarity	1.3.2.1	illegal	-
+::edge	1.3.3	disguised	disguise-01	:ARG2	1.3.3.1	plant	plant
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	death	die-01	:ARG1	1.2.1		person
+::edge	1.3	manufacture	manufacture-01	:ARG1	1.3.1	methamphetamines	methamphetamine
+::edge	1.3.3.1	plant	plant	:purpose	1.3.3.1.1	manufacturing	manufacture-01
+::edge	1.3.3.1.1	manufacturing	manufacture-01	:ARG1	1.3.3.1.1.1	soap	soap
+::edge	1.3	manufacture	manufacture-01	:manner	1.3.2	illegal	law
+::edge	1.4		date-entity	:year	1.4.1	1997	1997
+::edge	1.3	manufacture	manufacture-01	:ARG1-of	1.3.3	disguised	disguise-01
+::edge	1	sentenced	sentence-01	:ARG1	1.1		person
+::edge	1	sentenced	sentence-01	:ARG2	1.2	death	die-01
+::edge	1	sentenced	sentence-01	:ARG3	1.3	manufacture	manufacture-01
+::edge	1	sentenced	sentence-01	:time	1.4		date-entity
+::edge	1.1		person	:wiki	1.1.1		-
+8	Court officials in the commercial capital stated that Chen was executed in Ho Chi Minh City on 21 May 2002.
+8	Court officials in the commercial capital stated that Chen was executed in Ho Chi Minh City on 21 May 2002 .
+8	0-1.1.1.1 1-1.1.1.2 4-1.1.2 5-1.1.2 6-1 7-1.2.r 8-1.2.1.2.1 10-1.2 11-1.2.2.r 12-1.2.2.2.1 13-1.2.2.2.2 14-1.2.2.2.3 15-1.2.2.2.4 16-1.2.3.r 17-1.2.3.3 18-1.2.3.2 18-1.2.3.2.r 19-1.2.3.1
+::node	h2	1.2.2.3	have-org-role-91	
+::node	5	1.2.3.2	5	May
+::node	21	1.2.3.3	21	21
+::node	n	1.2.1.2	name	
+::node	"Ho_Chi_Minh_City"	1.2.2.1	"Ho_Chi_Minh_City"	
+::node	n2	1.2.2.2	name	
+::node	2002	1.2.3.1	2002	2002
+::node	"Ho"	1.2.2.2.1	"Ho"	Ho
+::node	-	1.2.1.1	-	
+::node	"Chi"	1.2.2.2.2	"Chi"	Chi
+::node	c2	1.2.2.3.1	capital	
+::node	"Minh"	1.2.2.2.3	"Minh"	Minh
+::node	"City"	1.2.2.2.4	"City"	City
+::node	c	1.1.1.1	court	Court
+::node	o	1.1.1.2	official	officials
+::node	c3	1.2.2.3.1.1	commerce	
+::node	c4	1.1.2	city	capital
+::node	p	1.2.1	person	
+::node	s	1	state-01	stated
+::node	c4	1.2.2	city	
+::node	"Chen"	1.2.1.2.1	"Chen"	Chen
+::node	d2	1.2.3	date-entity	
+::node	p2	1.1	person	
+::node	e	1.2	execute-01	executed
+::node	h	1.1.1	have-org-role-91	
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1	Court	court
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.2.2.3.1		capital	:mod	1.2.2.3.1.1		commerce
+::edge	1.1		person	:location	1.1.2	capital	city
+::edge	1.2	executed	execute-01	:ARG1	1.2.1		person
+::edge	1.2	executed	execute-01	:location	1.2.2		city
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Chen	"Chen"
+::edge	1.2	executed	execute-01	:time	1.2.3		date-entity
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	executed	execute-01
+::edge	1.2.2		city	:ARG0-of	1.2.2.3		have-org-role-91
+::edge	1.2.3		date-entity	:month	1.2.3.2	May	5
+::edge	1.2.3		date-entity	:day	1.2.3.3	21	21
+::edge	1.2.1		person	:name	1.2.1.2		name
+::edge	1.2.2		city	:wiki	1.2.2.1		"Ho_Chi_Minh_City"
+::edge	1.2.2		city	:name	1.2.2.2		name
+::edge	1.2.3		date-entity	:year	1.2.3.1	2002	2002
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Ho	"Ho"
+::edge	1.2.1		person	:wiki	1.2.1.1		-
+::edge	1.2.2.2		name	:op2	1.2.2.2.2	Chi	"Chi"
+::edge	1.2.2.3		have-org-role-91	:ARG2	1.2.2.3.1		capital
+::edge	1.2.2.2		name	:op3	1.2.2.2.3	Minh	"Minh"
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+::edge	1.2.2.2		name	:op4	1.2.2.2.4	City	"City"
+9	The businessman was arrested with several Vietnamese accomplices in 1995 after 170 kilograms (375 pounds) of methamphethamine chlorohydrate were found stored in the downtown soap factory Chen had established in 1994.
+9	The businessman was arrested with several Vietnamese accomplices in 1995 after 170 kilograms ( 375 pounds ) of methamphethamine chlorohydrate were found stored in the downtown soap factory Chen had established in 1994 .
+9	1-1.1 3-1 4-1.2.r 5-1.2.1 6-1.2.2.2.1 7-1.2 8-1.3.r 9-1.3.1 10-1.4 11-1.4.1.1.2.1 12-1.4.1.1.2.2 14-1.4.1.1.3.1 15-1.4.1.1.3.2 19-1.4.1.1.1 21-1.4.1 22-1.4.1.1.4 23-1.4.1.1.4.1.r 25-1.4.1.1.4.1.3 26-1.4.1.1.4.1.1 27-1.4.1.1.4.1 28-1.4.1.1.4.1.2.1.2.1 30-1.4.1.1.4.1.2 31-1.4.1.1.4.1.2.2.r 32-1.4.1.1.4.1.2.2.1
+::node	"Chen"	1.4.1.1.4.1.2.1.2.1	"Chen"	Chen
+::node	m2	1.4.1.1.3	mass-quantity	
+::node	s2	1.4.1.1.4	store-01	stored
+::node	"Vietnam"	1.2.2.1	"Vietnam"	
+::node	c2	1.4.1.1.1	chlorohydrate	chlorohydrate
+::node	n	1.2.2.2	name	
+::node	m3	1.4.1.1.2	mass-quantity	
+::node	"Vietnam"	1.2.2.2.1	"Vietnam"	Vietnamese
+::node	k2	1.4.1.1.2.2	kilogram	kilograms
+::node	375	1.4.1.1.3.1	375	375
+::node	170	1.4.1.1.2.1	170	170
+::node	p2	1.4.1.1.3.2	pound	pounds
+::node	f2	1.4.1.1.4.1	factory	factory
+::node	s	1.2.1	several	several
+::node	-	1.4.1.1.4.1.2.1.1	-	
+::node	a	1	arrest-01	arrested
+::node	c	1.2.2	country	
+::node	1995	1.3.1	1995	1995
+::node	s3	1.4.1.1.4.1.1	soap	soap
+::node	n2	1.4.1.1.4.1.2.1.2	name	
+::node	1994	1.4.1.1.4.1.2.2.1	1994	1994
+::node	f	1.4.1	find-01	found
+::node	e	1.4.1.1.4.1.2	establish-01	established
+::node	d	1.4.1.1.4.1.3	downtown	downtown
+::node	b	1.1	businessman	businessman
+::node	a2	1.2	accomplice	accomplices
+::node	d3	1.3	date-entity	
+::node	a3	1.4	after	after
+::node	p3	1.4.1.1.4.1.2.1	person	
+::node	d4	1.4.1.1.4.1.2.2	date-entity	
+::node	m	1.4.1.1	methamphetamine	
+::edge	1.4.1.1.4.1.2.1.2		name	:op1	1.4.1.1.4.1.2.1.2.1	Chen	"Chen"
+::edge	1.4.1.1		methamphetamine	:quant	1.4.1.1.3		mass-quantity
+::edge	1.4.1.1		methamphetamine	:ARG1-of	1.4.1.1.4	stored	store-01
+::edge	1.2.2		country	:wiki	1.2.2.1		"Vietnam"
+::edge	1.4.1.1		methamphetamine	:mod	1.4.1.1.1	chlorohydrate	chlorohydrate
+::edge	1.2.2		country	:name	1.2.2.2		name
+::edge	1.4.1.1		methamphetamine	:quant	1.4.1.1.2		mass-quantity
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Vietnamese	"Vietnam"
+::edge	1.4.1.1.2		mass-quantity	:unit	1.4.1.1.2.2	kilograms	kilogram
+::edge	1.4.1.1.3		mass-quantity	:quant	1.4.1.1.3.1	375	375
+::edge	1.4.1.1.2		mass-quantity	:quant	1.4.1.1.2.1	170	170
+::edge	1.4.1.1.3		mass-quantity	:unit	1.4.1.1.3.2	pounds	pound
+::edge	1.4.1.1.4	stored	store-01	:location	1.4.1.1.4.1	factory	factory
+::edge	1.2	accomplices	accomplice	:quant	1.2.1	several	several
+::edge	1.4.1.1.4.1.2.1		person	:wiki	1.4.1.1.4.1.2.1.1		-
+::edge	1.2	accomplices	accomplice	:source	1.2.2		country
+::edge	1.3		date-entity	:year	1.3.1	1995	1995
+::edge	1.4.1.1.4.1	factory	factory	:mod	1.4.1.1.4.1.1	soap	soap
+::edge	1.4.1.1.4.1.2.1		person	:name	1.4.1.1.4.1.2.1.2		name
+::edge	1.4.1.1.4.1.2.2		date-entity	:year	1.4.1.1.4.1.2.2.1	1994	1994
+::edge	1.4	after	after	:op1	1.4.1	found	find-01
+::edge	1.4.1.1.4.1	factory	factory	:ARG1-of	1.4.1.1.4.1.2	established	establish-01
+::edge	1.4.1.1.4.1	factory	factory	:location	1.4.1.1.4.1.3	downtown	downtown
+::edge	1	arrested	arrest-01	:ARG1	1.1	businessman	businessman
+::edge	1	arrested	arrest-01	:accompanier	1.2	accomplices	accomplice
+::edge	1	arrested	arrest-01	:time	1.3		date-entity
+::edge	1	arrested	arrest-01	:time	1.4	after	after
+::edge	1.4.1.1.4.1.2	established	establish-01	:ARG0	1.4.1.1.4.1.2.1		person
+::edge	1.4.1.1.4.1.2	established	establish-01	:time	1.4.1.1.4.1.2.2		date-entity
+::edge	1.4.1	found	find-01	:ARG1	1.4.1.1		methamphetamine
+10	Police established that Chen had already exported at least 4 shipments of the drug before his illegal manufacturing operation was discovered.
+10	Police established that Chen had already exported at least 4 shipments of the drug before his illegal manufacturing operation was discovered .
+10	0-1.1 1-1 2-1.2.r 3-1.2.1.2.1 5-1.2.4 6-1.2 7-1.2.2.1.1 8-1.2.2.1.1 9-1.2.2.1.1.1 10-1.2.2.1 13-1.2.2 14-1.2.3 15-1.2.3.1.1.3 15-1.2.3.1.1.3.r 16-1.2.3.1.1.2 16-1.2.3.1.1.2.1 16-1.2.3.1.1.2.1.r 17-1.2.3.1.1.1 18-1.2.3.1.1 20-1.2.3.1
+::node	a2	1.2.2.1.1	at-least	least
+::node	4	1.2.2.1.1.1	4	4
+::node	o	1.2.3.1.1	operation	operation
+::node	-	1.2.3.1.1.2.1	-	illegal
+::node	p2	1.2.1	person	
+::node	e	1	establish-01	established
+::node	d	1.2.2	drug	drug
+::node	"Chen"	1.2.1.2.1	"Chen"	Chen
+::node	b	1.2.3	before	before
+::node	m	1.2.3.1.1.1	manufacture-01	manufacturing
+::node	a	1.2.4	already	already
+::node	p3	1.1	police	Police
+::node	p2	1.2.3.1.1.3	person	his
+::node	e2	1.2	export-01	exported
+::node	l	1.2.3.1.1.2	law	illegal
+::node	n	1.2.1.2	name	
+::node	s	1.2.2.1	ship-01	shipments
+::node	d2	1.2.3.1	discover-01	discovered
+::node	-	1.2.1.1	-	
+::edge	1.2.2.1	shipments	ship-01	:quant	1.2.2.1.1	least	at-least
+::edge	1.2.2.1.1	least	at-least	:op1	1.2.2.1.1.1	4	4
+::edge	1.2.3.1	discovered	discover-01	:ARG1	1.2.3.1.1	operation	operation
+::edge	1.2.3.1.1.2	illegal	law	:polarity	1.2.3.1.1.2.1	illegal	-
+::edge	1.2	exported	export-01	:ARG0	1.2.1		person
+::edge	1.2	exported	export-01	:ARG1	1.2.2	drug	drug
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Chen	"Chen"
+::edge	1.2	exported	export-01	:time	1.2.3	before	before
+::edge	1.2.3.1.1	operation	operation	:purpose	1.2.3.1.1.1	manufacturing	manufacture-01
+::edge	1.2	exported	export-01	:mod	1.2.4	already	already
+::edge	1	established	establish-01	:ARG0	1.1	Police	police
+::edge	1.2.3.1.1	operation	operation	:poss	1.2.3.1.1.3	his	person
+::edge	1	established	establish-01	:ARG1	1.2	exported	export-01
+::edge	1.2.3.1.1	operation	operation	:mod	1.2.3.1.1.2	illegal	law
+::edge	1.2.1		person	:name	1.2.1.2		name
+::edge	1.2.2	drug	drug	:ARG1-of	1.2.2.1	shipments	ship-01
+::edge	1.2.3	before	before	:op1	1.2.3.1	discovered	discover-01
+::edge	1.2.1		person	:wiki	1.2.1.1		-
+11	Chen traveled to Vietnam regularly since 1992.
+11	Chen traveled to Vietnam regularly since 1992 .
+11	0-1.1.2.1 1-1 2-1.2.r 3-1.2.2.1 4-1.3 5-1.4 6-1.4.1.1
+::node	"Chen"	1.1.2.1	"Chen"	Chen
+::node	n	1.1.2	name	
+::node	"Vietnam"	1.2.1	"Vietnam"	
+::node	t	1	travel-01	traveled
+::node	n2	1.2.2	name	
+::node	d2	1.4.1	date-entity	
+::node	p	1.1	person	
+::node	c	1.2	country	
+::node	r	1.3	regular	regularly
+::node	s	1.4	since	since
+::node	"Vietnam"	1.2.2.1	"Vietnam"	Vietnam
+::node	-	1.1.1	-	
+::node	1992	1.4.1.1	1992	1992
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"Vietnam"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.4	since	since	:op1	1.4.1		date-entity
+::edge	1.1.2		name	:op1	1.1.2.1	Chen	"Chen"
+::edge	1	traveled	travel-01	:ARG0	1.1		person
+::edge	1	traveled	travel-01	:ARG1	1.2		country
+::edge	1	traveled	travel-01	:frequency	1.3	regularly	regular
+::edge	1	traveled	travel-01	:time	1.4	since	since
+::edge	1.2.2		name	:op1	1.2.2.1	Vietnam	"Vietnam"
+::edge	1.1		person	:wiki	1.1.1		-
+::edge	1.4.1		date-entity	:year	1.4.1.1	1992	1992
+12	The crystalline amphetamine derivative is Smokable and has a very large illegal market in East Asia.
+12	The crystalline amphetamine derivative is Smokable and has a very large illegal market in East Asia .
+12	1-1.1.1.1 2-1.1.1 6-1 9-1.2.2.1 10-1.2.2 11-1.2.4 11-1.2.4.1 11-1.2.4.1.r 12-1.2 13-1.2.3.r 14-1.2.3.2.1 15-1.2.3.2.2
+::node	c	1.1.1.1	crystalline	crystalline
+::node	d	1.1.1.2	derive-01	
+::node	"Asia"	1.2.3.2.2	"Asia"	Asia
+::node	"East"	1.2.3.2.1	"East"	East
+::node	p	1.1.2	possible	
+::node	a2	1.2.1	amphetamine	
+::node	a	1	and	and
+::node	l	1.2.2	large	large
+::node	w	1.2.3	world-region	
+::node	l2	1.2.4	law	illegal
+::node	s	1.1	smoke-02	
+::node	m	1.2	market-01	market
+::node	n	1.2.3.2	name	
+::node	-	1.2.4.1	-	illegal
+::node	v	1.2.2.1	very	very
+::node	"East_Asia"	1.2.3.1	"East_Asia"	
+::node	a2	1.1.1	amphetamine	amphetamine
+::edge	1.1.1	amphetamine	amphetamine	:mod	1.1.1.1	crystalline	crystalline
+::edge	1.1.1	amphetamine	amphetamine	:ARG2-of	1.1.1.2		derive-01
+::edge	1.2.3.2		name	:op2	1.2.3.2.2	Asia	"Asia"
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	East	"East"
+::edge	1.1		smoke-02	:mod	1.1.2		possible
+::edge	1.2	market	market-01	:ARG1	1.2.1		amphetamine
+::edge	1.2	market	market-01	:mod	1.2.2	large	large
+::edge	1.2	market	market-01	:location	1.2.3		world-region
+::edge	1.2	market	market-01	:mod	1.2.4	illegal	law
+::edge	1	and	and	:op1	1.1		smoke-02
+::edge	1	and	and	:op2	1.2	market	market-01
+::edge	1.2.3		world-region	:name	1.2.3.2		name
+::edge	1.2.4	illegal	law	:polarity	1.2.4.1	illegal	-
+::edge	1.2.2	large	large	:degree	1.2.2.1	very	very
+::edge	1.2.3		world-region	:wiki	1.2.3.1		"East_Asia"
+::edge	1.1		smoke-02	:ARG1	1.1.1	amphetamine	amphetamine
+13	The drug is also known as ice or shabu.
+13	The drug is also known as ice or shabu .
+13	1-1.1 3-1.3 4-1 5-1.2.r 6-1.2.1 7-1.2 8-1.2.2
+::node	i	1.2.1	ice	ice
+::node	k	1	know-01	known
+::node	s	1.2.2	shabu	shabu
+::node	d	1.1	drug	drug
+::node	o	1.2	or	or
+::node	a	1.3	also	also
+::edge	1.2	or	or	:op1	1.2.1	ice	ice
+::edge	1.2	or	or	:op2	1.2.2	shabu	shabu
+::edge	1	known	know-01	:ARG1	1.1	drug	drug
+::edge	1	known	know-01	:ARG2	1.2	or	or
+::edge	1	known	know-01	:mod	1.3	also	also
+14	Vietnam has executed 1 Western national to date.
+14	Vietnam has executed 1 Western national to date .
+14	0-1.1.2.1 2-1 3-1.2.1 4-1.2.2.2.1 5-1.2.3 6-1.3 7-1.3
+::node	"Vietnam"	1.1.2.1	"Vietnam"	Vietnam
+::node	n	1.1.2	name	
+::node	1	1.2.1	1	1
+::node	e	1	execute-01	executed
+::node	w	1.2.2	world-region	
+::node	n2	1.2.3	nation	national
+::node	c	1.1	country	
+::node	p	1.2	person	
+::node	t	1.3	to-date	date
+::node	"Western_world"	1.2.2.1	"Western_world"	
+::node	n3	1.2.2.2	name	
+::node	"West"	1.2.2.2.1	"West"	Western
+::node	"Vietnam"	1.1.1	"Vietnam"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		person	:quant	1.2.1	1	1
+::edge	1.2		person	:source	1.2.2		world-region
+::edge	1.2		person	:mod	1.2.3	national	nation
+::edge	1.1.2		name	:op1	1.1.2.1	Vietnam	"Vietnam"
+::edge	1	executed	execute-01	:ARG0	1.1		country
+::edge	1	executed	execute-01	:ARG1	1.2		person
+::edge	1	executed	execute-01	:time	1.3	date	to-date
+::edge	1.2.2		world-region	:wiki	1.2.2.1		"Western_world"
+::edge	1.2.2		world-region	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Western	"West"
+::edge	1.1		country	:wiki	1.1.1		"Vietnam"
+15	The Western national executed was a Vietnamese-Canadian woman whose execution in 2000 caused a diplomatic controversy with Canada.
+15	The Western national executed was a Vietnamese @-@ Canadian woman whose execution in 2000 caused a diplomatic controversy with Canada .
+15	1-1.1.2.1.2.1 2-1.1.2.2 3-1 4-1.1.2.r 6-1.1.1.1.2.1 8-1.1.1.2.2.1 9-1.1 11-1 12-1.3.r 13-1.3.1 14-1.2 16-1.2.1.1 17-1.2.1 18-1.2.1.2.r 19-1.2.1.2
+::node	"Vietnam"	1.1.1.1.2.1	"Vietnam"	Vietnamese
+::node	c	1.1.1.1	country	
+::node	c2	1.1.1.2	country	
+::node	w2	1.1.2.1	world-region	
+::node	"West"	1.1.2.1.2.1	"West"	Western
+::node	n3	1.1.2.2	nation	national
+::node	n4	1.1.2.1.2	name	
+::node	"Western_world"	1.1.2.1.1	"Western_world"	
+::node	"Canada"	1.1.1.2.2.1	"Canada"	Canadian
+::node	p	1.1.2	person	
+::node	c4	1.2.1	controversy	controversy
+::node	e	1	execute-01	execution
+::node	2000	1.3.1	2000	2000
+::node	w	1.1	woman	woman
+::node	c3	1.2	cause-01	caused
+::node	d3	1.3	date-entity	
+::node	n2	1.1.1.2.2	name	
+::node	n	1.1.1.1.2	name	
+::node	"Canada"	1.1.1.2.1	"Canada"	
+::node	"Vietnam"	1.1.1.1.1	"Vietnam"	
+::node	c2	1.2.1.2	country	Canada
+::node	d2	1.2.1.1	diplomatic	diplomatic
+::node	a	1.1.1	and	
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Vietnamese	"Vietnam"
+::edge	1.1.1		and	:op1	1.1.1.1		country
+::edge	1.1.1		and	:op2	1.1.1.2		country
+::edge	1.1.2		person	:source	1.1.2.1		world-region
+::edge	1.1.2.1.2		name	:op1	1.1.2.1.2.1	Western	"West"
+::edge	1.1.2		person	:mod	1.1.2.2	national	nation
+::edge	1.1.2.1		world-region	:name	1.1.2.1.2		name
+::edge	1.1.2.1		world-region	:wiki	1.1.2.1.1		"Western_world"
+::edge	1.1.1.2.2		name	:op1	1.1.1.2.2.1	Canadian	"Canada"
+::edge	1.1	woman	woman	:domain	1.1.2		person
+::edge	1.2	caused	cause-01	:ARG1	1.2.1	controversy	controversy
+::edge	1.3		date-entity	:year	1.3.1	2000	2000
+::edge	1	execution	execute-01	:ARG1	1.1	woman	woman
+::edge	1	execution	execute-01	:ARG0-of	1.2	caused	cause-01
+::edge	1	execution	execute-01	:time	1.3		date-entity
+::edge	1.1.1.2		country	:name	1.1.1.2.2		name
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.2		country	:wiki	1.1.1.2.1		"Canada"
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Vietnam"
+::edge	1.2.1	controversy	controversy	:accompanier	1.2.1.2	Canada	country
+::edge	1.2.1	controversy	controversy	:mod	1.2.1.1	diplomatic	diplomatic
+::edge	1.1	woman	woman	:source	1.1.1		and
+16	The other foreigners executed were Asians.
+16	The other foreigners executed were Asians .
+16	1-1.1.1 2-1.1 2-1.1.3 2-1.1.3.r 3-1 5-1.1.2.2.1
+::node	c	1.1.2	continent	
+::node	e	1	execute-01	executed
+::node	f	1.1.3	foreign	foreigners
+::node	"Asia"	1.1.2.1	"Asia"	
+::node	p	1.1	person	foreigners
+::node	n	1.1.2.2	name	
+::node	"Asia"	1.1.2.2.1	"Asia"	Asians
+::node	o	1.1.1	other	other
+::edge	1.1	foreigners	person	:source	1.1.2		continent
+::edge	1.1	foreigners	person	:mod	1.1.3	foreigners	foreign
+::edge	1.1.2		continent	:wiki	1.1.2.1		"Asia"
+::edge	1	executed	execute-01	:ARG1	1.1	foreigners	person
+::edge	1.1.2		continent	:name	1.1.2.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Asians	"Asia"
+::edge	1.1	foreigners	person	:mod	1.1.1	other	other
+17	1 Hong Kong National was executed in 1995 and 2 in 1998.
+17	1 Hong Kong National was executed in 1995 and 2 in 1998 .
+17	0-1.1.1.1 1-1.1.1.2.2.1 2-1.1.1.2.2.2 3-1.1.1.3 5-1.1 5-1.2 6-1.1.2.r 7-1.1.2.1 8-1 9-1.2.1.1 10-1.2.2.r 11-1.2.2.1
+::node	1	1.1.1.1	1	1
+::node	c	1.1.1.2	city	
+::node	1995	1.1.2.1	1995	1995
+::node	n	1.1.1.3	nation	National
+::node	"Hong"	1.1.1.2.2.1	"Hong"	Hong
+::node	"Kong"	1.1.1.2.2.2	"Kong"	Kong
+::node	d3	1.1.2	date-entity	
+::node	p	1.2.1	person	
+::node	a	1	and	and
+::node	d4	1.2.2	date-entity	
+::node	e	1.1	execute-01	executed
+::node	e2	1.2	execute-01	executed
+::node	n2	1.1.1.2.2	name	
+::node	"Hong_Kong"	1.1.1.2.1	"Hong_Kong"	
+::node	c	1.2.1.2	city	
+::node	1998	1.2.2.1	1998	1998
+::node	n	1.2.1.3	nation	
+::node	2	1.2.1.1	2	2
+::node	p2	1.1.1	person	
+::edge	1.1.1		person	:quant	1.1.1.1	1	1
+::edge	1.1.1		person	:source	1.1.1.2		city
+::edge	1.1.2		date-entity	:year	1.1.2.1	1995	1995
+::edge	1.1.1		person	:mod	1.1.1.3	National	nation
+::edge	1.1.1.2.2		name	:op1	1.1.1.2.2.1	Hong	"Hong"
+::edge	1.1.1.2.2		name	:op2	1.1.1.2.2.2	Kong	"Kong"
+::edge	1.1	executed	execute-01	:time	1.1.2		date-entity
+::edge	1.2	executed	execute-01	:ARG1	1.2.1		person
+::edge	1.2	executed	execute-01	:time	1.2.2		date-entity
+::edge	1	and	and	:op1	1.1	executed	execute-01
+::edge	1	and	and	:op2	1.2	executed	execute-01
+::edge	1.1.1.2		city	:name	1.1.1.2.2		name
+::edge	1.1.1.2		city	:wiki	1.1.1.2.1		"Hong_Kong"
+::edge	1.2.1		person	:source	1.2.1.2		city
+::edge	1.2.2		date-entity	:year	1.2.2.1	1998	1998
+::edge	1.2.1		person	:mod	1.2.1.3		nation
+::edge	1.2.1		person	:quant	1.2.1.1	2	2
+::edge	1.1	executed	execute-01	:ARG1	1.1.1		person
+18	Lao nationals were executed in 1999 and 2000.
+18	Lao nationals were executed in 1999 and 2000 .
+18	0-1.1.1.2.1 1-1.1.2 3-1 4-1.2.r 5-1.2.1.1 6-1.2 7-1.2.2.1
+::node	n	1.1.2	nation	nationals
+::node	d3	1.2.1	date-entity	
+::node	e	1	execute-01	executed
+::node	d4	1.2.2	date-entity	
+::node	"Laos"	1.1.1.1	"Laos"	
+::node	n2	1.1.1.2	name	
+::node	p	1.1	person	
+::node	a	1.2	and	and
+::node	"Laos"	1.1.1.2.1	"Laos"	Lao
+::node	2000	1.2.2.1	2000	2000
+::node	1999	1.2.1.1	1999	1999
+::node	c	1.1.1	country	
+::edge	1.1		person	:mod	1.1.2	nationals	nation
+::edge	1.2	and	and	:op1	1.2.1		date-entity
+::edge	1.2	and	and	:op2	1.2.2		date-entity
+::edge	1.1.1		country	:wiki	1.1.1.1		"Laos"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1	executed	execute-01	:ARG1	1.1		person
+::edge	1	executed	execute-01	:time	1.2	and	and
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Lao	"Laos"
+::edge	1.2.2		date-entity	:year	1.2.2.1	2000	2000
+::edge	1.2.1		date-entity	:year	1.2.1.1	1999	1999
+::edge	1.1		person	:source	1.1.1		country
+19	A Singaporean was executed in 1999.
+19	A Singaporean was executed in 1999 .
+19	1-1.1.1.2.1 3-1 4-1.2.r 5-1.2.1
+::node	1999	1.2.1	1999	1999
+::node	e	1	execute-01	executed
+::node	"Singapore"	1.1.1.1	"Singapore"	
+::node	n	1.1.1.2	name	
+::node	p	1.1	person	
+::node	d	1.2	date-entity	
+::node	"Singapore"	1.1.1.2.1	"Singapore"	Singaporean
+::node	c	1.1.1	country	
+::edge	1.2		date-entity	:year	1.2.1	1999	1999
+::edge	1.1.1		country	:wiki	1.1.1.1		"Singapore"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1	executed	execute-01	:ARG1	1.1		person
+::edge	1	executed	execute-01	:time	1.2		date-entity
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Singaporean	"Singapore"
+::edge	1.1		person	:source	1.1.1		country
+20	More foreign nationals receive the death penalty from the courts but most have their sentences commuted on appeal.
+20	More foreign nationals receive the death penalty from the courts but most have their sentences commuted on appeal .
+20	0-1.1.2.2 1-1.1.2.1 1-1.2.1.1.1 2-1.1.2.3 2-1.2.1.1.3 3-1.2.1 5-1.1.3 6-1.1 7-1.1.1.r 9-1.1.1 10-1 11-1.2.1.1.2 14-1.2.1 15-1.2 16-1.2.1.2.r 17-1.2.1.2
+::node	f	1.1.2.1	foreign	foreign
+::node	m	1.1.2.2	more	More
+::node	p2	1.1.3.1	person	
+::node	n	1.1.2.3	nation	nationals
+::node	n2	1.2.1.1.3	nation	nationals
+::node	p2	1.1.2	person	
+::node	s	1.2.1	sentence-01	sentences
+::node	c	1	contrast-01	but
+::node	d	1.1.3	die-01	death
+::node	m2	1.2.1.1.2	most	most
+::node	f2	1.2.1.1.1	foreign	foreign
+::node	p	1.1	penalize-01	penalty
+::node	c3	1.2	commute-02	commuted
+::node	a	1.2.1.2	appeal-01	appeal
+::node	p3	1.2.1.1	person	
+::node	c2	1.1.1	court	courts
+::edge	1.1.2		person	:mod	1.1.2.1	foreign	foreign
+::edge	1.1.2		person	:quant	1.1.2.2	More	more
+::edge	1.1.3	death	die-01	:ARG1	1.1.3.1		person
+::edge	1.1.2		person	:mod	1.1.2.3	nationals	nation
+::edge	1.2.1.1		person	:mod	1.2.1.1.3	nationals	nation
+::edge	1.1	penalty	penalize-01	:ARG1	1.1.2		person
+::edge	1.2	commuted	commute-02	:ARG1	1.2.1	sentences	sentence-01
+::edge	1.1	penalty	penalize-01	:mod	1.1.3	death	die-01
+::edge	1.2.1.1		person	:quant	1.2.1.1.2	most	most
+::edge	1.2.1.1		person	:mod	1.2.1.1.1	foreign	foreign
+::edge	1	but	contrast-01	:ARG1	1.1	penalty	penalize-01
+::edge	1	but	contrast-01	:ARG2	1.2	commuted	commute-02
+::edge	1.2.1	sentences	sentence-01	:ARG1-of	1.2.1.2	appeal	appeal-01
+::edge	1.2.1	sentences	sentence-01	:ARG1	1.2.1.1		person
+::edge	1.1	penalty	penalize-01	:ARG0	1.1.1	courts	court
+21	3 Australian nationals of Vietnamese origin are currently awaiting trial on drug charges which carry the death penalty.
+21	3 Australian nationals of Vietnamese origin are currently awaiting trial on drug charges which carry the death penalty .
+21	0-1.1.1 1-1.1.2.2.1 2-1.1.4 4-1.1.3.1.2.1 7-1.3 8-1 9-1.2 10-1.2.1.r 11-1.2.1.2 12-1.2.1 14-1.2.1.3 16-1.2.1.3.1.1 17-1.2.1.3.1
+::node	"Australia"	1.1.2.1	"Australia"	
+::node	n3	1.1.3.1.2	name	
+::node	d2	1.2.1.3.1.1	die-01	death
+::node	n2	1.1.2.2	name	
+::node	c2	1.1.3.1	country	
+::node	"Australia"	1.1.2.2.1	"Australia"	Australian
+::node	p	1.2.1.3.1	penalize-01	penalty
+::node	"Vietnam"	1.1.3.1.2.1	"Vietnam"	Vietnamese
+::node	c	1.1.2	country	
+::node	c4	1.2.1	charge-05	charges
+::node	a	1	await-01	awaiting
+::node	o	1.1.3	originate-01	
+::node	n	1.1.4	nation	nationals
+::node	p2	1.1	person	
+::node	t	1.2	try-02	trial
+::node	c3	1.3	current	currently
+::node	d	1.2.1.2	drug-01	drug
+::node	c5	1.2.1.3	carry-01	carry
+::node	"Vietnam"	1.1.3.1.1	"Vietnam"	
+::node	p2	1.2.1.1	person	
+::node	3	1.1.1	3	3
+::edge	1.1.2		country	:wiki	1.1.2.1		"Australia"
+::edge	1.1.3.1		country	:name	1.1.3.1.2		name
+::edge	1.2.1.3.1	penalty	penalize-01	:manner	1.2.1.3.1.1	death	die-01
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.3		originate-01	:ARG2	1.1.3.1		country
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Australian	"Australia"
+::edge	1.2.1.3	carry	carry-01	:ARG1	1.2.1.3.1	penalty	penalize-01
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Vietnamese	"Vietnam"
+::edge	1.1		person	:mod	1.1.2		country
+::edge	1.2	trial	try-02	:ARG1	1.2.1	charges	charge-05
+::edge	1.1		person	:ARG1-of	1.1.3		originate-01
+::edge	1.1		person	:mod	1.1.4	nationals	nation
+::edge	1	awaiting	await-01	:ARG1	1.1		person
+::edge	1	awaiting	await-01	:ARG2	1.2	trial	try-02
+::edge	1	awaiting	await-01	:time	1.3	currently	current
+::edge	1.2.1	charges	charge-05	:ARG2	1.2.1.2	drug	drug-01
+::edge	1.2.1	charges	charge-05	:ARG0-of	1.2.1.3	carry	carry-01
+::edge	1.1.3.1		country	:wiki	1.1.3.1.1		"Vietnam"
+::edge	1.2.1	charges	charge-05	:ARG1	1.2.1.1		person
+::edge	1.1		person	:quant	1.1.1	3	3
+22	Vietnam's communist authorities impose the death penalty for a total of 29 different offenses including murder, treason, sexual offenses against children, serious cases of armed robbery, various economic crimes and drug trafficking.
+22	Vietnam 's communist authorities impose the death penalty for a total of 29 different offenses including murder , treason , sexual offenses against children , serious cases of armed robbery , various economic crimes and drug trafficking .
+22	0-1.1.2.2.1 1-1.1.2.r 2-1.1.1 3-1.1 4-1 6-1.2.2 7-1.2 8-1.2.1.r 10-1.2.1 11-1.2.1.1.r 12-1.2.1.1.1 13-1.2.1.1.2 14-1.2.1.1 15-1.2.1.1.3 16-1.2.1.1.3.1.1 18-1.2.1.1.3.1.2 20-1.2.1.1.3.1.4.1 21-1.2.1.1.3.1.4 22-1.2.1.1.3.1.4.2.r 23-1.2.1.1.3.1.4.2 25-1.2.1.1.3.1.5.1 26-1.2.1.1.3.1.5 27-1.2.1.1.3.1.5.1.1.r 28-1.2.1.1.3.1.5.1.1.1 29-1.2.1.1.3.1.5.1.1 31-1.2.1.1.3.1.6.2 32-1.2.1.1.3.1.6.1 33-1.2.1.1.3.1.6 34-1.2.1.1.3.1 35-1.2.1.1.3.1.3.1 36-1.2.1.1.3.1.3
+::node	a3	1.2.1.1.3.1.5.1.1.1	arm-01	armed
+::node	d3	1.2.1.1.3.1.3.1	drug	drug
+::node	c2	1.2.1.1.3.1.4.2	child	children
+::node	s2	1.2.1.1.3.1.5.1	serious-41	serious
+::node	s	1.2.1.1.3.1.4.1	sexual	sexual
+::node	v	1.2.1.1.3.1.6.2	various	various
+::node	e	1.2.1.1.3.1.6.1	economic	economic
+::node	"Vietnam"	1.1.2.2.1	"Vietnam"	Vietnam
+::node	i2	1.2.1.1.3	include-01	including
+::node	o	1.2.1.1	offense	offenses
+::node	r	1.2.1.1.3.1.5.1.1	rob-01	robbery
+::node	"Vietnam"	1.1.2.1	"Vietnam"	
+::node	n	1.1.2.2	name	
+::node	t	1.2.1.1.3.1.2	treason	treason
+::node	a2	1.2.1.1.3.1	and	and
+::node	m	1.2.1.1.3.1.1	murder-01	murder
+::node	o2	1.2.1.1.3.1.4	offense	offenses
+::node	t2	1.2.1.1.3.1.3	traffic-01	trafficking
+::node	c4	1.2.1.1.3.1.6	crime	crimes
+::node	c3	1.2.1.1.3.1.5	case	cases
+::node	c5	1.1.2	country	
+::node	t3	1.2.1	total	total
+::node	i	1	impose-01	impose
+::node	d	1.2.2	die-01	death
+::node	d2	1.2.1.1.2	differ-02	different
+::node	29	1.2.1.1.1	29	29
+::node	a	1.1	authority	authorities
+::node	p	1.2	penalize-01	penalty
+::node	c	1.1.1	communist	communist
+::edge	1.2.1.1.3.1.5.1.1	robbery	rob-01	:mod	1.2.1.1.3.1.5.1.1.1	armed	arm-01
+::edge	1.2.1.1.3.1.3	trafficking	traffic-01	:ARG1	1.2.1.1.3.1.3.1	drug	drug
+::edge	1.2.1.1.3.1.4	offenses	offense	:prep-against	1.2.1.1.3.1.4.2	children	child
+::edge	1.2.1.1.3.1.5	cases	case	:mod	1.2.1.1.3.1.5.1	serious	serious-41
+::edge	1.2.1.1.3.1.4	offenses	offense	:mod	1.2.1.1.3.1.4.1	sexual	sexual
+::edge	1.2.1.1.3.1.6	crimes	crime	:quant	1.2.1.1.3.1.6.2	various	various
+::edge	1.2.1.1.3.1.6	crimes	crime	:mod	1.2.1.1.3.1.6.1	economic	economic
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Vietnam	"Vietnam"
+::edge	1.2.1.1	offenses	offense	:ARG1-of	1.2.1.1.3	including	include-01
+::edge	1.2.1	total	total	:quant-of	1.2.1.1	offenses	offense
+::edge	1.2.1.1.3.1.5.1	serious	serious-41	:ARG2	1.2.1.1.3.1.5.1.1	robbery	rob-01
+::edge	1.1.2		country	:wiki	1.1.2.1		"Vietnam"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.2.1.1.3.1	and	and	:op2	1.2.1.1.3.1.2	treason	treason
+::edge	1.2.1.1.3	including	include-01	:ARG2	1.2.1.1.3.1	and	and
+::edge	1.2.1.1.3.1	and	and	:op1	1.2.1.1.3.1.1	murder	murder-01
+::edge	1.2.1.1.3.1	and	and	:op3	1.2.1.1.3.1.4	offenses	offense
+::edge	1.2.1.1.3.1	and	and	:op2	1.2.1.1.3.1.3	trafficking	traffic-01
+::edge	1.2.1.1.3.1	and	and	:op5	1.2.1.1.3.1.6	crimes	crime
+::edge	1.2.1.1.3.1	and	and	:op4	1.2.1.1.3.1.5	cases	case
+::edge	1.1	authorities	authority	:poss	1.1.2		country
+::edge	1.2	penalty	penalize-01	:ARG2	1.2.1	total	total
+::edge	1.2	penalty	penalize-01	:manner	1.2.2	death	die-01
+::edge	1.2.1.1	offenses	offense	:ARG1-of	1.2.1.1.2	different	differ-02
+::edge	1.2.1.1	offenses	offense	:quant	1.2.1.1.1	29	29
+::edge	1	impose	impose-01	:ARG0	1.1	authorities	authority
+::edge	1	impose	impose-01	:ARG1	1.2	penalty	penalize-01
+::edge	1.1	authorities	authority	:mod	1.1.1	communist	communist
+23	Drug trafficking resulted in 55 death sentences in 2001, 85 in 2000 and 76 in 1999.
+23	Drug trafficking resulted in 55 death sentences in 2001 , 85 in 2000 and 76 in 1999 .
+23	0-1.1.1 1-1.1 2-1 3-1.2.r 4-1.2.1.1.1 5-1.2.1.2 5-1.2.2.2 5-1.2.3.2 6-1.2.1 6-1.2.2 6-1.2.3 7-1.2.1.3.r 8-1.2.1.3.1 10-1.2.2.1.1 11-1.2.2.3.r 12-1.2.2.3.1 13-1.2 14-1.2.3.1.1 15-1.2.3.3.r 16-1.2.3.3.1
+::node	2001	1.2.1.3.1	2001	2001
+::node	d2	1.2.2.3	date-entity	
+::node	d7	1.2.3.2	die-01	death
+::node	d3	1.2.3.3	date-entity	
+::node	d5	1.2.1.2	die-01	death
+::node	p2	1.2.2.1	person	
+::node	d	1.2.1.3	date-entity	
+::node	d6	1.2.2.2	die-01	death
+::node	p3	1.2.3.1	person	
+::node	p2	1.2.2.2.1	person	
+::node	p	1.2.1.1	person	
+::node	2000	1.2.2.3.1	2000	2000
+::node	85	1.2.2.1.1	85	85
+::node	1999	1.2.3.3.1	1999	1999
+::node	76	1.2.3.1.1	76	76
+::node	p3	1.2.3.2.1	person	
+::node	s	1.2.1	sentence-01	sentences
+::node	r	1	result-01	resulted
+::node	s2	1.2.2	sentence-01	sentences
+::node	p	1.2.1.2.1	person	
+::node	s3	1.2.3	sentence-01	sentences
+::node	55	1.2.1.1.1	55	55
+::node	t	1.1	traffic-01	trafficking
+::node	a	1.2	and	and
+::node	d4	1.1.1	drug	Drug
+::edge	1.2.2.1		person	:quant	1.2.2.1.1	85	85
+::edge	1.2.3.3		date-entity	:year	1.2.3.3.1	1999	1999
+::edge	1.2.3.1		person	:quant	1.2.3.1.1	76	76
+::edge	1.2.3.2	death	die-01	:ARG1	1.2.3.2.1		person
+::edge	1.2.1.3		date-entity	:year	1.2.1.3.1	2001	2001
+::edge	1.2	and	and	:op1	1.2.1	sentences	sentence-01
+::edge	1.2	and	and	:op2	1.2.2	sentences	sentence-01
+::edge	1.2.1.2	death	die-01	:ARG1	1.2.1.2.1		person
+::edge	1.2	and	and	:op3	1.2.3	sentences	sentence-01
+::edge	1.2.1.1		person	:quant	1.2.1.1.1	55	55
+::edge	1	resulted	result-01	:ARG1	1.1	trafficking	traffic-01
+::edge	1	resulted	result-01	:ARG2	1.2	and	and
+::edge	1.2.2	sentences	sentence-01	:time	1.2.2.3		date-entity
+::edge	1.2.3	sentences	sentence-01	:ARG2	1.2.3.2	death	die-01
+::edge	1.2.3	sentences	sentence-01	:time	1.2.3.3		date-entity
+::edge	1.2.1	sentences	sentence-01	:ARG2	1.2.1.2	death	die-01
+::edge	1.2.2	sentences	sentence-01	:ARG1	1.2.2.1		person
+::edge	1.2.1	sentences	sentence-01	:time	1.2.1.3		date-entity
+::edge	1.2.2	sentences	sentence-01	:ARG2	1.2.2.2	death	die-01
+::edge	1.2.3	sentences	sentence-01	:ARG1	1.2.3.1		person
+::edge	1.2.2.2	death	die-01	:ARG1	1.2.2.2.1		person
+::edge	1.2.1	sentences	sentence-01	:ARG1	1.2.1.1		person
+::edge	1.2.2.3		date-entity	:year	1.2.2.3.1	2000	2000
+::edge	1.1	trafficking	traffic-01	:ARG1	1.1.1	Drug	drug
+24	Under Vietnam's strict drug laws anyone found in possession of 300 grams (10 ounces) or more of heroin or 10 kilograms (22 pounds) or more of opium is considered guilty of trafficking.
+24	Under Vietnam 's strict drug laws anyone found in possession of 300 grams ( 10 ounces ) or more of heroin or 10 kilograms ( 22 pounds ) or more of opium is considered guilty of trafficking .
+24	0-1.2.r 1-1.2.2.2.1 2-1.2.2.r 3-1.2.1 4-1.1.2.1 5-1.2 6-1.1.1 7-1.1.1.1 8-1.1.1.1.1.r 9-1.1.1.1.1 10-1.1.1.1.1.2.r 11-1.1.1.1.1.2.1.1.1.1 12-1.1.1.1.1.2.1.1.1.2 14-1.1.1.1.1.2.1.1.2.1 15-1.1.1.1.1.2.1.1.2.2 17-1.1.1.1.1.2.1.1 18-1.1.1.1.1.2.1.1.3 19-1.1.1.1.1.2.1.1.r 20-1.1.1.1.1.2.1 21-1.1.1.1.1.2 22-1.1.1.1.1.2.2.1.1.1 23-1.1.1.1.1.2.2.1.1.2 25-1.1.1.1.1.2.2.1.2.1 26-1.1.1.1.1.2.2.1.2.2 28-1.1.1.1.1.2.2.1 29-1.1.1.1.1.2.2.1.3 30-1.1.1.1.1.2.2.1.r 31-1.1.1.1.1.2.2 33-1 34-1.1 36-1.1.2
+::node	o4	1.1.1.1.1.2.1.1	or	or
+::node	g	1.1.1.1.1.2.1.1.1.2	gram	grams
+::node	10	1.1.1.1.1.2.1.1.2.1	10	10
+::node	o	1.1.1.1.1.2.1.1.2.2	ounce	ounces
+::node	300	1.1.1.1.1.2.1.1.1.1	300	300
+::node	o5	1.1.1.1.1.2.2.1	or	or
+::node	m5	1.1.1.1.1.2.1.1.2	mass-quantity	
+::node	m6	1.1.1.1.1.2.1.1.1	mass-quantity	
+::node	m	1.1.1.1.1.2.1.1.3	more	more
+::node	p2	1.1.1.1.1	possess-01	possession
+::node	"Vietnam"	1.2.2.1	"Vietnam"	
+::node	n	1.2.2.2	name	
+::node	"Vietnam"	1.2.2.2.1	"Vietnam"	Vietnam
+::node	a	1.1.1.1.1.1	anyone	
+::node	o2	1.1.1.1.1.2	or	or
+::node	p	1.1.1.1.1.2.2.1.2.2	pound	pounds
+::node	f	1.1.1.1	find-02	found
+::node	d	1.1.2.1	drug	drug
+::node	h	1.1.1.1.1.2.1	heroin	heroin
+::node	o3	1.1.1.1.1.2.2	opium	opium
+::node	m2	1.1.1.1.1.2.2.1.3	more	more
+::node	m3	1.1.1.1.1.2.2.1.2	mass-quantity	
+::node	m4	1.1.1.1.1.2.2.1.1	mass-quantity	
+::node	t	1.1.2	traffic-01	trafficking
+::node	s	1.2.1	strict	strict
+::node	c	1	consider-01	considered
+::node	c2	1.2.2	country	
+::node	g2	1.1	guilty-41	guilty
+::node	l	1.2	law	laws
+::node	k	1.1.1.1.1.2.2.1.1.2	kilogram	kilograms
+::node	22	1.1.1.1.1.2.2.1.2.1	22	22
+::node	a	1.1.1	anyone	anyone
+::node	10	1.1.1.1.1.2.2.1.1.1	10	10
+::edge	1.1.1.1.1.2.1	heroin	heroin	:quant	1.1.1.1.1.2.1.1	or	or
+::edge	1.1.1.1.1.2.1.1.1		mass-quantity	:unit	1.1.1.1.1.2.1.1.1.2	grams	gram
+::edge	1.1.1.1.1.2.1.1.2		mass-quantity	:quant	1.1.1.1.1.2.1.1.2.1	10	10
+::edge	1.1.1.1.1.2.1.1.2		mass-quantity	:unit	1.1.1.1.1.2.1.1.2.2	ounces	ounce
+::edge	1.1.1.1.1.2.1.1.1		mass-quantity	:quant	1.1.1.1.1.2.1.1.1.1	300	300
+::edge	1.1.1.1.1.2.2	opium	opium	:quant	1.1.1.1.1.2.2.1	or	or
+::edge	1.1.1.1.1.2.1.1	or	or	:op1	1.1.1.1.1.2.1.1.2		mass-quantity
+::edge	1.1.1.1.1.2.1.1	or	or	:op1	1.1.1.1.1.2.1.1.1		mass-quantity
+::edge	1.1.1.1.1.2.1.1	or	or	:op2	1.1.1.1.1.2.1.1.3	more	more
+::edge	1.1.1.1	found	find-02	:ARG1	1.1.1.1.1	possession	possess-01
+::edge	1.2.2		country	:wiki	1.2.2.1		"Vietnam"
+::edge	1.2.2		country	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Vietnam	"Vietnam"
+::edge	1.1.1.1.1	possession	possess-01	:ARG0	1.1.1.1.1.1		anyone
+::edge	1.1.1.1.1	possession	possess-01	:ARG1	1.1.1.1.1.2	or	or
+::edge	1.1.1.1.1.2.2.1.2		mass-quantity	:unit	1.1.1.1.1.2.2.1.2.2	pounds	pound
+::edge	1.1.1	anyone	anyone	:ARG0-of	1.1.1.1	found	find-02
+::edge	1.1.2	trafficking	traffic-01	:ARG1	1.1.2.1	drug	drug
+::edge	1.1.1.1.1.2	or	or	:op1	1.1.1.1.1.2.1	heroin	heroin
+::edge	1.1.1.1.1.2	or	or	:op2	1.1.1.1.1.2.2	opium	opium
+::edge	1.1.1.1.1.2.2.1	or	or	:op2	1.1.1.1.1.2.2.1.3	more	more
+::edge	1.1.1.1.1.2.2.1	or	or	:op1	1.1.1.1.1.2.2.1.2		mass-quantity
+::edge	1.1.1.1.1.2.2.1	or	or	:op1	1.1.1.1.1.2.2.1.1		mass-quantity
+::edge	1.1	guilty	guilty-41	:ARG2	1.1.2	trafficking	traffic-01
+::edge	1.2	laws	law	:mod	1.2.1	strict	strict
+::edge	1.2	laws	law	:poss	1.2.2		country
+::edge	1	considered	consider-01	:ARG1	1.1	guilty	guilty-41
+::edge	1	considered	consider-01	:prep-under	1.2	laws	law
+::edge	1.1.1.1.1.2.2.1.1		mass-quantity	:unit	1.1.1.1.1.2.2.1.1.2	kilograms	kilogram
+::edge	1.1.1.1.1.2.2.1.2		mass-quantity	:quant	1.1.1.1.1.2.2.1.2.1	22	22
+::edge	1.1	guilty	guilty-41	:ARG1	1.1.1	anyone	anyone
+::edge	1.1.1.1.1.2.2.1.1		mass-quantity	:quant	1.1.1.1.1.2.2.1.1.1	10	10

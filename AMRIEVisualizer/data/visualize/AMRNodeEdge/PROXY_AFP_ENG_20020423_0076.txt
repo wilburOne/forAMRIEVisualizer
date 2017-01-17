@@ -1,0 +1,714 @@
+1	2002-04-23
+1	2002 @-@ 04 @-@ 23
+1	0-1.1 2-1.2 4-1.3
+::node	d2	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	4	1.2	4	04
+::node	23	1.3	23	23
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	04	4
+::edge	1		date-entity	:day	1.3	23	23
+2	Republic of Korea (KR); United States (US)
+2	Republic of Korea ( KR ) ; United States ( US )
+2	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 7-1.2.2.1 8-1.2.2.2
+::node	n	1.1.2	name	
+::node	"United_States"	1.2.1	"United_States"	
+::node	a	1	and	
+::node	n2	1.2.2	name	
+::node	"Republic"	1.1.2.1	"Republic"	Republic
+::node	c	1.1	country	
+::node	"of"	1.1.2.2	"of"	of
+::node	"Korea"	1.1.2.3	"Korea"	Korea
+::node	c2	1.2	country	
+::node	"United"	1.2.2.1	"United"	United
+::node	"States"	1.2.2.2	"States"	States
+::node	"South_Korea"	1.1.1	"South_Korea"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"United_States"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Republic	"Republic"
+::edge	1		and	:op1	1.1		country
+::edge	1.1.2		name	:op2	1.1.2.2	of	"of"
+::edge	1.1.2		name	:op3	1.1.2.3	Korea	"Korea"
+::edge	1		and	:op2	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	United	"United"
+::edge	1.2.2		name	:op2	1.2.2.2	States	"States"
+::edge	1.1		country	:wiki	1.1.1		"South_Korea"
+3	International; military; business
+3	International ; military ; business
+3	0-1.1 2-1.2 4-1.3
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	m	1.2	military	military
+::node	b	1.3	business	business
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	military	military
+::edge	1		and	:op3	1.3	business	business
+4	Boeing Corporation will provide 40 F-15 k jets to the Republic of Korea and promises to meet an offset trade level of 70 percent.
+4	Boeing Corporation will provide 40 F @-@ 15 k jets to the Republic of Korea and promises to meet an offset trade level of 70 percent .
+4	0-1.1.1.2.1 1-1.1.1.2.2 3-1.1 4-1.1.2.1 5-1.1.2.3.1 9-1.1.2 10-1.1.3.r 12-1.1.3.2.1 13-1.1.3.2.2 14-1.1.3.2.3 15-1 16-1.2 18-1.2.2 20-1.2.2.2.3 21-1.2.2.2.1 22-1.2.2.2 23-1.2.2.2.2.r 24-1.2.2.2.2.1 25-1.2.2.2.2
+::node	"Korea"	1.1.3.2.3	"Korea"	Korea
+::node	"of"	1.1.3.2.2	"of"	of
+::node	"Republic"	1.1.3.2.1	"Republic"	Republic
+::node	"Corporation"	1.1.1.2.2	"Corporation"	Corporation
+::node	"Boeing"	1.1.1.2.1	"Boeing"	Boeing
+::node	c	1.2.2.1	company	
+::node	l	1.2.2.2	level	level
+::node	t	1.2.2.2.1	trade-01	trade
+::node	p4	1.2.2.2.2	percentage-entity	percent
+::node	70	1.2.2.2.2.1	70	70
+::node	o	1.2.2.2.3	offset-01	offset
+::node	"Boeing"	1.1.1.1	"Boeing"	
+::node	n	1.1.1.2	name	
+::node	40	1.1.2.1	40	40
+::node	-	1.1.2.2	-	
+::node	"South_Korea"	1.1.3.1	"South_Korea"	
+::node	n2	1.1.2.3	name	
+::node	n3	1.1.3.2	name	
+::node	j	1.1.2	jet	jets
+::node	c	1.2.1	company	
+::node	a	1	and	and
+::node	c2	1.1.3	country	
+::node	m	1.2.2	meet-01	meet
+::node	p2	1.1	provide-01	provide
+::node	"F-15K"	1.1.2.3.1	"F-15K"	F
+::node	p3	1.2	promise-01	promises
+::node	c	1.1.1	company	
+::edge	1.1.3.2		name	:op3	1.1.3.2.3	Korea	"Korea"
+::edge	1.1.3.2		name	:op2	1.1.3.2.2	of	"of"
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	Republic	"Republic"
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Corporation	"Corporation"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Boeing	"Boeing"
+::edge	1.2.2	meet	meet-01	:ARG0	1.2.2.1		company
+::edge	1.2.2	meet	meet-01	:ARG1	1.2.2.2	level	level
+::edge	1.2.2.2	level	level	:mod	1.2.2.2.1	trade	trade-01
+::edge	1.2.2.2	level	level	:mod	1.2.2.2.2	percent	percentage-entity
+::edge	1.2.2.2.2	percent	percentage-entity	:value	1.2.2.2.2.1	70	70
+::edge	1.2.2.2	level	level	:ARG1-of	1.2.2.2.3	offset	offset-01
+::edge	1.1.1		company	:wiki	1.1.1.1		"Boeing"
+::edge	1.1.1		company	:name	1.1.1.2		name
+::edge	1.1.2	jets	jet	:quant	1.1.2.1	40	40
+::edge	1.1.2	jets	jet	:wiki	1.1.2.2		-
+::edge	1.1.3		country	:wiki	1.1.3.1		"South_Korea"
+::edge	1.1.2	jets	jet	:name	1.1.2.3		name
+::edge	1.1.3		country	:name	1.1.3.2		name
+::edge	1.1	provide	provide-01	:ARG1	1.1.2	jets	jet
+::edge	1.2	promises	promise-01	:ARG0	1.2.1		company
+::edge	1.1	provide	provide-01	:ARG2	1.1.3		country
+::edge	1.2	promises	promise-01	:ARG2	1.2.2	meet	meet-01
+::edge	1	and	and	:op1	1.1	provide	provide-01
+::edge	1.1.2.3		name	:op1	1.1.2.3.1	F	"F-15K"
+::edge	1	and	and	:op2	1.2	promises	promise-01
+::edge	1.1	provide	provide-01	:ARG0	1.1.1		company
+5	Boeing Corporation promised on April 23, 2002 to fulfill more spin-off orders for companies located in the Republic of Korea.
+5	Boeing Corporation promised on April 23 , 2002 to fulfill more spin @-@ off orders for companies located in the Republic of Korea .
+5	0-1.1.2.1 1-1.1.2.2 2-1 3-1.3.r 4-1.3.2 4-1.3.2.r 5-1.3.3 7-1.3.1 9-1.2 10-1.2.2.2 11-1.2.2.1 13-1.2.2.1 14-1.2.2 15-1.2.3.r 16-1.2.3 17-1.2.3.1.r 20-1.2.3.1.2.1 21-1.2.3.1.2.2 22-1.2.3.1.2.3
+::node	"Boeing"	1.1.2.1	"Boeing"	Boeing
+::node	"Corporation"	1.1.2.2	"Corporation"	Corporation
+::node	"South_Korea"	1.2.3.1.1	"South_Korea"	
+::node	n2	1.2.3.1.2	name	
+::node	n	1.1.2	name	
+::node	c	1.2.1	company	
+::node	p	1	promise-01	promised
+::node	o	1.2.2	order	orders
+::node	2002	1.3.1	2002	2002
+::node	c2	1.2.3	company	companies
+::node	4	1.3.2	4	April
+::node	23	1.3.3	23	23
+::node	c	1.1	company	
+::node	"of"	1.2.3.1.2.2	"of"	of
+::node	f	1.2	fulfill-01	fulfill
+::node	"Republic"	1.2.3.1.2.1	"Republic"	Republic
+::node	d2	1.3	date-entity	
+::node	"Korea"	1.2.3.1.2.3	"Korea"	Korea
+::node	s	1.2.2.1	spin-off	off
+::node	m	1.2.2.2	more	more
+::node	c3	1.2.3.1	country	
+::node	"Boeing"	1.1.1	"Boeing"	
+::edge	1.1.2		name	:op1	1.1.2.1	Boeing	"Boeing"
+::edge	1.1.2		name	:op2	1.1.2.2	Corporation	"Corporation"
+::edge	1.2.3.1		country	:wiki	1.2.3.1.1		"South_Korea"
+::edge	1.2.3.1		country	:name	1.2.3.1.2		name
+::edge	1.1		company	:name	1.1.2		name
+::edge	1.2	fulfill	fulfill-01	:ARG0	1.2.1		company
+::edge	1.2	fulfill	fulfill-01	:ARG1	1.2.2	orders	order
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2	fulfill	fulfill-01	:beneficiary	1.2.3	companies	company
+::edge	1.3		date-entity	:month	1.3.2	April	4
+::edge	1.3		date-entity	:day	1.3.3	23	23
+::edge	1	promised	promise-01	:ARG0	1.1		company
+::edge	1.2.3.1.2		name	:op2	1.2.3.1.2.2	of	"of"
+::edge	1	promised	promise-01	:ARG2	1.2	fulfill	fulfill-01
+::edge	1.2.3.1.2		name	:op1	1.2.3.1.2.1	Republic	"Republic"
+::edge	1	promised	promise-01	:time	1.3		date-entity
+::edge	1.2.3.1.2		name	:op3	1.2.3.1.2.3	Korea	"Korea"
+::edge	1.2.2	orders	order	:mod	1.2.2.1	off	spin-off
+::edge	1.2.2	orders	order	:mod	1.2.2.2	more	more
+::edge	1.2.3	companies	company	:location	1.2.3.1		country
+::edge	1.1		company	:wiki	1.1.1		"Boeing"
+6	The purpose of this promise is to allow Boeing Corporation to win a multi-billion dollar fighter jet contract.
+6	The purpose of this promise is to allow Boeing Corporation to win a multi @-@ billion dollar fighter jet contract .
+6	1-1.1.r 3-1.2 4-1 7-1.1 8-1.1.1.1.2.1 9-1.1.1.1.2.2 11-1.1.1 15-1.1.1.2.2.2.1 16-1.1.1.2.2.1 17-1.1.1.2.1.1 18-1.1.1.2.1 19-1.1.1.2
+::node	"Boeing"	1.1.1.1.2.1	"Boeing"	Boeing
+::node	c	1.1.1.1	company	
+::node	"Corporation"	1.1.1.1.2.2	"Corporation"	Corporation
+::node	c2	1.1.1.2	contract	contract
+::node	d	1.1.1.2.2.1	dollar	dollar
+::node	m2	1.1.1.2.2.2	multiple	
+::node	f	1.1.1.2.1.1	fight-01	fighter
+::node	p	1	promise	promise
+::node	1000000000	1.1.1.2.2.2.1	1000000000	billion
+::node	a	1.1	allow-01	allow
+::node	t	1.2	this	this
+::node	m	1.1.1.2.2	monetary-quantity	
+::node	n	1.1.1.1.2	name	
+::node	j	1.1.1.2.1	jet	jet
+::node	"Boeing"	1.1.1.1.1	"Boeing"	
+::node	w	1.1.1	win-01	win
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Boeing	"Boeing"
+::edge	1.1.1	win	win-01	:ARG0	1.1.1.1		company
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	Corporation	"Corporation"
+::edge	1.1.1	win	win-01	:ARG1	1.1.1.2	contract	contract
+::edge	1.1.1.2.2		monetary-quantity	:unit	1.1.1.2.2.1	dollar	dollar
+::edge	1.1.1.2.2		monetary-quantity	:quant	1.1.1.2.2.2		multiple
+::edge	1.1.1.2.1	jet	jet	:ARG0-of	1.1.1.2.1.1	fighter	fight-01
+::edge	1.1.1.2.2.2		multiple	:op1	1.1.1.2.2.2.1	billion	1000000000
+::edge	1	promise	promise	:purpose	1.1	allow	allow-01
+::edge	1	promise	promise	:mod	1.2	this	this
+::edge	1.1.1.2	contract	contract	:mod	1.1.1.2.2		monetary-quantity
+::edge	1.1.1.1		company	:name	1.1.1.1.2		name
+::edge	1.1.1.2	contract	contract	:mod	1.1.1.2.1	jet	jet
+::edge	1.1.1.1		company	:wiki	1.1.1.1.1		"Boeing"
+::edge	1.1	allow	allow-01	:ARG1	1.1.1	win	win-01
+7	Boeing Corporation is required to supply 40 F-15 k jets to the Republic of Korea by 2009.
+7	Boeing Corporation is required to supply 40 F @-@ 15 k jets to the Republic of Korea by 2009 .
+7	0-1.1.1.2.1 1-1.1.1.2.2 3-1 5-1.1 6-1.1.2.1 7-1.1.2.3.1 11-1.1.2 12-1.1.3.r 14-1.1.3.2.1 15-1.1.3.2.2 16-1.1.3.2.3 17-1.1.4 18-1.1.4.1.1
+::node	"Korea"	1.1.3.2.3	"Korea"	Korea
+::node	"Boeing"	1.1.1.1	"Boeing"	
+::node	"of"	1.1.3.2.2	"of"	of
+::node	n	1.1.1.2	name	
+::node	40	1.1.2.1	40	40
+::node	"Republic"	1.1.3.2.1	"Republic"	Republic
+::node	-	1.1.2.2	-	
+::node	"South_Korea"	1.1.3.1	"South_Korea"	
+::node	n2	1.1.2.3	name	
+::node	n3	1.1.3.2	name	
+::node	d2	1.1.4.1	date-entity	
+::node	j	1.1.2	jet	jets
+::node	r	1	require-01	required
+::node	c2	1.1.3	country	
+::node	b	1.1.4	by	by
+::node	2009	1.1.4.1.1	2009	2009
+::node	s	1.1	supply-01	supply
+::node	"F-15K"	1.1.2.3.1	"F-15K"	F
+::node	c	1.2	company	
+::node	"Corporation"	1.1.1.2.2	"Corporation"	Corporation
+::node	"Boeing"	1.1.1.2.1	"Boeing"	Boeing
+::node	c	1.1.1	company	
+::edge	1.1.3.2		name	:op3	1.1.3.2.3	Korea	"Korea"
+::edge	1.1.1		company	:wiki	1.1.1.1		"Boeing"
+::edge	1.1.3.2		name	:op2	1.1.3.2.2	of	"of"
+::edge	1.1.1		company	:name	1.1.1.2		name
+::edge	1.1.2	jets	jet	:quant	1.1.2.1	40	40
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	Republic	"Republic"
+::edge	1.1.2	jets	jet	:wiki	1.1.2.2		-
+::edge	1.1.3		country	:wiki	1.1.3.1		"South_Korea"
+::edge	1.1.2	jets	jet	:name	1.1.2.3		name
+::edge	1.1.3		country	:name	1.1.3.2		name
+::edge	1.1.4	by	by	:op1	1.1.4.1		date-entity
+::edge	1.1	supply	supply-01	:ARG1	1.1.2	jets	jet
+::edge	1.1	supply	supply-01	:ARG2	1.1.3		country
+::edge	1.1	supply	supply-01	:time	1.1.4	by	by
+::edge	1.1.4.1		date-entity	:year	1.1.4.1.1	2009	2009
+::edge	1	required	require-01	:ARG1	1.1	supply	supply-01
+::edge	1.1.2.3		name	:op1	1.1.2.3.1	F	"F-15K"
+::edge	1	required	require-01	:ARG2	1.2		company
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Corporation	"Corporation"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Boeing	"Boeing"
+::edge	1.1	supply	supply-01	:ARG0	1.1.1		company
+8	Boeing Corporation vice president and general manager Michael Marks stated that the Government of the Republic of Korea decided wisely by picking the F-15 k instead of the Rafale made by French firm Dassault Aviation SA.
+8	Boeing Corporation vice president and general manager Michael Marks stated that the Government of the Republic of Korea decided wisely by picking the F @-@ 15 k instead of the Rafale made by French firm Dassault Aviation SA .
+8	0-1.1.3.1.2.1 1-1.1.3.1.2.2 2-1.1.3.2.1 3-1.1.3.2 5-1.1.4.2.1 6-1.1.4.2 7-1.1.2.1 8-1.1.2.2 9-1 10-1.2.r 12-1.2.1.1 12-1.2.1.1.1 12-1.2.1.1.1.r 13-1.2.1.1.1.1.r 15-1.2.1.1.1.1.2.1 16-1.2.1.1.1.1.2.2 17-1.2.1.1.1.1.2.3 18-1.2.1 19-1.2 20-1.2.1.2.r 21-1.2.1.2 23-1.2.1.2.2.2.1 27-1.2.1.2.3 28-1.2.1.2.3 30-1.2.1.2.3.1.2.1 31-1.2.1.2.3.1 31-1.2.1.2.3.1.3 31-1.2.1.2.3.1.3.r 32-1.2.1.2.3.1.3.1.r 33-1.2.1.2.3.1.3.1.3.2.1 34-1.2.1.2.3.1.3.1 35-1.2.1.2.3.1.3.1.2.1 36-1.2.1.2.3.1.3.1.2.2 37-1.2.1.2.3.1.3.1.2.3
+::node	"South_Korea"	1.2.1.1.1.1.1	"South_Korea"	
+::node	n3	1.2.1.1.1.1.2	name	
+::node	v	1.1.3.2.1	vice	vice
+::node	"Rafale"	1.2.1.2.3.1.2.1	"Rafale"	Rafale
+::node	n6	1.2.1.2.3.1.3.1.2	name	
+::node	c3	1.2.1.2.3.1.3.1.3	country	
+::node	"France"	1.2.1.2.3.1.3.1.3.2.1	"France"	French
+::node	i	1.2.1.2.3	instead-of-91	of
+::node	a	1.2.1.2.2	aircraft-type	
+::node	g	1.1.4.2.1	general	general
+::node	"Dassault_Aviation"	1.2.1.2.3.1.3.1.1	"Dassault_Aviation"	
+::node	p2	1.2.1.2	pick-01	picking
+::node	"Dassault"	1.2.1.2.3.1.3.1.2.1	"Dassault"	Dassault
+::node	"SA"	1.2.1.2.3.1.3.1.2.3	"SA"	SA
+::node	g2	1.2.1.1	government-organization	Government
+::node	"Aviation"	1.2.1.2.3.1.3.1.2.2	"Aviation"	Aviation
+::node	c	1.1.3.1	company	
+::node	p3	1.1.3.2	president	president
+::node	"Corporation"	1.1.3.1.2.2	"Corporation"	Corporation
+::node	"Boeing"	1.1.3.1.2.1	"Boeing"	Boeing
+::node	n	1.1.2	name	
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	
+::node	-	1.2.1.2.2.1	-	
+::node	h2	1.1.4	have-org-role-91	
+::node	g3	1.2.1.1.1	govern-01	Government
+::node	p	1.1	person	
+::node	w	1.2	wisdom	wisely
+::node	n4	1.2.1.2.2.2	name	
+::node	"Boeing"	1.1.3.1.1	"Boeing"	
+::node	-	1.1.1	-	
+::node	"Dassault_Rafale"	1.2.1.2.3.1.1	"Dassault_Rafale"	
+::node	f	1.2.1.2.3.1.3.1	firm	firm
+::node	n2	1.1.3.1.2	name	
+::node	m2	1.2.1.2.3.1.3	make-01	made
+::node	n5	1.2.1.2.3.1.2	name	
+::node	n7	1.2.1.2.3.1.3.1.3.2	name	
+::node	"France"	1.2.1.2.3.1.3.1.3.1	"France"	
+::node	"Michael"	1.1.2.1	"Michael"	Michael
+::node	"Marks"	1.1.2.2	"Marks"	Marks
+::node	c	1.1.4.1	company	
+::node	c2	1.2.1.1.1.1	country	
+::node	m	1.1.4.2	manage-01	manager
+::node	d	1.2.1	decide-01	decided
+::node	g2	1.2.1.2.1	government-organization	
+::node	"Republic"	1.2.1.1.1.1.2.1	"Republic"	Republic
+::node	"of"	1.2.1.1.1.1.2.2	"of"	of
+::node	"Korea"	1.2.1.1.1.1.2.3	"Korea"	Korea
+::node	a2	1.2.1.2.3.1	aircraft-type	made
+::node	"F-15K"	1.2.1.2.2.2.1	"F-15K"	F
+::edge	1.2.1.1.1.1		country	:wiki	1.2.1.1.1.1.1		"South_Korea"
+::edge	1.2.1.1.1.1		country	:name	1.2.1.1.1.1.2		name
+::edge	1.1.3.2	president	president	:mod	1.1.3.2.1	vice	vice
+::edge	1.2.1.2.3.1.2		name	:op1	1.2.1.2.3.1.2.1	Rafale	"Rafale"
+::edge	1.2.1.2.3.1.3.1	firm	firm	:name	1.2.1.2.3.1.3.1.2		name
+::edge	1.2.1.2.3.1.3.1	firm	firm	:mod	1.2.1.2.3.1.3.1.3		country
+::edge	1.2.1.2.3.1.3.1.3.2		name	:op1	1.2.1.2.3.1.3.1.3.2.1	French	"France"
+::edge	1.2.1.2	picking	pick-01	:ARG1-of	1.2.1.2.3	of	instead-of-91
+::edge	1.2.1.2	picking	pick-01	:ARG1	1.2.1.2.2		aircraft-type
+::edge	1.1.4.2	manager	manage-01	:mod	1.1.4.2.1	general	general
+::edge	1.2.1.2.3.1.3.1	firm	firm	:wiki	1.2.1.2.3.1.3.1.1		"Dassault_Aviation"
+::edge	1.2.1	decided	decide-01	:ARG1	1.2.1.2	picking	pick-01
+::edge	1.2.1.2.3.1.3.1.2		name	:op1	1.2.1.2.3.1.3.1.2.1	Dassault	"Dassault"
+::edge	1.2.1.2.3.1.3.1.2		name	:op3	1.2.1.2.3.1.3.1.2.3	SA	"SA"
+::edge	1.2.1	decided	decide-01	:ARG0	1.2.1.1	Government	government-organization
+::edge	1.2.1.2.3.1.3.1.2		name	:op2	1.2.1.2.3.1.3.1.2.2	Aviation	"Aviation"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		company
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	president	president
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	Corporation	"Corporation"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Boeing	"Boeing"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2.1.2.2		aircraft-type	:wiki	1.2.1.2.2.1		-
+::edge	1.1		person	:ARG0-of	1.1.4		have-org-role-91
+::edge	1.2.1.1	Government	government-organization	:ARG0-of	1.2.1.1.1	Government	govern-01
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	wisely	wisdom
+::edge	1.2.1.2.2		aircraft-type	:name	1.2.1.2.2.2		name
+::edge	1.1.3.1		company	:wiki	1.1.3.1.1		"Boeing"
+::edge	1.1		person	:wiki	1.1.1		-
+::edge	1.2.1.2.3.1	made	aircraft-type	:wiki	1.2.1.2.3.1.1		"Dassault_Rafale"
+::edge	1.2.1.2.3.1.3	made	make-01	:ARG0	1.2.1.2.3.1.3.1	firm	firm
+::edge	1.1.3.1		company	:name	1.1.3.1.2		name
+::edge	1.2.1.2.3.1	made	aircraft-type	:ARG1-of	1.2.1.2.3.1.3	made	make-01
+::edge	1.2.1.2.3.1	made	aircraft-type	:name	1.2.1.2.3.1.2		name
+::edge	1.2.1.2.3.1.3.1.3		country	:name	1.2.1.2.3.1.3.1.3.2		name
+::edge	1.2.1.2.3.1.3.1.3		country	:wiki	1.2.1.2.3.1.3.1.3.1		"France"
+::edge	1.1.2		name	:op1	1.1.2.1	Michael	"Michael"
+::edge	1.1.2		name	:op2	1.1.2.2	Marks	"Marks"
+::edge	1.1.4		have-org-role-91	:ARG1	1.1.4.1		company
+::edge	1.2.1.1.1	Government	govern-01	:ARG1	1.2.1.1.1.1		country
+::edge	1.1.4		have-org-role-91	:ARG2	1.1.4.2	manager	manage-01
+::edge	1.2	wisely	wisdom	:domain	1.2.1	decided	decide-01
+::edge	1.2.1.2	picking	pick-01	:ARG0	1.2.1.2.1		government-organization
+::edge	1.2.1.1.1.1.2		name	:op1	1.2.1.1.1.1.2.1	Republic	"Republic"
+::edge	1.2.1.1.1.1.2		name	:op2	1.2.1.1.1.1.2.2	of	"of"
+::edge	1.2.1.1.1.1.2		name	:op3	1.2.1.1.1.1.2.3	Korea	"Korea"
+::edge	1.2.1.2.3	of	instead-of-91	:ARG2	1.2.1.2.3.1	made	aircraft-type
+::edge	1.2.1.2.2.2		name	:op1	1.2.1.2.2.2.1	F	"F-15K"
+9	The final sale price, spin-off trade, and technology transfer conditions will be decided in a future negotiation.
+9	The final sale price , spin @-@ off trade , and technology transfer conditions will be decided in a future negotiation .
+9	1-1.1.1.1.2 2-1.1.1.1.1 3-1.1.1.1 5-1.1.1.2.1 7-1.1.1.2.1 8-1.1.1.2 10-1.1.1 11-1.1.1.3.1 12-1.1.1.3 13-1.1 13-1.1.1.r 16-1 17-1.2.r 19-1.2.1 20-1.2
+::node	f2	1.2.1	future	future
+::node	d	1	decide-01	decided
+::node	p	1.1.1.1	price	price
+::node	t	1.1.1.2	trade-01	trade
+::node	c	1.1	condition	conditions
+::node	t2	1.1.1.3	transfer-01	transfer
+::node	n	1.2	negotiate-01	negotiation
+::node	t3	1.1.1.3.1	technology	technology
+::node	f	1.1.1.1.2	final	final
+::node	s2	1.1.1.2.1	spin-off	off
+::node	s	1.1.1.1.1	sell-01	sale
+::node	a	1.1.1	and	and
+::edge	1.2	negotiation	negotiate-01	:time	1.2.1	future	future
+::edge	1.1.1	and	and	:op1	1.1.1.1	price	price
+::edge	1.1.1	and	and	:op2	1.1.1.2	trade	trade-01
+::edge	1	decided	decide-01	:ARG1	1.1	conditions	condition
+::edge	1.1.1	and	and	:op3	1.1.1.3	transfer	transfer-01
+::edge	1	decided	decide-01	:ARG3	1.2	negotiation	negotiate-01
+::edge	1.1.1.3	transfer	transfer-01	:ARG1	1.1.1.3.1	technology	technology
+::edge	1.1.1.1	price	price	:mod	1.1.1.1.2	final	final
+::edge	1.1.1.2	trade	trade-01	:ARG1	1.1.1.2.1	off	spin-off
+::edge	1.1.1.1	price	price	:ARG3-of	1.1.1.1.1	sale	sell-01
+::edge	1.1	conditions	condition	:condition-of	1.1.1	and	and
+10	The Republic of Korea stated that it will argue to decrease the price from an estimated 4.4 billion dollars.
+10	The Republic of Korea stated that it will argue to decrease the price from an estimated 4.4 billion dollars .
+10	1-1.1.2.1 2-1.1.2.2 3-1.1.2.3 4-1 5-1.2.r 6-1.2.1 8-1.2 10-1.2.2 12-1.2.2.1 13-1.2.2.2.r 15-1.2.2.2.2.1 16-1.2.2.2.2 17-1.2.2.2.2 18-1.2.2.2.1
+::node	"Republic"	1.1.2.1	"Republic"	Republic
+::node	"of"	1.1.2.2	"of"	of
+::node	"Korea"	1.1.2.3	"Korea"	Korea
+::node	n	1.1.2	name	
+::node	c	1.2.1	country	it
+::node	s	1	state-01	stated
+::node	d2	1.2.2	decrease-01	decrease
+::node	c	1.1	country	
+::node	a	1.2	argue-01	argue
+::node	p	1.2.2.1	price	price
+::node	m2	1.2.2.2	monetary-quantity	
+::node	d3	1.2.2.2.1	dollar	dollars
+::node	x	1.2.2.2.2	4400000000	billion
+::node	e	1.2.2.2.2.1	estimate-01	estimated
+::node	"South_Korea"	1.1.1	"South_Korea"	
+::edge	1.1.2		name	:op1	1.1.2.1	Republic	"Republic"
+::edge	1.1.2		name	:op2	1.1.2.2	of	"of"
+::edge	1.1.2		name	:op3	1.1.2.3	Korea	"Korea"
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	argue	argue-01	:ARG0	1.2.1	it	country
+::edge	1.2	argue	argue-01	:ARG1	1.2.2	decrease	decrease-01
+::edge	1	stated	state-01	:ARG0	1.1		country
+::edge	1	stated	state-01	:ARG1	1.2	argue	argue-01
+::edge	1.2.2	decrease	decrease-01	:ARG1	1.2.2.1	price	price
+::edge	1.2.2	decrease	decrease-01	:ARG3	1.2.2.2		monetary-quantity
+::edge	1.2.2.2		monetary-quantity	:unit	1.2.2.2.1	dollars	dollar
+::edge	1.2.2.2		monetary-quantity	:quant	1.2.2.2.2	billion	4400000000
+::edge	1.2.2.2.2	billion	4400000000	:ARG1-of	1.2.2.2.2.1	estimated	estimate-01
+::edge	1.1		country	:wiki	1.1.1		"South_Korea"
+11	Boeing Corporation has not yet satisfied a defense ministry demand that spin-off deals with other firms based in the Republic of Korea meet 70 percent of the total cost.
+11	Boeing Corporation has not yet satisfied a defense ministry demand that spin @-@ off deals with other firms based in the Republic of Korea meet 70 percent of the total cost .
+11	0-1.2.2.1 1-1.2.2.2 3-1.1 3-1.1.r 4-1.4 5-1 7-1.3.1.1 8-1.3.1 9-1.3 10-1.3.2.r 11-1.3.2.1.1 13-1.3.2.1.1 14-1.3.2.1 15-1.3.2.1.2.r 16-1.3.2.1.2.1 17-1.3.2.1.2 18-1.3.2.1.2.2 19-1.3.2.1.2.2.1.r 21-1.3.2.1.2.2.1.2.1 22-1.3.2.1.2.2.1.2.2 23-1.3.2.1.2.2.1.2.3 24-1.3.2 25-1.3.2.2.2.1 26-1.3.2.2.2 29-1.3.2.2.1 30-1.3.2.2
+::node	p2	1.3.2.2.2	percentage-entity	percent
+::node	s2	1.3.2.1.1	spin-off	off
+::node	f	1.3.2.1.2	firm	firms
+::node	t	1.3.2.2.1	total	total
+::node	"Korea"	1.3.2.1.2.2.1.2.3	"Korea"	Korea
+::node	"of"	1.3.2.1.2.2.1.2.2	"of"	of
+::node	d2	1.3.1.1	defense	defense
+::node	d3	1.3.2.1	deal	deals
+::node	b	1.3.2.1.2.2	base-01	based
+::node	c5	1.3.2.2	cost	cost
+::node	o	1.3.2.1.2.1	other	other
+::node	"South_Korea"	1.3.2.1.2.2.1.1	"South_Korea"	
+::node	n4	1.3.2.1.2.2.1.2	name	
+::node	"Republic"	1.3.2.1.2.2.1.2.1	"Republic"	Republic
+::node	70	1.3.2.2.2.1	70	70
+::node	"Boeing"	1.2.2.1	"Boeing"	Boeing
+::node	"Corporation"	1.2.2.2	"Corporation"	Corporation
+::node	"Boeing"	1.2.1	"Boeing"	
+::node	s	1	satisfy-01	satisfied
+::node	n3	1.2.2	name	
+::node	m	1.3.1	ministry	ministry
+::node	m2	1.3.2	meet-01	meet
+::node	-	1.1	-	not
+::node	c4	1.3.2.1.2.2.1	country	
+::node	c3	1.2	company	
+::node	d	1.3	demand-01	demand
+::node	y	1.4	yet	yet
+::edge	1.3.2.2	cost	cost	:mod	1.3.2.2.2	percent	percentage-entity
+::edge	1.3.2.1	deals	deal	:mod	1.3.2.1.1	off	spin-off
+::edge	1.3.2.1	deals	deal	:accompanier	1.3.2.1.2	firms	firm
+::edge	1.3.2.2	cost	cost	:mod	1.3.2.2.1	total	total
+::edge	1.3.2.1.2.2.1.2		name	:op3	1.3.2.1.2.2.1.2.3	Korea	"Korea"
+::edge	1.3.2.1.2.2.1.2		name	:op2	1.3.2.1.2.2.1.2.2	of	"of"
+::edge	1.3.1	ministry	ministry	:mod	1.3.1.1	defense	defense
+::edge	1.3.2	meet	meet-01	:ARG0	1.3.2.1	deals	deal
+::edge	1.3.2.1.2	firms	firm	:ARG1-of	1.3.2.1.2.2	based	base-01
+::edge	1.3.2	meet	meet-01	:ARG1	1.3.2.2	cost	cost
+::edge	1.3.2.1.2	firms	firm	:mod	1.3.2.1.2.1	other	other
+::edge	1.3.2.1.2.2.1		country	:wiki	1.3.2.1.2.2.1.1		"South_Korea"
+::edge	1.3.2.1.2.2.1		country	:name	1.3.2.1.2.2.1.2		name
+::edge	1.3.2.1.2.2.1.2		name	:op1	1.3.2.1.2.2.1.2.1	Republic	"Republic"
+::edge	1.3.2.2.2	percent	percentage-entity	:value	1.3.2.2.2.1	70	70
+::edge	1.2.2		name	:op1	1.2.2.1	Boeing	"Boeing"
+::edge	1.2.2		name	:op2	1.2.2.2	Corporation	"Corporation"
+::edge	1.2		company	:wiki	1.2.1		"Boeing"
+::edge	1.2		company	:name	1.2.2		name
+::edge	1.3	demand	demand-01	:ARG0	1.3.1	ministry	ministry
+::edge	1.3	demand	demand-01	:ARG1	1.3.2	meet	meet-01
+::edge	1	satisfied	satisfy-01	:polarity	1.1	not	-
+::edge	1.3.2.1.2.2	based	base-01	:location	1.3.2.1.2.2.1		country
+::edge	1	satisfied	satisfy-01	:ARG0	1.2		company
+::edge	1	satisfied	satisfy-01	:ARG1	1.3	demand	demand-01
+::edge	1	satisfied	satisfy-01	:mod	1.4	yet	yet
+12	The United States initially made a pledge of approximately 2.9 billion dollars, representing 65% of the total cost, to local contractors.
+12	The United States initially made a pledge of approximately 2.9 billion dollars , representing 65 % of the total cost , to local contractors .
+12	1-1.1.2.1 2-1.1.2.2 3-1.4 6-1 7-1.3.r 8-1.3.1 9-1.3.1.1 10-1.3.1.1 11-1.3.2 13-1.3.3 14-1.3.3.1.2.1 15-1.3.3.1.2 18-1.3.3.1.1 19-1.3.3.1 21-1.2.r 22-1.2.2
+::node	"United"	1.1.2.1	"United"	United
+::node	"States"	1.1.2.2	"States"	States
+::node	2900000000	1.3.1.1	2900000000	billion
+::node	c3	1.3.3.1	cost	cost
+::node	n2	1.1.2	name	
+::node	c	1.2.1	contract-02	
+::node	65	1.3.3.1.2.1	65	65
+::node	p2	1	pledge-01	pledge
+::node	l	1.2.2	local	local
+::node	a2	1.3.1	approximately	approximately
+::node	t	1.3.3.1.1	total	total
+::node	d2	1.3.2	dollar	dollars
+::node	p4	1.3.3.1.2	percentage-entity	%
+::node	r	1.3.3	represent-01	representing
+::node	c2	1.1	country	
+::node	p3	1.2	person	
+::node	m2	1.3	monetary-quantity	
+::node	i	1.4	initial	initially
+::node	"United_States"	1.1.1	"United_States"	
+::edge	1.1.2		name	:op1	1.1.2.1	United	"United"
+::edge	1.1.2		name	:op2	1.1.2.2	States	"States"
+::edge	1.3.1	approximately	approximately	:op1	1.3.1.1	billion	2900000000
+::edge	1.3.3	representing	represent-01	:ARG1	1.3.3.1	cost	cost
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		person	:ARG0-of	1.2.1		contract-02
+::edge	1.3.3.1.2	%	percentage-entity	:value	1.3.3.1.2.1	65	65
+::edge	1.2		person	:mod	1.2.2	local	local
+::edge	1.3		monetary-quantity	:quant	1.3.1	approximately	approximately
+::edge	1.3.3.1	cost	cost	:mod	1.3.3.1.1	total	total
+::edge	1.3		monetary-quantity	:unit	1.3.2	dollars	dollar
+::edge	1.3.3.1	cost	cost	:mod	1.3.3.1.2	%	percentage-entity
+::edge	1.3		monetary-quantity	:ARG0-of	1.3.3	representing	represent-01
+::edge	1	pledge	pledge-01	:ARG0	1.1		country
+::edge	1	pledge	pledge-01	:ARG1	1.2		person
+::edge	1	pledge	pledge-01	:ARG2	1.3		monetary-quantity
+::edge	1	pledge	pledge-01	:mod	1.4	initially	initial
+::edge	1.1		country	:wiki	1.1.1		"United_States"
+13	Vice president of Boeing Corporation Joseph Song stated that the 70 percent offset trade level will be met.
+13	Vice president of Boeing Corporation Joseph Song stated that the 70 percent offset trade level will be met .
+13	0-1.1.3.2.1 1-1.1.3.2 2-1.1.3 3-1.1.3.1.2.1 4-1.1.3.1.2.2 5-1.1.2.1 6-1.1.2.2 7-1 8-1.2.r 10-1.2.1.3.1 11-1.2.1.3 12-1.2.1.2 13-1.2.1.1 14-1.2.1 17-1.2
+::node	"Joseph"	1.1.2.1	"Joseph"	Joseph
+::node	n4	1.1.3.1.2	name	
+::node	v	1.1.3.2.1	vice	Vice
+::node	"Song"	1.1.2.2	"Song"	Song
+::node	c2	1.1.3.1	company	
+::node	p3	1.1.3.2	president	president
+::node	"Corporation"	1.1.3.1.2.2	"Corporation"	Corporation
+::node	70	1.2.1.3.1	70	70
+::node	"Boeing"	1.1.3.1.2.1	"Boeing"	Boeing
+::node	n3	1.1.2	name	
+::node	l	1.2.1	level	level
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	of
+::node	p2	1.1	person	
+::node	m	1.2	meet-01	met
+::node	o	1.2.1.2	offset-01	offset
+::node	p	1.2.1.3	percentage-entity	percent
+::node	"Boeing"	1.1.3.1.1	"Boeing"	
+::node	t	1.2.1.1	trade	trade
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Joseph	"Joseph"
+::edge	1.1.3.1		company	:name	1.1.3.1.2		name
+::edge	1.1.3.2	president	president	:mod	1.1.3.2.1	Vice	vice
+::edge	1.1.2		name	:op2	1.1.2.2	Song	"Song"
+::edge	1.1.3	of	have-org-role-91	:ARG1	1.1.3.1		company
+::edge	1.1.3	of	have-org-role-91	:ARG2	1.1.3.2	president	president
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	Corporation	"Corporation"
+::edge	1.2.1.3	percent	percentage-entity	:value	1.2.1.3.1	70	70
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Boeing	"Boeing"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	met	meet-01	:ARG1	1.2.1	level	level
+::edge	1.1		person	:ARG0-of	1.1.3	of	have-org-role-91
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	met	meet-01
+::edge	1.2.1	level	level	:ARG1-of	1.2.1.2	offset	offset-01
+::edge	1.2.1	level	level	:mod	1.2.1.3	percent	percentage-entity
+::edge	1.1.3.1		company	:wiki	1.1.3.1.1		"Boeing"
+::edge	1.2.1	level	level	:mod	1.2.1.1	trade	trade
+::edge	1.1		person	:wiki	1.1.1		-
+14	Song also stated a level of 80 percent was possible.
+14	Song also stated a level of 80 percent was possible .
+14	0-1.1.2.1 1-1.3 2-1 4-1.2.1 5-1.2.1.1.r 6-1.2.1.1.1 7-1.2.1.1 8-1.2.1.r 9-1.2
+::node	n2	1.1.2	name	
+::node	l	1.2.1	level	level
+::node	s	1	state-01	stated
+::node	"Song"	1.1.2.1	"Song"	Song
+::node	80	1.2.1.1.1	80	80
+::node	p3	1.1	person	
+::node	p4	1.2	possible	possible
+::node	a	1.3	also	also
+::node	p5	1.2.1.1	percentage-entity	percent
+::node	-	1.1.1	-	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	possible	possible	:domain	1.2.1	level	level
+::edge	1.1.2		name	:op1	1.1.2.1	Song	"Song"
+::edge	1.2.1.1	percent	percentage-entity	:value	1.2.1.1.1	80	80
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	possible	possible
+::edge	1	stated	state-01	:mod	1.3	also	also
+::edge	1.2.1	level	level	:mod	1.2.1.1	percent	percentage-entity
+::edge	1.1		person	:wiki	1.1.1		-
+15	Dassault Aviation SA is trying to overturn the selection of the F-15 k through legal action because it states the Rafale is more modern and cheaper.
+15	Dassault Aviation SA is trying to overturn the selection of the F @-@ 15 k through legal action because it states the Rafale is more modern and cheaper .
+15	0-1.1.1.2.1 1-1.1.1.2.2 2-1.1.1.2.3 3-1.1.2.3.r 4-1.2 6-1.2.2 8-1.2.2.2 9-1.2.2.2.1.r 11-1.2.2.2.1.2.1 16-1.2.2.3.1 17-1.2.2.3 18-1 20-1.1 22-1.1.2.3.2.1 23-1.1.2.3.r 24-1.1.2.1.1 24-1.1.2.2.1 25-1.1.2.1 26-1.1.2 27-1.1.2.2 27-1.1.2.2.1 27-1.1.2.2.1.r
+::node	m3	1.1.2.2.1	more	cheaper
+::node	m2	1.1.2.1.1	more	more
+::node	"Aviation"	1.1.1.2.2	"Aviation"	Aviation
+::node	a	1.2.2.3	action	action
+::node	"Dassault"	1.1.1.2.1	"Dassault"	Dassault
+::node	c	1.2.2.1	company	
+::node	-	1.2.2.2.1.1	-	
+::node	s2	1.2.2.2	select-01	selection
+::node	a4	1.2.2.2.1	aircraft-type	
+::node	n4	1.2.2.2.1.2	name	
+::node	l	1.2.2.3.1	law	legal
+::node	"Dassault_Aviation"	1.1.1.1	"Dassault_Aviation"	
+::node	n	1.1.1.2	name	
+::node	m	1.1.2.1	modern	modern
+::node	c3	1.1.2.2	cheap	cheaper
+::node	a2	1.1.2.3	aircraft-type	
+::node	"Rafale"	1.1.2.3.2.1	"Rafale"	Rafale
+::node	"SA"	1.1.1.2.3	"SA"	SA
+::node	"F-15K"	1.2.2.2.1.2.1	"F-15K"	F
+::node	a3	1.1.2	and	and
+::node	c	1.2.1	company	
+::node	c2	1	cause-01	because
+::node	o	1.2.2	overturn-01	overturn
+::node	s	1.1	state-01	states
+::node	n3	1.1.2.3.2	name	
+::node	"Dassault_Rafale"	1.1.2.3.1	"Dassault_Rafale"	
+::node	t	1.2	try-01	trying
+::node	c	1.1.1	company	
+::edge	1.1.2.2	cheaper	cheap	:degree	1.1.2.2.1	cheaper	more
+::edge	1.1.2.1	modern	modern	:degree	1.1.2.1.1	more	more
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Aviation	"Aviation"
+::edge	1.2.2	overturn	overturn-01	:manner	1.2.2.3	action	action
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Dassault	"Dassault"
+::edge	1.2.2	overturn	overturn-01	:ARG0	1.2.2.1		company
+::edge	1.2.2.2.1		aircraft-type	:wiki	1.2.2.2.1.1		-
+::edge	1.2.2	overturn	overturn-01	:ARG1	1.2.2.2	selection	select-01
+::edge	1.2.2.2	selection	select-01	:ARG1	1.2.2.2.1		aircraft-type
+::edge	1.2.2.2.1		aircraft-type	:name	1.2.2.2.1.2		name
+::edge	1.2.2.3	action	action	:mod	1.2.2.3.1	legal	law
+::edge	1.1.1		company	:wiki	1.1.1.1		"Dassault_Aviation"
+::edge	1.1.1		company	:name	1.1.1.2		name
+::edge	1.1.2	and	and	:op1	1.1.2.1	modern	modern
+::edge	1.1.2	and	and	:op2	1.1.2.2	cheaper	cheap
+::edge	1.1.2	and	and	:domain	1.1.2.3		aircraft-type
+::edge	1.1.2.3.2		name	:op1	1.1.2.3.2.1	Rafale	"Rafale"
+::edge	1.1.1.2		name	:op3	1.1.1.2.3	SA	"SA"
+::edge	1.2.2.2.1.2		name	:op1	1.2.2.2.1.2.1	F	"F-15K"
+::edge	1.1	states	state-01	:ARG1	1.1.2	and	and
+::edge	1.2	trying	try-01	:ARG0	1.2.1		company
+::edge	1.2	trying	try-01	:ARG1	1.2.2	overturn	overturn-01
+::edge	1	because	cause-01	:ARG0	1.1	states	state-01
+::edge	1.1.2.3		aircraft-type	:name	1.1.2.3.2		name
+::edge	1.1.2.3		aircraft-type	:wiki	1.1.2.3.1		"Dassault_Rafale"
+::edge	1	because	cause-01	:ARG1	1.2	trying	try-01
+::edge	1.1	states	state-01	:ARG0	1.1.1		company
+16	Boeing Vice President for communications Douglas Kennett stated disappointment by Dassault's legal action.
+16	Boeing Vice President for communications Douglas Kennett stated disappointment by Dassault 's legal action .
+16	0-1.1.3.1.2.1 1-1.1.3.2.1 2-1.1.3.2 4-1.1.3.3 5-1.1.2.1 6-1.1.2.2 7-1 8-1.2 9-1.2.1.r 10-1.2.1.2.2.1 11-1.2.1.2.r 12-1.2.1.1 13-1.2.1
+::node	"Douglas"	1.1.2.1	"Douglas"	Douglas
+::node	n2	1.1.3.1.2	name	
+::node	v	1.1.3.2.1	vice	Vice
+::node	"Kennett"	1.1.2.2	"Kennett"	Kennett
+::node	c	1.1.3.1	company	
+::node	p2	1.1.3.2	president	President
+::node	c2	1.1.3.3	communicate-01	communications
+::node	n5	1.2.1.2.2	name	
+::node	"Boeing"	1.1.3.1.2.1	"Boeing"	Boeing
+::node	n4	1.1.2	name	
+::node	a	1.2.1	action	action
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	
+::node	"Dassault"	1.2.1.2.2.1	"Dassault"	Dassault
+::node	p	1.2.2	person	
+::node	"Dassault_Aviation"	1.2.1.2.1	"Dassault_Aviation"	
+::node	p	1.1	person	
+::node	d	1.2	disappoint-01	disappointment
+::node	c3	1.2.1.2	company	
+::node	"Boeing"	1.1.3.1.1	"Boeing"	
+::node	l	1.2.1.1	law	legal
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Douglas	"Douglas"
+::edge	1.1.3.1		company	:name	1.1.3.1.2		name
+::edge	1.1.3.2	President	president	:mod	1.1.3.2.1	Vice	vice
+::edge	1.1.2		name	:op2	1.1.2.2	Kennett	"Kennett"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		company
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	President	president
+::edge	1.1.3		have-org-role-91	:ARG3	1.1.3.3	communications	communicate-01
+::edge	1.2.1.2		company	:name	1.2.1.2.2		name
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Boeing	"Boeing"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	disappointment	disappoint-01	:ARG0	1.2.1	action	action
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	Dassault	"Dassault"
+::edge	1.2	disappointment	disappoint-01	:ARG1	1.2.2		person
+::edge	1.2.1.2		company	:wiki	1.2.1.2.1		"Dassault_Aviation"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	disappointment	disappoint-01
+::edge	1.2.1	action	action	:poss	1.2.1.2		company
+::edge	1.1.3.1		company	:wiki	1.1.3.1.1		"Boeing"
+::edge	1.2.1	action	action	:mod	1.2.1.1	legal	law
+::edge	1.1		person	:wiki	1.1.1		-
+17	Kennett also stated that Dassault should respect the defense ministry decision.
+17	Kennett also stated that Dassault should respect the defense ministry decision .
+17	0-1.1.2.1 1-1.3 2-1 3-1.2.r 4-1.2.2.1.2.1 5-1.2 6-1.2.2 8-1.2.2.2.1.1.1 9-1.2.2.2.1.1 10-1.2.2.2 10-1.2.2.2.1 10-1.2.2.2.1.r
+::node	"Kennett"	1.1.2.1	"Kennett"	Kennett
+::node	"Dassault_Aviation"	1.2.2.1.1	"Dassault_Aviation"	
+::node	"Dassault"	1.2.2.1.2.1	"Dassault"	Dassault
+::node	d2	1.2.2.2.1.1.1	defense	defense
+::node	n3	1.1.2	name	
+::node	p	1.2.1	person	
+::node	s	1	state-01	stated
+::node	r2	1.2.2	respect-01	respect
+::node	p	1.1	person	
+::node	r	1.2	recommend-01	should
+::node	a	1.3	also	also
+::node	c	1.2.2.1	company	
+::node	m	1.2.2.2.1.1	ministry	ministry
+::node	t	1.2.2.2	thing	decision
+::node	n	1.2.2.1.2	name	
+::node	d	1.2.2.2.1	decide-01	decision
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Kennett	"Kennett"
+::edge	1.2.2.1		company	:wiki	1.2.2.1.1		"Dassault_Aviation"
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	Dassault	"Dassault"
+::edge	1.2.2.2.1.1	ministry	ministry	:mod	1.2.2.2.1.1.1	defense	defense
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	should	recommend-01	:ARG0	1.2.1		person
+::edge	1.2	should	recommend-01	:ARG1	1.2.2	respect	respect-01
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	should	recommend-01
+::edge	1	stated	state-01	:mod	1.3	also	also
+::edge	1.2.2	respect	respect-01	:ARG0	1.2.2.1		company
+::edge	1.2.2.2.1	decision	decide-01	:ARG0	1.2.2.2.1.1	ministry	ministry
+::edge	1.2.2	respect	respect-01	:ARG1	1.2.2.2	decision	thing
+::edge	1.2.2.1		company	:name	1.2.2.1.2		name
+::edge	1.2.2.2	decision	thing	:ARG1-of	1.2.2.2.1	decision	decide-01
+::edge	1.1		person	:wiki	1.1.1		-
+18	Boeing Corporation is an aerospace company based in the United States.
+18	Boeing Corporation is an aerospace company based in the United States .
+18	0-1.1.2.1 1-1.1.2.2 4-1.1.3 5-1.1 6-1 7-1.2.r 9-1.2.2.1 10-1.2.2.2
+::node	n3	1.1.2	name	
+::node	"United_States"	1.2.1	"United_States"	
+::node	b	1	base-01	based
+::node	a	1.1.3	aerospace	aerospace
+::node	n4	1.2.2	name	
+::node	"Boeing"	1.1.2.1	"Boeing"	Boeing
+::node	c3	1.1	company	company
+::node	"Corporation"	1.1.2.2	"Corporation"	Corporation
+::node	c4	1.2	country	
+::node	"United"	1.2.2.1	"United"	United
+::node	"States"	1.2.2.2	"States"	States
+::node	"Boeing"	1.1.1	"Boeing"	
+::edge	1.1	company	company	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"United_States"
+::edge	1.1	company	company	:mod	1.1.3	aerospace	aerospace
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Boeing	"Boeing"
+::edge	1	based	base-01	:ARG1	1.1	company	company
+::edge	1.1.2		name	:op2	1.1.2.2	Corporation	"Corporation"
+::edge	1	based	base-01	:location	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	United	"United"
+::edge	1.2.2		name	:op2	1.2.2.2	States	"States"
+::edge	1.1	company	company	:wiki	1.1.1		"Boeing"

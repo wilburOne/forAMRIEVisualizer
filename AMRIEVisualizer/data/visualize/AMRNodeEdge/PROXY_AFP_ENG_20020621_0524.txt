@@ -1,0 +1,958 @@
+1	2002-06-21
+1	2002 @-@ 06 @-@ 21
+1	0-1.2 2-1.1 4-1.3
+::node	d	1	date-entity	
+::node	6	1.1	6	06
+::node	2002	1.2	2002	2002
+::node	21	1.3	21	21
+::edge	1		date-entity	:month	1.1	06	6
+::edge	1		date-entity	:year	1.2	2002	2002
+::edge	1		date-entity	:day	1.3	21	21
+2	Russia (RU); Iran (IR)
+2	Russia ( RU ) ; Iran ( IR )
+2	0-1.1.2.1 5-1.2.2.1
+::node	n	1.1.2	name	
+::node	"Iran"	1.2.1	"Iran"	
+::node	a	1	and	
+::node	n2	1.2.2	name	
+::node	"Russia"	1.1.2.1	"Russia"	Russia
+::node	c	1.1	country	
+::node	c2	1.2	country	
+::node	"Iran"	1.2.2.1	"Iran"	Iran
+::node	"Russia"	1.1.1	"Russia"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"Iran"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Russia	"Russia"
+::edge	1		and	:op1	1.1		country
+::edge	1		and	:op2	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	Iran	"Iran"
+::edge	1.1		country	:wiki	1.1.1		"Russia"
+3	International; Government; weapons; technology; proliferation
+3	International ; Government ; weapons ; technology ; proliferation
+3	0-1.1 2-1.2 2-1.2.1 2-1.2.1.r 4-1.3 6-1.4 8-1.5
+::node	g2	1.2.1	govern-01	Government
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	g	1.2	government-organization	Government
+::node	w	1.3	weapon	weapons
+::node	t	1.4	technology	technology
+::node	p	1.5	proliferate-01	proliferation
+::edge	1.2	Government	government-organization	:ARG0-of	1.2.1	Government	govern-01
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	Government	government-organization
+::edge	1		and	:op3	1.3	weapons	weapon
+::edge	1		and	:op4	1.4	technology	technology
+::edge	1		and	:op5	1.5	proliferation	proliferate-01
+4	Ecological organization Greenpeace stated on June 21, 2002 that Russia helped Iran to develop nuclear weapons by building Iran's Bushehr atomic power station.
+4	Ecological organization Greenpeace stated on June 21 , 2002 that Russia helped Iran to develop nuclear weapons by building Iran 's Bushehr atomic power station .
+4	0-1.1.3 1-1.1 2-1.1.2.1 3-1 4-1.3.r 5-1.3.2 5-1.3.2.r 6-1.3.3 8-1.3.1 9-1.2.r 10-1.2.1.2.1 11-1.2 12-1.2.2.1 14-1.2.2 15-1.2.2.2.1 16-1.2.2.2 17-1.2.4.r 18-1.2.4 19-1.2.4.2.1 20-1.2.4.2.1.r 21-1.2.4.2.3.2.1 22-1.2.4.2.2.1 23-1.2.4.2.2 24-1.2.4.2
+::node	n3	1.2.3.2	name	
+::node	c	1.2.4.1	country	
+::node	s2	1.2.4.2	station	station
+::node	n2	1.2.1.2	name	
+::node	c2	1.2.2.1	country	Iran
+::node	w	1.2.2.2	weapon	weapons
+::node	"Iran"	1.2.3.1	"Iran"	
+::node	n4	1.2.2.2.1	nucleus	nuclear
+::node	"Russia"	1.2.1.1	"Russia"	
+::node	"Bushehr"	1.2.4.2.3.2.1	"Bushehr"	Bushehr
+::node	"Bushehr"	1.2.4.2.3.1	"Bushehr"	
+::node	"Greenpeace"	1.1.2.1	"Greenpeace"	Greenpeace
+::node	a	1.2.4.2.2.1	atom	atomic
+::node	"Iran"	1.2.3.2.1	"Iran"	
+::node	n6	1.2.4.2.3.2	name	
+::node	n	1.1.2	name	
+::node	c	1.2.1	country	
+::node	s	1	state-01	stated
+::node	e	1.1.3	ecology	Ecological
+::node	d2	1.2.2	develop-02	develop
+::node	2002	1.3.1	2002	2002
+::node	"Russia"	1.2.1.2.1	"Russia"	Russia
+::node	c2	1.2.3	country	
+::node	6	1.3.2	6	June
+::node	b	1.2.4	build-01	building
+::node	21	1.3.3	21	21
+::node	o	1.1	organization	organization
+::node	h	1.2	help-01	helped
+::node	d	1.3	date-entity	
+::node	c2	1.2.4.2.1	country	Iran
+::node	p	1.2.4.2.2	power-01	power
+::node	c3	1.2.4.2.3	city	
+::node	"Greenpeace"	1.1.1	"Greenpeace"	
+::edge	1.2.3		country	:name	1.2.3.2		name
+::edge	1.2.4	building	build-01	:ARG0	1.2.4.1		country
+::edge	1.2.4	building	build-01	:ARG1	1.2.4.2	station	station
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.2	develop	develop-02	:ARG0	1.2.2.1	Iran	country
+::edge	1.2.2	develop	develop-02	:ARG1	1.2.2.2	weapons	weapon
+::edge	1.2.3		country	:wiki	1.2.3.1		"Iran"
+::edge	1.2.2.2	weapons	weapon	:mod	1.2.2.2.1	nuclear	nucleus
+::edge	1.2.1		country	:wiki	1.2.1.1		"Russia"
+::edge	1.2.4.2.3.2		name	:op1	1.2.4.2.3.2.1	Bushehr	"Bushehr"
+::edge	1.2.4.2.3		city	:wiki	1.2.4.2.3.1		"Bushehr"
+::edge	1.1.2		name	:op1	1.1.2.1	Greenpeace	"Greenpeace"
+::edge	1.2.4.2.2	power	power-01	:mod	1.2.4.2.2.1	atomic	atom
+::edge	1.2.3.2		name	:op1	1.2.3.2.1		"Iran"
+::edge	1.2.4.2.3		city	:name	1.2.4.2.3.2		name
+::edge	1.1	organization	organization	:name	1.1.2		name
+::edge	1.2	helped	help-01	:ARG0	1.2.1		country
+::edge	1.1	organization	organization	:mod	1.1.3	Ecological	ecology
+::edge	1.2	helped	help-01	:ARG1	1.2.2	develop	develop-02
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Russia	"Russia"
+::edge	1.2	helped	help-01	:ARG2	1.2.3		country
+::edge	1.3		date-entity	:month	1.3.2	June	6
+::edge	1.2	helped	help-01	:manner	1.2.4	building	build-01
+::edge	1.3		date-entity	:day	1.3.3	21	21
+::edge	1	stated	state-01	:ARG0	1.1	organization	organization
+::edge	1	stated	state-01	:ARG1	1.2	helped	help-01
+::edge	1	stated	state-01	:time	1.3		date-entity
+::edge	1.2.4.2	station	station	:poss	1.2.4.2.1	Iran	country
+::edge	1.2.4.2	station	station	:ARG0-of	1.2.4.2.2	power	power-01
+::edge	1.2.4.2	station	station	:location	1.2.4.2.3		city
+::edge	1.1	organization	organization	:wiki	1.1.1		"Greenpeace"
+6	The Russian branch of Greenpeace distributed a report at a press conference of Russia's atomic energy ministry.
+6	The Russian branch of Greenpeace distributed a report at a press conference of Russia 's atomic energy ministry .
+6	1-1.1.1.2.1 2-1.1 3-1.1.2.r 4-1.1.2.2.1 5-1 7-1.2 7-1.2.1 7-1.2.1.r 8-1.3.r 10-1.3.1 11-1.3 13-1.3.2.1.2 14-1.3.2.1.2.r 15-1.3.2.1.1.1 16-1.3.2.1.1 17-1.3.2.1
+::node	"Russia"	1.1.1.1	"Russia"	
+::node	e	1.3.2.1.1	energy	energy
+::node	n	1.1.1.2	name	
+::node	"Greenpeace"	1.1.2.1	"Greenpeace"	
+::node	c	1.3.2.1.2	country	Russia
+::node	n2	1.1.2.2	name	
+::node	m	1.3.2.1	ministry	ministry
+::node	"Greenpeace"	1.1.2.2.1	"Greenpeace"	Greenpeace
+::node	a	1.3.2.1.1.1	atom	atomic
+::node	o	1.1.2	organization	
+::node	r	1.2.1	report-01	report
+::node	d	1	distribute-01	distributed
+::node	p	1.3.1	press	press
+::node	i	1.3.2	include-91	
+::node	b	1.1	branch	branch
+::node	t	1.2	thing	report
+::node	c2	1.3	conference	conference
+::node	"Russia"	1.1.1.2.1	"Russia"	Russian
+::node	c	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"Russia"
+::edge	1.3.2.1	ministry	ministry	:mod	1.3.2.1.1	energy	energy
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		organization	:wiki	1.1.2.1		"Greenpeace"
+::edge	1.3.2.1	ministry	ministry	:poss	1.3.2.1.2	Russia	country
+::edge	1.1.2		organization	:name	1.1.2.2		name
+::edge	1.3.2		include-91	:ARG1	1.3.2.1	ministry	ministry
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Greenpeace	"Greenpeace"
+::edge	1.3.2.1.1	energy	energy	:mod	1.3.2.1.1.1	atomic	atom
+::edge	1.1	branch	branch	:part-of	1.1.2		organization
+::edge	1.2	report	thing	:ARG1-of	1.2.1	report	report-01
+::edge	1.3	conference	conference	:mod	1.3.1	press	press
+::edge	1.3	conference	conference	:ARG2-of	1.3.2		include-91
+::edge	1	distributed	distribute-01	:ARG0	1.1	branch	branch
+::edge	1	distributed	distribute-01	:ARG1	1.2	report	thing
+::edge	1	distributed	distribute-01	:location	1.3	conference	conference
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Russian	"Russia"
+::edge	1.1	branch	branch	:mod	1.1.1		country
+7	The ministry conceded that the Russo-Iranian accord on the plant's construction does not require the repatriation of the nuclear fuel.
+7	The ministry conceded that the Russo @-@ Iranian accord on the plant 's construction does not require the repatriation of the nuclear fuel .
+7	1-1.1 2-1 7-1.2.2.3.2.1 8-1.2.2 9-1.2.2.1.r 11-1.2.2.1.1 12-1.2.2.1.1.r 13-1.2.2.1 15-1.2.1 15-1.2.1.r 16-1.2 18-1.2.3 19-1.2.3.1.r 21-1.2.3.1.1 22-1.2.3.1
+::node	"Iran"	1.2.2.3.2.1	"Iran"	Iranian
+::node	p	1.2.2.1.1	plant	plant
+::node	n	1.2.3.1.1	nucleus	nuclear
+::node	-	1.2.1	-	not
+::node	c	1	concede-01	conceded
+::node	a	1.2.2	accord	accord
+::node	r2	1.2.3	repatriate-01	repatriation
+::node	m	1.1	ministry	ministry
+::node	r	1.2	require-01	require
+::node	c4	1.2.2.3	country	
+::node	c2	1.2.2.1	construct-01	construction
+::node	c3	1.2.2.2	country	
+::node	f	1.2.3.1	fuel	fuel
+::node	"Russia"	1.2.2.2.1	"Russia"	
+::node	n2	1.2.2.2.2	name	
+::node	"Russia"	1.2.2.2.2.1	"Russia"	
+::node	"Iran"	1.2.2.3.1	"Iran"	
+::node	n3	1.2.2.3.2	name	
+::edge	1.2.2.3.2		name	:op1	1.2.2.3.2.1	Iranian	"Iran"
+::edge	1.2.2.1	construction	construct-01	:ARG1	1.2.2.1.1	plant	plant
+::edge	1.2.3.1	fuel	fuel	:mod	1.2.3.1.1	nuclear	nucleus
+::edge	1.2	require	require-01	:polarity	1.2.1	not	-
+::edge	1.2	require	require-01	:ARG0	1.2.2	accord	accord
+::edge	1.2	require	require-01	:ARG1	1.2.3	repatriation	repatriate-01
+::edge	1	conceded	concede-01	:ARG0	1.1	ministry	ministry
+::edge	1	conceded	concede-01	:ARG1	1.2	require	require-01
+::edge	1.2.2	accord	accord	:mod	1.2.2.3		country
+::edge	1.2.2	accord	accord	:topic	1.2.2.1	construction	construct-01
+::edge	1.2.2	accord	accord	:mod	1.2.2.2		country
+::edge	1.2.3	repatriation	repatriate-01	:ARG1	1.2.3.1	fuel	fuel
+::edge	1.2.2.2		country	:wiki	1.2.2.2.1		"Russia"
+::edge	1.2.2.2		country	:name	1.2.2.2.2		name
+::edge	1.2.2.2.2		name	:op1	1.2.2.2.2.1		"Russia"
+::edge	1.2.2.3		country	:wiki	1.2.2.3.1		"Iran"
+::edge	1.2.2.3		country	:name	1.2.2.3.2		name
+8	The report stated that the recycling of nuclear fuel from Bushehr is not mentioned in the accord between the Russian and Iranian governments on the construction of the plant.
+8	The report stated that the recycling of nuclear fuel from Bushehr is not mentioned in the accord between the Russian and Iranian governments on the construction of the plant .
+8	1-1.1 1-1.1.1 1-1.1.1.r 2-1 3-1.2.r 5-1.2.2 6-1.2.2.1.r 7-1.2.2.1.1 8-1.2.2.1 9-1.2.2.1.2.r 10-1.2.2.1.2.2.1 12-1.2.1 12-1.2.1.r 13-1.2 14-1.2.3.r 16-1.2.3 17-1.2.3.1 19-1.2.3.1.1.1.1.2.1 20-1.2.3.1 21-1.2.3.1.2.1.1.2.1 22-1.2.3.1.1 22-1.2.3.1.1.1 22-1.2.3.1.1.1.r 22-1.2.3.1.2 22-1.2.3.1.2.1 22-1.2.3.1.2.1.r 23-1.2.3.2.r 25-1.2.3.2 26-1.2.3.2.1.r 28-1.2.3.2.1
+::node	"Bushehr"	1.2.2.1.2.1	"Bushehr"	
+::node	c	1.2.3.1.1.1.1	country	
+::node	n3	1.2.3.1.1.1.1.2	name	
+::node	n2	1.2.2.1.2.2	name	
+::node	"Russia"	1.2.3.1.1.1.1.1	"Russia"	
+::node	"Bushehr"	1.2.2.1.2.2.1	"Bushehr"	Bushehr
+::node	"Iran"	1.2.3.1.2.1.1.2.1	"Iran"	Iranian
+::node	c3	1.2.3.2	construct-01	construction
+::node	"Russia"	1.2.3.1.1.1.1.2.1	"Russia"	Russian
+::node	f	1.2.2.1	fuel	fuel
+::node	b	1.2.3.1	between	and
+::node	c4	1.2.2.1.2	city	
+::node	c2	1.2.3.1.2.1.1	country	
+::node	n	1.2.2.1.1	nucleus	nuclear
+::node	"Iran"	1.2.3.1.2.1.1.1	"Iran"	
+::node	n4	1.2.3.1.2.1.1.2	name	
+::node	g	1.2.3.1.1	government-organization	governments
+::node	g3	1.2.3.1.2	government-organization	governments
+::node	p2	1.2.3.2.1	plant	plant
+::node	-	1.2.1	-	not
+::node	s	1	state-01	stated
+::node	r2	1.2.2	recycle-01	recycling
+::node	a	1.2.3	accord	accord
+::node	g2	1.2.3.1.1.1	govern-01	governments
+::node	t	1.1	thing	report
+::node	m	1.2	mention-01	mentioned
+::node	g4	1.2.3.1.2.1	govern-01	governments
+::node	r	1.1.1	report-01	report
+::edge	1.2.2.1.2		city	:wiki	1.2.2.1.2.1		"Bushehr"
+::edge	1.2.3.1.1.1	governments	govern-01	:ARG1	1.2.3.1.1.1.1		country
+::edge	1.2.3.1.1.1.1		country	:name	1.2.3.1.1.1.1.2		name
+::edge	1.2.2.1.2		city	:name	1.2.2.1.2.2		name
+::edge	1.2.3.1.1.1.1		country	:wiki	1.2.3.1.1.1.1.1		"Russia"
+::edge	1.2.2.1.2.2		name	:op1	1.2.2.1.2.2.1	Bushehr	"Bushehr"
+::edge	1.2.3.1.2.1.1.2		name	:op1	1.2.3.1.2.1.1.2.1	Iranian	"Iran"
+::edge	1.2.3	accord	accord	:topic	1.2.3.2	construction	construct-01
+::edge	1.2.3.1.1.1.1.2		name	:op1	1.2.3.1.1.1.1.2.1	Russian	"Russia"
+::edge	1.2.2	recycling	recycle-01	:ARG1	1.2.2.1	fuel	fuel
+::edge	1.2.3	accord	accord	:mod	1.2.3.1	and	between
+::edge	1.2.2.1	fuel	fuel	:source	1.2.2.1.2		city
+::edge	1.2.3.1.2.1	governments	govern-01	:ARG1	1.2.3.1.2.1.1		country
+::edge	1.2.2.1	fuel	fuel	:mod	1.2.2.1.1	nuclear	nucleus
+::edge	1.2.3.1.2.1.1		country	:wiki	1.2.3.1.2.1.1.1		"Iran"
+::edge	1.2.3.1.2.1.1		country	:name	1.2.3.1.2.1.1.2		name
+::edge	1.2.3.1	and	between	:op1	1.2.3.1.1	governments	government-organization
+::edge	1.2.3.1	and	between	:op2	1.2.3.1.2	governments	government-organization
+::edge	1.2.3.2	construction	construct-01	:ARG1	1.2.3.2.1	plant	plant
+::edge	1.2	mentioned	mention-01	:polarity	1.2.1	not	-
+::edge	1.2	mentioned	mention-01	:ARG1	1.2.2	recycling	recycle-01
+::edge	1.2	mentioned	mention-01	:medium	1.2.3	accord	accord
+::edge	1.2.3.1.1	governments	government-organization	:ARG0-of	1.2.3.1.1.1	governments	govern-01
+::edge	1	stated	state-01	:ARG0	1.1	report	thing
+::edge	1	stated	state-01	:ARG1	1.2	mentioned	mention-01
+::edge	1.2.3.1.2	governments	government-organization	:ARG0-of	1.2.3.1.2.1	governments	govern-01
+::edge	1.1	report	thing	:ARG1-of	1.1.1	report	report-01
+9	Greenpeace member Vladimir Chuprov said the ministry had practically admitted that Iran will not return to Russia the spent nuclear fuel from the power station and Russia's only use for Iran is to equip itself with nuclear weapons.
+9	Greenpeace member Vladimir Chuprov said the ministry had practically admitted that Iran will not return to Russia the spent nuclear fuel from the power station and Russia 's only use for Iran is to equip itself with nuclear weapons .
+9	0-1.1.3.1.2.1 1-1.1.3.2 2-1.1.2.1 3-1.1.2.2 4-1 6-1.2.1 8-1.2.3 9-1.2 10-1.2.2.r 11-1.2.2.1.2.2.1 13-1.2.2.1.1 13-1.2.2.1.1.r 14-1.2.2.1 15-1.2.2.1.4.r 16-1.2.2.1.4.2.1 18-1.2.2.1.3.2 19-1.2.2.1.3.1 20-1.2.2.1.3 21-1.2.2.1.3.3.r 23-1.2.2.1.3.3.1 24-1.2.2.1.3.3 26-1.2.2.2.1 27-1.2.2.2.1.r 28-1.2.2.2.4 29-1.2.2.2 30-1.2.2.2.2.r 31-1.2.2.2.2 34-1.2.2.2.3 36-1.2.2.2.3.3.r 37-1.2.2.2.3.3.1 38-1.2.2.2.3.3
+::node	n6	1.2.2.2.3.3.1	nucleus	nuclear
+::node	n2	1.1.3.1.2	name	
+::node	"Iran"	1.2.2.1.2.1	"Iran"	
+::node	s3	1.2.2.1.3.3	station	station
+::node	n5	1.2.2.1.4.2	name	
+::node	n3	1.2.2.1.2.2	name	
+::node	n4	1.2.2.1.3.1	nucleus	nuclear
+::node	s2	1.2.2.1.3.2	spend-00	spent
+::node	"Russia"	1.2.2.1.4.1	"Russia"	
+::node	"Iran"	1.2.2.1.2.2.1	"Iran"	Iran
+::node	r	1.2.2.1	return-02	return
+::node	u	1.2.2.2	use-01	use
+::node	c	1.2.2.1.2	country	
+::node	c2	1.2.2.2.1	country	Russia
+::node	c2	1.2.2.2.3.1	country	
+::node	f	1.2.2.1.3	fuel	fuel
+::node	c	1.2.2.2.2	country	Iran
+::node	c2	1.2.2.1.4	country	
+::node	e	1.2.2.2.3	equip-01	equip
+::node	w	1.2.2.2.3.3	weapon	weapons
+::node	c2	1.2.2.2.3.2	country	
+::node	o2	1.2.2.2.4	only	only
+::node	"Vladimir"	1.1.2.1	"Vladimir"	Vladimir
+::node	-	1.2.2.1.1	-	not
+::node	"Chuprov"	1.1.2.2	"Chuprov"	Chuprov
+::node	o	1.1.3.1	organization	
+::node	m	1.1.3.2	member	member
+::node	p2	1.2.2.1.3.3.1	power-01	power
+::node	"Greenpeace"	1.1.3.1.2.1	"Greenpeace"	Greenpeace
+::node	n	1.1.2	name	
+::node	m2	1.2.1	ministry	ministry
+::node	s	1	say-01	said
+::node	h	1.1.3	have-org-role-91	
+::node	a2	1.2.2	and	
+::node	p	1.2.3	practical	practically
+::node	p3	1.1	person	
+::node	a	1.2	admit-01	admitted
+::node	"Russia"	1.2.2.1.4.2.1	"Russia"	Russia
+::node	"Greenpeace"	1.1.3.1.1	"Greenpeace"	
+::node	-	1.1.1	-	
+::edge	1.2.2.2.3.3	weapons	weapon	:mod	1.2.2.2.3.3.1	nuclear	nucleus
+::edge	1.1.3.1		organization	:name	1.1.3.1.2		name
+::edge	1.2.2.1.2		country	:wiki	1.2.2.1.2.1		"Iran"
+::edge	1.2.2.1.3	fuel	fuel	:source	1.2.2.1.3.3	station	station
+::edge	1.2.2.1.4		country	:name	1.2.2.1.4.2		name
+::edge	1.2.2.1.2		country	:name	1.2.2.1.2.2		name
+::edge	1.2.2.1.3	fuel	fuel	:mod	1.2.2.1.3.1	nuclear	nucleus
+::edge	1.2.2.1.3	fuel	fuel	:ARG1-of	1.2.2.1.3.2	spent	spend-00
+::edge	1.2.2.1.4		country	:wiki	1.2.2.1.4.1		"Russia"
+::edge	1.2.2.1.2.2		name	:op1	1.2.2.1.2.2.1	Iran	"Iran"
+::edge	1.2.2		and	:op1	1.2.2.1	return	return-02
+::edge	1.2.2		and	:op2	1.2.2.2	use	use-01
+::edge	1.2.2.1	return	return-02	:ARG0	1.2.2.1.2		country
+::edge	1.2.2.2	use	use-01	:ARG0	1.2.2.2.1	Russia	country
+::edge	1.2.2.2.3	equip	equip-01	:ARG0	1.2.2.2.3.1		country
+::edge	1.2.2.1	return	return-02	:ARG1	1.2.2.1.3	fuel	fuel
+::edge	1.2.2.2	use	use-01	:ARG1	1.2.2.2.2	Iran	country
+::edge	1.2.2.1	return	return-02	:ARG2	1.2.2.1.4		country
+::edge	1.2.2.2	use	use-01	:ARG2	1.2.2.2.3	equip	equip-01
+::edge	1.2.2.2.3	equip	equip-01	:ARG2	1.2.2.2.3.3	weapons	weapon
+::edge	1.2.2.2.3	equip	equip-01	:ARG1	1.2.2.2.3.2		country
+::edge	1.2.2.2	use	use-01	:mod	1.2.2.2.4	only	only
+::edge	1.1.2		name	:op1	1.1.2.1	Vladimir	"Vladimir"
+::edge	1.2.2.1	return	return-02	:polarity	1.2.2.1.1	not	-
+::edge	1.1.2		name	:op2	1.1.2.2	Chuprov	"Chuprov"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		organization
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	member	member
+::edge	1.2.2.1.3.3	station	station	:ARG0-of	1.2.2.1.3.3.1	power	power-01
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Greenpeace	"Greenpeace"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	admitted	admit-01	:ARG0	1.2.1	ministry	ministry
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	admitted	admit-01	:ARG1	1.2.2		and
+::edge	1.2	admitted	admit-01	:degree	1.2.3	practically	practical
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	admitted	admit-01
+::edge	1.2.2.1.4.2		name	:op1	1.2.2.1.4.2.1	Russia	"Russia"
+::edge	1.1.3.1		organization	:wiki	1.1.3.1.1		"Greenpeace"
+::edge	1.1		person	:wiki	1.1.1		-
+10	The atomic energy ministry confirmed the report's existence and strongly denied Greenpeace's accusations.
+10	The atomic energy ministry confirmed the report 's existence and strongly denied Greenpeace 's accusations .
+10	1-1.1.1.1.1 2-1.1.1.1 3-1.1.1 4-1.1 6-1.1.2.1 6-1.1.2.1.1 6-1.1.2.1.1.r 7-1.1.2.1.r 8-1.1.2 9-1 10-1.2.3 10-1.2.3.r 11-1.2 12-1.2.2.1.1.2.1 13-1.2.2.1.1.r 14-1.2.2 14-1.2.2.1 14-1.2.2.1.r
+::node	e	1.1.1.1	energy	energy
+::node	t	1.1.2.1	thing	report
+::node	o	1.2.2.1.1	organization	
+::node	"Greenpeace"	1.2.2.1.1.1	"Greenpeace"	
+::node	n	1.2.2.1.1.2	name	
+::node	r	1.1.2.1.1	report-01	report
+::node	"Greenpeace"	1.2.2.1.1.2.1	"Greenpeace"	Greenpeace
+::node	e2	1.1.2	exist-01	existence
+::node	m	1.2.1	ministry	
+::node	a2	1	and	and
+::node	t2	1.2.2	thing	accusations
+::node	s	1.2.3	strong	strongly
+::node	c	1.1	confirm-01	confirmed
+::node	d	1.2	deny-01	denied
+::node	a	1.1.1.1.1	atom	atomic
+::node	a3	1.2.2.1	accuse-01	accusations
+::node	m	1.1.1	ministry	ministry
+::edge	1.1.1	ministry	ministry	:mod	1.1.1.1	energy	energy
+::edge	1.1.2	existence	exist-01	:ARG1	1.1.2.1	report	thing
+::edge	1.2.2.1	accusations	accuse-01	:ARG0	1.2.2.1.1		organization
+::edge	1.2.2.1.1		organization	:wiki	1.2.2.1.1.1		"Greenpeace"
+::edge	1.2.2.1.1		organization	:name	1.2.2.1.1.2		name
+::edge	1.1.2.1	report	thing	:ARG1-of	1.1.2.1.1	report	report-01
+::edge	1.2.2.1.1.2		name	:op1	1.2.2.1.1.2.1	Greenpeace	"Greenpeace"
+::edge	1.1	confirmed	confirm-01	:ARG1	1.1.2	existence	exist-01
+::edge	1.2	denied	deny-01	:ARG0	1.2.1		ministry
+::edge	1.2	denied	deny-01	:ARG1	1.2.2	accusations	thing
+::edge	1.2	denied	deny-01	:manner	1.2.3	strongly	strong
+::edge	1	and	and	:op1	1.1	confirmed	confirm-01
+::edge	1	and	and	:op2	1.2	denied	deny-01
+::edge	1.1.1.1	energy	energy	:mod	1.1.1.1.1	atomic	atom
+::edge	1.2.2	accusations	thing	:ARG2-of	1.2.2.1	accusations	accuse-01
+::edge	1.1	confirmed	confirm-01	:ARG0	1.1.1	ministry	ministry
+11	Ministry spokesman Nikolai Shingarev told AFP that Russia would only supply nuclear fuel to Iran on condition that it be returned to Russia after its use.
+11	Ministry spokesman Nikolai Shingarev told AFP that Russia would only supply nuclear fuel to Iran on condition that it be returned to Russia after its use .
+11	0-1.1.3.1 1-1.1.3.2 2-1.1.2.1 3-1.1.2.2 4-1 5-1.3.2.1 6-1.2.r 7-1.2.1.2.1 9-1.2.4 10-1.2 11-1.2.2.1 12-1.2.2 13-1.2.3.r 14-1.2.3.2.1 16-1.2.5.r 20-1.2.5 21-1.2.5.2.r 22-1.2.5.2 23-1.2.5.3 24-1.2.5.3.1.1 24-1.2.5.3.1.1.r 25-1.2.5.3.1
+::node	u	1.2.5.3.1	use-01	use
+::node	"AFP"	1.3.2.1	"AFP"	AFP
+::node	n5	1.2.3.2	name	
+::node	f	1.2.5.1	fuel	
+::node	n3	1.2.1.2	name	
+::node	n4	1.2.2.1	nucleus	nuclear
+::node	"Iran"	1.2.3.1	"Iran"	
+::node	"Russia"	1.2.1.1	"Russia"	
+::node	f	1.2.5.3.1.1	fuel	its
+::node	"Nikolai"	1.1.2.1	"Nikolai"	Nikolai
+::node	"Shingarev"	1.1.2.2	"Shingarev"	Shingarev
+::node	m2	1.1.3.1	ministry	Ministry
+::node	s3	1.1.3.2	spokesman	spokesman
+::node	c2	1.2.5.2	country	Russia
+::node	a	1.2.5.3	after	after
+::node	"Iran"	1.2.3.2.1	"Iran"	Iran
+::node	n6	1.1.2	name	
+::node	c2	1.2.1	country	
+::node	t	1	tell-01	told
+::node	h	1.1.3	have-org-role-91	
+::node	f	1.2.2	fuel	fuel
+::node	"Agence_France-Presse"	1.3.1	"Agence_France-Presse"	
+::node	"Russia"	1.2.1.2.1	"Russia"	Russia
+::node	c3	1.2.3	country	
+::node	n2	1.3.2	name	
+::node	o	1.2.4	only	only
+::node	p2	1.1	person	
+::node	r	1.2.5	return-02	returned
+::node	s2	1.2	supply-01	supply
+::node	p	1.3	publication	
+::node	-	1.1.1	-	
+::edge	1.2.5.3	after	after	:op1	1.2.5.3.1	use	use-01
+::edge	1.3.2		name	:op1	1.3.2.1	AFP	"AFP"
+::edge	1.2.3		country	:name	1.2.3.2		name
+::edge	1.2.5	returned	return-02	:ARG1	1.2.5.1		fuel
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.2	fuel	fuel	:mod	1.2.2.1	nuclear	nucleus
+::edge	1.2.3		country	:wiki	1.2.3.1		"Iran"
+::edge	1.2.1		country	:wiki	1.2.1.1		"Russia"
+::edge	1.2.5.3.1	use	use-01	:ARG1	1.2.5.3.1.1	its	fuel
+::edge	1.1.2		name	:op1	1.1.2.1	Nikolai	"Nikolai"
+::edge	1.1.2		name	:op2	1.1.2.2	Shingarev	"Shingarev"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1	Ministry	ministry
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	spokesman	spokesman
+::edge	1.2.5	returned	return-02	:ARG2	1.2.5.2	Russia	country
+::edge	1.2.5	returned	return-02	:time	1.2.5.3	after	after
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	Iran	"Iran"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	supply	supply-01	:ARG0	1.2.1		country
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	supply	supply-01	:ARG1	1.2.2	fuel	fuel
+::edge	1.3		publication	:wiki	1.3.1		"Agence_France-Presse"
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Russia	"Russia"
+::edge	1.2	supply	supply-01	:ARG2	1.2.3		country
+::edge	1.3		publication	:name	1.3.2		name
+::edge	1.2	supply	supply-01	:mod	1.2.4	only	only
+::edge	1	told	tell-01	:ARG0	1.1		person
+::edge	1.2	supply	supply-01	:condition	1.2.5	returned	return-02
+::edge	1	told	tell-01	:ARG1	1.2	supply	supply-01
+::edge	1	told	tell-01	:ARG2	1.3		publication
+::edge	1.1		person	:wiki	1.1.1		-
+12	Shingarev said Russia is currently in negotiations with Iran.
+12	Shingarev said Russia is currently in negotiations with Iran .
+12	0-1.1.2.1 1-1 2-1.2.1.2.1 4-1.2.3 6-1.2 7-1.2.2.r 8-1.2.2.2.1
+::node	"Shingarev"	1.1.2.1	"Shingarev"	Shingarev
+::node	n	1.1.2	name	
+::node	c	1.2.1	country	
+::node	s	1	say-01	said
+::node	c2	1.2.2	country	
+::node	"Russia"	1.2.1.2.1	"Russia"	Russia
+::node	c3	1.2.3	current	currently
+::node	p	1.1	person	
+::node	n3	1.2	negotiate-01	negotiations
+::node	n2	1.2.1.2	name	
+::node	"Iran"	1.2.2.1	"Iran"	
+::node	n4	1.2.2.2	name	
+::node	"Iran"	1.2.2.2.1	"Iran"	Iran
+::node	"Russia"	1.2.1.1	"Russia"	
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Shingarev	"Shingarev"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	negotiations	negotiate-01	:ARG0	1.2.1		country
+::edge	1.2	negotiations	negotiate-01	:ARG1	1.2.2		country
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Russia	"Russia"
+::edge	1.2	negotiations	negotiate-01	:time	1.2.3	currently	current
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	negotiations	negotiate-01
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.2		country	:wiki	1.2.2.1		"Iran"
+::edge	1.2.2		country	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Iran	"Iran"
+::edge	1.2.1		country	:wiki	1.2.1.1		"Russia"
+::edge	1.1		person	:wiki	1.1.1		-
+13	This issue will be settled before the power station comes into operation.
+13	This issue will be settled before the power station comes into operation .
+13	0-1.1.1 1-1.1 4-1 5-1.2 7-1.2.1.1.1 8-1.2.1.1 11-1.2.1
+::node	o	1.2.1	operate-01	operation
+::node	s	1	settle-02	settled
+::node	p	1.2.1.1.1	power-01	power
+::node	i	1.1	issue	issue
+::node	b	1.2	before	before
+::node	s2	1.2.1.1	station	station
+::node	t	1.1.1	this	This
+::edge	1.2	before	before	:op1	1.2.1	operation	operate-01
+::edge	1.2.1.1	station	station	:ARG0-of	1.2.1.1.1	power	power-01
+::edge	1	settled	settle-02	:ARG1	1.1	issue	issue
+::edge	1	settled	settle-02	:time	1.2	before	before
+::edge	1.2.1	operation	operate-01	:ARG1	1.2.1.1	station	station
+::edge	1.1	issue	issue	:mod	1.1.1	This	this
+14	Shingarev said the accord on Bushehr was signed before Russia passed a law permitting the import of nuclear waste last year.
+14	Shingarev said the accord on Bushehr was signed before Russia passed a law permitting the import of nuclear waste last year .
+14	0-1.1.2.1 1-1 3-1.2.1 4-1.2.1.1.r 5-1.2.1.1.2.1 7-1.2 8-1.2.2 9-1.2.2.1.1.2.1 10-1.2.2.1 12-1.2.2.1.2 13-1.2.2.1.2.1 15-1.2.2.1.2.1.1 16-1.2.2.1.2.1.1.2.r 17-1.2.2.1.2.1.1.2.1 18-1.2.2.1.2.1.1.2 19-1.2.2.1.3.1 20-1.2.2.1.3
+::node	"Russia"	1.2.2.1.1.1	"Russia"	
+::node	n3	1.2.2.1.1.2	name	
+::node	p3	1.2.2.1.2.1	permit-01	permitting
+::node	w	1.2.2.1.2.1.1.2	waste	waste
+::node	c2	1.2.2.1.2.1.1.1	country	
+::node	l2	1.2.2.1.3.1	last	last
+::node	"Russia"	1.2.2.1.1.2.1	"Russia"	Russia
+::node	i	1.2.2.1.2.1.1	import-01	import
+::node	p2	1.2.2.1	pass-01	passed
+::node	n4	1.2.2.1.2.1.1.2.1	nucleus	nuclear
+::node	l	1.2.2.1.2	law	law
+::node	c	1.2.1.1	city	
+::node	y	1.2.2.1.3	year	year
+::node	"Shingarev"	1.1.2.1	"Shingarev"	Shingarev
+::node	c2	1.2.2.1.1	country	
+::node	"Bushehr"	1.2.1.1.2.1	"Bushehr"	Bushehr
+::node	n	1.1.2	name	
+::node	a	1.2.1	accord	accord
+::node	s	1	say-01	said
+::node	b	1.2.2	before	before
+::node	n2	1.2.1.1.2	name	
+::node	"Bushehr"	1.2.1.1.1	"Bushehr"	
+::node	p	1.1	person	
+::node	s2	1.2	sign-01	signed
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Shingarev	"Shingarev"
+::edge	1.2.2.1	passed	pass-01	:ARG0	1.2.2.1.1		country
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Bushehr	"Bushehr"
+::edge	1.2.2.1.1		country	:wiki	1.2.2.1.1.1		"Russia"
+::edge	1.2.2.1.1		country	:name	1.2.2.1.1.2		name
+::edge	1.2.2.1.2	law	law	:ARG0-of	1.2.2.1.2.1	permitting	permit-01
+::edge	1.2.2.1.2.1.1	import	import-01	:ARG1	1.2.2.1.2.1.1.2	waste	waste
+::edge	1.2.2.1.2.1.1	import	import-01	:ARG0	1.2.2.1.2.1.1.1		country
+::edge	1.2.2.1.3	year	year	:mod	1.2.2.1.3.1	last	last
+::edge	1.2.2.1.1.2		name	:op1	1.2.2.1.1.2.1	Russia	"Russia"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	signed	sign-01	:ARG1	1.2.1	accord	accord
+::edge	1.2	signed	sign-01	:time	1.2.2	before	before
+::edge	1.2.2.1.2.1	permitting	permit-01	:ARG1	1.2.2.1.2.1.1	import	import-01
+::edge	1.2.1.1		city	:name	1.2.1.1.2		name
+::edge	1.2.1.1		city	:wiki	1.2.1.1.1		"Bushehr"
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	signed	sign-01
+::edge	1.2.2	before	before	:op1	1.2.2.1	passed	pass-01
+::edge	1.2.2.1.2.1.1.2	waste	waste	:mod	1.2.2.1.2.1.1.2.1	nuclear	nucleus
+::edge	1.2.2.1	passed	pass-01	:ARG1	1.2.2.1.2	law	law
+::edge	1.2.1	accord	accord	:topic	1.2.1.1		city
+::edge	1.2.2.1	passed	pass-01	:time	1.2.2.1.3	year	year
+::edge	1.1		person	:wiki	1.1.1		-
+15	This explains why the accord makes no mention of the return of the fuel.
+15	This explains why the accord makes no mention of the return of the fuel .
+15	0-1.1 1-1 2-1.2 4-1.2.1.2 6-1.2.1.1 6-1.2.1.1.r 7-1.2.1 8-1.2.1.3.r 10-1.2.1.3 11-1.2.1.3.1.r 13-1.2.1.3.1
+::node	m	1.2.1	mention-01	mention
+::node	e	1	explain-01	explains
+::node	t	1.1	this	This
+::node	c	1.2	cause-01	why
+::node	a	1.2.1.2	accord	accord
+::node	r	1.2.1.3	return-02	return
+::node	-	1.2.1.1	-	no
+::node	f	1.2.1.3.1	fuel	fuel
+::edge	1.2	why	cause-01	:ARG1	1.2.1	mention	mention-01
+::edge	1	explains	explain-01	:ARG0	1.1	This	this
+::edge	1	explains	explain-01	:ARG1	1.2	why	cause-01
+::edge	1.2.1	mention	mention-01	:ARG0	1.2.1.2	accord	accord
+::edge	1.2.1	mention	mention-01	:ARG1	1.2.1.3	return	return-02
+::edge	1.2.1	mention	mention-01	:polarity	1.2.1.1	no	-
+::edge	1.2.1.3	return	return-02	:ARG1	1.2.1.3.1	fuel	fuel
+16	Shingarev said it is very difficult to make a nuclear weapon from the plutonium in this fuel.
+16	Shingarev said it is very difficult to make a nuclear weapon from the plutonium in this fuel .
+16	0-1.1.2.1 1-1 3-1.2.1.r 4-1.2.2 5-1.2 7-1.2.1 9-1.2.1.1.1 10-1.2.1.1 11-1.2.1.2.r 13-1.2.1.2 14-1.2.1.2.1.r 15-1.2.1.2.1.1 16-1.2.1.2.1
+::node	"Shingarev"	1.1.2.1	"Shingarev"	Shingarev
+::node	n	1.1.2	name	
+::node	m	1.2.1	make-01	make
+::node	t	1.2.1.2.1.1	this	this
+::node	s	1	say-01	said
+::node	v	1.2.2	very	very
+::node	f	1.2.1.2.1	fuel	fuel
+::node	n2	1.2.1.1.1	nucleus	nuclear
+::node	p	1.1	person	
+::node	d	1.2	difficult	difficult
+::node	p2	1.2.1.2	plutonium	plutonium
+::node	w	1.2.1.1	weapon	weapon
+::node	-	1.1.1	-	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	difficult	difficult	:domain	1.2.1	make	make-01
+::edge	1.2.1.2.1	fuel	fuel	:mod	1.2.1.2.1.1	this	this
+::edge	1.2	difficult	difficult	:degree	1.2.2	very	very
+::edge	1.2.1.2	plutonium	plutonium	:part-of	1.2.1.2.1	fuel	fuel
+::edge	1.1.2		name	:op1	1.1.2.1	Shingarev	"Shingarev"
+::edge	1.2.1.1	weapon	weapon	:mod	1.2.1.1.1	nuclear	nucleus
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	difficult	difficult
+::edge	1.2.1	make	make-01	:ARG2	1.2.1.2	plutonium	plutonium
+::edge	1.2.1	make	make-01	:ARG1	1.2.1.1	weapon	weapon
+::edge	1.1		person	:wiki	1.1.1		-
+17	The United States and Israel fear that the Russian-Iranian nuclear cooperation could enable Tehran to acquire the technology needed to build nuclear weapons.
+17	The United States and Israel fear that the Russian @-@ Iranian nuclear cooperation could enable Tehran to acquire the technology needed to build nuclear weapons .
+17	1-1.1.1.2.1 2-1.1.1.2.2 3-1.1 4-1.1.2.2.1 5-1 6-1.2.r 8-1.2.1.1.1.2.1 10-1.2.1.1.2.2.1 11-1.2.1.1.3 12-1.2.1.1 13-1.2 14-1.2.1 15-1.2.1.2.1.2.1 17-1.2.1.2 19-1.2.1.2.2 20-1.2.1.2.2.1 22-1.2.1.2.2.1.2 23-1.2.1.2.2.1.2.2.1 24-1.2.1.2.2.1.2.2
+::node	"Russia"	1.2.1.1.1.2.1	"Russia"	Russian
+::node	"Israel"	1.1.2.2.1	"Israel"	Israel
+::node	n8	1.2.1.2.2.1.2.2.1	nucleus	nuclear
+::node	n5	1.2.1.1.3	nucleus	nuclear
+::node	t	1.2.1.2.2	technology	technology
+::node	"Iran"	1.2.1.1.2.2.1	"Iran"	Iranian
+::node	"States"	1.1.1.2.2	"States"	States
+::node	"United"	1.1.1.2.1	"United"	United
+::node	a2	1.2.1.2	acquire-01	acquire
+::node	c3	1.2.1.1	cooperate-01	cooperation
+::node	"United_States"	1.1.1.1	"United_States"	
+::node	n	1.1.1.2	name	
+::node	"Israel"	1.1.2.1	"Israel"	
+::node	n2	1.1.2.2	name	
+::node	"Russia"	1.2.1.1.1.1	"Russia"	
+::node	n3	1.2.1.1.1.2	name	
+::node	"Iran"	1.2.1.1.2.1	"Iran"	
+::node	n4	1.2.1.1.2.2	name	
+::node	w	1.2.1.2.2.1.2.2	weapon	weapons
+::node	"Tehran"	1.2.1.2.1.2.1	"Tehran"	Tehran
+::node	c6	1.2.1.2.2.1.2.1	city	
+::node	c2	1.1.2	country	
+::node	e	1.2.1	enable-01	enable
+::node	"Tehran"	1.2.1.2.1.1	"Tehran"	
+::node	f	1	fear-01	fear
+::node	n6	1.2.1.2.1.2	name	
+::node	n7	1.2.1.2.2.1	need-01	needed
+::node	c5	1.2.1.1.2	country	
+::node	c6	1.2.1.2.1	city	
+::node	c4	1.2.1.1.1	country	
+::node	a	1.1	and	and
+::node	p	1.2	possible	could
+::node	b	1.2.1.2.2.1.2	build-01	build
+::node	c	1.1.1	country	
+::node	c6	1.2.1.2.2.1.1	city	
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	Russian	"Russia"
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Israel	"Israel"
+::edge	1.2.1.2.2.1.2.2	weapons	weapon	:mod	1.2.1.2.2.1.2.2.1	nuclear	nucleus
+::edge	1.2.1.1	cooperation	cooperate-01	:ARG2	1.2.1.1.3	nuclear	nucleus
+::edge	1.2.1.2	acquire	acquire-01	:ARG1	1.2.1.2.2	technology	technology
+::edge	1.2.1.1.2.2		name	:op1	1.2.1.1.2.2.1	Iranian	"Iran"
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	States	"States"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	United	"United"
+::edge	1.2.1	enable	enable-01	:ARG1	1.2.1.2	acquire	acquire-01
+::edge	1.2.1	enable	enable-01	:ARG0	1.2.1.1	cooperation	cooperate-01
+::edge	1.1.1		country	:wiki	1.1.1.1		"United_States"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		country	:wiki	1.1.2.1		"Israel"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.2.1.1.1		country	:wiki	1.2.1.1.1.1		"Russia"
+::edge	1.2.1.1.1		country	:name	1.2.1.1.1.2		name
+::edge	1.2.1.1.2		country	:wiki	1.2.1.1.2.1		"Iran"
+::edge	1.2.1.1.2		country	:name	1.2.1.1.2.2		name
+::edge	1.2.1.2.2.1.2	build	build-01	:ARG1	1.2.1.2.2.1.2.2	weapons	weapon
+::edge	1.2.1.2.1.2		name	:op1	1.2.1.2.1.2.1	Tehran	"Tehran"
+::edge	1.2.1.2.2.1.2	build	build-01	:ARG0	1.2.1.2.2.1.2.1		city
+::edge	1.1	and	and	:op2	1.1.2		country
+::edge	1.2	could	possible	:domain	1.2.1	enable	enable-01
+::edge	1.2.1.2.1		city	:wiki	1.2.1.2.1.1		"Tehran"
+::edge	1.2.1.2.1		city	:name	1.2.1.2.1.2		name
+::edge	1.2.1.2.2	technology	technology	:ARG1-of	1.2.1.2.2.1	needed	need-01
+::edge	1.2.1.1	cooperation	cooperate-01	:ARG1	1.2.1.1.2		country
+::edge	1.2.1.2	acquire	acquire-01	:ARG0	1.2.1.2.1		city
+::edge	1.2.1.1	cooperation	cooperate-01	:ARG0	1.2.1.1.1		country
+::edge	1	fear	fear-01	:ARG0	1.1	and	and
+::edge	1	fear	fear-01	:ARG1	1.2	could	possible
+::edge	1.2.1.2.2.1	needed	need-01	:purpose	1.2.1.2.2.1.2	build	build-01
+::edge	1.1	and	and	:op1	1.1.1		country
+::edge	1.2.1.2.2.1	needed	need-01	:ARG1	1.2.1.2.2.1.1		city
+18	Russia dismisses this accusation.
+18	Russia dismisses this accusation .
+18	0-1.1.2.1 1-1 2-1.2.2 3-1.2 3-1.2.1 3-1.2.1.r
+::node	n	1.1.2	name	
+::node	a	1.2.1	accuse-01	accusation
+::node	d	1	dismiss-02	dismisses
+::node	t2	1.2.2	this	this
+::node	"Russia"	1.1.2.1	"Russia"	Russia
+::node	c	1.1	country	
+::node	t	1.2	thing	accusation
+::node	"Russia"	1.1.1	"Russia"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	accusation	thing	:ARG2-of	1.2.1	accusation	accuse-01
+::edge	1.2	accusation	thing	:mod	1.2.2	this	this
+::edge	1.1.2		name	:op1	1.1.2.1	Russia	"Russia"
+::edge	1	dismisses	dismiss-02	:ARG0	1.1		country
+::edge	1	dismisses	dismiss-02	:ARG1	1.2	accusation	thing
+::edge	1.1		country	:wiki	1.1.1		"Russia"
+19	Iran ordered the power station in 1994 at a cost of nearly 800 million dollars (860 million euros) from Russia.
+19	Iran ordered the power station in 1994 at a cost of nearly 800 million dollars ( 860 million euros ) from Russia .
+19	0-1.1.2.1 1-1 3-1.2.1 4-1.2 5-1.4.r 6-1.4.1 7-1.2.2.r 9-1.2.2 10-1.2.2.1.r 11-1.2.2.1.3 12-1.2.2.1.1 13-1.2.2.1.1 14-1.2.2.1.2 20-1.3.r 21-1.3.2.1
+::node	"Iran"	1.1.2.1	"Iran"	Iran
+::node	800000000	1.2.2.1.1	800000000	million
+::node	"Russia"	1.3.2.1	"Russia"	Russia
+::node	n	1.1.2	name	
+::node	p	1.2.1	power-01	power
+::node	o	1	order-02	ordered
+::node	c4	1.2.2	cost-01	cost
+::node	"Russia"	1.3.1	"Russia"	
+::node	n2	1.3.2	name	
+::node	1994	1.4.1	1994	1994
+::node	c	1.1	country	
+::node	s	1.2	station	station
+::node	c2	1.3	country	
+::node	d	1.4	date-entity	
+::node	m	1.2.2.1	monetary-quantity	
+::node	c	1.2.2.2	country	
+::node	d2	1.2.2.1.2	dollar	dollars
+::node	n3	1.2.2.1.3	near	nearly
+::node	"Iran"	1.1.1	"Iran"	
+::edge	1.1.2		name	:op1	1.1.2.1	Iran	"Iran"
+::edge	1.2.2.1		monetary-quantity	:quant	1.2.2.1.1	million	800000000
+::edge	1.3.2		name	:op1	1.3.2.1	Russia	"Russia"
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	station	station	:ARG0-of	1.2.1	power	power-01
+::edge	1.2	station	station	:ARG1-of	1.2.2	cost	cost-01
+::edge	1.3		country	:wiki	1.3.1		"Russia"
+::edge	1.3		country	:name	1.3.2		name
+::edge	1.4		date-entity	:year	1.4.1	1994	1994
+::edge	1	ordered	order-02	:ARG0	1.1		country
+::edge	1	ordered	order-02	:ARG1	1.2	station	station
+::edge	1	ordered	order-02	:ARG3	1.3		country
+::edge	1	ordered	order-02	:time	1.4		date-entity
+::edge	1.2.2	cost	cost-01	:ARG2	1.2.2.1		monetary-quantity
+::edge	1.2.2	cost	cost-01	:ARG3	1.2.2.2		country
+::edge	1.2.2.1		monetary-quantity	:unit	1.2.2.1.2	dollars	dollar
+::edge	1.2.2.1		monetary-quantity	:mod	1.2.2.1.3	nearly	near
+::edge	1.1		country	:wiki	1.1.1		"Iran"
+20	Iran has said the plant is being built only for civilian energy purposes and allows regular inspections of Bushehr by the International Atomic Energy Agency.
+20	Iran has said the plant is being built only for civilian energy purposes and allows regular inspections of Bushehr by the International Atomic Energy Agency .
+20	0-1.1.1.2.1 2-1.1 4-1.1.2.1 7-1.1.2 8-1.1.2.2.2 10-1.1.2.2.1 11-1.1.2.2 12-1.1.2.2.r 13-1 14-1.2 15-1.2.2.3 16-1.2.2 17-1.2.2.2.r 18-1.2.2.2 19-1.2.2.1.r 21-1.2.2.1.2.1 22-1.2.2.1.2.2 23-1.2.2.1.2.3 24-1.2.2.1.2.4
+::node	n3	1.1.2.1.1.2	name	
+::node	"Bushehr"	1.1.2.1.1.1	"Bushehr"	
+::node	"International"	1.2.2.1.2.1	"International"	International
+::node	c2	1.1.2.2.1	civilian	civilian
+::node	c3	1.1.2.1.1	city	
+::node	"Agency"	1.2.2.1.2.4	"Agency"	Agency
+::node	"Atomic"	1.2.2.1.2.2	"Atomic"	Atomic
+::node	"Energy"	1.2.2.1.2.3	"Energy"	Energy
+::node	r	1.2.2.3	regular	regular
+::node	"Iran"	1.1.1.2.1	"Iran"	Iran
+::node	o2	1.2.2.1	organization	
+::node	p	1.2.2.2	plant	Bushehr
+::node	n2	1.2.2.1.2	name	
+::node	"Bushehr"	1.1.2.1.1.2.1	"Bushehr"	
+::node	"Iran"	1.1.1.1	"Iran"	
+::node	n	1.1.1.2	name	
+::node	p	1.1.2.1	plant	plant
+::node	"International_Atomic_Energy_Agency"	1.2.2.1.1	"International_Atomic_Energy_Agency"	
+::node	e	1.1.2.2	energy	energy
+::node	b	1.1.2	build-01	built
+::node	c	1.2.1	country	
+::node	a	1	and	and
+::node	i	1.2.2	inspect-01	inspections
+::node	s	1.1	say-01	said
+::node	o	1.1.2.2.2	only	only
+::node	a2	1.2	allow-01	allows
+::node	c	1.1.1	country	
+::edge	1.1.2.1.1		city	:name	1.1.2.1.1.2		name
+::edge	1.1.2.1.1		city	:wiki	1.1.2.1.1.1		"Bushehr"
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	International	"International"
+::edge	1.1.2.2	energy	energy	:beneficiary	1.1.2.2.1	civilian	civilian
+::edge	1.1.2.1	plant	plant	:location	1.1.2.1.1		city
+::edge	1.2.2.1.2		name	:op4	1.2.2.1.2.4	Agency	"Agency"
+::edge	1.2.2.1.2		name	:op2	1.2.2.1.2.2	Atomic	"Atomic"
+::edge	1.2.2.1.2		name	:op3	1.2.2.1.2.3	Energy	"Energy"
+::edge	1.2.2	inspections	inspect-01	:frequency	1.2.2.3	regular	regular
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Iran	"Iran"
+::edge	1.2.2	inspections	inspect-01	:ARG0	1.2.2.1		organization
+::edge	1.2.2	inspections	inspect-01	:ARG1	1.2.2.2	Bushehr	plant
+::edge	1.2.2.1		organization	:name	1.2.2.1.2		name
+::edge	1.1.2.1.1.2		name	:op1	1.1.2.1.1.2.1		"Bushehr"
+::edge	1.1.1		country	:wiki	1.1.1.1		"Iran"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2	built	build-01	:ARG1	1.1.2.1	plant	plant
+::edge	1.2.2.1		organization	:wiki	1.2.2.1.1		"International_Atomic_Energy_Agency"
+::edge	1.1.2	built	build-01	:purpose	1.1.2.2	energy	energy
+::edge	1.1	said	say-01	:ARG1	1.1.2	built	build-01
+::edge	1.2	allows	allow-01	:ARG0	1.2.1		country
+::edge	1.2	allows	allow-01	:ARG1	1.2.2	inspections	inspect-01
+::edge	1	and	and	:op1	1.1	said	say-01
+::edge	1.1.2.2	energy	energy	:mod	1.1.2.2.2	only	only
+::edge	1	and	and	:op2	1.2	allows	allow-01
+::edge	1.1	said	say-01	:ARG0	1.1.1		country
+21	Experts say Bushehr could in theory become operational as early as September 2003.
+21	Experts say Bushehr could in theory become operational as early as September 2003 .
+21	0-1.1.1.1.1 1-1 2-1.2.1.1.2.1 3-1.2 4-1.2.2.r 5-1.2.2 7-1.2.1 8-1.2.1.2.r 9-1.2.1.2.3 10-1.2.1.2.r 11-1.2.1.2.2 11-1.2.1.2.2.r 12-1.2.1.2.1
+::node	p3	1.1.1.1	person	
+::node	"Bushehr"	1.2.1.1.2.1	"Bushehr"	Bushehr
+::node	e2	1.2.1.2.3	early	early
+::node	9	1.2.1.2.2	9	September
+::node	o	1.2.1	operate-01	operational
+::node	s	1	say-01	say
+::node	t	1.2.2	theory	theory
+::node	n	1.2.1.1.2	name	
+::node	2003	1.2.1.2.1	2003	2003
+::node	"Bushehr"	1.2.1.1.1	"Bushehr"	
+::node	p2	1.1	person	
+::node	p	1.2	possible	could
+::node	e	1.1.1.1.1	expert-41	Experts
+::node	d	1.2.1.2	date-entity	
+::node	f	1.2.1.1	facility	
+::node	h	1.1.1	have-org-role-91	
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.1		person
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Bushehr	"Bushehr"
+::edge	1.2.1.2		date-entity	:mod	1.2.1.2.3	early	early
+::edge	1.2.1.2		date-entity	:month	1.2.1.2.2	September	9
+::edge	1.2	could	possible	:domain	1.2.1	operational	operate-01
+::edge	1.2	could	possible	:prep-in	1.2.2	theory	theory
+::edge	1.2.1.1		facility	:name	1.2.1.1.2		name
+::edge	1.2.1.2		date-entity	:year	1.2.1.2.1	2003	2003
+::edge	1.2.1.1		facility	:wiki	1.2.1.1.1		"Bushehr"
+::edge	1	say	say-01	:ARG0	1.1		person
+::edge	1	say	say-01	:ARG1	1.2	could	possible
+::edge	1.1.1.1		person	:ARG1-of	1.1.1.1.1	Experts	expert-41
+::edge	1.2.1	operational	operate-01	:time	1.2.1.2		date-entity
+::edge	1.2.1	operational	operate-01	:ARG1	1.2.1.1		facility
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+22	Currently it is equipped with a single reactor.
+22	Currently it is equipped with a single reactor .
+22	0-1.3 1-1.1 3-1 7-1.2
+::node	1	1.2.1	1	
+::node	e	1	equip-01	equipped
+::node	i	1.1	it	it
+::node	r	1.2	reactor	reactor
+::node	c	1.3	current	Currently
+::edge	1.2	reactor	reactor	:quant	1.2.1		1
+::edge	1	equipped	equip-01	:ARG1	1.1	it	it
+::edge	1	equipped	equip-01	:ARG2	1.2	reactor	reactor
+::edge	1	equipped	equip-01	:time	1.3	Currently	current
+23	German group Siemens pulled out of the long-standing project at the request of the German government after Iran's 1979 Islamic Revolution.
+23	German group Siemens pulled out of the long @-@ standing project at the request of the German government after Iran 's 1979 Islamic Revolution .
+23	0-1.1.3.2.1 1-1.1 1-1.4.1.1 2-1.1.2.1 3-1 4-1 5-1.2.r 7-1.2.1.1 9-1.2.1 10-1.2 13-1.3.1 14-1.3.1.1.r 16-1.3.1.1.1.1 17-1.3.1.1 17-1.3.1.1.1 17-1.3.1.1.1.r 18-1.4 19-1.4.1.2.2.1 20-1.4.1.2.r 21-1.4.1.3.1 22-1.4.1.1.2.1 23-1.4.1
+::node	"Germany"	1.1.3.2.1	"Germany"	German
+::node	g2	1.3.1.1	government-organization	government
+::node	p	1.3.1.2	pull-02	
+::node	g3	1.3.1.1.1	govern-01	government
+::node	n4	1.4.1.2.2	name	
+::node	1979	1.4.1.3.1	1979	1979
+::node	"Islam"	1.4.1.1.1	"Islam"	
+::node	n3	1.4.1.1.2	name	
+::node	"Iran"	1.4.1.2.1	"Iran"	
+::node	l	1.2.1.1	long	long
+::node	"Siemens"	1.1.2.1	"Siemens"	Siemens
+::node	"Germany"	1.1.3.1	"Germany"	
+::node	n2	1.1.3.2	name	
+::node	"Islam"	1.4.1.1.2.1	"Islam"	Islamic
+::node	c	1.3.1.1.1.1	country	German
+::node	n	1.1.2	name	
+::node	s	1.2.1	stand-04	standing
+::node	p	1	pull-02	out
+::node	c	1.1.3	country	
+::node	r	1.3.1	request-01	request
+::node	r2	1.4.1	revolution	Revolution
+::node	g	1.1	group	group
+::node	p2	1.2	project	project
+::node	c2	1.3	cause-01	
+::node	a	1.4	after	after
+::node	c3	1.4.1.2	country	
+::node	d	1.4.1.3	date-entity	
+::node	"Iran"	1.4.1.2.2.1	"Iran"	Iran
+::node	"Siemens"	1.1.1	"Siemens"	
+::node	r3	1.4.1.1	religious-group	group
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	German	"Germany"
+::edge	1.3.1	request	request-01	:ARG0	1.3.1.1	government	government-organization
+::edge	1.3.1	request	request-01	:ARG1	1.3.1.2		pull-02
+::edge	1.3.1.1	government	government-organization	:ARG0-of	1.3.1.1.1	government	govern-01
+::edge	1.4.1.2		country	:name	1.4.1.2.2		name
+::edge	1.4.1.3		date-entity	:year	1.4.1.3.1	1979	1979
+::edge	1.4.1.1	group	religious-group	:wiki	1.4.1.1.1		"Islam"
+::edge	1.4.1.1	group	religious-group	:name	1.4.1.1.2		name
+::edge	1.4.1.2		country	:wiki	1.4.1.2.1		"Iran"
+::edge	1.2.1	standing	stand-04	:duration	1.2.1.1	long	long
+::edge	1.1.2		name	:op1	1.1.2.1	Siemens	"Siemens"
+::edge	1.1.3		country	:wiki	1.1.3.1		"Germany"
+::edge	1.1.3		country	:name	1.1.3.2		name
+::edge	1.4.1.1.2		name	:op1	1.4.1.1.2.1	Islamic	"Islam"
+::edge	1.3.1.1.1	government	govern-01	:ARG1	1.3.1.1.1.1	German	country
+::edge	1.1	group	group	:name	1.1.2		name
+::edge	1.2	project	project	:ARG1-of	1.2.1	standing	stand-04
+::edge	1.1	group	group	:mod	1.1.3		country
+::edge	1.3		cause-01	:ARG0	1.3.1	request	request-01
+::edge	1.4	after	after	:op1	1.4.1	Revolution	revolution
+::edge	1	out	pull-02	:ARG1	1.1	group	group
+::edge	1	out	pull-02	:ARG2	1.2	project	project
+::edge	1	out	pull-02	:ARG1-of	1.3		cause-01
+::edge	1	out	pull-02	:time	1.4	after	after
+::edge	1.4.1	Revolution	revolution	:poss	1.4.1.2		country
+::edge	1.4.1	Revolution	revolution	:time	1.4.1.3		date-entity
+::edge	1.4.1.2.2		name	:op1	1.4.1.2.2.1	Iran	"Iran"
+::edge	1.1	group	group	:wiki	1.1.1		"Siemens"
+::edge	1.4.1	Revolution	revolution	:mod	1.4.1.1	group	religious-group
+24	US President George W. Bush raised the US's concerns about Russian nuclear cooperation with Iran at the summit in Moscow last month between Bush and his Russian counterpart Vladimir Putin.
+24	US President George W. Bush raised the US 's concerns about Russian nuclear cooperation with Iran at the summit in Moscow last month between Bush and his Russian counterpart Vladimir Putin .
+24	0-1.1.3.1.2.1 1-1.1.3.2 1-1.3.2.3.2 2-1.1.2.1 3-1.1.2.2 4-1.1.2.3 5-1 7-1.2.1 8-1.1.3 8-1.2.1.r 8-1.3 9-1.2 10-1.2.2.r 11-1.2.2.1.2.1 12-1.2.2.3 13-1.2.2 14-1.2.2.2.r 15-1.2.2.2.2.1 16-1.3.5.r 18-1.3.5 19-1.3.3.r 20-1.3.3.2.1 21-1.3.4.1 22-1.3.4 24-1.3.1 27-1.2.2.1.2.1 29-1.3.2.2.1 30-1.3.2.2.2
+::node	"Putin"	1.3.2.2.2	"Putin"	Putin
+::node	c4	1.3.2.3.1	country	
+::node	p4	1.3.2.3.2	president	President
+::node	n2	1.1.3.1.2	name	
+::node	"Vladimir"	1.3.2.2.1	"Vladimir"	Vladimir
+::node	"Russia"	1.2.2.1.2.1	"Russia"	Russian
+::node	"Vladimir_Putin"	1.3.2.1	"Vladimir_Putin"	
+::node	n7	1.3.2.2	name	
+::node	"Moscow"	1.3.3.1	"Moscow"	
+::node	h2	1.3.2.3	have-org-role-91	
+::node	n6	1.3.3.2	name	
+::node	l	1.3.4.1	last	last
+::node	"Moscow"	1.3.3.2.1	"Moscow"	Moscow
+::node	n5	1.2.2.3	nucleus	nuclear
+::node	c4	1.2.2.1	country	
+::node	c5	1.2.2.2	country	
+::node	n3	1.2.2.1.2	name	
+::node	"Iran"	1.2.2.2.1	"Iran"	
+::node	n4	1.2.2.2.2	name	
+::node	"Iran"	1.2.2.2.2.1	"Iran"	Iran
+::node	"George"	1.1.2.1	"George"	George
+::node	"Russia"	1.2.2.1.1	"Russia"	
+::node	"W."	1.1.2.2	"W."	W.
+::node	c	1.1.3.1	country	
+::node	"Bush"	1.1.2.3	"Bush"	Bush
+::node	p2	1.1.3.2	president	President
+::node	"US"	1.1.3.1.2.1	"US"	US
+::node	n	1.1.2	name	
+::node	c	1.2.1	country	US
+::node	r	1	raise-01	raised
+::node	h	1.1.3	have-org-role-91	's
+::node	c3	1.2.2	cooperate-01	cooperation
+::node	p	1.3.1	person	Bush
+::node	p3	1.3.2	person	
+::node	c6	1.3.3	city	
+::node	p	1.1	person	
+::node	m	1.3.4	month	month
+::node	c2	1.2	concern-01	concerns
+::node	s	1.3.5	summit	summit
+::node	m2	1.3	meet-03	's
+::node	"United_States"	1.1.3.1.1	"United_States"	
+::node	"George_W._Bush"	1.1.1	"George_W._Bush"	
+::edge	1.3.2.2		name	:op2	1.3.2.2.2	Putin	"Putin"
+::edge	1.3.2.3		have-org-role-91	:ARG1	1.3.2.3.1		country
+::edge	1.3.2.3		have-org-role-91	:ARG2	1.3.2.3.2	President	president
+::edge	1.1.3.1		country	:name	1.1.3.1.2		name
+::edge	1.3.2.2		name	:op1	1.3.2.2.1	Vladimir	"Vladimir"
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	Russian	"Russia"
+::edge	1.3.2		person	:wiki	1.3.2.1		"Vladimir_Putin"
+::edge	1.3.2		person	:name	1.3.2.2		name
+::edge	1.3.3		city	:wiki	1.3.3.1		"Moscow"
+::edge	1.3.2		person	:ARG0-of	1.3.2.3		have-org-role-91
+::edge	1.3.3		city	:name	1.3.3.2		name
+::edge	1.3.4	month	month	:mod	1.3.4.1	last	last
+::edge	1.3.3.2		name	:op1	1.3.3.2.1	Moscow	"Moscow"
+::edge	1.2.2	cooperation	cooperate-01	:ARG2	1.2.2.3	nuclear	nucleus
+::edge	1.2.2	cooperation	cooperate-01	:ARG0	1.2.2.1		country
+::edge	1.2.2	cooperation	cooperate-01	:ARG1	1.2.2.2		country
+::edge	1.2.2.1		country	:name	1.2.2.1.2		name
+::edge	1.2.2.2		country	:wiki	1.2.2.2.1		"Iran"
+::edge	1.2.2.2		country	:name	1.2.2.2.2		name
+::edge	1.2.2.2.2		name	:op1	1.2.2.2.2.1	Iran	"Iran"
+::edge	1.1.2		name	:op1	1.1.2.1	George	"George"
+::edge	1.2.2.1		country	:wiki	1.2.2.1.1		"Russia"
+::edge	1.1.2		name	:op2	1.1.2.2	W.	"W."
+::edge	1.1.3	's	have-org-role-91	:ARG1	1.1.3.1		country
+::edge	1.1.2		name	:op3	1.1.2.3	Bush	"Bush"
+::edge	1.1.3	's	have-org-role-91	:ARG2	1.1.3.2	President	president
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	US	"US"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	concerns	concern-01	:ARG0	1.2.1	US	country
+::edge	1.1		person	:ARG0-of	1.1.3	's	have-org-role-91
+::edge	1.2	concerns	concern-01	:ARG1	1.2.2	cooperation	cooperate-01
+::edge	1.3	's	meet-03	:ARG0	1.3.1	Bush	person
+::edge	1.3	's	meet-03	:ARG1	1.3.2		person
+::edge	1.3	's	meet-03	:location	1.3.3		city
+::edge	1	raised	raise-01	:ARG0	1.1		person
+::edge	1.3	's	meet-03	:time	1.3.4	month	month
+::edge	1	raised	raise-01	:ARG1	1.2	concerns	concern-01
+::edge	1.3	's	meet-03	:mod	1.3.5	summit	summit
+::edge	1	raised	raise-01	:location	1.3	's	meet-03
+::edge	1.1.3.1		country	:wiki	1.1.3.1.1		"United_States"
+::edge	1.1		person	:wiki	1.1.1		"George_W._Bush"

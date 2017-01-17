@@ -1,0 +1,624 @@
+1	2002-04-08
+1	2002 @-@ 04 @-@ 08
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	4	1.2	4	04
+::node	8	1.3	8	08
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	04	4
+::edge	1		date-entity	:day	1.3	08	8
+2	Russian Federation (RU); Brazil (BR)
+2	Russian Federation ( RU ) ; Brazil ( BR )
+2	0-1.1.2.1 1-1.1.2.2 6-1.2.2.1
+::node	n	1.1.2	name	
+::node	"Brazil"	1.2.1	"Brazil"	
+::node	a	1	and	
+::node	n2	1.2.2	name	
+::node	"Russian"	1.1.2.1	"Russian"	Russian
+::node	c	1.1	country	
+::node	"Federation"	1.1.2.2	"Federation"	Federation
+::node	c2	1.2	country	
+::node	"Brazil"	1.2.2.1	"Brazil"	Brazil
+::node	"Russia"	1.1.1	"Russia"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"Brazil"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Russian	"Russian"
+::edge	1		and	:op1	1.1		country
+::edge	1.1.2		name	:op2	1.1.2.2	Federation	"Federation"
+::edge	1		and	:op2	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	Brazil	"Brazil"
+::edge	1.1		country	:wiki	1.1.1		"Russia"
+3	International; weapons; space
+3	International ; weapons ; space
+3	0-1.1 2-1.2 4-1.3
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	w	1.2	weapon	weapons
+::node	s	1.3	space	space
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	weapons	weapon
+::edge	1		and	:op3	1.3	space	space
+4	Brazilian Defense Minister in Moscow for cooperation talks with government officials and leading members of Russia's military-industrial complex.
+4	Brazilian Defense Minister in Moscow for cooperation talks with government officials and leading members of Russia 's military @-@ industrial complex .
+4	0-1.1.1.1.2.1 1-1.1.1.2.1 2-1.1.1.2 4-1.2.2.1 6-1.3.3 7-1.3 8-1.3.2.r 9-1.3.2.1.1.1 9-1.3.2.1.1.1.1 9-1.3.2.1.1.1.1.r 10-1.3.2.1.1.2 11-1.3.2 12-1.3.2.2.1 13-1.3.2.2 14-1.3.2.2.1.1.r 15-1.3.2.2.1.1.2.2.1 16-1.3.2.2.1.1.2.r 17-1.3.2.2.1.1.1 19-1.3.2.2.1.1.1 20-1.3.2.2.1.1
+::node	h2	1.3.2.1.1	have-org-role-91	
+::node	l	1.3.2.2.1	lead-02	leading
+::node	p2	1.3.2.1	person	
+::node	m2	1.3.2.2	member	members
+::node	o	1.3.2.1.1.2	official	officials
+::node	g2	1.3.2.1.1.1	government-organization	government
+::node	"Russia"	1.3.2.2.1.1.2.2.1	"Russia"	Russia
+::node	m3	1.3.2.2.1.1.1	military-industrial	industrial
+::node	n2	1.1.1.1.2	name	
+::node	d	1.1.1.2.1	defense	Defense
+::node	c4	1.3.2.2.1.1	complex	complex
+::node	"Brazil"	1.1.1.1.1	"Brazil"	
+::node	"Moscow"	1.2.2.1	"Moscow"	Moscow
+::node	c5	1.3.2.2.1.1.2	country	
+::node	"Brazil"	1.1.1.1.2.1	"Brazil"	Brazilian
+::node	c	1.1.1.1	country	
+::node	m	1.1.1.2	minister	Minister
+::node	"Russia"	1.3.2.2.1.1.2.1	"Russia"	
+::node	n4	1.3.2.2.1.1.2.2	name	
+::node	g3	1.3.2.1.1.1.1	govern-01	government
+::node	"Moscow"	1.2.1	"Moscow"	
+::node	b	1	be-located-at-91	
+::node	n3	1.2.2	name	
+::node	p	1.3.1	person	
+::node	a	1.3.2	and	and
+::node	c3	1.3.3	cooperate-01	cooperation
+::node	p	1.1	person	
+::node	c2	1.2	city	
+::node	t	1.3	talk-01	talks
+::node	h	1.1.1	have-org-role-91	
+::edge	1.3.2.1		person	:ARG0-of	1.3.2.1.1		have-org-role-91
+::edge	1.3.2.2	members	member	:ARG0-of	1.3.2.2.1	leading	lead-02
+::edge	1.3.2	and	and	:op1	1.3.2.1		person
+::edge	1.3.2	and	and	:op2	1.3.2.2	members	member
+::edge	1.3.2.1.1		have-org-role-91	:ARG2	1.3.2.1.1.2	officials	official
+::edge	1.3.2.1.1		have-org-role-91	:ARG1	1.3.2.1.1.1	government	government-organization
+::edge	1.3.2.2.1.1.2.2		name	:op1	1.3.2.2.1.1.2.2.1	Russia	"Russia"
+::edge	1.3.2.2.1.1	complex	complex	:mod	1.3.2.2.1.1.1	industrial	military-industrial
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.2	Minister	minister	:topic	1.1.1.2.1	Defense	defense
+::edge	1.3.2.2.1	leading	lead-02	:ARG1	1.3.2.2.1.1	complex	complex
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Brazil"
+::edge	1.2.2		name	:op1	1.2.2.1	Moscow	"Moscow"
+::edge	1.3.2.2.1.1	complex	complex	:poss	1.3.2.2.1.1.2		country
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Brazilian	"Brazil"
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		country
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	Minister	minister
+::edge	1.3.2.2.1.1.2		country	:wiki	1.3.2.2.1.1.2.1		"Russia"
+::edge	1.3.2.2.1.1.2		country	:name	1.3.2.2.1.1.2.2		name
+::edge	1.3.2.1.1.1	government	government-organization	:ARG0-of	1.3.2.1.1.1.1	government	govern-01
+::edge	1.2		city	:wiki	1.2.1		"Moscow"
+::edge	1.2		city	:name	1.2.2		name
+::edge	1.3	talks	talk-01	:ARG0	1.3.1		person
+::edge	1.3	talks	talk-01	:accompanier	1.3.2	and	and
+::edge	1.3	talks	talk-01	:topic	1.3.3	cooperation	cooperate-01
+::edge	1		be-located-at-91	:ARG1	1.1		person
+::edge	1		be-located-at-91	:ARG2	1.2		city
+::edge	1		be-located-at-91	:purpose	1.3	talks	talk-01
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+5	Emphasized in the discussion is arms sales and extended cooperation in the space sector.
+5	Emphasized in the discussion is arms sales and extended cooperation in the space sector .
+5	0-1 1-1.2.r 3-1.2 5-1.1.1.1 6-1.1.1 7-1.1 8-1.1.2.2 9-1.1.2 10-1.1.2.1.r 12-1.1.2.1.1 13-1.1.2.1
+::node	c	1.1.2	cooperate-01	cooperation
+::node	e	1	emphasize-01	Emphasized
+::node	a2	1.1.1.1	arms	arms
+::node	s2	1.1.2.1	sector	sector
+::node	a	1.1	and	and
+::node	e2	1.1.2.2	extend-01	extended
+::node	d	1.2	discuss-01	discussion
+::node	s3	1.1.2.1.1	space	space
+::node	s	1.1.1	sell-01	sales
+::edge	1.1	and	and	:op2	1.1.2	cooperation	cooperate-01
+::edge	1.1.1	sales	sell-01	:ARG1	1.1.1.1	arms	arms
+::edge	1.1.2	cooperation	cooperate-01	:ARG2	1.1.2.1	sector	sector
+::edge	1	Emphasized	emphasize-01	:ARG1	1.1	and	and
+::edge	1.1.2	cooperation	cooperate-01	:ARG1-of	1.1.2.2	extended	extend-01
+::edge	1	Emphasized	emphasize-01	:manner	1.2	discussion	discuss-01
+::edge	1.1.2.1	sector	sector	:mod	1.1.2.1.1	space	space
+::edge	1.1	and	and	:op1	1.1.1	sales	sell-01
+6	Brazilian embassy officials stated that on 8 April 2002 Brazilian Defense Minister Geraldo da Cruz Quintao began a week-long series of meetings in Moscow with Russian officials during which he is to meet Russian Defense Minister Sergei Ivanov.
+6	Brazilian embassy officials stated that on 8 April 2002 Brazilian Defense Minister Geraldo da Cruz Quintao began a week @-@ long series of meetings in Moscow with Russian officials during which he is to meet Russian Defense Minister Sergei Ivanov .
+6	0-1.1.1.1.1.2.1 1-1.1.1.1 2-1.1.1.2 3-1 5-1.2.r 6-1.2.3.3 7-1.2.3.2 7-1.2.3.2.r 8-1.2.3.1 9-1.2.1.3.1 10-1.2.1.3.2.1 11-1.2.1.3.2 12-1.2.1.2.1 13-1.2.1.2.2 14-1.2.1.2.3 15-1.2.1.2.4 16-1.2 18-1.2.2.2 20-1.2.2.2 21-1.2.2 23-1.2.2.1 23-1.2.2.3 25-1.2.2.1.3.2.1 27-1.2.2.1.2.1.1.2.1 28-1.2.2.1.2.1.2 29-1.2.2.3.r 34-1.2.2.1 35-1.2.2.3.2.3.1 36-1.2.2.3.2.3.2.1 37-1.2.2.3.2.3.2 38-1.2.2.3.2.2.1 39-1.2.2.3.2.2.2
+::node	"Cruz"	1.2.1.2.3	"Cruz"	Cruz
+::node	"da"	1.2.1.2.2	"da"	da
+::node	n4	1.2.2.1.2.1.1.2	name	
+::node	"Russia"	1.2.2.1.2.1.1.1	"Russia"	
+::node	"Moscow"	1.2.2.1.3.1	"Moscow"	
+::node	"Quintao"	1.2.1.2.4	"Quintao"	Quintao
+::node	n5	1.2.2.1.3.2	name	
+::node	4	1.2.3.2	4	April
+::node	8	1.2.3.3	8	8
+::node	n2	1.2.1.2	name	
+::node	h2	1.2.1.3	have-org-role-91	
+::node	2002	1.2.3.1	2002	2002
+::node	"Geraldo_Magela"	1.2.1.1	"Geraldo_Magela"	
+::node	"Brazil"	1.1.1.1.1.1	"Brazil"	
+::node	n	1.1.1.1.1.2	name	
+::node	e	1.1.1.1	embassy	embassy
+::node	o	1.1.1.2	official	officials
+::node	p	1.2.2.1.1	person	
+::node	"Brazil"	1.1.1.1.1.2.1	"Brazil"	Brazilian
+::node	m	1.2.2.3.2.3.2	minister	Minister
+::node	c2	1.2.2.3.2.3.1	country	Russian
+::node	"Moscow"	1.2.2.1.3.2.1	"Moscow"	Moscow
+::node	s	1	state-01	stated
+::node	p3	1.1	person	
+::node	b	1.2	begin-01	began
+::node	h	1.1.1	have-org-role-91	
+::node	d2	1.2.1.3.2.1	defense	Defense
+::node	h3	1.2.2.1.2.1	have-org-role-91	
+::node	m5	1.2.1.3.2	minister	Minister
+::node	c	1.2.1.3.1	country	Brazilian
+::node	o2	1.2.2.1.2.1.2	official	officials
+::node	c2	1.2.2.1.2.1.1	country	
+::node	m3	1.2.2.3	meet-03	meetings
+::node	c	1.1.1.1.1	country	
+::node	m2	1.2.2.1	meet-03	meet
+::node	"Russia"	1.2.2.1.2.1.1.2.1	"Russia"	Russian
+::node	w	1.2.2.2	week-long	long
+::node	p4	1.2.2.1.2	person	
+::node	c3	1.2.2.1.3	city	
+::node	p	1.2.2.3.1	person	
+::node	p2	1.2.2.3.2	person	
+::node	h4	1.2.2.3.2.3	have-org-role-91	
+::node	n7	1.2.2.3.2.2	name	
+::node	"Sergei_Ivanov"	1.2.2.3.2.1	"Sergei_Ivanov"	
+::node	d3	1.2.2.3.2.3.2.1	defense	Defense
+::node	"Ivanov"	1.2.2.3.2.2.2	"Ivanov"	Ivanov
+::node	"Sergei"	1.2.2.3.2.2.1	"Sergei"	Sergei
+::node	p	1.2.1	person	
+::node	s2	1.2.2	series	series
+::node	"Geraldo"	1.2.1.2.1	"Geraldo"	Geraldo
+::node	d	1.2.3	date-entity	
+::edge	1.2.1.2		name	:op3	1.2.1.2.3	Cruz	"Cruz"
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	da	"da"
+::edge	1.2.2.1.2.1.1		country	:name	1.2.2.1.2.1.1.2		name
+::edge	1.2.2.1.2.1.1		country	:wiki	1.2.2.1.2.1.1.1		"Russia"
+::edge	1.2.2.1.3		city	:wiki	1.2.2.1.3.1		"Moscow"
+::edge	1.2.1.2		name	:op4	1.2.1.2.4	Quintao	"Quintao"
+::edge	1.2.2.1.3		city	:name	1.2.2.1.3.2		name
+::edge	1.2.3		date-entity	:month	1.2.3.2	April	4
+::edge	1.2.3		date-entity	:day	1.2.3.3	8	8
+::edge	1.2.1		person	:name	1.2.1.2		name
+::edge	1.2.1		person	:ARG0-of	1.2.1.3		have-org-role-91
+::edge	1.2.3		date-entity	:year	1.2.3.1	2002	2002
+::edge	1.2.1		person	:wiki	1.2.1.1		"Geraldo_Magela"
+::edge	1.1.1.1.1		country	:wiki	1.1.1.1.1.1		"Brazil"
+::edge	1.1.1.1.1		country	:name	1.1.1.1.1.2		name
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1	embassy	embassy
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.2.2.1	meet	meet-03	:ARG0	1.2.2.1.1		person
+::edge	1.1.1.1.1.2		name	:op1	1.1.1.1.1.2.1	Brazilian	"Brazil"
+::edge	1.2.2.3.2.3		have-org-role-91	:ARG2	1.2.2.3.2.3.2	Minister	minister
+::edge	1.2.2.3.2.3		have-org-role-91	:ARG1	1.2.2.3.2.3.1	Russian	country
+::edge	1.2.2.1.3.2		name	:op1	1.2.2.1.3.2.1	Moscow	"Moscow"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	began	begin-01
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+::edge	1.2.1.3.2	Minister	minister	:topic	1.2.1.3.2.1	Defense	defense
+::edge	1.2.2.1.2		person	:ARG0-of	1.2.2.1.2.1		have-org-role-91
+::edge	1.2.1.3		have-org-role-91	:ARG2	1.2.1.3.2	Minister	minister
+::edge	1.2.1.3		have-org-role-91	:ARG1	1.2.1.3.1	Brazilian	country
+::edge	1.2.2.1.2.1		have-org-role-91	:ARG2	1.2.2.1.2.1.2	officials	official
+::edge	1.2.2.1.2.1		have-org-role-91	:ARG1	1.2.2.1.2.1.1		country
+::edge	1.2.2	series	series	:time-of	1.2.2.3	meetings	meet-03
+::edge	1.1.1.1	embassy	embassy	:poss	1.1.1.1.1		country
+::edge	1.2.2	series	series	:consist-of	1.2.2.1	meet	meet-03
+::edge	1.2.2.1.2.1.1.2		name	:op1	1.2.2.1.2.1.1.2.1	Russian	"Russia"
+::edge	1.2.2	series	series	:duration	1.2.2.2	long	week-long
+::edge	1.2.2.1	meet	meet-03	:ARG1	1.2.2.1.2		person
+::edge	1.2.2.1	meet	meet-03	:location	1.2.2.1.3		city
+::edge	1.2.2.3	meetings	meet-03	:ARG0	1.2.2.3.1		person
+::edge	1.2.2.3	meetings	meet-03	:ARG1	1.2.2.3.2		person
+::edge	1.2.2.3.2		person	:ARG0-of	1.2.2.3.2.3		have-org-role-91
+::edge	1.2.2.3.2		person	:name	1.2.2.3.2.2		name
+::edge	1.2.2.3.2		person	:wiki	1.2.2.3.2.1		"Sergei_Ivanov"
+::edge	1.2.2.3.2.3.2	Minister	minister	:topic	1.2.2.3.2.3.2.1	Defense	defense
+::edge	1.2.2.3.2.2		name	:op2	1.2.2.3.2.2.2	Ivanov	"Ivanov"
+::edge	1.2.2.3.2.2		name	:op1	1.2.2.3.2.2.1	Sergei	"Sergei"
+::edge	1.2	began	begin-01	:ARG0	1.2.1		person
+::edge	1.2	began	begin-01	:ARG1	1.2.2	series	series
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Geraldo	"Geraldo"
+::edge	1.2	began	begin-01	:time	1.2.3		date-entity
+7	Quintao met head of the Arms Export Company Rosoboronexport Andrei Belyaninov.
+7	Quintao met head of the Arms Export Company Rosoboronexport Andrei Belyaninov .
+7	0-1.1.2.1 1-1 2-1.2 2-1.2.3 2-1.2.3.r 3-1.2.3.1.r 5-1.2.3.1.3.1 6-1.2.3.1.3 7-1.2.3.1 8-1.2.3.1.2.1 9-1.2.2.1 10-1.2.2.2
+::node	"Quintao"	1.1.2.1	"Quintao"	Quintao
+::node	e	1.2.3.1.3	export-01	Export
+::node	"Rosoboronexport"	1.2.3.1.1	"Rosoboronexport"	
+::node	n3	1.2.3.1.2	name	
+::node	n	1.1.2	name	
+::node	"Andrey_Belyaninov"	1.2.1	"Andrey_Belyaninov"	
+::node	m	1	meet-03	met
+::node	n2	1.2.2	name	
+::node	h	1.2.3	head-01	head
+::node	p	1.1	person	
+::node	a	1.2.3.1.3.1	arms	Arms
+::node	p2	1.2	person	head
+::node	"Rosoboronexport"	1.2.3.1.2.1	"Rosoboronexport"	Rosoboronexport
+::node	"Andrei"	1.2.2.1	"Andrei"	Andrei
+::node	"Belyaninov"	1.2.2.2	"Belyaninov"	Belyaninov
+::node	c	1.2.3.1	company	Company
+::node	"Geraldo_Magela"	1.1.1	"Geraldo_Magela"	
+::edge	1.1.2		name	:op1	1.1.2.1	Quintao	"Quintao"
+::edge	1.2.3.1	Company	company	:ARG0-of	1.2.3.1.3	Export	export-01
+::edge	1.2.3.1	Company	company	:wiki	1.2.3.1.1		"Rosoboronexport"
+::edge	1.2.3.1	Company	company	:name	1.2.3.1.2		name
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	head	person	:wiki	1.2.1		"Andrey_Belyaninov"
+::edge	1.2	head	person	:name	1.2.2		name
+::edge	1.2	head	person	:ARG0-of	1.2.3	head	head-01
+::edge	1	met	meet-03	:ARG0	1.1		person
+::edge	1.2.3.1.3	Export	export-01	:ARG1	1.2.3.1.3.1	Arms	arms
+::edge	1	met	meet-03	:ARG1	1.2	head	person
+::edge	1.2.3.1.2		name	:op1	1.2.3.1.2.1	Rosoboronexport	"Rosoboronexport"
+::edge	1.2.2		name	:op1	1.2.2.1	Andrei	"Andrei"
+::edge	1.2.2		name	:op2	1.2.2.2	Belyaninov	"Belyaninov"
+::edge	1.2.3	head	head-01	:ARG1	1.2.3.1	Company	company
+::edge	1.1		person	:wiki	1.1.1		"Geraldo_Magela"
+8	A spokesman for Rosoboronexport was quoted by the Interfax news agency as stating that Quintao met Belyaninov to discuss cooperation in various areas in addition to the preparation of specific contracts for Russian arms sales to Brazil.
+8	A spokesman for Rosoboronexport was quoted by the Interfax news agency as stating that Quintao met Belyaninov to discuss cooperation in various areas in addition to the preparation of specific contracts for Russian arms sales to Brazil .
+8	1-1.2.1.2 2-1.2.1 3-1.2.1.1.2.1 5-1 6-1.1.r 8-1.1.2.1 9-1.1.3 10-1.1 11-1.3.r 12-1.3 13-1.3.2.r 14-1.3.2.1.2.1 15-1.3.2 16-1.3.2.2.2.1 18-1.3.2.3 19-1.3.2.3.2.1 20-1.3.2.3.2.1.1.r 21-1.3.2.3.2.1.1.1 22-1.3.2.3.2.1.1 23-1.3.2.3.2 24-1.3.2.3.2 25-1.3.2.3.2.r 27-1.3.2.3.2.2 28-1.3.2.3.2.2.1.r 29-1.3.2.3.2.2.1.2 30-1.3.2.3.2.2.1 31-1.3.2.3.2.2.1.1.r 32-1.3.2.3.2.2.1.1.1.2.1 33-1.3.2.3.2.2.1.1.2 34-1.3.2.3.2.2.1.1 35-1.3.2.3.2.2.1.1.3.r 36-1.3.2.3.2.2.1.1.3.2.1
+::node	n4	1.3.2.2.2	name	
+::node	p	1.3.2.3.1	person	
+::node	a	1.3.2.3.2	and	addition
+::node	a2	1.3.2.3.2.1.1	area	areas
+::node	"Geraldo_Magela"	1.3.2.1.1	"Geraldo_Magela"	
+::node	c4	1.3.2.3.2.2.1	contract-02	contracts
+::node	"Brazil"	1.3.2.3.2.2.1.1.3.2.1	"Brazil"	Brazil
+::node	n3	1.3.2.1.2	name	
+::node	"Andrey_Belyaninov"	1.3.2.2.1	"Andrey_Belyaninov"	
+::node	p2	1.3.2.3.3	person	
+::node	p	1.3.2.1	person	
+::node	p2	1.3.2.2	person	
+::node	"Quintao"	1.3.2.1.2.1	"Quintao"	Quintao
+::node	d	1.3.2.3	discuss-01	discuss
+::node	"Belyaninov"	1.3.2.2.2.1	"Belyaninov"	Belyaninov
+::node	s	1.2.1.2	spokesman	spokesman
+::node	c2	1.2.1.1	company	
+::node	v	1.3.2.3.2.1.1.1	various	various
+::node	"Interfax"	1.1.2.1	"Interfax"	Interfax
+::node	"Rosoboronexport"	1.2.1.1.2.1	"Rosoboronexport"	Rosoboronexport
+::node	"Russia"	1.3.2.3.2.2.1.1.1.2.1	"Russia"	Russian
+::node	p3	1.3.2.3.2.2	prepare-01	preparation
+::node	s4	1.3.2.3.2.2.1.1	sell-01	sales
+::node	c3	1.3.2.3.2.1	cooperate-01	cooperation
+::node	s3	1.3.2.3.2.2.1.2	specific	specific
+::node	n	1.1.2	name	
+::node	h	1.2.1	have-org-role-91	for
+::node	n5	1.3.2.3.2.2.1.1.1.2	name	
+::node	a3	1.3.2.3.2.2.1.1.2	arms	arms
+::node	q	1	quote-01	quoted
+::node	n7	1.1.3	news	news
+::node	p4	1.3.1	person	
+::node	c5	1.3.2.3.2.2.1.1.1	country	
+::node	"Brazil"	1.3.2.3.2.2.1.1.3.1	"Brazil"	
+::node	n2	1.2.1.1.2	name	
+::node	m	1.3.2	meet-03	met
+::node	n6	1.3.2.3.2.2.1.1.3.2	name	
+::node	"Rosoboronexport"	1.2.1.1.1	"Rosoboronexport"	
+::node	c6	1.3.2.3.2.2.1.1.3	country	
+::node	a4	1.1	agency	agency
+::node	p4	1.2	person	
+::node	s2	1.3	state-01	stating
+::node	"Russia"	1.3.2.3.2.2.1.1.1.1	"Russia"	
+::node	"Interfax"	1.1.1	"Interfax"	
+::edge	1.3.2.2		person	:name	1.3.2.2.2		name
+::edge	1.3.2.3	discuss	discuss-01	:ARG0	1.3.2.3.1		person
+::edge	1.3.2.3	discuss	discuss-01	:ARG1	1.3.2.3.2	addition	and
+::edge	1.3.2.3.2.1	cooperation	cooperate-01	:ARG2	1.3.2.3.2.1.1	areas	area
+::edge	1.3.2.1		person	:wiki	1.3.2.1.1		"Geraldo_Magela"
+::edge	1.3.2.3.2.2	preparation	prepare-01	:ARG1	1.3.2.3.2.2.1	contracts	contract-02
+::edge	1.3.2.3.2.2.1.1.3.2		name	:op1	1.3.2.3.2.2.1.1.3.2.1	Brazil	"Brazil"
+::edge	1.3.2.1		person	:name	1.3.2.1.2		name
+::edge	1.3.2.2		person	:wiki	1.3.2.2.1		"Andrey_Belyaninov"
+::edge	1.3.2.3	discuss	discuss-01	:ARG2	1.3.2.3.3		person
+::edge	1.3.2	met	meet-03	:ARG0	1.3.2.1		person
+::edge	1.3.2	met	meet-03	:ARG1	1.3.2.2		person
+::edge	1.3.2.1.2		name	:op1	1.3.2.1.2.1	Quintao	"Quintao"
+::edge	1.3.2	met	meet-03	:purpose	1.3.2.3	discuss	discuss-01
+::edge	1.3.2.2.2		name	:op1	1.3.2.2.2.1	Belyaninov	"Belyaninov"
+::edge	1.2.1	for	have-org-role-91	:ARG2	1.2.1.2	spokesman	spokesman
+::edge	1.2.1	for	have-org-role-91	:ARG1	1.2.1.1		company
+::edge	1.3.2.3.2.1.1	areas	area	:quant	1.3.2.3.2.1.1.1	various	various
+::edge	1.1.2		name	:op1	1.1.2.1	Interfax	"Interfax"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Rosoboronexport	"Rosoboronexport"
+::edge	1.3.2.3.2.2.1.1.1.2		name	:op1	1.3.2.3.2.2.1.1.1.2.1	Russian	"Russia"
+::edge	1.3.2.3.2	addition	and	:op2	1.3.2.3.2.2	preparation	prepare-01
+::edge	1.3.2.3.2.2.1	contracts	contract-02	:ARG1	1.3.2.3.2.2.1.1	sales	sell-01
+::edge	1.3.2.3.2	addition	and	:op1	1.3.2.3.2.1	cooperation	cooperate-01
+::edge	1.3.2.3.2.2.1	contracts	contract-02	:mod	1.3.2.3.2.2.1.2	specific	specific
+::edge	1.1	agency	agency	:name	1.1.2		name
+::edge	1.2		person	:ARG0-of	1.2.1	for	have-org-role-91
+::edge	1.3.2.3.2.2.1.1.1		country	:name	1.3.2.3.2.2.1.1.1.2		name
+::edge	1.3.2.3.2.2.1.1	sales	sell-01	:ARG1	1.3.2.3.2.2.1.1.2	arms	arms
+::edge	1.1	agency	agency	:mod	1.1.3	news	news
+::edge	1.3	stating	state-01	:ARG0	1.3.1		person
+::edge	1.3.2.3.2.2.1.1	sales	sell-01	:ARG0	1.3.2.3.2.2.1.1.1		country
+::edge	1.3.2.3.2.2.1.1.3		country	:wiki	1.3.2.3.2.2.1.1.3.1		"Brazil"
+::edge	1.2.1.1		company	:name	1.2.1.1.2		name
+::edge	1.3	stating	state-01	:ARG1	1.3.2	met	meet-03
+::edge	1.3.2.3.2.2.1.1.3		country	:name	1.3.2.3.2.2.1.1.3.2		name
+::edge	1.2.1.1		company	:wiki	1.2.1.1.1		"Rosoboronexport"
+::edge	1.3.2.3.2.2.1.1	sales	sell-01	:ARG2	1.3.2.3.2.2.1.1.3		country
+::edge	1	quoted	quote-01	:ARG0	1.1	agency	agency
+::edge	1	quoted	quote-01	:ARG1	1.2		person
+::edge	1	quoted	quote-01	:ARG2	1.3	stating	state-01
+::edge	1.3.2.3.2.2.1.1.1		country	:wiki	1.3.2.3.2.2.1.1.1.1		"Russia"
+::edge	1.1	agency	agency	:wiki	1.1.1		"Interfax"
+9	The spokesman for Rosoboronexport stated that the discussed cooperation was marked by an emphasis on the space sector.
+9	The spokesman for Rosoboronexport stated that the discussed cooperation was marked by an emphasis on the space sector .
+9	1-1.1.1.2 2-1.1.1 3-1.1.1.1.2.1 4-1 5-1.2.r 7-1.2.2.1 8-1.2.2 10-1.2 11-1.2.1.r 13-1.2.1 14-1.2.1.1.r 16-1.2.1.1.1 17-1.2.1.1
+::node	"Rosoboronexport"	1.1.1.1.2.1	"Rosoboronexport"	Rosoboronexport
+::node	c	1.1.1.1	company	
+::node	s2	1.1.1.2	spokesman	spokesman
+::node	e	1.2.1	emphasize-01	emphasis
+::node	s	1	state-01	stated
+::node	c2	1.2.2	cooperate-01	cooperation
+::node	s4	1.2.1.1.1	space	space
+::node	p	1.1	person	
+::node	m	1.2	mark-02	marked
+::node	n	1.1.1.1.2	name	
+::node	"Rosoboronexport"	1.1.1.1.1	"Rosoboronexport"	
+::node	d	1.2.2.1	discuss-01	discussed
+::node	s3	1.2.1.1	sector	sector
+::node	h	1.1.1	have-org-role-91	for
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Rosoboronexport	"Rosoboronexport"
+::edge	1.1.1	for	have-org-role-91	:ARG1	1.1.1.1		company
+::edge	1.1.1	for	have-org-role-91	:ARG2	1.1.1.2	spokesman	spokesman
+::edge	1.2	marked	mark-02	:ARG0	1.2.1	emphasis	emphasize-01
+::edge	1.2	marked	mark-02	:ARG1	1.2.2	cooperation	cooperate-01
+::edge	1.2.1.1	sector	sector	:mod	1.2.1.1.1	space	space
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	marked	mark-02
+::edge	1.1.1.1		company	:name	1.1.1.1.2		name
+::edge	1.1.1.1		company	:wiki	1.1.1.1.1		"Rosoboronexport"
+::edge	1.2.2	cooperation	cooperate-01	:ARG1-of	1.2.2.1	discussed	discuss-01
+::edge	1.2.1	emphasis	emphasize-01	:ARG1	1.2.1.1	sector	sector
+::edge	1.1		person	:ARG0-of	1.1.1	for	have-org-role-91
+10	The Brazilian embassy stated that Quintao is also to meet leading members of Russia's military-industrial complex.
+10	The Brazilian embassy stated that Quintao is also to meet leading members of Russia 's military @-@ industrial complex .
+10	1-1.1.1.2.1 2-1.1 3-1 4-1.2.r 5-1.2.1.2.1 7-1.2.3 9-1.2 10-1.2.2.1 11-1.2.2 12-1.2.2.1.1.r 13-1.2.2.1.1.1.2.1 14-1.2.2.1.1.1.r 15-1.2.2.1.1.2 17-1.2.2.1.1.2 18-1.2.2.1.1
+::node	"Brazil"	1.1.1.1	"Brazil"	
+::node	n	1.1.1.2	name	
+::node	c2	1.2.2.1.1	complex	complex
+::node	c3	1.2.2.1.1.1	country	
+::node	"Russia"	1.2.2.1.1.1.2.1	"Russia"	Russia
+::node	m3	1.2.2.1.1.2	military-industrial	industrial
+::node	"Russia"	1.2.2.1.1.1.1	"Russia"	
+::node	n3	1.2.2.1.1.1.2	name	
+::node	p	1.2.1	person	
+::node	s	1	state-01	stated
+::node	m2	1.2.2	member	members
+::node	"Quintao"	1.2.1.2.1	"Quintao"	Quintao
+::node	a	1.2.3	also	also
+::node	e	1.1	embassy	embassy
+::node	m	1.2	meet-03	meet
+::node	"Brazil"	1.1.1.2.1	"Brazil"	Brazilian
+::node	n2	1.2.1.2	name	
+::node	l	1.2.2.1	lead-02	leading
+::node	"Geraldo_Magela"	1.2.1.1	"Geraldo_Magela"	
+::node	c	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"Brazil"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.2.2.1	leading	lead-02	:ARG1	1.2.2.1.1	complex	complex
+::edge	1.2.2.1.1	complex	complex	:poss	1.2.2.1.1.1		country
+::edge	1.2.2.1.1.1.2		name	:op1	1.2.2.1.1.1.2.1	Russia	"Russia"
+::edge	1.2.2.1.1	complex	complex	:mod	1.2.2.1.1.2	industrial	military-industrial
+::edge	1.2.2.1.1.1		country	:wiki	1.2.2.1.1.1.1		"Russia"
+::edge	1.2.2.1.1.1		country	:name	1.2.2.1.1.1.2		name
+::edge	1.2	meet	meet-03	:ARG0	1.2.1		person
+::edge	1.2	meet	meet-03	:ARG1	1.2.2	members	member
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Quintao	"Quintao"
+::edge	1.2	meet	meet-03	:mod	1.2.3	also	also
+::edge	1	stated	state-01	:ARG0	1.1	embassy	embassy
+::edge	1	stated	state-01	:ARG1	1.2	meet	meet-03
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Brazilian	"Brazil"
+::edge	1.2.1		person	:name	1.2.1.2		name
+::edge	1.2.2	members	member	:ARG0-of	1.2.2.1	leading	lead-02
+::edge	1.2.1		person	:wiki	1.2.1.1		"Geraldo_Magela"
+::edge	1.1	embassy	embassy	:mod	1.1.1		country
+11	After meeting Ivanov on 9 April 2002 Quintao will travel to Saint Petersburg where he will spend the rest of the week.
+11	After meeting Ivanov on 9 April 2002 Quintao will travel to Saint Petersburg where he will spend the rest of the week .
+11	0-1.3 1-1.3.1 2-1.3.1.2.2.1 3-1.3.1.3.r 4-1.3.1.3.3 5-1.3.1.3.2 5-1.3.1.3.2.r 6-1.3.1.3.1 7-1.1.2.1 9-1 10-1.2.r 11-1.2.2.1 12-1.2.2.2 13-1.2.3.r 14-1.2.3.1 16-1.2.3 18-1.2.3.2.1 21-1.2.3.2
+::node	p	1.3.1.1	person	
+::node	p2	1.3.1.2	person	
+::node	d	1.3.1.3	date-entity	
+::node	w	1.2.3.2	week	week
+::node	"Saint"	1.2.2.1	"Saint"	Saint
+::node	"Petersburg"	1.2.2.2	"Petersburg"	Petersburg
+::node	p	1.2.3.1	person	he
+::node	"Quintao"	1.1.2.1	"Quintao"	Quintao
+::node	r	1.2.3.2.1	rest	rest
+::node	n	1.1.2	name	
+::node	"Saint_Petersburg"	1.2.1	"Saint_Petersburg"	
+::node	t	1	travel-01	travel
+::node	n2	1.2.2	name	
+::node	m	1.3.1	meet-03	meeting
+::node	s	1.2.3	spend-02	spend
+::node	"Ivanov"	1.3.1.2.2.1	"Ivanov"	Ivanov
+::node	p	1.1	person	
+::node	"Sergei_Ivanov"	1.3.1.2.1	"Sergei_Ivanov"	
+::node	c	1.2	city	
+::node	n3	1.3.1.2.2	name	
+::node	2002	1.3.1.3.1	2002	2002
+::node	a	1.3	after	After
+::node	4	1.3.1.3.2	4	April
+::node	9	1.3.1.3.3	9	9
+::node	"Geraldo_Magela"	1.1.1	"Geraldo_Magela"	
+::edge	1.1.2		name	:op1	1.1.2.1	Quintao	"Quintao"
+::edge	1.3.1	meeting	meet-03	:ARG0	1.3.1.1		person
+::edge	1.3.1	meeting	meet-03	:ARG1	1.3.1.2		person
+::edge	1.3.1	meeting	meet-03	:time	1.3.1.3		date-entity
+::edge	1.2.3.2	week	week	:part	1.2.3.2.1	rest	rest
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2		city	:wiki	1.2.1		"Saint_Petersburg"
+::edge	1.2		city	:name	1.2.2		name
+::edge	1.3	After	after	:op1	1.3.1	meeting	meet-03
+::edge	1.2		city	:location-of	1.2.3	spend	spend-02
+::edge	1.3.1.2.2		name	:op1	1.3.1.2.2.1	Ivanov	"Ivanov"
+::edge	1	travel	travel-01	:ARG0	1.1		person
+::edge	1.3.1.2		person	:wiki	1.3.1.2.1		"Sergei_Ivanov"
+::edge	1	travel	travel-01	:ARG1	1.2		city
+::edge	1.3.1.2		person	:name	1.3.1.2.2		name
+::edge	1.3.1.3		date-entity	:year	1.3.1.3.1	2002	2002
+::edge	1	travel	travel-01	:time	1.3	After	after
+::edge	1.3.1.3		date-entity	:month	1.3.1.3.2	April	4
+::edge	1.3.1.3		date-entity	:day	1.3.1.3.3	9	9
+::edge	1.2.3	spend	spend-02	:ARG1	1.2.3.2	week	week
+::edge	1.2.2		name	:op1	1.2.2.1	Saint	"Saint"
+::edge	1.2.2		name	:op2	1.2.2.2	Petersburg	"Petersburg"
+::edge	1.2.3	spend	spend-02	:ARG0	1.2.3.1	he	person
+::edge	1.1		person	:wiki	1.1.1		"Geraldo_Magela"
+12	During a visit in January 2002 by Brazilian President Fernando Henrique Cardoso and a delegation of 70 people the Russian government stated that it anticipated sales of its Su-27 and MiG-29 fighters to Brazil along with S-300 anti-missile batteries.
+12	During a visit in January 2002 by Brazilian President Fernando Henrique Cardoso and a delegation of 70 people the Russian government stated that it anticipated sales of its Su @-@ 27 and MiG @-@ 29 fighters to Brazil along with S @-@ 300 anti @-@ missile batteries .
+12	0-1.3.r 2-1.3 3-1.3.2.r 4-1.3.2.2 4-1.3.2.2.r 5-1.3.2.1 8-1.3.1.1.3.2 9-1.3.1.1.2.1 10-1.3.1.1.2.2 11-1.3.1.1.2.3 12-1.3.1 14-1.3.1.2 15-1.3.1.2.1.r 16-1.3.1.2.1.1 17-1.3.1.2.1 19-1.1.1.1.2.1 20-1.1 20-1.1.1 20-1.1.1.r 21-1 22-1.2.r 23-1.2.1 24-1.2 25-1.2.2 28-1.2.2.1.1.2.1 30-1.2.2.1.1.2.1 31-1.2.2.1 32-1.2.2.1.2.2.1 34-1.2.2.1.2.2.1 35-1.2.2.1.1 35-1.2.2.1.1.3 35-1.2.2.1.1.3.r 35-1.2.2.1.2 35-1.2.2.1.2.3 35-1.2.2.1.2.3.r 37-1.3.1.1.3.1.2.1 39-1.2.2.1.r 40-1.2.2.1.3.2.1 42-1.2.2.1.3.2.1 43-1.2.2.1.3.3 45-1.2.2.1.3.3.1 46-1.2.2.1.3
+::node	"Brazil"	1.3.1.1.3.1.1	"Brazil"	
+::node	"Brazil"	1.3.1.1.3.1.2.1	"Brazil"	Brazil
+::node	"Sukhoi_Su-27"	1.2.2.1.1.1	"Sukhoi_Su-27"	
+::node	p	1.3.1.1	person	
+::node	n4	1.2.2.1.1.2	name	
+::node	"Mikoyan_MiG-29"	1.2.2.1.2.1	"Mikoyan_MiG-29"	
+::node	d	1.3.1.2	delegation	delegation
+::node	2002	1.3.2.1	2002	2002
+::node	1	1.3.2.2	1	January
+::node	"Fernando_Henrique_Cardoso"	1.3.1.1.1	"Fernando_Henrique_Cardoso"	
+::node	c3	1.2.2.1.3.3	counter-01	anti
+::node	n3	1.3.1.1.3.1.2	name	
+::node	f	1.2.2.1.1.3	fight-01	fighters
+::node	n5	1.2.2.1.2.2	name	
+::node	"S-300_BLANKETPAIR0"	1.2.2.1.3.1	"S-300_BLANKETPAIR0"	
+::node	"Su-27"	1.2.2.1.1.2.1	"Su-27"	27
+::node	f2	1.2.2.1.2.3	fight-01	fighters
+::node	n6	1.2.2.1.3.2	name	
+::node	"MiG-29"	1.2.2.1.2.2.1	"MiG-29"	29
+::node	n	1.1.1.1.2	name	
+::node	"Russia"	1.1.1.1.1	"Russia"	
+::node	a3	1.2.2.1	and	and
+::node	a5	1.2.2.1.2	aircraft-type	fighters
+::node	b	1.2.2.1.3	battery	batteries
+::node	"Russia"	1.1.1.1.2.1	"Russia"	Russian
+::node	c	1.1.1.1	country	
+::node	a4	1.2.2.1.1	aircraft-type	fighters
+::node	"Fernando"	1.3.1.1.2.1	"Fernando"	Fernando
+::node	m	1.2.2.1.3.3.1	missile	missile
+::node	"Cardoso"	1.3.1.1.2.3	"Cardoso"	Cardoso
+::node	p3	1.3.1.1.3.2	president	President
+::node	"S-300"	1.2.2.1.3.2.1	"S-300"	300
+::node	"Henrique"	1.3.1.1.2.2	"Henrique"	Henrique
+::node	c2	1.3.1.1.3.1	country	
+::node	g	1.2.1	government-organization	it
+::node	s	1	state-01	stated
+::node	s2	1.2.2	sell-01	sales
+::node	a2	1.3.1	and	and
+::node	d2	1.3.2	date-entity	
+::node	g	1.1	government-organization	government
+::node	n2	1.3.1.1.2	name	
+::node	p2	1.3.1.2.1	person	people
+::node	70	1.3.1.2.1.1	70	70
+::node	a	1.2	anticipate-01	anticipated
+::node	h	1.3.1.1.3	have-org-role-91	
+::node	v	1.3	visit-01	visit
+::node	g2	1.1.1	govern-01	government
+::edge	1.3.1.1.3.1		country	:wiki	1.3.1.1.3.1.1		"Brazil"
+::edge	1.3.1.1.3.1.2		name	:op1	1.3.1.1.3.1.2.1	Brazil	"Brazil"
+::edge	1.2.2.1.1	fighters	aircraft-type	:wiki	1.2.2.1.1.1		"Sukhoi_Su-27"
+::edge	1.3.1	and	and	:op1	1.3.1.1		person
+::edge	1.2.2.1.1	fighters	aircraft-type	:name	1.2.2.1.1.2		name
+::edge	1.2.2.1.2	fighters	aircraft-type	:wiki	1.2.2.1.2.1		"Mikoyan_MiG-29"
+::edge	1.3.1	and	and	:op2	1.3.1.2	delegation	delegation
+::edge	1.3.2		date-entity	:year	1.3.2.1	2002	2002
+::edge	1.3.2		date-entity	:month	1.3.2.2	January	1
+::edge	1.3.1.1		person	:wiki	1.3.1.1.1		"Fernando_Henrique_Cardoso"
+::edge	1.2.2.1.3	batteries	battery	:ARG0-of	1.2.2.1.3.3	anti	counter-01
+::edge	1.3.1.1.3.1		country	:name	1.3.1.1.3.1.2		name
+::edge	1.2.2.1.1	fighters	aircraft-type	:ARG0-of	1.2.2.1.1.3	fighters	fight-01
+::edge	1.2.2.1.2	fighters	aircraft-type	:name	1.2.2.1.2.2		name
+::edge	1.2.2.1.3	batteries	battery	:wiki	1.2.2.1.3.1		"S-300_BLANKETPAIR0"
+::edge	1.2.2.1.1.2		name	:op1	1.2.2.1.1.2.1	27	"Su-27"
+::edge	1.2.2.1.2	fighters	aircraft-type	:ARG0-of	1.2.2.1.2.3	fighters	fight-01
+::edge	1.2.2.1.3	batteries	battery	:name	1.2.2.1.3.2		name
+::edge	1.2.2.1.2.2		name	:op1	1.2.2.1.2.2.1	29	"MiG-29"
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Russia"
+::edge	1.2.2	sales	sell-01	:ARG1	1.2.2.1	and	and
+::edge	1.2.2.1	and	and	:op2	1.2.2.1.2	fighters	aircraft-type
+::edge	1.2.2.1	and	and	:op3	1.2.2.1.3	batteries	battery
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Russian	"Russia"
+::edge	1.1.1	government	govern-01	:ARG1	1.1.1.1		country
+::edge	1.2.2.1	and	and	:op1	1.2.2.1.1	fighters	aircraft-type
+::edge	1.3.1.1.2		name	:op1	1.3.1.1.2.1	Fernando	"Fernando"
+::edge	1.2.2.1.3.3	anti	counter-01	:ARG1	1.2.2.1.3.3.1	missile	missile
+::edge	1.3.1.1.2		name	:op3	1.3.1.1.2.3	Cardoso	"Cardoso"
+::edge	1.3.1.1.3		have-org-role-91	:ARG2	1.3.1.1.3.2	President	president
+::edge	1.2.2.1.3.2		name	:op1	1.2.2.1.3.2.1	300	"S-300"
+::edge	1.3.1.1.2		name	:op2	1.3.1.1.2.2	Henrique	"Henrique"
+::edge	1.3.1.1.3		have-org-role-91	:ARG1	1.3.1.1.3.1		country
+::edge	1.2	anticipated	anticipate-01	:ARG0	1.2.1	it	government-organization
+::edge	1.2	anticipated	anticipate-01	:ARG1	1.2.2	sales	sell-01
+::edge	1.3	visit	visit-01	:ARG0	1.3.1	and	and
+::edge	1.3	visit	visit-01	:time	1.3.2		date-entity
+::edge	1	stated	state-01	:ARG0	1.1	government	government-organization
+::edge	1.3.1.1		person	:name	1.3.1.1.2		name
+::edge	1.3.1.2	delegation	delegation	:consist-of	1.3.1.2.1	people	person
+::edge	1.3.1.2.1	people	person	:quant	1.3.1.2.1.1	70	70
+::edge	1	stated	state-01	:ARG1	1.2	anticipated	anticipate-01
+::edge	1.3.1.1		person	:ARG0-of	1.3.1.1.3		have-org-role-91
+::edge	1	stated	state-01	:time	1.3	visit	visit-01
+::edge	1.1	government	government-organization	:ARG0-of	1.1.1	government	govern-01
+13	Brazil is known to be interested in extending its cooperation with Russia in the space sector and has offered Russia the use of a platform in the north of the country for satellite launches.
+13	Brazil is known to be interested in extending its cooperation with Russia in the space sector and has offered Russia the use of a platform in the north of the country for satellite launches .
+13	0-1.1.1.1.2.1 2-1.1 5-1.1.1 6-1.1.1.2.r 7-1.1.1.2 8-1.1.1.2.1.1 8-1.1.1.2.1.1.r 9-1.1.1.2.1 11-1.1.1.2.1.2.2.1 12-1.1.1.2.1.3.r 14-1.1.1.2.1.3.1 15-1.1.1.2.1.3 16-1 16-1.1.1.2.1.2.r 18-1.2 19-1.1.1.2.1.2.2.1 21-1.2.2 22-1.2.2.1.r 24-1.2.2.1 25-1.2.2.1.1.r 27-1.2.2.1.1 30-1.1.1.1 30-1.1.1.2.1.2 31-1.2.2.2.r 32-1.2.2.2.1 33-1.2.2.2
+::node	n2	1.1.1.2.1.2.2	name	
+::node	s2	1.1.1.2.1.3.1	space	space
+::node	"Brazil"	1.1.1.1.2.1	"Brazil"	Brazil
+::node	c	1.1.1.1	country	country
+::node	e	1.1.1.2	extend-01	extending
+::node	"Russia"	1.1.1.2.1.2.1	"Russia"	
+::node	n3	1.2.2.1.1	north	north
+::node	"Russia"	1.1.1.2.1.2.2.1	"Russia"	Russia
+::node	c	1.2.2.1.1.1	country	
+::node	c3	1.1.1.2.1.2	country	country
+::node	s	1.1.1.2.1.3	sector	sector
+::node	c	1.1.1.2.1.1	country	its
+::node	c	1.2.1	country	
+::node	a	1	and	and
+::node	u	1.2.2	use-01	use
+::node	k	1.1	know-01	known
+::node	o	1.2	offer-01	offered
+::node	n	1.1.1.1.2	name	
+::node	c2	1.1.1.2.1	cooperate-01	cooperation
+::node	"Brazil"	1.1.1.1.1	"Brazil"	
+::node	p	1.2.2.1	platform	platform
+::node	l	1.2.2.2	launch-01	launches
+::node	s3	1.2.2.2.1	satellite	satellite
+::node	i	1.1.1	interest-01	interested
+::edge	1.1.1.2.1.2	country	country	:name	1.1.1.2.1.2.2		name
+::edge	1.1.1.2.1.3	sector	sector	:mod	1.1.1.2.1.3.1	space	space
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Brazil	"Brazil"
+::edge	1.1.1	interested	interest-01	:ARG1	1.1.1.1	country	country
+::edge	1.1.1	interested	interest-01	:ARG2	1.1.1.2	extending	extend-01
+::edge	1.1.1.2.1.2	country	country	:wiki	1.1.1.2.1.2.1		"Russia"
+::edge	1.2.2.1	platform	platform	:location	1.2.2.1.1	north	north
+::edge	1.1.1.2.1.2.2		name	:op1	1.1.1.2.1.2.2.1	Russia	"Russia"
+::edge	1.2.2.1.1	north	north	:part-of	1.2.2.1.1.1		country
+::edge	1.1.1.2.1	cooperation	cooperate-01	:ARG1	1.1.1.2.1.2	country	country
+::edge	1.1.1.2.1	cooperation	cooperate-01	:ARG2	1.1.1.2.1.3	sector	sector
+::edge	1.1.1.2.1	cooperation	cooperate-01	:ARG0	1.1.1.2.1.1	its	country
+::edge	1.2	offered	offer-01	:ARG0	1.2.1		country
+::edge	1.2	offered	offer-01	:ARG1	1.2.2	use	use-01
+::edge	1	and	and	:op1	1.1	known	know-01
+::edge	1	and	and	:op2	1.2	offered	offer-01
+::edge	1.1.1.1	country	country	:name	1.1.1.1.2		name
+::edge	1.1.1.2	extending	extend-01	:ARG1	1.1.1.2.1	cooperation	cooperate-01
+::edge	1.1.1.1	country	country	:wiki	1.1.1.1.1		"Brazil"
+::edge	1.2.2	use	use-01	:ARG1	1.2.2.1	platform	platform
+::edge	1.2.2	use	use-01	:ARG2	1.2.2.2	launches	launch-01
+::edge	1.2.2.2	launches	launch-01	:ARG1	1.2.2.2.1	satellite	satellite
+::edge	1.1	known	know-01	:ARG1	1.1.1	interested	interest-01

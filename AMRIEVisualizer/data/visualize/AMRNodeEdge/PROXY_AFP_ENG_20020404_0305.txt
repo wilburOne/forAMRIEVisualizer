@@ -1,0 +1,1384 @@
+1	2002-04-04
+1	2002 @-@ 04 @-@ 04
+1	0-1.1 2-1.2 2-1.3 4-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	4	1.2	4	04
+::node	4	1.3	4	04
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	04	4
+::edge	1		date-entity	:day	1.3	04	4
+2	India (IN)
+2	India ( IN )
+2	0-1.2.1
+::node	"India"	1.2.1	"India"	India
+::node	c	1	country	
+::node	"India"	1.1	"India"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	India	"India"
+::edge	1		country	:wiki	1.1		"India"
+::edge	1		country	:name	1.2		name
+3	International; military; business
+3	International ; military ; business
+3	0-1.1 2-1.2 4-1.3
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	m	1.2	military	military
+::node	b	1.3	business	business
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	military	military
+::edge	1		and	:op3	1.3	business	business
+4	India's Hindustan Aeronautics Limited plans to manufacture and maintain 140 Sukhoi 30 fighter jets for the Indian government.
+4	India 's Hindustan Aeronautics Limited plans to manufacture and maintain 140 Sukhoi 30 fighter jets for the Indian government .
+4	0-1.1.3.2.1 1-1.1.3.r 2-1.1.2.1 3-1.1.2.2 4-1.1.2.3 5-1 7-1.2.1 8-1.2 9-1.2.2 10-1.2.1.2.1 11-1.2.1.2.3.1 12-1.2.1.2.3.2 13-1.2.1.2.4 14-1.2.1.2 15-1.2.r 17-1.2.3.1.1 18-1.2.3 18-1.2.3.1 18-1.2.3.1.r
+::node	"India"	1.1.3.2.1	"India"	India
+::node	n3	1.2.1.2.3	name	
+::node	"Sukhoi_Su-30"	1.2.1.2.2	"Sukhoi_Su-30"	
+::node	f	1.2.1.2.4	fight-01	fighter
+::node	j	1.2.1.2	jet	jets
+::node	c	1.2.2.1	company	
+::node	j	1.2.2.2	jet	
+::node	g2	1.2.3.1	govern-01	government
+::node	c	1.2.1.1	company	
+::node	"Hindustan"	1.1.2.1	"Hindustan"	Hindustan
+::node	"Aeronautics"	1.1.2.2	"Aeronautics"	Aeronautics
+::node	"India"	1.1.3.1	"India"	
+::node	"Limited"	1.1.2.3	"Limited"	Limited
+::node	n2	1.1.3.2	name	
+::node	c2	1.2.3.1.1	country	Indian
+::node	n	1.1.2	name	
+::node	m	1.2.1	manufacture-01	manufacture
+::node	p	1	plan-01	plans
+::node	c2	1.1.3	country	
+::node	m2	1.2.2	maintain-01	maintain
+::node	140	1.2.1.2.1	140	140
+::node	g	1.2.3	government-organization	government
+::node	c	1.1	company	
+::node	a	1.2	and	and
+::node	"Sukhoi"	1.2.1.2.3.1	"Sukhoi"	Sukhoi
+::node	30	1.2.1.2.3.2	30	30
+::node	"Hindustan_Aeronautics_Limited"	1.1.1	"Hindustan_Aeronautics_Limited"	
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	India	"India"
+::edge	1.2.1.2	jets	jet	:name	1.2.1.2.3		name
+::edge	1.2.1.2	jets	jet	:wiki	1.2.1.2.2		"Sukhoi_Su-30"
+::edge	1.2.1.2	jets	jet	:ARG0-of	1.2.1.2.4	fighter	fight-01
+::edge	1.2.1	manufacture	manufacture-01	:ARG1	1.2.1.2	jets	jet
+::edge	1.2.2	maintain	maintain-01	:ARG0	1.2.2.1		company
+::edge	1.2.2	maintain	maintain-01	:ARG1	1.2.2.2		jet
+::edge	1.2.3	government	government-organization	:ARG0-of	1.2.3.1	government	govern-01
+::edge	1.2.1	manufacture	manufacture-01	:ARG0	1.2.1.1		company
+::edge	1.1.2		name	:op1	1.1.2.1	Hindustan	"Hindustan"
+::edge	1.1.2		name	:op2	1.1.2.2	Aeronautics	"Aeronautics"
+::edge	1.1.3		country	:wiki	1.1.3.1		"India"
+::edge	1.1.2		name	:op3	1.1.2.3	Limited	"Limited"
+::edge	1.1.3		country	:name	1.1.3.2		name
+::edge	1.2.3.1	government	govern-01	:ARG1	1.2.3.1.1	Indian	country
+::edge	1.1		company	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1	manufacture	manufacture-01
+::edge	1.1		company	:poss	1.1.3		country
+::edge	1.2	and	and	:op2	1.2.2	maintain	maintain-01
+::edge	1.2.1.2	jets	jet	:quant	1.2.1.2.1	140	140
+::edge	1.2	and	and	:beneficiary	1.2.3	government	government-organization
+::edge	1	plans	plan-01	:ARG0	1.1		company
+::edge	1	plans	plan-01	:ARG1	1.2	and	and
+::edge	1.2.1.2.3		name	:op1	1.2.1.2.3.1	Sukhoi	"Sukhoi"
+::edge	1.2.1.2.3		name	:op2	1.2.1.2.3.2	30	30
+::edge	1.1		company	:wiki	1.1.1		"Hindustan_Aeronautics_Limited"
+5	India's State-owned banglalore-based Hindustan Aeronautics Limited Chairman N. R. Mohanty stated that the Indian government has decided that Hindustan Aeronautics Limited will manufacture and maintain 140 Sukhoi 30 MK fighter jets.
+5	India 's State @-@ owned banglalore @-@ based Hindustan Aeronautics Limited Chairman N. R. Mohanty stated that the Indian government has decided that Hindustan Aeronautics Limited will manufacture and maintain 140 Sukhoi 30 MK fighter jets .
+5	0-1.1.3.1.3.1.2.1 1-1.1.3 1-1.1.3.1.3.1.r 2-1 4-1.1.3.1.3 7-1.1.3.1.4 8-1.1.3.1.2.1 9-1.1.3.1.2.2 10-1.1.3.1.2.3 11-1.1.3.2 14-1.1.2.2 15-1 16-1.2.r 18-1.2.1.1.1 19-1.2.1 19-1.2.1.1 19-1.2.1.1.r 21-1.2 22-1.2.2.r 23-1.2.2.1.1 24-1.2.2.1.1 25-1.2.2.1.1 27-1.2.2.1 28-1.2.2 29-1.2.2.2 30-1.2.2.1.2.1 31-1.2.2.1.2.3.1 32-1.2.2.1.2.3.2 33-1.2.2.1.2.3.3 34-1.2.2.1.2.4 35-1.2.2.1.2
+::node	b	1.1.3.1.4	base-01	based
+::node	o	1.1.3.1.3	own-01	owned
+::node	"India"	1.1.3.1.3.1.1	"India"	
+::node	n2	1.1.3.1.2	name	
+::node	"India"	1.1.3.1.3.1.2.1	"India"	India
+::node	140	1.2.2.1.2.1	140	140
+::node	f	1.2.2.1.2.4	fight-01	fighter
+::node	n3	1.1.3.1.3.1.2	name	
+::node	"Sukhoi_Su-30MKI"	1.2.2.1.2.2	"Sukhoi_Su-30MKI"	
+::node	n5	1.2.2.1.2.3	name	
+::node	n4	1.1.3.1.4.1.2	name	
+::node	m	1.2.2.1	manufacture-01	manufacture
+::node	"Bangalore"	1.1.3.1.4.1.1	"Bangalore"	
+::node	m2	1.2.2.2	maintain-01	maintain
+::node	j	1.2.2.1.2	jet	jets
+::node	c2	1.2.2.2.1	company	
+::node	g2	1.2.1.1	govern-01	government
+::node	"MK"	1.2.2.1.2.3.3	"MK"	MK
+::node	30	1.2.2.1.2.3.2	30	30
+::node	"Sukhoi"	1.2.2.1.2.3.1	"Sukhoi"	Sukhoi
+::node	"N.R."	1.1.2.1	"N.R."	
+::node	c2	1.2.2.1.1	company	Limited
+::node	"Mohanty"	1.1.2.2	"Mohanty"	Mohanty
+::node	c2	1.1.3.1	company	
+::node	c	1.1.3.2	chairman	Chairman
+::node	"Aeronautics"	1.1.3.1.2.2	"Aeronautics"	Aeronautics
+::node	c3	1.1.3.1.3.1	country	
+::node	"Limited"	1.1.3.1.2.3	"Limited"	Limited
+::node	c4	1.1.3.1.4.1	city	
+::node	"Hindustan"	1.1.3.1.2.1	"Hindustan"	Hindustan
+::node	n	1.1.2	name	
+::node	g	1.2.1	government-organization	government
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	's
+::node	a	1.2.2	and	and
+::node	c3	1.2.1.1.1	country	Indian
+::node	p	1.1	person	
+::node	d	1.2	decide-01	decided
+::node	"Bangalore"	1.1.3.1.4.1.2.1	"Bangalore"	
+::node	"Hindustan_Aeronautics_Limited"	1.1.3.1.1	"Hindustan_Aeronautics_Limited"	
+::node	-	1.1.1	-	
+::edge	1.1.3.1		company	:ARG1-of	1.1.3.1.4	based	base-01
+::edge	1.1.3.1		company	:ARG1-of	1.1.3.1.3	owned	own-01
+::edge	1.1.3.1.3.1		country	:wiki	1.1.3.1.3.1.1		"India"
+::edge	1.1.3.1		company	:name	1.1.3.1.2		name
+::edge	1.1.3.1.3.1.2		name	:op1	1.1.3.1.3.1.2.1	India	"India"
+::edge	1.2.2.1.2	jets	jet	:quant	1.2.2.1.2.1	140	140
+::edge	1.2.2.1.2	jets	jet	:ARG0-of	1.2.2.1.2.4	fighter	fight-01
+::edge	1.1.3.1.3.1		country	:name	1.1.3.1.3.1.2		name
+::edge	1.2.2.1.2	jets	jet	:wiki	1.2.2.1.2.2		"Sukhoi_Su-30MKI"
+::edge	1.2.2.1.2	jets	jet	:name	1.2.2.1.2.3		name
+::edge	1.1.3.1.4.1		city	:name	1.1.3.1.4.1.2		name
+::edge	1.2.2	and	and	:op1	1.2.2.1	manufacture	manufacture-01
+::edge	1.1.3.1.4.1		city	:wiki	1.1.3.1.4.1.1		"Bangalore"
+::edge	1.2.2	and	and	:op2	1.2.2.2	maintain	maintain-01
+::edge	1.2.2.1	manufacture	manufacture-01	:ARG1	1.2.2.1.2	jets	jet
+::edge	1.2.2.2	maintain	maintain-01	:ARG0	1.2.2.2.1		company
+::edge	1.2.1	government	government-organization	:ARG0-of	1.2.1.1	government	govern-01
+::edge	1.2.2.1.2.3		name	:op3	1.2.2.1.2.3.3	MK	"MK"
+::edge	1.2.2.1.2.3		name	:op2	1.2.2.1.2.3.2	30	30
+::edge	1.2.2.1.2.3		name	:op1	1.2.2.1.2.3.1	Sukhoi	"Sukhoi"
+::edge	1.1.2		name	:op1	1.1.2.1		"N.R."
+::edge	1.2.2.1	manufacture	manufacture-01	:ARG0	1.2.2.1.1	Limited	company
+::edge	1.1.2		name	:op2	1.1.2.2	Mohanty	"Mohanty"
+::edge	1.1.3	's	have-org-role-91	:ARG1	1.1.3.1		company
+::edge	1.1.3	's	have-org-role-91	:ARG2	1.1.3.2	Chairman	chairman
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	Aeronautics	"Aeronautics"
+::edge	1.1.3.1.3	owned	own-01	:ARG0	1.1.3.1.3.1		country
+::edge	1.1.3.1.2		name	:op3	1.1.3.1.2.3	Limited	"Limited"
+::edge	1.1.3.1.4	based	base-01	:location	1.1.3.1.4.1		city
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Hindustan	"Hindustan"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	decided	decide-01	:ARG0	1.2.1	government	government-organization
+::edge	1.1		person	:ARG0-of	1.1.3	's	have-org-role-91
+::edge	1.2	decided	decide-01	:ARG1	1.2.2	and	and
+::edge	1.2.1.1	government	govern-01	:ARG1	1.2.1.1.1	Indian	country
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	decided	decide-01
+::edge	1.1.3.1.4.1.2		name	:op1	1.1.3.1.4.1.2.1		"Bangalore"
+::edge	1.1.3.1		company	:wiki	1.1.3.1.1		"Hindustan_Aeronautics_Limited"
+::edge	1.1		person	:wiki	1.1.1		-
+6	N. R. Mohanty stated that an agreement had been signed between the Defense Research and Development Organisation, Hindustan Aeronautics Limited and the Indian Air Force to upgrade India's ageing fleet of MiG-27 m aircraft.
+6	N. R. Mohanty stated that an agreement had been signed between the Defense Research and Development Organisation , Hindustan Aeronautics Limited and the Indian Air Force to upgrade India 's ageing fleet of MiG @-@ 27 m aircraft .
+6	2-1.1.2.2 3-1 4-1.2.r 6-1.2.2 9-1.2 12-1.2.1.1.2.1 13-1.2.1.1.2.2 14-1.2.1.1.2.3 15-1.2.1.1.2.4 16-1.2.1.1.2.5 18-1.2.1.2.2.1 19-1.2.1.2.2.2 20-1.2.1.2.2.3 21-1.2.1 23-1.2.1.3.2.1 24-1.2.1.3.2.2 25-1.2.1.3.2.3 27-1.2.2.2 28-1.2.2.2.2.1.2.1 29-1.2.2.2.2.1.r 31-1.2.2.2.2 32-1.2.2.2.2.3.r 33-1.2.2.2.2.3.2.1 37-1.2.2.2.2.3
+::node	"Indian"	1.2.1.3.2.1	"Indian"	Indian
+::node	"Air"	1.2.1.3.2.2	"Air"	Air
+::node	"Force"	1.2.1.3.2.3	"Force"	Force
+::node	"India"	1.2.2.2.2.1.2.1	"India"	India
+::node	n4	1.2.1.3.2	name	
+::node	n3	1.2.1.2.2	name	
+::node	"Indian_Air_Force"	1.2.1.3.1	"Indian_Air_Force"	
+::node	c	1.2.1.2	company	
+::node	a	1.2.2.1	and	
+::node	m	1.2.1.3	military	
+::node	u	1.2.2.2	upgrade-02	upgrade
+::node	a	1.2.2.2.1	and	
+::node	a3	1.2.2.2.2.2	age-01	
+::node	r	1.2.1.1	research-institute	
+::node	f	1.2.2.2.2	fleet	fleet
+::node	c2	1.2.2.2.2.1	country	
+::node	a4	1.2.2.2.2.3	aircraft-type	aircraft
+::node	"and"	1.2.1.1.2.3	"and"	and
+::node	"Development"	1.2.1.1.2.4	"Development"	Development
+::node	"Organisation"	1.2.1.1.2.5	"Organisation"	Organisation
+::node	"N.R."	1.1.2.1	"N.R."	
+::node	"Mohanty"	1.1.2.2	"Mohanty"	Mohanty
+::node	"MiG-27M"	1.2.2.2.2.3.2.1	"MiG-27M"	MiG
+::node	"Defense"	1.2.1.1.2.1	"Defense"	Defense
+::node	"Research"	1.2.1.1.2.2	"Research"	Research
+::node	n	1.1.2	name	
+::node	a	1.2.1	and	and
+::node	s	1	state-01	stated
+::node	"Hindustan"	1.2.1.2.2.1	"Hindustan"	Hindustan
+::node	a2	1.2.2	agree-01	agreement
+::node	n2	1.2.1.1.2	name	
+::node	"Hindustan_Aeronautics_Limited"	1.2.1.2.1	"Hindustan_Aeronautics_Limited"	
+::node	"Defence_Research_and_Development_Organisation"	1.2.1.1.1	"Defence_Research_and_Development_Organisation"	
+::node	p	1.1	person	
+::node	"Mikoyan_MiG-27"	1.2.2.2.2.3.1	"Mikoyan_MiG-27"	
+::node	s2	1.2	sign-01	signed
+::node	n5	1.2.2.2.2.1.2	name	
+::node	"Aeronautics"	1.2.1.2.2.2	"Aeronautics"	Aeronautics
+::node	"Limited"	1.2.1.2.2.3	"Limited"	Limited
+::node	n6	1.2.2.2.2.3.2	name	
+::node	"India"	1.2.2.2.2.1.1	"India"	
+::node	-	1.1.1	-	
+::edge	1.2.1.3.2		name	:op1	1.2.1.3.2.1	Indian	"Indian"
+::edge	1.2.1.3.2		name	:op2	1.2.1.3.2.2	Air	"Air"
+::edge	1.2.1.3.2		name	:op3	1.2.1.3.2.3	Force	"Force"
+::edge	1.2.2.2.2.1.2		name	:op1	1.2.2.2.2.1.2.1	India	"India"
+::edge	1.2.1.3		military	:name	1.2.1.3.2		name
+::edge	1.2.1.2		company	:name	1.2.1.2.2		name
+::edge	1.2.1.3		military	:wiki	1.2.1.3.1		"Indian_Air_Force"
+::edge	1.2.1	and	and	:op2	1.2.1.2		company
+::edge	1.2.2	agreement	agree-01	:ARG0	1.2.2.1		and
+::edge	1.2.1	and	and	:op3	1.2.1.3		military
+::edge	1.2.2	agreement	agree-01	:ARG1	1.2.2.2	upgrade	upgrade-02
+::edge	1.2.2.2	upgrade	upgrade-02	:ARG0	1.2.2.2.1		and
+::edge	1.2.2.2.2	fleet	fleet	:ARG1-of	1.2.2.2.2.2		age-01
+::edge	1.2.1	and	and	:op1	1.2.1.1		research-institute
+::edge	1.2.2.2	upgrade	upgrade-02	:ARG1	1.2.2.2.2	fleet	fleet
+::edge	1.2.2.2.2	fleet	fleet	:poss	1.2.2.2.2.1		country
+::edge	1.2.2.2.2	fleet	fleet	:consist-of	1.2.2.2.2.3	aircraft	aircraft-type
+::edge	1.2.1.1.2		name	:op3	1.2.1.1.2.3	and	"and"
+::edge	1.2.1.1.2		name	:op4	1.2.1.1.2.4	Development	"Development"
+::edge	1.2.1.1.2		name	:op5	1.2.1.1.2.5	Organisation	"Organisation"
+::edge	1.1.2		name	:op1	1.1.2.1		"N.R."
+::edge	1.1.2		name	:op2	1.1.2.2	Mohanty	"Mohanty"
+::edge	1.2.2.2.2.3.2		name	:op1	1.2.2.2.2.3.2.1	MiG	"MiG-27M"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Defense	"Defense"
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	Research	"Research"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	signed	sign-01	:ARG0	1.2.1	and	and
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	Hindustan	"Hindustan"
+::edge	1.2	signed	sign-01	:ARG1	1.2.2	agreement	agree-01
+::edge	1.2.1.1		research-institute	:name	1.2.1.1.2		name
+::edge	1.2.1.2		company	:wiki	1.2.1.2.1		"Hindustan_Aeronautics_Limited"
+::edge	1.2.1.1		research-institute	:wiki	1.2.1.1.1		"Defence_Research_and_Development_Organisation"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.2.2.2.2.3	aircraft	aircraft-type	:wiki	1.2.2.2.2.3.1		"Mikoyan_MiG-27"
+::edge	1	stated	state-01	:ARG1	1.2	signed	sign-01
+::edge	1.2.2.2.2.1		country	:name	1.2.2.2.2.1.2		name
+::edge	1.2.1.2.2		name	:op2	1.2.1.2.2.2	Aeronautics	"Aeronautics"
+::edge	1.2.1.2.2		name	:op3	1.2.1.2.2.3	Limited	"Limited"
+::edge	1.2.2.2.2.3	aircraft	aircraft-type	:name	1.2.2.2.2.3.2		name
+::edge	1.2.2.2.2.1		country	:wiki	1.2.2.2.2.1.1		"India"
+::edge	1.1		person	:wiki	1.1.1		-
+7	N. R. Mohanty stated that the upgrade will be done soon as it has almost been finalised by the Defense Research and Development Organisation, Hindustan Aeronautics Limited and the Indian Air Force.
+7	N. R. Mohanty stated that the upgrade will be done soon as it has almost been finalised by the Defense Research and Development Organisation , Hindustan Aeronautics Limited and the Indian Air Force .
+7	2-1.1.2.2 3-1 4-1.2.r 6-1.2 9-1.2.2 10-1.2.2.1 11-1.2.2.1.r 14-1.2.1.2 19-1.2.1.1.1.2.1 20-1.2.1.1.1.2.2 21-1.2.1.1.1.2.3 22-1.2.1.1.1.2.4 23-1.2.1.1.1.2.5 25-1.2.1.1.2.2.1 26-1.2.1.1.2.2.2 27-1.2.1.1.2.2.3 28-1.2.1.1 30-1.2.1.1.3.2.2.1 31-1.2.1.1.3.1 32-1.2.1.1.3
+::node	"Defense"	1.2.1.1.1.2.1	"Defense"	Defense
+::node	"Research"	1.2.1.1.1.2.2	"Research"	Research
+::node	"and"	1.2.1.1.1.2.3	"and"	and
+::node	"Development"	1.2.1.1.1.2.4	"Development"	Development
+::node	"Organisation"	1.2.1.1.1.2.5	"Organisation"	Organisation
+::node	f2	1.2.1.1.3	force	Force
+::node	"Aeronautics"	1.2.1.1.2.2.2	"Aeronautics"	Aeronautics
+::node	"Hindustan"	1.2.1.1.2.2.1	"Hindustan"	Hindustan
+::node	a	1.2.1.2	almost	almost
+::node	s2	1.2.2.1	soon	soon
+::node	"Limited"	1.2.1.1.2.2.3	"Limited"	Limited
+::node	"India"	1.2.1.1.3.2.2.1	"India"	Indian
+::node	a2	1.2.1.1	and	and
+::node	c2	1.2.1.1.3.2	country	
+::node	"N.R."	1.1.2.1	"N.R."	
+::node	"Mohanty"	1.1.2.2	"Mohanty"	Mohanty
+::node	"Defence_Research_and_Development_Organisation"	1.2.1.1.1.1	"Defence_Research_and_Development_Organisation"	
+::node	n2	1.2.1.1.1.2	name	
+::node	"Hindustan_Aeronautics_Limited"	1.2.1.1.2.1	"Hindustan_Aeronautics_Limited"	
+::node	"India"	1.2.1.1.3.2.1	"India"	
+::node	n3	1.2.1.1.2.2	name	
+::node	a3	1.2.1.1.3.1	air	Air
+::node	n5	1.2.1.1.3.2.2	name	
+::node	n	1.1.2	name	
+::node	f	1.2.1	finalize-01	
+::node	s	1	state-01	stated
+::node	d	1.2.2	do-02	done
+::node	c	1.2.1.1.2	company	
+::node	r	1.2.1.1.1	research-institute	
+::node	p	1.1	person	
+::node	u	1.2	upgrade-02	upgrade
+::node	-	1.1.1	-	
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	Defense	"Defense"
+::edge	1.2.1.1.1.2		name	:op2	1.2.1.1.1.2.2	Research	"Research"
+::edge	1.2.1.1.1.2		name	:op3	1.2.1.1.1.2.3	and	"and"
+::edge	1.2.1.1.1.2		name	:op4	1.2.1.1.1.2.4	Development	"Development"
+::edge	1.2.1.1.1.2		name	:op5	1.2.1.1.1.2.5	Organisation	"Organisation"
+::edge	1.2.1.1	and	and	:op3	1.2.1.1.3	Force	force
+::edge	1.2.1.1.2.2		name	:op2	1.2.1.1.2.2.2	Aeronautics	"Aeronautics"
+::edge	1.2.1.1.2.2		name	:op1	1.2.1.1.2.2.1	Hindustan	"Hindustan"
+::edge	1.2.1		finalize-01	:mod	1.2.1.2	almost	almost
+::edge	1.2.2	done	do-02	:time	1.2.2.1	soon	soon
+::edge	1.2.1.1.2.2		name	:op3	1.2.1.1.2.2.3	Limited	"Limited"
+::edge	1.2.1.1.3.2.2		name	:op1	1.2.1.1.3.2.2.1	Indian	"India"
+::edge	1.2.1		finalize-01	:ARG0	1.2.1.1	and	and
+::edge	1.2.1.1.3	Force	force	:poss	1.2.1.1.3.2		country
+::edge	1.1.2		name	:op1	1.1.2.1		"N.R."
+::edge	1.1.2		name	:op2	1.1.2.2	Mohanty	"Mohanty"
+::edge	1.2.1.1.1		research-institute	:wiki	1.2.1.1.1.1		"Defence_Research_and_Development_Organisation"
+::edge	1.2.1.1.1		research-institute	:name	1.2.1.1.1.2		name
+::edge	1.2.1.1.2		company	:wiki	1.2.1.1.2.1		"Hindustan_Aeronautics_Limited"
+::edge	1.2.1.1.3.2		country	:wiki	1.2.1.1.3.2.1		"India"
+::edge	1.2.1.1.2		company	:name	1.2.1.1.2.2		name
+::edge	1.2.1.1.3	Force	force	:mod	1.2.1.1.3.1	Air	air
+::edge	1.2.1.1.3.2		country	:name	1.2.1.1.3.2.2		name
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	upgrade	upgrade-02	:ARG1-of	1.2.1		finalize-01
+::edge	1.2	upgrade	upgrade-02	:ARG1-of	1.2.2	done	do-02
+::edge	1.2.1.1	and	and	:op2	1.2.1.1.2		company
+::edge	1.2.1.1	and	and	:op1	1.2.1.1.1		research-institute
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	upgrade	upgrade-02
+::edge	1.1		person	:wiki	1.1.1		-
+8	N. R. Mohanty stated that initially 40 aircraft will be upgraded.
+8	N. R. Mohanty stated that initially 40 aircraft will be upgraded .
+8	2-1.1.2.2 3-1 4-1.2.r 5-1.2.2 6-1.2.1.1 7-1.2.1 10-1.2
+::node	n	1.1.2	name	
+::node	a	1.2.1	aircraft	aircraft
+::node	s	1	state-01	stated
+::node	i	1.2.2	initial	initially
+::node	"N.R."	1.1.2.1	"N.R."	
+::node	p	1.1	person	
+::node	"Mohanty"	1.1.2.2	"Mohanty"	Mohanty
+::node	u	1.2	upgrade-02	upgraded
+::node	40	1.2.1.1	40	40
+::node	-	1.1.1	-	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	upgraded	upgrade-02	:ARG1	1.2.1	aircraft	aircraft
+::edge	1.2	upgraded	upgrade-02	:time	1.2.2	initially	initial
+::edge	1.1.2		name	:op1	1.1.2.1		"N.R."
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.1.2		name	:op2	1.1.2.2	Mohanty	"Mohanty"
+::edge	1	stated	state-01	:ARG1	1.2	upgraded	upgrade-02
+::edge	1.2.1	aircraft	aircraft	:quant	1.2.1.1	40	40
+::edge	1.1		person	:wiki	1.1.1		-
+9	N. R. Mohanty stated that Hindustan Aeronautics Limited will receive 100 percent technology transfer to make the Sukhoi 30 MK fighter jet.
+9	N. R. Mohanty stated that Hindustan Aeronautics Limited will receive 100 percent technology transfer to make the Sukhoi 30 MK fighter jet .
+9	2-1.1.2.2 3-1 4-1.2.r 5-1.2.1.2.1 6-1.2.1.2.2 7-1.2.1.2.3 9-1.2 10-1.2.2.1.1.1 11-1.2.2.1.1 12-1.2.2.1 13-1.2.2 15-1.2.2.2 17-1.2.2.2.2.2.1 18-1.2.2.2.2.2.2 19-1.2.2.2.2.2.3 20-1.2.2.2.2.3 21-1.2.2.2.2
+::node	100	1.2.2.1.1.1	100	100
+::node	"Limited"	1.2.1.2.3	"Limited"	Limited
+::node	"Aeronautics"	1.2.1.2.2	"Aeronautics"	Aeronautics
+::node	n2	1.2.1.2	name	
+::node	t2	1.2.2.1	technology	technology
+::node	m	1.2.2.2	make-01	make
+::node	c	1.2.2.2.1	company	
+::node	n3	1.2.2.2.2.2	name	
+::node	"Hindustan_Aeronautics_Limited"	1.2.1.1	"Hindustan_Aeronautics_Limited"	
+::node	j	1.2.2.2.2	jet	jet
+::node	"Sukhoi_Su-30MKI"	1.2.2.2.2.1	"Sukhoi_Su-30MKI"	
+::node	f	1.2.2.2.2.3	fight-01	fighter
+::node	"N.R."	1.1.2.1	"N.R."	
+::node	p2	1.2.2.1.1	percentage-entity	percent
+::node	"Mohanty"	1.1.2.2	"Mohanty"	Mohanty
+::node	n	1.1.2	name	
+::node	c	1.2.1	company	
+::node	s	1	state-01	stated
+::node	t	1.2.2	transfer-01	transfer
+::node	"Hindustan"	1.2.1.2.1	"Hindustan"	Hindustan
+::node	p	1.1	person	
+::node	30	1.2.2.2.2.2.2	30	30
+::node	r	1.2	receive-01	receive
+::node	"Sukhoi"	1.2.2.2.2.2.1	"Sukhoi"	Sukhoi
+::node	"MK"	1.2.2.2.2.2.3	"MK"	MK
+::node	-	1.1.1	-	
+::edge	1.2.2.1.1	percent	percentage-entity	:value	1.2.2.1.1.1	100	100
+::edge	1.2.1.2		name	:op3	1.2.1.2.3	Limited	"Limited"
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	Aeronautics	"Aeronautics"
+::edge	1.2.1		company	:name	1.2.1.2		name
+::edge	1.2.2	transfer	transfer-01	:ARG1	1.2.2.1	technology	technology
+::edge	1.2.2	transfer	transfer-01	:purpose	1.2.2.2	make	make-01
+::edge	1.2.2.2	make	make-01	:ARG0	1.2.2.2.1		company
+::edge	1.2.2.2.2	jet	jet	:name	1.2.2.2.2.2		name
+::edge	1.2.1		company	:wiki	1.2.1.1		"Hindustan_Aeronautics_Limited"
+::edge	1.2.2.2	make	make-01	:ARG1	1.2.2.2.2	jet	jet
+::edge	1.2.2.2.2	jet	jet	:wiki	1.2.2.2.2.1		"Sukhoi_Su-30MKI"
+::edge	1.2.2.2.2	jet	jet	:ARG0-of	1.2.2.2.2.3	fighter	fight-01
+::edge	1.1.2		name	:op1	1.1.2.1		"N.R."
+::edge	1.2.2.1	technology	technology	:quant	1.2.2.1.1	percent	percentage-entity
+::edge	1.1.2		name	:op2	1.1.2.2	Mohanty	"Mohanty"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	receive	receive-01	:ARG0	1.2.1		company
+::edge	1.2	receive	receive-01	:ARG1	1.2.2	transfer	transfer-01
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Hindustan	"Hindustan"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.2.2.2.2.2		name	:op2	1.2.2.2.2.2.2	30	30
+::edge	1	stated	state-01	:ARG1	1.2	receive	receive-01
+::edge	1.2.2.2.2.2		name	:op1	1.2.2.2.2.2.1	Sukhoi	"Sukhoi"
+::edge	1.2.2.2.2.2		name	:op3	1.2.2.2.2.2.3	MK	"MK"
+::edge	1.1		person	:wiki	1.1.1		-
+10	N. R. Mohanty stated that this technology transfer is good because when an aircraft is sold at a cheap rate you end up paying more when you start maintaining the aircraft and requesting spare aircraft.
+10	N. R. Mohanty stated that this technology transfer is good because when an aircraft is sold at a cheap rate you end up paying more when you start maintaining the aircraft and requesting spare aircraft .
+10	2-1.1.2.2 3-1 4-1.2.r 5-1.2.1.2 6-1.2.1.1 7-1.2.1 8-1.2.1.r 9-1.2 10-1.2.2 11-1.2.2.1.2.4.r 13-1.2.2.1.2.3.1 15-1.2.2.1.2.3 16-1.2.2.1.2.3.2.r 18-1.2.2.1.2.3.2.1 19-1.2.2.1.2.3.2 20-1.2.2.1.1 21-1.2.2.1 22-1.2.2.1 23-1.2.2.1.2 24-1.2.2.1.2.2 25-1.2.2.1.2.4.r 26-1.2.2.1.2.4.1 27-1.2.2.1.2.4 28-1.2.2.1.2.4.2.1 30-1.2.2.1.2.4.2.2.2 31-1.2.2.1.2.4.2 32-1.2.2.1.2.4.2.2 33-1.2.2.1.2.4.2.2.2.1 34-1.2.2.1.2.4.2.2.2
+::node	a3	1.2.2.1.2.4.2.2.2	aircraft	aircraft
+::node	y	1.2.2.1.2.4.2.1.1	you	
+::node	a	1.2.2.1.2.4.2.1.2	aircraft	
+::node	y	1.2.2.1.2.4.2.2.1	you	
+::node	y	1.2.2.1.2.1	you	
+::node	s3	1.2.2.1.2.4	start-01	start
+::node	m	1.2.2.1.2.2	more	more
+::node	s2	1.2.2.1.2.3	sell-01	sold
+::node	t3	1.2.1.2	this	this
+::node	e	1.2.2.1	end-03	up
+::node	p2	1.2.2.1.2	pay-01	paying
+::node	t2	1.2.1.1	technology	technology
+::node	a2	1.2.2.1.2.4.2	and	and
+::node	r	1.2.2.1.2.3.2	rate	rate
+::node	y	1.2.2.1.2.4.1	you	you
+::node	a	1.2.2.1.2.3.1	aircraft	aircraft
+::node	"N.R."	1.1.2.1	"N.R."	
+::node	y	1.2.2.1.1	you	you
+::node	"Mohanty"	1.1.2.2	"Mohanty"	Mohanty
+::node	s4	1.2.2.1.2.4.2.2.2.1	spare-02	spare
+::node	c2	1.2.2.1.2.3.2.1	cheap	cheap
+::node	n	1.1.2	name	
+::node	t	1.2.1	transfer-01	transfer
+::node	s	1	state-01	stated
+::node	c	1.2.2	cause-01	because
+::node	p	1.1	person	
+::node	g	1.2	good	good
+::node	r2	1.2.2.1.2.4.2.2	request-01	requesting
+::node	-	1.1.1	-	
+::node	m2	1.2.2.1.2.4.2.1	maintain-01	maintaining
+::edge	1.2.2.1.2.4.2.2	requesting	request-01	:ARG1	1.2.2.1.2.4.2.2.2	aircraft	aircraft
+::edge	1.2.2.1.2.4.2.1	maintaining	maintain-01	:ARG0	1.2.2.1.2.4.2.1.1		you
+::edge	1.2.2.1.2.4.2.1	maintaining	maintain-01	:ARG1	1.2.2.1.2.4.2.1.2		aircraft
+::edge	1.2.2.1.2.4.2.2	requesting	request-01	:ARG0	1.2.2.1.2.4.2.2.1		you
+::edge	1.2.2.1.2	paying	pay-01	:ARG0	1.2.2.1.2.1		you
+::edge	1.2.2.1.2	paying	pay-01	:time	1.2.2.1.2.4	start	start-01
+::edge	1.2.2.1.2	paying	pay-01	:ARG1	1.2.2.1.2.2	more	more
+::edge	1.2.2.1.2	paying	pay-01	:condition	1.2.2.1.2.3	sold	sell-01
+::edge	1.2.1	transfer	transfer-01	:mod	1.2.1.2	this	this
+::edge	1.2.2	because	cause-01	:ARG0	1.2.2.1	up	end-03
+::edge	1.2.2.1	up	end-03	:ARG2	1.2.2.1.2	paying	pay-01
+::edge	1.2.1	transfer	transfer-01	:ARG1	1.2.1.1	technology	technology
+::edge	1.2.2.1.2.4	start	start-01	:ARG1	1.2.2.1.2.4.2	and	and
+::edge	1.2.2.1.2.3	sold	sell-01	:ARG3	1.2.2.1.2.3.2	rate	rate
+::edge	1.2.2.1.2.4	start	start-01	:ARG0	1.2.2.1.2.4.1	you	you
+::edge	1.2.2.1.2.3	sold	sell-01	:ARG1	1.2.2.1.2.3.1	aircraft	aircraft
+::edge	1.1.2		name	:op1	1.1.2.1		"N.R."
+::edge	1.2.2.1	up	end-03	:ARG1	1.2.2.1.1	you	you
+::edge	1.1.2		name	:op2	1.1.2.2	Mohanty	"Mohanty"
+::edge	1.2.2.1.2.4.2.2.2	aircraft	aircraft	:ARG1-of	1.2.2.1.2.4.2.2.2.1	spare	spare-02
+::edge	1.2.2.1.2.3.2	rate	rate	:mod	1.2.2.1.2.3.2.1	cheap	cheap
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	good	good	:domain	1.2.1	transfer	transfer-01
+::edge	1.2	good	good	:ARG1-of	1.2.2	because	cause-01
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	good	good
+::edge	1.2.2.1.2.4.2	and	and	:op2	1.2.2.1.2.4.2.2	requesting	request-01
+::edge	1.1		person	:wiki	1.1.1		-
+::edge	1.2.2.1.2.4.2	and	and	:op1	1.2.2.1.2.4.2.1	maintaining	maintain-01
+11	Hindustan Aeronautics Limited plans to begin making the Sukhoi 30 MK fighter jet in 030000 and the first aircraft will be handed over to the Indian Air Force by 040000.
+11	Hindustan Aeronautics Limited plans to begin making the Sukhoi 30 MK fighter jet in 030000 and the first aircraft will be handed over to the Indian Air Force by 040000 .
+11	0-1.1.1.2.1 1-1.1.1.2.2 2-1.1.1.2.3 3-1.1 5-1.1.2 6-1.1.2.2 8-1.1.2.2.2.2.1 9-1.1.2.2.2.2.2 10-1.1.2.2.2.2.3 11-1.1.2.2.2.3 12-1.1.2.2.2 13-1.1.2.3.r 14-1.1.2.3 14-1.1.2.3.1 14-1.1.2.3.1.r 15-1 17-1.2.2.1 17-1.2.2.1.1 17-1.2.2.1.1.r 18-1.2.2 21-1.2 22-1.2 23-1.2.3.r 25-1.2.3.2.1 26-1.2.3.2.2 27-1.2.3.2.3 28-1.2.4 29-1.2.4.1 29-1.2.4.1.1 29-1.2.4.1.1.r
+::node	c	1.1.2.2.1	company	
+::node	n2	1.1.2.2.2.2	name	
+::node	30	1.1.2.2.2.2.2	30	30
+::node	"MK"	1.1.2.2.2.2.3	"MK"	MK
+::node	f2	1.1.2.2.2.3	fight-01	fighter
+::node	"Sukhoi_Su-30MKI"	1.1.2.2.2.1	"Sukhoi_Su-30MKI"	
+::node	"Aeronautics"	1.1.1.2.2	"Aeronautics"	Aeronautics
+::node	n3	1.2.3.2	name	
+::node	d2	1.2.4.1	date-entity	040000
+::node	"Hindustan"	1.1.1.2.1	"Hindustan"	Hindustan
+::node	o	1.2.2.1	ordinal-entity	first
+::node	"Indian_Air_Force"	1.2.3.1	"Indian_Air_Force"	
+::node	"Sukhoi"	1.1.2.2.2.2.1	"Sukhoi"	Sukhoi
+::node	"Hindustan_Aeronautics_Limited"	1.1.1.1	"Hindustan_Aeronautics_Limited"	
+::node	n	1.1.1.2	name	
+::node	c	1.1.2.1	company	
+::node	1	1.2.2.1.1	1	first
+::node	m	1.1.2.2	make-01	making
+::node	d	1.1.2.3	date-entity	030000
+::node	"Limited"	1.1.1.2.3	"Limited"	Limited
+::node	"Air"	1.2.3.2.2	"Air"	Air
+::node	"Force"	1.2.3.2.3	"Force"	Force
+::node	"Indian"	1.2.3.2.1	"Indian"	Indian
+::node	b	1.1.2	begin-01	begin
+::node	c	1.2.1	company	
+::node	a2	1	and	and
+::node	a3	1.2.2	aircraft	aircraft
+::node	m2	1.2.3	military	
+::node	b2	1.2.4	by	by
+::node	p	1.1	plan-01	plans
+::node	j	1.1.2.2.2	jet	jet
+::node	2003	1.1.2.3.1	2003	030000
+::node	h	1.2	hand-02	over
+::node	2004	1.2.4.1.1	2004	040000
+::node	c	1.1.1	company	
+::edge	1.1.2.2	making	make-01	:ARG0	1.1.2.2.1		company
+::edge	1.1.2.2.2	jet	jet	:name	1.1.2.2.2.2		name
+::edge	1.1.2.2.2.2		name	:op2	1.1.2.2.2.2.2	30	30
+::edge	1.1.2.2.2.2		name	:op3	1.1.2.2.2.2.3	MK	"MK"
+::edge	1.1.2.2.2	jet	jet	:ARG0-of	1.1.2.2.2.3	fighter	fight-01
+::edge	1.1.2.2.2	jet	jet	:wiki	1.1.2.2.2.1		"Sukhoi_Su-30MKI"
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Aeronautics	"Aeronautics"
+::edge	1.2.3		military	:name	1.2.3.2		name
+::edge	1.2.4	by	by	:op1	1.2.4.1	040000	date-entity
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Hindustan	"Hindustan"
+::edge	1.2.2	aircraft	aircraft	:ord	1.2.2.1	first	ordinal-entity
+::edge	1.2.3		military	:wiki	1.2.3.1		"Indian_Air_Force"
+::edge	1.1.2.2.2.2		name	:op1	1.1.2.2.2.2.1	Sukhoi	"Sukhoi"
+::edge	1.1.1		company	:wiki	1.1.1.1		"Hindustan_Aeronautics_Limited"
+::edge	1.1.1		company	:name	1.1.1.2		name
+::edge	1.1.2	begin	begin-01	:ARG0	1.1.2.1		company
+::edge	1.2.2.1	first	ordinal-entity	:value	1.2.2.1.1	first	1
+::edge	1.1.2	begin	begin-01	:ARG1	1.1.2.2	making	make-01
+::edge	1.1.2	begin	begin-01	:time	1.1.2.3	030000	date-entity
+::edge	1.1.1.2		name	:op3	1.1.1.2.3	Limited	"Limited"
+::edge	1.2.3.2		name	:op2	1.2.3.2.2	Air	"Air"
+::edge	1.2.3.2		name	:op3	1.2.3.2.3	Force	"Force"
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	Indian	"Indian"
+::edge	1.1	plans	plan-01	:ARG1	1.1.2	begin	begin-01
+::edge	1.2	over	hand-02	:ARG0	1.2.1		company
+::edge	1.2	over	hand-02	:ARG1	1.2.2	aircraft	aircraft
+::edge	1.2	over	hand-02	:ARG2	1.2.3		military
+::edge	1.2	over	hand-02	:time	1.2.4	by	by
+::edge	1	and	and	:op1	1.1	plans	plan-01
+::edge	1.1.2.2	making	make-01	:ARG1	1.1.2.2.2	jet	jet
+::edge	1.1.2.3	030000	date-entity	:year	1.1.2.3.1	030000	2003
+::edge	1	and	and	:op2	1.2	over	hand-02
+::edge	1.2.4.1	040000	date-entity	:year	1.2.4.1.1	040000	2004
+::edge	1.1	plans	plan-01	:ARG0	1.1.1		company
+12	N. R. Mohanty stated that the manufacture of all the 140 Sukhoi 30 MK fighter jets will be completed by 170000.
+12	N. R. Mohanty stated that the manufacture of all the 140 Sukhoi 30 MK fighter jets will be completed by 170000 .
+12	2-1.1.2.2 3-1 4-1.2.r 6-1.2.1 7-1.2.1.1.r 8-1.2.1.1 10-1.2.1.1.1.1 11-1.2.1.1.1.3.1 12-1.2.1.1.1.3.2 13-1.2.1.1.1.3.3 14-1.2.1.1.1.4 15-1.2.1.1.1 18-1.2 19-1.2.2 20-1.2.2.1 20-1.2.2.1.1 20-1.2.2.1.1.r
+::node	f	1.2.1.1.1.4	fight-01	fighter
+::node	"Sukhoi"	1.2.1.1.1.3.1	"Sukhoi"	Sukhoi
+::node	"N.R."	1.1.2.1	"N.R."	
+::node	30	1.2.1.1.1.3.2	30	30
+::node	2017	1.2.2.1.1	2017	170000
+::node	"Mohanty"	1.1.2.2	"Mohanty"	Mohanty
+::node	140	1.2.1.1.1.1	140	140
+::node	"Sukhoi_Su-30MKI"	1.2.1.1.1.2	"Sukhoi_Su-30MKI"	
+::node	n2	1.2.1.1.1.3	name	
+::node	"MK"	1.2.1.1.1.3.3	"MK"	MK
+::node	n	1.1.2	name	
+::node	m	1.2.1	manufacture-01	manufacture
+::node	s	1	state-01	stated
+::node	b	1.2.2	by	by
+::node	j	1.2.1.1.1	jet	jets
+::node	p	1.1	person	
+::node	c	1.2	complete-01	completed
+::node	d	1.2.2.1	date-entity	170000
+::node	a	1.2.1.1	all	all
+::node	-	1.1.1	-	
+::edge	1.2.1.1.1	jets	jet	:ARG0-of	1.2.1.1.1.4	fighter	fight-01
+::edge	1.2.1.1.1.3		name	:op1	1.2.1.1.1.3.1	Sukhoi	"Sukhoi"
+::edge	1.1.2		name	:op1	1.1.2.1		"N.R."
+::edge	1.2.1.1.1.3		name	:op2	1.2.1.1.1.3.2	30	30
+::edge	1.2.2.1	170000	date-entity	:year	1.2.2.1.1	170000	2017
+::edge	1.1.2		name	:op2	1.1.2.2	Mohanty	"Mohanty"
+::edge	1.2.1.1.1	jets	jet	:quant	1.2.1.1.1.1	140	140
+::edge	1.2.1.1.1	jets	jet	:wiki	1.2.1.1.1.2		"Sukhoi_Su-30MKI"
+::edge	1.2.1.1.1	jets	jet	:name	1.2.1.1.1.3		name
+::edge	1.2.1.1.1.3		name	:op3	1.2.1.1.1.3.3	MK	"MK"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	completed	complete-01	:ARG1	1.2.1	manufacture	manufacture-01
+::edge	1.2	completed	complete-01	:time	1.2.2	by	by
+::edge	1.2.1.1	all	all	:op1	1.2.1.1.1	jets	jet
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	completed	complete-01
+::edge	1.2.2	by	by	:op1	1.2.2.1	170000	date-entity
+::edge	1.2.1	manufacture	manufacture-01	:ARG1	1.2.1.1	all	all
+::edge	1.1		person	:wiki	1.1.1		-
+13	N. R. Mohanty stated that Hindustan Aeronautics Limited will also manufacture the 920 engines for the Sukhoi 30 MK fighter jets.
+13	N. R. Mohanty stated that Hindustan Aeronautics Limited will also manufacture the 920 engines for the Sukhoi 30 MK fighter jets .
+13	2-1.1.2.2 3-1 4-1.2.r 5-1.2.1.2.1 6-1.2.1.2.2 7-1.2.1.2.3 9-1.2.4 10-1.2 12-1.2.2.1 13-1.2.2 14-1.2.3.r 16-1.2.3.2.1 17-1.2.3.2.2 18-1.2.3.2.3 19-1.2.3.3 20-1.2.3
+::node	"N.R."	1.1.2.1	"N.R."	
+::node	"Mohanty"	1.1.2.2	"Mohanty"	Mohanty
+::node	30	1.2.3.2.2	30	30
+::node	"MK"	1.2.3.2.3	"MK"	MK
+::node	"Sukhoi"	1.2.3.2.1	"Sukhoi"	Sukhoi
+::node	"Limited"	1.2.1.2.3	"Limited"	Limited
+::node	"Aeronautics"	1.2.1.2.2	"Aeronautics"	Aeronautics
+::node	n	1.1.2	name	
+::node	c	1.2.1	company	
+::node	s	1	state-01	stated
+::node	e	1.2.2	engine	engines
+::node	"Hindustan"	1.2.1.2.1	"Hindustan"	Hindustan
+::node	j	1.2.3	jet	jets
+::node	a	1.2.4	also	also
+::node	p	1.1	person	
+::node	m	1.2	manufacture-01	manufacture
+::node	n2	1.2.3.2	name	
+::node	f	1.2.3.3	fight-01	fighter
+::node	n3	1.2.1.2	name	
+::node	920	1.2.2.1	920	920
+::node	"Sukhoi_Su-30MKI"	1.2.3.1	"Sukhoi_Su-30MKI"	
+::node	"Hindustan_Aeronautics_Limited"	1.2.1.1	"Hindustan_Aeronautics_Limited"	
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1		"N.R."
+::edge	1.1.2		name	:op2	1.1.2.2	Mohanty	"Mohanty"
+::edge	1.2.3.2		name	:op2	1.2.3.2.2	30	30
+::edge	1.2.3.2		name	:op3	1.2.3.2.3	MK	"MK"
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	Sukhoi	"Sukhoi"
+::edge	1.2.1.2		name	:op3	1.2.1.2.3	Limited	"Limited"
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	Aeronautics	"Aeronautics"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	manufacture	manufacture-01	:ARG0	1.2.1		company
+::edge	1.2	manufacture	manufacture-01	:ARG1	1.2.2	engines	engine
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Hindustan	"Hindustan"
+::edge	1.2	manufacture	manufacture-01	:ARG3	1.2.3	jets	jet
+::edge	1.2	manufacture	manufacture-01	:mod	1.2.4	also	also
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	manufacture	manufacture-01
+::edge	1.2.3	jets	jet	:name	1.2.3.2		name
+::edge	1.2.3	jets	jet	:purpose	1.2.3.3	fighter	fight-01
+::edge	1.2.1		company	:name	1.2.1.2		name
+::edge	1.2.2	engines	engine	:quant	1.2.2.1	920	920
+::edge	1.2.3	jets	jet	:wiki	1.2.3.1		"Sukhoi_Su-30MKI"
+::edge	1.2.1		company	:wiki	1.2.1.1		"Hindustan_Aeronautics_Limited"
+::edge	1.1		person	:wiki	1.1.1		-
+14	The initial investment will be 650 million United States dollars.
+14	The initial investment will be 650 million United States dollars .
+14	1-1.2 2-1 5-1.1.1 6-1.1.1 7-1.1.2.1.2.1 8-1.1.2.1.2.2 9-1.1.2
+::node	d	1.1.2	dollar	dollars
+::node	i	1	invest-01	investment
+::node	c	1.1.2.1	country	
+::node	m	1.1	monetary-quantity	
+::node	"United"	1.1.2.1.2.1	"United"	United
+::node	"States"	1.1.2.1.2.2	"States"	States
+::node	i2	1.2	initial	initial
+::node	n	1.1.2.1.2	name	
+::node	"United_States"	1.1.2.1.1	"United_States"	
+::node	650000000	1.1.1	650000000	million
+::edge	1.1		monetary-quantity	:unit	1.1.2	dollars	dollar
+::edge	1.1.2	dollars	dollar	:mod	1.1.2.1		country
+::edge	1	investment	invest-01	:ARG1	1.1		monetary-quantity
+::edge	1.1.2.1.2		name	:op1	1.1.2.1.2.1	United	"United"
+::edge	1.1.2.1.2		name	:op2	1.1.2.1.2.2	States	"States"
+::edge	1	investment	invest-01	:mod	1.2	initial	initial
+::edge	1.1.2.1		country	:name	1.1.2.1.2		name
+::edge	1.1.2.1		country	:wiki	1.1.2.1.1		"United_States"
+::edge	1.1		monetary-quantity	:quant	1.1.1	million	650000000
+15	150 million United States dollars of the initial investment will be earmarked for capital investment.
+15	150 million United States dollars of the initial investment will be earmarked for capital investment .
+15	0-1.1.1.1 1-1.1.1.1 2-1.1.1.2.1.2.1 3-1.1.1.2.1.2.2 4-1.1.1.2 7-1.1.2.1 8-1.1.2 11-1 12-1.2.r 13-1.2.1 14-1.2
+::node	"States"	1.1.1.2.1.2.2	"States"	States
+::node	150000000	1.1.1.1	150000000	million
+::node	d	1.1.1.2	dollar	dollars
+::node	"United"	1.1.1.2.1.2.1	"United"	United
+::node	i3	1.1.2.1	initial	initial
+::node	n	1.1.1.2.1.2	name	
+::node	"United_States"	1.1.1.2.1.1	"United_States"	
+::node	i2	1.1.2	invest-01	investment
+::node	c2	1.2.1	capital	capital
+::node	e	1	earmark-01	earmarked
+::node	i	1.1	include-91	
+::node	i4	1.2	invest-01	investment
+::node	c	1.1.1.2.1	country	
+::node	m	1.1.1	monetary-quantity	
+::edge	1.1.1.2.1.2		name	:op2	1.1.1.2.1.2.2	States	"States"
+::edge	1.1.1		monetary-quantity	:quant	1.1.1.1	million	150000000
+::edge	1.1.1		monetary-quantity	:unit	1.1.1.2	dollars	dollar
+::edge	1.1.1.2.1.2		name	:op1	1.1.1.2.1.2.1	United	"United"
+::edge	1.1.2	investment	invest-01	:mod	1.1.2.1	initial	initial
+::edge	1.1.1.2.1		country	:name	1.1.1.2.1.2		name
+::edge	1.1.1.2.1		country	:wiki	1.1.1.2.1.1		"United_States"
+::edge	1.1		include-91	:ARG2	1.1.2	investment	invest-01
+::edge	1.2	investment	invest-01	:mod	1.2.1	capital	capital
+::edge	1	earmarked	earmark-01	:ARG1	1.1		include-91
+::edge	1	earmarked	earmark-01	:ARG2	1.2	investment	invest-01
+::edge	1.1.1.2	dollars	dollar	:mod	1.1.1.2.1		country
+::edge	1.1		include-91	:ARG1	1.1.1		monetary-quantity
+16	N. R. Mohanty stated that Hindustan Aeronautics Limited will fund the initial investment from Hindustan Aeronautics Limited's own resources and the 500 million United States dollars needed for tooling, other equipment and technical assistance will be raised when Hindustan Aeronautics Limited needs it.
+16	N. R. Mohanty stated that Hindustan Aeronautics Limited will fund the initial investment from Hindustan Aeronautics Limited 's own resources and the 500 million United States dollars needed for tooling , other equipment and technical assistance will be raised when Hindustan Aeronautics Limited needs it .
+16	2-1.1.2.2 3-1 4-1.2.r 5-1.2.1.1.2.1 6-1.2.1.1.2.2 7-1.2.1.1.2.3 9-1.2.1 11-1.2.1.2.1 12-1.2.1.2 13-1.2.1.3.r 14-1.2.1.3.1 15-1.2.1.3.1 16-1.2.1.3.1 17-1.2.1.3.1.r 19-1.2.1.3 20-1.2 22-1.2.2.1.1 23-1.2.2.1.1 24-1.2.2.1.2.1.2.1 25-1.2.2.1.2.1.2.2 26-1.2.2.1.2 27-1.2.2.1.3 28-1.2.2.1.3.1.r 29-1.2.2.1.3.1.1 31-1.2.2.1.3.1.2.1 32-1.2.2.1.3.1.2 33-1.2.2.1.3.1 34-1.2.2.1.3.1.3.1 35-1.2.2.1.3.1.3 38-1.2.2 39-1.2.2.2.r 40-1.2.2.2.1 41-1.2.2.2.1 42-1.2.2.2.1 43-1.2.2.2
+::node	c2	1.2.2.1.2.1	country	
+::node	"States"	1.2.2.1.2.1.2.2	"States"	States
+::node	c	1.2.1.3.1	company	Limited
+::node	"United"	1.2.2.1.2.1.2.1	"United"	United
+::node	a2	1.2.2.1.3.1	and	and
+::node	n4	1.2.2.1.2.1.2	name	
+::node	"United_States"	1.2.2.1.2.1.1	"United_States"	
+::node	i	1.2.1.2	invest-01	investment
+::node	m	1.2.2.1	monetary-quantity	
+::node	r	1.2.1.3	resource	resources
+::node	n3	1.2.2.2	need-01	needs
+::node	d	1.2.2.1.2	dollar	dollars
+::node	c	1.2.2.2.1	company	Limited
+::node	c	1.2.1.1	company	
+::node	n5	1.2.2.1.3	need-01	needed
+::node	m	1.2.2.2.2	monetary-quantity	
+::node	"Limited"	1.2.1.1.2.3	"Limited"	Limited
+::node	t	1.2.2.1.3.1.1	tool	tooling
+::node	t2	1.2.2.1.3.1.3.1	technical	technical
+::node	"N.R."	1.1.2.1	"N.R."	
+::node	500000000	1.2.2.1.1	500000000	million
+::node	"Mohanty"	1.1.2.2	"Mohanty"	Mohanty
+::node	"Hindustan"	1.2.1.1.2.1	"Hindustan"	Hindustan
+::node	o	1.2.2.1.3.1.2.1	other	other
+::node	"Aeronautics"	1.2.1.1.2.2	"Aeronautics"	Aeronautics
+::node	a3	1.2.2.1.3.1.3	assist-01	assistance
+::node	e	1.2.2.1.3.1.2	equipment	equipment
+::node	n	1.1.2	name	
+::node	f	1.2.1	fund-01	fund
+::node	s	1	state-01	stated
+::node	r2	1.2.2	raise-02	raised
+::node	n2	1.2.1.1.2	name	
+::node	i2	1.2.1.2.1	initial	initial
+::node	"Hindustan_Aeronautics_Limited"	1.2.1.1.1	"Hindustan_Aeronautics_Limited"	
+::node	p	1.1	person	
+::node	a	1.2	and	and
+::node	-	1.1.1	-	
+::edge	1.2.2.1.2	dollars	dollar	:mod	1.2.2.1.2.1		country
+::edge	1.2.2.1.2.1.2		name	:op2	1.2.2.1.2.1.2.2	States	"States"
+::edge	1.2.1.3	resources	resource	:poss	1.2.1.3.1	Limited	company
+::edge	1.2.2.1.2.1.2		name	:op1	1.2.2.1.2.1.2.1	United	"United"
+::edge	1.2.2.1.3	needed	need-01	:purpose	1.2.2.1.3.1	and	and
+::edge	1.2.2.1.2.1		country	:name	1.2.2.1.2.1.2		name
+::edge	1.2.2.1.2.1		country	:wiki	1.2.2.1.2.1.1		"United_States"
+::edge	1.2.1	fund	fund-01	:ARG1	1.2.1.2	investment	invest-01
+::edge	1.2.2	raised	raise-02	:ARG1	1.2.2.1		monetary-quantity
+::edge	1.2.1	fund	fund-01	:ARG2	1.2.1.3	resources	resource
+::edge	1.2.2	raised	raise-02	:time	1.2.2.2	needs	need-01
+::edge	1.2.2.1		monetary-quantity	:unit	1.2.2.1.2	dollars	dollar
+::edge	1.2.2.2	needs	need-01	:ARG0	1.2.2.2.1	Limited	company
+::edge	1.2.1	fund	fund-01	:ARG0	1.2.1.1		company
+::edge	1.2.2.1		monetary-quantity	:ARG1-of	1.2.2.1.3	needed	need-01
+::edge	1.2.2.2	needs	need-01	:ARG1	1.2.2.2.2		monetary-quantity
+::edge	1.2.1.1.2		name	:op3	1.2.1.1.2.3	Limited	"Limited"
+::edge	1.2.2.1.3.1	and	and	:op1	1.2.2.1.3.1.1	tooling	tool
+::edge	1.2.2.1.3.1.3	assistance	assist-01	:mod	1.2.2.1.3.1.3.1	technical	technical
+::edge	1.1.2		name	:op1	1.1.2.1		"N.R."
+::edge	1.2.2.1		monetary-quantity	:quant	1.2.2.1.1	million	500000000
+::edge	1.1.2		name	:op2	1.1.2.2	Mohanty	"Mohanty"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Hindustan	"Hindustan"
+::edge	1.2.2.1.3.1.2	equipment	equipment	:mod	1.2.2.1.3.1.2.1	other	other
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	Aeronautics	"Aeronautics"
+::edge	1.2.2.1.3.1	and	and	:op3	1.2.2.1.3.1.3	assistance	assist-01
+::edge	1.2.2.1.3.1	and	and	:op2	1.2.2.1.3.1.2	equipment	equipment
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1	fund	fund-01
+::edge	1.2	and	and	:op2	1.2.2	raised	raise-02
+::edge	1.2.1.1		company	:name	1.2.1.1.2		name
+::edge	1.2.1.2	investment	invest-01	:mod	1.2.1.2.1	initial	initial
+::edge	1.2.1.1		company	:wiki	1.2.1.1.1		"Hindustan_Aeronautics_Limited"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	and	and
+::edge	1.1		person	:wiki	1.1.1		-
+17	Hindustan Aeronautics Limited has paid a licence fee of 286 million United States dollars to Russia to be able to make the Sukhoi 30 MK fighter jets.
+17	Hindustan Aeronautics Limited has paid a licence fee of 286 million United States dollars to Russia to be able to make the Sukhoi 30 MK fighter jets .
+17	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 4-1 7-1.2 8-1.2.1.r 9-1.2.1.1 10-1.2.1.1 11-1.2.1.2.1.2.1 12-1.2.1.2.1.2.2 13-1.2.1.2 14-1.3.r 15-1.3.2.1 16-1.4.r 17-1.4.1.r 18-1.4 20-1.4.1 22-1.4.1.2.2.1 23-1.4.1.2.2.2 24-1.4.1.2.2.3 25-1.4.1.2.3 26-1.4.1.2
+::node	"Russia"	1.3.2.1	"Russia"	Russia
+::node	n4	1.4.1.2.2	name	
+::node	f2	1.4.1.2.3	fight-01	fighter
+::node	d	1.2.1.2	dollar	dollars
+::node	"Sukhoi_Su-30MKI"	1.4.1.2.1	"Sukhoi_Su-30MKI"	
+::node	286000000	1.2.1.1	286000000	million
+::node	"Hindustan"	1.1.2.1	"Hindustan"	Hindustan
+::node	"Aeronautics"	1.1.2.2	"Aeronautics"	Aeronautics
+::node	"Limited"	1.1.2.3	"Limited"	Limited
+::node	"States"	1.2.1.2.1.2.2	"States"	States
+::node	"United"	1.2.1.2.1.2.1	"United"	United
+::node	n	1.1.2	name	
+::node	m	1.2.1	monetary-quantity	
+::node	"United_States"	1.2.1.2.1.1	"United_States"	
+::node	p	1	pay-01	paid
+::node	n2	1.2.1.2.1.2	name	
+::node	l	1.2.2	license-01	
+::node	"Russia"	1.3.1	"Russia"	
+::node	c2	1.2.1.2.1	country	
+::node	n3	1.3.2	name	
+::node	m2	1.4.1	make-01	make
+::node	c	1.1	company	
+::node	f	1.2	fee	fee
+::node	c3	1.3	country	
+::node	p2	1.4	possible	able
+::node	j	1.4.1.2	jet	jets
+::node	"MK"	1.4.1.2.2.3	"MK"	MK
+::node	30	1.4.1.2.2.2	30	30
+::node	"Sukhoi"	1.4.1.2.2.1	"Sukhoi"	Sukhoi
+::node	"Hindustan_Aeronautics_Limited"	1.1.1	"Hindustan_Aeronautics_Limited"	
+::node	c	1.4.1.1	company	
+::edge	1.3.2		name	:op1	1.3.2.1	Russia	"Russia"
+::edge	1.4.1.2	jets	jet	:name	1.4.1.2.2		name
+::edge	1.4.1.2	jets	jet	:purpose	1.4.1.2.3	fighter	fight-01
+::edge	1.2.1		monetary-quantity	:unit	1.2.1.2	dollars	dollar
+::edge	1.4.1.2	jets	jet	:wiki	1.4.1.2.1		"Sukhoi_Su-30MKI"
+::edge	1.2.1		monetary-quantity	:quant	1.2.1.1	million	286000000
+::edge	1.1.2		name	:op1	1.1.2.1	Hindustan	"Hindustan"
+::edge	1.1.2		name	:op2	1.1.2.2	Aeronautics	"Aeronautics"
+::edge	1.1.2		name	:op3	1.1.2.3	Limited	"Limited"
+::edge	1.2.1.2.1.2		name	:op2	1.2.1.2.1.2.2	States	"States"
+::edge	1.2.1.2.1.2		name	:op1	1.2.1.2.1.2.1	United	"United"
+::edge	1.1		company	:name	1.1.2		name
+::edge	1.2	fee	fee	:consist-of	1.2.1		monetary-quantity
+::edge	1.2.1.2.1		country	:wiki	1.2.1.2.1.1		"United_States"
+::edge	1.2.1.2.1		country	:name	1.2.1.2.1.2		name
+::edge	1.2	fee	fee	:purpose	1.2.2		license-01
+::edge	1.3		country	:wiki	1.3.1		"Russia"
+::edge	1.2.1.2	dollars	dollar	:mod	1.2.1.2.1		country
+::edge	1.3		country	:name	1.3.2		name
+::edge	1.4	able	possible	:domain	1.4.1	make	make-01
+::edge	1	paid	pay-01	:ARG0	1.1		company
+::edge	1	paid	pay-01	:ARG1	1.2	fee	fee
+::edge	1	paid	pay-01	:ARG2	1.3		country
+::edge	1	paid	pay-01	:ARG3	1.4	able	possible
+::edge	1.4.1	make	make-01	:ARG1	1.4.1.2	jets	jet
+::edge	1.4.1.2.2		name	:op3	1.4.1.2.2.3	MK	"MK"
+::edge	1.4.1.2.2		name	:op2	1.4.1.2.2.2	30	30
+::edge	1.4.1.2.2		name	:op1	1.4.1.2.2.1	Sukhoi	"Sukhoi"
+::edge	1.1		company	:wiki	1.1.1		"Hindustan_Aeronautics_Limited"
+::edge	1.4.1	make	make-01	:ARG0	1.4.1.1		company
+18	N. R. Mohanty stated that the Indian government was also planning to purchase 50 Sukhoi 30 MK fighter jets from Russia at a cost of 30 million United States dollars each.
+18	N. R. Mohanty stated that the Indian government was also planning to purchase 50 Sukhoi 30 MK fighter jets from Russia at a cost of 30 million United States dollars each .
+18	2-1.1.2.2 3-1 4-1.2.r 6-1.2.1.1.1.2.1 7-1.2.1 7-1.2.1.1 7-1.2.1.1.r 9-1.2.3 10-1.2 12-1.2.2 13-1.2.2.2.1 14-1.2.2.2.3.1 15-1.2.2.2.3.2 16-1.2.2.2.3.3 17-1.2.2.2.4 18-1.2.2.2 19-1.2.2.3.r 20-1.2.2.3.2.1 24-1.2.2.4.r 25-1.2.2.4.1 26-1.2.2.4.1 27-1.2.2.4.2.1.2.1 28-1.2.2.4.2.1.2.2 29-1.2.2.4.2 30-1.2.2.4.3
+::node	n5	1.2.2.4.2.1.2	name	
+::node	"India"	1.2.1.1.1.2.1	"India"	Indian
+::node	"United_States"	1.2.2.4.2.1.1	"United_States"	
+::node	c2	1.2.2.3	country	
+::node	"United"	1.2.2.4.2.1.2.1	"United"	United
+::node	e	1.2.2.4.3	each	each
+::node	m	1.2.2.4	monetary-quantity	
+::node	g	1.2.2.1	government-organization	
+::node	j	1.2.2.2	jet	jets
+::node	"States"	1.2.2.4.2.1.2.2	"States"	States
+::node	50	1.2.2.2.1	50	50
+::node	"Sukhoi"	1.2.2.2.3.1	"Sukhoi"	Sukhoi
+::node	g2	1.2.1.1	govern-01	government
+::node	"Sukhoi_Su-30MKI"	1.2.2.2.2	"Sukhoi_Su-30MKI"	
+::node	"Russia"	1.2.2.3.1	"Russia"	
+::node	n3	1.2.2.2.3	name	
+::node	"MK"	1.2.2.2.3.3	"MK"	MK
+::node	n4	1.2.2.3.2	name	
+::node	30000000	1.2.2.4.1	30000000	million
+::node	30	1.2.2.2.3.2	30	30
+::node	f	1.2.2.2.4	fight-01	fighter
+::node	d	1.2.2.4.2	dollar	dollars
+::node	"Russia"	1.2.2.3.2.1	"Russia"	Russia
+::node	"N.R."	1.1.2.1	"N.R."	
+::node	"Mohanty"	1.1.2.2	"Mohanty"	Mohanty
+::node	"India"	1.2.1.1.1.1	"India"	
+::node	n2	1.2.1.1.1.2	name	
+::node	n	1.1.2	name	
+::node	g	1.2.1	government-organization	government
+::node	s	1	state-01	stated
+::node	p3	1.2.2	purchase-01	purchase
+::node	a2	1.2.3	also	also
+::node	c	1.2.1.1.1	country	
+::node	c3	1.2.2.4.2.1	country	
+::node	p	1.1	person	
+::node	p2	1.2	plan-01	planning
+::node	-	1.1.1	-	
+::edge	1.2.2.4.2.1		country	:name	1.2.2.4.2.1.2		name
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	Indian	"India"
+::edge	1.2.2.4.2.1		country	:wiki	1.2.2.4.2.1.1		"United_States"
+::edge	1.2.2	purchase	purchase-01	:ARG2	1.2.2.3		country
+::edge	1.2.2.4.2.1.2		name	:op1	1.2.2.4.2.1.2.1	United	"United"
+::edge	1.2.2.4		monetary-quantity	:mod	1.2.2.4.3	each	each
+::edge	1.2.2	purchase	purchase-01	:ARG3	1.2.2.4		monetary-quantity
+::edge	1.2.2	purchase	purchase-01	:ARG0	1.2.2.1		government-organization
+::edge	1.2.2	purchase	purchase-01	:ARG1	1.2.2.2	jets	jet
+::edge	1.2.2.4.2.1.2		name	:op2	1.2.2.4.2.1.2.2	States	"States"
+::edge	1.2.2.2	jets	jet	:quant	1.2.2.2.1	50	50
+::edge	1.2.2.2.3		name	:op1	1.2.2.2.3.1	Sukhoi	"Sukhoi"
+::edge	1.2.1	government	government-organization	:ARG0-of	1.2.1.1	government	govern-01
+::edge	1.2.2.2	jets	jet	:wiki	1.2.2.2.2		"Sukhoi_Su-30MKI"
+::edge	1.2.2.3		country	:wiki	1.2.2.3.1		"Russia"
+::edge	1.2.2.2	jets	jet	:name	1.2.2.2.3		name
+::edge	1.2.2.2.3		name	:op3	1.2.2.2.3.3	MK	"MK"
+::edge	1.2.2.3		country	:name	1.2.2.3.2		name
+::edge	1.2.2.4		monetary-quantity	:quant	1.2.2.4.1	million	30000000
+::edge	1.2.2.2.3		name	:op2	1.2.2.2.3.2	30	30
+::edge	1.2.2.2	jets	jet	:ARG0-of	1.2.2.2.4	fighter	fight-01
+::edge	1.2.2.4		monetary-quantity	:unit	1.2.2.4.2	dollars	dollar
+::edge	1.2.2.3.2		name	:op1	1.2.2.3.2.1	Russia	"Russia"
+::edge	1.1.2		name	:op1	1.1.2.1		"N.R."
+::edge	1.1.2		name	:op2	1.1.2.2	Mohanty	"Mohanty"
+::edge	1.2.1.1.1		country	:wiki	1.2.1.1.1.1		"India"
+::edge	1.2.1.1.1		country	:name	1.2.1.1.1.2		name
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	planning	plan-01	:ARG0	1.2.1	government	government-organization
+::edge	1.2	planning	plan-01	:ARG1	1.2.2	purchase	purchase-01
+::edge	1.2	planning	plan-01	:mod	1.2.3	also	also
+::edge	1.2.1.1	government	govern-01	:ARG1	1.2.1.1.1		country
+::edge	1.2.2.4.2	dollars	dollar	:mod	1.2.2.4.2.1		country
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	planning	plan-01
+::edge	1.1		person	:wiki	1.1.1		-
+19	N. R. Mohanty stated that Hindustan Aeronautics Limited's indigenous aircraft will cost slightly less or be almost equal to 30 million United States dollars each.
+19	N. R. Mohanty stated that Hindustan Aeronautics Limited 's indigenous aircraft will cost slightly less or be almost equal to 30 million United States dollars each .
+19	2-1.1.2.2 3-1 4-1.2.r 5-1.2.1.2.2.1 6-1.2.1.2.2.2 7-1.2.1.2.2.3 8-1.2.1.2.r 9-1.2.1.1 10-1.2.1 12-1.2 13-1.2.2.1.1 14-1.2.2.1 15-1.2.2 17-1.2.2.2.2 18-1.2.2.2 19-1.2.2.2.1.r 20-1.2.2.2.1.1 21-1.2.2.2.1.1 22-1.2.2.2.1.2.1.2.1 23-1.2.2.2.1.2.1.2.2 24-1.2.2.2.1.2 25-1.2.2.2.1.3
+::node	n2	1.2.1.2.2	name	
+::node	"United"	1.2.2.2.1.2.1.2.1	"United"	United
+::node	"States"	1.2.2.2.1.2.1.2.2	"States"	States
+::node	c2	1.2.1.2	company	
+::node	l	1.2.2.1	less	less
+::node	30000000	1.2.2.2.1.1	30000000	million
+::node	e	1.2.2.2	equal-01	equal
+::node	m	1.2.2.2.1	monetary-quantity	
+::node	e2	1.2.2.2.1.3	each	each
+::node	i	1.2.1.1	indigenous	indigenous
+::node	d	1.2.2.2.1.2	dollar	dollars
+::node	a2	1.2.2.2.2	almost	almost
+::node	"N.R."	1.1.2.1	"N.R."	
+::node	s2	1.2.2.1.1	slight	slightly
+::node	"Mohanty"	1.1.2.2	"Mohanty"	Mohanty
+::node	c3	1.2.2.2.1.2.1	country	
+::node	n	1.1.2	name	
+::node	a	1.2.1	aircraft	aircraft
+::node	s	1	state-01	stated
+::node	"Hindustan"	1.2.1.2.2.1	"Hindustan"	Hindustan
+::node	o	1.2.2	or	or
+::node	"Hindustan_Aeronautics_Limited"	1.2.1.2.1	"Hindustan_Aeronautics_Limited"	
+::node	p	1.1	person	
+::node	c	1.2	cost-01	cost
+::node	"Aeronautics"	1.2.1.2.2.2	"Aeronautics"	Aeronautics
+::node	"Limited"	1.2.1.2.2.3	"Limited"	Limited
+::node	"United_States"	1.2.2.2.1.2.1.1	"United_States"	
+::node	-	1.1.1	-	
+::node	n3	1.2.2.2.1.2.1.2	name	
+::edge	1.2.1.2		company	:name	1.2.1.2.2		name
+::edge	1.2.2.2.1.2.1.2		name	:op1	1.2.2.2.1.2.1.2.1	United	"United"
+::edge	1.2.2.2.1.2.1.2		name	:op2	1.2.2.2.1.2.1.2.2	States	"States"
+::edge	1.2.1	aircraft	aircraft	:poss	1.2.1.2		company
+::edge	1.2.2	or	or	:op1	1.2.2.1	less	less
+::edge	1.2.2.2.1		monetary-quantity	:quant	1.2.2.2.1.1	million	30000000
+::edge	1.2.2	or	or	:op2	1.2.2.2	equal	equal-01
+::edge	1.2.2.2	equal	equal-01	:ARG2	1.2.2.2.1		monetary-quantity
+::edge	1.2.2.2.1		monetary-quantity	:mod	1.2.2.2.1.3	each	each
+::edge	1.2.1	aircraft	aircraft	:mod	1.2.1.1	indigenous	indigenous
+::edge	1.2.2.2.1		monetary-quantity	:unit	1.2.2.2.1.2	dollars	dollar
+::edge	1.2.2.2	equal	equal-01	:mod	1.2.2.2.2	almost	almost
+::edge	1.1.2		name	:op1	1.1.2.1		"N.R."
+::edge	1.2.2.1	less	less	:degree	1.2.2.1.1	slightly	slight
+::edge	1.1.2		name	:op2	1.1.2.2	Mohanty	"Mohanty"
+::edge	1.2.2.2.1.2	dollars	dollar	:mod	1.2.2.2.1.2.1		country
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	cost	cost-01	:ARG1	1.2.1	aircraft	aircraft
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	Hindustan	"Hindustan"
+::edge	1.2	cost	cost-01	:ARG2	1.2.2	or	or
+::edge	1.2.1.2		company	:wiki	1.2.1.2.1		"Hindustan_Aeronautics_Limited"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	cost	cost-01
+::edge	1.2.1.2.2		name	:op2	1.2.1.2.2.2	Aeronautics	"Aeronautics"
+::edge	1.2.1.2.2		name	:op3	1.2.1.2.2.3	Limited	"Limited"
+::edge	1.2.2.2.1.2.1		country	:wiki	1.2.2.2.1.2.1.1		"United_States"
+::edge	1.1		person	:wiki	1.1.1		-
+::edge	1.2.2.2.1.2.1		country	:name	1.2.2.2.1.2.1.2		name
+20	An earlier 340 million United States dollar plan to upgrade India's MiG-21 fighter jets was delayed by more than 5 years.
+20	An earlier 340 million United States dollar plan to upgrade India 's MiG @-@ 21 fighter jets was delayed by more than 5 years .
+20	1-1.1.2 1-1.1.2.1 1-1.1.2.1.r 2-1.1.3.1.1 3-1.1.3.1.1 4-1.1.3.1.2.1.2.1 5-1.1.3.1.2.1.2.2 6-1.1.3.1.2 7-1.1 9-1.1.1 10-1.1.1.1.3.2.1 11-1.1.1.1.3.r 12-1.1.1.1.2.1 14-1.1.1.1.2.1 15-1.1.1.1.4 16-1.1.1.1 18-1 20-1.1.2.1 20-1.2 21-1.2 22-1.2.1.1 23-1.2.1.2
+::node	d2	1.1.3.1.2	dollar	dollar
+::node	c	1.1.1.1.3	country	
+::node	n	1.1.1.1.2	name	
+::node	"Mikoyan-Gurevich_MiG-21"	1.1.1.1.1	"Mikoyan-Gurevich_MiG-21"	
+::node	y	1.2.1.2	year	years
+::node	5	1.2.1.1	5	5
+::node	"MiG-21"	1.1.1.1.2.1	"MiG-21"	21
+::node	j	1.1.1.1	jet	jets
+::node	"India"	1.1.1.1.3.1	"India"	
+::node	"States"	1.1.3.1.2.1.2.2	"States"	States
+::node	n2	1.1.1.1.3.2	name	
+::node	m	1.1.2.1	more	more
+::node	"United"	1.1.3.1.2.1.2.1	"United"	United
+::node	m2	1.1.3.1	monetary-quantity	
+::node	f	1.1.1.1.4	fight-01	fighter
+::node	c3	1.1.3.1.2.1	country	
+::node	e	1.1.2	early	earlier
+::node	n3	1.1.3.1.2.1.2	name	
+::node	t	1.2.1	temporal-quantity	
+::node	d	1	delay-01	delayed
+::node	c2	1.1.3	cost-01	
+::node	"United_States"	1.1.3.1.2.1.1	"United_States"	
+::node	p	1.1	plan-01	plan
+::node	m3	1.2	more-than	than
+::node	"India"	1.1.1.1.3.2.1	"India"	India
+::node	340000000	1.1.3.1.1	340000000	million
+::node	u	1.1.1	upgrade-02	upgrade
+::edge	1.1.3.1		monetary-quantity	:unit	1.1.3.1.2	dollar	dollar
+::edge	1.1.1.1	jets	jet	:poss	1.1.1.1.3		country
+::edge	1.1.1.1	jets	jet	:name	1.1.1.1.2		name
+::edge	1.1.1.1	jets	jet	:wiki	1.1.1.1.1		"Mikoyan-Gurevich_MiG-21"
+::edge	1.2.1		temporal-quantity	:unit	1.2.1.2	years	year
+::edge	1.2.1		temporal-quantity	:quant	1.2.1.1	5	5
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	21	"MiG-21"
+::edge	1.1.1	upgrade	upgrade-02	:ARG1	1.1.1.1	jets	jet
+::edge	1.1.1.1.3		country	:wiki	1.1.1.1.3.1		"India"
+::edge	1.1.3.1.2.1.2		name	:op2	1.1.3.1.2.1.2.2	States	"States"
+::edge	1.1.1.1.3		country	:name	1.1.1.1.3.2		name
+::edge	1.1.2	earlier	early	:degree	1.1.2.1	more	more
+::edge	1.1.3.1.2.1.2		name	:op1	1.1.3.1.2.1.2.1	United	"United"
+::edge	1.1.3		cost-01	:ARG2	1.1.3.1		monetary-quantity
+::edge	1.1.1.1	jets	jet	:ARG0-of	1.1.1.1.4	fighter	fight-01
+::edge	1.1.3.1.2	dollar	dollar	:mod	1.1.3.1.2.1		country
+::edge	1.1	plan	plan-01	:time	1.1.2	earlier	early
+::edge	1.1.3.1.2.1		country	:name	1.1.3.1.2.1.2		name
+::edge	1.2	than	more-than	:op1	1.2.1		temporal-quantity
+::edge	1.1	plan	plan-01	:ARG1-of	1.1.3		cost-01
+::edge	1.1.3.1.2.1		country	:wiki	1.1.3.1.2.1.1		"United_States"
+::edge	1	delayed	delay-01	:ARG1	1.1	plan	plan-01
+::edge	1	delayed	delay-01	:ARG2	1.2	than	more-than
+::edge	1.1.1.1.3.2		name	:op1	1.1.1.1.3.2.1	India	"India"
+::edge	1.1.3.1		monetary-quantity	:quant	1.1.3.1.1	million	340000000
+::edge	1.1	plan	plan-01	:ARG1	1.1.1	upgrade	upgrade-02
+21	Russian officials blamed the Indian Government's intransigence for the delay.
+21	Russian officials blamed the Indian Government 's intransigence for the delay .
+21	0-1.1.1.1.2.1 1-1.1.1.2 2-1 4-1.2.1.1.1.2.1 5-1.2.1 5-1.2.1.1 5-1.2.1.1.r 6-1.2.1.r 7-1.2 8-1.3.r 10-1.3
+::node	"Russia"	1.1.1.1.2.1	"Russia"	Russian
+::node	"India"	1.2.1.1.1.2.1	"India"	Indian
+::node	c	1.1.1.1	country	
+::node	o	1.1.1.2	official	officials
+::node	"India"	1.2.1.1.1.1	"India"	
+::node	n2	1.2.1.1.1.2	name	
+::node	g	1.2.1	government-organization	Government
+::node	b	1	blame-01	blamed
+::node	c2	1.2.1.1.1	country	
+::node	p	1.1	person	
+::node	i	1.2	intransigence	intransigence
+::node	d	1.3	delay-01	delay
+::node	n	1.1.1.1.2	name	
+::node	"Russia"	1.1.1.1.1	"Russia"	
+::node	g2	1.2.1.1	govern-01	Government
+::node	h	1.1.1	have-org-role-91	
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Russian	"Russia"
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	Indian	"India"
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		country
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.2.1.1.1		country	:wiki	1.2.1.1.1.1		"India"
+::edge	1.2.1.1.1		country	:name	1.2.1.1.1.2		name
+::edge	1.2	intransigence	intransigence	:poss	1.2.1	Government	government-organization
+::edge	1.2.1.1	Government	govern-01	:ARG1	1.2.1.1.1		country
+::edge	1	blamed	blame-01	:ARG0	1.1		person
+::edge	1	blamed	blame-01	:ARG1	1.2	intransigence	intransigence
+::edge	1	blamed	blame-01	:ARG2	1.3	delay	delay-01
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Russia"
+::edge	1.2.1	Government	government-organization	:ARG0-of	1.2.1.1	Government	govern-01
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+22	The 960000 Russian Indian upgrade deal was meant to be completed within 2 years but the first 2 upgraded MiG-21-93 jets were not delivered to India until 000000.
+22	The 960000 Russian Indian upgrade deal was meant to be completed within 2 years but the first 2 upgraded MiG @-@ 21 @-@ 93 jets were not delivered to India until 000000 .
+22	1-1.1.1.1.2 1-1.1.1.1.2.1 1-1.1.1.1.2.1.r 2-1.1.1.1.3.2.1 3-1.1.1.1.4 4-1.1.1.1.1 5-1.1.1.1 7-1.1 10-1.1.1 11-1.1.1.2 12-1.1.1.2.1.1 13-1.1.1.1.2.1.r 13-1.1.1.2.1.2 14-1 16-1.2.2.4 16-1.2.2.4.1 16-1.2.2.4.1.r 17-1.1.1.2.1.1 17-1.2.2.1 18-1.1.1.1.1 19-1.2.2.3.1 21-1.2.2.3.1 23-1.2.2.3.1 24-1.2.2 26-1.2.1 26-1.2.1.r 27-1.2 28-1.2.3.r 29-1.2.3.2.1 30-1.2.4 31-1.2.4.1 31-1.2.4.1.1 31-1.2.4.1.1.r
+::node	c4	1.1.1.1.3	country	
+::node	n	1.2.2.3	name	
+::node	n2	1.2.3.2	name	
+::node	d2	1.2.4.1	date-entity	000000
+::node	d4	1.1.1.1.2	date-entity	960000
+::node	t	1.1.1.2.1	temporal-quantity	
+::node	o	1.2.2.4	ordinal-entity	first
+::node	u2	1.1.1.1.1	upgrade-02	upgraded
+::node	2	1.2.2.1	2	2
+::node	-	1.2.2.2	-	
+::node	"India"	1.2.3.1	"India"	
+::node	"MiG-21-93"	1.2.2.3.1	"MiG-21-93"	93
+::node	1	1.2.2.4.1	1	first
+::node	1996	1.1.1.1.2.1	1996	960000
+::node	d3	1.1.1.1	deal	deal
+::node	"Russia"	1.1.1.1.3.1	"Russia"	
+::node	n3	1.1.1.1.3.2	name	
+::node	w	1.1.1.2	within	within
+::node	c2	1.1.1.1.4	country	Indian
+::node	"India"	1.2.3.2.1	"India"	India
+::node	y	1.1.1.2.1.2	year	years
+::node	2	1.1.1.2.1.1	2	2
+::node	-	1.2.1	-	not
+::node	c	1	contrast-01	but
+::node	j	1.2.2	jet	jets
+::node	c2	1.2.3	country	
+::node	u	1.2.4	until	until
+::node	m	1.1	mean-01	meant
+::node	d	1.2	deliver-01	delivered
+::node	2000	1.2.4.1.1	2000	000000
+::node	"Russia"	1.1.1.1.3.2.1	"Russia"	Russian
+::node	c3	1.1.1	complete-01	completed
+::edge	1.1.1.1	deal	deal	:mod	1.1.1.1.3		country
+::edge	1.2.2	jets	jet	:name	1.2.2.3		name
+::edge	1.2.3		country	:name	1.2.3.2		name
+::edge	1.2.4	until	until	:op1	1.2.4.1	000000	date-entity
+::edge	1.1.1.1	deal	deal	:time	1.1.1.1.2	960000	date-entity
+::edge	1.1.1.2	within	within	:op1	1.1.1.2.1		temporal-quantity
+::edge	1.2.2	jets	jet	:ord	1.2.2.4	first	ordinal-entity
+::edge	1.1.1.1	deal	deal	:purpose	1.1.1.1.1	upgraded	upgrade-02
+::edge	1.2.2	jets	jet	:quant	1.2.2.1	2	2
+::edge	1.2.2	jets	jet	:wiki	1.2.2.2		-
+::edge	1.2.3		country	:wiki	1.2.3.1		"India"
+::edge	1.2.2.3		name	:op1	1.2.2.3.1	93	"MiG-21-93"
+::edge	1.2.2.4	first	ordinal-entity	:value	1.2.2.4.1	first	1
+::edge	1.1.1.1.2	960000	date-entity	:year	1.1.1.1.2.1	960000	1996
+::edge	1.1.1	completed	complete-01	:ARG1	1.1.1.1	deal	deal
+::edge	1.1.1.1.3		country	:wiki	1.1.1.1.3.1		"Russia"
+::edge	1.1.1.1.3		country	:name	1.1.1.1.3.2		name
+::edge	1.1.1	completed	complete-01	:time	1.1.1.2	within	within
+::edge	1.1.1.1	deal	deal	:mod	1.1.1.1.4	Indian	country
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	India	"India"
+::edge	1.1.1.2.1		temporal-quantity	:unit	1.1.1.2.1.2	years	year
+::edge	1.1.1.2.1		temporal-quantity	:quant	1.1.1.2.1.1	2	2
+::edge	1.2	delivered	deliver-01	:polarity	1.2.1	not	-
+::edge	1.2	delivered	deliver-01	:ARG1	1.2.2	jets	jet
+::edge	1.2	delivered	deliver-01	:ARG2	1.2.3		country
+::edge	1.2	delivered	deliver-01	:time	1.2.4	until	until
+::edge	1	but	contrast-01	:ARG1	1.1	meant	mean-01
+::edge	1	but	contrast-01	:ARG2	1.2	delivered	deliver-01
+::edge	1.2.4.1	000000	date-entity	:year	1.2.4.1.1	000000	2000
+::edge	1.1.1.1.3.2		name	:op1	1.1.1.1.3.2.1	Russian	"Russia"
+::edge	1.1	meant	mean-01	:ARG1	1.1.1	completed	complete-01
+23	N. R. Mohanty stated that Hindustan Aeronautics Limited's 010000 target was to deliver 16 MiG-21 upgrades but Hindustan Aeronautics Limited was only able to deliver 6.
+23	N. R. Mohanty stated that Hindustan Aeronautics Limited 's 010000 target was to deliver 16 MiG @-@ 21 upgrades but Hindustan Aeronautics Limited was only able to deliver 6 .
+23	2-1.1.2.2 3-1 4-1.2.r 5-1.2.1.1.2.1 6-1.2.1.1.2.2 7-1.2.1.1.2.3 9-1.2.1.3 9-1.2.1.3.1 9-1.2.1.3.1.r 10-1.2.1 13-1.2.1.2 14-1.2.1.2.2.1 15-1.2.1.2.2.3.1 17-1.2.1.2.2.3.1 18-1.2.1.2.2 18-1.2.1.2.2.4 18-1.2.1.2.2.4.r 19-1.2 20-1.2.1.1.2.1 21-1.2.1.1.2.2 22-1.2.1.1.2.3 23-1.2.2.1.r 24-1.2.2.2 25-1.2.2 27-1.2.2.1 28-1.2.2.1.1
+::node	a	1.2.1.2.2	aircraft-type	upgrades
+::node	2001	1.2.1.3.1	2001	010000
+::node	d	1.2.1.2	deliver-01	deliver
+::node	d3	1.2.2.1	deliver-01	deliver
+::node	d2	1.2.1.3	date-entity	010000
+::node	o	1.2.2.2	only	only
+::node	c	1.2.2.1.2	company	
+::node	c	1.2.1.1	company	
+::node	"Limited"	1.2.1.1.2.3	"Limited"	Limited
+::node	"N.R."	1.1.2.1	"N.R."	
+::node	6	1.2.2.1.1	6	6
+::node	"Mohanty"	1.1.2.2	"Mohanty"	Mohanty
+::node	"Hindustan"	1.2.1.1.2.1	"Hindustan"	Hindustan
+::node	"Aeronautics"	1.2.1.1.2.2	"Aeronautics"	Aeronautics
+::node	n	1.1.2	name	
+::node	t	1.2.1	target-01	target
+::node	s	1	state-01	stated
+::node	16	1.2.1.2.2.1	16	16
+::node	"MiG-21"	1.2.1.2.2.3.1	"MiG-21"	21
+::node	p2	1.2.2	possible	able
+::node	n2	1.2.1.1.2	name	
+::node	c	1.2.1.2.1	company	
+::node	"Hindustan_Aeronautics_Limited"	1.2.1.1.1	"Hindustan_Aeronautics_Limited"	
+::node	p	1.1	person	
+::node	u	1.2.1.2.2.4	upgrade-02	upgrades
+::node	c2	1.2	contrast-01	but
+::node	"Mikoyan-Gurevich_MiG-21"	1.2.1.2.2.2	"Mikoyan-Gurevich_MiG-21"	
+::node	n3	1.2.1.2.2.3	name	
+::node	-	1.1.1	-	
+::edge	1.2.1.2	deliver	deliver-01	:ARG1	1.2.1.2.2	upgrades	aircraft-type
+::edge	1.2.1.3	010000	date-entity	:year	1.2.1.3.1	010000	2001
+::edge	1.2.1	target	target-01	:ARG1	1.2.1.2	deliver	deliver-01
+::edge	1.2.2	able	possible	:domain	1.2.2.1	deliver	deliver-01
+::edge	1.2.1	target	target-01	:time	1.2.1.3	010000	date-entity
+::edge	1.2.2	able	possible	:mod	1.2.2.2	only	only
+::edge	1.2.2.1	deliver	deliver-01	:ARG0	1.2.2.1.2		company
+::edge	1.2.1	target	target-01	:ARG0	1.2.1.1		company
+::edge	1.2.1.1.2		name	:op3	1.2.1.1.2.3	Limited	"Limited"
+::edge	1.1.2		name	:op1	1.1.2.1		"N.R."
+::edge	1.2.2.1	deliver	deliver-01	:quant	1.2.2.1.1	6	6
+::edge	1.1.2		name	:op2	1.1.2.2	Mohanty	"Mohanty"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Hindustan	"Hindustan"
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	Aeronautics	"Aeronautics"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	but	contrast-01	:ARG1	1.2.1	target	target-01
+::edge	1.2.1.2.2	upgrades	aircraft-type	:quant	1.2.1.2.2.1	16	16
+::edge	1.2.1.2.2.3		name	:op1	1.2.1.2.2.3.1	21	"MiG-21"
+::edge	1.2	but	contrast-01	:ARG2	1.2.2	able	possible
+::edge	1.2.1.1		company	:name	1.2.1.1.2		name
+::edge	1.2.1.2	deliver	deliver-01	:ARG0	1.2.1.2.1		company
+::edge	1.2.1.1		company	:wiki	1.2.1.1.1		"Hindustan_Aeronautics_Limited"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.2.1.2.2	upgrades	aircraft-type	:ARG1-of	1.2.1.2.2.4	upgrades	upgrade-02
+::edge	1	stated	state-01	:ARG1	1.2	but	contrast-01
+::edge	1.2.1.2.2	upgrades	aircraft-type	:wiki	1.2.1.2.2.2		"Mikoyan-Gurevich_MiG-21"
+::edge	1.2.1.2.2	upgrades	aircraft-type	:name	1.2.1.2.2.3		name
+::edge	1.1		person	:wiki	1.1.1		-
+24	N. R. Mohanty stated that Hindustan Aeronautics Limited had many problems with the French and Russian companies and that this year Hindustan Aeronautics Limited is planning a minimum of 24 upgrades.
+24	N. R. Mohanty stated that Hindustan Aeronautics Limited had many problems with the French and Russian companies and that this year Hindustan Aeronautics Limited is planning a minimum of 24 upgrades .
+24	2-1.1.2.2 3-1 4-1.2.r 5-1.2.1.1.2.1 6-1.2.1.1.2.2 7-1.2.1.1.2.3 8-1.2.1 9-1.2.1.2.1 10-1.2.1.2 11-1.2.1.2.2.r 13-1.2.1.2.2.1.1.2.1 14-1.2.1.2.2.1 15-1.2.1.2.2.1.2.2.1 16-1.2.1.2.2 17-1.2.1.2.2.1 18-1.2.r 19-1.2.2.3.1 20-1.2.2.3 21-1.2.2.1 22-1.2.2.1 23-1.2.2.1 25-1.2.2 27-1.2.2.2.1 29-1.2.2.2.1.1 30-1.2.2.2
+::node	"Russia"	1.2.1.2.2.1.2.2.1	"Russia"	Russian
+::node	c2	1.2.1.2.2	company	companies
+::node	y	1.2.2.3	year	year
+::node	p2	1.2.1.2	problem	problems
+::node	c	1.2.2.1	company	Limited
+::node	24	1.2.2.2.1.1	24	24
+::node	u	1.2.2.2	upgrade-02	upgrades
+::node	m2	1.2.2.2.1	minimum	minimum
+::node	c	1.2.1.1	company	
+::node	t	1.2.2.3.1	this	this
+::node	"Limited"	1.2.1.1.2.3	"Limited"	Limited
+::node	"N.R."	1.1.2.1	"N.R."	
+::node	"Mohanty"	1.1.2.2	"Mohanty"	Mohanty
+::node	"Hindustan"	1.2.1.1.2.1	"Hindustan"	Hindustan
+::node	"Aeronautics"	1.2.1.1.2.2	"Aeronautics"	Aeronautics
+::node	n4	1.2.1.2.2.1.2.2	name	
+::node	n3	1.2.1.2.2.1.1.2	name	
+::node	"Russia"	1.2.1.2.2.1.2.1	"Russia"	
+::node	"France"	1.2.1.2.2.1.1.1	"France"	
+::node	n	1.1.2	name	
+::node	h	1.2.1	have-03	had
+::node	s	1	state-01	stated
+::node	a2	1.2.1.2.2.1	and	and
+::node	p3	1.2.2	plan-01	planning
+::node	n2	1.2.1.1.2	name	
+::node	m	1.2.1.2.1	many	many
+::node	"Hindustan_Aeronautics_Limited"	1.2.1.1.1	"Hindustan_Aeronautics_Limited"	
+::node	p	1.1	person	
+::node	a	1.2	and	
+::node	"France"	1.2.1.2.2.1.1.2.1	"France"	French
+::node	c4	1.2.1.2.2.1.2	country	
+::node	-	1.1.1	-	
+::node	c3	1.2.1.2.2.1.1	country	
+::edge	1.2.1.2.2.1.2.2		name	:op1	1.2.1.2.2.1.2.2.1	Russian	"Russia"
+::edge	1.2.1.2	problems	problem	:accompanier	1.2.1.2.2	companies	company
+::edge	1.2.2	planning	plan-01	:time	1.2.2.3	year	year
+::edge	1.2.1	had	have-03	:ARG1	1.2.1.2	problems	problem
+::edge	1.2.2	planning	plan-01	:ARG0	1.2.2.1	Limited	company
+::edge	1.2.2.2.1	minimum	minimum	:op1	1.2.2.2.1.1	24	24
+::edge	1.2.2	planning	plan-01	:ARG1	1.2.2.2	upgrades	upgrade-02
+::edge	1.2.2.2	upgrades	upgrade-02	:quant	1.2.2.2.1	minimum	minimum
+::edge	1.2.1	had	have-03	:ARG0	1.2.1.1		company
+::edge	1.2.2.3	year	year	:mod	1.2.2.3.1	this	this
+::edge	1.2.1.1.2		name	:op3	1.2.1.1.2.3	Limited	"Limited"
+::edge	1.1.2		name	:op1	1.1.2.1		"N.R."
+::edge	1.1.2		name	:op2	1.1.2.2	Mohanty	"Mohanty"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Hindustan	"Hindustan"
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	Aeronautics	"Aeronautics"
+::edge	1.2.1.2.2.1.2		country	:name	1.2.1.2.2.1.2.2		name
+::edge	1.2.1.2.2.1.1		country	:name	1.2.1.2.2.1.1.2		name
+::edge	1.2.1.2.2.1.2		country	:wiki	1.2.1.2.2.1.2.1		"Russia"
+::edge	1.2.1.2.2.1.1		country	:wiki	1.2.1.2.2.1.1.1		"France"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2		and	:op1	1.2.1	had	have-03
+::edge	1.2.1.2.2	companies	company	:source	1.2.1.2.2.1	and	and
+::edge	1.2		and	:op2	1.2.2	planning	plan-01
+::edge	1.2.1.1		company	:name	1.2.1.1.2		name
+::edge	1.2.1.2	problems	problem	:quant	1.2.1.2.1	many	many
+::edge	1.2.1.1		company	:wiki	1.2.1.1.1		"Hindustan_Aeronautics_Limited"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2		and
+::edge	1.2.1.2.2.1.1.2		name	:op1	1.2.1.2.2.1.1.2.1	French	"France"
+::edge	1.2.1.2.2.1	and	and	:op2	1.2.1.2.2.1.2		country
+::edge	1.1		person	:wiki	1.1.1		-
+::edge	1.2.1.2.2.1	and	and	:op1	1.2.1.2.2.1.1		country
+25	N. R. Mohanty stated that Hindustan Aeronautics Limited had submitted a proposal to the Indian government for the development of a light attack helicopter and the first flight of India's intermediate jet trainer hjt-36 was planned for 020000.
+25	N. R. Mohanty stated that Hindustan Aeronautics Limited had submitted a proposal to the Indian government for the development of a light attack helicopter and the first flight of India 's intermediate jet trainer hjt @-@ 36 was planned for 020000 .
+25	2-1.1.2.2 3-1 4-1.2.r 5-1.2.1.1.2.1 6-1.2.1.1.2.2 7-1.2.1.1.2.3 9-1.2.1 11-1.2.1.2 12-1.2.1.2.3.r 14-1.2.1.2.3 15-1.2.1.2.3 16-1.2.1.4.r 18-1.2.1.4 19-1.2.1.4.1.r 21-1.2.1.4.1.1 22-1.2.1.4.1.2 23-1.2.1.4.1 24-1.2 26-1.2.2.1.2 27-1.2.2.1 28-1.2.2.1.1.r 29-1.2.2.1.1.4 30-1.2.2.1.1.4.r 31-1.2.2.1.1.5 32-1.2.2.1.1 36-1.2.2.1.1.2.1 38-1.2.2 39-1.2.2.2.r 40-1.2.2.2 40-1.2.2.2.1 40-1.2.2.2.1.r
+::node	c2	1.2.1.3.1.1	country	
+::node	"HAL_HJT-36_Sitara"	1.2.2.1.1.1	"HAL_HJT-36_Sitara"	
+::node	n4	1.2.2.1.1.2	name	
+::node	l	1.2.1.4.1.1	light	light
+::node	a2	1.2.1.4.1.2	attack-01	attack
+::node	g	1.2.1.2.3	government-organization	government
+::node	i	1.2.2.1.1.5	intermediate	intermediate
+::node	d	1.2.1.2.2	develop-02	
+::node	g2	1.2.1.3.1	govern-01	
+::node	t	1.2.2.1.1.3	train-01	
+::node	"India"	1.2.1.3.1.1.2.1	"India"	
+::node	h	1.2.1.4.1	helicopter	helicopter
+::node	"HJT-36"	1.2.2.1.1.2.1	"HJT-36"	36
+::node	c2	1.2.2.1.1.4	country	India
+::node	n3	1.2.1.3.1.1.2	name	
+::node	"India"	1.2.1.3.1.1.1	"India"	
+::node	d	1.2.1.4	develop-02	development
+::node	p2	1.2.1.2	propose-01	proposal
+::node	f	1.2.2.1	fly-01	flight
+::node	g	1.2.1.3	government-organization	
+::node	d2	1.2.2.2	date-entity	020000
+::node	f2	1.2.2.1.2	first	first
+::node	2002	1.2.2.2.1	2002	020000
+::node	c	1.2.1.1	company	
+::node	"Limited"	1.2.1.1.2.3	"Limited"	Limited
+::node	"N.R."	1.1.2.1	"N.R."	
+::node	j2	1.2.2.1.1	jet	jet
+::node	"Mohanty"	1.1.2.2	"Mohanty"	Mohanty
+::node	"Hindustan"	1.2.1.1.2.1	"Hindustan"	Hindustan
+::node	"Aeronautics"	1.2.1.1.2.2	"Aeronautics"	Aeronautics
+::node	n	1.1.2	name	
+::node	s2	1.2.1	submit-01	submitted
+::node	s	1	state-01	stated
+::node	p3	1.2.2	plan-01	planned
+::node	n2	1.2.1.1.2	name	
+::node	c	1.2.1.2.1	company	
+::node	"Hindustan_Aeronautics_Limited"	1.2.1.1.1	"Hindustan_Aeronautics_Limited"	
+::node	p	1.1	person	
+::node	a	1.2	and	and
+::node	-	1.1.1	-	
+::edge	1.2.1.3.1		govern-01	:ARG1	1.2.1.3.1.1		country
+::edge	1.2.2.1.1	jet	jet	:wiki	1.2.2.1.1.1		"HAL_HJT-36_Sitara"
+::edge	1.2.2.1.1	jet	jet	:name	1.2.2.1.1.2		name
+::edge	1.2.1.4.1	helicopter	helicopter	:mod	1.2.1.4.1.1	light	light
+::edge	1.2.1.4.1	helicopter	helicopter	:purpose	1.2.1.4.1.2	attack	attack-01
+::edge	1.2.1.2	proposal	propose-01	:ARG2	1.2.1.2.3	government	government-organization
+::edge	1.2.2.1.1	jet	jet	:mod	1.2.2.1.1.5	intermediate	intermediate
+::edge	1.2.1.2	proposal	propose-01	:ARG1	1.2.1.2.2		develop-02
+::edge	1.2.1.3		government-organization	:ARG0-of	1.2.1.3.1		govern-01
+::edge	1.2.2.1.1	jet	jet	:purpose	1.2.2.1.1.3		train-01
+::edge	1.2.1.3.1.1.2		name	:op1	1.2.1.3.1.1.2.1		"India"
+::edge	1.2.1.4	development	develop-02	:ARG1	1.2.1.4.1	helicopter	helicopter
+::edge	1.2.2.1.1.2		name	:op1	1.2.2.1.1.2.1	36	"HJT-36"
+::edge	1.2.2.1.1	jet	jet	:poss	1.2.2.1.1.4	India	country
+::edge	1.2.1.3.1.1		country	:name	1.2.1.3.1.1.2		name
+::edge	1.2.1.3.1.1		country	:wiki	1.2.1.3.1.1.1		"India"
+::edge	1.2.1	submitted	submit-01	:ARG3	1.2.1.4	development	develop-02
+::edge	1.2.1	submitted	submit-01	:ARG1	1.2.1.2	proposal	propose-01
+::edge	1.2.2	planned	plan-01	:ARG1	1.2.2.1	flight	fly-01
+::edge	1.2.1	submitted	submit-01	:ARG2	1.2.1.3		government-organization
+::edge	1.2.2	planned	plan-01	:time	1.2.2.2	020000	date-entity
+::edge	1.2.2.1	flight	fly-01	:frequency	1.2.2.1.2	first	first
+::edge	1.2.2.2	020000	date-entity	:year	1.2.2.2.1	020000	2002
+::edge	1.2.1	submitted	submit-01	:ARG0	1.2.1.1		company
+::edge	1.2.1.1.2		name	:op3	1.2.1.1.2.3	Limited	"Limited"
+::edge	1.1.2		name	:op1	1.1.2.1		"N.R."
+::edge	1.2.2.1	flight	fly-01	:ARG1	1.2.2.1.1	jet	jet
+::edge	1.1.2		name	:op2	1.1.2.2	Mohanty	"Mohanty"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Hindustan	"Hindustan"
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	Aeronautics	"Aeronautics"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1	submitted	submit-01
+::edge	1.2	and	and	:op2	1.2.2	planned	plan-01
+::edge	1.2.1.1		company	:name	1.2.1.1.2		name
+::edge	1.2.1.2	proposal	propose-01	:ARG0	1.2.1.2.1		company
+::edge	1.2.1.1		company	:wiki	1.2.1.1.1		"Hindustan_Aeronautics_Limited"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	and	and
+::edge	1.1		person	:wiki	1.1.1		-
+26	Hindustan Aeronautics Limited stated on 020404 that Hindustan Aeronautics Limited made a net profit of 62 million United States dollars on a sales turnover of 27.3 billion rupees year-on-year for the fiscal year to 020300.
+26	Hindustan Aeronautics Limited stated on 020404 that Hindustan Aeronautics Limited made a net profit of 62 million United States dollars on a sales turnover of 27.3 billion rupees year @-@ on @-@ year for the fiscal year to 020300 .
+26	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 3-1 4-1.2.5 5-1.3 5-1.3.1 5-1.3.1.r 5-1.3.2 5-1.3.2.r 5-1.3.3 5-1.3.3.r 7-1.1.2.1 8-1.1.2.2 9-1.1.2.3 10-1 12-1.2.3 13-1.2 14-1.2.4.r 15-1.2.4.1 16-1.2.4.1 17-1.2.4.2.1.2.1 18-1.2.4.2.1.2.2 19-1.2.4.2 20-1.2.2.r 20-1.2.5 22-1.2.2.1 23-1.2.2 24-1.2.2.2.r 25-1.2.2.2.1 26-1.2.2.2.1 27-1.2.2.2.2 28-1.2.6 30-1.2.5 32-1.2.6 35-1.2.6.2 36-1.2.6 37-1.2.6.1.r 38-1.2.6.1 38-1.2.6.1.1 38-1.2.6.1.1.r 38-1.2.6.1.2.r
+::node	03	1.2.6.1.2	03	
+::node	2002	1.2.6.1.1	2002	020300
+::node	62000000	1.2.4.1	62000000	million
+::node	d2	1.2.4.2	dollar	dollars
+::node	s2	1.2.2.1	sell-01	sales
+::node	m2	1.2.2.2	monetary-quantity	
+::node	27300000000	1.2.2.2.1	27300000000	billion
+::node	r	1.2.2.2.2	rupee	rupees
+::node	"United_States"	1.2.4.2.1.1	"United_States"	
+::node	"Hindustan"	1.1.2.1	"Hindustan"	Hindustan
+::node	n3	1.2.4.2.1.2	name	
+::node	"Aeronautics"	1.1.2.2	"Aeronautics"	Aeronautics
+::node	"Limited"	1.1.2.3	"Limited"	Limited
+::node	d3	1.2.6.1	date-entity	020300
+::node	f	1.2.6.2	fiscal	fiscal
+::node	n	1.1.2	name	
+::node	c	1.2.1	company	
+::node	s	1	state-01	made
+::node	t	1.2.2	turnover	turnover
+::node	"United"	1.2.4.2.1.2.1	"United"	United
+::node	2002	1.3.1	2002	020404
+::node	n2	1.2.3	net	net
+::node	"States"	1.2.4.2.1.2.2	"States"	States
+::node	4	1.3.2	4	020404
+::node	m	1.2.4	monetary-quantity	
+::node	4	1.3.3	4	020404
+::node	c	1.1	company	
+::node	y	1.2.5	year-on-year	on
+::node	p	1.2	profit-01	profit
+::node	y2	1.2.6	year	year
+::node	d	1.3	date-entity	020404
+::node	c2	1.2.4.2.1	country	
+::node	"Hindustan_Aeronautics_Limited"	1.1.1	"Hindustan_Aeronautics_Limited"	
+::edge	1.2.6.1	020300	date-entity	:month	1.2.6.1.2		03
+::edge	1.2.6.1	020300	date-entity	:year	1.2.6.1.1	020300	2002
+::edge	1.2.4		monetary-quantity	:quant	1.2.4.1	million	62000000
+::edge	1.2.4		monetary-quantity	:unit	1.2.4.2	dollars	dollar
+::edge	1.2.2	turnover	turnover	:mod	1.2.2.1	sales	sell-01
+::edge	1.2.2	turnover	turnover	:quant	1.2.2.2		monetary-quantity
+::edge	1.2.2.2		monetary-quantity	:quant	1.2.2.2.1	billion	27300000000
+::edge	1.2.2.2		monetary-quantity	:unit	1.2.2.2.2	rupees	rupee
+::edge	1.2.4.2.1		country	:wiki	1.2.4.2.1.1		"United_States"
+::edge	1.1.2		name	:op1	1.1.2.1	Hindustan	"Hindustan"
+::edge	1.2.4.2.1		country	:name	1.2.4.2.1.2		name
+::edge	1.1.2		name	:op2	1.1.2.2	Aeronautics	"Aeronautics"
+::edge	1.1.2		name	:op3	1.1.2.3	Limited	"Limited"
+::edge	1.2.6	year	year	:op1	1.2.6.1	020300	date-entity
+::edge	1.2.6	year	year	:mod	1.2.6.2	fiscal	fiscal
+::edge	1.1		company	:name	1.1.2		name
+::edge	1.2	profit	profit-01	:ARG0	1.2.1		company
+::edge	1.2	profit	profit-01	:ARG1	1.2.2	turnover	turnover
+::edge	1.2.4.2.1.2		name	:op1	1.2.4.2.1.2.1	United	"United"
+::edge	1.3	020404	date-entity	:year	1.3.1	020404	2002
+::edge	1.2	profit	profit-01	:mod	1.2.3	net	net
+::edge	1.2.4.2.1.2		name	:op2	1.2.4.2.1.2.2	States	"States"
+::edge	1.3	020404	date-entity	:month	1.3.2	020404	4
+::edge	1.2	profit	profit-01	:quant	1.2.4		monetary-quantity
+::edge	1.3	020404	date-entity	:day	1.3.3	020404	4
+::edge	1	made	state-01	:ARG0	1.1		company
+::edge	1.2	profit	profit-01	:mod	1.2.5	on	year-on-year
+::edge	1	made	state-01	:ARG1	1.2	profit	profit-01
+::edge	1.2	profit	profit-01	:time	1.2.6	year	year
+::edge	1	made	state-01	:time	1.3	020404	date-entity
+::edge	1.2.4.2	dollars	dollar	:mod	1.2.4.2.1		country
+::edge	1.1		company	:wiki	1.1.1		"Hindustan_Aeronautics_Limited"

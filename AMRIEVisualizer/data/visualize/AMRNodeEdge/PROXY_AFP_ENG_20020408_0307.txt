@@ -1,0 +1,756 @@
+1	2002-04-08
+1	2002 @-@ 04 @-@ 08
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	4	1.2	4	04
+::node	8	1.3	8	08
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	04	4
+::edge	1		date-entity	:day	1.3	08	8
+2	Japan (JP)
+2	Japan ( JP )
+2	0-1.2.1
+::node	"Japan"	1.2.1	"Japan"	Japan
+::node	c	1	country	
+::node	"Japan"	1.1	"Japan"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	Japan	"Japan"
+::edge	1		country	:wiki	1.1		"Japan"
+::edge	1		country	:name	1.2		name
+3	proliferation; politics
+3	proliferation ; politics
+3	0-1.1 2-1.2
+::node	a	1	and	
+::node	p	1.1	proliferate-01	proliferation
+::node	p2	1.2	politics	politics
+::edge	1		and	:op1	1.1	proliferation	proliferate-01
+::edge	1		and	:op2	1.2	politics	politics
+4	The Japanese Government stated on April 8, 2002 its policy of holding no nuclear warheads.
+4	The Japanese Government stated on April 8 , 2002 its policy of holding no nuclear warheads .
+4	1-1.1.1.1.2.1 2-1.1 2-1.1.1 2-1.1.1.r 3-1 4-1.3.r 5-1.3.3 5-1.3.3.r 6-1.3.2 8-1.3.1 9-1.2.2 9-1.2.2.r 10-1.2 11-1.2.1.r 12-1.2.1 13-1.2.1.1 13-1.2.1.1.r 14-1.2.1.2.1 15-1.2.1.2
+::node	"Japan"	1.1.1.1.2.1	"Japan"	Japanese
+::node	c	1.1.1.1	country	
+::node	h	1.2.1	hold-01	holding
+::node	s	1	state-01	stated
+::node	g	1.2.2	government-organization	its
+::node	2002	1.3.1	2002	2002
+::node	n	1.2.1.2.1	nucleus	nuclear
+::node	8	1.3.2	8	8
+::node	4	1.3.3	4	April
+::node	g	1.1	government-organization	Government
+::node	p	1.2	policy	policy
+::node	d	1.3	date-entity	
+::node	n2	1.1.1.1.2	name	
+::node	"Japan"	1.1.1.1.1	"Japan"	
+::node	w	1.2.1.2	warhead	warheads
+::node	-	1.2.1.1	-	no
+::node	g2	1.1.1	govern-01	Government
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Japanese	"Japan"
+::edge	1.1.1	Government	govern-01	:ARG1	1.1.1.1		country
+::edge	1.2	policy	policy	:topic	1.2.1	holding	hold-01
+::edge	1.2	policy	policy	:poss	1.2.2	its	government-organization
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2.1.2	warheads	warhead	:mod	1.2.1.2.1	nuclear	nucleus
+::edge	1.3		date-entity	:day	1.3.2	8	8
+::edge	1.3		date-entity	:month	1.3.3	April	4
+::edge	1	stated	state-01	:ARG0	1.1	Government	government-organization
+::edge	1	stated	state-01	:ARG1	1.2	policy	policy
+::edge	1	stated	state-01	:time	1.3		date-entity
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Japan"
+::edge	1.2.1	holding	hold-01	:ARG1	1.2.1.2	warheads	warhead
+::edge	1.2.1	holding	hold-01	:polarity	1.2.1.1	no	-
+::edge	1.1	Government	government-organization	:ARG0-of	1.1.1	Government	govern-01
+5	This was after a senior lawmaker said Japan can arm itself with nuclear weapons overnight.
+5	This was after a senior lawmaker said Japan can arm itself with nuclear weapons overnight .
+5	0-1.3.1 1-1.2.1.r 4-1.1.2 5-1.1 5-1.1.1 5-1.1.1.r 6-1 7-1.2.1.1.2.1 8-1.2 9-1.2.1 11-1.2.1.3.r 12-1.2.1.3.1 13-1.2.1.3 14-1.2.1.4
+::node	"Japan"	1.2.1.1.2.1	"Japan"	Japan
+::node	n	1.2.1.3.1	nucleus	nuclear
+::node	s2	1.1.2	senior	senior
+::node	a	1.2.1	arm-01	arm
+::node	s	1	say-01	said
+::node	t	1.3.1	this	This
+::node	n2	1.2.1.1.2	name	
+::node	"Japan"	1.2.1.1.1	"Japan"	
+::node	p	1.1	person	lawmaker
+::node	p2	1.2	possible	can
+::node	b	1.3	before	
+::node	o	1.2.1.4	overnight	overnight
+::node	c	1.2.1.2	country	
+::node	w	1.2.1.3	weapon	weapons
+::node	c	1.2.1.1	country	
+::node	l	1.1.1	legislate-01	lawmaker
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Japan	"Japan"
+::edge	1.2.1.3	weapons	weapon	:mod	1.2.1.3.1	nuclear	nucleus
+::edge	1.1	lawmaker	person	:mod	1.1.2	senior	senior
+::edge	1.2	can	possible	:domain	1.2.1	arm	arm-01
+::edge	1.3		before	:op1	1.3.1	This	this
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"Japan"
+::edge	1	said	say-01	:ARG0	1.1	lawmaker	person
+::edge	1	said	say-01	:ARG1	1.2	can	possible
+::edge	1	said	say-01	:time	1.3		before
+::edge	1.2.1	arm	arm-01	:time	1.2.1.4	overnight	overnight
+::edge	1.2.1	arm	arm-01	:ARG1	1.2.1.2		country
+::edge	1.2.1	arm	arm-01	:ARG2	1.2.1.3	weapons	weapon
+::edge	1.2.1	arm	arm-01	:ARG0	1.2.1.1		country
+::edge	1.1	lawmaker	person	:ARG0-of	1.1.1	lawmaker	legislate-01
+6	The Japanese Government stated on April 8, 2002 its policy of holding no nuclear warheads.
+6	The Japanese Government stated on April 8 , 2002 its policy of holding no nuclear warheads .
+6	1-1.1.1.1.2.1 2-1.1 2-1.1.1 2-1.1.1.r 3-1 4-1.3.r 5-1.3.2 5-1.3.2.r 6-1.3.3 8-1.3.1 9-1.2.1 9-1.2.1.r 10-1.2 11-1.2.2.r 12-1.2.2 13-1.2.2.1 13-1.2.2.1.r 14-1.2.2.2.1 15-1.2.2.2
+::node	"Japan"	1.1.1.1.2.1	"Japan"	Japanese
+::node	c	1.1.1.1	country	
+::node	g	1.2.1	government-organization	its
+::node	s	1	state-01	stated
+::node	h	1.2.2	hold-01	holding
+::node	2002	1.3.1	2002	2002
+::node	4	1.3.2	4	April
+::node	8	1.3.3	8	8
+::node	g	1.1	government-organization	Government
+::node	p	1.2	policy	policy
+::node	d	1.3	date-entity	
+::node	n2	1.1.1.1.2	name	
+::node	"Japan"	1.1.1.1.1	"Japan"	
+::node	-	1.2.2.1	-	no
+::node	w	1.2.2.2	warhead	warheads
+::node	n	1.2.2.2.1	nucleus	nuclear
+::node	g2	1.1.1	govern-01	Government
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Japanese	"Japan"
+::edge	1.1.1	Government	govern-01	:ARG1	1.1.1.1		country
+::edge	1.2	policy	policy	:poss	1.2.1	its	government-organization
+::edge	1.2	policy	policy	:topic	1.2.2	holding	hold-01
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.3		date-entity	:month	1.3.2	April	4
+::edge	1.3		date-entity	:day	1.3.3	8	8
+::edge	1	stated	state-01	:ARG0	1.1	Government	government-organization
+::edge	1	stated	state-01	:ARG1	1.2	policy	policy
+::edge	1	stated	state-01	:time	1.3		date-entity
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Japan"
+::edge	1.2.2	holding	hold-01	:polarity	1.2.2.1	no	-
+::edge	1.2.2	holding	hold-01	:ARG1	1.2.2.2	warheads	warhead
+::edge	1.2.2.2	warheads	warhead	:mod	1.2.2.2.1	nuclear	nucleus
+::edge	1.1	Government	government-organization	:ARG0-of	1.1.1	Government	govern-01
+7	This was after a senior lawmaker said Japan can arm itself with nuclear weapons overnight.
+7	This was after a senior lawmaker said Japan can arm itself with nuclear weapons overnight .
+7	0-1.3.1 1-1.2.1.r 4-1.1.2 5-1.1 5-1.1.1 5-1.1.1.r 6-1 7-1.2.1.1.2.1 8-1.2 9-1.2.1 11-1.2.1.3.r 12-1.2.1.3.1 13-1.2.1.3 14-1.2.1.4
+::node	"Japan"	1.2.1.1.2.1	"Japan"	Japan
+::node	n	1.2.1.3.1	nucleus	nuclear
+::node	s2	1.1.2	senior	senior
+::node	a	1.2.1	arm-01	arm
+::node	s	1	say-01	said
+::node	t	1.3.1	this	This
+::node	n2	1.2.1.1.2	name	
+::node	"Japan"	1.2.1.1.1	"Japan"	
+::node	p	1.1	person	lawmaker
+::node	p2	1.2	possible	can
+::node	b	1.3	before	
+::node	o	1.2.1.4	overnight	overnight
+::node	c	1.2.1.2	country	
+::node	w	1.2.1.3	weapon	weapons
+::node	c	1.2.1.1	country	
+::node	l	1.1.1	legislate-01	lawmaker
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Japan	"Japan"
+::edge	1.2.1.3	weapons	weapon	:mod	1.2.1.3.1	nuclear	nucleus
+::edge	1.1	lawmaker	person	:mod	1.1.2	senior	senior
+::edge	1.2	can	possible	:domain	1.2.1	arm	arm-01
+::edge	1.3		before	:op1	1.3.1	This	this
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"Japan"
+::edge	1	said	say-01	:ARG0	1.1	lawmaker	person
+::edge	1	said	say-01	:ARG1	1.2	can	possible
+::edge	1	said	say-01	:time	1.3		before
+::edge	1.2.1	arm	arm-01	:time	1.2.1.4	overnight	overnight
+::edge	1.2.1	arm	arm-01	:ARG1	1.2.1.2		country
+::edge	1.2.1	arm	arm-01	:ARG2	1.2.1.3	weapons	weapon
+::edge	1.2.1	arm	arm-01	:ARG0	1.2.1.1		country
+::edge	1.1	lawmaker	person	:ARG0-of	1.1.1	lawmaker	legislate-01
+8	Chief Cabinet Secretary Yasuo Fukuda told a press conference that it has been Japan's policy since World War II to not hold any nuclear weapons.
+8	Chief Cabinet Secretary Yasuo Fukuda told a press conference that it has been Japan 's policy since World War II to not hold any nuclear weapons .
+8	0-1.1.3.2.1 1-1.1.3.1 2-1.1.3.2 3-1.1.2.1 4-1.1.2.2 5-1 7-1.3.1 8-1.3 13-1.2.1.2.1 14-1.2.1.r 15-1.2 16-1.2.3 17-1.2.3.1.2.1 18-1.2.3.1.2.2 19-1.2.3.1.2.3 21-1.2.2.1 21-1.2.2.1.r 22-1.2.2 23-1.2.2.2.2 24-1.2.2.2.1 25-1.2.2.2
+::node	c2	1.1.3.2.1	chief	Chief
+::node	n4	1.2.1.2	name	
+::node	-	1.2.2.1	-	not
+::node	w	1.2.2.2	weapon	weapons
+::node	w2	1.2.3.1	war	
+::node	n2	1.2.2.2.1	nucleus	nuclear
+::node	"Japan"	1.2.1.1	"Japan"	
+::node	a	1.2.2.2.2	any	any
+::node	"Yasuo"	1.1.2.1	"Yasuo"	Yasuo
+::node	"Fukuda"	1.1.2.2	"Fukuda"	Fukuda
+::node	c	1.1.3.1	cabinet	Cabinet
+::node	s	1.1.3.2	secretary	Secretary
+::node	"World_War_II"	1.2.3.1.1	"World_War_II"	
+::node	n3	1.2.3.1.2	name	
+::node	n	1.1.2	name	
+::node	c4	1.2.1	country	
+::node	t	1	tell-01	told
+::node	h2	1.1.3	have-org-role-91	
+::node	h	1.2.2	hold-01	hold
+::node	p	1.3.1	press	press
+::node	"Japan"	1.2.1.2.1	"Japan"	Japan
+::node	s2	1.2.3	since	since
+::node	p3	1.1	person	
+::node	"War"	1.2.3.1.2.2	"War"	War
+::node	p2	1.2	policy	policy
+::node	"World"	1.2.3.1.2.1	"World"	World
+::node	c3	1.3	conference	conference
+::node	"II"	1.2.3.1.2.3	"II"	II
+::node	"Yasuo_Fukuda"	1.1.1	"Yasuo_Fukuda"	
+::edge	1.1.3.2	Secretary	secretary	:mod	1.1.3.2.1	Chief	chief
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.2	hold	hold-01	:polarity	1.2.2.1	not	-
+::edge	1.2.2	hold	hold-01	:ARG1	1.2.2.2	weapons	weapon
+::edge	1.2.3	since	since	:op1	1.2.3.1		war
+::edge	1.2.2.2	weapons	weapon	:mod	1.2.2.2.1	nuclear	nucleus
+::edge	1.2.1		country	:wiki	1.2.1.1		"Japan"
+::edge	1.2.2.2	weapons	weapon	:mod	1.2.2.2.2	any	any
+::edge	1.1.2		name	:op1	1.1.2.1	Yasuo	"Yasuo"
+::edge	1.1.2		name	:op2	1.1.2.2	Fukuda	"Fukuda"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1	Cabinet	cabinet
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	Secretary	secretary
+::edge	1.2.3.1		war	:wiki	1.2.3.1.1		"World_War_II"
+::edge	1.2.3.1		war	:name	1.2.3.1.2		name
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	policy	policy	:poss	1.2.1		country
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	policy	policy	:topic	1.2.2	hold	hold-01
+::edge	1.3	conference	conference	:mod	1.3.1	press	press
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Japan	"Japan"
+::edge	1.2	policy	policy	:time	1.2.3	since	since
+::edge	1	told	tell-01	:ARG0	1.1		person
+::edge	1.2.3.1.2		name	:op2	1.2.3.1.2.2	War	"War"
+::edge	1	told	tell-01	:ARG1	1.2	policy	policy
+::edge	1.2.3.1.2		name	:op1	1.2.3.1.2.1	World	"World"
+::edge	1	told	tell-01	:ARG2	1.3	conference	conference
+::edge	1.2.3.1.2		name	:op3	1.2.3.1.2.3	II	"II"
+::edge	1.1		person	:wiki	1.1.1		"Yasuo_Fukuda"
+9	Fukuda said that there will be no changes in Japan adherence to the policy and that Japan wishes all nuclear weapons would disappear from the world.
+9	Fukuda said that there will be no changes in Japan adherence to the policy and that Japan wishes all nuclear weapons would disappear from the world .
+9	0-1.1.2.1 1-1 6-1.2.1.1 6-1.2.1.1.r 7-1.2.1 8-1.2.1.2.r 9-1.2.1.2.1.2.1 10-1.2.1.2 11-1.2.1.2.2.r 13-1.2.1.2.2 16-1.2.1.2.1.2.1 17-1.2.2 18-1.2.2.2.1.2 19-1.2.2.2.1.1 20-1.2.2.2.1 22-1.2.2.2 23-1.2.2.2.2.r 25-1.2.2.2.2
+::node	"Fukuda"	1.1.2.1	"Fukuda"	Fukuda
+::node	"Japan"	1.2.1.2.1.2.1	"Japan"	Japan
+::node	p2	1.2.1.2.2	policy	policy
+::node	n3	1.1.2	name	
+::node	c	1.2.1	change-01	changes
+::node	"Japan"	1.2.1.2.1.1	"Japan"	
+::node	s	1	say-01	said
+::node	n2	1.2.1.2.1.2	name	
+::node	w	1.2.2	wish-01	wishes
+::node	c2	1.2.1.2.1	country	
+::node	p	1.1	person	
+::node	a	1.2	and	
+::node	a2	1.2.1.2	adhere-02	adherence
+::node	c2	1.2.2.1	country	
+::node	n	1.2.2.2.1.1	nucleus	nuclear
+::node	d	1.2.2.2	disappear-01	disappear
+::node	w2	1.2.2.2.1	weapon	weapons
+::node	-	1.2.1.1	-	no
+::node	a3	1.2.2.2.1.2	all	all
+::node	w3	1.2.2.2.2	world	world
+::node	"Yasuo_Fukuda"	1.1.1	"Yasuo_Fukuda"	
+::edge	1.1.2		name	:op1	1.1.2.1	Fukuda	"Fukuda"
+::edge	1.2.1.2.1.2		name	:op1	1.2.1.2.1.2.1	Japan	"Japan"
+::edge	1.2.1.2	adherence	adhere-02	:ARG1	1.2.1.2.2	policy	policy
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2		and	:op1	1.2.1	changes	change-01
+::edge	1.2.1.2.1		country	:wiki	1.2.1.2.1.1		"Japan"
+::edge	1.2.1.2.1		country	:name	1.2.1.2.1.2		name
+::edge	1.2		and	:op2	1.2.2	wishes	wish-01
+::edge	1.2.1.2	adherence	adhere-02	:ARG0	1.2.1.2.1		country
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2		and
+::edge	1.2.1	changes	change-01	:ARG1	1.2.1.2	adherence	adhere-02
+::edge	1.2.2	wishes	wish-01	:ARG0	1.2.2.1		country
+::edge	1.2.2.2.1	weapons	weapon	:mod	1.2.2.2.1.1	nuclear	nucleus
+::edge	1.2.2	wishes	wish-01	:ARG1	1.2.2.2	disappear	disappear-01
+::edge	1.2.2.2	disappear	disappear-01	:ARG1	1.2.2.2.1	weapons	weapon
+::edge	1.2.1	changes	change-01	:polarity	1.2.1.1	no	-
+::edge	1.2.2.2.1	weapons	weapon	:mod	1.2.2.2.1.2	all	all
+::edge	1.2.2.2	disappear	disappear-01	:location	1.2.2.2.2	world	world
+::edge	1.1		person	:wiki	1.1.1		"Yasuo_Fukuda"
+10	A speech by opposition Liberal Party chief Ichiro Ozawa told a Chinese intelligence official that Japanese people will get hysterical if China continued to build its military strength.
+10	A speech by opposition Liberal Party chief Ichiro Ozawa told a Chinese intelligence official that Japanese people will get hysterical if China continued to build its military strength .
+10	3-1.1.1.3.1 3-1.1.1.3.1.3 3-1.1.1.3.1.3.r 4-1.1.1.3.1.2.1 5-1.1.1.3.1.2.2 6-1.1.1.3.2 7-1.1.1.2.1 8-1.1.1.2.2 9-1 11-1.3.1.1 12-1.3.1.2.1 13-1.3.1.2 14-1.2.r 15-1.2.1.1.2.1 16-1.2.1 16-1.3 18-1.2 20-1.2.3.r 21-1.2.3.1.2.1 22-1.2.3 24-1.2.3.2 25-1.2.3.2.1.2 25-1.2.3.2.1.2.r 26-1.2.3.2.1.1 27-1.2.3.2.1
+::node	c	1.3.1.1	country	Chinese
+::node	o	1.3.1.2	official	official
+::node	"Ozawa"	1.1.1.2.2	"Ozawa"	Ozawa
+::node	p	1.1.1.3.1	political-party	opposition
+::node	b	1.2.3.2	build-02	build
+::node	"Ichiro"	1.1.1.2.1	"Ichiro"	Ichiro
+::node	c	1.2.3.1	country	
+::node	c2	1.2.1.1	country	
+::node	"Ichirō_Ozawa"	1.1.1.1	"Ichirō_Ozawa"	
+::node	n6	1.1.1.2	name	
+::node	h2	1.1.1.3	have-org-role-91	
+::node	"Japan"	1.2.1.1.2.1	"Japan"	Japanese
+::node	c3	1.1.1.3.2	chief	chief
+::node	"Liberal"	1.1.1.3.1.2.1	"Liberal"	Liberal
+::node	"China"	1.2.3.1.1	"China"	
+::node	"Party"	1.1.1.3.1.2.2	"Party"	Party
+::node	n3	1.2.3.1.2	name	
+::node	s2	1.2.3.2.1	strength	strength
+::node	p2	1.2.1	person	people
+::node	t	1	tell-01	told
+::node	h	1.2.2	hysteria	
+::node	h3	1.3.1	have-org-role-91	
+::node	n4	1.2.1.1.2	name	
+::node	c5	1.2.3	continue-01	continued
+::node	"Japan"	1.2.1.1.1	"Japan"	
+::node	s	1.1	speak-01	
+::node	i	1.3.1.2.1	intelligence	intelligence
+::node	g	1.2	get-03	get
+::node	"China"	1.2.3.1.2.1	"China"	China
+::node	p4	1.3	person	people
+::node	o2	1.1.1.3.1.3	oppose-01	opposition
+::node	c	1.2.3.2.1.2	country	its
+::node	m	1.2.3.2.1.1	military	military
+::node	"Liberal_Democratic_Party_BLANKETPAIR2"	1.1.1.3.1.1	"Liberal_Democratic_Party_BLANKETPAIR2"	
+::node	p3	1.1.1	person	
+::node	n	1.1.1.3.1.2	name	
+::edge	1.3.1		have-org-role-91	:ARG1	1.3.1.1	Chinese	country
+::edge	1.3.1		have-org-role-91	:ARG2	1.3.1.2	official	official
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Ozawa	"Ozawa"
+::edge	1.1.1.3		have-org-role-91	:ARG1	1.1.1.3.1	opposition	political-party
+::edge	1.2.3	continued	continue-01	:ARG1	1.2.3.2	build	build-02
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Ichiro	"Ichiro"
+::edge	1.2.3	continued	continue-01	:ARG0	1.2.3.1		country
+::edge	1.2.1	people	person	:mod	1.2.1.1		country
+::edge	1.1.1		person	:wiki	1.1.1.1		"Ichirō_Ozawa"
+::edge	1.1.1		person	:name	1.1.1.2		name
+::edge	1.1.1		person	:ARG0-of	1.1.1.3		have-org-role-91
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Japanese	"Japan"
+::edge	1.1.1.3		have-org-role-91	:ARG2	1.1.1.3.2	chief	chief
+::edge	1.1.1.3.1.2		name	:op1	1.1.1.3.1.2.1	Liberal	"Liberal"
+::edge	1.2.3.1		country	:wiki	1.2.3.1.1		"China"
+::edge	1.1.1.3.1.2		name	:op2	1.1.1.3.1.2.2	Party	"Party"
+::edge	1.2.3.1		country	:name	1.2.3.1.2		name
+::edge	1.2.3.2	build	build-02	:ARG0	1.2.3.2.1	strength	strength
+::edge	1.2	get	get-03	:ARG1	1.2.1	people	person
+::edge	1.2	get	get-03	:ARG2	1.2.2		hysteria
+::edge	1.3	people	person	:ARG0-of	1.3.1		have-org-role-91
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.2	get	get-03	:condition	1.2.3	continued	continue-01
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"Japan"
+::edge	1	told	tell-01	:ARG0	1.1		speak-01
+::edge	1.3.1.2	official	official	:topic	1.3.1.2.1	intelligence	intelligence
+::edge	1	told	tell-01	:ARG1	1.2	get	get-03
+::edge	1.2.3.1.2		name	:op1	1.2.3.1.2.1	China	"China"
+::edge	1	told	tell-01	:ARG2	1.3	people	person
+::edge	1.1.1.3.1	opposition	political-party	:ARG0-of	1.1.1.3.1.3	opposition	oppose-01
+::edge	1.2.3.2.1	strength	strength	:poss	1.2.3.2.1.2	its	country
+::edge	1.2.3.2.1	strength	strength	:mod	1.2.3.2.1.1	military	military
+::edge	1.1.1.3.1	opposition	political-party	:wiki	1.1.1.3.1.1		"Liberal_Democratic_Party_BLANKETPAIR2"
+::edge	1.1		speak-01	:ARG0	1.1.1		person
+::edge	1.1.1.3.1	opposition	political-party	:name	1.1.1.3.1.2		name
+11	Ozawa said it would be easy for Japan to produce nuclear warheads and that Japan can produce thousands of nuclear warheads overnight.
+11	Ozawa said it would be easy for Japan to produce nuclear warheads and that Japan can produce thousands of nuclear warheads overnight .
+11	0-1.1.2.1 1-1 5-1.2.1.3 7-1.2.1.1.2.1 9-1.2.1 10-1.2.1.2.1 11-1.2.1.2 14-1.2.1.1.2.1 15-1.2.2 16-1.2.2.1 17-1.2.2.1.2.2 17-1.2.2.1.2.2.1 17-1.2.2.1.2.2.1.r 18-1.2.2.1.2.2.r 19-1.2.2.1.2.1 20-1.2.2.1.2 21-1.2.2.1.3
+::node	"Ozawa"	1.1.2.1	"Ozawa"	Ozawa
+::node	c	1.2.2.1.1	country	
+::node	"Japan"	1.2.1.1.2.1	"Japan"	Japan
+::node	n2	1.2.2.1.2.1	nucleus	nuclear
+::node	m	1.2.2.1.2.2	multiple	thousands
+::node	n4	1.1.2	name	
+::node	p2	1.2.1	produce-01	produce
+::node	1000	1.2.2.1.2.2.1	1000	thousands
+::node	s	1	say-01	said
+::node	p3	1.2.2	possible	can
+::node	n3	1.2.1.1.2	name	
+::node	n	1.2.1.2.1	nucleus	nuclear
+::node	"Japan"	1.2.1.1.1	"Japan"	
+::node	p	1.1	person	
+::node	a	1.2	and	
+::node	w	1.2.1.2	warhead	warheads
+::node	p4	1.2.2.1	produce-01	produce
+::node	e	1.2.1.3	easy	easy
+::node	w2	1.2.2.1.2	warhead	warheads
+::node	c	1.2.1.1	country	
+::node	o	1.2.2.1.3	overnight	overnight
+::node	"Ichirō_Ozawa"	1.1.1	"Ichirō_Ozawa"	
+::edge	1.1.2		name	:op1	1.1.2.1	Ozawa	"Ozawa"
+::edge	1.2.2.1	produce	produce-01	:ARG0	1.2.2.1.1		country
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Japan	"Japan"
+::edge	1.2.2.1.2	warheads	warhead	:mod	1.2.2.1.2.1	nuclear	nucleus
+::edge	1.2.2.1.2	warheads	warhead	:quant	1.2.2.1.2.2	thousands	multiple
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2		and	:op1	1.2.1	produce	produce-01
+::edge	1.2.2.1.2.2	thousands	multiple	:op1	1.2.2.1.2.2.1	thousands	1000
+::edge	1.2		and	:op2	1.2.2	can	possible
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.2.1.2	warheads	warhead	:mod	1.2.1.2.1	nuclear	nucleus
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"Japan"
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2		and
+::edge	1.2.1	produce	produce-01	:ARG1	1.2.1.2	warheads	warhead
+::edge	1.2.2	can	possible	:domain	1.2.2.1	produce	produce-01
+::edge	1.2.1	produce	produce-01	:mod	1.2.1.3	easy	easy
+::edge	1.2.2.1	produce	produce-01	:ARG1	1.2.2.1.2	warheads	warhead
+::edge	1.2.1	produce	produce-01	:ARG0	1.2.1.1		country
+::edge	1.2.2.1	produce	produce-01	:time	1.2.2.1.3	overnight	overnight
+::edge	1.1		person	:wiki	1.1.1		"Ichirō_Ozawa"
+12	Ozawa stated that Japan could have enough plutonium at nuclear power plants for 3000 or 4000 rounds.
+12	Ozawa stated that Japan could have enough plutonium at nuclear power plants for 3000 or 4000 rounds .
+12	0-1.1.2.1 1-1 2-1.2.r 3-1.2.1.1.2.1 4-1.2 5-1.2.1 6-1.2.1.2.1 7-1.2.1.2 8-1.2.1.3.r 9-1.2.1.3.1.1 10-1.2.1.3.1 11-1.2.1.3 12-1.2.1.4.r 13-1.2.1.4.1.1 14-1.2.1.4.1 15-1.2.1.4.1.2 16-1.2.1.4
+::node	"Ozawa"	1.1.2.1	"Ozawa"	Ozawa
+::node	n	1.2.1.3.1.1	nucleus	nuclear
+::node	"Japan"	1.2.1.1.2.1	"Japan"	Japan
+::node	3000	1.2.1.4.1.1	3000	3000
+::node	4000	1.2.1.4.1.2	4000	4000
+::node	p5	1.2.1.3.1	power-01	power
+::node	o	1.2.1.4.1	or	or
+::node	n3	1.1.2	name	
+::node	h	1.2.1	have-03	have
+::node	s	1	state-01	stated
+::node	n2	1.2.1.1.2	name	
+::node	e	1.2.1.2.1	enough	enough
+::node	"Japan"	1.2.1.1.1	"Japan"	
+::node	p	1.1	person	
+::node	p2	1.2	possible	could
+::node	r	1.2.1.4	round	rounds
+::node	p3	1.2.1.2	plutonium	plutonium
+::node	p4	1.2.1.3	plant	plants
+::node	c	1.2.1.1	country	
+::node	"Ichirō_Ozawa"	1.1.1	"Ichirō_Ozawa"	
+::edge	1.1.2		name	:op1	1.1.2.1	Ozawa	"Ozawa"
+::edge	1.2.1.3.1	power	power-01	:ARG0	1.2.1.3.1.1	nuclear	nucleus
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Japan	"Japan"
+::edge	1.2.1.4.1	or	or	:op1	1.2.1.4.1.1	3000	3000
+::edge	1.2.1.4.1	or	or	:op2	1.2.1.4.1.2	4000	4000
+::edge	1.2.1.3	plants	plant	:ARG2-of	1.2.1.3.1	power	power-01
+::edge	1.2.1.4	rounds	round	:quant	1.2.1.4.1	or	or
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	could	possible	:domain	1.2.1	have	have-03
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.2.1.2	plutonium	plutonium	:quant	1.2.1.2.1	enough	enough
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"Japan"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	could	possible
+::edge	1.2.1	have	have-03	:purpose	1.2.1.4	rounds	round
+::edge	1.2.1	have	have-03	:ARG1	1.2.1.2	plutonium	plutonium
+::edge	1.2.1	have	have-03	:location	1.2.1.3	plants	plant
+::edge	1.2.1	have	have-03	:ARG0	1.2.1.1		country
+::edge	1.1		person	:wiki	1.1.1		"Ichirō_Ozawa"
+13	Ozawa is a renowned advocate of strong armed forces.
+13	Ozawa is a renowned advocate of strong armed forces .
+13	0-1.1.2.1 3-1.3 4-1 5-1.2.r 6-1.2.2 7-1.2.1 8-1.2
+::node	n	1.1.2	name	
+::node	a2	1.2.1	arm-01	armed
+::node	a	1	advocate-01	advocate
+::node	s	1.2.2	strong	strong
+::node	"Ozawa"	1.1.2.1	"Ozawa"	Ozawa
+::node	p	1.1	person	
+::node	f	1.2	force	forces
+::node	r	1.3	renowned	renowned
+::node	"Ichirō_Ozawa"	1.1.1	"Ichirō_Ozawa"	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	forces	force	:ARG1-of	1.2.1	armed	arm-01
+::edge	1.2	forces	force	:mod	1.2.2	strong	strong
+::edge	1.1.2		name	:op1	1.1.2.1	Ozawa	"Ozawa"
+::edge	1	advocate	advocate-01	:ARG0	1.1		person
+::edge	1	advocate	advocate-01	:ARG1	1.2	forces	force
+::edge	1	advocate	advocate-01	:mod	1.3	renowned	renowned
+::edge	1.1		person	:wiki	1.1.1		"Ichirō_Ozawa"
+14	Ozawa said that if Japan rises to the occasion then Japan will never be beaten even in terms of military power.
+14	Ozawa said that if Japan rises to the occasion then Japan will never be beaten even in terms of military power .
+14	0-1.1.2.1 1-1 2-1.2.r 3-1.2.5.r 4-1.2.5.1 5-1.2.5 6-1.2.5.2.r 8-1.2.5.2 10-1.2.5.1 12-1.2.1 12-1.2.1.r 12-1.2.4 14-1.2 15-1.2.3.2 19-1.2.3.1 20-1.2.3
+::node	"Ozawa"	1.1.2.1	"Ozawa"	Ozawa
+::node	o	1.2.5.2	occasion	occasion
+::node	n2	1.1.2	name	
+::node	-	1.2.1	-	never
+::node	s	1	say-01	said
+::node	c	1.2.2	country	
+::node	p2	1.2.3	power	power
+::node	e	1.2.4	ever	never
+::node	p	1.1	person	
+::node	r	1.2.5	rise-01	rises
+::node	b	1.2	beat-03	beaten
+::node	e2	1.2.3.2	even	even
+::node	c	1.2.5.1	country	Japan
+::node	"Japan"	1.2.2.1	"Japan"	
+::node	n	1.2.2.2	name	
+::node	m	1.2.3.1	military	military
+::node	"Japan"	1.2.2.2.1	"Japan"	
+::node	"Ichirō_Ozawa"	1.1.1	"Ichirō_Ozawa"	
+::edge	1.1.2		name	:op1	1.1.2.1	Ozawa	"Ozawa"
+::edge	1.2.5	rises	rise-01	:ARG4	1.2.5.2	occasion	occasion
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	beaten	beat-03	:polarity	1.2.1	never	-
+::edge	1.2	beaten	beat-03	:ARG1	1.2.2		country
+::edge	1.2	beaten	beat-03	:ARG2	1.2.3	power	power
+::edge	1.2	beaten	beat-03	:time	1.2.4	never	ever
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1.2	beaten	beat-03	:condition	1.2.5	rises	rise-01
+::edge	1	said	say-01	:ARG1	1.2	beaten	beat-03
+::edge	1.2.3	power	power	:mod	1.2.3.2	even	even
+::edge	1.2.5	rises	rise-01	:ARG1	1.2.5.1	Japan	country
+::edge	1.2.2		country	:wiki	1.2.2.1		"Japan"
+::edge	1.2.2		country	:name	1.2.2.2		name
+::edge	1.2.3	power	power	:mod	1.2.3.1	military	military
+::edge	1.2.2.2		name	:op1	1.2.2.2.1		"Japan"
+::edge	1.1		person	:wiki	1.1.1		"Ichirō_Ozawa"
+15	Ozawa wanted a fully democratic China and an environment in which China and Japan can co-exist.
+15	Ozawa wanted a fully democratic China and an environment in which China and Japan can co @-@ exist .
+15	0-1.1.2.1 1-1 3-1.2.1.3.1 4-1.2.1.3 5-1.2.1.2.1 6-1.2 8-1.2.2.1 11-1.2.2.2.1 12-1.2 13-1.2.2.2.2.2.1 14-1.2.2
+::node	"Ozawa"	1.1.2.1	"Ozawa"	Ozawa
+::node	f	1.2.1.3.1	full	fully
+::node	n3	1.1.2	name	
+::node	c	1.2.1	country	
+::node	w	1	want-01	wanted
+::node	p2	1.2.2	possible	can
+::node	"China"	1.2.1.2.1	"China"	China
+::node	p	1.1	person	
+::node	a	1.2	and	and
+::node	"Japan"	1.2.2.2.2.2.1	"Japan"	Japan
+::node	n2	1.2.1.2	name	
+::node	e	1.2.2.1	environment	environment
+::node	d	1.2.1.3	democratic	democratic
+::node	c2	1.2.2.2	coexist-01	
+::node	c	1.2.2.2.1	country	China
+::node	n	1.2.2.2.2.2	name	
+::node	"China"	1.2.1.1	"China"	
+::node	c3	1.2.2.2.2	country	
+::node	"Japan"	1.2.2.2.2.1	"Japan"	
+::node	"Ichirō_Ozawa"	1.1.1	"Ichirō_Ozawa"	
+::edge	1.1.2		name	:op1	1.1.2.1	Ozawa	"Ozawa"
+::edge	1.2.1.3	democratic	democratic	:manner	1.2.1.3.1	fully	full
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1		country
+::edge	1.2	and	and	:op2	1.2.2	can	possible
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	China	"China"
+::edge	1	wanted	want-01	:ARG0	1.1		person
+::edge	1	wanted	want-01	:ARG1	1.2	and	and
+::edge	1.2.2.2.2.2		name	:op1	1.2.2.2.2.2.1	Japan	"Japan"
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.2	can	possible	:location	1.2.2.1	environment	environment
+::edge	1.2.1		country	:mod	1.2.1.3	democratic	democratic
+::edge	1.2.2	can	possible	:domain	1.2.2.2		coexist-01
+::edge	1.2.2.2		coexist-01	:ARG1	1.2.2.2.1	China	country
+::edge	1.2.2.2.2		country	:name	1.2.2.2.2.2		name
+::edge	1.2.1		country	:wiki	1.2.1.1		"China"
+::edge	1.2.2.2		coexist-01	:ARG2	1.2.2.2.2		country
+::edge	1.2.2.2.2		country	:wiki	1.2.2.2.2.1		"Japan"
+::edge	1.1		person	:wiki	1.1.1		"Ichirō_Ozawa"
+16	Greenpeace International said Ozawa's comment confirmed the threat posed by Japan's massive plutonium program.
+16	Greenpeace International said Ozawa 's comment confirmed the threat posed by Japan 's massive plutonium program .
+16	0-1.1.2.1 1-1.1.2.2 2-1 3-1.2.1.1.2.1 4-1.2.1.1.r 5-1.2.1 6-1.2 8-1.2.2 9-1.2.2 10-1.2.2.1.r 11-1.2.2.1.3.2.1 12-1.2.2.1.3.r 13-1.2.2.1.2 14-1.2.2.1.1 15-1.2.2.1
+::node	"Greenpeace"	1.1.2.1	"Greenpeace"	Greenpeace
+::node	p4	1.2.2.1.1	plutonium	plutonium
+::node	"International"	1.1.2.2	"International"	International
+::node	"Ozawa"	1.2.1.1.2.1	"Ozawa"	Ozawa
+::node	"Japan"	1.2.2.1.3.2.1	"Japan"	Japan
+::node	"Japan"	1.2.2.1.3.1	"Japan"	
+::node	n2	1.2.2.1.3.2	name	
+::node	n	1.1.2	name	
+::node	c2	1.2.1	comment-01	comment
+::node	s	1	say-01	said
+::node	t	1.2.2	threaten-01	posed
+::node	n3	1.2.1.1.2	name	
+::node	"Ichirō_Ozawa"	1.2.1.1.1	"Ichirō_Ozawa"	
+::node	o	1.1	organization	
+::node	c	1.2	confirm-01	confirmed
+::node	p3	1.2.2.1	program	program
+::node	m	1.2.2.1.2	massive	massive
+::node	p	1.2.1.1	person	
+::node	c3	1.2.2.1.3	country	
+::node	"Greenpeace"	1.1.1	"Greenpeace"	
+::edge	1.1.2		name	:op1	1.1.2.1	Greenpeace	"Greenpeace"
+::edge	1.2.2.1	program	program	:mod	1.2.2.1.1	plutonium	plutonium
+::edge	1.1.2		name	:op2	1.1.2.2	International	"International"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Ozawa	"Ozawa"
+::edge	1.2.2.1.3.2		name	:op1	1.2.2.1.3.2.1	Japan	"Japan"
+::edge	1.2.2.1.3		country	:wiki	1.2.2.1.3.1		"Japan"
+::edge	1.2.2.1.3		country	:name	1.2.2.1.3.2		name
+::edge	1.1		organization	:name	1.1.2		name
+::edge	1.2	confirmed	confirm-01	:ARG0	1.2.1	comment	comment-01
+::edge	1.2	confirmed	confirm-01	:ARG1	1.2.2	posed	threaten-01
+::edge	1.2.1.1		person	:name	1.2.1.1.2		name
+::edge	1.2.1.1		person	:wiki	1.2.1.1.1		"Ichirō_Ozawa"
+::edge	1	said	say-01	:ARG0	1.1		organization
+::edge	1	said	say-01	:ARG1	1.2	confirmed	confirm-01
+::edge	1.2.2	posed	threaten-01	:ARG0	1.2.2.1	program	program
+::edge	1.2.2.1	program	program	:mod	1.2.2.1.2	massive	massive
+::edge	1.2.1	comment	comment-01	:ARG0	1.2.1.1		person
+::edge	1.2.2.1	program	program	:poss	1.2.2.1.3		country
+::edge	1.1		organization	:wiki	1.1.1		"Greenpeace"
+17	Shaun Bernie of Greenpeace International said Ozawa is right to state the potential of Japan to use its so-called peaceful plutonium program for nuclear weapons purposes.
+17	Shaun Bernie of Greenpeace International said Ozawa is right to state the potential of Japan to use its so @-@ called peaceful plutonium program for nuclear weapons purposes .
+17	0-1.1.2.1 1-1.1.2.2 3-1.1.3.2.1 4-1.1.3.2.2 5-1 6-1.2.1.2.1 8-1.2 10-1.2.2 12-1.2.2.2 13-1.2.2.2.1.r 14-1.2.2.2.1.2.1 16-1.2.2.2.2 16-1.2.2.2.2.r 17-1.2.2.2.2.1 17-1.2.2.2.2.1.r 18-1.2.2.2.2.2.3.1 20-1.2.2.2.2.2.3 21-1.2.2.2.2.2.2 22-1.2.2.2.2.2.1 23-1.2.2.2.2.2 24-1.2.2.2.2.3.r 25-1.2.2.2.2.3.1 26-1.2.2.2.2.3 27-1.2.2.2.2.r
+::node	"International"	1.1.3.2.2	"International"	International
+::node	"Greenpeace"	1.1.3.2.1	"Greenpeace"	Greenpeace
+::node	s3	1.2.2.2.2.2.3.1	so	so
+::node	n5	1.2.1.2	name	
+::node	p2	1.2.2.1	person	
+::node	"Japan"	1.2.2.2.1.1	"Japan"	
+::node	p3	1.2.2.2	potential	potential
+::node	c	1.2.2.2.1	country	
+::node	p4	1.2.2.2.2.2	program	program
+::node	"Ichirō_Ozawa"	1.2.1.1	"Ichirō_Ozawa"	
+::node	n4	1.2.2.2.1.2	name	
+::node	u	1.2.2.2.2	use-01	use
+::node	c	1.2.2.2.2.1	country	its
+::node	w	1.2.2.2.2.3	weapon	weapons
+::node	"Shaun"	1.1.2.1	"Shaun"	Shaun
+::node	"Bernie"	1.1.2.2	"Bernie"	Bernie
+::node	"Greenpeace"	1.1.3.1	"Greenpeace"	
+::node	n2	1.1.3.2	name	
+::node	"Japan"	1.2.2.2.1.2.1	"Japan"	Japan
+::node	n	1.1.2	name	
+::node	p2	1.2.1	person	
+::node	s	1	say-01	said
+::node	o	1.1.3	organization	
+::node	s2	1.2.2	state-01	state
+::node	"Ozawa"	1.2.1.2.1	"Ozawa"	Ozawa
+::node	p	1.1	person	
+::node	p6	1.2.2.2.2.2.2	peaceful	peaceful
+::node	n3	1.2.2.2.2.3.1	nucleus	nuclear
+::node	r	1.2	right-41	right
+::node	p5	1.2.2.2.2.2.1	plutonium	plutonium
+::node	c2	1.2.2.2.2.2.3	call-01	called
+::node	-	1.1.1	-	
+::edge	1.1.3.2		name	:op2	1.1.3.2.2	International	"International"
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	Greenpeace	"Greenpeace"
+::edge	1.2.2.2.2.2.3	called	call-01	:mod	1.2.2.2.2.2.3.1	so	so
+::edge	1.2.1		person	:name	1.2.1.2		name
+::edge	1.2.2	state	state-01	:ARG0	1.2.2.1		person
+::edge	1.2.2.2.1		country	:wiki	1.2.2.2.1.1		"Japan"
+::edge	1.2.2	state	state-01	:ARG1	1.2.2.2	potential	potential
+::edge	1.2.2.2	potential	potential	:poss	1.2.2.2.1		country
+::edge	1.2.2.2.2	use	use-01	:ARG1	1.2.2.2.2.2	program	program
+::edge	1.2.1		person	:wiki	1.2.1.1		"Ichirō_Ozawa"
+::edge	1.2.2.2.1		country	:name	1.2.2.2.1.2		name
+::edge	1.2.2.2	potential	potential	:purpose	1.2.2.2.2	use	use-01
+::edge	1.2.2.2.2	use	use-01	:ARG0	1.2.2.2.2.1	its	country
+::edge	1.2.2.2.2	use	use-01	:ARG2	1.2.2.2.2.3	weapons	weapon
+::edge	1.1.2		name	:op1	1.1.2.1	Shaun	"Shaun"
+::edge	1.1.2		name	:op2	1.1.2.2	Bernie	"Bernie"
+::edge	1.1.3		organization	:wiki	1.1.3.1		"Greenpeace"
+::edge	1.1.3		organization	:name	1.1.3.2		name
+::edge	1.2.2.2.1.2		name	:op1	1.2.2.2.1.2.1	Japan	"Japan"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	right	right-41	:ARG1	1.2.1		person
+::edge	1.1		person	:poss	1.1.3		organization
+::edge	1.2	right	right-41	:ARG2	1.2.2	state	state-01
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Ozawa	"Ozawa"
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1.2.2.2.2.2	program	program	:mod	1.2.2.2.2.2.2	peaceful	peaceful
+::edge	1.2.2.2.2.3	weapons	weapon	:mod	1.2.2.2.2.3.1	nuclear	nucleus
+::edge	1	said	say-01	:ARG1	1.2	right	right-41
+::edge	1.2.2.2.2.2	program	program	:mod	1.2.2.2.2.2.1	plutonium	plutonium
+::edge	1.2.2.2.2.2	program	program	:ARG1-of	1.2.2.2.2.2.3	called	call-01
+::edge	1.1		person	:wiki	1.1.1		-
+18	Bernie said Ozawa has exposed the myths of Japan being a peaceful energy program for a resource poor country.
+18	Bernie said Ozawa has exposed the myths of Japan being a peaceful energy program for a resource poor country .
+18	0-1.1.2.1 1-1 2-1.2.1.2.1 4-1.2 6-1.2.2 7-1.2.2.1.r 8-1.2.2.1.2.1 11-1.2.2.2.2 12-1.2.2.2.1 13-1.2.2.2 14-1.2.2.2.3.r 16-1.2.2.2.3.1.1 17-1.2.2.2.3.1 18-1.2.2.2.3
+::node	"Bernie"	1.1.2.1	"Bernie"	Bernie
+::node	"Japan"	1.2.2.1.1	"Japan"	
+::node	r	1.2.2.2.3.1.1	resource	resource
+::node	"Japan"	1.2.2.1.2.1	"Japan"	Japan
+::node	n3	1.1.2	name	
+::node	p2	1.2.1	person	
+::node	s	1	say-01	said
+::node	m	1.2.2	myth	myths
+::node	"Ozawa"	1.2.1.2.1	"Ozawa"	Ozawa
+::node	p	1.1	person	
+::node	e	1.2	expose-01	exposed
+::node	n2	1.2.1.2	name	
+::node	c	1.2.2.1	country	
+::node	p3	1.2.2.2	program	program
+::node	n	1.2.2.1.2	name	
+::node	e2	1.2.2.2.1	energy	energy
+::node	p5	1.2.2.2.3.1	poor	poor
+::node	"Ichirō_Ozawa"	1.2.1.1	"Ichirō_Ozawa"	
+::node	p4	1.2.2.2.2	peaceful	peaceful
+::node	c2	1.2.2.2.3	country	country
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Bernie	"Bernie"
+::edge	1.2.2.1		country	:wiki	1.2.2.1.1		"Japan"
+::edge	1.2.2.2.3.1	poor	poor	:mod	1.2.2.2.3.1.1	resource	resource
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	Japan	"Japan"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	exposed	expose-01	:ARG0	1.2.1		person
+::edge	1.2	exposed	expose-01	:ARG1	1.2.2	myths	myth
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Ozawa	"Ozawa"
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	exposed	expose-01
+::edge	1.2.1		person	:name	1.2.1.2		name
+::edge	1.2.2	myths	myth	:poss	1.2.2.1		country
+::edge	1.2.2	myths	myth	:topic	1.2.2.2	program	program
+::edge	1.2.2.1		country	:name	1.2.2.1.2		name
+::edge	1.2.2.2	program	program	:mod	1.2.2.2.1	energy	energy
+::edge	1.2.2.2.3	country	country	:mod	1.2.2.2.3.1	poor	poor
+::edge	1.2.1		person	:wiki	1.2.1.1		"Ichirō_Ozawa"
+::edge	1.2.2.2	program	program	:mod	1.2.2.2.2	peaceful	peaceful
+::edge	1.2.2.2	program	program	:purpose	1.2.2.2.3	country	country
+::edge	1.1		person	:wiki	1.1.1		-
+19	Bernie said Ozawa's statement may actually serve an important role in forcing the scale of Japan's plutonium program and the threat of confrontation in northeast Asia on to the international agenda.
+19	Bernie said Ozawa 's statement may actually serve an important role in forcing the scale of Japan 's plutonium program and the threat of confrontation in northeast Asia on to the international agenda .
+19	0-1.1.2.1 1-1 2-1.2.1.1.1.1.2.1 3-1.2.1.1.1.1.r 4-1.2.1.1 4-1.2.1.1.1 4-1.2.1.1.1.r 5-1.2 6-1.2.1.3 7-1.2.1 9-1.2.1.2.1 10-1.2.1.2 11-1.2.1.2.2.r 12-1.2.1.2.2 14-1.2.1.2.2.1.1 15-1.2.1.2.2.1.1.1.r 16-1.2.1.2.2.1.1.1.1.2.1 17-1.2.1.2.2.1.1.1.1.r 18-1.2.1.2.2.1.1.1.2 19-1.2.1.2.2.1.1.1 20-1.2.1.2.2.1 22-1.2.1.2.2.1.2 23-1.2.1.2.2.1.2.1.r 24-1.2.1.2.2.1.2.1 25-1.2.1.2.2.1.2.1.1.r 26-1.2.1.2.2.1.2.1.1.2.1 27-1.2.1.2.2.1.2.1.1.2.2 29-1.2.1.2.2.2.r 31-1.2.1.2.2.2.1 32-1.2.1.2.2.2
+::node	"Ichirō_Ozawa"	1.2.1.1.1.1.1	"Ichirō_Ozawa"	
+::node	n3	1.2.1.1.1.1.2	name	
+::node	n2	1.2.1.2.2.1.1.1.1.2	name	
+::node	w	1.2.1.2.2.1.2.1.1	world-region	
+::node	f	1.2.1.2.2	force-02	forcing
+::node	"Japan"	1.2.1.2.2.1.1.1.1.1	"Japan"	
+::node	r	1.2.1.2	role	role
+::node	a3	1.2.1.3	actual	actually
+::node	t	1.2.1.1	thing	statement
+::node	"Bernie"	1.1.2.1	"Bernie"	Bernie
+::node	p3	1.2.1.1.1.1	person	
+::node	c2	1.2.1.2.2.1.2.1	confront-01	confrontation
+::node	p4	1.2.1.2.2.1.1.1	program	program
+::node	"Northeast_Asia"	1.2.1.2.2.1.2.1.1.1	"Northeast_Asia"	
+::node	n	1.2.1.2.2.1.2.1.1.2	name	
+::node	n4	1.1.2	name	
+::node	s2	1.2.1	serve-01	serve
+::node	s	1	say-01	said
+::node	a	1.2.1.2.2.1	and	and
+::node	i	1.2.1.2.1	important	important
+::node	s3	1.2.1.1.1	state-01	statement
+::node	p	1.1	person	
+::node	"Ozawa"	1.2.1.1.1.1.2.1	"Ozawa"	Ozawa
+::node	p2	1.2	possible	may
+::node	a2	1.2.1.2.2.2	agenda	agenda
+::node	"Japan"	1.2.1.2.2.1.1.1.1.2.1	"Japan"	Japan
+::node	p5	1.2.1.2.2.1.1.1.2	plutonium	plutonium
+::node	"Asia"	1.2.1.2.2.1.2.1.1.2.2	"Asia"	Asia
+::node	c	1.2.1.2.2.1.1.1.1	country	
+::node	"Northeast"	1.2.1.2.2.1.2.1.1.2.1	"Northeast"	northeast
+::node	t2	1.2.1.2.2.1.2	threat	threat
+::node	i2	1.2.1.2.2.2.1	international	international
+::node	-	1.1.1	-	
+::node	s4	1.2.1.2.2.1.1	scale	scale
+::edge	1.2.1.1.1.1		person	:wiki	1.2.1.1.1.1.1		"Ichirō_Ozawa"
+::edge	1.2.1.1.1.1		person	:name	1.2.1.1.1.1.2		name
+::edge	1.2.1.2.2.1.1.1.1		country	:name	1.2.1.2.2.1.1.1.1.2		name
+::edge	1.2.1.2.2.1.2.1	confrontation	confront-01	:location	1.2.1.2.2.1.2.1.1		world-region
+::edge	1.2.1.2	role	role	:purpose	1.2.1.2.2	forcing	force-02
+::edge	1.2.1.2.2.1.1.1.1		country	:wiki	1.2.1.2.2.1.1.1.1.1		"Japan"
+::edge	1.2.1	serve	serve-01	:ARG1	1.2.1.2	role	role
+::edge	1.2.1	serve	serve-01	:mod	1.2.1.3	actually	actual
+::edge	1.2.1	serve	serve-01	:ARG0	1.2.1.1	statement	thing
+::edge	1.1.2		name	:op1	1.1.2.1	Bernie	"Bernie"
+::edge	1.2.1.1.1	statement	state-01	:ARG0	1.2.1.1.1.1		person
+::edge	1.2.1.2.2.1.2	threat	threat	:topic	1.2.1.2.2.1.2.1	confrontation	confront-01
+::edge	1.2.1.2.2.1.1	scale	scale	:poss	1.2.1.2.2.1.1.1	program	program
+::edge	1.2.1.2.2.1.2.1.1		world-region	:wiki	1.2.1.2.2.1.2.1.1.1		"Northeast_Asia"
+::edge	1.2.1.2.2.1.2.1.1		world-region	:name	1.2.1.2.2.1.2.1.1.2		name
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	may	possible	:domain	1.2.1	serve	serve-01
+::edge	1.2.1.2.2	forcing	force-02	:ARG1	1.2.1.2.2.1	and	and
+::edge	1.2.1.2	role	role	:mod	1.2.1.2.1	important	important
+::edge	1.2.1.1	statement	thing	:ARG1-of	1.2.1.1.1	statement	state-01
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1.2.1.1.1.1.2		name	:op1	1.2.1.1.1.1.2.1	Ozawa	"Ozawa"
+::edge	1	said	say-01	:ARG1	1.2	may	possible
+::edge	1.2.1.2.2	forcing	force-02	:ARG2	1.2.1.2.2.2	agenda	agenda
+::edge	1.2.1.2.2.1.1.1.1.2		name	:op1	1.2.1.2.2.1.1.1.1.2.1	Japan	"Japan"
+::edge	1.2.1.2.2.1.1.1	program	program	:mod	1.2.1.2.2.1.1.1.2	plutonium	plutonium
+::edge	1.2.1.2.2.1.2.1.1.2		name	:op2	1.2.1.2.2.1.2.1.1.2.2	Asia	"Asia"
+::edge	1.2.1.2.2.1.1.1	program	program	:poss	1.2.1.2.2.1.1.1.1		country
+::edge	1.2.1.2.2.1.2.1.1.2		name	:op1	1.2.1.2.2.1.2.1.1.2.1	northeast	"Northeast"
+::edge	1.2.1.2.2.1	and	and	:op2	1.2.1.2.2.1.2	threat	threat
+::edge	1.2.1.2.2.2	agenda	agenda	:mod	1.2.1.2.2.2.1	international	international
+::edge	1.1		person	:wiki	1.1.1		-
+::edge	1.2.1.2.2.1	and	and	:op1	1.2.1.2.2.1.1	scale	scale

@@ -1,0 +1,1386 @@
+1	2002-03-04
+1	2002 @-@ 03 @-@ 04
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	3	1.2	3	03
+::node	4	1.3	4	04
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	03	3
+::edge	1		date-entity	:day	1.3	04	4
+2	Korea, Republic of (KR); United States (US)
+2	Korea , Republic of ( KR ) ; United States ( US )
+2	0-1.1.2.3 2-1.1.2.1 3-1.1.2.2 5-1.1.2.1 5-1.1.2.2 5-1.1.2.3 8-1.2.2.1 9-1.2.2.2
+::node	n3	1.1.2	name	
+::node	"United_States"	1.2.1	"United_States"	
+::node	a	1	and	
+::node	n2	1.2.2	name	
+::node	"Republic"	1.1.2.1	"Republic"	KR
+::node	c3	1.1	country	
+::node	"of"	1.1.2.2	"of"	KR
+::node	"Korea"	1.1.2.3	"Korea"	KR
+::node	c2	1.2	country	
+::node	"United"	1.2.2.1	"United"	United
+::node	"States"	1.2.2.2	"States"	States
+::node	"South_Korea"	1.1.1	"South_Korea"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"United_States"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	KR	"Republic"
+::edge	1		and	:op1	1.1		country
+::edge	1.1.2		name	:op2	1.1.2.2	KR	"of"
+::edge	1.1.2		name	:op3	1.1.2.3	KR	"Korea"
+::edge	1		and	:op2	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	United	"United"
+::edge	1.2.2		name	:op2	1.2.2.2	States	"States"
+::edge	1.1		country	:wiki	1.1.1		"South_Korea"
+3	International; Government; military
+3	International ; Government ; military
+3	0-1.1 2-1.2 2-1.2.1 2-1.2.1.r 4-1.3
+::node	g2	1.2.1	govern-01	Government
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	g	1.2	government-organization	Government
+::node	m	1.3	military	military
+::edge	1.2	Government	government-organization	:ARG0-of	1.2.1	Government	govern-01
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	Government	government-organization
+::edge	1		and	:op3	1.3	military	military
+4	South Korea's defense ministry under attack in parliament over allegations it is favoring U.S. company Boeing for multi-billion-dollar fighter project.
+4	South Korea 's defense ministry under attack in parliament over allegations it is favoring U.S. company Boeing for multi @-@ billion @-@ dollar fighter project .
+4	0-1.1.3.2.1 1-1.1.3.2.2 2-1.1.3.r 3-1.1.2.1 4-1.1.2.2 6-1 7-1.2.r 8-1.2.2.1 10-1.3.1 11-1.3.1.1.1 13-1.3.1.1 14-1.3.1.1.2.3.2.1 15-1.3.1.1.2 16-1.3.1.1.2.2.1 20-1.3.1.1.3.2.1.1 22-1.3.1.1.3.2.1.2 23-1.3.1.1.3.1 23-1.3.1.1.3.1.1 23-1.3.1.1.3.1.1.r 24-1.3.1.1.3
+::node	"Korea"	1.1.3.2.2	"Korea"	Korea
+::node	f2	1.3.1.1.3.1.1	fight-01	fighter
+::node	"South"	1.1.3.2.1	"South"	South
+::node	f	1.3.1.1	favor-01	favoring
+::node	g	1.3.1.1.1	government-organization	it
+::node	m	1.3.1.1.3.2.1	monetary-quantity	
+::node	"U.S."	1.3.1.1.2.3.2.1	"U.S."	U.S.
+::node	1000000000	1.3.1.1.3.2.1.1	1000000000	billion
+::node	d	1.3.1.1.3.2.1.2	dollar	dollar
+::node	"Parliament"	1.2.2.1	"Parliament"	parliament
+::node	"Defense"	1.1.2.1	"Defense"	defense
+::node	"Ministry"	1.1.2.2	"Ministry"	ministry
+::node	"South_Korea"	1.1.3.1	"South_Korea"	
+::node	n5	1.1.3.2	name	
+::node	"Boeing"	1.3.1.1.2.1	"Boeing"	
+::node	c3	1.3.1.1.2.3	country	
+::node	m3	1.3.1.1.3.2	multiple	
+::node	n3	1.3.1.1.2.2	name	
+::node	a3	1.3.1.1.3.1	aircraft	fighter
+::node	n	1.1.2	name	
+::node	"National_Assembly_BLANKETPAIR0"	1.2.1	"National_Assembly_BLANKETPAIR0"	
+::node	"Boeing"	1.3.1.1.2.2.1	"Boeing"	Boeing
+::node	a	1	attack-01	attack
+::node	c4	1.1.3	country	
+::node	n2	1.2.2	name	
+::node	a2	1.3.1	allege-01	allegations
+::node	g	1.1	government-organization	
+::node	c2	1.3.1.1.2	company	company
+::node	g2	1.2	government-organization	
+::node	p	1.3.1.1.3	project	project
+::node	c	1.3	cause-01	
+::node	n4	1.3.1.1.2.3.2	name	
+::node	"Ministry_of_National_Defense_BLANKETPAIR0"	1.1.1	"Ministry_of_National_Defense_BLANKETPAIR0"	
+::node	"United_States"	1.3.1.1.2.3.1	"United_States"	
+::edge	1.1.3.2		name	:op2	1.1.3.2.2	Korea	"Korea"
+::edge	1.3.1.1.3.1	fighter	aircraft	:ARG0-of	1.3.1.1.3.1.1	fighter	fight-01
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	South	"South"
+::edge	1.3.1	allegations	allege-01	:ARG1	1.3.1.1	favoring	favor-01
+::edge	1.3.1.1	favoring	favor-01	:ARG0	1.3.1.1.1	it	government-organization
+::edge	1.3.1.1.3.2		multiple	:op1	1.3.1.1.3.2.1		monetary-quantity
+::edge	1.3.1.1.2.3.2		name	:op1	1.3.1.1.2.3.2.1	U.S.	"U.S."
+::edge	1.3.1.1.3.2.1		monetary-quantity	:quant	1.3.1.1.3.2.1.1	billion	1000000000
+::edge	1.3.1.1.3.2.1		monetary-quantity	:unit	1.3.1.1.3.2.1.2	dollar	dollar
+::edge	1.2.2		name	:op1	1.2.2.1	parliament	"Parliament"
+::edge	1.1.2		name	:op1	1.1.2.1	defense	"Defense"
+::edge	1.1.2		name	:op2	1.1.2.2	ministry	"Ministry"
+::edge	1.1.3		country	:wiki	1.1.3.1		"South_Korea"
+::edge	1.1.3		country	:name	1.1.3.2		name
+::edge	1.3.1.1.2	company	company	:wiki	1.3.1.1.2.1		"Boeing"
+::edge	1.3.1.1.2	company	company	:source	1.3.1.1.2.3		country
+::edge	1.3.1.1.3	project	project	:mod	1.3.1.1.3.2		multiple
+::edge	1.3.1.1.2	company	company	:name	1.3.1.1.2.2		name
+::edge	1.3.1.1.3	project	project	:mod	1.3.1.1.3.1	fighter	aircraft
+::edge	1.1		government-organization	:name	1.1.2		name
+::edge	1.2		government-organization	:wiki	1.2.1		"National_Assembly_BLANKETPAIR0"
+::edge	1.3.1.1.2.2		name	:op1	1.3.1.1.2.2.1	Boeing	"Boeing"
+::edge	1.1		government-organization	:poss	1.1.3		country
+::edge	1.2		government-organization	:name	1.2.2		name
+::edge	1.3		cause-01	:ARG0	1.3.1	allegations	allege-01
+::edge	1	attack	attack-01	:ARG1	1.1		government-organization
+::edge	1.3.1.1	favoring	favor-01	:ARG1	1.3.1.1.2	company	company
+::edge	1	attack	attack-01	:location	1.2		government-organization
+::edge	1.3.1.1	favoring	favor-01	:purpose	1.3.1.1.3	project	project
+::edge	1	attack	attack-01	:ARG1-of	1.3		cause-01
+::edge	1.3.1.1.2.3		country	:name	1.3.1.1.2.3.2		name
+::edge	1.1		government-organization	:wiki	1.1.1		"Ministry_of_National_Defense_BLANKETPAIR0"
+::edge	1.3.1.1.2.3		country	:wiki	1.3.1.1.2.3.1		"United_States"
+5	Newspaper reports reveal that French-made plane was rated higher in air force evaluations and that the Government is instead responding to political pressure from the U.S. and Boeing.
+5	Newspaper reports reveal that French @-@ made plane was rated higher in air force evaluations and that the Government is instead responding to political pressure from the U.S. and Boeing .
+5	0-1.1.1 1-1.1 2-1 3-1.2.r 4-1.2.1.2.1.1.2.1 6-1.2.1.2.1 7-1.2.1.2 9-1.2.1 10-1.2.1.3 10-1.2.1.3.1 10-1.2.1.3.1.r 11-1.2.1.1.r 12-1.2.1.1.1.1 13-1.2.1.1.1 14-1.2.1.1 15-1.2 16-1.2.r 18-1.2.2.1 18-1.2.2.1.1 18-1.2.2.1.1.r 20-1.2.2.3 21-1.2.2 23-1.2.2.2.3 24-1.2.2.2 25-1.2.2.2.1.r 27-1.2.2.2.1.1.2.1 28-1.2.2.2.1 29-1.2.2.2.1.2.2.1
+::node	"France"	1.2.1.2.1.1.2.1	"France"	French
+::node	m3	1.2.1.3.1	more	higher
+::node	i	1.2.2.3	instead-of-91	instead
+::node	p	1.2.1.2	plane	plane
+::node	g	1.2.2.1	government-organization	Government
+::node	c2	1.2.2.2.1.1	country	
+::node	h	1.2.1.3	high	higher
+::node	p2	1.2.2.2	pressure-01	pressure
+::node	a2	1.2.2.2.1	and	and
+::node	e	1.2.1.1	evaluate-01	evaluations
+::node	c3	1.2.2.2.1.2	company	
+::node	g	1.2.2.2.2	government-organization	
+::node	p3	1.2.2.2.3	political	political
+::node	g2	1.2.2.1.1	govern-01	Government
+::node	a3	1.2.1.1.1.1	air	air
+::node	n5	1.2.2.2.1.2.2	name	
+::node	n4	1.2.2.2.1.1.2	name	
+::node	"Boeing"	1.2.2.2.1.2.1	"Boeing"	
+::node	"United_States"	1.2.2.2.1.1.1	"United_States"	
+::node	n3	1.2.1.2.1.1.2	name	
+::node	"France"	1.2.1.2.1.1.1	"France"	
+::node	"U.S."	1.2.2.2.1.1.2.1	"U.S."	U.S.
+::node	r3	1.2.1	rate-01	rated
+::node	c	1.2.1.2.1.1	country	
+::node	r	1	reveal-01	reveal
+::node	r4	1.2.2	respond-01	responding
+::node	m2	1.2.1.2.1	make-01	made
+::node	f	1.2.1.1.1	force	force
+::node	r2	1.1	report-01	reports
+::node	a	1.2	and	and
+::node	n	1.1.1	newspaper	Newspaper
+::node	"Boeing"	1.2.2.2.1.2.2.1	"Boeing"	Boeing
+::edge	1.2.1.2.1.1.2		name	:op1	1.2.1.2.1.1.2.1	French	"France"
+::edge	1.2.1.3	higher	high	:degree	1.2.1.3.1	higher	more
+::edge	1.2.2	responding	respond-01	:ARG1-of	1.2.2.3	instead	instead-of-91
+::edge	1.2.1	rated	rate-01	:ARG1	1.2.1.2	plane	plane
+::edge	1.2.2	responding	respond-01	:ARG0	1.2.2.1	Government	government-organization
+::edge	1.2.2.2.1	and	and	:op1	1.2.2.2.1.1		country
+::edge	1.2.1	rated	rate-01	:ARG2	1.2.1.3	higher	high
+::edge	1.2.2	responding	respond-01	:ARG1	1.2.2.2	pressure	pressure-01
+::edge	1.2.2.2	pressure	pressure-01	:ARG0	1.2.2.2.1	and	and
+::edge	1.2.1	rated	rate-01	:ARG0	1.2.1.1	evaluations	evaluate-01
+::edge	1.2.2.2.1	and	and	:op2	1.2.2.2.1.2		company
+::edge	1.2.2.2	pressure	pressure-01	:ARG1	1.2.2.2.2		government-organization
+::edge	1.2.2.2	pressure	pressure-01	:mod	1.2.2.2.3	political	political
+::edge	1.2.2.1	Government	government-organization	:ARG0-of	1.2.2.1.1	Government	govern-01
+::edge	1.2.1.1.1	force	force	:mod	1.2.1.1.1.1	air	air
+::edge	1.2.2.2.1.2		company	:name	1.2.2.2.1.2.2		name
+::edge	1.2.2.2.1.1		country	:name	1.2.2.2.1.1.2		name
+::edge	1.2.2.2.1.2		company	:wiki	1.2.2.2.1.2.1		"Boeing"
+::edge	1.2.2.2.1.1		country	:wiki	1.2.2.2.1.1.1		"United_States"
+::edge	1.2.1.2.1.1		country	:name	1.2.1.2.1.1.2		name
+::edge	1.2.1.2.1.1		country	:wiki	1.2.1.2.1.1.1		"France"
+::edge	1.2.2.2.1.1.2		name	:op1	1.2.2.2.1.1.2.1	U.S.	"U.S."
+::edge	1.2	and	and	:op1	1.2.1	rated	rate-01
+::edge	1.2.1.2.1	made	make-01	:ARG0	1.2.1.2.1.1		country
+::edge	1.2	and	and	:op2	1.2.2	responding	respond-01
+::edge	1.2.1.2	plane	plane	:ARG1-of	1.2.1.2.1	made	make-01
+::edge	1.2.1.1	evaluations	evaluate-01	:ARG1	1.2.1.1.1	force	force
+::edge	1	reveal	reveal-01	:ARG0	1.1	reports	report-01
+::edge	1	reveal	reveal-01	:ARG1	1.2	and	and
+::edge	1.1	reports	report-01	:ARG0	1.1.1	Newspaper	newspaper
+::edge	1.2.2.2.1.2.2		name	:op1	1.2.2.2.1.2.2.1	Boeing	"Boeing"
+6	South Korea's Defense Ministry came under attack in Parliament on 04 March 2002 over allegations that it is favoring U.S. company Boeing for a multi-billion-dollar fighter project.
+6	South Korea 's Defense Ministry came under attack in Parliament on 04 March 2002 over allegations that it is favoring U.S. company Boeing for a multi @-@ billion @-@ dollar fighter project .
+6	0-1.1.3.2.1 1-1.1.3.2.2 2-1.1.3.r 3-1.1.2.1 4-1.1.2.2 7-1 8-1.2.r 9-1.2.2.1 10-1.4.r 11-1.4.3 12-1.4.2 12-1.4.2.r 13-1.4.1 15-1.3.1 16-1.3.1.1.r 17-1.3.1.1.1 19-1.3.1.1 20-1.3.1.1.2.3.2.1 21-1.3.1.1.2 22-1.3.1.1.2.2.1 27-1.3.1.1.3.2.1.1 29-1.3.1.1.3.2.1.2 30-1.3.1.1.3.1 30-1.3.1.1.3.1.1 30-1.3.1.1.3.1.1.r 31-1.3.1.1.3
+::node	"Korea"	1.1.3.2.2	"Korea"	Korea
+::node	f2	1.3.1.1.3.1.1	fight-01	fighter
+::node	"South"	1.1.3.2.1	"South"	South
+::node	f	1.3.1.1	favor-01	favoring
+::node	g	1.3.1.1.1	government-organization	it
+::node	m	1.3.1.1.3.2.1	monetary-quantity	
+::node	"U.S."	1.3.1.1.2.3.2.1	"U.S."	U.S.
+::node	1000000000	1.3.1.1.3.2.1.1	1000000000	billion
+::node	d	1.3.1.1.3.2.1.2	dollar	dollar
+::node	"Parliament"	1.2.2.1	"Parliament"	Parliament
+::node	"Defense"	1.1.2.1	"Defense"	Defense
+::node	"Ministry"	1.1.2.2	"Ministry"	Ministry
+::node	"South_Korea"	1.1.3.1	"South_Korea"	
+::node	n5	1.1.3.2	name	
+::node	"Boeing"	1.3.1.1.2.1	"Boeing"	
+::node	c3	1.3.1.1.2.3	country	
+::node	m2	1.3.1.1.3.2	multiple	
+::node	n3	1.3.1.1.2.2	name	
+::node	a3	1.3.1.1.3.1	aircraft	fighter
+::node	n	1.1.2	name	
+::node	"National_Assembly_BLANKETPAIR0"	1.2.1	"National_Assembly_BLANKETPAIR0"	
+::node	"Boeing"	1.3.1.1.2.2.1	"Boeing"	Boeing
+::node	a	1	attack-01	attack
+::node	c4	1.1.3	country	
+::node	n2	1.2.2	name	
+::node	a2	1.3.1	allege-01	allegations
+::node	2002	1.4.1	2002	2002
+::node	3	1.4.2	3	March
+::node	g	1.1	government-organization	
+::node	c2	1.3.1.1.2	company	company
+::node	4	1.4.3	4	04
+::node	g2	1.2	government-organization	
+::node	p	1.3.1.1.3	project	project
+::node	c	1.3	cause-01	
+::node	d2	1.4	date-entity	
+::node	n4	1.3.1.1.2.3.2	name	
+::node	"Ministry_of_National_Defense_BLANKETPAIR0"	1.1.1	"Ministry_of_National_Defense_BLANKETPAIR0"	
+::node	"United_States"	1.3.1.1.2.3.1	"United_States"	
+::edge	1.1.3.2		name	:op2	1.1.3.2.2	Korea	"Korea"
+::edge	1.3.1.1.3.1	fighter	aircraft	:ARG0-of	1.3.1.1.3.1.1	fighter	fight-01
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	South	"South"
+::edge	1.3.1	allegations	allege-01	:ARG1	1.3.1.1	favoring	favor-01
+::edge	1.3.1.1	favoring	favor-01	:ARG0	1.3.1.1.1	it	government-organization
+::edge	1.3.1.1.3.2		multiple	:op1	1.3.1.1.3.2.1		monetary-quantity
+::edge	1.3.1.1.2.3.2		name	:op1	1.3.1.1.2.3.2.1	U.S.	"U.S."
+::edge	1.3.1.1.3.2.1		monetary-quantity	:quant	1.3.1.1.3.2.1.1	billion	1000000000
+::edge	1.3.1.1.3.2.1		monetary-quantity	:unit	1.3.1.1.3.2.1.2	dollar	dollar
+::edge	1.2.2		name	:op1	1.2.2.1	Parliament	"Parliament"
+::edge	1.1.2		name	:op1	1.1.2.1	Defense	"Defense"
+::edge	1.1.2		name	:op2	1.1.2.2	Ministry	"Ministry"
+::edge	1.1.3		country	:wiki	1.1.3.1		"South_Korea"
+::edge	1.1.3		country	:name	1.1.3.2		name
+::edge	1.3.1.1.2	company	company	:wiki	1.3.1.1.2.1		"Boeing"
+::edge	1.3.1.1.2	company	company	:source	1.3.1.1.2.3		country
+::edge	1.3.1.1.3	project	project	:mod	1.3.1.1.3.2		multiple
+::edge	1.3.1.1.2	company	company	:name	1.3.1.1.2.2		name
+::edge	1.3.1.1.3	project	project	:mod	1.3.1.1.3.1	fighter	aircraft
+::edge	1.1		government-organization	:name	1.1.2		name
+::edge	1.2		government-organization	:wiki	1.2.1		"National_Assembly_BLANKETPAIR0"
+::edge	1.3.1.1.2.2		name	:op1	1.3.1.1.2.2.1	Boeing	"Boeing"
+::edge	1.1		government-organization	:poss	1.1.3		country
+::edge	1.2		government-organization	:name	1.2.2		name
+::edge	1.3		cause-01	:ARG0	1.3.1	allegations	allege-01
+::edge	1.4		date-entity	:year	1.4.1	2002	2002
+::edge	1.4		date-entity	:month	1.4.2	March	3
+::edge	1	attack	attack-01	:ARG1	1.1		government-organization
+::edge	1.3.1.1	favoring	favor-01	:ARG1	1.3.1.1.2	company	company
+::edge	1.4		date-entity	:day	1.4.3	04	4
+::edge	1	attack	attack-01	:location	1.2		government-organization
+::edge	1.3.1.1	favoring	favor-01	:purpose	1.3.1.1.3	project	project
+::edge	1	attack	attack-01	:ARG1-of	1.3		cause-01
+::edge	1	attack	attack-01	:time	1.4		date-entity
+::edge	1.3.1.1.2.3		country	:name	1.3.1.1.2.3.2		name
+::edge	1.1		government-organization	:wiki	1.1.1		"Ministry_of_National_Defense_BLANKETPAIR0"
+::edge	1.3.1.1.2.3		country	:wiki	1.3.1.1.2.3.1		"United_States"
+7	Ruling and opposition lawmakers criticized the Ministry as newspapers reported that the French-made fighter Rafale had scored the highest marks of any of the 4 contenders in field tests performed by South Korean Air Force evaluators.
+7	Ruling and opposition lawmakers criticized the Ministry as newspapers reported that the French @-@ made fighter Rafale had scored the highest marks of any of the 4 contenders in field tests performed by South Korean Air Force evaluators .
+7	0-1.1.1.1.1.1 1-1.1.1.1 2-1.1.1.1.2 2-1.1.1.1.2.1 2-1.1.1.1.2.1.r 3-1.1 3-1.1.2 3-1.1.2.r 4-1 6-1.2.2.1 7-1.3.r 8-1.3.1 9-1.3 10-1.3.2.r 12-1.3.2.1.4.1.2.1 14-1.3.2.1.4 15-1.3.2.1 15-1.3.2.1.3 15-1.3.2.1.3.r 16-1.3.2.1.2.1 18-1.3.2 20-1.3.2.2.1 21-1.3.2.2 23-1.3.2.2.1.1.1.3 26-1.3.2.2.1.1.1.1 29-1.3.2.2.1.1.1.2.1.2 30-1.3.2.2.1.1.1.2.1 31-1.3.2.2.1.1.1.2.1 32-1.3.2.2.1.1.1.2.1.1.r 33-1.3.2.2.1.1.1.2.1.1.2.1.2.1 34-1.3.2.2.1.1.1.2.1.1.2.1.2.2 35-1.3.2.2.1.1.1.2.1.1.2.1.2.3 36-1.3.2.2.1.1.1.2.1.1.2.1.2.4 37-1.3.2.2.1.1.1.2.1.1 37-1.3.2.2.1.1.1.2.1.1.1 37-1.3.2.2.1.1.1.2.1.1.1.r
+::node	f	1.3.2.1.3	fight-01	fighter
+::node	m2	1.3.2.1.4	make-01	made
+::node	"Dassault_Rafale"	1.3.2.1.1	"Dassault_Rafale"	
+::node	n3	1.3.2.1.2	name	
+::node	h	1.3.2.2.1	high	highest
+::node	a2	1.3.2.1	aircraft-type	fighter
+::node	c2	1.3.2.1.4.1	country	
+::node	m3	1.3.2.2	mark	marks
+::node	"Rafale"	1.3.2.1.2.1	"Rafale"	Rafale
+::node	"South"	1.3.2.2.1.1.1.2.1.1.2.1.2.1	"South"	South
+::node	"France"	1.3.2.1.4.1.1	"France"	
+::node	n4	1.3.2.1.4.1.2	name	
+::node	a3	1.3.2.2.1.1.1	aircraft-type	
+::node	f2	1.3.2.2.1.1.1.2.1.2	field	field
+::node	p5	1.3.2.2.1.1.1.2.1.1	person	evaluators
+::node	p3	1.1.1.1.2	political-party	opposition
+::node	m4	1.3.2.2.1.1	most	
+::node	p2	1.1.1.1.1	political-party	
+::node	"Ministry"	1.2.2.1	"Ministry"	Ministry
+::node	"France"	1.3.2.1.4.1.2.1	"France"	French
+::node	n5	1.3.2.2.1.1.1.2.1.1.2.1.2	name	
+::node	"Republic_of_Korea_Air_Force"	1.3.2.2.1.1.1.2.1.1.2.1.1	"Republic_of_Korea_Air_Force"	
+::node	t	1.3.2.2.1.1.1.2.1	test-01	performed
+::node	r	1.1.1.1.1.1	rule-03	Ruling
+::node	o	1.1.1.1.2.1	oppose-01	opposition
+::node	a	1.1.1.1	and	and
+::node	4	1.3.2.2.1.1.1.1	4	4
+::node	c3	1.3.2.2.1.1.1.2	contend-02	
+::node	a4	1.3.2.2.1.1.1.3	any	any
+::node	p2	1.1.1.1.2.1.1	political-party	
+::node	m5	1.3.2.2.1.1.1.2.1.1.2.1	military	
+::node	l2	1.1.2	legislate-01	lawmakers
+::node	"Ministry_of_National_Defense_BLANKETPAIR0"	1.2.1	"Ministry_of_National_Defense_BLANKETPAIR0"	
+::node	c	1	criticize-01	criticized
+::node	n	1.2.2	name	
+::node	n2	1.3.1	newspaper	newspapers
+::node	"Force"	1.3.2.2.1.1.1.2.1.1.2.1.2.4	"Force"	Force
+::node	s	1.3.2	score-01	scored
+::node	"Air"	1.3.2.2.1.1.1.2.1.1.2.1.2.3	"Air"	Air
+::node	"Korean"	1.3.2.2.1.1.1.2.1.1.2.1.2.2	"Korean"	Korean
+::node	p	1.1	person	lawmakers
+::node	g	1.2	government-organization	
+::node	r2	1.3	report-01	reported
+::node	e	1.3.2.2.1.1.1.2.1.1.1	evaluate-01	evaluators
+::node	h3	1.3.2.2.1.1.1.2.1.1.2	have-org-role-91	
+::node	h2	1.1.1	have-org-role-91	
+::edge	1.3.2.1	fighter	aircraft-type	:ARG0-of	1.3.2.1.3	fighter	fight-01
+::edge	1.3.2.1	fighter	aircraft-type	:ARG1-of	1.3.2.1.4	made	make-01
+::edge	1.3.2.1	fighter	aircraft-type	:wiki	1.3.2.1.1		"Dassault_Rafale"
+::edge	1.3.2.1	fighter	aircraft-type	:name	1.3.2.1.2		name
+::edge	1.3.2.2	marks	mark	:mod	1.3.2.2.1	highest	high
+::edge	1.3.2	scored	score-01	:ARG0	1.3.2.1	fighter	aircraft-type
+::edge	1.3.2.1.4	made	make-01	:ARG0	1.3.2.1.4.1		country
+::edge	1.3.2	scored	score-01	:ARG1	1.3.2.2	marks	mark
+::edge	1.3.2.1.2		name	:op1	1.3.2.1.2.1	Rafale	"Rafale"
+::edge	1.3.2.2.1.1.1.2.1.1.2.1.2		name	:op1	1.3.2.2.1.1.1.2.1.1.2.1.2.1	South	"South"
+::edge	1.3.2.1.4.1		country	:wiki	1.3.2.1.4.1.1		"France"
+::edge	1.3.2.1.4.1		country	:name	1.3.2.1.4.1.2		name
+::edge	1.3.2.2.1.1		most	:compared-to	1.3.2.2.1.1.1		aircraft-type
+::edge	1.3.2.2.1.1.1.2.1	performed	test-01	:mod	1.3.2.2.1.1.1.2.1.2	field	field
+::edge	1.3.2.2.1.1.1.2.1	performed	test-01	:ARG0	1.3.2.2.1.1.1.2.1.1	evaluators	person
+::edge	1.1.1.1	and	and	:op2	1.1.1.1.2	opposition	political-party
+::edge	1.3.2.2.1	highest	high	:extent	1.3.2.2.1.1		most
+::edge	1.1.1.1	and	and	:op1	1.1.1.1.1		political-party
+::edge	1.2.2		name	:op1	1.2.2.1	Ministry	"Ministry"
+::edge	1.3.2.1.4.1.2		name	:op1	1.3.2.1.4.1.2.1	French	"France"
+::edge	1.3.2.2.1.1.1.2.1.1.2.1		military	:name	1.3.2.2.1.1.1.2.1.1.2.1.2		name
+::edge	1.3.2.2.1.1.1.2.1.1.2.1		military	:wiki	1.3.2.2.1.1.1.2.1.1.2.1.1		"Republic_of_Korea_Air_Force"
+::edge	1.3.2.2.1.1.1.2		contend-02	:ARG1	1.3.2.2.1.1.1.2.1	performed	test-01
+::edge	1.1.1.1.1		political-party	:ARG0-of	1.1.1.1.1.1	Ruling	rule-03
+::edge	1.1.1.1.2	opposition	political-party	:ARG0-of	1.1.1.1.2.1	opposition	oppose-01
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1	and	and
+::edge	1.3.2.2.1.1.1		aircraft-type	:quant	1.3.2.2.1.1.1.1	4	4
+::edge	1.3.2.2.1.1.1		aircraft-type	:ARG0-of	1.3.2.2.1.1.1.2		contend-02
+::edge	1.3.2.2.1.1.1		aircraft-type	:mod	1.3.2.2.1.1.1.3	any	any
+::edge	1.1.1.1.2.1	opposition	oppose-01	:ARG1	1.1.1.1.2.1.1		political-party
+::edge	1.3.2.2.1.1.1.2.1.1.2		have-org-role-91	:ARG1	1.3.2.2.1.1.1.2.1.1.2.1		military
+::edge	1.1	lawmakers	person	:ARG0-of	1.1.2	lawmakers	legislate-01
+::edge	1.2		government-organization	:wiki	1.2.1		"Ministry_of_National_Defense_BLANKETPAIR0"
+::edge	1.2		government-organization	:name	1.2.2		name
+::edge	1.3	reported	report-01	:ARG0	1.3.1	newspapers	newspaper
+::edge	1.3.2.2.1.1.1.2.1.1.2.1.2		name	:op4	1.3.2.2.1.1.1.2.1.1.2.1.2.4	Force	"Force"
+::edge	1.3	reported	report-01	:ARG1	1.3.2	scored	score-01
+::edge	1.3.2.2.1.1.1.2.1.1.2.1.2		name	:op3	1.3.2.2.1.1.1.2.1.1.2.1.2.3	Air	"Air"
+::edge	1.3.2.2.1.1.1.2.1.1.2.1.2		name	:op2	1.3.2.2.1.1.1.2.1.1.2.1.2.2	Korean	"Korean"
+::edge	1	criticized	criticize-01	:ARG0	1.1	lawmakers	person
+::edge	1	criticized	criticize-01	:ARG1	1.2		government-organization
+::edge	1	criticized	criticize-01	:time	1.3	reported	report-01
+::edge	1.3.2.2.1.1.1.2.1.1	evaluators	person	:ARG0-of	1.3.2.2.1.1.1.2.1.1.1	evaluators	evaluate-01
+::edge	1.3.2.2.1.1.1.2.1.1	evaluators	person	:ARG0-of	1.3.2.2.1.1.1.2.1.1.2		have-org-role-91
+::edge	1.1	lawmakers	person	:ARG0-of	1.1.1		have-org-role-91
+8	The 3.2 billion U.S. dollar project to buy 40 fighters will be one of the most important international military contracts awarded this year but it has encountered multiple obstacles.
+8	The 3.2 billion U.S. dollar project to buy 40 fighters will be one of the most important international military contracts awarded this year but it has encountered multiple obstacles .
+8	1-1.1.1.2.1.1 2-1.1.1.2.1.1 3-1.1.1.2.1.2.1.2.1 4-1.1.1.2.1.2 5-1.1.1 7-1.1.1.1 8-1.1.1.1.1.1 9-1.1.1.1.1 9-1.1.1.1.1.2 9-1.1.1.1.1.2.r 12-1.1.3 15-1.1.2.1.3.1 16-1.1.2.1.3 17-1.1.2.1.2 18-1.1.2.1.1 19-1.1.2.1 20-1.1.2 21-1.1.2.2.1 22-1.1.2.2 23-1 24-1.2.1 25-1.2 26-1.2 27-1.2.2.1 28-1.2.2
+::node	c3	1.1.1.2.1.2.1	country	
+::node	"United_States"	1.1.1.2.1.2.1.1	"United_States"	
+::node	n	1.1.1.2.1.2.1.2	name	
+::node	m3	1.1.2.1.3.1	most	most
+::node	i2	1.1.2.1.2	international	international
+::node	t	1.1.2.2.1	this	this
+::node	m2	1.1.2.1.1	military	military
+::node	m	1.1.1.2.1	monetary-quantity	
+::node	a	1.1.1.1.1	aircraft	fighters
+::node	m4	1.2.2.1	multiple	multiple
+::node	40	1.1.1.1.1.1	40	40
+::node	f	1.1.1.1.1.2	fight-01	fighters
+::node	b	1.1.1.1	buy-01	buy
+::node	c2	1.1.1.2	cost-01	
+::node	c4	1.1.2.1	contract-02	contracts
+::node	y	1.1.2.2	year	year
+::node	d	1.1.1.2.1.2	dollar	dollar
+::node	3200000000	1.1.1.2.1.1	3200000000	billion
+::node	a2	1.1.2	award-01	awarded
+::node	p	1.2.1	project	it
+::node	c	1	contrast-01	but
+::node	o2	1.1.3	one	one
+::node	o	1.2.2	obstacle	obstacles
+::node	"U.S."	1.1.1.2.1.2.1.2.1	"U.S."	U.S.
+::node	i	1.1	include-91	
+::node	i3	1.1.2.1.3	important	important
+::node	e	1.2	encounter-01	encountered
+::node	p	1.1.1	project	project
+::edge	1.1.1.2.1.2	dollar	dollar	:mod	1.1.1.2.1.2.1		country
+::edge	1.1.1.2.1.2.1		country	:wiki	1.1.1.2.1.2.1.1		"United_States"
+::edge	1.1.1.2.1.2.1		country	:name	1.1.1.2.1.2.1.2		name
+::edge	1.1.2.1.3	important	important	:degree	1.1.2.1.3.1	most	most
+::edge	1.1.2.1	contracts	contract-02	:location	1.1.2.1.2	international	international
+::edge	1.1.2.2	year	year	:mod	1.1.2.2.1	this	this
+::edge	1.1.2.1	contracts	contract-02	:ARG1	1.1.2.1.1	military	military
+::edge	1.1.1.2		cost-01	:ARG2	1.1.1.2.1		monetary-quantity
+::edge	1.1.1.1	buy	buy-01	:ARG1	1.1.1.1.1	fighters	aircraft
+::edge	1.2.2	obstacles	obstacle	:quant	1.2.2.1	multiple	multiple
+::edge	1.1.1.1.1	fighters	aircraft	:quant	1.1.1.1.1.1	40	40
+::edge	1.1.1.1.1	fighters	aircraft	:ARG0-of	1.1.1.1.1.2	fighters	fight-01
+::edge	1.1.1	project	project	:purpose	1.1.1.1	buy	buy-01
+::edge	1.1.1	project	project	:ARG1-of	1.1.1.2		cost-01
+::edge	1.1.2	awarded	award-01	:ARG1	1.1.2.1	contracts	contract-02
+::edge	1.1.2	awarded	award-01	:time	1.1.2.2	year	year
+::edge	1.1.1.2.1		monetary-quantity	:unit	1.1.1.2.1.2	dollar	dollar
+::edge	1.1.1.2.1		monetary-quantity	:quant	1.1.1.2.1.1	billion	3200000000
+::edge	1.1		include-91	:ARG2	1.1.2	awarded	award-01
+::edge	1.2	encountered	encounter-01	:ARG0	1.2.1	it	project
+::edge	1.1		include-91	:ARG3	1.1.3	one	one
+::edge	1.2	encountered	encounter-01	:ARG1	1.2.2	obstacles	obstacle
+::edge	1.1.1.2.1.2.1.2		name	:op1	1.1.1.2.1.2.1.2.1	U.S.	"U.S."
+::edge	1	but	contrast-01	:ARG1	1.1		include-91
+::edge	1.1.2.1	contracts	contract-02	:mod	1.1.2.1.3	important	important
+::edge	1	but	contrast-01	:ARG2	1.2	encountered	encounter-01
+::edge	1.1		include-91	:ARG1	1.1.1	project	project
+9	Award of the contract was temporarily suspended in February 2002 after the prices offered by 4 bidders were judged too high.
+9	Award of the contract was temporarily suspended in February 2002 after the prices offered by 4 bidders were judged too high .
+9	0-1.1 1-1.1.1.r 3-1.1.1 5-1.2 6-1 7-1.3.r 8-1.3.2 8-1.3.2.r 9-1.3.1 10-1.4 12-1.4.1.1 13-1.4.1.1.1 14-1.4.1.1.1.1.r 15-1.4.1.1.1.1.1 16-1.4.1.1.1.1 16-1.4.1.1.1.1.2 16-1.4.1.1.1.1.2.r 18-1.4.1 19-1.4.1.2.1 20-1.4.1.2
+::node	4	1.4.1.1.1.1.1	4	4
+::node	b	1.4.1.1.1.1.2	bid-01	bidders
+::node	p2	1.4.1.1.1.1	person	bidders
+::node	s	1	suspend-01	suspended
+::node	2002	1.3.1	2002	2002
+::node	2	1.3.2	2	February
+::node	j	1.4.1	judge-01	judged
+::node	a	1.1	award-01	Award
+::node	t	1.2	temporary	temporarily
+::node	d	1.3	date-entity	
+::node	a2	1.4	after	after
+::node	o	1.4.1.1.1	offer-01	offered
+::node	t2	1.4.1.2.1	too	too
+::node	h	1.4.1.2	high	high
+::node	c	1.1.1	contract	contract
+::node	p	1.4.1.1	price	prices
+::edge	1.4.1.1.1.1	bidders	person	:quant	1.4.1.1.1.1.1	4	4
+::edge	1.4.1.1.1.1	bidders	person	:ARG0-of	1.4.1.1.1.1.2	bidders	bid-01
+::edge	1.4.1.1.1	offered	offer-01	:ARG0	1.4.1.1.1.1	bidders	person
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.3		date-entity	:month	1.3.2	February	2
+::edge	1.4	after	after	:op1	1.4.1	judged	judge-01
+::edge	1	suspended	suspend-01	:ARG1	1.1	Award	award-01
+::edge	1	suspended	suspend-01	:duration	1.2	temporarily	temporary
+::edge	1	suspended	suspend-01	:time	1.3		date-entity
+::edge	1	suspended	suspend-01	:time	1.4	after	after
+::edge	1.4.1.1	prices	price	:ARG1-of	1.4.1.1.1	offered	offer-01
+::edge	1.4.1.2	high	high	:degree	1.4.1.2.1	too	too
+::edge	1.4.1	judged	judge-01	:ARG2	1.4.1.2	high	high
+::edge	1.1	Award	award-01	:ARG1	1.1.1	contract	contract
+::edge	1.4.1	judged	judge-01	:ARG1	1.4.1.1	prices	price
+10	South Korea's defense ministry promised to conclude its first-stage appraisal by the end of March 2002.
+10	South Korea 's defense ministry promised to conclude its first @-@ stage appraisal by the end of March 2002 .
+10	0-1.1.2.2.1 1-1.1.2.2.2 2-1.1.2.r 3-1.1.1 4-1.1 5-1 7-1.2 9-1.2.2.2 11-1.2.2.2 12-1.2.2 13-1.2.3 15-1.2.3.1 16-1.2.3.1.1.r 17-1.2.3.1.1.2 17-1.2.3.1.1.2.r 18-1.2.3.1.1.1
+::node	"South_Korea"	1.1.2.1	"South_Korea"	
+::node	n	1.1.2.2	name	
+::node	"South"	1.1.2.2.1	"South"	South
+::node	d	1.2.3.1.1	date-entity	
+::node	c2	1.1.2	country	
+::node	m	1.2.1	ministry	
+::node	p	1	promise-01	promised
+::node	a	1.2.2	appraise-01	appraisal
+::node	b	1.2.3	by	by
+::node	2002	1.2.3.1.1.1	2002	2002
+::node	m	1.1	ministry	ministry
+::node	"Korea"	1.1.2.2.2	"Korea"	Korea
+::node	c	1.2	conclude-02	conclude
+::node	3	1.2.3.1.1.2	3	March
+::node	m	1.2.2.1	ministry	
+::node	f	1.2.2.2	first-stage	stage
+::node	e	1.2.3.1	end	end
+::node	d2	1.1.1	defense	defense
+::edge	1.1.2		country	:wiki	1.1.2.1		"South_Korea"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	South	"South"
+::edge	1.2.3.1	end	end	:part-of	1.2.3.1.1		date-entity
+::edge	1.1	ministry	ministry	:poss	1.1.2		country
+::edge	1.2	conclude	conclude-02	:ARG0	1.2.1		ministry
+::edge	1.2	conclude	conclude-02	:ARG1	1.2.2	appraisal	appraise-01
+::edge	1.2	conclude	conclude-02	:time	1.2.3	by	by
+::edge	1.2.3.1.1		date-entity	:year	1.2.3.1.1.1	2002	2002
+::edge	1	promised	promise-01	:ARG0	1.1	ministry	ministry
+::edge	1.1.2.2		name	:op2	1.1.2.2.2	Korea	"Korea"
+::edge	1	promised	promise-01	:ARG1	1.2	conclude	conclude-02
+::edge	1.2.3.1.1		date-entity	:month	1.2.3.1.1.2	March	3
+::edge	1.2.2	appraisal	appraise-01	:ARG0	1.2.2.1		ministry
+::edge	1.2.2	appraisal	appraise-01	:mod	1.2.2.2	stage	first-stage
+::edge	1.2.3	by	by	:op1	1.2.3.1	end	end
+::edge	1.1	ministry	ministry	:topic	1.1.1	defense	defense
+11	There has also been much newspaper speculation that the South Korean government might yield to U.S. pressure to buy Boeing's aged F-15 k.
+11	There has also been much newspaper speculation that the South Korean government might yield to U.S. pressure to buy Boeing 's aged F @-@ 15 k .
+11	2-1.4 3-1.2.1.r 4-1.3 5-1.1 6-1 7-1.2.r 9-1.2.1.1.1.1.2.1 10-1.2.1.1.1.1.2.2 11-1.2.1.1 11-1.2.1.1.1 11-1.2.1.1.1.r 12-1.2 13-1.2.1 15-1.2.1.2.1.2.1 16-1.2.1.2 18-1.2.1.2.3 19-1.2.1.2.3.2.3.2.1 20-1.2.1.2.3.2.3.r 21-1.2.1.2.3.2.4 22-1.2.1.2.3.2.2.1
+::node	"South_Korea"	1.2.1.1.1.1.1	"South_Korea"	
+::node	n2	1.2.1.1.1.1.2	name	
+::node	b	1.2.1.2.3	buy-01	buy
+::node	a2	1.2.1.2.3.2.4	age-01	aged
+::node	g	1.2.1.2.2	government-organization	
+::node	c3	1.2.1.2.3.2.3	company	
+::node	n4	1.2.1.2.3.2.2	name	
+::node	-	1.2.1.2.3.2.1	-	
+::node	n5	1.2.1.2.3.2.3.2	name	
+::node	"Boeing"	1.2.1.2.3.2.3.1	"Boeing"	
+::node	"F-15K"	1.2.1.2.3.2.2.1	"F-15K"	F
+::node	p2	1.2.1.2	pressure-01	pressure
+::node	g	1.2.1.1	government-organization	government
+::node	c	1.2.1.1.1.1	country	
+::node	"U.S."	1.2.1.2.1.2.1	"U.S."	U.S.
+::node	"Boeing"	1.2.1.2.3.2.3.2.1	"Boeing"	Boeing
+::node	y	1.2.1	yield-02	yield
+::node	"United_States"	1.2.1.2.1.1	"United_States"	
+::node	s	1	speculate-01	speculation
+::node	n3	1.2.1.2.1.2	name	
+::node	c2	1.2.1.2.1	country	
+::node	g2	1.2.1.1.1	govern-01	government
+::node	n	1.1	newspaper	newspaper
+::node	"South"	1.2.1.1.1.1.2.1	"South"	South
+::node	p	1.2	possible	might
+::node	"Korea"	1.2.1.1.1.1.2.2	"Korea"	Korean
+::node	g	1.2.1.2.3.1	government-organization	
+::node	m	1.3	much	much
+::node	a	1.2.1.2.3.2	aircraft-type	
+::node	a3	1.4	also	also
+::edge	1.2.1.1.1.1		country	:wiki	1.2.1.1.1.1.1		"South_Korea"
+::edge	1.2.1.1.1.1		country	:name	1.2.1.1.1.1.2		name
+::edge	1.2.1.2	pressure	pressure-01	:ARG2	1.2.1.2.3	buy	buy-01
+::edge	1.2.1.2.3.2		aircraft-type	:ARG1-of	1.2.1.2.3.2.4	aged	age-01
+::edge	1.2.1.2	pressure	pressure-01	:ARG1	1.2.1.2.2		government-organization
+::edge	1.2.1.2.3.2		aircraft-type	:poss	1.2.1.2.3.2.3		company
+::edge	1.2.1.2.3.2		aircraft-type	:name	1.2.1.2.3.2.2		name
+::edge	1.2.1.2.3.2		aircraft-type	:wiki	1.2.1.2.3.2.1		-
+::edge	1.2.1.2.3.2.3		company	:name	1.2.1.2.3.2.3.2		name
+::edge	1.2.1.2.3.2.3		company	:wiki	1.2.1.2.3.2.3.1		"Boeing"
+::edge	1.2.1.2.3.2.2		name	:op1	1.2.1.2.3.2.2.1	F	"F-15K"
+::edge	1.2.1	yield	yield-02	:ARG2	1.2.1.2	pressure	pressure-01
+::edge	1.2.1	yield	yield-02	:ARG0	1.2.1.1	government	government-organization
+::edge	1.2.1.1.1	government	govern-01	:ARG1	1.2.1.1.1.1		country
+::edge	1.2.1.2.1.2		name	:op1	1.2.1.2.1.2.1	U.S.	"U.S."
+::edge	1.2.1.2.3.2.3.2		name	:op1	1.2.1.2.3.2.3.2.1	Boeing	"Boeing"
+::edge	1.2	might	possible	:domain	1.2.1	yield	yield-02
+::edge	1.2.1.2.1		country	:wiki	1.2.1.2.1.1		"United_States"
+::edge	1.2.1.2.1		country	:name	1.2.1.2.1.2		name
+::edge	1.2.1.2	pressure	pressure-01	:ARG0	1.2.1.2.1		country
+::edge	1.2.1.1	government	government-organization	:ARG0-of	1.2.1.1.1	government	govern-01
+::edge	1	speculation	speculate-01	:ARG0	1.1	newspaper	newspaper
+::edge	1.2.1.1.1.1.2		name	:op1	1.2.1.1.1.1.2.1	South	"South"
+::edge	1	speculation	speculate-01	:ARG1	1.2	might	possible
+::edge	1.2.1.1.1.1.2		name	:op2	1.2.1.1.1.1.2.2	Korean	"Korea"
+::edge	1.2.1.2.3	buy	buy-01	:ARG0	1.2.1.2.3.1		government-organization
+::edge	1	speculation	speculate-01	:degree	1.3	much	much
+::edge	1.2.1.2.3	buy	buy-01	:ARG1	1.2.1.2.3.2		aircraft-type
+::edge	1	speculation	speculate-01	:mod	1.4	also	also
+12	Speculation grew in February 2002 when Defense Minister Kim Dong-Shin stressed that South Korea should consider security ties with the United States in the project.
+12	Speculation grew in February 2002 when Defense Minister Kim Dong @-@ Shin stressed that South Korea should consider security ties with the United States in the project .
+12	0-1.1 1-1 2-1.2.r 3-1.2.2 3-1.2.2.r 4-1.2.1 5-1.2.3.r 6-1.2.3.1.3.1.1 7-1.2.3.1.3.1 8-1.2.3.1.2.1 9-1.2.3.1.2.2 11-1.2.3.1.2.2 12-1.2.3 13-1.2.3.2.r 14-1.2.3.2.2.1.2.1 15-1.2.3.2.2.1.2.2 16-1.2.3.2 17-1.2.3.2.2 18-1.2.3.2.2.2.1 19-1.2.3.2.2.2 20-1.2.3.2.2.2.2.r 22-1.2.3.2.2.2.2.2.1 23-1.2.3.2.2.2.2.2.2 24-1.2.3.2.2.3.r 26-1.2.3.2.2.3
+::node	c3	1.2.3.2.2.2.2	country	
+::node	"South_Korea"	1.2.3.2.2.1.1	"South_Korea"	
+::node	n2	1.2.3.2.2.1.2	name	
+::node	s3	1.2.3.2.2.2.1	security	security
+::node	r	1.2.3.2	recommend-01	should
+::node	p2	1.2.3.1	person	
+::node	"States"	1.2.3.2.2.2.2.2.2	"States"	States
+::node	d2	1.2.3.1.3.1.1	defense	Defense
+::node	"United"	1.2.3.2.2.2.2.2.1	"United"	United
+::node	h	1.2.3.1.3	have-org-role-91	
+::node	c	1.2.3.2.2	consider-02	consider
+::node	c2	1.2.3.2.3	country	
+::node	-	1.2.3.1.1	-	
+::node	n	1.2.3.1.2	name	
+::node	p2	1.2.3.2.1	person	
+::node	p	1.2.3.2.4	project	
+::node	2002	1.2.1	2002	2002
+::node	n3	1.2.3.2.2.2.2.2	name	
+::node	g	1	grow-01	grew
+::node	2	1.2.2	2	February
+::node	s2	1.2.3	stress-01	stressed
+::node	"United_States"	1.2.3.2.2.2.2.1	"United_States"	
+::node	s	1.1	speculate-01	Speculation
+::node	"Dong-Shin"	1.2.3.1.2.2	"Dong-Shin"	Shin
+::node	m	1.2.3.1.3.1	minister	Minister
+::node	d	1.2	date-entity	
+::node	"Kim"	1.2.3.1.2.1	"Kim"	Kim
+::node	p	1.2.3.2.2.3	project	project
+::node	t	1.2.3.2.2.2	tie	ties
+::node	c2	1.2.3.2.2.1	country	
+::node	"South"	1.2.3.2.2.1.2.1	"South"	South
+::node	"Korea"	1.2.3.2.2.1.2.2	"Korea"	Korea
+::edge	1.2.3.2.2.2	ties	tie	:accompanier	1.2.3.2.2.2.2		country
+::edge	1.2.3.2.2.1		country	:wiki	1.2.3.2.2.1.1		"South_Korea"
+::edge	1.2.3.2.2.1		country	:name	1.2.3.2.2.1.2		name
+::edge	1.2.3.2.2.2	ties	tie	:mod	1.2.3.2.2.2.1	security	security
+::edge	1.2.3	stressed	stress-01	:ARG1	1.2.3.2	should	recommend-01
+::edge	1.2.3	stressed	stress-01	:ARG0	1.2.3.1		person
+::edge	1.2.3.2.2.2.2.2		name	:op2	1.2.3.2.2.2.2.2.2	States	"States"
+::edge	1.2.3.1.3.1	Minister	minister	:topic	1.2.3.1.3.1.1	Defense	defense
+::edge	1.2.3.2.2.2.2.2		name	:op1	1.2.3.2.2.2.2.2.1	United	"United"
+::edge	1.2.3.1		person	:ARG0-of	1.2.3.1.3		have-org-role-91
+::edge	1.2.3.2	should	recommend-01	:ARG1	1.2.3.2.2	consider	consider-02
+::edge	1.2.3.2	should	recommend-01	:ARG2	1.2.3.2.3		country
+::edge	1.2.3.1		person	:wiki	1.2.3.1.1		-
+::edge	1.2.3.1		person	:name	1.2.3.1.2		name
+::edge	1.2.3.2	should	recommend-01	:ARG0	1.2.3.2.1		person
+::edge	1.2.3.2	should	recommend-01	:ARG3	1.2.3.2.4		project
+::edge	1.2		date-entity	:year	1.2.1	2002	2002
+::edge	1.2.3.2.2.2.2		country	:name	1.2.3.2.2.2.2.2		name
+::edge	1.2		date-entity	:month	1.2.2	February	2
+::edge	1.2		date-entity	:time-of	1.2.3	stressed	stress-01
+::edge	1.2.3.2.2.2.2		country	:wiki	1.2.3.2.2.2.2.1		"United_States"
+::edge	1	grew	grow-01	:ARG1	1.1	Speculation	speculate-01
+::edge	1.2.3.1.2		name	:op2	1.2.3.1.2.2	Shin	"Dong-Shin"
+::edge	1.2.3.1.3		have-org-role-91	:ARG2	1.2.3.1.3.1	Minister	minister
+::edge	1	grew	grow-01	:time	1.2		date-entity
+::edge	1.2.3.1.2		name	:op1	1.2.3.1.2.1	Kim	"Kim"
+::edge	1.2.3.2.2	consider	consider-02	:ARG2	1.2.3.2.2.3	project	project
+::edge	1.2.3.2.2	consider	consider-02	:ARG1	1.2.3.2.2.2	ties	tie
+::edge	1.2.3.2.2	consider	consider-02	:ARG0	1.2.3.2.2.1		country
+::edge	1.2.3.2.2.1.2		name	:op1	1.2.3.2.2.1.2.1	South	"South"
+::edge	1.2.3.2.2.1.2		name	:op2	1.2.3.2.2.1.2.2	Korea	"Korea"
+13	The other competing planes are the Dassault firm's Rafale, the Eurofighter Consortium's typhoon 2000 and the Russian Su-32 made by Sukhoi.
+13	The other competing planes are the Dassault firm 's Rafale , the Eurofighter Consortium 's typhoon 2000 and the Russian Su @-@ 32 made by Sukhoi .
+13	1-1.1.4 2-1 6-1.1.1.3.2.1 7-1.1.1.3 8-1.1.1.3.r 9-1.1.1.2.1 12-1.1.2.3.2.1 13-1.1.2.3.2.2 14-1.1.2.3.r 15-1.1.2.2.1 16-1.1.2.2.2 17-1.1 19-1.1.3.3.2.1 20-1.1.3.2.1 22-1.1.3.2.1 23-1.1.3 23-1.1.3.4 23-1.1.3.4.r 24-1.1.3.4.1.r 25-1.1.3.4.1.2.1
+::node	n6	1.1.3.3.2	name	
+::node	c5	1.1.3.4.1	company	
+::node	"Russia"	1.1.3.3.1	"Russia"	
+::node	"Su-32"	1.1.3.2.1	"Su-32"	32
+::node	"Typhoon"	1.1.2.2.1	"Typhoon"	typhoon
+::node	"Russia"	1.1.3.3.2.1	"Russia"	Russian
+::node	n7	1.1.3.4.1.2	name	
+::node	"Sukhoi"	1.1.3.4.1.1	"Sukhoi"	
+::node	"Sukhoi"	1.1.3.4.1.2.1	"Sukhoi"	Sukhoi
+::node	"Dassault_Aviation"	1.1.1.3.1	"Dassault_Aviation"	
+::node	"Rafale"	1.1.1.2.1	"Rafale"	Rafale
+::node	"Dassault_Rafale"	1.1.1.1	"Dassault_Rafale"	
+::node	n	1.1.1.2	name	
+::node	"Eurofighter_Typhoon"	1.1.2.1	"Eurofighter_Typhoon"	
+::node	f	1.1.1.3	firm	firm
+::node	n3	1.1.2.2	name	
+::node	"Sukhoi_Su-34"	1.1.3.1	"Sukhoi_Su-34"	
+::node	c3	1.1.2.3	company	
+::node	n5	1.1.3.2	name	
+::node	"Eurofighter"	1.1.2.3.2.1	"Eurofighter"	Eurofighter
+::node	c4	1.1.3.3	country	
+::node	n2	1.1.1.3.2	name	
+::node	"Consortium"	1.1.2.3.2.2	"Consortium"	Consortium
+::node	m	1.1.3.4	make-01	made
+::node	a3	1.1.2	aircraft-type	
+::node	c	1	compete-01	competing
+::node	a4	1.1.3	aircraft-type	made
+::node	o	1.1.4	other	other
+::node	a	1.1	and	and
+::node	n4	1.1.2.3.2	name	
+::node	"2000"	1.1.2.2.2	"2000"	2000
+::node	"Eurofighter_GmbH"	1.1.2.3.1	"Eurofighter_GmbH"	
+::node	a2	1.1.1	aircraft-type	
+::node	"Dassault"	1.1.1.3.2.1	"Dassault"	Dassault
+::edge	1.1.3.3		country	:name	1.1.3.3.2		name
+::edge	1.1.3.4	made	make-01	:ARG0	1.1.3.4.1		company
+::edge	1.1.3.3		country	:wiki	1.1.3.3.1		"Russia"
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	32	"Su-32"
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	typhoon	"Typhoon"
+::edge	1.1.3.3.2		name	:op1	1.1.3.3.2.1	Russian	"Russia"
+::edge	1.1.3.4.1		company	:name	1.1.3.4.1.2		name
+::edge	1.1.3.4.1		company	:wiki	1.1.3.4.1.1		"Sukhoi"
+::edge	1.1.3.4.1.2		name	:op1	1.1.3.4.1.2.1	Sukhoi	"Sukhoi"
+::edge	1.1.1.3	firm	firm	:wiki	1.1.1.3.1		"Dassault_Aviation"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Rafale	"Rafale"
+::edge	1.1.1		aircraft-type	:wiki	1.1.1.1		"Dassault_Rafale"
+::edge	1.1.1		aircraft-type	:name	1.1.1.2		name
+::edge	1.1.2		aircraft-type	:wiki	1.1.2.1		"Eurofighter_Typhoon"
+::edge	1.1.1		aircraft-type	:poss	1.1.1.3	firm	firm
+::edge	1.1.2		aircraft-type	:name	1.1.2.2		name
+::edge	1.1.3	made	aircraft-type	:wiki	1.1.3.1		"Sukhoi_Su-34"
+::edge	1.1.2		aircraft-type	:poss	1.1.2.3		company
+::edge	1.1.3	made	aircraft-type	:name	1.1.3.2		name
+::edge	1.1.2.3.2		name	:op1	1.1.2.3.2.1	Eurofighter	"Eurofighter"
+::edge	1.1.3	made	aircraft-type	:source	1.1.3.3		country
+::edge	1.1.1.3	firm	firm	:name	1.1.1.3.2		name
+::edge	1.1.2.3.2		name	:op2	1.1.2.3.2.2	Consortium	"Consortium"
+::edge	1.1.3	made	aircraft-type	:ARG1-of	1.1.3.4	made	make-01
+::edge	1.1	and	and	:op2	1.1.2		aircraft-type
+::edge	1.1	and	and	:op3	1.1.3	made	aircraft-type
+::edge	1.1	and	and	:mod	1.1.4	other	other
+::edge	1	competing	compete-01	:ARG0	1.1	and	and
+::edge	1.1.2.3		company	:name	1.1.2.3.2		name
+::edge	1.1.2.2		name	:op2	1.1.2.2.2	2000	"2000"
+::edge	1.1.2.3		company	:wiki	1.1.2.3.1		"Eurofighter_GmbH"
+::edge	1.1	and	and	:op1	1.1.1		aircraft-type
+::edge	1.1.1.3.2		name	:op1	1.1.1.3.2.1	Dassault	"Dassault"
+14	Dassault is seeking its first foreign order for the Rafale.
+14	Dassault is seeking its first foreign order for the Rafale .
+14	0-1.1.2.1 2-1 3-1.2.3 3-1.2.3.r 4-1.2.4 5-1.2.1 6-1.2 7-1.2.2.r 9-1.2.2.2.1
+::node	"Dassault"	1.1.2.1	"Dassault"	Dassault
+::node	n	1.1.2	name	
+::node	f	1.2.1	foreign	foreign
+::node	s	1	seek-01	seeking
+::node	a	1.2.2	aircraft-type	
+::node	c	1.2.3	company	its
+::node	f2	1.2.4	first	first
+::node	c	1.1	company	
+::node	o	1.2	order-02	order
+::node	"Dassault_Rafale"	1.2.2.1	"Dassault_Rafale"	
+::node	n2	1.2.2.2	name	
+::node	"Rafale"	1.2.2.2.1	"Rafale"	Rafale
+::node	"Dassault_Aviation"	1.1.1	"Dassault_Aviation"	
+::edge	1.1		company	:name	1.1.2		name
+::edge	1.2	order	order-02	:ARG0	1.2.1	foreign	foreign
+::edge	1.2	order	order-02	:ARG1	1.2.2		aircraft-type
+::edge	1.2	order	order-02	:ARG3	1.2.3	its	company
+::edge	1.1.2		name	:op1	1.1.2.1	Dassault	"Dassault"
+::edge	1.2	order	order-02	:frequency	1.2.4	first	first
+::edge	1	seeking	seek-01	:ARG0	1.1		company
+::edge	1	seeking	seek-01	:ARG1	1.2	order	order-02
+::edge	1.2.2		aircraft-type	:wiki	1.2.2.1		"Dassault_Rafale"
+::edge	1.2.2		aircraft-type	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Rafale	"Rafale"
+::edge	1.1		company	:wiki	1.1.1		"Dassault_Aviation"
+15	Kang Chang-Sung of the opposition Grand National Party expressed doubt of the fairness of the evaluation methods stating that his party suspects that the Defense Ministry has political reasons to select the F-15 k.
+15	Kang Chang @-@ Sung of the opposition Grand National Party expressed doubt of the fairness of the evaluation methods stating that his party suspects that the Defense Ministry has political reasons to select the F @-@ 15 k .
+15	0-1.1.2.1 1-1.1.2.2 3-1.1.2.2 6-1.1.4.1 6-1.1.4.1.3 6-1.1.4.1.3.r 7-1.1.4.1.2.1 8-1.1.4.1.2.2 9-1.1.4.1.2.3 10-1 11-1.2 12-1.2.2.r 14-1.2.2 15-1.2.2.1.r 17-1.2.2.1.1 18-1.2.2.1 19-1.2.1 20-1.2.1 21-1.1.3.1.1 22-1.1.3.1.1 23-1.2.1 24-1.2.1 25-1.2.1 26-1.2.1 27-1.2.1 28-1.2.1 29-1.2.1 30-1.2.1 31-1.2.1 32-1.2.1 33-1.2.1 34-1.2.1
+::node	r	1.1.3.1.2	reason-01	
+::node	o	1.1.4.1.3	oppose-01	opposition
+::node	p	1.1.4.1.4	person	
+::node	"Saenuri_Party"	1.1.4.1.1	"Saenuri_Party"	
+::node	n2	1.1.4.1.2	name	
+::node	"Party"	1.1.4.1.2.3	"Party"	Party
+::node	"Grand"	1.1.4.1.2.1	"Grand"	Grand
+::node	"National"	1.1.4.1.2.2	"National"	National
+::node	m	1.2.2.1	method	methods
+::node	"Ministry"	1.1.3.1.2.1.2.2	"Ministry"	
+::node	"Kang"	1.1.2.1	"Kang"	Kang
+::node	"Defense"	1.1.3.1.2.1.2.1	"Defense"	
+::node	e2	1.2.2.1.1	evaluate-01	evaluation
+::node	"Chang-Sung"	1.1.2.2	"Chang-Sung"	Sung
+::node	s2	1.1.3.1	suspect-01	
+::node	p2	1.1.4.1	political-party	opposition
+::node	s3	1.1.3.1.2.2	select-01	
+::node	p3	1.1.3.1.2.3	political	
+::node	g2	1.1.3.1.2.1	government-organization	
+::node	n	1.1.2	name	
+::node	n3	1.1.3.1.2.1.2	name	
+::node	g2	1.1.3.1.2.2.1	government-organization	
+::node	p	1.2.1	person	F
+::node	e	1	express-01	expressed
+::node	s	1.1.3	state-01	
+::node	"Ministry_of_National_Defense_BLANKETPAIR0"	1.1.3.1.2.1.1	"Ministry_of_National_Defense_BLANKETPAIR0"	
+::node	f	1.2.2	fair	fairness
+::node	h	1.1.4	have-org-role-91	
+::node	p	1.1	person	
+::node	d	1.2	doubt-01	doubt
+::node	n4	1.1.3.1.2.2.2.2	name	
+::node	p2	1.1.3.1.1	political-party	party
+::node	-	1.1.3.1.2.2.2.1	-	
+::node	"F-15K"	1.1.3.1.2.2.2.2.1	"F-15K"	
+::node	-	1.1.1	-	
+::node	a	1.1.3.1.2.2.2	aircraft-type	
+::edge	1.1.3.1		suspect-01	:ARG1	1.1.3.1.2		reason-01
+::edge	1.1.4.1	opposition	political-party	:ARG0-of	1.1.4.1.3	opposition	oppose-01
+::edge	1.1.4.1	opposition	political-party	:poss	1.1.4.1.4		person
+::edge	1.1.4.1	opposition	political-party	:wiki	1.1.4.1.1		"Saenuri_Party"
+::edge	1.1.4.1	opposition	political-party	:name	1.1.4.1.2		name
+::edge	1.1.4.1.2		name	:op3	1.1.4.1.2.3	Party	"Party"
+::edge	1.1.4.1.2		name	:op1	1.1.4.1.2.1	Grand	"Grand"
+::edge	1.1.4.1.2		name	:op2	1.1.4.1.2.2	National	"National"
+::edge	1.2.2	fairness	fair	:domain	1.2.2.1	methods	method
+::edge	1.1.3.1.2.1.2		name	:op2	1.1.3.1.2.1.2.2		"Ministry"
+::edge	1.1.2		name	:op1	1.1.2.1	Kang	"Kang"
+::edge	1.1.3.1.2.1.2		name	:op1	1.1.3.1.2.1.2.1		"Defense"
+::edge	1.2.2.1	methods	method	:purpose	1.2.2.1.1	evaluation	evaluate-01
+::edge	1.1.2		name	:op2	1.1.2.2	Sung	"Chang-Sung"
+::edge	1.1.3		state-01	:ARG1	1.1.3.1		suspect-01
+::edge	1.1.4		have-org-role-91	:ARG1	1.1.4.1	opposition	political-party
+::edge	1.1.3.1.2		reason-01	:ARG1	1.1.3.1.2.2		select-01
+::edge	1.1.3.1.2		reason-01	:mod	1.1.3.1.2.3		political
+::edge	1.1.3.1.2		reason-01	:ARG0	1.1.3.1.2.1		government-organization
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1.3.1.2.1		government-organization	:name	1.1.3.1.2.1.2		name
+::edge	1.1.3.1.2.2		select-01	:ARG0	1.1.3.1.2.2.1		government-organization
+::edge	1.2	doubt	doubt-01	:ARG0	1.2.1	F	person
+::edge	1.1		person	:ARG0-of	1.1.3		state-01
+::edge	1.1.3.1.2.1		government-organization	:wiki	1.1.3.1.2.1.1		"Ministry_of_National_Defense_BLANKETPAIR0"
+::edge	1.2	doubt	doubt-01	:ARG1	1.2.2	fairness	fair
+::edge	1.1		person	:ARG0-of	1.1.4		have-org-role-91
+::edge	1	expressed	express-01	:ARG0	1.1		person
+::edge	1	expressed	express-01	:ARG1	1.2	doubt	doubt-01
+::edge	1.1.3.1.2.2.2		aircraft-type	:name	1.1.3.1.2.2.2.2		name
+::edge	1.1.3.1		suspect-01	:ARG0	1.1.3.1.1	party	political-party
+::edge	1.1.3.1.2.2.2		aircraft-type	:wiki	1.1.3.1.2.2.2.1		-
+::edge	1.1.3.1.2.2.2.2		name	:op1	1.1.3.1.2.2.2.2.1		"F-15K"
+::edge	1.1		person	:wiki	1.1.1		-
+::edge	1.1.3.1.2.2		select-01	:ARG1	1.1.3.1.2.2.2		aircraft-type
+16	The ruling Millennium Democratic Party also accused the Ministry of favoring the F-15 k despite the defense chief's insistence that there was no favoritism toward Boeing.
+16	The ruling Millennium Democratic Party also accused the Ministry of favoring the F @-@ 15 k despite the defense chief 's insistence that there was no favoritism toward Boeing .
+16	1-1.1 1-1.1.3 1-1.1.3.r 2-1.1.2.1 3-1.1.2.2 4-1.1.2.3 5-1.4 6-1 8-1.2.2.1 9-1.3.r 10-1.3 10-1.3.3.2 12-1.3.2.2.1 16-1.3.3.r 18-1.3.3.1.1 19-1.3.3.1 20-1.3.3.1.r 21-1.3.3 25-1.3.3.2.1 25-1.3.3.2.1.r 28-1.3.3.2.3.2.1
+::node	"F-15K"	1.3.2.2.1	"F-15K"	F
+::node	"Boeing"	1.3.3.2.3.1	"Boeing"	
+::node	-	1.3.2.1	-	
+::node	n3	1.3.2.2	name	
+::node	c	1.3.3.1	chief	chief
+::node	f2	1.3.3.2	favor-01	favoring
+::node	n4	1.3.3.2.3.2	name	
+::node	d	1.3.3.1.1	defense	defense
+::node	-	1.3.3.2.1	-	no
+::node	g	1.3.3.2.2	government-organization	
+::node	c2	1.3.3.2.3	company	
+::node	"Ministry"	1.2.2.1	"Ministry"	Ministry
+::node	"Millennium"	1.1.2.1	"Millennium"	Millennium
+::node	"Democratic"	1.1.2.2	"Democratic"	Democratic
+::node	"Party"	1.1.2.3	"Party"	Party
+::node	n	1.1.2	name	
+::node	"Ministry_of_National_Defense_BLANKETPAIR0"	1.2.1	"Ministry_of_National_Defense_BLANKETPAIR0"	
+::node	a	1	accuse-01	accused
+::node	r	1.1.3	rule-03	ruling
+::node	n2	1.2.2	name	
+::node	g	1.3.1	government-organization	
+::node	a2	1.3.2	aircraft-type	
+::node	i	1.3.3	insist-01	insistence
+::node	p	1.1	political-party	ruling
+::node	g	1.2	government-organization	
+::node	f	1.3	favor-01	favoring
+::node	a3	1.4	also	also
+::node	"Democratic_Party_BLANKETPAIR2"	1.1.1	"Democratic_Party_BLANKETPAIR2"	
+::node	"Boeing"	1.3.3.2.3.2.1	"Boeing"	Boeing
+::edge	1.3.2.2		name	:op1	1.3.2.2.1	F	"F-15K"
+::edge	1.3.3.2.3		company	:wiki	1.3.3.2.3.1		"Boeing"
+::edge	1.3.2		aircraft-type	:wiki	1.3.2.1		-
+::edge	1.3.2		aircraft-type	:name	1.3.2.2		name
+::edge	1.3.3	insistence	insist-01	:ARG0	1.3.3.1	chief	chief
+::edge	1.3.3	insistence	insist-01	:ARG1	1.3.3.2	favoring	favor-01
+::edge	1.3.3.2.3		company	:name	1.3.3.2.3.2		name
+::edge	1.3.3.1	chief	chief	:mod	1.3.3.1.1	defense	defense
+::edge	1.3.3.2	favoring	favor-01	:polarity	1.3.3.2.1	no	-
+::edge	1.3.3.2	favoring	favor-01	:ARG0	1.3.3.2.2		government-organization
+::edge	1.3.3.2	favoring	favor-01	:ARG1	1.3.3.2.3		company
+::edge	1.2.2		name	:op1	1.2.2.1	Ministry	"Ministry"
+::edge	1.1.2		name	:op1	1.1.2.1	Millennium	"Millennium"
+::edge	1.1.2		name	:op2	1.1.2.2	Democratic	"Democratic"
+::edge	1.1.2		name	:op3	1.1.2.3	Party	"Party"
+::edge	1.1	ruling	political-party	:name	1.1.2		name
+::edge	1.2		government-organization	:wiki	1.2.1		"Ministry_of_National_Defense_BLANKETPAIR0"
+::edge	1.1	ruling	political-party	:ARG0-of	1.1.3	ruling	rule-03
+::edge	1.2		government-organization	:name	1.2.2		name
+::edge	1.3	favoring	favor-01	:ARG0	1.3.1		government-organization
+::edge	1.3	favoring	favor-01	:ARG1	1.3.2		aircraft-type
+::edge	1.3	favoring	favor-01	:concession	1.3.3	insistence	insist-01
+::edge	1	accused	accuse-01	:ARG0	1.1	ruling	political-party
+::edge	1	accused	accuse-01	:ARG1	1.2		government-organization
+::edge	1	accused	accuse-01	:ARG2	1.3	favoring	favor-01
+::edge	1	accused	accuse-01	:mod	1.4	also	also
+::edge	1.1	ruling	political-party	:wiki	1.1.1		"Democratic_Party_BLANKETPAIR2"
+::edge	1.3.3.2.3.2		name	:op1	1.3.3.2.3.2.1	Boeing	"Boeing"
+17	Kim stated --
+17	Kim stated --
+17	0-1.1.2.1 1-1
+::node	n	1.1.2	name	
+::node	s	1	state-01	stated
+::node	"Kim"	1.1.2.1	"Kim"	Kim
+::node	p	1.1	person	
+::node	-	1.1.1	-	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Kim	"Kim"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.1		person	:wiki	1.1.1		-
+18	There has been no pressure from the United States.
+18	There has been no pressure from the United States .
+18	3-1.1 3-1.1.r 4-1 5-1.2.r 7-1.2.2.1 8-1.2.2.2
+::node	"United_States"	1.2.1	"United_States"	
+::node	p	1	pressure-01	pressure
+::node	n	1.2.2	name	
+::node	-	1.1	-	no
+::node	c	1.2	country	
+::node	"United"	1.2.2.1	"United"	United
+::node	"States"	1.2.2.2	"States"	States
+::edge	1.2		country	:wiki	1.2.1		"United_States"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1	pressure	pressure-01	:polarity	1.1	no	-
+::edge	1	pressure	pressure-01	:ARG0	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	United	"United"
+::edge	1.2.2		name	:op2	1.2.2.2	States	"States"
+19	There would be an investigation into how classified documents had been leaked.
+19	There would be an investigation into how classified documents had been leaked .
+19	4-1 7-1.1.1.1.1 8-1.1.1.1 11-1.1.1
+::node	i	1	investigate-01	investigation
+::node	d	1.1.1.1	document	documents
+::node	c	1.1	cause-01	
+::node	c2	1.1.1.1.1	classify-02	classified
+::node	l	1.1.1	leak-01	leaked
+::edge	1.1.1	leaked	leak-01	:ARG1	1.1.1.1	documents	document
+::edge	1	investigation	investigate-01	:ARG1	1.1		cause-01
+::edge	1.1.1.1	documents	document	:ARG1-of	1.1.1.1.1	classified	classify-02
+::edge	1.1		cause-01	:ARG1	1.1.1	leaked	leak-01
+20	The Defense Ministry was further pressured by numerous newspaper reports of the Air Force's evaluation of the Rafale as excellent in all categories.
+20	The Defense Ministry was further pressured by numerous newspaper reports of the Air Force 's evaluation of the Rafale as excellent in all categories .
+20	1-1.2.2.1 2-1.2.2.2 4-1.3 5-1 6-1.1.r 7-1.1.3 8-1.1.1 9-1.1 10-1.1.2.r 12-1.1.2.1.2.1 13-1.1.2.1.2.2 14-1.1.2.1.r 14-1.1.2.2.1.r 15-1.1.2 16-1.1.2.2.r 18-1.1.2.2.1.2.1 20-1.1.2.2 21-1.1.2.2.2.r 22-1.1.2.2.2.1 23-1.1.2.2.2
+::node	m	1.1.2.1	military	
+::node	"Air"	1.1.2.1.2.1	"Air"	Air
+::node	e2	1.1.2.2	excellent	excellent
+::node	"Force"	1.1.2.1.2.2	"Force"	Force
+::node	n3	1.1.2.1.2	name	
+::node	a	1.1.2.2.1	aircraft-type	
+::node	"Republic_of_Korea_Air_Force"	1.1.2.1.1	"Republic_of_Korea_Air_Force"	
+::node	"Rafale"	1.1.2.2.1.2.1	"Rafale"	Rafale
+::node	e	1.1.2	evaluate-01	evaluation
+::node	"Ministry_of_National_Defense_BLANKETPAIR0"	1.2.1	"Ministry_of_National_Defense_BLANKETPAIR0"	
+::node	p	1	pressure-01	pressured
+::node	n2	1.1.3	numerous	numerous
+::node	n5	1.2.2	name	
+::node	r	1.1	report-01	reports
+::node	c	1.1.2.2.2	category	categories
+::node	g	1.2	government-organization	
+::node	"Dassault_Rafale"	1.1.2.2.1.1	"Dassault_Rafale"	
+::node	f	1.3	further	further
+::node	n4	1.1.2.2.1.2	name	
+::node	a2	1.1.2.2.2.1	all	all
+::node	"Defense"	1.2.2.1	"Defense"	Defense
+::node	"Ministry"	1.2.2.2	"Ministry"	Ministry
+::node	n	1.1.1	newspaper	newspaper
+::edge	1.1.2	evaluation	evaluate-01	:ARG0	1.1.2.1		military
+::edge	1.1.2.1.2		name	:op1	1.1.2.1.2.1	Air	"Air"
+::edge	1.1.2	evaluation	evaluate-01	:ARG1	1.1.2.2	excellent	excellent
+::edge	1.1.2.1.2		name	:op2	1.1.2.1.2.2	Force	"Force"
+::edge	1.1.2.1		military	:name	1.1.2.1.2		name
+::edge	1.1.2.2	excellent	excellent	:domain	1.1.2.2.1		aircraft-type
+::edge	1.1.2.1		military	:wiki	1.1.2.1.1		"Republic_of_Korea_Air_Force"
+::edge	1.1.2.2.1.2		name	:op1	1.1.2.2.1.2.1	Rafale	"Rafale"
+::edge	1.1	reports	report-01	:ARG1	1.1.2	evaluation	evaluate-01
+::edge	1.2		government-organization	:wiki	1.2.1		"Ministry_of_National_Defense_BLANKETPAIR0"
+::edge	1.1	reports	report-01	:quant	1.1.3	numerous	numerous
+::edge	1.2		government-organization	:name	1.2.2		name
+::edge	1	pressured	pressure-01	:ARG0	1.1	reports	report-01
+::edge	1.1.2.2	excellent	excellent	:manner	1.1.2.2.2	categories	category
+::edge	1	pressured	pressure-01	:ARG1	1.2		government-organization
+::edge	1.1.2.2.1		aircraft-type	:wiki	1.1.2.2.1.1		"Dassault_Rafale"
+::edge	1	pressured	pressure-01	:degree	1.3	further	further
+::edge	1.1.2.2.1		aircraft-type	:name	1.1.2.2.1.2		name
+::edge	1.1.2.2.2	categories	category	:quant	1.1.2.2.2.1	all	all
+::edge	1.2.2		name	:op1	1.2.2.1	Defense	"Defense"
+::edge	1.2.2		name	:op2	1.2.2.2	Ministry	"Ministry"
+::edge	1.1	reports	report-01	:ARG0	1.1.1	newspaper	newspaper
+21	Newspapers stated that the F-15 k was rated excellent in reliability and support combat capability but met only 30 percent of core technology requirements.
+21	Newspapers stated that the F @-@ 15 k was rated excellent in reliability and support combat capability but met only 30 percent of core technology requirements .
+21	0-1.1 1-1 2-1.2.r 4-1.2.1.1.2.1 9-1.2.1 10-1.2.1.2 13-1.2.1.3 14-1.2.1.3.2.2 15-1.2.1.3.2.2.2 16-1.2.1.3.2 17-1.2 18-1.2.2 19-1.2.2.2.2.2 20-1.2.2.2.2.1 21-1.2.2.2.2 23-1.2.2.2.1.1.1 24-1.2.2.2.1.1 25-1.2.2.2.1
+::node	a	1.2.1.3.2.1	aircraft-type	
+::node	s2	1.2.1.3.2.2	support-01	support
+::node	c2	1.2.1.3.2	capable-41	capability
+::node	r2	1.2.1.3.1	reliable	
+::node	c3	1.2.1.3.2.2.2	combat-01	combat
+::node	a	1.2.1.3.2.2.1	aircraft-type	
+::node	e	1.2.1.2	excellent	excellent
+::node	a	1.2.2.1	aircraft-type	
+::node	t	1.2.2.2.1.1	technology	technology
+::node	a2	1.2.1.3	and	and
+::node	i	1.2.2.2	include-91	
+::node	r3	1.2.2.2.1	require-01	requirements
+::node	o	1.2.2.2.2.2	only	only
+::node	a	1.2.1.1	aircraft-type	
+::node	p	1.2.2.2.2	percentage-entity	percent
+::node	30	1.2.2.2.2.1	30	30
+::node	"F-15K"	1.2.1.1.2.1	"F-15K"	F
+::node	c4	1.2.2.2.1.1.1	core	core
+::node	r	1.2.1	rate-01	rated
+::node	s	1	state-01	stated
+::node	m	1.2.2	meet-01	met
+::node	n2	1.2.1.1.2	name	
+::node	-	1.2.1.1.1	-	
+::node	n	1.1	newspaper	Newspapers
+::node	c	1.2	contrast-01	but
+::edge	1.2.1.3.2	capability	capable-41	:ARG1	1.2.1.3.2.1		aircraft-type
+::edge	1.2.1.3.2	capability	capable-41	:ARG2	1.2.1.3.2.2	support	support-01
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	F	"F-15K"
+::edge	1.2.2.2.1.1	technology	technology	:mod	1.2.2.2.1.1.1	core	core
+::edge	1.2.1.3	and	and	:op2	1.2.1.3.2	capability	capable-41
+::edge	1.2.1.3	and	and	:op1	1.2.1.3.1		reliable
+::edge	1.2	but	contrast-01	:ARG1	1.2.1	rated	rate-01
+::edge	1.2	but	contrast-01	:ARG2	1.2.2	met	meet-01
+::edge	1.2.1.1		aircraft-type	:name	1.2.1.1.2		name
+::edge	1.2.1.1		aircraft-type	:wiki	1.2.1.1.1		-
+::edge	1	stated	state-01	:ARG0	1.1	Newspapers	newspaper
+::edge	1	stated	state-01	:ARG1	1.2	but	contrast-01
+::edge	1.2.1.3.2.2	support	support-01	:ARG1	1.2.1.3.2.2.2	combat	combat-01
+::edge	1.2.1.3.2.2	support	support-01	:ARG0	1.2.1.3.2.2.1		aircraft-type
+::edge	1.2.1	rated	rate-01	:ARG2	1.2.1.2	excellent	excellent
+::edge	1.2.2	met	meet-01	:ARG0	1.2.2.1		aircraft-type
+::edge	1.2.2.2.1	requirements	require-01	:ARG1	1.2.2.2.1.1	technology	technology
+::edge	1.2.1	rated	rate-01	:topic	1.2.1.3	and	and
+::edge	1.2.2	met	meet-01	:ARG1	1.2.2.2		include-91
+::edge	1.2.2.2		include-91	:ARG2	1.2.2.2.1	requirements	require-01
+::edge	1.2.2.2.2	percent	percentage-entity	:mod	1.2.2.2.2.2	only	only
+::edge	1.2.1	rated	rate-01	:ARG1	1.2.1.1		aircraft-type
+::edge	1.2.2.2		include-91	:ARG3	1.2.2.2.2	percent	percentage-entity
+::edge	1.2.2.2.2	percent	percentage-entity	:value	1.2.2.2.2.1	30	30
+22	Newspapers stated that the Eurofighter was rated excellent in general function and reliability categories but the Rafale also earned the excellent rating for its weapons and electronic warfare capability.
+22	Newspapers stated that the Eurofighter was rated excellent in general function and reliability categories but the Rafale also earned the excellent rating for its weapons and electronic warfare capability .
+22	0-1.1 1-1 2-1.2.r 4-1.2.1.1.2.1 6-1.2.1 7-1.2.1.2 8-1.2.1.3.r 9-1.2.1.3.1.1 10-1.2.1.3.1 13-1.2.1.3 14-1.2 16-1.2.2.1.2.1 17-1.2.2.4 18-1.2.2 20-1.2.2.2.2 21-1.2.2.2 22-1.2.2.3.r 23-1.2.2.3.1 23-1.2.2.3.1.r 24-1.2.2.3.2.1 25-1.2.2.3.2 26-1.2.2.3.2.2.1 27-1.2.2.3.2.2 28-1.2.2.3
+::node	g	1.2.1.3.1.1	general	general
+::node	"Rafale"	1.2.2.1.2.1	"Rafale"	Rafale
+::node	r2	1.2.1.3.2	reliable	
+::node	f	1.2.1.3.1	function-01	function
+::node	c3	1.2.2.3	capable-41	capability
+::node	a	1.2.2.4	also	also
+::node	e2	1.2.1.2	excellent	excellent
+::node	a3	1.2.2.1	aircraft-type	
+::node	c2	1.2.1.3	category	categories
+::node	r3	1.2.2.2	rate-01	rating
+::node	n3	1.2.2.1.2	name	
+::node	a3	1.2.2.2.1	aircraft-type	
+::node	a2	1.2.1.1	aircraft-type	
+::node	e3	1.2.2.2.2	excellent	excellent
+::node	a3	1.2.2.3.1	aircraft-type	its
+::node	a4	1.2.2.3.2	and	and
+::node	w2	1.2.2.3.2.2	warfare	warfare
+::node	w	1.2.2.3.2.1	weapon	weapons
+::node	"Dassault_Rafale"	1.2.2.1.1	"Dassault_Rafale"	
+::node	"Eurofighter"	1.2.1.1.2.1	"Eurofighter"	Eurofighter
+::node	e4	1.2.2.3.2.2.1	electronic	electronic
+::node	r	1.2.1	rate-01	rated
+::node	s	1	state-01	stated
+::node	e	1.2.2	earn-01	earned
+::node	n2	1.2.1.1.2	name	
+::node	"Eurofighter_GmbH"	1.2.1.1.1	"Eurofighter_GmbH"	
+::node	n	1.1	newspaper	Newspapers
+::node	c	1.2	contrast-01	but
+::edge	1.2.1.3.1	function	function-01	:ARG1	1.2.1.3.1.1	general	general
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	Rafale	"Rafale"
+::edge	1.2.1.3	categories	category	:op2	1.2.1.3.2		reliable
+::edge	1.2.1.3	categories	category	:op1	1.2.1.3.1	function	function-01
+::edge	1.2.2	earned	earn-01	:ARG2	1.2.2.3	capability	capable-41
+::edge	1.2.2	earned	earn-01	:mod	1.2.2.4	also	also
+::edge	1.2.1	rated	rate-01	:ARG2	1.2.1.2	excellent	excellent
+::edge	1.2.2	earned	earn-01	:ARG0	1.2.2.1		aircraft-type
+::edge	1.2.1	rated	rate-01	:topic	1.2.1.3	categories	category
+::edge	1.2.2	earned	earn-01	:ARG1	1.2.2.2	rating	rate-01
+::edge	1.2.2.1		aircraft-type	:name	1.2.2.1.2		name
+::edge	1.2.2.2	rating	rate-01	:ARG1	1.2.2.2.1		aircraft-type
+::edge	1.2.1	rated	rate-01	:ARG1	1.2.1.1		aircraft-type
+::edge	1.2.2.2	rating	rate-01	:ARG2	1.2.2.2.2	excellent	excellent
+::edge	1.2.2.3	capability	capable-41	:ARG1	1.2.2.3.1	its	aircraft-type
+::edge	1.2.2.3	capability	capable-41	:ARG2	1.2.2.3.2	and	and
+::edge	1.2.2.3.2	and	and	:op2	1.2.2.3.2.2	warfare	warfare
+::edge	1.2.2.3.2	and	and	:op1	1.2.2.3.2.1	weapons	weapon
+::edge	1.2.2.1		aircraft-type	:wiki	1.2.2.1.1		"Dassault_Rafale"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Eurofighter	"Eurofighter"
+::edge	1.2.2.3.2.2	warfare	warfare	:mod	1.2.2.3.2.2.1	electronic	electronic
+::edge	1.2	but	contrast-01	:ARG1	1.2.1	rated	rate-01
+::edge	1.2	but	contrast-01	:ARG2	1.2.2	earned	earn-01
+::edge	1.2.1.1		aircraft-type	:name	1.2.1.1.2		name
+::edge	1.2.1.1		aircraft-type	:wiki	1.2.1.1.1		"Eurofighter_GmbH"
+::edge	1	stated	state-01	:ARG0	1.1	Newspapers	newspaper
+::edge	1	stated	state-01	:ARG1	1.2	but	contrast-01
+23	The Su-35 placed fourth with ratings of ordinary in all five categories.
+23	The Su @-@ 35 placed fourth with ratings of ordinary in all five categories .
+23	1-1.1.2.1 3-1.1.2.1 4-1 5-1.2 7-1.1 7-1.1.3 7-1.1.3.r 8-1.1.3.1.r 9-1.1.3.1 10-1.1.3.1.1.r 11-1.1.3.1.1.2 12-1.1.3.1.1.1 13-1.1.3.1.1
+::node	n	1.1.2	name	
+::node	p	1	place-01	placed
+::node	r	1.1.3	rate-01	ratings
+::node	"Su-35"	1.1.2.1	"Su-35"	35
+::node	a	1.1	aircraft-type	ratings
+::node	o	1.1.3.1	ordinary	ordinary
+::node	f	1.2	fourth	fourth
+::node	c	1.1.3.1.1	category	categories
+::node	5	1.1.3.1.1.1	5	five
+::node	"Sukhoi_Su-35"	1.1.1	"Sukhoi_Su-35"	
+::node	a2	1.1.3.1.1.2	all	all
+::edge	1.1	ratings	aircraft-type	:name	1.1.2		name
+::edge	1.1	ratings	aircraft-type	:ARG1-of	1.1.3	ratings	rate-01
+::edge	1.1.2		name	:op1	1.1.2.1	35	"Su-35"
+::edge	1	placed	place-01	:ARG1	1.1	ratings	aircraft-type
+::edge	1.1.3	ratings	rate-01	:ARG2	1.1.3.1	ordinary	ordinary
+::edge	1	placed	place-01	:ARG2	1.2	fourth	fourth
+::edge	1.1.3.1	ordinary	ordinary	:topic	1.1.3.1.1	categories	category
+::edge	1.1.3.1.1	categories	category	:quant	1.1.3.1.1.1	five	5
+::edge	1.1	ratings	aircraft-type	:wiki	1.1.1		"Sukhoi_Su-35"
+::edge	1.1.3.1.1	categories	category	:mod	1.1.3.1.1.2	all	all
+24	Rafale reportedly offered more generous terms for technology transfer and subcontracts for South Korea's aerospace industry.
+24	Rafale reportedly offered more generous terms for technology transfer and subcontracts for South Korea 's aerospace industry .
+24	0-1.1.2.1 1-1.3 2-1 3-1.2.1.3 4-1.2.1 5-1.2 6-1.2.2.r 7-1.2.2.1.1 8-1.2.2.1 9-1.2.2 10-1.2.2.2 11-1.2.1.2.r 12-1.2.1.2.2.2.1 13-1.2.1.2.2.2.2 14-1.2.1.2.2.r 15-1.2.1.2.1 16-1.2.1.2
+::node	"Rafale"	1.1.2.1	"Rafale"	Rafale
+::node	t3	1.2.2.1.1	technology	technology
+::node	c	1.2.1.2.2	country	
+::node	n	1.1.2	name	
+::node	g	1.2.1	generous-41	generous
+::node	o	1	offer-01	offered
+::node	"South_Korea"	1.2.1.2.2.1	"South_Korea"	
+::node	"Korea"	1.2.1.2.2.2.2	"Korea"	Korea
+::node	a2	1.2.2	and	and
+::node	a3	1.2.1.2.1	aerospace	aerospace
+::node	a	1.1	aircraft-type	
+::node	t	1.2	term	terms
+::node	n2	1.2.1.2.2.2	name	
+::node	r	1.3	report-01	reportedly
+::node	i	1.2.1.2	industry	industry
+::node	t2	1.2.2.1	transfer-01	transfer
+::node	m	1.2.1.3	more	more
+::node	s	1.2.2.2	subcontract-01	subcontracts
+::node	a	1.2.1.1	aircraft-type	
+::node	"South"	1.2.1.2.2.2.1	"South"	South
+::node	"Dassault_Rafale"	1.1.1	"Dassault_Rafale"	
+::edge	1.1.2		name	:op1	1.1.2.1	Rafale	"Rafale"
+::edge	1.2.2.1	transfer	transfer-01	:ARG1	1.2.2.1.1	technology	technology
+::edge	1.2.1.2	industry	industry	:poss	1.2.1.2.2		country
+::edge	1.1		aircraft-type	:name	1.1.2		name
+::edge	1.2	terms	term	:ARG2-of	1.2.1	generous	generous-41
+::edge	1.2.1.2.2		country	:wiki	1.2.1.2.2.1		"South_Korea"
+::edge	1.2.1.2.2.2		name	:op2	1.2.1.2.2.2.2	Korea	"Korea"
+::edge	1.2	terms	term	:purpose	1.2.2	and	and
+::edge	1.2.1.2	industry	industry	:mod	1.2.1.2.1	aerospace	aerospace
+::edge	1	offered	offer-01	:ARG0	1.1		aircraft-type
+::edge	1	offered	offer-01	:ARG1	1.2	terms	term
+::edge	1.2.1.2.2		country	:name	1.2.1.2.2.2		name
+::edge	1	offered	offer-01	:ARG1-of	1.3	reportedly	report-01
+::edge	1.2.1	generous	generous-41	:ARG1	1.2.1.2	industry	industry
+::edge	1.2.2	and	and	:op1	1.2.2.1	transfer	transfer-01
+::edge	1.2.1	generous	generous-41	:degree	1.2.1.3	more	more
+::edge	1.2.2	and	and	:op2	1.2.2.2	subcontracts	subcontract-01
+::edge	1.2.1	generous	generous-41	:ARG0	1.2.1.1		aircraft-type
+::edge	1.2.1.2.2.2		name	:op1	1.2.1.2.2.2.1	South	"South"
+::edge	1.1		aircraft-type	:wiki	1.1.1		"Dassault_Rafale"
+25	The Ministry stated that the air force was just 1 of 4 evaluations.
+25	The Ministry stated that the air force was just 1 of 4 evaluations .
+25	1-1.1.2.1 2-1 5-1.2.1.2 6-1.2.1 8-1.2.1.3 9-1.2.1.1 11-1.2.2.1 12-1.2.2
+::node	n	1.1.2	name	
+::node	f	1.2.1	force	force
+::node	s	1	state-01	stated
+::node	e	1.2.2	evaluate-01	evaluations
+::node	"Ministry"	1.1.2.1	"Ministry"	Ministry
+::node	g	1.1	government-organization	
+::node	i	1.2	include-91	
+::node	a	1.2.1.2	air	air
+::node	4	1.2.2.1	4	4
+::node	j	1.2.1.3	just	just
+::node	1	1.2.1.1	1	1
+::node	"Ministry_of_National_Defense_BLANKETPAIR0"	1.1.1	"Ministry_of_National_Defense_BLANKETPAIR0"	
+::edge	1.1		government-organization	:name	1.1.2		name
+::edge	1.2		include-91	:ARG1	1.2.1	force	force
+::edge	1.2		include-91	:ARG2	1.2.2	evaluations	evaluate-01
+::edge	1.1.2		name	:op1	1.1.2.1	Ministry	"Ministry"
+::edge	1	stated	state-01	:ARG0	1.1		government-organization
+::edge	1	stated	state-01	:ARG1	1.2		include-91
+::edge	1.2.1	force	force	:mod	1.2.1.2	air	air
+::edge	1.2.2	evaluations	evaluate-01	:quant	1.2.2.1	4	4
+::edge	1.2.1	force	force	:mod	1.2.1.3	just	just
+::edge	1.2.1	force	force	:quant	1.2.1.1	1	1
+::edge	1.1		government-organization	:wiki	1.1.1		"Ministry_of_National_Defense_BLANKETPAIR0"
+26	Some analysts have stated that the study method is biased toward Boeing noting that the evaluation was revised in February 2002 to ensure that all 4 bidders would receive an automatic 60 points for technology transfer.
+26	Some analysts have stated that the study method is biased toward Boeing noting that the evaluation was revised in February 2002 to ensure that all 4 bidders would receive an automatic 60 points for technology transfer .
+26	0-1.1.1 1-1.1 1-1.1.2 1-1.1.2.r 3-1 4-1.2.r 6-1.2.1.1 7-1.2.1 9-1.2 11-1.2.2.2.1 12-1.1.3 15-1.1.3.1.1.1 17-1.1.3.1.1 18-1.1.3.1.1.2.r 19-1.1.3.1.1.2.2 19-1.1.3.1.1.2.2.r 20-1.1.3.1.1.2.1 22-1.1.3.1.2 23-1.1.3.1.2.2.r 24-1.1.3.1.2.2.1.2 25-1.1.3.1.2.2.1.1 26-1.1.3.1.2.2.1 26-1.1.3.1.2.2.1.3 26-1.1.3.1.2.2.1.3.r 28-1.1.3.1.2.2 30-1.1.3.1.2.2.2.2 31-1.1.3.1.2.2.2.1 32-1.1.3.1 32-1.1.3.1.2.2.2 34-1.1.3.1.2.2.3.1.2 35-1.1.3.1.2.2.3.1
+::node	e2	1.1.3.1.2	ensure-01	ensure
+::node	c2	1.1.3.1.2.2.3.1.1	company	
+::node	t2	1.1.3.1.2.2.3.1.2	technology	technology
+::node	"Boeing"	1.2.2.1	"Boeing"	
+::node	n	1.2.2.2	name	
+::node	"Boeing"	1.2.2.2.1	"Boeing"	Boeing
+::node	s3	1.2.1.1	study-01	study
+::node	h	1.1.3.1	have-purpose-91	points
+::node	r2	1.1.3.1.2.2	receive-01	receive
+::node	e	1.1.3.1.1.1	evaluate-01	evaluation
+::node	2	1.1.3.1.1.2.2	2	February
+::node	d	1.1.3.1.1.2	date-entity	
+::node	2002	1.1.3.1.1.2.1	2002	2002
+::node	r	1.1.3.1.2.1	revise-01	
+::node	a	1.1.2	analyze-01	analysts
+::node	c2	1.1.3.1.2.2.1	company	bidders
+::node	m	1.2.1	method	method
+::node	s	1	state-01	stated
+::node	n2	1.1.3	note-01	noting
+::node	c	1.2.2	company	
+::node	p2	1.1	person	analysts
+::node	b	1.2	bias-01	biased
+::node	b2	1.1.3.1.2.2.1.3	bid-01	bidders
+::node	a3	1.1.3.1.2.2.2.2	automatic	automatic
+::node	t	1.1.3.1.2.2.3.1	transfer-01	transfer
+::node	r	1.1.3.1.1	revise-01	revised
+::node	a2	1.1.3.1.2.2.1.2	all	all
+::node	60	1.1.3.1.2.2.2.1	60	60
+::node	4	1.1.3.1.2.2.1.1	4	4
+::node	c3	1.1.3.1.2.2.3	cause-01	
+::node	s2	1.1.1	some	Some
+::node	p	1.1.3.1.2.2.2	point	points
+::edge	1.1.3.1	points	have-purpose-91	:ARG2	1.1.3.1.2	ensure	ensure-01
+::edge	1.1.3.1.2.2.3.1	transfer	transfer-01	:ARG0	1.1.3.1.2.2.3.1.1		company
+::edge	1.1.3.1.2.2.3.1	transfer	transfer-01	:ARG1	1.1.3.1.2.2.3.1.2	technology	technology
+::edge	1.2.2		company	:wiki	1.2.2.1		"Boeing"
+::edge	1.2.2		company	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Boeing	"Boeing"
+::edge	1.2.1	method	method	:part-of	1.2.1.1	study	study-01
+::edge	1.1.3	noting	note-01	:ARG1	1.1.3.1	points	have-purpose-91
+::edge	1.1.3.1.2	ensure	ensure-01	:ARG1	1.1.3.1.2.2	receive	receive-01
+::edge	1.1.3.1.1	revised	revise-01	:ARG1	1.1.3.1.1.1	evaluation	evaluate-01
+::edge	1.1.3.1.1.2		date-entity	:month	1.1.3.1.1.2.2	February	2
+::edge	1.1.3.1.1	revised	revise-01	:time	1.1.3.1.1.2		date-entity
+::edge	1.1.3.1.1.2		date-entity	:year	1.1.3.1.1.2.1	2002	2002
+::edge	1.1.3.1.2	ensure	ensure-01	:ARG0	1.1.3.1.2.1		revise-01
+::edge	1.1	analysts	person	:ARG0-of	1.1.2	analysts	analyze-01
+::edge	1.1.3.1.2.2	receive	receive-01	:ARG0	1.1.3.1.2.2.1	bidders	company
+::edge	1.2	biased	bias-01	:ARG1	1.2.1	method	method
+::edge	1.1	analysts	person	:ARG0-of	1.1.3	noting	note-01
+::edge	1.2	biased	bias-01	:beneficiary	1.2.2		company
+::edge	1	stated	state-01	:ARG0	1.1	analysts	person
+::edge	1	stated	state-01	:ARG1	1.2	biased	bias-01
+::edge	1.1.3.1.2.2.1	bidders	company	:ARG0-of	1.1.3.1.2.2.1.3	bidders	bid-01
+::edge	1.1.3.1.2.2.2	points	point	:mod	1.1.3.1.2.2.2.2	automatic	automatic
+::edge	1.1.3.1.2.2.3		cause-01	:ARG0	1.1.3.1.2.2.3.1	transfer	transfer-01
+::edge	1.1.3.1	points	have-purpose-91	:ARG1	1.1.3.1.1	revised	revise-01
+::edge	1.1.3.1.2.2.1	bidders	company	:mod	1.1.3.1.2.2.1.2	all	all
+::edge	1.1.3.1.2.2.2	points	point	:quant	1.1.3.1.2.2.2.1	60	60
+::edge	1.1.3.1.2.2.1	bidders	company	:quant	1.1.3.1.2.2.1.1	4	4
+::edge	1.1.3.1.2.2	receive	receive-01	:ARG1-of	1.1.3.1.2.2.3		cause-01
+::edge	1.1	analysts	person	:quant	1.1.1	Some	some
+::edge	1.1.3.1.2.2	receive	receive-01	:ARG1	1.1.3.1.2.2.2	points	point
+27	The English-language Korea Herald newspaper stated that this revision gives an advantage to Boeing which has been reluctant to transfer core technology.
+27	The English @-@ language Korea Herald newspaper stated that this revision gives an advantage to Boeing which has been reluctant to transfer core technology .
+27	1-1.1.3.2.1 3-1.1.3 4-1.1.2.1 5-1.1.2.2 6-1.1 7-1 8-1.2.r 9-1.2.1.1 10-1.2.1 11-1.2 13-1.2.2 14-1.2.3.r 15-1.2.3.2.1 19-1.2.3.3 20-1.2.3.3.1 21-1.2.3.3.1.1 22-1.2.3.3.1.1.1.1 23-1.2.3.3.1.1.1
+::node	"Korea"	1.1.2.1	"Korea"	Korea
+::node	"English"	1.1.3.2.1	"English"	English
+::node	"Herald"	1.1.2.2	"Herald"	Herald
+::node	"English_language"	1.1.3.1	"English_language"	
+::node	c3	1.2.3.3.1.1.1.1	core	core
+::node	n4	1.1.3.2	name	
+::node	c2	1.2.3.3.1	cause-01	to
+::node	t	1.2.3.3.1.1	transfer-01	transfer
+::node	"Boeing"	1.2.3.2.1	"Boeing"	Boeing
+::node	n2	1.1.2	name	
+::node	r	1.2.1	revise-01	revision
+::node	s	1	state-01	stated
+::node	l	1.1.3	language	language
+::node	a	1.2.2	advantage	advantage
+::node	c	1.2.3	company	
+::node	t2	1.2.3.3.1.1.1	technology	technology
+::node	n	1.1	newspaper	newspaper
+::node	g	1.2	give-01	gives
+::node	n3	1.2.3.2	name	
+::node	r2	1.2.3.3	reluctant	reluctant
+::node	"Boeing"	1.2.3.1	"Boeing"	
+::node	t3	1.2.1.1	this	this
+::node	"The_Korea_Herald"	1.1.1	"The_Korea_Herald"	
+::edge	1.1.2		name	:op1	1.1.2.1	Korea	"Korea"
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	English	"English"
+::edge	1.1.2		name	:op2	1.1.2.2	Herald	"Herald"
+::edge	1.1.3	language	language	:wiki	1.1.3.1		"English_language"
+::edge	1.2.3.3.1.1.1	technology	technology	:mod	1.2.3.3.1.1.1.1	core	core
+::edge	1.1.3	language	language	:name	1.1.3.2		name
+::edge	1.2.3.3	reluctant	reluctant	:ARG1-of	1.2.3.3.1	to	cause-01
+::edge	1.2.3.3.1	to	cause-01	:ARG0	1.2.3.3.1.1	transfer	transfer-01
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	Boeing	"Boeing"
+::edge	1.1	newspaper	newspaper	:name	1.1.2		name
+::edge	1.2	gives	give-01	:ARG0	1.2.1	revision	revise-01
+::edge	1.1	newspaper	newspaper	:mod	1.1.3	language	language
+::edge	1.2	gives	give-01	:ARG1	1.2.2	advantage	advantage
+::edge	1.2	gives	give-01	:ARG2	1.2.3		company
+::edge	1.2.3.3.1.1	transfer	transfer-01	:ARG1	1.2.3.3.1.1.1	technology	technology
+::edge	1	stated	state-01	:ARG0	1.1	newspaper	newspaper
+::edge	1	stated	state-01	:ARG1	1.2	gives	give-01
+::edge	1.2.3		company	:name	1.2.3.2		name
+::edge	1.2.3		company	:mod	1.2.3.3	reluctant	reluctant
+::edge	1.2.3		company	:wiki	1.2.3.1		"Boeing"
+::edge	1.2.1	revision	revise-01	:mod	1.2.1.1	this	this
+::edge	1.1	newspaper	newspaper	:wiki	1.1.1		"The_Korea_Herald"
+28	The Korea Herald stated that when evaluators were conducting their first-stage reports the ministry ordered them to give each bidder grades within a range of 60 to 100 points instead of 0 to 100 points.
+28	The Korea Herald stated that when evaluators were conducting their first @-@ stage reports the ministry ordered them to give each bidder grades within a range of 60 to 100 points instead of 0 to 100 points .
+28	1-1.1.2.1 2-1.1.2.2 3-1 4-1.2.r 5-1.2.4.r 6-1.2.2 6-1.2.2.1 6-1.2.2.1.r 8-1.2.4 9-1.2.4.2.2 9-1.2.4.2.2.r 10-1.2.4.2.1 12-1.2.4.2.1 13-1.2.4.2 13-1.2.4.2.3 13-1.2.4.2.3.r 15-1.2.1 16-1.2 17-1.2.3.1 19-1.2.3 20-1.2.3.3.1 21-1.2.3.3 21-1.2.3.3.2 21-1.2.3.3.2.r 22-1.2.3.2 25-1.2.3.2.3 25-1.2.3.2.3.3.1 26-1.2.3.2.3.3 27-1.2.3.2.3.1.1 29-1.2.3.2.3.2.1 30-1.2.3.2.3.1 30-1.2.3.2.3.2 30-1.2.3.2.3.3.1.1 31-1.2.3.2.3.3 32-1.2.3.2.3.3 33-1.2.3.2.3.3.1.1.1 34-1.2.3.2.3.3.1.2.r 35-1.2.3.2.3.3.1.2 36-1.2.3.2.3.3.1.2
+::node	g3	1.2.3.2	grade-01	grades
+::node	p	1.2.4.1	person	
+::node	60	1.2.3.2.3.1.1	60	60
+::node	c	1.2.3.3	company	bidder
+::node	t	1.2.4.2	thing	reports
+::node	e	1.2.2.1	evaluate-01	evaluators
+::node	100	1.2.3.2.3.2.1	100	100
+::node	p	1.2.3.1	person	them
+::node	r2	1.2.3.2.3.3.1	range-01	range
+::node	0	1.2.3.2.3.3.1.1.1	0	0
+::node	"Korea"	1.1.2.1	"Korea"	Korea
+::node	"Herald"	1.1.2.2	"Herald"	Herald
+::node	c	1.2.3.2.2	company	
+::node	e2	1.2.3.3.1	each	each
+::node	r	1.2.3.2.3	range-01	range
+::node	b	1.2.3.3.2	bid-01	bidder
+::node	p	1.2.3.2.1	person	
+::node	n2	1.1.2	name	
+::node	m	1.2.1	ministry	ministry
+::node	s	1	state-01	stated
+::node	p	1.2.2	person	evaluators
+::node	g2	1.2.3	give-01	give
+::node	c2	1.2.4	conduct-01	conducting
+::node	n	1.1	newspaper	
+::node	o	1.2	order-01	ordered
+::node	i	1.2.3.2.3.3	instead-of-91	of
+::node	p3	1.2.3.2.3.2	point	points
+::node	p2	1.2.3.2.3.1	point	points
+::node	f	1.2.4.2.1	first-stage	stage
+::node	p	1.2.4.2.2	person	their
+::node	p3	1.2.3.2.3.3.1.2	point	points
+::node	r3	1.2.4.2.3	report-01	reports
+::node	p4	1.2.3.2.3.3.1.1	point	points
+::node	"The_Korea_Herald"	1.1.1	"The_Korea_Herald"	
+::edge	1.2.3	give	give-01	:ARG1	1.2.3.2	grades	grade-01
+::edge	1.2.4	conducting	conduct-01	:ARG0	1.2.4.1		person
+::edge	1.2.3.2.3.1	points	point	:quant	1.2.3.2.3.1.1	60	60
+::edge	1.2.3	give	give-01	:ARG2	1.2.3.3	bidder	company
+::edge	1.2.4	conducting	conduct-01	:ARG1	1.2.4.2	reports	thing
+::edge	1.2.2	evaluators	person	:ARG0-of	1.2.2.1	evaluators	evaluate-01
+::edge	1.2.3.2.3.2	points	point	:quant	1.2.3.2.3.2.1	100	100
+::edge	1.2.3	give	give-01	:ARG0	1.2.3.1	them	person
+::edge	1.2.3.2.3.3	of	instead-of-91	:ARG2	1.2.3.2.3.3.1	range	range-01
+::edge	1.2.3.2.3.3.1.1	points	point	:quant	1.2.3.2.3.3.1.1.1	0	0
+::edge	1.1.2		name	:op1	1.1.2.1	Korea	"Korea"
+::edge	1.1.2		name	:op2	1.1.2.2	Herald	"Herald"
+::edge	1.2.3.2	grades	grade-01	:ARG1	1.2.3.2.2		company
+::edge	1.2.3.3	bidder	company	:quant	1.2.3.3.1	each	each
+::edge	1.2.3.2	grades	grade-01	:ARG1-of	1.2.3.2.3	range	range-01
+::edge	1.2.3.3	bidder	company	:ARG0-of	1.2.3.3.2	bidder	bid-01
+::edge	1.2.3.2	grades	grade-01	:ARG0	1.2.3.2.1		person
+::edge	1.1		newspaper	:name	1.1.2		name
+::edge	1.2	ordered	order-01	:ARG0	1.2.1	ministry	ministry
+::edge	1.2	ordered	order-01	:ARG1	1.2.2	evaluators	person
+::edge	1.2	ordered	order-01	:ARG2	1.2.3	give	give-01
+::edge	1.2	ordered	order-01	:time	1.2.4	conducting	conduct-01
+::edge	1	stated	state-01	:ARG0	1.1		newspaper
+::edge	1	stated	state-01	:ARG1	1.2	ordered	order-01
+::edge	1.2.3.2.3	range	range-01	:ARG1-of	1.2.3.2.3.3	of	instead-of-91
+::edge	1.2.3.2.3	range	range-01	:ARG4	1.2.3.2.3.2	points	point
+::edge	1.2.3.2.3	range	range-01	:ARG3	1.2.3.2.3.1	points	point
+::edge	1.2.4.2	reports	thing	:mod	1.2.4.2.1	stage	first-stage
+::edge	1.2.4.2	reports	thing	:poss	1.2.4.2.2	their	person
+::edge	1.2.3.2.3.3.1	range	range-01	:ARG4	1.2.3.2.3.3.1.2	points	point
+::edge	1.2.4.2	reports	thing	:ARG1-of	1.2.4.2.3	reports	report-01
+::edge	1.2.3.2.3.3.1	range	range-01	:ARG3	1.2.3.2.3.3.1.1	points	point
+::edge	1.1		newspaper	:wiki	1.1.1		"The_Korea_Herald"
+29	The Korea Herald stated that critics say Boeing would benefit most from the points minimum because it would gain fewer points than Dassault in terms of technology transfer and subcontracts.
+29	The Korea Herald stated that critics say Boeing would benefit most from the points minimum because it would gain fewer points than Dassault in terms of technology transfer and subcontracts .
+29	1-1.1.2.1 2-1.1.2.2 3-1 6-1.2 7-1.2.2.2.2.1 9-1.2.2 10-1.2.2.3 11-1.2.2.1.r 13-1.2.2.1.1 14-1.2.2.1 15-1.2.2.4 16-1.2.2.4.1.1 18-1.2.2.4.1 19-1.2.2.4.1.2.1 19-1.2.2.4.1.2.1.1 19-1.2.2.4.1.2.1.1.r 20-1.2.2.4.1.2 21-1.2.2.4.1.2.1.2.r 22-1.2.2.4.1.2.1.2.2.1 23-1.2.2.4.1.3.r 24-1.2.2.4.1.3 25-1.2.2.4.1.3.1.r 26-1.2.2.4.1.3.1.1 27-1.2.2.4.1.3.1 29-1.2.2.4.1.3.2
+::node	t3	1.2.2.4.1.3.1.1	technology	technology
+::node	m	1.2.2.3	most	most
+::node	c3	1.2.2.4	cause-01	because
+::node	m2	1.2.2.1	minimum	minimum
+::node	c2	1.2.2.2	company	
+::node	"Boeing"	1.2.2.2.1	"Boeing"	
+::node	c	1.2.1.1	criticize-01	
+::node	n3	1.2.2.2.2	name	
+::node	"Boeing"	1.2.2.2.2.1	"Boeing"	Boeing
+::node	g	1.2.2.4.1	gain-02	gain
+::node	"Korea"	1.1.2.1	"Korea"	Korea
+::node	p2	1.2.2.1.1	point	points
+::node	"Herald"	1.1.2.2	"Herald"	Herald
+::node	n2	1.1.2	name	
+::node	p	1.2.1	person	
+::node	c2	1.2.2.4.1.1	company	it
+::node	m3	1.2.2.4.1.2.1.1	more	fewer
+::node	s	1	state-01	stated
+::node	b	1.2.2	benefit-01	benefit
+::node	c4	1.2.2.4.1.2.1.2	company	
+::node	t	1.2.2.4.1.3	term	terms
+::node	p3	1.2.2.4.1.2	point	points
+::node	"Dassault"	1.2.2.4.1.2.1.2.2.1	"Dassault"	Dassault
+::node	n	1.1	newspaper	
+::node	n4	1.2.2.4.1.2.1.2.2	name	
+::node	s2	1.2	say-01	say
+::node	f	1.2.2.4.1.2.1	few	fewer
+::node	"Dassault_Aviation"	1.2.2.4.1.2.1.2.1	"Dassault_Aviation"	
+::node	t2	1.2.2.4.1.3.1	transfer-01	transfer
+::node	s3	1.2.2.4.1.3.2	subcontract-01	subcontracts
+::node	"The_Korea_Herald"	1.1.1	"The_Korea_Herald"	
+::edge	1.2.2.4.1.3.1	transfer	transfer-01	:ARG1	1.2.2.4.1.3.1.1	technology	technology
+::edge	1.2.2	benefit	benefit-01	:degree	1.2.2.3	most	most
+::edge	1.2.2	benefit	benefit-01	:ARG1-of	1.2.2.4	because	cause-01
+::edge	1.2.2	benefit	benefit-01	:ARG0	1.2.2.1	minimum	minimum
+::edge	1.2.2	benefit	benefit-01	:ARG1	1.2.2.2		company
+::edge	1.2.2.2		company	:wiki	1.2.2.2.1		"Boeing"
+::edge	1.2.1		person	:ARG0-of	1.2.1.1		criticize-01
+::edge	1.2.2.2		company	:name	1.2.2.2.2		name
+::edge	1.2.2.2.2		name	:op1	1.2.2.2.2.1	Boeing	"Boeing"
+::edge	1.2.2.4	because	cause-01	:ARG0	1.2.2.4.1	gain	gain-02
+::edge	1.1.2		name	:op1	1.1.2.1	Korea	"Korea"
+::edge	1.2.2.1	minimum	minimum	:consist-of	1.2.2.1.1	points	point
+::edge	1.1.2		name	:op2	1.1.2.2	Herald	"Herald"
+::edge	1.1		newspaper	:name	1.1.2		name
+::edge	1.2	say	say-01	:ARG0	1.2.1		person
+::edge	1.2.2.4.1	gain	gain-02	:ARG0	1.2.2.4.1.1	it	company
+::edge	1.2.2.4.1.2.1	fewer	few	:degree	1.2.2.4.1.2.1.1	fewer	more
+::edge	1.2	say	say-01	:ARG1	1.2.2	benefit	benefit-01
+::edge	1.2.2.4.1.2.1	fewer	few	:compared-to	1.2.2.4.1.2.1.2		company
+::edge	1.2.2.4.1	gain	gain-02	:mod	1.2.2.4.1.3	terms	term
+::edge	1.2.2.4.1	gain	gain-02	:ARG1	1.2.2.4.1.2	points	point
+::edge	1.2.2.4.1.2.1.2.2		name	:op1	1.2.2.4.1.2.1.2.2.1	Dassault	"Dassault"
+::edge	1	stated	state-01	:ARG0	1.1		newspaper
+::edge	1.2.2.4.1.2.1.2		company	:name	1.2.2.4.1.2.1.2.2		name
+::edge	1	stated	state-01	:ARG1	1.2	say	say-01
+::edge	1.2.2.4.1.2	points	point	:mod	1.2.2.4.1.2.1	fewer	few
+::edge	1.2.2.4.1.2.1.2		company	:wiki	1.2.2.4.1.2.1.2.1		"Dassault_Aviation"
+::edge	1.2.2.4.1.3	terms	term	:mod	1.2.2.4.1.3.1	transfer	transfer-01
+::edge	1.2.2.4.1.3	terms	term	:mod	1.2.2.4.1.3.2	subcontracts	subcontract-01
+::edge	1.1		newspaper	:wiki	1.1.1		"The_Korea_Herald"

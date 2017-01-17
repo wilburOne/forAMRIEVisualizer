@@ -1,0 +1,890 @@
+1	2002-03-29
+1	2002 @-@ 03 @-@ 29
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	3	1.2	3	03
+::node	29	1.3	29	29
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	03	3
+::edge	1		date-entity	:day	1.3	29	29
+2	Korea, Republic of (KR)
+2	Korea , Republic of ( KR )
+2	0-1.2.3 2-1.2.1 3-1.2.2 5-1.2.1 5-1.2.2 5-1.2.3
+::node	"Republic"	1.2.1	"Republic"	KR
+::node	c	1	country	
+::node	"of"	1.2.2	"of"	KR
+::node	"Korea"	1.2.3	"Korea"	KR
+::node	"South_Korea"	1.1	"South_Korea"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	KR	"Republic"
+::edge	1.2		name	:op2	1.2.2	KR	"of"
+::edge	1.2		name	:op3	1.2.3	KR	"Korea"
+::edge	1		country	:wiki	1.1		"South_Korea"
+::edge	1		country	:name	1.2		name
+3	proliferation; international; politics
+3	proliferation ; international ; politics
+3	0-1.1 2-1.2 4-1.3
+::node	a	1	and	
+::node	p	1.1	proliferate-01	proliferation
+::node	i	1.2	international	international
+::node	p2	1.3	politics	politics
+::edge	1		and	:op1	1.1	proliferation	proliferate-01
+::edge	1		and	:op2	1.2	international	international
+::edge	1		and	:op3	1.3	politics	politics
+4	A senior South Korean minister on Friday warned that there could be a new crisis this year over inspections of the rival North's nuclear program.
+4	A senior South Korean minister on Friday warned that there could be a new crisis this year over inspections of the rival North 's nuclear program .
+4	1-1.1.1.2.1 2-1.1.1.1.2.1 3-1.1.1.1.2.2 3-1.2.1.1.2.2.2 4-1.1.1.2 6-1.3.1 7-1 10-1.2.2.2 11-1.2.2.2.r 13-1.2.2.1 14-1.2.2 15-1.2.3.1 16-1.2.3 18-1.2.1 19-1.2.1.1.r 21-1.2.1.1.2.3 22-1.2.1.1.2.2.1 23-1.2.1.1.2.r 24-1.2.1.1.1 25-1.2.1.1
+::node	"Korea"	1.2.1.1.2.2.2	"Korea"	Korean
+::node	"North"	1.2.1.1.2.2.1	"North"	North
+::node	n	1.1.1.1.2	name	
+::node	s	1.1.1.2.1	senior	senior
+::node	"South_Korea"	1.1.1.1.1	"South_Korea"	
+::node	n4	1.2.2.1	new	new
+::node	p2	1.2.2.2	possible	could
+::node	t	1.2.3.1	this	this
+::node	p	1.2.1.1	program	program
+::node	r	1.2.1.1.2.3	rival	rival
+::node	"South"	1.1.1.1.2.1	"South"	South
+::node	c	1.1.1.1	country	
+::node	"Korea"	1.1.1.1.2.2	"Korea"	Korean
+::node	m	1.1.1.2	minister	minister
+::node	"North_Korea"	1.2.1.1.2.1	"North_Korea"	
+::node	n3	1.2.1.1.2.2	name	
+::node	i	1.2.1	inspect-01	inspections
+::node	w	1	warn-01	warned
+::node	c4	1.2.2	crisis	crisis
+::node	f2	1.3.1	friday	Friday
+::node	c3	1.2.1.1.2	country	
+::node	y	1.2.3	year	year
+::node	n2	1.2.1.1.1	nucleus	nuclear
+::node	p3	1.1	person	
+::node	c2	1.2	cause-01	
+::node	d2	1.3	date-entity	
+::node	h	1.1.1	have-org-role-91	
+::edge	1.2.1.1.2.2		name	:op2	1.2.1.1.2.2.2	Korean	"Korea"
+::edge	1.2.1.1.2.2		name	:op1	1.2.1.1.2.2.1	North	"North"
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.2	minister	minister	:mod	1.1.1.2.1	senior	senior
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"South_Korea"
+::edge	1.2.2	crisis	crisis	:mod	1.2.2.1	new	new
+::edge	1.2.2	crisis	crisis	:domain	1.2.2.2	could	possible
+::edge	1.2.3	year	year	:mod	1.2.3.1	this	this
+::edge	1.2.1	inspections	inspect-01	:ARG1	1.2.1.1	program	program
+::edge	1.2.1.1.2		country	:mod	1.2.1.1.2.3	rival	rival
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	South	"South"
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		country
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	Korean	"Korea"
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	minister	minister
+::edge	1.2.1.1.2		country	:wiki	1.2.1.1.2.1		"North_Korea"
+::edge	1.2.1.1.2		country	:name	1.2.1.1.2.2		name
+::edge	1.2		cause-01	:ARG0	1.2.1	inspections	inspect-01
+::edge	1.2		cause-01	:ARG1	1.2.2	crisis	crisis
+::edge	1.3		date-entity	:weekday	1.3.1	Friday	friday
+::edge	1.2.1.1	program	program	:poss	1.2.1.1.2		country
+::edge	1.2		cause-01	:time	1.2.3	year	year
+::edge	1.2.1.1	program	program	:mod	1.2.1.1.1	nuclear	nucleus
+::edge	1	warned	warn-01	:ARG0	1.1		person
+::edge	1	warned	warn-01	:ARG1	1.2		cause-01
+::edge	1	warned	warn-01	:time	1.3		date-entity
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+5	Senior South Korean minister Jeong Se-hyun on 020329 warned that tensions could rise because North Korea wants inspections of its nuclear facilities delayed.
+5	Senior South Korean minister Jeong Se @-@ hyun on 020329 warned that tensions could rise because North Korea wants inspections of its nuclear facilities delayed .
+5	0-1.1.3.2.1 1-1.1.3.1.2.1 2-1.1.3.1.2.2 3-1.1.3.2 4-1.1.2.1 5-1.1.2.2 7-1.1.2.2 9-1.3 9-1.3.1 9-1.3.1.r 9-1.3.2 9-1.3.2.r 9-1.3.3 9-1.3.3.r 10-1 11-1.2.r 12-1.2.2.1.1 13-1.2.2 14-1.2.2.1 15-1.2 16-1.2.1.1.2.1 17-1.2.1.1.2.2 18-1.2.1 19-1.2.1.2.1 20-1.2.1.2.1.1.r 21-1.2.1.2.1.1.2 21-1.2.1.2.1.1.2.r 22-1.2.1.2.1.1.1 23-1.2.1.2.1.1 24-1.2.1.2
+::node	n2	1.1.3.1.2	name	
+::node	s	1.1.3.2.1	senior	Senior
+::node	d3	1.2.1.2	delay-01	delayed
+::node	r	1.2.2.1	rise-01	rise
+::node	c3	1.2.1.1	country	
+::node	"Jeong"	1.1.2.1	"Jeong"	Jeong
+::node	t	1.2.2.1.1	tension	tensions
+::node	"Se-hyun"	1.1.2.2	"Se-hyun"	hyun
+::node	c	1.1.3.1	country	
+::node	m	1.1.3.2	minister	minister
+::node	"North"	1.2.1.1.2.1	"North"	North
+::node	"Korea"	1.2.1.1.2.2	"Korea"	Korea
+::node	"Korea"	1.1.3.1.2.2	"Korea"	Korean
+::node	c3	1.2.1.2.1.1.2	country	its
+::node	n4	1.2.1.2.1.1.1	nucleus	nuclear
+::node	"South"	1.1.3.1.2.1	"South"	South
+::node	n	1.1.2	name	
+::node	w2	1.2.1	want-01	wants
+::node	f	1.2.1.2.1.1	facility	facilities
+::node	w	1	warn-01	warned
+::node	h	1.1.3	have-org-role-91	
+::node	p	1.2.2	possible	could
+::node	2002	1.3.1	2002	020329
+::node	n3	1.2.1.1.2	name	
+::node	i	1.2.1.2.1	inspect-01	inspections
+::node	3	1.3.2	3	020329
+::node	"North_Korea"	1.2.1.1.1	"North_Korea"	
+::node	29	1.3.3	29	020329
+::node	p2	1.1	person	
+::node	c2	1.2	cause-01	because
+::node	d2	1.3	date-entity	020329
+::node	"South_Korea"	1.1.3.1.1	"South_Korea"	
+::node	"Jeong_Se-hyun"	1.1.1	"Jeong_Se-hyun"	
+::edge	1.1.3.1		country	:name	1.1.3.1.2		name
+::edge	1.1.3.2	minister	minister	:mod	1.1.3.2.1	Senior	senior
+::edge	1.2.1	wants	want-01	:ARG1	1.2.1.2	delayed	delay-01
+::edge	1.2.2	could	possible	:domain	1.2.2.1	rise	rise-01
+::edge	1.2.1	wants	want-01	:ARG0	1.2.1.1		country
+::edge	1.1.2		name	:op1	1.1.2.1	Jeong	"Jeong"
+::edge	1.2.2.1	rise	rise-01	:ARG1	1.2.2.1.1	tensions	tension
+::edge	1.1.2		name	:op2	1.1.2.2	hyun	"Se-hyun"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		country
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	minister	minister
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	North	"North"
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	Korea	"Korea"
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	Korean	"Korea"
+::edge	1.2.1.2.1.1	facilities	facility	:poss	1.2.1.2.1.1.2	its	country
+::edge	1.2.1.2.1.1	facilities	facility	:mod	1.2.1.2.1.1.1	nuclear	nucleus
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	South	"South"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	because	cause-01	:ARG0	1.2.1	wants	want-01
+::edge	1.2.1.2.1	inspections	inspect-01	:ARG1	1.2.1.2.1.1	facilities	facility
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	because	cause-01	:ARG1	1.2.2	could	possible
+::edge	1.3	020329	date-entity	:year	1.3.1	020329	2002
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.2.1.2	delayed	delay-01	:ARG1	1.2.1.2.1	inspections	inspect-01
+::edge	1.3	020329	date-entity	:month	1.3.2	020329	3
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"North_Korea"
+::edge	1.3	020329	date-entity	:day	1.3.3	020329	29
+::edge	1	warned	warn-01	:ARG0	1.1		person
+::edge	1	warned	warn-01	:ARG1	1.2	because	cause-01
+::edge	1	warned	warn-01	:time	1.3	020329	date-entity
+::edge	1.1.3.1		country	:wiki	1.1.3.1.1		"South_Korea"
+::edge	1.1		person	:wiki	1.1.1		"Jeong_Se-hyun"
+6	Unification Minister Jeong is the South Korean government's chief policymaker for relations with North Korea.
+6	Unification Minister Jeong is the South Korean government 's chief policymaker for relations with North Korea .
+6	0-1.3.1 1-1.3 2-1.1.2.1 5-1.2.2.1 6-1.2.2.2 8-1 9-1.4.3 12-1.4.2.1 13-1.4.2.1.1.r 14-1.4.2.1.1.2.1 15-1.4.2.1.1.2.2
+::node	"Jeong"	1.1.2.1	"Jeong"	Jeong
+::node	c2	1.4.2.1.1	country	
+::node	n3	1.1.2	name	
+::node	"South_Korea"	1.2.1	"South_Korea"	
+::node	h	1	have-org-role-91	's
+::node	n	1.2.2	name	
+::node	u	1.3.1	unification	Unification
+::node	p	1.4.1	person	
+::node	p2	1.4.2	policy	
+::node	p	1.1	person	
+::node	c3	1.4.3	chief	chief
+::node	c	1.2	country	
+::node	m2	1.3	minister	Minister
+::node	n2	1.4.2.1.1.2	name	
+::node	m	1.4	make-01	
+::node	"North_Korea"	1.4.2.1.1.1	"North_Korea"	
+::node	"South"	1.2.2.1	"South"	South
+::node	"North"	1.4.2.1.1.2.1	"North"	North
+::node	"Korea"	1.2.2.2	"Korea"	Korean
+::node	"Korea"	1.4.2.1.1.2.2	"Korea"	Korea
+::node	r	1.4.2.1	relation	relations
+::node	"Jeong_Se-hyun"	1.1.1	"Jeong_Se-hyun"	
+::edge	1.1.2		name	:op1	1.1.2.1	Jeong	"Jeong"
+::edge	1.4.2.1	relations	relation	:mod	1.4.2.1.1		country
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"South_Korea"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3	Minister	minister	:topic	1.3.1	Unification	unification
+::edge	1.4		make-01	:ARG0	1.4.1		person
+::edge	1.4		make-01	:ARG1	1.4.2		policy
+::edge	1	's	have-org-role-91	:ARG0	1.1		person
+::edge	1.4		make-01	:mod	1.4.3	chief	chief
+::edge	1	's	have-org-role-91	:ARG1	1.2		country
+::edge	1	's	have-org-role-91	:ARG2	1.3	Minister	minister
+::edge	1.4.2.1.1		country	:name	1.4.2.1.1.2		name
+::edge	1	's	have-org-role-91	:ARG3	1.4		make-01
+::edge	1.4.2.1.1		country	:wiki	1.4.2.1.1.1		"North_Korea"
+::edge	1.2.2		name	:op1	1.2.2.1	South	"South"
+::edge	1.4.2.1.1.2		name	:op1	1.4.2.1.1.2.1	North	"North"
+::edge	1.2.2		name	:op2	1.2.2.2	Korean	"Korea"
+::edge	1.4.2.1.1.2		name	:op2	1.4.2.1.1.2.2	Korea	"Korea"
+::edge	1.4.2		policy	:topic	1.4.2.1	relations	relation
+::edge	1.1		person	:wiki	1.1.1		"Jeong_Se-hyun"
+7	Jeong said in a lecture on South Korea and US relations with North Korea that there was some talk in the United States that the nuclear inspection in North Korea should be carried out in 020800.
+7	Jeong said in a lecture on South Korea and US relations with North Korea that there was some talk in the United States that the nuclear inspection in North Korea should be carried out in 020800 .
+7	0-1.1.2.1 1-1 2-1.3.r 4-1.3 5-1.3.2.r 6-1.3.2.2.2.1 7-1.3.2.2.2.2 9-1.3.2.3.2.1 9-1.3.2.3.2.2 10-1.3.2 11-1.3.2.1.r 12-1.3.2.1.2.1 13-1.3.2.1.2.2 17-1.2.3 18-1.2 19-1.2.2.r 21-1.2.2 22-1.2.2 23-1.2.1.r 25-1.2.1.1.1.1 26-1.2.1.1.1 28-1.3.2.1.2.1 29-1.3.2.1.2.2 30-1.2.1 32-1.2.1.1 33-1.2.1.1 34-1.2.1.1.2.r 35-1.2.1.1.2 35-1.2.1.1.2.1 35-1.2.1.1.2.1.r 35-1.2.1.1.2.2 35-1.2.1.1.2.2.r
+::node	n2	1.3.2.2.2	name	
+::node	"United_States"	1.3.2.3.1	"United_States"	
+::node	n3	1.3.2.3.2	name	
+::node	"North_Korea"	1.3.2.1.1	"North_Korea"	
+::node	n4	1.3.2.1.2	name	
+::node	"South_Korea"	1.3.2.2.1	"South_Korea"	
+::node	c3	1.3.2.1	country	
+::node	"Korea"	1.3.2.1.2.2	"Korea"	Korea
+::node	c	1.3.2.2	country	
+::node	"North"	1.3.2.1.2.1	"North"	North
+::node	c2	1.3.2.3	country	
+::node	"South"	1.3.2.2.2.1	"South"	South
+::node	"Korea"	1.3.2.2.2.2	"Korea"	Korea
+::node	c4	1.2.1.1	carry-03	out
+::node	"Jeong"	1.1.2.1	"Jeong"	Jeong
+::node	n5	1.2.1.1.1.1	nucleus	nuclear
+::node	c3	1.2.1.1.1.2	country	
+::node	2002	1.2.1.1.2.1	2002	020800
+::node	8	1.2.1.1.2.2	8	020800
+::node	"States"	1.3.2.3.2.2	"States"	US
+::node	"United"	1.3.2.3.2.1	"United"	US
+::node	n	1.1.2	name	
+::node	r2	1.2.1	recommend-01	should
+::node	s	1	say-01	said
+::node	c2	1.2.2	country	States
+::node	p	1.3.1	person	
+::node	d2	1.2.1.1.2	date-entity	020800
+::node	s2	1.2.3	some	some
+::node	r	1.3.2	relation	relations
+::node	i	1.2.1.1.1	inspect-01	inspection
+::node	p	1.1	person	
+::node	t	1.2	talk-01	talk
+::node	l	1.3	lecture-01	lecture
+::node	"Jeong_Se-hyun"	1.1.1	"Jeong_Se-hyun"	
+::edge	1.3.2.2		country	:name	1.3.2.2.2		name
+::edge	1.3.2.3		country	:wiki	1.3.2.3.1		"United_States"
+::edge	1.3.2.3		country	:name	1.3.2.3.2		name
+::edge	1.3.2.1		country	:wiki	1.3.2.1.1		"North_Korea"
+::edge	1.3.2.1		country	:name	1.3.2.1.2		name
+::edge	1.3.2.2		country	:wiki	1.3.2.2.1		"South_Korea"
+::edge	1.3.2	relations	relation	:accompanier	1.3.2.1		country
+::edge	1.3.2.1.2		name	:op2	1.3.2.1.2.2	Korea	"Korea"
+::edge	1.3.2	relations	relation	:mod	1.3.2.2		country
+::edge	1.3.2.1.2		name	:op1	1.3.2.1.2.1	North	"North"
+::edge	1.3.2	relations	relation	:mod	1.3.2.3		country
+::edge	1.3.2.2.2		name	:op1	1.3.2.2.2.1	South	"South"
+::edge	1.3.2.2.2		name	:op2	1.3.2.2.2.2	Korea	"Korea"
+::edge	1.2.1	should	recommend-01	:ARG1	1.2.1.1	out	carry-03
+::edge	1.1.2		name	:op1	1.1.2.1	Jeong	"Jeong"
+::edge	1.2.1.1.1	inspection	inspect-01	:ARG1	1.2.1.1.1.1	nuclear	nucleus
+::edge	1.2.1.1.1	inspection	inspect-01	:location	1.2.1.1.1.2		country
+::edge	1.2.1.1.2	020800	date-entity	:year	1.2.1.1.2.1	020800	2002
+::edge	1.2.1.1.2	020800	date-entity	:month	1.2.1.1.2.2	020800	8
+::edge	1.3.2.3.2		name	:op2	1.3.2.3.2.2	US	"States"
+::edge	1.3.2.3.2		name	:op1	1.3.2.3.2.1	US	"United"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	talk	talk-01	:ARG1	1.2.1	should	recommend-01
+::edge	1.2	talk	talk-01	:location	1.2.2	States	country
+::edge	1.3	lecture	lecture-01	:ARG0	1.3.1		person
+::edge	1.2.1.1	out	carry-03	:time	1.2.1.1.2	020800	date-entity
+::edge	1.2	talk	talk-01	:mod	1.2.3	some	some
+::edge	1.3	lecture	lecture-01	:ARG2	1.3.2	relations	relation
+::edge	1.2.1.1	out	carry-03	:ARG1	1.2.1.1.1	inspection	inspect-01
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	talk	talk-01
+::edge	1	said	say-01	:time	1.3	lecture	lecture-01
+::edge	1.1		person	:wiki	1.1.1		"Jeong_Se-hyun"
+8	North Korea's suggestion is that the inspection should be delayed until 050000.
+8	North Korea 's suggestion is that the inspection should be delayed until 050000 .
+8	0-1.1.2.1 1-1.1.2.2 2-1.1.r 3-1 5-1.2.r 7-1.2.1.1 8-1.2 10-1.2.1 11-1.2.1.2 12-1.2.1.2.1 12-1.2.1.2.1.1 12-1.2.1.2.1.1.r
+::node	n	1.1.2	name	
+::node	d2	1.2.1	delay-01	delayed
+::node	2005	1.2.1.2.1.1	2005	050000
+::node	s	1	suggest-01	suggestion
+::node	d3	1.2.1.2.1	date-entity	050000
+::node	"North"	1.1.2.1	"North"	North
+::node	c	1.1	country	
+::node	"Korea"	1.1.2.2	"Korea"	Korea
+::node	r	1.2	recommend-01	should
+::node	u	1.2.1.2	until	until
+::node	i	1.2.1.1	inspect-01	inspection
+::node	"North_Korea"	1.1.1	"North_Korea"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	should	recommend-01	:ARG1	1.2.1	delayed	delay-01
+::edge	1.2.1.2.1	050000	date-entity	:year	1.2.1.2.1.1	050000	2005
+::edge	1.2.1.2	until	until	:op1	1.2.1.2.1	050000	date-entity
+::edge	1.1.2		name	:op1	1.1.2.1	North	"North"
+::edge	1	suggestion	suggest-01	:ARG0	1.1		country
+::edge	1.1.2		name	:op2	1.1.2.2	Korea	"Korea"
+::edge	1	suggestion	suggest-01	:ARG1	1.2	should	recommend-01
+::edge	1.2.1	delayed	delay-01	:time	1.2.1.2	until	until
+::edge	1.2.1	delayed	delay-01	:ARG1	1.2.1.1	inspection	inspect-01
+::edge	1.1		country	:wiki	1.1.1		"North_Korea"
+9	Jeong said that a crisis could come in 020800 on the Korean peninsula if this issue becomes an international point of contention.
+9	Jeong said that a crisis could come in 020800 on the Korean peninsula if this issue becomes an international point of contention .
+9	0-1.1.2.1 1-1 2-1.2.r 4-1.2.1.1 5-1.2 6-1.2.1 7-1.2.1.2.r 8-1.2.1.2 8-1.2.1.2.1 8-1.2.1.2.1.r 8-1.2.1.2.2 8-1.2.1.2.2.r 9-1.2.1.3.r 11-1.2.1.3.2.1 12-1.2.1.3 13-1.2.2.r 14-1.2.2.1.1 15-1.2.2.1 16-1.2.2 18-1.2.2.2.1 19-1.2.2.2 20-1.2.2.2.2.r 21-1.2.2.2.2
+::node	"Jeong"	1.1.2.1	"Jeong"	Jeong
+::node	t	1.2.2.1.1	this	this
+::node	"Korea"	1.2.1.3.2.1	"Korea"	Korean
+::node	n2	1.2.1.3.2	name	
+::node	8	1.2.1.2.2	8	020800
+::node	"Korean_Peninsula"	1.2.1.3.1	"Korean_Peninsula"	
+::node	n	1.1.2	name	
+::node	c	1.2.1	come-03	come
+::node	s	1	say-01	said
+::node	b	1.2.2	become-01	becomes
+::node	2002	1.2.1.2.1	2002	020800
+::node	p	1.1	person	
+::node	p2	1.2	possible	could
+::node	d2	1.2.1.2	date-entity	020800
+::node	i	1.2.2.1	issue	issue
+::node	p3	1.2.1.3	peninsula	peninsula
+::node	p4	1.2.2.2	point	point
+::node	i2	1.2.2.2.1	international	international
+::node	c2	1.2.1.1	crisis	crisis
+::node	c3	1.2.2.2.2	contend-02	contention
+::node	"Jeong_Se-hyun"	1.1.1	"Jeong_Se-hyun"	
+::edge	1.1.2		name	:op1	1.1.2.1	Jeong	"Jeong"
+::edge	1.2.2.1	issue	issue	:mod	1.2.2.1.1	this	this
+::edge	1.2.1.3.2		name	:op1	1.2.1.3.2.1	Korean	"Korea"
+::edge	1.2.1.3	peninsula	peninsula	:name	1.2.1.3.2		name
+::edge	1.2.1.2	020800	date-entity	:month	1.2.1.2.2	020800	8
+::edge	1.2.1.3	peninsula	peninsula	:wiki	1.2.1.3.1		"Korean_Peninsula"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	could	possible	:domain	1.2.1	come	come-03
+::edge	1.2	could	possible	:condition	1.2.2	becomes	become-01
+::edge	1.2.1.2	020800	date-entity	:year	1.2.1.2.1	020800	2002
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	could	possible
+::edge	1.2.1	come	come-03	:time	1.2.1.2	020800	date-entity
+::edge	1.2.2	becomes	become-01	:ARG1	1.2.2.1	issue	issue
+::edge	1.2.1	come	come-03	:location	1.2.1.3	peninsula	peninsula
+::edge	1.2.2	becomes	become-01	:ARG2	1.2.2.2	point	point
+::edge	1.2.2.2	point	point	:mod	1.2.2.2.1	international	international
+::edge	1.2.1	come	come-03	:ARG1	1.2.1.1	crisis	crisis
+::edge	1.2.2.2	point	point	:ARG1-of	1.2.2.2.2	contention	contend-02
+::edge	1.1		person	:wiki	1.1.1		"Jeong_Se-hyun"
+10	Following Jeong's comments another senior government official sought to play down Jeong's remarks about the looming troubles.
+10	Following Jeong 's comments another senior government official sought to play down Jeong 's remarks about the looming troubles .
+10	0-1.3 1-1.3.1.1 2-1.3.1.1.r 3-1.3.1 4-1.1.1 5-1.1.2.2.1 6-1.1.2.1 7-1.1.2.2 8-1 10-1.2 11-1.2 12-1.2.2.1.2.1 13-1.2.2.1.r 14-1.2.2 15-1.2.2.2.r 17-1.2.2.2.1 18-1.2.2.2
+::node	g	1.1.2.1	government-organization	government
+::node	"Jeong_Se-hyun"	1.2.2.1.1	"Jeong_Se-hyun"	
+::node	o	1.1.2.2	official	official
+::node	p2	1.3.1.1	person	Jeong
+::node	"Jeong"	1.2.2.1.2.1	"Jeong"	Jeong
+::node	s2	1.1.2.2.1	senior	senior
+::node	h	1.1.2	have-org-role-91	
+::node	p3	1.2.1	person	
+::node	s	1	seek-01	sought
+::node	r	1.2.2	remark-01	remarks
+::node	c	1.3.1	comment-01	comments
+::node	p3	1.1	person	
+::node	p	1.2	play-07	down
+::node	f	1.3	follow-01	Following
+::node	p2	1.2.2.1	person	
+::node	t	1.2.2.2	trouble	troubles
+::node	n	1.2.2.1.2	name	
+::node	l	1.2.2.2.1	loom-01	looming
+::node	a	1.1.1	another	another
+::edge	1.1.2		have-org-role-91	:ARG1	1.1.2.1	government	government-organization
+::edge	1.2.2.1		person	:wiki	1.2.2.1.1		"Jeong_Se-hyun"
+::edge	1.1.2		have-org-role-91	:ARG2	1.1.2.2	official	official
+::edge	1.3.1	comments	comment-01	:ARG0	1.3.1.1	Jeong	person
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	Jeong	"Jeong"
+::edge	1.1.2.2	official	official	:mod	1.1.2.2.1	senior	senior
+::edge	1.1		person	:ARG0-of	1.1.2		have-org-role-91
+::edge	1.2	down	play-07	:ARG0	1.2.1		person
+::edge	1.2	down	play-07	:ARG1	1.2.2	remarks	remark-01
+::edge	1.3	Following	follow-01	:ARG2	1.3.1	comments	comment-01
+::edge	1	sought	seek-01	:ARG0	1.1		person
+::edge	1	sought	seek-01	:ARG1	1.2	down	play-07
+::edge	1	sought	seek-01	:time	1.3	Following	follow-01
+::edge	1.2.2	remarks	remark-01	:ARG0	1.2.2.1		person
+::edge	1.2.2	remarks	remark-01	:topic	1.2.2.2	troubles	trouble
+::edge	1.2.2.1		person	:name	1.2.2.1.2		name
+::edge	1.2.2.2	troubles	trouble	:ARG1-of	1.2.2.2.1	looming	loom-01
+::edge	1.1		person	:mod	1.1.1	another	another
+11	The unnamed official told the Yonhap national news agency that talk of pressing for IAEA inspections in 020800 had come only from private researchers in the United States.
+11	The unnamed official told the Yonhap national news agency that talk of pressing for IAEA inspections in 020800 had come only from private researchers in the United States .
+11	1-1.1.1 1-1.1.1.1 1-1.1.1.1.r 2-1.1.2.1 2-1.3 3-1 5-1.3.2.1 6-1.3.4 7-1.3.3 8-1.3 9-1.2.r 10-1.2.1 11-1.2.1.1.r 12-1.2.1.1 13-1.2.1.1.1.r 14-1.2.1.1.1.1.2.1 15-1.2.1.1.1 16-1.2.1.1.1.2.r 17-1.2.1.1.1.2 17-1.2.1.1.1.2.1 17-1.2.1.1.1.2.1.r 17-1.2.1.1.1.2.2 17-1.2.1.1.1.2.2.r 19-1.2 20-1.2.3 21-1.2.2.r 22-1.2.2.1 23-1.2.2 23-1.2.2.2 23-1.2.2.2.r 24-1.2.2.3.r 26-1.2.2.3.2.1 27-1.2.2.3.2.2
+::node	"International_Atomic_Energy_Agency"	1.2.1.1.1.1.1	"International_Atomic_Energy_Agency"	
+::node	n5	1.2.1.1.1.1.2	name	
+::node	2002	1.2.1.1.1.2.1	2002	020800
+::node	8	1.2.1.1.1.2.2	8	020800
+::node	"Yonhap"	1.3.2.1	"Yonhap"	Yonhap
+::node	c2	1.2.2.3	country	
+::node	p3	1.2.2.1	private	private
+::node	r	1.2.2.2	research-01	researchers
+::node	p	1.2.1.1	press-01	pressing
+::node	"United_States"	1.2.2.3.1	"United_States"	
+::node	n6	1.2.2.3.2	name	
+::node	"States"	1.2.2.3.2.2	"States"	States
+::node	-	1.1.1.1	-	unnamed
+::node	"United"	1.2.2.3.2.1	"United"	United
+::node	o	1.1.2.1	official	official
+::node	o2	1.2.1.1.1.1	organization	
+::node	d2	1.2.1.1.1.2	date-entity	020800
+::node	h	1.1.2	have-org-role-91	
+::node	t2	1.2.1	talk-01	talk
+::node	t	1	tell-01	told
+::node	p2	1.2.2	person	researchers
+::node	"Yonhap"	1.3.1	"Yonhap"	
+::node	o3	1.2.3	only	only
+::node	n2	1.3.2	name	
+::node	i	1.2.1.1.1	inspect-01	inspections
+::node	n3	1.3.3	news	news
+::node	p4	1.1	person	
+::node	"IAEA"	1.2.1.1.1.1.2.1	"IAEA"	IAEA
+::node	n4	1.3.4	nation	national
+::node	c	1.2	come-01	come
+::node	a	1.3	agency	agency
+::node	n	1.1.1	name-01	unnamed
+::edge	1.2.1.1.1.1		organization	:wiki	1.2.1.1.1.1.1		"International_Atomic_Energy_Agency"
+::edge	1.2.1.1.1.1		organization	:name	1.2.1.1.1.1.2		name
+::edge	1.2.1.1.1.2	020800	date-entity	:year	1.2.1.1.1.2.1	020800	2002
+::edge	1.2.1.1.1.2	020800	date-entity	:month	1.2.1.1.1.2.2	020800	8
+::edge	1.3.2		name	:op1	1.3.2.1	Yonhap	"Yonhap"
+::edge	1.2.2	researchers	person	:location	1.2.2.3		country
+::edge	1.2.2	researchers	person	:mod	1.2.2.1	private	private
+::edge	1.2.2	researchers	person	:ARG0-of	1.2.2.2	researchers	research-01
+::edge	1.2.1	talk	talk-01	:ARG1	1.2.1.1	pressing	press-01
+::edge	1.2.2.3		country	:wiki	1.2.2.3.1		"United_States"
+::edge	1.2.2.3		country	:name	1.2.2.3.2		name
+::edge	1.2.2.3.2		name	:op2	1.2.2.3.2.2	States	"States"
+::edge	1.1.1	unnamed	name-01	:polarity	1.1.1.1	unnamed	-
+::edge	1.2.2.3.2		name	:op1	1.2.2.3.2.1	United	"United"
+::edge	1.1.2		have-org-role-91	:ARG2	1.1.2.1	official	official
+::edge	1.2.1.1.1	inspections	inspect-01	:ARG0	1.2.1.1.1.1		organization
+::edge	1.2.1.1.1	inspections	inspect-01	:time	1.2.1.1.1.2	020800	date-entity
+::edge	1.1		person	:ARG0-of	1.1.2		have-org-role-91
+::edge	1.2	come	come-01	:ARG1	1.2.1	talk	talk-01
+::edge	1.2	come	come-01	:ARG3	1.2.2	researchers	person
+::edge	1.3	agency	agency	:wiki	1.3.1		"Yonhap"
+::edge	1.2	come	come-01	:mod	1.2.3	only	only
+::edge	1.3	agency	agency	:name	1.3.2		name
+::edge	1.2.1.1	pressing	press-01	:ARG2	1.2.1.1.1	inspections	inspect-01
+::edge	1.3	agency	agency	:mod	1.3.3	news	news
+::edge	1	told	tell-01	:ARG0	1.1		person
+::edge	1.2.1.1.1.1.2		name	:op1	1.2.1.1.1.1.2.1	IAEA	"IAEA"
+::edge	1.3	agency	agency	:mod	1.3.4	national	nation
+::edge	1	told	tell-01	:ARG1	1.2	come	come-01
+::edge	1	told	tell-01	:ARG2	1.3	agency	agency
+::edge	1.1		person	:ARG1-of	1.1.1	unnamed	name-01
+12	The official said it was speculation that the North Korean government thinks the inspections should be delayed until 050000.
+12	The official said it was speculation that the North Korean government thinks the inspections should be delayed until 050000 .
+12	1-1.1.1.1 2-1 5-1.2 6-1.2.1.r 8-1.2.1.1.1.1.2.1 9-1.2.1.1.1.1.2.2 10-1.2.1.1 10-1.2.1.1.1 10-1.2.1.1.1.r 11-1.2.1 13-1.2.1.2.1.1 14-1.2.1.2 16-1.2.1.2.1 17-1.2.1.2.1.2 18-1.2.1.2.1.2.1 18-1.2.1.2.1.2.1.1 18-1.2.1.2.1.2.1.1.r
+::node	"North_Korea"	1.2.1.1.1.1.1	"North_Korea"	
+::node	n	1.2.1.1.1.1.2	name	
+::node	o	1.1.1.1	official	official
+::node	c	1.2.1.1.1.1	country	
+::node	2005	1.2.1.2.1.2.1.1	2005	050000
+::node	d3	1.2.1.2.1.2.1	date-entity	050000
+::node	t	1.2.1	think-01	thinks
+::node	i	1.2.1.2.1.1	inspect-01	inspections
+::node	s	1	say-01	said
+::node	u	1.2.1.2.1.2	until	until
+::node	d2	1.2.1.2.1	delay-01	delayed
+::node	g2	1.2.1.1.1	govern-01	government
+::node	p	1.1	person	
+::node	"North"	1.2.1.1.1.1.2.1	"North"	North
+::node	s2	1.2	speculate-01	speculation
+::node	"Korea"	1.2.1.1.1.1.2.2	"Korea"	Korean
+::node	r	1.2.1.2	recommend-01	should
+::node	g	1.2.1.1	government-organization	government
+::node	h	1.1.1	have-org-role-91	
+::edge	1.2.1.1.1.1		country	:wiki	1.2.1.1.1.1.1		"North_Korea"
+::edge	1.2.1.1.1.1		country	:name	1.2.1.1.1.1.2		name
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.1	official	official
+::edge	1.2.1.1.1	government	govern-01	:ARG1	1.2.1.1.1.1		country
+::edge	1.2.1.2.1.2.1	050000	date-entity	:year	1.2.1.2.1.2.1.1	050000	2005
+::edge	1.2.1.2.1.2	until	until	:op1	1.2.1.2.1.2.1	050000	date-entity
+::edge	1.2	speculation	speculate-01	:ARG1	1.2.1	thinks	think-01
+::edge	1.2.1.2.1	delayed	delay-01	:ARG1	1.2.1.2.1.1	inspections	inspect-01
+::edge	1.2.1.2.1	delayed	delay-01	:time	1.2.1.2.1.2	until	until
+::edge	1.2.1.2	should	recommend-01	:ARG1	1.2.1.2.1	delayed	delay-01
+::edge	1.2.1.1	government	government-organization	:ARG0-of	1.2.1.1.1	government	govern-01
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1.2.1.1.1.1.2		name	:op1	1.2.1.1.1.1.2.1	North	"North"
+::edge	1	said	say-01	:ARG1	1.2	speculation	speculate-01
+::edge	1.2.1.1.1.1.2		name	:op2	1.2.1.1.1.1.2.2	Korean	"Korea"
+::edge	1.2.1	thinks	think-01	:ARG1	1.2.1.2	should	recommend-01
+::edge	1.2.1	thinks	think-01	:ARG0	1.2.1.1	government	government-organization
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+13	Top South Korean envoy Lim Won-dong intends to raise international concerns about the North's nuclear and missile programs when he goes to Pyongyang 020403.
+13	Top South Korean envoy Lim Won @-@ dong intends to raise international concerns about the North 's nuclear and missile programs when he goes to Pyongyang 020403 .
+13	0-1.1.3.2.1 1-1.1.3.1.2.1 2-1.1.3.1.2.2 2-1.2.2.1.1.2.2 3-1.1.3.2 4-1.1.2.1 5-1.1.2.2 7-1.1.2.2 8-1 10-1.2 11-1.2.2.2 12-1.2.2 13-1.2.2.1.r 15-1.2.2.1.1.2.1 16-1.2.2.1.1.r 17-1.2.2.1.2 19-1.2.2.1.3 20-1.2.2.1 21-1.2.3.3.r 21-1.2.3.r 22-1.2.3.1 23-1.2.3 24-1.2.3.2.r 25-1.2.3.2.2.1 26-1.2.3.3 26-1.2.3.3.1 26-1.2.3.3.1.r 26-1.2.3.3.2 26-1.2.3.3.2.r 26-1.2.3.3.3 26-1.2.3.3.3.r
+::node	n2	1.1.3.1.2	name	
+::node	t	1.1.3.2.1	top	Top
+::node	"North_Korea"	1.2.2.1.1.1	"North_Korea"	
+::node	n4	1.2.2.1.1.2	name	
+::node	"Korea"	1.2.2.1.1.2.2	"Korea"	Korean
+::node	"North"	1.2.2.1.1.2.1	"North"	North
+::node	c4	1.2.3.2	city	
+::node	d2	1.2.3.3	date-entity	020403
+::node	p	1.2.2.1	program	programs
+::node	i2	1.2.2.2	international	international
+::node	p2	1.2.3.1	person	he
+::node	n3	1.2.2.1.2	nucleus	nuclear
+::node	m	1.2.2.1.3	missile	missile
+::node	"Lim"	1.1.2.1	"Lim"	Lim
+::node	c3	1.2.2.1.1	country	
+::node	"Won-dong"	1.1.2.2	"Won-dong"	dong
+::node	c	1.1.3.1	country	
+::node	e	1.1.3.2	envoy	envoy
+::node	"Korea"	1.1.3.1.2.2	"Korea"	Korean
+::node	n5	1.2.3.2.2	name	
+::node	2002	1.2.3.3.1	2002	020403
+::node	4	1.2.3.3.2	4	020403
+::node	"Pyongyang"	1.2.3.2.1	"Pyongyang"	
+::node	3	1.2.3.3.3	3	020403
+::node	"South"	1.1.3.1.2.1	"South"	South
+::node	n	1.1.2	name	
+::node	p2	1.2.1	person	
+::node	i	1	intend-01	intends
+::node	h	1.1.3	have-org-role-91	
+::node	c2	1.2.2	concern-01	concerns
+::node	g	1.2.3	go-02	goes
+::node	p2	1.1	person	
+::node	r	1.2	raise-01	raise
+::node	"Pyongyang"	1.2.3.2.2.1	"Pyongyang"	Pyongyang
+::node	"South_Korea"	1.1.3.1.1	"South_Korea"	
+::node	"Lim_Dong-won"	1.1.1	"Lim_Dong-won"	
+::edge	1.1.3.1		country	:name	1.1.3.1.2		name
+::edge	1.1.3.2	envoy	envoy	:mod	1.1.3.2.1	Top	top
+::edge	1.2.2.1.1		country	:wiki	1.2.2.1.1.1		"North_Korea"
+::edge	1.2.2.1.1		country	:name	1.2.2.1.1.2		name
+::edge	1.2.2.1.1.2		name	:op2	1.2.2.1.1.2.2	Korean	"Korea"
+::edge	1.2.2.1.1.2		name	:op1	1.2.2.1.1.2.1	North	"North"
+::edge	1.2.3	goes	go-02	:ARG4	1.2.3.2		city
+::edge	1.2.3	goes	go-02	:time	1.2.3.3	020403	date-entity
+::edge	1.2.2	concerns	concern-01	:ARG0	1.2.2.1	programs	program
+::edge	1.2.2	concerns	concern-01	:mod	1.2.2.2	international	international
+::edge	1.2.3	goes	go-02	:ARG0	1.2.3.1	he	person
+::edge	1.2.2.1	programs	program	:mod	1.2.2.1.2	nuclear	nucleus
+::edge	1.2.2.1	programs	program	:mod	1.2.2.1.3	missile	missile
+::edge	1.1.2		name	:op1	1.1.2.1	Lim	"Lim"
+::edge	1.2.2.1	programs	program	:poss	1.2.2.1.1		country
+::edge	1.1.2		name	:op2	1.1.2.2	dong	"Won-dong"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		country
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	envoy	envoy
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	Korean	"Korea"
+::edge	1.2.3.2		city	:name	1.2.3.2.2		name
+::edge	1.2.3.3	020403	date-entity	:year	1.2.3.3.1	020403	2002
+::edge	1.2.3.3	020403	date-entity	:month	1.2.3.3.2	020403	4
+::edge	1.2.3.2		city	:wiki	1.2.3.2.1		"Pyongyang"
+::edge	1.2.3.3	020403	date-entity	:day	1.2.3.3.3	020403	3
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	South	"South"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	raise	raise-01	:ARG0	1.2.1		person
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	raise	raise-01	:ARG1	1.2.2	concerns	concern-01
+::edge	1.2	raise	raise-01	:time	1.2.3	goes	go-02
+::edge	1	intends	intend-01	:ARG0	1.1		person
+::edge	1	intends	intend-01	:ARG1	1.2	raise	raise-01
+::edge	1.2.3.2.2		name	:op1	1.2.3.2.2.1	Pyongyang	"Pyongyang"
+::edge	1.1.3.1		country	:wiki	1.1.3.1.1		"South_Korea"
+::edge	1.1		person	:wiki	1.1.1		"Lim_Dong-won"
+14	Lim is a special advisor to President Kim Dae-jung on national security and foreign affairs.
+14	Lim is a special advisor to President Kim Dae @-@ jung on national security and foreign affairs .
+14	0-1.1.2.1 3-1.4 4-1 4-1.1.r 5-1.2.r 6-1.2.3.1 7-1.2.2.1 8-1.2.2.2 10-1.2.2.2 11-1.3.r 12-1.3.1.1 13-1.3.1 15-1.3.2 16-1.3
+::node	"Lim"	1.1.2.1	"Lim"	Lim
+::node	n3	1.3.1.1	nation	national
+::node	n	1.1.2	name	
+::node	"Kim_Dae-jung"	1.2.1	"Kim_Dae-jung"	
+::node	a	1	advise-01	advisor
+::node	n2	1.2.2	name	
+::node	s2	1.3.1	security	security
+::node	h	1.2.3	have-org-role-91	
+::node	f	1.3.2	foreign	foreign
+::node	p	1.1	person	
+::node	p2	1.2	person	
+::node	a2	1.3	affair	affairs
+::node	s	1.4	special	special
+::node	"Kim"	1.2.2.1	"Kim"	Kim
+::node	"Dae-jung"	1.2.2.2	"Dae-jung"	jung
+::node	p3	1.2.3.1	president	President
+::node	"Lim_Dong-won"	1.1.1	"Lim_Dong-won"	
+::edge	1.1.2		name	:op1	1.1.2.1	Lim	"Lim"
+::edge	1.3.1	security	security	:mod	1.3.1.1	national	nation
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2		person	:wiki	1.2.1		"Kim_Dae-jung"
+::edge	1.2		person	:name	1.2.2		name
+::edge	1.3	affairs	affair	:mod	1.3.1	security	security
+::edge	1.2		person	:ARG0-of	1.2.3		have-org-role-91
+::edge	1.3	affairs	affair	:mod	1.3.2	foreign	foreign
+::edge	1	advisor	advise-01	:ARG0	1.1		person
+::edge	1	advisor	advise-01	:ARG1	1.2		person
+::edge	1	advisor	advise-01	:ARG2	1.3	affairs	affair
+::edge	1	advisor	advise-01	:mod	1.4	special	special
+::edge	1.2.2		name	:op1	1.2.2.1	Kim	"Kim"
+::edge	1.2.2		name	:op2	1.2.2.2	jung	"Dae-jung"
+::edge	1.2.3		have-org-role-91	:ARG2	1.2.3.1	President	president
+::edge	1.1		person	:wiki	1.1.1		"Lim_Dong-won"
+15	Lim has also warned of a looming nuclear crisis on the Korean Peninsula.
+15	Lim has also warned of a looming nuclear crisis on the Korean Peninsula .
+15	0-1.1.2.1 2-1.3 3-1 4-1.2.r 6-1.2.2 7-1.2.1 8-1.2 9-1.2.3.r 11-1.2.3.2.1 12-1.2.3
+::node	"Lim"	1.1.2.1	"Lim"	Lim
+::node	"Korea"	1.2.3.2.1	"Korea"	Korean
+::node	n	1.1.2	name	
+::node	n2	1.2.1	nucleus	nuclear
+::node	w	1	warn-01	warned
+::node	l	1.2.2	loom-01	looming
+::node	p2	1.2.3	peninsula	Peninsula
+::node	p	1.1	person	
+::node	c	1.2	crisis	crisis
+::node	a	1.3	also	also
+::node	n3	1.2.3.2	name	
+::node	"Korean_Peninsula"	1.2.3.1	"Korean_Peninsula"	
+::node	"Lim_Dong-won"	1.1.1	"Lim_Dong-won"	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	crisis	crisis	:mod	1.2.1	nuclear	nucleus
+::edge	1.2	crisis	crisis	:ARG1-of	1.2.2	looming	loom-01
+::edge	1.2	crisis	crisis	:location	1.2.3	Peninsula	peninsula
+::edge	1.1.2		name	:op1	1.1.2.1	Lim	"Lim"
+::edge	1	warned	warn-01	:ARG0	1.1		person
+::edge	1	warned	warn-01	:ARG1	1.2	crisis	crisis
+::edge	1	warned	warn-01	:mod	1.3	also	also
+::edge	1.2.3	Peninsula	peninsula	:name	1.2.3.2		name
+::edge	1.2.3	Peninsula	peninsula	:wiki	1.2.3.1		"Korean_Peninsula"
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	Korean	"Korea"
+::edge	1.1		person	:wiki	1.1.1		"Lim_Dong-won"
+16	Military officials said Lim intimated the problems could be as serious as a 940000 nuclear standoff over North Korea's suspected nuclear weapons development that came close to conflict.
+16	Military officials said Lim intimated the problems could be as serious as a 940000 nuclear standoff over North Korea 's suspected nuclear weapons development that came close to conflict .
+16	0-1.1.1.1 1-1.1.1.2 2-1 3-1.2.1.2.1 4-1.2 6-1.2.2.1.1 7-1.2.2 8-1.2.2.1.r 9-1.2.2.1.2.2.r 10-1.2.2.1 11-1.2.2.1.2.2.r 13-1.2.2.1.2.2 13-1.2.2.1.2.2.1 13-1.2.2.1.2.2.1.r 14-1.2.2.1.2.1 15-1.2.2.1.2 17-1.2.2.1.2.3.1.1.2.1 18-1.2.2.1.2.3.1.1.2.2 19-1.2.2.1.2.3.1.1.r 20-1.2.2.1.2.3.1.3 21-1.2.2.1.2.3.1.2.1 22-1.2.2.1.2.3.1.2 23-1.2.2.1.2.3.1 26-1.2.2.1.2.4 27-1.2.2.1.2.4.1.r 28-1.2.2.1.2.4.1
+::node	n2	1.2.2.1.2.1	nucleus	nuclear
+::node	c4	1.2.2.1.2.4	close-41	close
+::node	d2	1.2.2.1.2.2	date-entity	940000
+::node	c	1.2.2.1.2.3	cause-01	
+::node	1994	1.2.2.1.2.2.1	1994	940000
+::node	n	1.2.1.2	name	
+::node	s2	1.2.2.1	serious-41	serious
+::node	s3	1.2.2.1.2	standoff	standoff
+::node	"Lim_Dong-won"	1.2.1.1	"Lim_Dong-won"	
+::node	c3	1.2.2.1.2.4.1	conflict	conflict
+::node	d3	1.2.2.1.2.3.1	develop-02	development
+::node	m	1.1.1.1	military	Military
+::node	o	1.1.1.2	official	officials
+::node	p3	1.2.2.1.1	problem	problems
+::node	c2	1.2.2.1.2.3.1.1	country	
+::node	"Korea"	1.2.2.1.2.3.1.1.2.2	"Korea"	Korea
+::node	"North"	1.2.2.1.2.3.1.1.2.1	"North"	North
+::node	"North_Korea"	1.2.2.1.2.3.1.1.1	"North_Korea"	
+::node	n3	1.2.2.1.2.3.1.1.2	name	
+::node	n4	1.2.2.1.2.3.1.2.1	nucleus	nuclear
+::node	s4	1.2.2.1.2.3.1.3	suspect-01	suspected
+::node	w	1.2.2.1.2.3.1.2	weapon	weapons
+::node	p	1.2.1	person	
+::node	s	1	say-01	said
+::node	p2	1.2.2	possible	could
+::node	"Lim"	1.2.1.2.1	"Lim"	Lim
+::node	p4	1.1	person	
+::node	i	1.2	intimate-01	intimated
+::node	h	1.1.1	have-org-role-91	
+::edge	1.2.2.1.2	standoff	standoff	:mod	1.2.2.1.2.1	nuclear	nucleus
+::edge	1.2.2.1.2	standoff	standoff	:ARG1-of	1.2.2.1.2.4	close	close-41
+::edge	1.2.2.1.2	standoff	standoff	:time	1.2.2.1.2.2	940000	date-entity
+::edge	1.2.2.1.2	standoff	standoff	:ARG1-of	1.2.2.1.2.3		cause-01
+::edge	1.2.2.1.2.2	940000	date-entity	:year	1.2.2.1.2.2.1	940000	1994
+::edge	1.2.1		person	:name	1.2.1.2		name
+::edge	1.2.2	could	possible	:domain	1.2.2.1	serious	serious-41
+::edge	1.2.2.1	serious	serious-41	:compared-to	1.2.2.1.2	standoff	standoff
+::edge	1.2.1		person	:wiki	1.2.1.1		"Lim_Dong-won"
+::edge	1.2.2.1.2.4	close	close-41	:ARG2	1.2.2.1.2.4.1	conflict	conflict
+::edge	1.2.2.1.2.3		cause-01	:ARG0	1.2.2.1.2.3.1	development	develop-02
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1	Military	military
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.2.2.1	serious	serious-41	:ARG1	1.2.2.1.1	problems	problem
+::edge	1.2.2.1.2.3.1	development	develop-02	:ARG0	1.2.2.1.2.3.1.1		country
+::edge	1.2.2.1.2.3.1.1.2		name	:op2	1.2.2.1.2.3.1.1.2.2	Korea	"Korea"
+::edge	1.2.2.1.2.3.1.1.2		name	:op1	1.2.2.1.2.3.1.1.2.1	North	"North"
+::edge	1.2.2.1.2.3.1.1		country	:wiki	1.2.2.1.2.3.1.1.1		"North_Korea"
+::edge	1.2.2.1.2.3.1.1		country	:name	1.2.2.1.2.3.1.1.2		name
+::edge	1.2.2.1.2.3.1.2	weapons	weapon	:mod	1.2.2.1.2.3.1.2.1	nuclear	nucleus
+::edge	1.2.2.1.2.3.1	development	develop-02	:ARG1-of	1.2.2.1.2.3.1.3	suspected	suspect-01
+::edge	1.2.2.1.2.3.1	development	develop-02	:ARG1	1.2.2.1.2.3.1.2	weapons	weapon
+::edge	1.2	intimated	intimate-01	:ARG0	1.2.1		person
+::edge	1.2	intimated	intimate-01	:ARG1	1.2.2	could	possible
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Lim	"Lim"
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	intimated	intimate-01
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+17	The North Korean government agreed to freeze the North Korean nuclear program under an accord with a US-led international consortium.
+17	The North Korean government agreed to freeze the North Korean nuclear program under an accord with a US @-@ led international consortium .
+17	1-1.1.1.1.2.1 2-1.1.1.1.2.2 3-1.1 3-1.1.1 3-1.1.1.r 4-1 6-1.2 8-1.2.2.2 9-1.2.2.2 10-1.2.2.1 11-1.2.2 12-1.3.r 14-1.3 15-1.3.1.r 17-1.3.1.1.1.2.1 19-1.3.1.1 20-1.3.1.2 21-1.3.1
+::node	"North"	1.1.1.1.2.1	"North"	North
+::node	c	1.1.1.1	country	
+::node	"Korea"	1.1.1.1.2.2	"Korea"	Korean
+::node	l	1.3.1.1	lead-02	led
+::node	i	1.3.1.2	international	international
+::node	n3	1.3.1.1.1.2	name	
+::node	c3	1.3.1.1.1	country	
+::node	"United_States"	1.3.1.1.1.1	"United_States"	
+::node	"US"	1.3.1.1.1.2.1	"US"	US
+::node	g	1.2.1	government-organization	
+::node	a	1	agree-01	agreed
+::node	p	1.2.2	program	program
+::node	c2	1.3.1	consortium	consortium
+::node	g	1.1	government-organization	government
+::node	f	1.2	freeze-01	freeze
+::node	a2	1.3	accord	accord
+::node	n	1.1.1.1.2	name	
+::node	"North_Korea"	1.1.1.1.1	"North_Korea"	
+::node	n2	1.2.2.1	nucleus	nuclear
+::node	c	1.2.2.2	country	Korean
+::node	g2	1.1.1	govern-01	government
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	North	"North"
+::edge	1.1.1	government	govern-01	:ARG1	1.1.1.1		country
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	Korean	"Korea"
+::edge	1.3.1	consortium	consortium	:ARG1-of	1.3.1.1	led	lead-02
+::edge	1.3.1	consortium	consortium	:mod	1.3.1.2	international	international
+::edge	1.3.1.1.1		country	:name	1.3.1.1.1.2		name
+::edge	1.3.1.1	led	lead-02	:ARG0	1.3.1.1.1		country
+::edge	1.3.1.1.1		country	:wiki	1.3.1.1.1.1		"United_States"
+::edge	1.3.1.1.1.2		name	:op1	1.3.1.1.1.2.1	US	"US"
+::edge	1.2	freeze	freeze-01	:ARG0	1.2.1		government-organization
+::edge	1.2	freeze	freeze-01	:ARG1	1.2.2	program	program
+::edge	1.3	accord	accord	:accompanier	1.3.1	consortium	consortium
+::edge	1	agreed	agree-01	:ARG0	1.1	government	government-organization
+::edge	1	agreed	agree-01	:ARG1	1.2	freeze	freeze-01
+::edge	1	agreed	agree-01	:prep-under	1.3	accord	accord
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"North_Korea"
+::edge	1.2.2	program	program	:mod	1.2.2.1	nuclear	nucleus
+::edge	1.2.2	program	program	:mod	1.2.2.2	Korean	country
+::edge	1.1	government	government-organization	:ARG0-of	1.1.1	government	govern-01
+18	The consortium is to build 2 light water nuclear reactors that produce less weapons grade fuel than North Korea's old graphite reactors and provide substitute fuel until they are built.
+18	The consortium is to build 2 light water nuclear reactors that produce less weapons grade fuel than North Korea 's old graphite reactors and provide substitute fuel until they are built .
+18	1-1.1.1 4-1.1 5-1.1.2.1 6-1.1.2.3.1 7-1.1.2.3 8-1.1.2.2 9-1.1.2 11-1.1.2.4 12-1.1.2.4.1.2 13-1.1.2.4.1.1 14-1.1.2.4.1.1 15-1.1.2.4.1 16-1.1.2.4.1.3.r 17-1.1.2.4.1.3.3.2.1 18-1.1.2.4.1.3.3.2.2 19-1.1.2.4.1.3.3.r 20-1.1.2.4.1.3.1 21-1.1.2.4.1.3.2 22-1.1.2.4.1.3 23-1 24-1.2 25-1.2.2.1 26-1.2.2 27-1.2.3 30-1.2.3.1
+::node	"North_Korea"	1.1.2.4.1.3.3.1	"North_Korea"	
+::node	n2	1.1.2.4.1.3.3.2	name	
+::node	s	1.2.2.1	substitute-01	substitute
+::node	b	1.2.3.1	build-01	built
+::node	c2	1.1.2.4.1.3.3	country	
+::node	g2	1.1.2.4.1.3.2	graphite	graphite
+::node	o	1.1.2.4.1.3.1	old	old
+::node	"North"	1.1.2.4.1.3.3.2.1	"North"	North
+::node	"Korea"	1.1.2.4.1.3.3.2.2	"Korea"	Korea
+::node	2	1.1.2.1	2	2
+::node	n	1.1.2.2	nucleus	nuclear
+::node	w	1.1.2.3	water	water
+::node	p	1.1.2.4	produce-01	produce
+::node	r	1.1.2	reactor	reactors
+::node	c	1.2.1	consortium	
+::node	a	1	and	and
+::node	f2	1.2.2	fuel	fuel
+::node	u	1.2.3	until	until
+::node	b	1.1	build-01	build
+::node	f	1.1.2.4.1	fuel	fuel
+::node	w3	1.1.2.4.1.1	weapons-grade	grade
+::node	l	1.1.2.3.1	light	light
+::node	l2	1.1.2.4.1.2	less	less
+::node	p2	1.2	provide-01	provide
+::node	r2	1.1.2.4.1.3	reactor	reactors
+::node	c	1.1.1	consortium	consortium
+::edge	1.1.2.4.1.3.3		country	:wiki	1.1.2.4.1.3.3.1		"North_Korea"
+::edge	1.1.2.4.1.3.3		country	:name	1.1.2.4.1.3.3.2		name
+::edge	1.2.2	fuel	fuel	:ARG1-of	1.2.2.1	substitute	substitute-01
+::edge	1.2.3	until	until	:op1	1.2.3.1	built	build-01
+::edge	1.1.2.4.1.3	reactors	reactor	:poss	1.1.2.4.1.3.3		country
+::edge	1.1.2.4.1.3	reactors	reactor	:part	1.1.2.4.1.3.2	graphite	graphite
+::edge	1.1.2.4.1.3	reactors	reactor	:mod	1.1.2.4.1.3.1	old	old
+::edge	1.1.2.4.1.3.3.2		name	:op1	1.1.2.4.1.3.3.2.1	North	"North"
+::edge	1.1.2.4.1.3.3.2		name	:op2	1.1.2.4.1.3.3.2.2	Korea	"Korea"
+::edge	1.1.2	reactors	reactor	:quant	1.1.2.1	2	2
+::edge	1.1.2	reactors	reactor	:mod	1.1.2.2	nuclear	nucleus
+::edge	1.1.2	reactors	reactor	:part	1.1.2.3	water	water
+::edge	1.1.2	reactors	reactor	:ARG0-of	1.1.2.4	produce	produce-01
+::edge	1.1	build	build-01	:ARG1	1.1.2	reactors	reactor
+::edge	1.2	provide	provide-01	:ARG0	1.2.1		consortium
+::edge	1.2	provide	provide-01	:ARG1	1.2.2	fuel	fuel
+::edge	1.2	provide	provide-01	:duration	1.2.3	until	until
+::edge	1	and	and	:op1	1.1	build	build-01
+::edge	1.1.2.4	produce	produce-01	:ARG1	1.1.2.4.1	fuel	fuel
+::edge	1.1.2.4.1	fuel	fuel	:mod	1.1.2.4.1.1	grade	weapons-grade
+::edge	1.1.2.3	water	water	:mod	1.1.2.3.1	light	light
+::edge	1.1.2.4.1	fuel	fuel	:degree	1.1.2.4.1.2	less	less
+::edge	1	and	and	:op2	1.2	provide	provide-01
+::edge	1.1.2.4.1	fuel	fuel	:compared-to	1.1.2.4.1.3	reactors	reactor
+::edge	1.1	build	build-01	:ARG0	1.1.1	consortium	consortium
+19	The original 030000 target date for completion has been put back at least 5 years because of major political and construction delays.
+19	The original 030000 target date for completion has been put back at least 5 years because of major political and construction delays .
+19	1-1.2.1.2 2-1.2.1.3 2-1.2.1.3.1 2-1.2.1.3.1.r 3-1.2.1.1 4-1.2.1 4-1.2.1.3 4-1.2.1.3.r 5-1.2.1.4.r 6-1.2.1.4 9-1.2 11-1.2.2 12-1.2.2 13-1.2.2.1.1 14-1.2.2.1.2 15-1 16-1.1.r 17-1.1.2 18-1.1.1.1 19-1.1.1 20-1.1.1.2 21-1.1
+::node	p	1.1.1.1	politics	political
+::node	c2	1.1.1.2	construct-01	construction
+::node	5	1.2.2.1.1	5	5
+::node	2003	1.2.1.3.1	2003	030000
+::node	m	1.1.2	major	major
+::node	d3	1.2.1	date	date
+::node	c	1	cause-01	because
+::node	a3	1.2.2	at-least	least
+::node	d2	1.1	delay-01	delays
+::node	p2	1.2	put-06	put
+::node	c3	1.2.1.4	complete-01	completion
+::node	o	1.2.1.2	original	original
+::node	t4	1.2.2.1	temporal-quantity	
+::node	d4	1.2.1.3	date-entity	date
+::node	y	1.2.2.1.2	year	years
+::node	t2	1.2.1.1	target-01	target
+::node	a2	1.1.1	and	and
+::edge	1.1.1	and	and	:op1	1.1.1.1	political	politics
+::edge	1.1.1	and	and	:op2	1.1.1.2	construction	construct-01
+::edge	1.2.2.1		temporal-quantity	:quant	1.2.2.1.1	5	5
+::edge	1.2.1.3	date	date-entity	:year	1.2.1.3.1	030000	2003
+::edge	1.1	delays	delay-01	:mod	1.1.2	major	major
+::edge	1.2	put	put-06	:ARG1	1.2.1	date	date
+::edge	1.2	put	put-06	:ARG2	1.2.2	least	at-least
+::edge	1	because	cause-01	:ARG0	1.1	delays	delay-01
+::edge	1	because	cause-01	:ARG1	1.2	put	put-06
+::edge	1.2.1	date	date	:time-of	1.2.1.4	completion	complete-01
+::edge	1.2.1	date	date	:mod	1.2.1.2	original	original
+::edge	1.2.2	least	at-least	:op1	1.2.2.1		temporal-quantity
+::edge	1.2.1	date	date	:time	1.2.1.3	date	date-entity
+::edge	1.2.2.1		temporal-quantity	:unit	1.2.2.1.2	years	year
+::edge	1.2.1	date	date	:ARG1-of	1.2.1.1	target	target-01
+::edge	1.1	delays	delay-01	:ARG1	1.1.1	and	and
+20	The 940000 Accord stipulated that the International Atomic Energy Agency (IAEA) must be allowed to inspect North Korea's old facilities to see if plutonium has been processed before the core facilities of the new reactors are installed.
+20	The 940000 Accord stipulated that the International Atomic Energy Agency ( IAEA ) must be allowed to inspect North Korea 's old facilities to see if plutonium has been processed before the core facilities of the new reactors are installed .
+20	1-1.1.1 1-1.1.1.1 1-1.1.1.1.r 2-1.1 3-1 4-1.2.r 6-1.2.1.1.1.2.1 7-1.2.1.1.1.2.2 8-1.2.1.1.1.2.3 9-1.2.1.1.1.2.4 13-1.2 15-1.2.1 17-1.2.1.1 18-1.2.1.1.2.2.2.1 19-1.2.1.1.2.2.2.2 20-1.2.1.1.2.2.r 21-1.2.1.1.2.1 22-1.2.1.1.2 24-1.2.1.1.3 26-1.2.1.1.3.2.3 29-1.2.1.1.3.2 30-1.2.1.1.4 32-1.2.1.1.4.1.1.1 33-1.2.1.1.4.1.1 34-1.2.1.1.4.1.1.2.r 36-1.2.1.1.4.1.1.2.1 37-1.2.1.1.4.1.1.2 39-1.2.1.1.4.1
+::node	"International"	1.2.1.1.1.2.1	"International"	International
+::node	"Atomic"	1.2.1.1.1.2.2	"Atomic"	Atomic
+::node	"Energy"	1.2.1.1.1.2.3	"Energy"	Energy
+::node	"Agency"	1.2.1.1.1.2.4	"Agency"	Agency
+::node	b	1.2.1.1.4	before	before
+::node	s2	1.2.1.1.3	see-01	see
+::node	n2	1.2.1.1.2.2.2	name	
+::node	"North_Korea"	1.2.1.1.2.2.1	"North_Korea"	
+::node	n3	1.2.1.1.4.1.1.2.1	new	new
+::node	i	1.2.1.1	inspect-01	inspect
+::node	p	1.2.1.1.3.2	process-01	processed
+::node	i2	1.2.1.1.4.1	install-01	installed
+::node	1994	1.1.1.1	1994	940000
+::node	r	1.2.1.1.4.1.1.2	reactor	reactors
+::node	"International_Atomic_Energy_Agency"	1.2.1.1.1.1	"International_Atomic_Energy_Agency"	
+::node	c2	1.2.1.1.4.1.1.1	core	core
+::node	n	1.2.1.1.1.2	name	
+::node	o3	1.2.1.1.2.1	old	old
+::node	interrogative	1.2.1.1.3.2.1	interrogative	
+::node	c	1.2.1.1.2.2	country	
+::node	o2	1.2.1.1.3.1	organization	
+::node	p2	1.2.1.1.3.2.3	plutonium	plutonium
+::node	f2	1.2.1.1.4.1.1	facility	facilities
+::node	f	1.2.1.1.3.2.2	facility	
+::node	a2	1.2.1	allow-01	allowed
+::node	s	1	stipulate-01	stipulated
+::node	f	1.2.1.1.2	facility	facilities
+::node	o2	1.2.1.1.1	organization	
+::node	a	1.1	accord	Accord
+::node	o	1.2	obligate-01	must
+::node	"Korea"	1.2.1.1.2.2.2.2	"Korea"	Korea
+::node	"North"	1.2.1.1.2.2.2.1	"North"	North
+::node	d2	1.1.1	date-entity	940000
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	International	"International"
+::edge	1.2.1.1.1.2		name	:op2	1.2.1.1.1.2.2	Atomic	"Atomic"
+::edge	1.2.1.1.1.2		name	:op3	1.2.1.1.1.2.3	Energy	"Energy"
+::edge	1.2.1.1.1.2		name	:op4	1.2.1.1.1.2.4	Agency	"Agency"
+::edge	1.2.1.1	inspect	inspect-01	:time	1.2.1.1.4	before	before
+::edge	1.2.1.1	inspect	inspect-01	:purpose	1.2.1.1.3	see	see-01
+::edge	1.2.1.1.2.2		country	:name	1.2.1.1.2.2.2		name
+::edge	1.2.1.1.2.2		country	:wiki	1.2.1.1.2.2.1		"North_Korea"
+::edge	1.2.1.1.4.1.1.2	reactors	reactor	:mod	1.2.1.1.4.1.1.2.1	new	new
+::edge	1.2.1	allowed	allow-01	:ARG1	1.2.1.1	inspect	inspect-01
+::edge	1.2.1.1.3	see	see-01	:ARG1	1.2.1.1.3.2	processed	process-01
+::edge	1.2.1.1.4	before	before	:op1	1.2.1.1.4.1	installed	install-01
+::edge	1.1.1	940000	date-entity	:year	1.1.1.1	940000	1994
+::edge	1.2.1.1.4.1.1	facilities	facility	:poss	1.2.1.1.4.1.1.2	reactors	reactor
+::edge	1.2.1.1.1		organization	:wiki	1.2.1.1.1.1		"International_Atomic_Energy_Agency"
+::edge	1.2.1.1.4.1.1	facilities	facility	:mod	1.2.1.1.4.1.1.1	core	core
+::edge	1.2.1.1.1		organization	:name	1.2.1.1.1.2		name
+::edge	1.2.1.1.2	facilities	facility	:mod	1.2.1.1.2.1	old	old
+::edge	1.2.1.1.3.2	processed	process-01	:mode	1.2.1.1.3.2.1		interrogative
+::edge	1.2.1.1.2	facilities	facility	:poss	1.2.1.1.2.2		country
+::edge	1.2.1.1.3	see	see-01	:ARG0	1.2.1.1.3.1		organization
+::edge	1.2.1.1.3.2	processed	process-01	:ARG1	1.2.1.1.3.2.3	plutonium	plutonium
+::edge	1.2.1.1.4.1	installed	install-01	:ARG1	1.2.1.1.4.1.1	facilities	facility
+::edge	1.2.1.1.3.2	processed	process-01	:ARG0	1.2.1.1.3.2.2		facility
+::edge	1.2	must	obligate-01	:ARG2	1.2.1	allowed	allow-01
+::edge	1.2.1.1	inspect	inspect-01	:ARG1	1.2.1.1.2	facilities	facility
+::edge	1.2.1.1	inspect	inspect-01	:ARG0	1.2.1.1.1		organization
+::edge	1	stipulated	stipulate-01	:ARG0	1.1	Accord	accord
+::edge	1	stipulated	stipulate-01	:ARG1	1.2	must	obligate-01
+::edge	1.2.1.1.2.2.2		name	:op2	1.2.1.1.2.2.2.2	Korea	"Korea"
+::edge	1.2.1.1.2.2.2		name	:op1	1.2.1.1.2.2.2.1	North	"North"
+::edge	1.1	Accord	accord	:time	1.1.1	940000	date-entity

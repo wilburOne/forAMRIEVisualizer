@@ -1,0 +1,704 @@
+1	2002-01-17
+1	2002 @-@ 01 @-@ 17
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	1	1.2	1	01
+::node	17	1.3	17	17
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	01	1
+::edge	1		date-entity	:day	1.3	17	17
+2	Iran (IR)
+2	Iran ( IR )
+2	0-1.2.1
+::node	"Iran"	1.2.1	"Iran"	Iran
+::node	c	1	country	
+::node	"Iran"	1.1	"Iran"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	Iran	"Iran"
+::edge	1		country	:wiki	1.1		"Iran"
+::edge	1		country	:name	1.2		name
+3	Narcotics; military
+3	Narcotics ; military
+3	0-1.1 2-1.2
+::node	a	1	and	
+::node	n	1.1	narcotics	Narcotics
+::node	m	1.2	military	military
+::edge	1		and	:op1	1.1	Narcotics	narcotics
+::edge	1		and	:op2	1.2	military	military
+4	Thirteen drug traffickers were killed and 10 arrested in Iran anti-drug sweeps.
+4	Thirteen drug traffickers were killed and 10 arrested in Iran anti @-@ drug sweeps .
+4	0-1.1.1.1 1-1.1.1.2.1 2-1.1.1 2-1.1.1.2 2-1.1.1.2.r 4-1.1 5-1 6-1.2.1.1 7-1.2 9-1.3.2.1 10-1.4.1 12-1.4.1.1 13-1.4
+::node	13	1.1.1.1	13	Thirteen
+::node	t	1.1.1.2	traffic-01	traffickers
+::node	"Iran"	1.3.2.1	"Iran"	Iran
+::node	p	1.2.1	person	
+::node	a	1	and	and
+::node	"Iran"	1.3.1	"Iran"	
+::node	n	1.3.2	name	
+::node	c2	1.4.1	counter-01	anti
+::node	k	1.1	kill-01	killed
+::node	a2	1.2	arrest-01	arrested
+::node	c	1.3	country	
+::node	s	1.4	sweep-01	sweeps
+::node	d	1.1.1.2.1	drug	drug
+::node	10	1.2.1.1	10	10
+::node	p2	1.1.1	person	traffickers
+::node	d2	1.4.1.1	drug	drug
+::edge	1.1.1	traffickers	person	:quant	1.1.1.1	Thirteen	13
+::edge	1.1.1	traffickers	person	:ARG0-of	1.1.1.2	traffickers	traffic-01
+::edge	1.3.2		name	:op1	1.3.2.1	Iran	"Iran"
+::edge	1.2	arrested	arrest-01	:ARG1	1.2.1		person
+::edge	1.3		country	:wiki	1.3.1		"Iran"
+::edge	1.3		country	:name	1.3.2		name
+::edge	1.4	sweeps	sweep-01	:purpose	1.4.1	anti	counter-01
+::edge	1	and	and	:op1	1.1	killed	kill-01
+::edge	1	and	and	:op2	1.2	arrested	arrest-01
+::edge	1	and	and	:location	1.3		country
+::edge	1	and	and	:subevent-of	1.4	sweeps	sweep-01
+::edge	1.1.1.2	traffickers	traffic-01	:ARG1	1.1.1.2.1	drug	drug
+::edge	1.2.1		person	:quant	1.2.1.1	10	10
+::edge	1.1	killed	kill-01	:ARG1	1.1.1	traffickers	person
+::edge	1.4.1	anti	counter-01	:ARG1	1.4.1.1	drug	drug
+5	The Iranian army launched a huge sweep against traffickers along the borders with Afghanistan and Pakistan.
+5	The Iranian army launched a huge sweep against traffickers along the borders with Afghanistan and Pakistan .
+5	1-1.1.1.2.1 2-1.1 3-1 5-1.2.3 6-1.2 8-1.2.2 8-1.2.2.1 8-1.2.2.1.r 9-1.2.4 11-1.2.4.1 11-1.2.4.1.1 11-1.2.4.1.1.r 12-1.2.4.1.1.1.r 13-1.2.4.1.1.1.1.2.1 14-1.2.4.1.1.1 15-1.2.4.1.1.1.2.2.1
+::node	"Afghanistan"	1.2.4.1.1.1.1.1	"Afghanistan"	
+::node	n2	1.2.4.1.1.1.1.2	name	
+::node	"Pakistan"	1.2.4.1.1.1.2.1	"Pakistan"	
+::node	"Iran"	1.1.1.1	"Iran"	
+::node	n	1.1.1.2	name	
+::node	n3	1.2.4.1.1.1.2.2	name	
+::node	"Pakistan"	1.2.4.1.1.1.2.2.1	"Pakistan"	Pakistan
+::node	a	1.2.1	army	
+::node	l	1	launch-01	launched
+::node	p	1.2.2	person	traffickers
+::node	h	1.2.3	huge	huge
+::node	a3	1.2.4	along	along
+::node	a2	1.2.4.1.1.1	and	and
+::node	a	1.1	army	army
+::node	s	1.2	sweep-01	sweep
+::node	c2	1.2.4.1.1.1.1	country	
+::node	l2	1.2.4.1	location	borders
+::node	"Iran"	1.1.1.2.1	"Iran"	Iranian
+::node	b2	1.2.4.1.1	border-01	borders
+::node	"Afghanistan"	1.2.4.1.1.1.1.2.1	"Afghanistan"	Afghanistan
+::node	t	1.2.2.1	traffic-01	traffickers
+::node	c3	1.2.4.1.1.1.2	country	
+::node	c	1.1.1	country	
+::edge	1.2.4.1.1.1.1		country	:wiki	1.2.4.1.1.1.1.1		"Afghanistan"
+::edge	1.2.4.1.1.1.1		country	:name	1.2.4.1.1.1.1.2		name
+::edge	1.2.4.1.1.1.2		country	:wiki	1.2.4.1.1.1.2.1		"Pakistan"
+::edge	1.1.1		country	:wiki	1.1.1.1		"Iran"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.2.4.1.1.1.2		country	:name	1.2.4.1.1.1.2.2		name
+::edge	1.2.4.1.1.1.2.2		name	:op1	1.2.4.1.1.1.2.2.1	Pakistan	"Pakistan"
+::edge	1.2	sweep	sweep-01	:ARG0	1.2.1		army
+::edge	1.2	sweep	sweep-01	:ARG1	1.2.2	traffickers	person
+::edge	1.2	sweep	sweep-01	:mod	1.2.3	huge	huge
+::edge	1.2	sweep	sweep-01	:location	1.2.4	along	along
+::edge	1.2.4.1.1	borders	border-01	:ARG1	1.2.4.1.1.1	and	and
+::edge	1	launched	launch-01	:ARG0	1.1	army	army
+::edge	1	launched	launch-01	:ARG1	1.2	sweep	sweep-01
+::edge	1.2.4.1.1.1	and	and	:op1	1.2.4.1.1.1.1		country
+::edge	1.2.4	along	along	:op1	1.2.4.1	borders	location
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Iranian	"Iran"
+::edge	1.2.4.1	borders	location	:ARG2-of	1.2.4.1.1	borders	border-01
+::edge	1.2.4.1.1.1.1.2		name	:op1	1.2.4.1.1.1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.2	traffickers	person	:ARG0-of	1.2.2.1	traffickers	traffic-01
+::edge	1.2.4.1.1.1	and	and	:op2	1.2.4.1.1.1.2		country
+::edge	1.1	army	army	:mod	1.1.1		country
+6	On January 17, 2002 a state radio reported that thirteen drug traffickers were killed and 10 arrested in Iran anti-drug sweeps.
+6	On January 17 , 2002 a state radio reported that thirteen drug traffickers were killed and 10 arrested in Iran anti @-@ drug sweeps .
+6	1-1.3.2 1-1.3.2.r 2-1.3.3 4-1.3.1 6-1.1.1 7-1.1 8-1 9-1.2.r 10-1.2.1.1.1 11-1.2.1.1.2.1 12-1.2.1.1 12-1.2.1.1.2 12-1.2.1.1.2.r 14-1.2.1 15-1.2 16-1.2.2.1.1 17-1.2.2 19-1.2.3.2.1 20-1.2.4.1 22-1.2.4.1.1 23-1.2.4
+::node	10	1.2.2.1.1	10	10
+::node	d	1.2.1.1.2.1	drug	drug
+::node	"Iran"	1.2.3.2.1	"Iran"	Iran
+::node	k	1.2.1	kill-01	killed
+::node	r	1	report-01	reported
+::node	a2	1.2.2	arrest-01	arrested
+::node	2002	1.3.1	2002	2002
+::node	t	1.2.1.1.2	traffic-01	traffickers
+::node	c	1.2.3	country	
+::node	1	1.3.2	1	January
+::node	13	1.2.1.1.1	13	thirteen
+::node	s2	1.2.4	sweep-01	sweeps
+::node	17	1.3.3	17	17
+::node	r2	1.1	radio	radio
+::node	a	1.2	and	and
+::node	d3	1.3	date-entity	
+::node	n	1.2.3.2	name	
+::node	c2	1.2.4.1	counter-01	anti
+::node	d2	1.2.4.1.1	drug	drug
+::node	p2	1.2.2.1	person	
+::node	"Iran"	1.2.3.1	"Iran"	
+::node	t	1.2.2.1.2	traffic-01	
+::node	p	1.2.1.1	person	traffickers
+::node	s	1.1.1	state	state
+::edge	1.2.2.1		person	:quant	1.2.2.1.1	10	10
+::edge	1.2.1.1.2	traffickers	traffic-01	:ARG1	1.2.1.1.2.1	drug	drug
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	Iran	"Iran"
+::edge	1.2	and	and	:op1	1.2.1	killed	kill-01
+::edge	1.2	and	and	:op2	1.2.2	arrested	arrest-01
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2.1.1	traffickers	person	:ARG0-of	1.2.1.1.2	traffickers	traffic-01
+::edge	1.2	and	and	:location	1.2.3		country
+::edge	1.3		date-entity	:month	1.3.2	January	1
+::edge	1.2.1.1	traffickers	person	:quant	1.2.1.1.1	thirteen	13
+::edge	1.2	and	and	:subevent-of	1.2.4	sweeps	sweep-01
+::edge	1.3		date-entity	:day	1.3.3	17	17
+::edge	1	reported	report-01	:ARG0	1.1	radio	radio
+::edge	1	reported	report-01	:ARG1	1.2	and	and
+::edge	1	reported	report-01	:time	1.3		date-entity
+::edge	1.2.3		country	:name	1.2.3.2		name
+::edge	1.2.4	sweeps	sweep-01	:purpose	1.2.4.1	anti	counter-01
+::edge	1.2.4.1	anti	counter-01	:ARG1	1.2.4.1.1	drug	drug
+::edge	1.2.2	arrested	arrest-01	:ARG1	1.2.2.1		person
+::edge	1.2.3		country	:wiki	1.2.3.1		"Iran"
+::edge	1.2.2.1		person	:ARG0-of	1.2.2.1.2		traffic-01
+::edge	1.2.1	killed	kill-01	:ARG1	1.2.1.1	traffickers	person
+::edge	1.1	radio	radio	:mod	1.1.1	state	state
+7	The Iranian army launched a huge sweep against traffickers along the borders with Afghanistan and Pakistan.
+7	The Iranian army launched a huge sweep against traffickers along the borders with Afghanistan and Pakistan .
+7	1-1.1.1.2.1 2-1.1 3-1 5-1.2.3 6-1.2 8-1.2.2 8-1.2.2.1 8-1.2.2.1.r 9-1.2.4 11-1.2.4.1 11-1.2.4.1.1 11-1.2.4.1.1.r 12-1.2.4.1.1.1.r 13-1.2.4.1.1.1.1.2.1 14-1.2.4.1.1.1 15-1.2.4.1.1.1.2.2.1
+::node	"Afghanistan"	1.2.4.1.1.1.1.1	"Afghanistan"	
+::node	n2	1.2.4.1.1.1.1.2	name	
+::node	"Pakistan"	1.2.4.1.1.1.2.1	"Pakistan"	
+::node	"Iran"	1.1.1.1	"Iran"	
+::node	n	1.1.1.2	name	
+::node	n3	1.2.4.1.1.1.2.2	name	
+::node	"Pakistan"	1.2.4.1.1.1.2.2.1	"Pakistan"	Pakistan
+::node	a	1.2.1	army	
+::node	l	1	launch-01	launched
+::node	p	1.2.2	person	traffickers
+::node	h	1.2.3	huge	huge
+::node	a3	1.2.4	along	along
+::node	a2	1.2.4.1.1.1	and	and
+::node	a	1.1	army	army
+::node	s	1.2	sweep-01	sweep
+::node	c2	1.2.4.1.1.1.1	country	
+::node	l2	1.2.4.1	location	borders
+::node	"Iran"	1.1.1.2.1	"Iran"	Iranian
+::node	b2	1.2.4.1.1	border-01	borders
+::node	"Afghanistan"	1.2.4.1.1.1.1.2.1	"Afghanistan"	Afghanistan
+::node	t	1.2.2.1	traffic-01	traffickers
+::node	c3	1.2.4.1.1.1.2	country	
+::node	c	1.1.1	country	
+::edge	1.2.4.1.1.1.1		country	:wiki	1.2.4.1.1.1.1.1		"Afghanistan"
+::edge	1.2.4.1.1.1.1		country	:name	1.2.4.1.1.1.1.2		name
+::edge	1.2.4.1.1.1.2		country	:wiki	1.2.4.1.1.1.2.1		"Pakistan"
+::edge	1.1.1		country	:wiki	1.1.1.1		"Iran"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.2.4.1.1.1.2		country	:name	1.2.4.1.1.1.2.2		name
+::edge	1.2.4.1.1.1.2.2		name	:op1	1.2.4.1.1.1.2.2.1	Pakistan	"Pakistan"
+::edge	1.2	sweep	sweep-01	:ARG0	1.2.1		army
+::edge	1.2	sweep	sweep-01	:ARG1	1.2.2	traffickers	person
+::edge	1.2	sweep	sweep-01	:mod	1.2.3	huge	huge
+::edge	1.2	sweep	sweep-01	:location	1.2.4	along	along
+::edge	1.2.4.1.1	borders	border-01	:ARG1	1.2.4.1.1.1	and	and
+::edge	1	launched	launch-01	:ARG0	1.1	army	army
+::edge	1	launched	launch-01	:ARG1	1.2	sweep	sweep-01
+::edge	1.2.4.1.1.1	and	and	:op1	1.2.4.1.1.1.1		country
+::edge	1.2.4	along	along	:op1	1.2.4.1	borders	location
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Iranian	"Iran"
+::edge	1.2.4.1	borders	location	:ARG2-of	1.2.4.1.1	borders	border-01
+::edge	1.2.4.1.1.1.1.2		name	:op1	1.2.4.1.1.1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.2	traffickers	person	:ARG0-of	1.2.2.1	traffickers	traffic-01
+::edge	1.2.4.1.1.1	and	and	:op2	1.2.4.1.1.1.2		country
+::edge	1.1	army	army	:mod	1.1.1		country
+8	The radio said the first day of Val Fajr accumulated more than four tons of drugs and 50 guns in southeast Iran on January 16, 2002.
+8	The radio said the first day of Val Fajr accumulated more than four tons of drugs and 50 guns in southeast Iran on January 16 , 2002 .
+8	1-1.1 2-1 4-1.2.1.1 4-1.2.1.1.1 4-1.2.1.1.1.r 4-1.2.4.2 5-1.2.1 6-1.2.1.2.r 7-1.2.1.2.2.1 8-1.2.1.2.2.2 9-1.2 10-1.2.2.1.1 11-1.2.2.1.1 12-1.2.2.1.1.1.1 13-1.2.2.1.1.1.2 14-1.2.2.1.1.r 15-1.2.2.1 16-1.2.2 17-1.2.2.2.1 18-1.2.2.2 19-1.2.3.r 20-1.2.3 21-1.2.3.1.2.1 22-1.2.4.r 23-1.2.4.2 23-1.2.4.2.r 24-1.2.4.3 26-1.2.4.1
+::node	m2	1.2.2.1.1.1	mass-quantity	
+::node	4	1.2.2.1.1.1.1	4	four
+::node	n	1.2.1.2.2	name	
+::node	t	1.2.2.1.1.1.2	ton	tons
+::node	2002	1.2.4.1	2002	2002
+::node	1	1.2.4.2	1	January
+::node	e	1.2.1.2	event	
+::node	d2	1.2.2.1	drug	drugs
+::node	g	1.2.2.2	gun	guns
+::node	c	1.2.3.1	country	
+::node	50	1.2.2.2.1	50	50
+::node	o	1.2.1.1	ordinal-entity	first
+::node	m	1.2.2.1.1	more-than	than
+::node	16	1.2.4.3	16	16
+::node	"Iran"	1.2.3.1.1	"Iran"	
+::node	n2	1.2.3.1.2	name	
+::node	d	1.2.1	day	day
+::node	s	1	say-01	said
+::node	"Val"	1.2.1.2.2.1	"Val"	Val
+::node	a2	1.2.2	and	and
+::node	-	1.2.1.2.1	-	
+::node	s2	1.2.3	southeast	southeast
+::node	1	1.2.1.1.1	1	first
+::node	d3	1.2.4	date-entity	
+::node	r	1.1	radio	radio
+::node	a	1.2	accumulate-01	accumulated
+::node	"Iran"	1.2.3.1.2.1	"Iran"	Iran
+::node	"Fajr"	1.2.1.2.2.2	"Fajr"	Fajr
+::edge	1.2.2.1.1	than	more-than	:op1	1.2.2.1.1.1		mass-quantity
+::edge	1.2.2.1.1.1		mass-quantity	:quant	1.2.2.1.1.1.1	four	4
+::edge	1.2.1.2		event	:name	1.2.1.2.2		name
+::edge	1.2.2.1.1.1		mass-quantity	:unit	1.2.2.1.1.1.2	tons	ton
+::edge	1.2.4		date-entity	:year	1.2.4.1	2002	2002
+::edge	1.2.4		date-entity	:month	1.2.4.2	January	1
+::edge	1.2.1	day	day	:part-of	1.2.1.2		event
+::edge	1.2.2	and	and	:op1	1.2.2.1	drugs	drug
+::edge	1.2.2	and	and	:op2	1.2.2.2	guns	gun
+::edge	1.2.3	southeast	southeast	:part-of	1.2.3.1		country
+::edge	1.2.2.2	guns	gun	:quant	1.2.2.2.1	50	50
+::edge	1.2.1	day	day	:ord	1.2.1.1	first	ordinal-entity
+::edge	1.2.2.1	drugs	drug	:quant	1.2.2.1.1	than	more-than
+::edge	1.2.4		date-entity	:day	1.2.4.3	16	16
+::edge	1.2.3.1		country	:wiki	1.2.3.1.1		"Iran"
+::edge	1.2.3.1		country	:name	1.2.3.1.2		name
+::edge	1.2	accumulated	accumulate-01	:ARG0	1.2.1	day	day
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	Val	"Val"
+::edge	1.2	accumulated	accumulate-01	:ARG1	1.2.2	and	and
+::edge	1.2.1.2		event	:wiki	1.2.1.2.1		-
+::edge	1.2	accumulated	accumulate-01	:location	1.2.3	southeast	southeast
+::edge	1.2.1.1	first	ordinal-entity	:value	1.2.1.1.1	first	1
+::edge	1.2	accumulated	accumulate-01	:time	1.2.4		date-entity
+::edge	1	said	say-01	:ARG0	1.1	radio	radio
+::edge	1	said	say-01	:ARG1	1.2	accumulated	accumulate-01
+::edge	1.2.3.1.2		name	:op1	1.2.3.1.2.1	Iran	"Iran"
+::edge	1.2.1.2.2		name	:op2	1.2.1.2.2.2	Fajr	"Fajr"
+9	Val Fajr means swear to victory in Arabic and is a phrase from the Koran.
+9	Val Fajr means swear to victory in Arabic and is a phrase from the Koran .
+9	0-1.1.1.2.1 1-1.1.1.2.2 2-1.1 3-1.1.2 4-1.1.2.1.r 5-1.1.2.1 6-1.1.2.2.r 7-1.1.2.2.2.1 8-1 9-1.2.1.r 11-1.2 12-1.2.2.r 13-1.2.2.2.1 14-1.2.2.2.2
+::node	-	1.1.1.1	-	
+::node	n2	1.1.1.2	name	
+::node	w	1.1.2.1	win-01	victory
+::node	l	1.1.2.2	language	
+::node	"Arabic_language"	1.1.2.2.1	"Arabic_language"	
+::node	s	1.1.2	swear-01	swear
+::node	e	1.2.1	event	
+::node	a	1	and	and
+::node	b	1.2.2	book	
+::node	m	1.1	mean-01	means
+::node	n3	1.1.2.2.2	name	
+::node	p	1.2	phrase	phrase
+::node	"Arabic"	1.1.2.2.2.1	"Arabic"	Arabic
+::node	"Fajr"	1.1.1.2.2	"Fajr"	Fajr
+::node	"Val"	1.1.1.2.1	"Val"	Val
+::node	"Quran"	1.2.2.1	"Quran"	
+::node	n4	1.2.2.2	name	
+::node	"The"	1.2.2.2.1	"The"	the
+::node	"Koran"	1.2.2.2.2	"Koran"	Koran
+::node	e	1.1.1	event	
+::edge	1.1.1		event	:wiki	1.1.1.1		-
+::edge	1.1.1		event	:name	1.1.1.2		name
+::edge	1.1.2	swear	swear-01	:ARG1	1.1.2.1	victory	win-01
+::edge	1.1.2	swear	swear-01	:medium	1.1.2.2		language
+::edge	1.1.2.2		language	:wiki	1.1.2.2.1		"Arabic_language"
+::edge	1.1	means	mean-01	:ARG1	1.1.2	swear	swear-01
+::edge	1.2	phrase	phrase	:domain	1.2.1		event
+::edge	1.2	phrase	phrase	:source	1.2.2		book
+::edge	1	and	and	:op1	1.1	means	mean-01
+::edge	1.1.2.2		language	:name	1.1.2.2.2		name
+::edge	1	and	and	:op2	1.2	phrase	phrase
+::edge	1.1.2.2.2		name	:op1	1.1.2.2.2.1	Arabic	"Arabic"
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Fajr	"Fajr"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Val	"Val"
+::edge	1.2.2		book	:wiki	1.2.2.1		"Quran"
+::edge	1.2.2		book	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	the	"The"
+::edge	1.2.2.2		name	:op2	1.2.2.2.2	Koran	"Koran"
+::edge	1.1	means	mean-01	:ARG0	1.1.1		event
+10	In December 2002 police announced than an armed corps with Afghanistan, Pakistan and Turkmenistan was being assembled specifically to combat drug trafficking along Iran's borders.
+10	In December 2002 police announced than an armed corps with Afghanistan , Pakistan and Turkmenistan was being assembled specifically to combat drug trafficking along Iran 's borders .
+10	1-1.3.2 1-1.3.2.r 2-1.3.1 3-1.1 4-1 7-1.2.1.1 8-1.2.1 9-1.2.1.2.r 10-1.2.1.2.1.2.1 12-1.2.1.2.2.2.1 13-1.2.1.2 14-1.2.1.2.3.2.1 17-1.2 18-1.2.2.3 20-1.2.2 21-1.2.2.2.1 22-1.2.2.2 23-1.2.2.2.2 24-1.2.2.2.2.1.1.2.1 25-1.2.2.2.2.1.1.r 26-1.2.2.2.2.1
+::node	"Iran"	1.2.2.2.2.1.1.1	"Iran"	
+::node	n4	1.2.2.2.2.1.1.2	name	
+::node	c4	1.2.1.2.3	country	
+::node	c3	1.2.1.2.2	country	
+::node	"Turkmenistan"	1.2.1.2.3.2.1	"Turkmenistan"	Turkmenistan
+::node	s	1.2.2.3	specific	specifically
+::node	a4	1.2.1.2	and	and
+::node	c	1.2.2.1	corps	
+::node	t	1.2.2.2	traffic-01	trafficking
+::node	d2	1.2.2.2.1	drug	drug
+::node	a3	1.2.1.1	arm-01	armed
+::node	a5	1.2.2.2.2	along	along
+::node	b	1.2.2.2.2.1	border	borders
+::node	"Afghanistan"	1.2.1.2.1.2.1	"Afghanistan"	Afghanistan
+::node	c	1.2.1	corps	corps
+::node	"Afghanistan"	1.2.1.2.1.1	"Afghanistan"	
+::node	a	1	announce-01	announced
+::node	n	1.2.1.2.1.2	name	
+::node	"Pakistan"	1.2.1.2.2.1	"Pakistan"	
+::node	c5	1.2.2	combat-01	combat
+::node	2002	1.3.1	2002	2002
+::node	c2	1.2.1.2.1	country	
+::node	12	1.3.2	12	December
+::node	p	1.1	police	police
+::node	"Iran"	1.2.2.2.2.1.1.2.1	"Iran"	Iran
+::node	a2	1.2	assemble-02	assembled
+::node	n2	1.2.1.2.2.2	name	
+::node	"Turkmenistan"	1.2.1.2.3.1	"Turkmenistan"	
+::node	d	1.3	date-entity	
+::node	n3	1.2.1.2.3.2	name	
+::node	c6	1.2.2.2.2.1.1	country	
+::node	"Pakistan"	1.2.1.2.2.2.1	"Pakistan"	Pakistan
+::edge	1.2.2.2.2.1.1		country	:wiki	1.2.2.2.2.1.1.1		"Iran"
+::edge	1.2.2.2.2.1.1		country	:name	1.2.2.2.2.1.1.2		name
+::edge	1.2.1.2	and	and	:op3	1.2.1.2.3		country
+::edge	1.2.1.2	and	and	:op2	1.2.1.2.2		country
+::edge	1.2.1.2.3.2		name	:op1	1.2.1.2.3.2.1	Turkmenistan	"Turkmenistan"
+::edge	1.2.2	combat	combat-01	:mod	1.2.2.3	specifically	specific
+::edge	1.2.1	corps	corps	:accompanier	1.2.1.2	and	and
+::edge	1.2.2	combat	combat-01	:ARG0	1.2.2.1		corps
+::edge	1.2.2	combat	combat-01	:ARG1	1.2.2.2	trafficking	traffic-01
+::edge	1.2.2.2	trafficking	traffic-01	:ARG1	1.2.2.2.1	drug	drug
+::edge	1.2.1	corps	corps	:ARG1-of	1.2.1.1	armed	arm-01
+::edge	1.2.2.2	trafficking	traffic-01	:location	1.2.2.2.2	along	along
+::edge	1.2.2.2.2	along	along	:op1	1.2.2.2.2.1	borders	border
+::edge	1.2.1.2.1.2		name	:op1	1.2.1.2.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.2	assembled	assemble-02	:ARG1	1.2.1	corps	corps
+::edge	1.2.1.2.1		country	:wiki	1.2.1.2.1.1		"Afghanistan"
+::edge	1.2.1.2.1		country	:name	1.2.1.2.1.2		name
+::edge	1.2.1.2.2		country	:wiki	1.2.1.2.2.1		"Pakistan"
+::edge	1.2	assembled	assemble-02	:purpose	1.2.2	combat	combat-01
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2.1.2	and	and	:op1	1.2.1.2.1		country
+::edge	1.3		date-entity	:month	1.3.2	December	12
+::edge	1	announced	announce-01	:ARG0	1.1	police	police
+::edge	1.2.2.2.2.1.1.2		name	:op1	1.2.2.2.2.1.1.2.1	Iran	"Iran"
+::edge	1	announced	announce-01	:ARG1	1.2	assembled	assemble-02
+::edge	1.2.1.2.2		country	:name	1.2.1.2.2.2		name
+::edge	1.2.1.2.3		country	:wiki	1.2.1.2.3.1		"Turkmenistan"
+::edge	1	announced	announce-01	:time	1.3		date-entity
+::edge	1.2.1.2.3		country	:name	1.2.1.2.3.2		name
+::edge	1.2.2.2.2.1	borders	border	:poss	1.2.2.2.2.1.1		country
+::edge	1.2.1.2.2.2		name	:op1	1.2.1.2.2.2.1	Pakistan	"Pakistan"
+11	Iran is a major transit point between drug producers in Afghanistan and Pakistan and the markets of Europe and the Gulf.
+11	Iran is a major transit point between drug producers in Afghanistan and Pakistan and the markets of Europe and the Gulf .
+11	0-1.2.2.1 1-1.2.r 3-1.1.1 4-1.1 5-1 6-1.3 7-1.3.1.1.1.1 8-1.3.1.1 8-1.3.1.1.1 8-1.3.1.1.1.r 9-1.3.1.1.2.r 10-1.3.1.1.2.1.2.1 11-1.3.1.1.2 12-1.3.1.1.2.2.2.1 13-1.3 13-1.3.1 13-1.3.1.r 15-1.3.2 16-1.3.2.1.r 17-1.3.2.1.1.2.1 20-1.3.2.1.2.2.1
+::node	c4	1.3.2.1.1	continent	
+::node	w	1.3.2.1.2	world-region	
+::node	p2	1.3.1.1	person	producers
+::node	a3	1.3.2.1	and	
+::node	n5	1.3.2.1.2.2	name	
+::node	p3	1.3.1.1.1	produce-01	producers
+::node	n4	1.3.2.1.1.2	name	
+::node	"Persian_Gulf"	1.3.2.1.2.1	"Persian_Gulf"	
+::node	"Europe"	1.3.2.1.1.1	"Europe"	
+::node	"Iran"	1.2.2.1	"Iran"	Iran
+::node	"Europe"	1.3.2.1.1.2.1	"Europe"	Europe
+::node	c2	1.3.1.1.2.1	country	
+::node	d	1.3.1.1.1.1	drug	drug
+::node	"Afghanistan"	1.3.1.1.2.1.2.1	"Afghanistan"	Afghanistan
+::node	c3	1.3.1.1.2.2	country	
+::node	"Iran"	1.2.1	"Iran"	
+::node	n2	1.3.1.1.2.1.2	name	
+::node	"Pakistan"	1.3.1.1.2.2.1	"Pakistan"	
+::node	p	1	point	point
+::node	n	1.2.2	name	
+::node	a	1.3.1	and	and
+::node	"Afghanistan"	1.3.1.1.2.1.1	"Afghanistan"	
+::node	m2	1.3.2	market	markets
+::node	t	1.1	transit	transit
+::node	a2	1.3.1.1.2	and	and
+::node	"Gulf"	1.3.2.1.2.2.1	"Gulf"	Gulf
+::node	c	1.2	country	
+::node	b	1.3	between	and
+::node	m	1.1.1	major	major
+::node	n3	1.3.1.1.2.2.2	name	
+::node	"Pakistan"	1.3.1.1.2.2.2.1	"Pakistan"	Pakistan
+::edge	1.3.2.1		and	:op1	1.3.2.1.1		continent
+::edge	1.3.2.1		and	:op2	1.3.2.1.2		world-region
+::edge	1.3.1	and	and	:op1	1.3.1.1	producers	person
+::edge	1.3.2	markets	market	:location	1.3.2.1		and
+::edge	1.3.2.1.2		world-region	:name	1.3.2.1.2.2		name
+::edge	1.3.1.1	producers	person	:ARG0-of	1.3.1.1.1	producers	produce-01
+::edge	1.3.2.1.1		continent	:name	1.3.2.1.1.2		name
+::edge	1.3.2.1.2		world-region	:wiki	1.3.2.1.2.1		"Persian_Gulf"
+::edge	1.3.2.1.1		continent	:wiki	1.3.2.1.1.1		"Europe"
+::edge	1.2.2		name	:op1	1.2.2.1	Iran	"Iran"
+::edge	1.3.2.1.1.2		name	:op1	1.3.2.1.1.2.1	Europe	"Europe"
+::edge	1.3.1.1.2	and	and	:op1	1.3.1.1.2.1		country
+::edge	1.3.1.1.1	producers	produce-01	:ARG1	1.3.1.1.1.1	drug	drug
+::edge	1.3.1.1.2.1.2		name	:op1	1.3.1.1.2.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.3.1.1.2	and	and	:op2	1.3.1.1.2.2		country
+::edge	1.2		country	:wiki	1.2.1		"Iran"
+::edge	1.3.1.1.2.1		country	:name	1.3.1.1.2.1.2		name
+::edge	1.3.1.1.2.2		country	:wiki	1.3.1.1.2.2.1		"Pakistan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3	and	between	:op1	1.3.1	and	and
+::edge	1.3.1.1.2.1		country	:wiki	1.3.1.1.2.1.1		"Afghanistan"
+::edge	1.3	and	between	:op2	1.3.2	markets	market
+::edge	1	point	point	:mod	1.1	transit	transit
+::edge	1.3.1.1	producers	person	:location	1.3.1.1.2	and	and
+::edge	1.3.2.1.2.2		name	:op1	1.3.2.1.2.2.1	Gulf	"Gulf"
+::edge	1	point	point	:domain	1.2		country
+::edge	1	point	point	:location	1.3	and	between
+::edge	1.1	transit	transit	:mod	1.1.1	major	major
+::edge	1.3.1.1.2.2		country	:name	1.3.1.1.2.2.2		name
+::edge	1.3.1.1.2.2.2		name	:op1	1.3.1.1.2.2.2.1	Pakistan	"Pakistan"
+12	Parliament approved plans in May 2001 to build an anti-drugs wall along the 925-kilometre (560-mile) border with Afghanistan.
+12	Parliament approved plans in May 2001 to build an anti @-@ drugs wall along the 925 @-@ kilometre ( 560 @-@ mile ) border with Afghanistan .
+12	0-1.1.2.1 1-1 2-1.2 3-1.3.r 4-1.3.1.r 5-1.3.2 7-1.2.1 9-1.2.1.1.1 11-1.2.1.1.1.1 12-1.2.1.1 13-1.2.1.1.2 15-1.2.1.1.2.1.1.1 17-1.2.1.1.2.1.1.2 19-1.2.1.1.2.1.2.1 21-1.2.1.1.2.1.2.2 23-1.2.1.1.2.1 24-1.2.1.1.2.1.3.r 25-1.2.1.1.2.1.3.2.1
+::node	c	1.2.1.1.2.1.3	country	
+::node	d2	1.2.1.1.2.1.2	distance-quantity	
+::node	d	1.2.1.1.2.1.1	distance-quantity	
+::node	w	1.2.1.1	wall	wall
+::node	"Afghanistan"	1.2.1.1.2.1.3.2.1	"Afghanistan"	Afghanistan
+::node	"Parliament"	1.1.2.1	"Parliament"	Parliament
+::node	d4	1.2.1.1.1.1	drug	drugs
+::node	b2	1.2.1.1.2.1	border	border
+::node	n2	1.2.1.1.2.1.3.2	name	
+::node	m	1.2.1.1.2.1.2.2	mile	mile
+::node	"Afghanistan"	1.2.1.1.2.1.3.1	"Afghanistan"	
+::node	k	1.2.1.1.2.1.1.2	kilometer	kilometre
+::node	560	1.2.1.1.2.1.2.1	560	560
+::node	925	1.2.1.1.2.1.1.1	925	925
+::node	n	1.1.2	name	
+::node	b	1.2.1	build-01	build
+::node	a	1	approve-01	approved
+::node	05	1.3.1	05	
+::node	a3	1.2.1.1.2	along	along
+::node	2001	1.3.2	2001	2001
+::node	o	1.2.1.1.1	oppose-01	anti
+::node	g	1.1	government-organization	
+::node	p	1.2	plan-01	plans
+::node	d3	1.3	date-entity	
+::node	"Parliament_of_Pakistan"	1.1.1	"Parliament_of_Pakistan"	
+::edge	1.2.1.1.2.1.3.2		name	:op1	1.2.1.1.2.1.3.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.2		name	:op1	1.1.2.1	Parliament	"Parliament"
+::edge	1.2.1.1.1	anti	oppose-01	:ARG1	1.2.1.1.1.1	drugs	drug
+::edge	1.2.1.1.2	along	along	:op1	1.2.1.1.2.1	border	border
+::edge	1.2.1.1.2.1.3		country	:name	1.2.1.1.2.1.3.2		name
+::edge	1.2.1.1.2.1.2		distance-quantity	:unit	1.2.1.1.2.1.2.2	mile	mile
+::edge	1.2.1.1.2.1.3		country	:wiki	1.2.1.1.2.1.3.1		"Afghanistan"
+::edge	1.2.1.1.2.1.1		distance-quantity	:unit	1.2.1.1.2.1.1.2	kilometre	kilometer
+::edge	1.2.1.1.2.1.2		distance-quantity	:quant	1.2.1.1.2.1.2.1	560	560
+::edge	1.2.1.1.2.1.1		distance-quantity	:quant	1.2.1.1.2.1.1.1	925	925
+::edge	1.1		government-organization	:name	1.1.2		name
+::edge	1.2	plans	plan-01	:ARG1	1.2.1	build	build-01
+::edge	1.3		date-entity	:month	1.3.1		05
+::edge	1.2.1.1	wall	wall	:location	1.2.1.1.2	along	along
+::edge	1.3		date-entity	:year	1.3.2	2001	2001
+::edge	1.2.1.1	wall	wall	:purpose	1.2.1.1.1	anti	oppose-01
+::edge	1	approved	approve-01	:ARG0	1.1		government-organization
+::edge	1.2.1.1.2.1	border	border	:prep-with	1.2.1.1.2.1.3		country
+::edge	1	approved	approve-01	:ARG1	1.2	plans	plan-01
+::edge	1.2.1.1.2.1	border	border	:op2	1.2.1.1.2.1.2		distance-quantity
+::edge	1.2.1.1.2.1	border	border	:op1	1.2.1.1.2.1.1		distance-quantity
+::edge	1	approved	approve-01	:time	1.3		date-entity
+::edge	1.2.1	build	build-01	:ARG1	1.2.1.1	wall	wall
+::edge	1.1		government-organization	:wiki	1.1.1		"Parliament_of_Pakistan"
+13	A budget was allocated for the barrier to be equipped with electronic detention equipment.
+13	A budget was allocated for the barrier to be equipped with electronic detention equipment .
+13	1-1.1 3-1 4-1.2.r 6-1.2.1 9-1.2 9-1.2.2 9-1.2.2.r 11-1.2.2.2 12-1.2.2.1 13-1.2.2
+::node	b2	1.2.1	barrier	barrier
+::node	a	1	allocate-01	allocated
+::node	e2	1.2.2	equipment	equipment
+::node	b	1.1	budget	budget
+::node	e	1.2	equip-01	equipped
+::node	d	1.2.2.1	detain-01	detention
+::node	e3	1.2.2.2	electronic	electronic
+::edge	1.2	equipped	equip-01	:ARG1	1.2.1	barrier	barrier
+::edge	1.2	equipped	equip-01	:ARG2	1.2.2	equipment	equipment
+::edge	1	allocated	allocate-01	:ARG1	1.1	budget	budget
+::edge	1	allocated	allocate-01	:ARG2	1.2	equipped	equip-01
+::edge	1.2.2	equipment	equipment	:purpose	1.2.2.1	detention	detain-01
+::edge	1.2.2	equipment	equipment	:mod	1.2.2.2	electronic	electronic
+14	An Afghan television reported on January 16, 2002 that Afghanistan's interim administration has banned the cultivation of opium poppies in a bid to end drug trafficking.
+14	An Afghan television reported on January 16 , 2002 that Afghanistan 's interim administration has banned the cultivation of opium poppies in a bid to end drug trafficking .
+14	2-1.1 3-1 4-1.3.r 5-1.3.2 5-1.3.2.r 6-1.3.3 8-1.3.1 10-1.1.1.2.1 12-1.2.1.1 13-1.2.1 13-1.2.1.2 13-1.2.1.2.r 15-1.2 17-1.2.2 18-1.2.2.1.r 19-1.2.2.1.1 20-1.2.2.1 25-1.2.3 26-1.2.3.2.1 27-1.2.3.2
+::node	"Afghanistan"	1.1.1.1	"Afghanistan"	
+::node	n	1.1.1.2	name	
+::node	o	1.2.2.1.1	opium	opium
+::node	d2	1.2.3.2.1	drug	drug
+::node	g	1.2.1	government-organization	administration
+::node	r	1	report-01	reported
+::node	c3	1.2.2	cultivate-01	cultivation
+::node	2002	1.3.1	2002	2002
+::node	c	1.2.1.2.1	country	
+::node	e	1.2.3	end-01	end
+::node	1	1.3.2	1	January
+::node	16	1.3.3	16	16
+::node	t	1.1	television	television
+::node	b	1.2	ban-01	banned
+::node	d	1.3	date-entity	
+::node	t2	1.2.3.2	traffic-01	trafficking
+::node	"Afghanistan"	1.1.1.2.1	"Afghanistan"	Afghanistan
+::node	a	1.2.1.2	administrate-01	administration
+::node	p	1.2.2.1	poppy	poppies
+::node	g	1.2.3.1	government-organization	
+::node	i	1.2.1.1	interim	interim
+::node	c	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"Afghanistan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.2.2.1	poppies	poppy	:mod	1.2.2.1.1	opium	opium
+::edge	1.2.3.2	trafficking	traffic-01	:ARG1	1.2.3.2.1	drug	drug
+::edge	1.2	banned	ban-01	:ARG0	1.2.1	administration	government-organization
+::edge	1.2	banned	ban-01	:ARG1	1.2.2	cultivation	cultivate-01
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2.1.2	administration	administrate-01	:ARG1	1.2.1.2.1		country
+::edge	1.2	banned	ban-01	:purpose	1.2.3	end	end-01
+::edge	1.3		date-entity	:month	1.3.2	January	1
+::edge	1.3		date-entity	:day	1.3.3	16	16
+::edge	1	reported	report-01	:ARG0	1.1	television	television
+::edge	1	reported	report-01	:ARG1	1.2	banned	ban-01
+::edge	1	reported	report-01	:time	1.3		date-entity
+::edge	1.2.3	end	end-01	:ARG1	1.2.3.2	trafficking	traffic-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.1	administration	government-organization	:ARG0-of	1.2.1.2	administration	administrate-01
+::edge	1.2.2	cultivation	cultivate-01	:ARG1	1.2.2.1	poppies	poppy
+::edge	1.2.3	end	end-01	:ARG0	1.2.3.1		government-organization
+::edge	1.2.1	administration	government-organization	:mod	1.2.1.1	interim	interim
+::edge	1.1	television	television	:source	1.1.1		country
+15	In July 2000 the Taliban militia also banned production of opium.
+15	In July 2000 the Taliban militia also banned production of opium .
+15	1-1.3.2 1-1.3.2.r 2-1.3.1 4-1.1.1.2.1 5-1.1 6-1.4 7-1 8-1.2 9-1.2.1.r 10-1.2.1
+::node	o	1.2.1	opium	opium
+::node	b	1	ban-01	banned
+::node	2000	1.3.1	2000	2000
+::node	"Taliban"	1.1.1.1	"Taliban"	
+::node	7	1.3.2	7	July
+::node	n	1.1.1.2	name	
+::node	m	1.1	militia	militia
+::node	p	1.2	produce-01	production
+::node	d	1.3	date-entity	
+::node	a	1.4	also	also
+::node	"Taliban"	1.1.1.2.1	"Taliban"	Taliban
+::node	c	1.1.1	criminal-organization	
+::edge	1.2	production	produce-01	:ARG1	1.2.1	opium	opium
+::edge	1.3		date-entity	:year	1.3.1	2000	2000
+::edge	1.1.1		criminal-organization	:wiki	1.1.1.1		"Taliban"
+::edge	1.3		date-entity	:month	1.3.2	July	7
+::edge	1.1.1		criminal-organization	:name	1.1.1.2		name
+::edge	1	banned	ban-01	:ARG0	1.1	militia	militia
+::edge	1	banned	ban-01	:ARG1	1.2	production	produce-01
+::edge	1	banned	ban-01	:time	1.3		date-entity
+::edge	1	banned	ban-01	:mod	1.4	also	also
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Taliban	"Taliban"
+::edge	1.1	militia	militia	:mod	1.1.1		criminal-organization
+16	Opium is the raw ingredient for heroin.
+16	Opium is the raw ingredient for heroin .
+16	0-1.2 1-1.2.r 3-1.3 4-1 5-1.1.r 6-1.1
+::node	i	1	ingredient	ingredient
+::node	h	1.1	heroin	heroin
+::node	o	1.2	opium	Opium
+::node	r	1.3	raw	raw
+::edge	1	ingredient	ingredient	:purpose	1.1	heroin	heroin
+::edge	1	ingredient	ingredient	:domain	1.2	Opium	opium
+::edge	1	ingredient	ingredient	:mod	1.3	raw	raw
+17	The ban was strictly enforced with opium production decreasing from 3,200 tons to 185 tons.
+17	The ban was strictly enforced with opium production decreasing from 3,200 tons to 185 tons .
+17	1-1.1 3-1.2 3-1.2.r 4-1 6-1.3.1.1.1 7-1.3.1.1 8-1.3.1 9-1.3.1.2.r 10-1.3.1.2.1 11-1.3.1.2.2 11-1.3.1.3.2 12-1.3.1.3.r 13-1.3.1.3.1 14-1.3.1.2.2 14-1.3.1.3.2
+::node	p	1.3.1.1	produce-01	production
+::node	m	1.3.1.2	mass-quantity	
+::node	m2	1.3.1.3	mass-quantity	
+::node	o	1.3.1.1.1	opium	opium
+::node	e	1	enforce-01	enforced
+::node	d	1.3.1	decrease-01	decreasing
+::node	b	1.1	ban-01	ban
+::node	3200	1.3.1.2.1	3200	3,200
+::node	s	1.2	strict	strictly
+::node	t	1.3.1.2.2	ton	tons
+::node	185	1.3.1.3.1	185	185
+::node	c	1.3	cause-01	
+::node	t2	1.3.1.3.2	ton	tons
+::edge	1.3		cause-01	:ARG1	1.3.1	decreasing	decrease-01
+::edge	1	enforced	enforce-01	:ARG1	1.1	ban	ban-01
+::edge	1.3.1.2		mass-quantity	:quant	1.3.1.2.1	3,200	3200
+::edge	1	enforced	enforce-01	:manner	1.2	strictly	strict
+::edge	1.3.1.2		mass-quantity	:unit	1.3.1.2.2	tons	ton
+::edge	1.3.1.3		mass-quantity	:quant	1.3.1.3.1	185	185
+::edge	1	enforced	enforce-01	:ARG0-of	1.3		cause-01
+::edge	1.3.1.3		mass-quantity	:unit	1.3.1.3.2	tons	ton
+::edge	1.3.1	decreasing	decrease-01	:ARG1	1.3.1.1	production	produce-01
+::edge	1.3.1	decreasing	decrease-01	:ARG3	1.3.1.2		mass-quantity
+::edge	1.3.1	decreasing	decrease-01	:ARG4	1.3.1.3		mass-quantity
+::edge	1.3.1.1	production	produce-01	:ARG1	1.3.1.1.1	opium	opium
+18	Afghan farmers resumed growing opium poppies after the militia was overthrown in December 2001.
+18	Afghan farmers resumed growing opium poppies after the militia was overthrown in December 2001 .
+18	0-1.1.2.2.1 1-1.1 1-1.1.1 1-1.1.1.r 2-1 3-1.2 4-1.2.2.1 5-1.2.2 6-1.3 8-1.3.1.1 10-1.3.1 11-1.3.1.2.r 12-1.3.1.2.2 12-1.3.1.2.2.r 13-1.3.1.2.1
+::node	"Afghanistan"	1.1.2.1	"Afghanistan"	
+::node	n	1.1.2.2	name	
+::node	m	1.3.1.1	militia	militia
+::node	d	1.3.1.2	date-entity	
+::node	"Afghanistan"	1.1.2.2.1	"Afghanistan"	Afghan
+::node	c	1.1.2	country	
+::node	p	1.2.1	person	
+::node	r	1	resume-01	resumed
+::node	p2	1.2.2	poppy	poppies
+::node	o2	1.3.1	overthrow-01	overthrown
+::node	p	1.1	person	farmers
+::node	2001	1.3.1.2.1	2001	2001
+::node	g	1.2	grow-03	growing
+::node	12	1.3.1.2.2	12	December
+::node	a	1.3	after	after
+::node	o	1.2.2.1	opium	opium
+::node	f	1.1.1	farm-01	farmers
+::edge	1.1.2		country	:wiki	1.1.2.1		"Afghanistan"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.3.1	overthrown	overthrow-01	:ARG1	1.3.1.1	militia	militia
+::edge	1.3.1	overthrown	overthrow-01	:time	1.3.1.2		date-entity
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Afghan	"Afghanistan"
+::edge	1.1	farmers	person	:mod	1.1.2		country
+::edge	1.2	growing	grow-03	:ARG0	1.2.1		person
+::edge	1.2	growing	grow-03	:ARG1	1.2.2	poppies	poppy
+::edge	1.3	after	after	:op1	1.3.1	overthrown	overthrow-01
+::edge	1	resumed	resume-01	:ARG0	1.1	farmers	person
+::edge	1.3.1.2		date-entity	:year	1.3.1.2.1	2001	2001
+::edge	1	resumed	resume-01	:ARG1	1.2	growing	grow-03
+::edge	1.3.1.2		date-entity	:month	1.3.1.2.2	December	12
+::edge	1	resumed	resume-01	:time	1.3	after	after
+::edge	1.2.2	poppies	poppy	:mod	1.2.2.1	opium	opium
+::edge	1.1	farmers	person	:ARG0-of	1.1.1	farmers	farm-01
+19	Iranian law states the death penalty for drug trafficking.
+19	Iranian law states the death penalty for drug trafficking .
+19	0-1.1.1.2.1 1-1.1 2-1 4-1.2.3 5-1.2 6-1.2.2.r 7-1.2.2.1 8-1.2.2
+::node	l	1.2.1	law	
+::node	s	1	state-01	states
+::node	t	1.2.2	trafficking	trafficking
+::node	"Iran"	1.1.1.1	"Iran"	
+::node	d2	1.2.3	die-01	death
+::node	n	1.1.1.2	name	
+::node	l	1.1	law	law
+::node	p	1.2	penalize-01	penalty
+::node	"Iran"	1.1.1.2.1	"Iran"	Iranian
+::node	d	1.2.2.1	drug	drug
+::node	c	1.1.1	country	
+::edge	1.2	penalty	penalize-01	:ARG0	1.2.1		law
+::edge	1.2	penalty	penalize-01	:ARG2	1.2.2	trafficking	trafficking
+::edge	1.1.1		country	:wiki	1.1.1.1		"Iran"
+::edge	1.2	penalty	penalize-01	:manner	1.2.3	death	die-01
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1	states	state-01	:ARG0	1.1	law	law
+::edge	1	states	state-01	:ARG1	1.2	penalty	penalize-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Iranian	"Iran"
+::edge	1.2.2	trafficking	trafficking	:mod	1.2.2.1	drug	drug
+::edge	1.1	law	law	:source	1.1.1		country
+20	More than 3,000 policemen have been killed in anti-drugs raids in the past 20 years.
+20	More than 3,000 policemen have been killed in anti @-@ drugs raids in the past 20 years .
+20	0-1.1.1 1-1.1.1 2-1.1.1.1 3-1.1 6-1 8-1.2.1.1 10-1.2.1.1.1 11-1.2.1 15-1.3.2.1 16-1.3.2.2
+::node	3000	1.1.1.1	3000	3,000
+::node	20	1.3.2.1	20	20
+::node	y	1.3.2.2	year	years
+::node	r	1.2.1	raid-01	raids
+::node	k	1	kill-01	killed
+::node	n	1.3.1	now	
+::node	t	1.3.2	temporal-quantity	
+::node	d	1.2.1.1.1	drug	drugs
+::node	p	1.1	policeman	policemen
+::node	c	1.2	cause-01	
+::node	b	1.3	before	
+::node	c2	1.2.1.1	counter-01	anti
+::node	m	1.1.1	more-than	than
+::edge	1.2		cause-01	:ARG0	1.2.1	raids	raid-01
+::edge	1.3		before	:op1	1.3.1		now
+::edge	1.1.1	than	more-than	:op1	1.1.1.1	3,000	3000
+::edge	1.3		before	:duration	1.3.2		temporal-quantity
+::edge	1.2.1.1	anti	counter-01	:ARG1	1.2.1.1.1	drugs	drug
+::edge	1	killed	kill-01	:ARG1	1.1	policemen	policeman
+::edge	1	killed	kill-01	:ARG1-of	1.2		cause-01
+::edge	1	killed	kill-01	:time	1.3		before
+::edge	1.3.2		temporal-quantity	:quant	1.3.2.1	20	20
+::edge	1.3.2		temporal-quantity	:unit	1.3.2.2	years	year
+::edge	1.2.1	raids	raid-01	:purpose	1.2.1.1	anti	counter-01
+::edge	1.1	policemen	policeman	:quant	1.1.1	than	more-than

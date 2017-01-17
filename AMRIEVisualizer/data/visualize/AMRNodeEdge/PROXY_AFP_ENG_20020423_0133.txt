@@ -1,0 +1,646 @@
+1	2002-04-23
+1	2002 @-@ 04 @-@ 23
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	4	1.2	4	04
+::node	23	1.3	23	23
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	04	4
+::edge	1		date-entity	:day	1.3	23	23
+2	Cambodia (KH); Vietnam (VN)
+2	Cambodia ( KH ) ; Vietnam ( VN )
+2	0-1.1.2.1 5-1.2.2.1
+::node	n2	1.1.2	name	
+::node	"Vietnam"	1.2.1	"Vietnam"	
+::node	a	1	and	
+::node	n	1.2.2	name	
+::node	"Cambodia"	1.1.2.1	"Cambodia"	Cambodia
+::node	c	1.1	country	
+::node	c2	1.2	country	
+::node	"Vietnam"	1.2.2.1	"Vietnam"	Vietnam
+::node	"Cambodia"	1.1.1	"Cambodia"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"Vietnam"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Cambodia	"Cambodia"
+::edge	1		and	:op1	1.1		country
+::edge	1		and	:op2	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	Vietnam	"Vietnam"
+::edge	1.1		country	:wiki	1.1.1		"Cambodia"
+3	International; narcotics
+3	International ; narcotics
+3	0-1.1 2-1.2
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	n	1.2	narcotics	narcotics
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	narcotics	narcotics
+4	Cambodia and Vietnam finalized an agreement to stop Asian and European drug traffickers.
+4	Cambodia and Vietnam finalized an agreement to stop Asian and European drug traffickers .
+4	0-1.1.1.2.1 1-1.1 2-1.1.2.2.1 3-1 5-1.2 7-1.2.1 8-1.2.1.1.1.2.2.1 9-1.2.1.1 10-1.2.1.1.2.2.2.1 11-1.2.1.1.1.1.1 12-1.2.1.1.1 12-1.2.1.1.1.1 12-1.2.1.1.1.1.r 12-1.2.1.1.2 12-1.2.1.1.2.1 12-1.2.1.1.2.1.r
+::node	d	1.2.1.1.1.1.1	drug	drug
+::node	"Asia"	1.2.1.1.1.2.1	"Asia"	
+::node	n2	1.2.1.1.1.2.2	name	
+::node	"Asia"	1.2.1.1.1.2.2.1	"Asia"	Asian
+::node	"Vietnam"	1.1.2.2.1	"Vietnam"	Vietnam
+::node	n	1.2.1.1.2.2.2	name	
+::node	"Europe"	1.2.1.1.2.2.1	"Europe"	
+::node	"Cambodia"	1.1.1.2.1	"Cambodia"	Cambodia
+::node	a3	1.2.1.1	and	and
+::node	"Cambodia"	1.1.1.1	"Cambodia"	
+::node	n4	1.1.1.2	name	
+::node	"Vietnam"	1.1.2.1	"Vietnam"	
+::node	n3	1.1.2.2	name	
+::node	t	1.2.1.1.1.1	traffic-01	traffickers
+::node	c3	1.2.1.1.1.2	continent	
+::node	t2	1.2.1.1.2.1	traffic-01	traffickers
+::node	c4	1.2.1.1.2.2	continent	
+::node	c2	1.1.2	country	
+::node	s	1.2.1	stop-01	stop
+::node	f	1	finalize-01	finalized
+::node	p2	1.2.1.1.2	person	traffickers
+::node	p	1.2.1.1.1	person	traffickers
+::node	a	1.1	and	and
+::node	a2	1.2	agree-01	agreement
+::node	"Europe"	1.2.1.1.2.2.2.1	"Europe"	European
+::node	c	1.1.1	country	
+::edge	1.2.1.1.1.1	traffickers	traffic-01	:ARG1	1.2.1.1.1.1.1	drug	drug
+::edge	1.2.1.1.1.2		continent	:wiki	1.2.1.1.1.2.1		"Asia"
+::edge	1.2.1.1.1.2		continent	:name	1.2.1.1.1.2.2		name
+::edge	1.2.1.1.1.2.2		name	:op1	1.2.1.1.1.2.2.1	Asian	"Asia"
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Vietnam	"Vietnam"
+::edge	1.2.1.1.2.2		continent	:name	1.2.1.1.2.2.2		name
+::edge	1.2.1.1.2.2		continent	:wiki	1.2.1.1.2.2.1		"Europe"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Cambodia	"Cambodia"
+::edge	1.2.1	stop	stop-01	:ARG1	1.2.1.1	and	and
+::edge	1.1.1		country	:wiki	1.1.1.1		"Cambodia"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		country	:wiki	1.1.2.1		"Vietnam"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.2.1.1.1	traffickers	person	:ARG0-of	1.2.1.1.1.1	traffickers	traffic-01
+::edge	1.2.1.1.1	traffickers	person	:mod	1.2.1.1.1.2		continent
+::edge	1.2.1.1.2	traffickers	person	:ARG0-of	1.2.1.1.2.1	traffickers	traffic-01
+::edge	1.2.1.1.2	traffickers	person	:mod	1.2.1.1.2.2		continent
+::edge	1.1	and	and	:op2	1.1.2		country
+::edge	1.2	agreement	agree-01	:ARG1	1.2.1	stop	stop-01
+::edge	1.2.1.1	and	and	:op2	1.2.1.1.2	traffickers	person
+::edge	1.2.1.1	and	and	:op1	1.2.1.1.1	traffickers	person
+::edge	1	finalized	finalize-01	:ARG0	1.1	and	and
+::edge	1	finalized	finalize-01	:ARG1	1.2	agreement	agree-01
+::edge	1.2.1.1.2.2.2		name	:op1	1.2.1.1.2.2.2.1	European	"Europe"
+::edge	1.1	and	and	:op1	1.1.1		country
+5	They will focus on the import of cheap chemical drugs made in Thailand.
+5	They will focus on the import of cheap chemical drugs made in Thailand .
+5	0-1.1 2-1 3-1.2.r 5-1.2 6-1.2.1.r 7-1.2.1.2 8-1.2.1.1 9-1.2.1 10-1.2.1.3 11-1.2.1.3.1.r 12-1.2.1.3.1.2.1
+::node	d	1.2.1	drug	drugs
+::node	f	1	focus-01	focus
+::node	"Thailand"	1.2.1.3.1.1	"Thailand"	
+::node	t	1.1	they	They
+::node	n	1.2.1.3.1.2	name	
+::node	i	1.2	import-01	import
+::node	"Thailand"	1.2.1.3.1.2.1	"Thailand"	Thailand
+::node	c2	1.2.1.2	cheap	cheap
+::node	m	1.2.1.3	make-01	made
+::node	c	1.2.1.1	chemical	chemical
+::node	c3	1.2.1.3.1	country	
+::edge	1.2	import	import-01	:ARG1	1.2.1	drugs	drug
+::edge	1.2.1.3.1		country	:wiki	1.2.1.3.1.1		"Thailand"
+::edge	1	focus	focus-01	:ARG0	1.1	They	they
+::edge	1.2.1.3.1		country	:name	1.2.1.3.1.2		name
+::edge	1	focus	focus-01	:ARG2	1.2	import	import-01
+::edge	1.2.1.3.1.2		name	:op1	1.2.1.3.1.2.1	Thailand	"Thailand"
+::edge	1.2.1	drugs	drug	:mod	1.2.1.2	cheap	cheap
+::edge	1.2.1	drugs	drug	:ARG1-of	1.2.1.3	made	make-01
+::edge	1.2.1	drugs	drug	:mod	1.2.1.1	chemical	chemical
+::edge	1.2.1.3	made	make-01	:location	1.2.1.3.1		country
+6	On April 23, 2002 Cambodia and Vietnam finalized an agreement to stop Asian and European drug traffickers.
+6	On April 23 , 2002 Cambodia and Vietnam finalized an agreement to stop Asian and European drug traffickers .
+6	1-1.3.2 1-1.3.2.r 2-1.3.3 4-1.3.1 5-1.1.1.2.1 6-1.1 7-1.1.2.2.1 8-1 10-1.2 12-1.2.1 13-1.2.1.1.1.2.2.1 14-1.2.1.1 15-1.2.1.1.2.2.2.1 16-1.2.1.1.1.1.1 16-1.2.1.1.2.1.1 17-1.2.1.1.1 17-1.2.1.1.1.1 17-1.2.1.1.1.1.r 17-1.2.1.1.2 17-1.2.1.1.2.1 17-1.2.1.1.2.1.r
+::node	d	1.2.1.1.1.1.1	drug	drug
+::node	"Asia"	1.2.1.1.1.2.1	"Asia"	
+::node	n2	1.2.1.1.1.2.2	name	
+::node	"Asia"	1.2.1.1.1.2.2.1	"Asia"	Asian
+::node	"Vietnam"	1.1.2.2.1	"Vietnam"	Vietnam
+::node	n	1.2.1.1.2.2.2	name	
+::node	"Europe"	1.2.1.1.2.2.1	"Europe"	
+::node	d3	1.2.1.1.2.1.1	drug	drug
+::node	"Cambodia"	1.1.1.2.1	"Cambodia"	Cambodia
+::node	a3	1.2.1.1	and	and
+::node	"Cambodia"	1.1.1.1	"Cambodia"	
+::node	n4	1.1.1.2	name	
+::node	"Vietnam"	1.1.2.1	"Vietnam"	
+::node	n3	1.1.2.2	name	
+::node	t	1.2.1.1.1.1	traffic-01	traffickers
+::node	c3	1.2.1.1.1.2	continent	
+::node	t2	1.2.1.1.2.1	traffic-01	traffickers
+::node	c4	1.2.1.1.2.2	continent	
+::node	c2	1.1.2	country	
+::node	s	1.2.1	stop-01	stop
+::node	f	1	finalize-01	finalized
+::node	2002	1.3.1	2002	2002
+::node	p2	1.2.1.1.2	person	traffickers
+::node	4	1.3.2	4	April
+::node	p	1.2.1.1.1	person	traffickers
+::node	23	1.3.3	23	23
+::node	a	1.1	and	and
+::node	a2	1.2	agree-01	agreement
+::node	d2	1.3	date-entity	
+::node	"Europe"	1.2.1.1.2.2.2.1	"Europe"	European
+::node	c	1.1.1	country	
+::edge	1.2.1.1.1.1	traffickers	traffic-01	:ARG1	1.2.1.1.1.1.1	drug	drug
+::edge	1.2.1.1.1.2		continent	:wiki	1.2.1.1.1.2.1		"Asia"
+::edge	1.2.1.1.1.2		continent	:name	1.2.1.1.1.2.2		name
+::edge	1.2.1.1.1.2.2		name	:op1	1.2.1.1.1.2.2.1	Asian	"Asia"
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Vietnam	"Vietnam"
+::edge	1.2.1.1.2.2		continent	:name	1.2.1.1.2.2.2		name
+::edge	1.2.1.1.2.2		continent	:wiki	1.2.1.1.2.2.1		"Europe"
+::edge	1.2.1.1.2.1	traffickers	traffic-01	:ARG1	1.2.1.1.2.1.1	drug	drug
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Cambodia	"Cambodia"
+::edge	1.2.1	stop	stop-01	:ARG1	1.2.1.1	and	and
+::edge	1.1.1		country	:wiki	1.1.1.1		"Cambodia"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		country	:wiki	1.1.2.1		"Vietnam"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.2.1.1.1	traffickers	person	:ARG0-of	1.2.1.1.1.1	traffickers	traffic-01
+::edge	1.2.1.1.1	traffickers	person	:mod	1.2.1.1.1.2		continent
+::edge	1.2.1.1.2	traffickers	person	:ARG0-of	1.2.1.1.2.1	traffickers	traffic-01
+::edge	1.2.1.1.2	traffickers	person	:mod	1.2.1.1.2.2		continent
+::edge	1.1	and	and	:op2	1.1.2		country
+::edge	1.2	agreement	agree-01	:ARG1	1.2.1	stop	stop-01
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2.1.1	and	and	:op2	1.2.1.1.2	traffickers	person
+::edge	1.3		date-entity	:month	1.3.2	April	4
+::edge	1.2.1.1	and	and	:op1	1.2.1.1.1	traffickers	person
+::edge	1.3		date-entity	:day	1.3.3	23	23
+::edge	1	finalized	finalize-01	:ARG0	1.1	and	and
+::edge	1	finalized	finalize-01	:ARG1	1.2	agreement	agree-01
+::edge	1	finalized	finalize-01	:time	1.3		date-entity
+::edge	1.2.1.1.2.2.2		name	:op1	1.2.1.1.2.2.2.1	European	"Europe"
+::edge	1.1	and	and	:op1	1.1.1		country
+7	They will focus on the import of cheap chemical drugs made in Thailand.
+7	They will focus on the import of cheap chemical drugs made in Thailand .
+7	0-1.1 2-1 3-1.2.r 5-1.2 6-1.2.1.r 7-1.2.1.1 8-1.2.1.2 9-1.2.1 10-1.2.1.3 11-1.2.1.3.1.r 12-1.2.1.3.1.2.1
+::node	d	1.2.1	drug	drugs
+::node	f	1	focus-01	focus
+::node	"Thailand"	1.2.1.3.1.1	"Thailand"	
+::node	t	1.1	they	They
+::node	n	1.2.1.3.1.2	name	
+::node	i	1.2	import-01	import
+::node	"Thailand"	1.2.1.3.1.2.1	"Thailand"	Thailand
+::node	c3	1.2.1.2	chemical	chemical
+::node	m	1.2.1.3	make-01	made
+::node	c2	1.2.1.1	cheap	cheap
+::node	c	1.2.1.3.1	country	
+::edge	1.2	import	import-01	:ARG1	1.2.1	drugs	drug
+::edge	1.2.1.3.1		country	:wiki	1.2.1.3.1.1		"Thailand"
+::edge	1	focus	focus-01	:ARG0	1.1	They	they
+::edge	1.2.1.3.1		country	:name	1.2.1.3.1.2		name
+::edge	1	focus	focus-01	:ARG1	1.2	import	import-01
+::edge	1.2.1.3.1.2		name	:op1	1.2.1.3.1.2.1	Thailand	"Thailand"
+::edge	1.2.1	drugs	drug	:consist-of	1.2.1.2	chemical	chemical
+::edge	1.2.1	drugs	drug	:ARG1-of	1.2.1.3	made	make-01
+::edge	1.2.1	drugs	drug	:mod	1.2.1.1	cheap	cheap
+::edge	1.2.1.3	made	make-01	:location	1.2.1.3.1		country
+8	Deputy Secretary General of Cambodia's narcotics authority lour Ramin said Cambodian and Vietnamese officials had arrested Asian nationals and Europeans who were attempting to trade heroin through Cambodia into Vietnam.
+8	Deputy Secretary General of Cambodia 's narcotics authority lour Ramin said Cambodian and Vietnamese officials had arrested Asian nationals and Europeans who were attempting to trade heroin through Cambodia into Vietnam .
+8	0-1.1.3.2.2 1-1.1.3.2 2-1.1.3.2.1 3-1.1.3 4-1.1.3.1.3.2.1 5-1.1.3.1.3.r 6-1.1.3.1.2.1 7-1.1.3.1.2.2 8-1.1.2.1 9-1.1.2.2 10-1 12-1.2.1 13-1.2.1.2.1.1.2.1 14-1.2.1.1.1.2 14-1.2.1.2.1.2 15-1.2.1.1.1 15-1.2.1.2.1 16-1.2 17-1.2.2.1.1.2.1 18-1.2.2.1.2 19-1.2.2 20-1.2.2.2.1.2.1 23-1.2.2.2.2 24-1.2.2.2.2.1.3.r 25-1.2.2.2.2.1 26-1.2.2.2.2.1.1 27-1.2.2.2.2.1.2.r 28-1.2.2.2.2.1.2 29-1.2.2.2.2.1.3.r 30-1.2.2.2.2.1.3
+::node	d	1.1.3.2.2	deputy	Deputy
+::node	g	1.1.3.2.1	general	General
+::node	"Asia"	1.2.2.1.1.1	"Asia"	
+::node	n4	1.2.2.1.1.2	name	
+::node	"Asia"	1.2.2.1.1.2.1	"Asia"	Asian
+::node	p2	1.2.1.2	person	
+::node	"Europe"	1.2.2.2.1.1	"Europe"	
+::node	c4	1.2.2.2.1	continent	
+::node	p	1.2.1.1	person	
+::node	n3	1.2.2.2.1.2	name	
+::node	a4	1.2.2.2.2	attempt-01	attempting
+::node	c3	1.2.2.1.1	continent	
+::node	g2	1.1.3.1	government-organization	
+::node	s2	1.1.3.2	secretary	Secretary
+::node	"Authority"	1.1.3.1.2.2	"Authority"	authority
+::node	"Europe"	1.2.2.2.1.2.1	"Europe"	Europeans
+::node	n5	1.2.1.2.1.1.2	name	
+::node	"Vietnam"	1.2.1.2.1.1.1	"Vietnam"	
+::node	"Narcotics"	1.1.3.1.2.1	"Narcotics"	narcotics
+::node	n7	1.1.2	name	
+::node	s	1	say-01	said
+::node	h4	1.1.3	have-org-role-91	of
+::node	h2	1.2.1.1.1	have-org-role-91	had
+::node	p4	1.1	person	
+::node	a	1.2	arrest-01	arrested
+::node	-	1.1.3.1.1	-	
+::node	-	1.1.1	-	
+::node	c	1.1.3.1.3	country	
+::node	n	1.1.3.1.2	name	
+::node	"Vietnam"	1.2.1.2.1.1.2.1	"Vietnam"	Vietnamese
+::node	"Cambodia"	1.1.3.1.3.2.1	"Cambodia"	Cambodia
+::node	p5	1.2.2.1	person	
+::node	p3	1.2.2.2	person	
+::node	n2	1.2.2.1.2	nation	nationals
+::node	t	1.2.2.2.2.1	trade-01	trade
+::node	"Lour"	1.1.2.1	"Lour"	lour
+::node	"Ramin"	1.1.2.2	"Ramin"	Ramin
+::node	c	1.2.1.1.1.1	country	
+::node	o	1.2.1.1.1.2	official	officials
+::node	"Cambodia"	1.1.3.1.3.1	"Cambodia"	
+::node	n6	1.1.3.1.3.2	name	
+::node	a2	1.2.1	and	and
+::node	c2	1.2.1.2.1.1	country	
+::node	o2	1.2.1.2.1.2	official	officials
+::node	a3	1.2.2	and	and
+::node	h3	1.2.1.2.1	have-org-role-91	had
+::node	c2	1.2.2.2.2.1.3	country	Vietnam
+::node	c	1.2.2.2.2.1.2	country	Cambodia
+::node	h	1.2.2.2.2.1.1	heroin	heroin
+::edge	1.1.3.1		government-organization	:poss	1.1.3.1.3		country
+::edge	1.1.3.2	Secretary	secretary	:mod	1.1.3.2.2	Deputy	deputy
+::edge	1.1.3.1		government-organization	:name	1.1.3.1.2		name
+::edge	1.1.3.2	Secretary	secretary	:mod	1.1.3.2.1	General	general
+::edge	1.2.1.2.1.1.2		name	:op1	1.2.1.2.1.1.2.1	Vietnamese	"Vietnam"
+::edge	1.2.2.1.1		continent	:wiki	1.2.2.1.1.1		"Asia"
+::edge	1.2.2.1.1		continent	:name	1.2.2.1.1.2		name
+::edge	1.1.3.1.3.2		name	:op1	1.1.3.1.3.2.1	Cambodia	"Cambodia"
+::edge	1.2.2.1.1.2		name	:op1	1.2.2.1.1.2.1	Asian	"Asia"
+::edge	1.2.1	and	and	:op2	1.2.1.2		person
+::edge	1.2.2	and	and	:op1	1.2.2.1		person
+::edge	1.2.2.2.1		continent	:wiki	1.2.2.2.1.1		"Europe"
+::edge	1.2.2	and	and	:op2	1.2.2.2		person
+::edge	1.2.2.1		person	:mod	1.2.2.1.2	nationals	nation
+::edge	1.2.2.2		person	:mod	1.2.2.2.1		continent
+::edge	1.2.1	and	and	:op1	1.2.1.1		person
+::edge	1.2.2.2.1		continent	:name	1.2.2.2.1.2		name
+::edge	1.2.2.2		person	:ARG0-of	1.2.2.2.2	attempting	attempt-01
+::edge	1.2.2.2.2	attempting	attempt-01	:ARG1	1.2.2.2.2.1	trade	trade-01
+::edge	1.1.2		name	:op1	1.1.2.1	lour	"Lour"
+::edge	1.2.2.1		person	:mod	1.2.2.1.1		continent
+::edge	1.1.2		name	:op2	1.1.2.2	Ramin	"Ramin"
+::edge	1.1.3	of	have-org-role-91	:ARG1	1.1.3.1		government-organization
+::edge	1.1.3	of	have-org-role-91	:ARG2	1.1.3.2	Secretary	secretary
+::edge	1.2.1.1.1	had	have-org-role-91	:ARG1	1.2.1.1.1.1		country
+::edge	1.2.1.1.1	had	have-org-role-91	:ARG2	1.2.1.1.1.2	officials	official
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	authority	"Authority"
+::edge	1.1.3.1.3		country	:wiki	1.1.3.1.3.1		"Cambodia"
+::edge	1.2.2.2.1.2		name	:op1	1.2.2.2.1.2.1	Europeans	"Europe"
+::edge	1.1.3.1.3		country	:name	1.1.3.1.3.2		name
+::edge	1.2.1.2.1.1		country	:name	1.2.1.2.1.1.2		name
+::edge	1.2.1.2.1.1		country	:wiki	1.2.1.2.1.1.1		"Vietnam"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	narcotics	"Narcotics"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	arrested	arrest-01	:ARG0	1.2.1	and	and
+::edge	1.2.1.2.1	had	have-org-role-91	:ARG1	1.2.1.2.1.1		country
+::edge	1.1		person	:ARG0-of	1.1.3	of	have-org-role-91
+::edge	1.2.1.2.1	had	have-org-role-91	:ARG2	1.2.1.2.1.2	officials	official
+::edge	1.2	arrested	arrest-01	:ARG1	1.2.2	and	and
+::edge	1.2.1.2		person	:ARG0-of	1.2.1.2.1	had	have-org-role-91
+::edge	1.2.1.1		person	:ARG0-of	1.2.1.1.1	had	have-org-role-91
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1.2.2.2.2.1	trade	trade-01	:destination	1.2.2.2.2.1.3	Vietnam	country
+::edge	1	said	say-01	:ARG1	1.2	arrested	arrest-01
+::edge	1.2.2.2.2.1	trade	trade-01	:path	1.2.2.2.2.1.2	Cambodia	country
+::edge	1.2.2.2.2.1	trade	trade-01	:ARG1	1.2.2.2.2.1.1	heroin	heroin
+::edge	1.1.3.1		government-organization	:wiki	1.1.3.1.1		-
+::edge	1.1		person	:wiki	1.1.1		-
+9	Ramin said the narcotics Authority will continue to combat and reduce illegal drug trafficking.
+9	Ramin said the narcotics Authority will continue to combat and reduce illegal drug trafficking .
+9	0-1.1.2.1 1-1 3-1.2.1.1.1.2.1 4-1.2.1.1.1.2.2 6-1.2 8-1.2.1.1 9-1.2.1 10-1.2.1.2 11-1.2.1.1.2.2 11-1.2.1.1.2.2.1 11-1.2.1.1.2.2.1.r 12-1.2.1.1.2.1 13-1.2.1.1.2
+::node	"Narcotics"	1.2.1.1.1.2.1	"Narcotics"	narcotics
+::node	"Authority"	1.2.1.1.1.2.2	"Authority"	Authority
+::node	"Ramin"	1.1.2.1	"Ramin"	Ramin
+::node	-	1.2.1.1.1.1	-	
+::node	n	1.2.1.1.1.2	name	
+::node	d	1.2.1.1.2.1	drug	drug
+::node	l	1.2.1.1.2.2	law	illegal
+::node	t	1.2.1.2.2	traffic-01	
+::node	n2	1.1.2	name	
+::node	a	1.2.1	and	and
+::node	s	1	say-01	said
+::node	t	1.2.1.1.2	traffic-01	trafficking
+::node	g	1.2.1.2.1	government-organization	
+::node	g	1.2.1.1.1	government-organization	
+::node	p	1.1	person	
+::node	c	1.2	continue-01	continue
+::node	-	1.2.1.1.2.2.1	-	illegal
+::node	r	1.2.1.2	reduce-01	reduce
+::node	c2	1.2.1.1	combat-01	combat
+::node	-	1.1.1	-	
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	narcotics	"Narcotics"
+::edge	1.2.1.1.1.2		name	:op2	1.2.1.1.1.2.2	Authority	"Authority"
+::edge	1.1.2		name	:op1	1.1.2.1	Ramin	"Ramin"
+::edge	1.2.1.1.1		government-organization	:wiki	1.2.1.1.1.1		-
+::edge	1.2.1.1.1		government-organization	:name	1.2.1.1.1.2		name
+::edge	1.2.1.1.2	trafficking	traffic-01	:ARG1	1.2.1.1.2.1	drug	drug
+::edge	1.2.1.1.2	trafficking	traffic-01	:mod	1.2.1.1.2.2	illegal	law
+::edge	1.2.1.2	reduce	reduce-01	:ARG1	1.2.1.2.2		traffic-01
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	continue	continue-01	:ARG1	1.2.1	and	and
+::edge	1.2.1.1	combat	combat-01	:ARG1	1.2.1.1.2	trafficking	traffic-01
+::edge	1.2.1.2	reduce	reduce-01	:ARG0	1.2.1.2.1		government-organization
+::edge	1.2.1.1	combat	combat-01	:ARG0	1.2.1.1.1		government-organization
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	continue	continue-01
+::edge	1.2.1.1.2.2	illegal	law	:polarity	1.2.1.1.2.2.1	illegal	-
+::edge	1.2.1	and	and	:op2	1.2.1.2	reduce	reduce-01
+::edge	1.2.1	and	and	:op1	1.2.1.1	combat	combat-01
+::edge	1.1		person	:wiki	1.1.1		-
+10	Drug consumption among Cambodian adolescents has increased.
+10	Drug consumption among Cambodian adolescents has increased .
+10	0-1.1.2 1-1.1 3-1.1.1.1.2.1 4-1.1.1 6-1
+::node	d	1.1.2	drug	Drug
+::node	i	1	increase-01	increased
+::node	"Cambodia"	1.1.1.1.2.1	"Cambodia"	Cambodian
+::node	c2	1.1.1.1	country	
+::node	c	1.1	consume-01	consumption
+::node	n	1.1.1.1.2	name	
+::node	"Cambodia"	1.1.1.1.1	"Cambodia"	
+::node	a	1.1.1	adolescent	adolescents
+::edge	1.1	consumption	consume-01	:ARG1	1.1.2	Drug	drug
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Cambodian	"Cambodia"
+::edge	1.1.1	adolescents	adolescent	:mod	1.1.1.1		country
+::edge	1	increased	increase-01	:ARG1	1.1	consumption	consume-01
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Cambodia"
+::edge	1.1	consumption	consume-01	:ARG0	1.1.1	adolescents	adolescent
+11	Ecstasy and other drugs are accessible at nightclubs in the capital at a low cost.
+11	Ecstasy and other drugs are accessible at nightclubs in the capital at a low cost .
+11	0-1.1.1 1-1.1 2-1.1.2.1 3-1.1.2 7-1.2 8-1.2.1.r 10-1.2.1.1.1 13-1.1.3.1 14-1.1.3
+::node	d	1.1.2	drug	drugs
+::node	c3	1.2.1	city	
+::node	a	1	access-01	
+::node	c2	1.1.3	cost-01	cost
+::node	o	1.1.2.1	other	other
+::node	c	1.2.1.1.1	capital	capital
+::node	a2	1.1	and	and
+::node	l	1.1.3.1	low	low
+::node	n	1.2	nightclub	nightclubs
+::node	h	1.2.1.1	have-org-role-91	
+::node	e	1.1.1	ecstasy	Ecstasy
+::edge	1.1	and	and	:op2	1.1.2	drugs	drug
+::edge	1.2	nightclubs	nightclub	:location	1.2.1		city
+::edge	1.1	and	and	:ARG1-of	1.1.3	cost	cost-01
+::edge	1.1.2	drugs	drug	:mod	1.1.2.1	other	other
+::edge	1.2.1.1		have-org-role-91	:ARG2	1.2.1.1.1	capital	capital
+::edge	1		access-01	:ARG1	1.1	and	and
+::edge	1.1.3	cost	cost-01	:ARG2	1.1.3.1	low	low
+::edge	1		access-01	:location	1.2	nightclubs	nightclub
+::edge	1.2.1		city	:ARG0-of	1.2.1.1		have-org-role-91
+::edge	1.1	and	and	:op1	1.1.1	Ecstasy	ecstasy
+12	Cambodia and Vietnam agreed to share intelligence, cooperate between agents and create border liaison offices in a two-day meeting to be held later this week.
+12	Cambodia and Vietnam agreed to share intelligence , cooperate between agents and create border liaison offices in a two @-@ day meeting to be held later this week .
+12	0-1.1.2.1 1-1.2 2-1.3.2.1 3-1 5-1.2.1 6-1.2.1.1 8-1.2.2 10-1.2.2.1 11-1.2 12-1.2.3 13-1.2.3.1.1.1 14-1.2.3.1.1 15-1.2.3.1 16-1.2.r 18-1.2.4.1.1 20-1.2.4.1.2 21-1.2.4 24-1.2.4.2 25-1.2.4.2.1 26-1.2.4.2.1.1.1 27-1.2.4.2.1.1
+::node	"Vietnam"	1.3.2.1	"Vietnam"	Vietnam
+::node	t2	1.2.4.1	temporal-quantity	
+::node	h	1.2.4.2	hold-04	held
+::node	a3	1.2.2.1	agent	agents
+::node	o	1.2.3.1	office	offices
+::node	i	1.2.1.1	intelligence	intelligence
+::node	w	1.2.4.2.1.1	week	week
+::node	"Cambodia"	1.1.2.1	"Cambodia"	Cambodia
+::node	l	1.2.3.1.1	liaison	liaison
+::node	n2	1.1.2	name	
+::node	s	1.2.1	share-01	share
+::node	t	1.2.4.2.1.1.1	this	this
+::node	a	1	agree-01	agreed
+::node	c3	1.2.2	cooperate-01	cooperate
+::node	"Vietnam"	1.3.1	"Vietnam"	
+::node	c4	1.2.3	create-01	create
+::node	b	1.2.3.1.1.1	border	border
+::node	n	1.3.2	name	
+::node	m	1.2.4	meet-03	meeting
+::node	c	1.1	country	
+::node	a2	1.2	and	and
+::node	c2	1.3	country	
+::node	2	1.2.4.1.1	2	two
+::node	d	1.2.4.1.2	day	day
+::node	l2	1.2.4.2.1	late	later
+::node	"Cambodia"	1.1.1	"Cambodia"	
+::edge	1.3.2		name	:op1	1.3.2.1	Vietnam	"Vietnam"
+::edge	1.2.4	meeting	meet-03	:duration	1.2.4.1		temporal-quantity
+::edge	1.2.4	meeting	meet-03	:ARG1-of	1.2.4.2	held	hold-04
+::edge	1.2.2	cooperate	cooperate-01	:ARG2	1.2.2.1	agents	agent
+::edge	1.2.3	create	create-01	:ARG1	1.2.3.1	offices	office
+::edge	1.2.1	share	share-01	:ARG1	1.2.1.1	intelligence	intelligence
+::edge	1.2.4.2.1	later	late	:op1	1.2.4.2.1.1	week	week
+::edge	1.1.2		name	:op1	1.1.2.1	Cambodia	"Cambodia"
+::edge	1.2.3.1	offices	office	:mod	1.2.3.1.1	liaison	liaison
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1	share	share-01
+::edge	1.2.4.2.1.1	week	week	:mod	1.2.4.2.1.1.1	this	this
+::edge	1.2	and	and	:op2	1.2.2	cooperate	cooperate-01
+::edge	1.3		country	:wiki	1.3.1		"Vietnam"
+::edge	1.2	and	and	:op2	1.2.3	create	create-01
+::edge	1.2.3.1.1	liaison	liaison	:mod	1.2.3.1.1.1	border	border
+::edge	1.3		country	:name	1.3.2		name
+::edge	1.2	and	and	:subevent-of	1.2.4	meeting	meet-03
+::edge	1	agreed	agree-01	:ARG0	1.1		country
+::edge	1	agreed	agree-01	:ARG1	1.2	and	and
+::edge	1	agreed	agree-01	:ARG2	1.3		country
+::edge	1.2.4.1		temporal-quantity	:quant	1.2.4.1.1	two	2
+::edge	1.2.4.1		temporal-quantity	:unit	1.2.4.1.2	day	day
+::edge	1.2.4.2	held	hold-04	:time	1.2.4.2.1	later	late
+::edge	1.1		country	:wiki	1.1.1		"Cambodia"
+13	Ramin stated that there is an agreement to construct cross-border liaison offices in both countries to combat current drug trafficking.
+13	Ramin stated that there is an agreement to construct cross @-@ border liaison offices in both countries to combat current drug trafficking .
+13	0-1.1.2.1 1-1 6-1.2 8-1.2.1.1 9-1.2.1.1.1.1.1 11-1.2.1.1.1.1.1 12-1.2.1.1.1.1 13-1.2.1.1.1 14-1.2.1.1.2.r 15-1.2.1.1.2.1 16-1.2.1.1.2 18-1.2.1.2 19-1.2.1.2.1.1 20-1.2.1.2.1.2 21-1.2.1.2.1
+::node	c2	1.2.1.1.1.1.1	cross-border	border
+::node	"Ramin"	1.1.2.1	"Ramin"	Ramin
+::node	l	1.2.1.1.1.1	liaison	liaison
+::node	b	1.2.1.1.2.1	both	both
+::node	n	1.1.2	name	
+::node	h	1.2.1	have-purpose-91	
+::node	c5	1.2.1.2.1.1	current	current
+::node	s	1	state-01	stated
+::node	d	1.2.1.2.1.2	drug	drug
+::node	c3	1.2.1.1.2	country	countries
+::node	t	1.2.1.2.1	traffic-01	trafficking
+::node	o	1.2.1.1.1	office	offices
+::node	p	1.1	person	
+::node	a	1.2	agree-01	agreement
+::node	c4	1.2.1.2	combat-01	combat
+::node	c	1.2.1.1	construct-01	construct
+::node	-	1.1.1	-	
+::edge	1.2.1.1.1.1	liaison	liaison	:mod	1.2.1.1.1.1.1	border	cross-border
+::edge	1.1.2		name	:op1	1.1.2.1	Ramin	"Ramin"
+::edge	1.2.1.1.1	offices	office	:mod	1.2.1.1.1.1	liaison	liaison
+::edge	1.2.1.1.2	countries	country	:mod	1.2.1.1.2.1	both	both
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	agreement	agree-01	:ARG1	1.2.1		have-purpose-91
+::edge	1.2.1.2.1	trafficking	traffic-01	:time	1.2.1.2.1.1	current	current
+::edge	1.2.1.2.1	trafficking	traffic-01	:mod	1.2.1.2.1.2	drug	drug
+::edge	1.2.1.1	construct	construct-01	:location	1.2.1.1.2	countries	country
+::edge	1.2.1.2	combat	combat-01	:ARG1	1.2.1.2.1	trafficking	traffic-01
+::edge	1.2.1.1	construct	construct-01	:ARG1	1.2.1.1.1	offices	office
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	agreement	agree-01
+::edge	1.2.1		have-purpose-91	:ARG2	1.2.1.2	combat	combat-01
+::edge	1.2.1		have-purpose-91	:ARG1	1.2.1.1	construct	construct-01
+::edge	1.1		person	:wiki	1.1.1		-
+14	The agreement includes exchanges of experience in organizing treatment and rehabilitation for drug addicts.
+14	The agreement includes exchanges of experience in organizing treatment and rehabilitation for drug addicts .
+14	1-1.2 2-1 3-1.1 4-1.1.1.r 5-1.1.1 6-1.1.1.1.r 7-1.1.1.1 8-1.1.1.1.1.1 9-1.1.1.1.1 10-1.1.1.1.1.2 11-1.1.1.1.1.1.1.r 12-1.1.1.1.1.1.1.1.1 13-1.1.1.1.1.1.1 13-1.1.1.1.1.1.1.1 13-1.1.1.1.1.1.1.1.r
+::node	t	1.1.1.1.1.1	treat-03	treatment
+::node	i	1	include-01	includes
+::node	r	1.1.1.1.1.2	rehabilitate-01	rehabilitation
+::node	o	1.1.1.1	organize-01	organizing
+::node	p	1.1.1.1.1.1.1	person	addicts
+::node	e	1.1	exchange-01	exchanges
+::node	p	1.1.1.1.1.2.1	person	
+::node	a	1.2	agree-01	agreement
+::node	a2	1.1.1.1.1	and	and
+::node	d	1.1.1.1.1.1.1.1.1	drug	drug
+::node	e2	1.1.1	experience-01	experience
+::node	a3	1.1.1.1.1.1.1.1	addict-01	addicts
+::edge	1.1.1.1.1	and	and	:op1	1.1.1.1.1.1	treatment	treat-03
+::edge	1.1.1.1.1	and	and	:op2	1.1.1.1.1.2	rehabilitation	rehabilitate-01
+::edge	1.1.1	experience	experience-01	:ARG1	1.1.1.1	organizing	organize-01
+::edge	1.1.1.1.1.1	treatment	treat-03	:ARG1	1.1.1.1.1.1.1	addicts	person
+::edge	1	includes	include-01	:ARG1	1.1	exchanges	exchange-01
+::edge	1.1.1.1.1.2	rehabilitation	rehabilitate-01	:ARG1	1.1.1.1.1.2.1		person
+::edge	1	includes	include-01	:ARG2	1.2	agreement	agree-01
+::edge	1.1.1.1	organizing	organize-01	:ARG1	1.1.1.1.1	and	and
+::edge	1.1.1.1.1.1.1.1	addicts	addict-01	:ARG1	1.1.1.1.1.1.1.1.1	drug	drug
+::edge	1.1	exchanges	exchange-01	:ARG1	1.1.1	experience	experience-01
+::edge	1.1.1.1.1.1.1	addicts	person	:ARG0-of	1.1.1.1.1.1.1.1	addicts	addict-01
+15	It would also be used to combat people smuggling between Cambodia and Vietnam.
+15	It would also be used to combat people smuggling between Cambodia and Vietnam .
+15	0-1.1 2-1.3 4-1 6-1.2 7-1.2.1.1 8-1.2.1 10-1.2.1.2.2.1 12-1.2.1.3.2.1
+::node	"Vietnam"	1.2.1.3.2.1	"Vietnam"	Vietnam
+::node	n	1.2.1.3.2	name	
+::node	n2	1.2.1.2.2	name	
+::node	"Vietnam"	1.2.1.3.1	"Vietnam"	
+::node	s	1.2.1	smuggle-01	smuggling
+::node	u	1	use-01	used
+::node	"Cambodia"	1.2.1.2.2.1	"Cambodia"	Cambodia
+::node	"Cambodia"	1.2.1.2.1	"Cambodia"	
+::node	i	1.1	it	It
+::node	c	1.2	combat-01	combat
+::node	a	1.3	also	also
+::node	c2	1.2.1.2	country	
+::node	c3	1.2.1.3	country	
+::node	p	1.2.1.1	person	people
+::edge	1.2.1.3.2		name	:op1	1.2.1.3.2.1	Vietnam	"Vietnam"
+::edge	1.2.1.3		country	:name	1.2.1.3.2		name
+::edge	1.2.1.2		country	:name	1.2.1.2.2		name
+::edge	1.2.1.3		country	:wiki	1.2.1.3.1		"Vietnam"
+::edge	1.2	combat	combat-01	:ARG1	1.2.1	smuggling	smuggle-01
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	Cambodia	"Cambodia"
+::edge	1.2.1.2		country	:wiki	1.2.1.2.1		"Cambodia"
+::edge	1	used	use-01	:ARG1	1.1	It	it
+::edge	1	used	use-01	:ARG2	1.2	combat	combat-01
+::edge	1	used	use-01	:mod	1.3	also	also
+::edge	1.2.1	smuggling	smuggle-01	:ARG2	1.2.1.2		country
+::edge	1.2.1	smuggling	smuggle-01	:ARG3	1.2.1.3		country
+::edge	1.2.1	smuggling	smuggle-01	:ARG1	1.2.1.1	people	person
+16	Vietnamese police detained two women on suspicion of human trafficking and smuggling Vietnamese virgins to Cambodian brothels.
+16	Vietnamese police detained two women on suspicion of human trafficking and smuggling Vietnamese virgins to Cambodian brothels .
+16	0-1.1.1.2.1 1-1.1 2-1 3-1.2.1 4-1.2 5-1.3.r 6-1.3 7-1.3.1.r 8-1.3.1.1.1 9-1.3.1.1 10-1.3.1 11-1.3.1.2 12-1.3.1.2.1.1 13-1.3.1.2.1 14-1.3.1.2.2.r 15-1.3.1.2.2.1.2.1 16-1.3.1.2.2
+::node	"Cambodia"	1.3.1.2.2.1.2.1	"Cambodia"	Cambodian
+::node	"Vietnam"	1.1.1.1	"Vietnam"	
+::node	n2	1.1.1.2	name	
+::node	t	1.3.1.1	traffic-01	trafficking
+::node	s2	1.3.1.2	smuggle-01	smuggling
+::node	h	1.3.1.1.1	human	human
+::node	2	1.2.1	2	two
+::node	d	1	detain-01	detained
+::node	a	1.3.1	and	and
+::node	c2	1.3.1.2.2.1	country	
+::node	p	1.1	police	police
+::node	v	1.3.1.2.1	virgin	virgins
+::node	c	1.3.1.2.1.1	country	Vietnamese
+::node	w	1.2	woman	women
+::node	b	1.3.1.2.2	brothel	brothels
+::node	n	1.3.1.2.2.1.2	name	
+::node	s	1.3	suspect-01	suspicion
+::node	"Vietnam"	1.1.1.2.1	"Vietnam"	Vietnamese
+::node	"Cambodia"	1.3.1.2.2.1.1	"Cambodia"	
+::node	c	1.1.1	country	
+::edge	1.3.1.2.2.1.2		name	:op1	1.3.1.2.2.1.2.1	Cambodian	"Cambodia"
+::edge	1.1.1		country	:wiki	1.1.1.1		"Vietnam"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.3.1	and	and	:op1	1.3.1.1	trafficking	traffic-01
+::edge	1.3.1	and	and	:op2	1.3.1.2	smuggling	smuggle-01
+::edge	1.3.1.1	trafficking	traffic-01	:ARG1	1.3.1.1.1	human	human
+::edge	1.2	women	woman	:quant	1.2.1	two	2
+::edge	1.3	suspicion	suspect-01	:ARG1	1.3.1	and	and
+::edge	1.3.1.2.2	brothels	brothel	:mod	1.3.1.2.2.1		country
+::edge	1	detained	detain-01	:ARG0	1.1	police	police
+::edge	1.3.1.2	smuggling	smuggle-01	:ARG1	1.3.1.2.1	virgins	virgin
+::edge	1.3.1.2.1	virgins	virgin	:mod	1.3.1.2.1.1	Vietnamese	country
+::edge	1	detained	detain-01	:ARG1	1.2	women	woman
+::edge	1.3.1.2	smuggling	smuggle-01	:ARG3	1.3.1.2.2	brothels	brothel
+::edge	1.3.1.2.2.1		country	:name	1.3.1.2.2.1.2		name
+::edge	1	detained	detain-01	:ARG2	1.3	suspicion	suspect-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Vietnamese	"Vietnam"
+::edge	1.3.1.2.2.1		country	:wiki	1.3.1.2.2.1.1		"Cambodia"
+::edge	1.1	police	police	:mod	1.1.1		country
+17	They were less than 350 dollars each.
+17	They were less than 350 dollars each .
+17	0-1.1 2-1.2 3-1.2 4-1.2.1.1 5-1.2.1.2 6-1.3
+::node	m	1.2.1	monetary-quantity	
+::node	c	1	cost-01	
+::node	t	1.1	they	They
+::node	l	1.2	less-than	than
+::node	e	1.3	each	each
+::node	d	1.2.1.2	dollar	dollars
+::node	350	1.2.1.1	350	350
+::edge	1.2	than	less-than	:op1	1.2.1		monetary-quantity
+::edge	1		cost-01	:ARG1	1.1	They	they
+::edge	1		cost-01	:ARG2	1.2	than	less-than
+::edge	1		cost-01	:mod	1.3	each	each
+::edge	1.2.1		monetary-quantity	:unit	1.2.1.2	dollars	dollar
+::edge	1.2.1		monetary-quantity	:quant	1.2.1.1	350	350
+18	Cambodia has for many years been used as a transit point for heroin and opium trafficking.
+18	Cambodia has for many years been used as a transit point for heroin and opium trafficking .
+18	0-1.1.2.1 3-1.3.1 4-1.3 6-1 7-1.2.r 9-1.2.1 10-1.2 11-1.2.2.r 12-1.2.2.1.1 13-1.2.2.1 14-1.2.2.1.2 15-1.2.2
+::node	"Cambodia"	1.1.2.1	"Cambodia"	Cambodia
+::node	h	1.2.2.1.1	heroin	heroin
+::node	n	1.1.2	name	
+::node	t	1.2.1	transit	transit
+::node	u	1	use-01	used
+::node	t2	1.2.2	traffic-01	trafficking
+::node	m	1.3.1	many	many
+::node	c	1.1	country	
+::node	p	1.2	point	point
+::node	y	1.3	year	years
+::node	a	1.2.2.1	and	and
+::node	o	1.2.2.1.2	opium	opium
+::node	"Cambodia"	1.1.1	"Cambodia"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	point	point	:mod	1.2.1	transit	transit
+::edge	1.2	point	point	:purpose	1.2.2	trafficking	traffic-01
+::edge	1.3	years	year	:quant	1.3.1	many	many
+::edge	1.1.2		name	:op1	1.1.2.1	Cambodia	"Cambodia"
+::edge	1.2.2.1	and	and	:op1	1.2.2.1.1	heroin	heroin
+::edge	1	used	use-01	:ARG1	1.1		country
+::edge	1	used	use-01	:ARG2	1.2	point	point
+::edge	1	used	use-01	:duration	1.3	years	year
+::edge	1.2.2	trafficking	traffic-01	:ARG1	1.2.2.1	and	and
+::edge	1.2.2.1	and	and	:op2	1.2.2.1.2	opium	opium
+::edge	1.1		country	:wiki	1.1.1		"Cambodia"
+19	The Government maintains it has adopted strict policies to fight the illegal trading of narcotics.
+19	The Government maintains it has adopted strict policies to fight the illegal trading of narcotics .
+19	1-1.1 1-1.1.1 1-1.1.1.r 2-1 3-1.2.1 5-1.2 6-1.2.2.1 7-1.2.2 9-1.2.2.2 11-1.2.2.2.1.2 11-1.2.2.2.1.2.1 11-1.2.2.2.1.2.1.r 12-1.2.2.2.1 13-1.2.2.2.1.1.r 14-1.2.2.2.1.1
+::node	g2	1.2.1	government-organization	it
+::node	m	1	maintain-01	maintains
+::node	p	1.2.2	policy	policies
+::node	g2	1.1	government-organization	Government
+::node	a	1.2	adopt-01	adopted
+::node	-	1.2.2.2.1.2.1	-	illegal
+::node	s	1.2.2.1	strict	strict
+::node	n	1.2.2.2.1.1	narcotics	narcotics
+::node	f	1.2.2.2	fight-01	fight
+::node	t	1.2.2.2.1	trade-01	trading
+::node	l	1.2.2.2.1.2	law	illegal
+::node	g3	1.1.1	govern-01	Government
+::edge	1.2	adopted	adopt-01	:ARG0	1.2.1	it	government-organization
+::edge	1.2	adopted	adopt-01	:ARG1	1.2.2	policies	policy
+::edge	1	maintains	maintain-01	:ARG0	1.1	Government	government-organization
+::edge	1	maintains	maintain-01	:ARG1	1.2	adopted	adopt-01
+::edge	1.2.2.2.1.2	illegal	law	:polarity	1.2.2.2.1.2.1	illegal	-
+::edge	1.2.2	policies	policy	:mod	1.2.2.1	strict	strict
+::edge	1.2.2.2.1	trading	trade-01	:ARG1	1.2.2.2.1.1	narcotics	narcotics
+::edge	1.2.2	policies	policy	:purpose	1.2.2.2	fight	fight-01
+::edge	1.2.2.2	fight	fight-01	:ARG1	1.2.2.2.1	trading	trade-01
+::edge	1.2.2.2.1	trading	trade-01	:mod	1.2.2.2.1.2	illegal	law
+::edge	1.1	Government	government-organization	:ARG0-of	1.1.1	Government	govern-01

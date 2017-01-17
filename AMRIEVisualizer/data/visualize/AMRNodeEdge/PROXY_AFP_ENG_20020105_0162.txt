@@ -1,0 +1,572 @@
+1	2002-01-05
+1	2002 @-@ 01 @-@ 05
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	1	1.2	1	01
+::node	5	1.3	5	05
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	01	1
+::edge	1		date-entity	:day	1.3	05	5
+2	Saudi Arabia (SA)
+2	Saudi Arabia ( SA )
+2	0-1.2.1 1-1.2.2
+::node	"Saudi"	1.2.1	"Saudi"	Saudi
+::node	c	1	country	
+::node	"Arabia"	1.2.2	"Arabia"	Arabia
+::node	"Saudi_Arabia"	1.1	"Saudi_Arabia"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	Saudi	"Saudi"
+::edge	1.2		name	:op2	1.2.2	Arabia	"Arabia"
+::edge	1		country	:wiki	1.1		"Saudi_Arabia"
+::edge	1		country	:name	1.2		name
+3	International; military; terrorism
+3	International ; military ; terrorism
+3	0-1.1 2-1.2 4-1.3
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	m	1.2	military	military
+::node	t	1.3	terrorism	terrorism
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	military	military
+::edge	1		and	:op3	1.3	terrorism	terrorism
+4	The Riyadh-based Naif Arab Academy for Security Sciences said in a statement that it was running a two-week workshop for 50 anti-terrorism experts.
+4	The Riyadh @-@ based Naif Arab Academy for Security Sciences said in a statement that it was running a two @-@ week workshop for 50 anti @-@ terrorism experts .
+4	1-1.1.3.1.2.1 3-1.1.3 4-1.1.2.1 5-1.1.2.2 6-1.1.2.3 7-1.1.2.4 8-1.1.2.5 9-1.1.2.6 10-1 11-1.3.r 13-1.3 14-1.2.r 15-1.2.1 17-1.2 19-1.2.3.1 21-1.2.3.2 22-1.2.2 23-1.2.2.1.r 24-1.2.2.1.1 25-1.2.2.1.2.1 27-1.2.2.1.2.1.1 28-1.2.2.1.2
+::node	n2	1.1.3.1.2	name	
+::node	c2	1.2.2.1.2.1	counter-01	anti
+::node	t2	1.2.2.1.2.1.1	terrorism	terrorism
+::node	"Sciences"	1.1.2.6	"Sciences"	Sciences
+::node	w2	1.2.3.2	week	week
+::node	p	1.2.2.1	person	
+::node	2	1.2.3.1	2	two
+::node	e	1.2.2.1.2	expert-41	experts
+::node	"Naif"	1.1.2.1	"Naif"	Naif
+::node	50	1.2.2.1.1	50	50
+::node	"Arab"	1.1.2.2	"Arab"	Arab
+::node	c	1.1.3.1	city	
+::node	"Academy"	1.1.2.3	"Academy"	Academy
+::node	"for"	1.1.2.4	"for"	for
+::node	"Security"	1.1.2.5	"Security"	Security
+::node	"Riyadh"	1.1.3.1.2.1	"Riyadh"	Riyadh
+::node	n	1.1.2	name	
+::node	u	1.2.1	university	it
+::node	s	1	say-01	said
+::node	b	1.1.3	base-01	based
+::node	w	1.2.2	workshop	workshop
+::node	t	1.2.3	temporal-quantity	
+::node	u	1.1	university	
+::node	r	1.2	run-01	running
+::node	s2	1.3	statement	statement
+::node	"Riyadh"	1.1.3.1.1	"Riyadh"	
+::node	-	1.1.1	-	
+::edge	1.1.3.1		city	:name	1.1.3.1.2		name
+::edge	1.2.2.1.2	experts	expert-41	:ARG2	1.2.2.1.2.1	anti	counter-01
+::edge	1.2.2.1.2.1	anti	counter-01	:ARG1	1.2.2.1.2.1.1	terrorism	terrorism
+::edge	1.1.2		name	:op6	1.1.2.6	Sciences	"Sciences"
+::edge	1.2.3		temporal-quantity	:unit	1.2.3.2	week	week
+::edge	1.2.2	workshop	workshop	:beneficiary	1.2.2.1		person
+::edge	1.2.3		temporal-quantity	:quant	1.2.3.1	two	2
+::edge	1.2.2.1		person	:ARG1-of	1.2.2.1.2	experts	expert-41
+::edge	1.1.2		name	:op1	1.1.2.1	Naif	"Naif"
+::edge	1.2.2.1		person	:quant	1.2.2.1.1	50	50
+::edge	1.1.2		name	:op2	1.1.2.2	Arab	"Arab"
+::edge	1.1.3	based	base-01	:location	1.1.3.1		city
+::edge	1.1.2		name	:op3	1.1.2.3	Academy	"Academy"
+::edge	1.1.2		name	:op4	1.1.2.4	for	"for"
+::edge	1.1.2		name	:op5	1.1.2.5	Security	"Security"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Riyadh	"Riyadh"
+::edge	1.1		university	:name	1.1.2		name
+::edge	1.2	running	run-01	:ARG0	1.2.1	it	university
+::edge	1.1		university	:ARG1-of	1.1.3	based	base-01
+::edge	1.2	running	run-01	:ARG1	1.2.2	workshop	workshop
+::edge	1.2	running	run-01	:duration	1.2.3		temporal-quantity
+::edge	1	said	say-01	:ARG0	1.1		university
+::edge	1	said	say-01	:ARG1	1.2	running	run-01
+::edge	1	said	say-01	:medium	1.3	statement	statement
+::edge	1.1.3.1		city	:wiki	1.1.3.1.1		"Riyadh"
+::edge	1.1		university	:wiki	1.1.1		-
+5	On 5 January 2002 pan-Arab anti-terror academy Naif Arab Academy for Security Sciences reopened for the first time since the September 2001 terror attacks on the US.
+5	On 5 January 2002 pan @-@ Arab anti @-@ terror academy Naif Arab Academy for Security Sciences reopened for the first time since the September 2001 terror attacks on the US .
+5	1-1.2.3 2-1.2.2 2-1.2.2.r 3-1.2.1 4-1.1.4.3 6-1.1.4.2.1 7-1.1.3 9-1.1.3.1 11-1.1.2.1 12-1.1.2.2 13-1.1.2.3 14-1.1.2.4 15-1.1.2.5 16-1.1.2.6 17-1 18-1.3.r 20-1.3 21-1.2.r 21-1.3.1.1.2.r 21-1.3.1.r 22-1.1.3.r 22-1.3.1 24-1.3.1.1.2.2 24-1.3.1.1.2.2.r 25-1.3.1.1.2.1 26-1.1.3.1 27-1.3.1.1 28-1.3.1.1.1.r 30-1.3.1.1.1.2.1
+::node	a3	1.3.1.1	attack-01	attacks
+::node	c	1.3.1.1.1	country	
+::node	"Arab"	1.1.4.2.1	"Arab"	Arab
+::node	"Sciences"	1.1.2.6	"Sciences"	Sciences
+::node	"Naif"	1.1.2.1	"Naif"	Naif
+::node	"Arab"	1.1.2.2	"Arab"	Arab
+::node	t	1.1.3.1	terror	terror
+::node	"Academy"	1.1.2.3	"Academy"	Academy
+::node	"Arabs"	1.1.4.1	"Arabs"	
+::node	"for"	1.1.2.4	"for"	for
+::node	n3	1.1.4.2	name	
+::node	"Security"	1.1.2.5	"Security"	Security
+::node	p	1.1.4.3	pan	pan
+::node	n2	1.3.1.1.1.2	name	
+::node	2001	1.3.1.1.2.1	2001	2001
+::node	"United_States"	1.3.1.1.1.1	"United_States"	
+::node	9	1.3.1.1.2.2	9	September
+::node	"US"	1.3.1.1.1.2.1	"US"	US
+::node	n	1.1.2	name	
+::node	2002	1.2.1	2002	2002
+::node	r	1	reopen-01	reopened
+::node	o	1.1.3	oppose-01	anti
+::node	1	1.2.2	1	January
+::node	s	1.3.1	since	since
+::node	e	1.1.4	ethnic-group	
+::node	5	1.2.3	5	5
+::node	u	1.1	university	
+::node	d2	1.3.1.1.2	date-entity	
+::node	d	1.2	date-entity	
+::node	f	1.3	first	first
+::node	-	1.1.1	-	
+::edge	1.3.1	since	since	:op1	1.3.1.1	attacks	attack-01
+::edge	1.3.1.1	attacks	attack-01	:ARG1	1.3.1.1.1		country
+::edge	1.1.4.2		name	:op1	1.1.4.2.1	Arab	"Arab"
+::edge	1.1.2		name	:op6	1.1.2.6	Sciences	"Sciences"
+::edge	1.1.2		name	:op1	1.1.2.1	Naif	"Naif"
+::edge	1.1.2		name	:op2	1.1.2.2	Arab	"Arab"
+::edge	1.1.3	anti	oppose-01	:ARG1	1.1.3.1	terror	terror
+::edge	1.1.2		name	:op3	1.1.2.3	Academy	"Academy"
+::edge	1.1.4		ethnic-group	:wiki	1.1.4.1		"Arabs"
+::edge	1.1.2		name	:op4	1.1.2.4	for	"for"
+::edge	1.1.4		ethnic-group	:name	1.1.4.2		name
+::edge	1.1.2		name	:op5	1.1.2.5	Security	"Security"
+::edge	1.1.4		ethnic-group	:mod	1.1.4.3	pan	pan
+::edge	1.3.1.1.1		country	:name	1.3.1.1.1.2		name
+::edge	1.3.1.1.2		date-entity	:year	1.3.1.1.2.1	2001	2001
+::edge	1.3.1.1.1		country	:wiki	1.3.1.1.1.1		"United_States"
+::edge	1.3.1.1.2		date-entity	:month	1.3.1.1.2.2	September	9
+::edge	1.3.1.1.1.2		name	:op1	1.3.1.1.1.2.1	US	"US"
+::edge	1.1		university	:name	1.1.2		name
+::edge	1.2		date-entity	:year	1.2.1	2002	2002
+::edge	1.1		university	:purpose	1.1.3	anti	oppose-01
+::edge	1.2		date-entity	:month	1.2.2	January	1
+::edge	1.3	first	first	:time	1.3.1	since	since
+::edge	1.1		university	:mod	1.1.4		ethnic-group
+::edge	1.2		date-entity	:day	1.2.3	5	5
+::edge	1	reopened	reopen-01	:ARG1	1.1		university
+::edge	1.3.1.1	attacks	attack-01	:time	1.3.1.1.2		date-entity
+::edge	1	reopened	reopen-01	:time	1.2		date-entity
+::edge	1	reopened	reopen-01	:frequency	1.3	first	first
+::edge	1.1		university	:wiki	1.1.1		-
+6	Naif Arab Academy for Security Sciences is based in Riyadh.
+6	Naif Arab Academy for Security Sciences is based in Riyadh .
+6	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 3-1.1.2.4 4-1.1.2.5 5-1.1.2.6 7-1 8-1.2.r 9-1.2.2.1
+::node	"Naif"	1.1.2.1	"Naif"	Naif
+::node	"Arab"	1.1.2.2	"Arab"	Arab
+::node	"Academy"	1.1.2.3	"Academy"	Academy
+::node	"for"	1.1.2.4	"for"	for
+::node	"Security"	1.1.2.5	"Security"	Security
+::node	n	1.1.2	name	
+::node	"Riyadh"	1.2.1	"Riyadh"	
+::node	b	1	base-01	based
+::node	n2	1.2.2	name	
+::node	u	1.1	university	
+::node	c	1.2	city	
+::node	"Sciences"	1.1.2.6	"Sciences"	Sciences
+::node	"Riyadh"	1.2.2.1	"Riyadh"	Riyadh
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Naif	"Naif"
+::edge	1.1.2		name	:op2	1.1.2.2	Arab	"Arab"
+::edge	1.1.2		name	:op3	1.1.2.3	Academy	"Academy"
+::edge	1.1.2		name	:op4	1.1.2.4	for	"for"
+::edge	1.1.2		name	:op5	1.1.2.5	Security	"Security"
+::edge	1.1		university	:name	1.1.2		name
+::edge	1.2		city	:wiki	1.2.1		"Riyadh"
+::edge	1.2		city	:name	1.2.2		name
+::edge	1	based	base-01	:ARG1	1.1		university
+::edge	1	based	base-01	:location	1.2		city
+::edge	1.1.2		name	:op6	1.1.2.6	Sciences	"Sciences"
+::edge	1.2.2		name	:op1	1.2.2.1	Riyadh	"Riyadh"
+::edge	1.1		university	:wiki	1.1.1		-
+7	Naif Arab Academy for Security Sciences is run by an Arab Interior Ministers' Council.
+7	Naif Arab Academy for Security Sciences is run by an Arab Interior Ministers ' Council .
+7	0-1.2.2.1 1-1.2.2.2 2-1.2.2.3 3-1.2.2.4 4-1.2.2.5 5-1.2.2.6 7-1 8-1.1.r 10-1.1.2.1 11-1.1.2.2 12-1.1.2.3 13-1.1.2.3 14-1.1.2.4
+::node	"Arab"	1.1.2.1	"Arab"	Arab
+::node	"Interior"	1.1.2.2	"Interior"	Interior
+::node	"Ministers'"	1.1.2.3	"Ministers'"	'
+::node	"Council"	1.1.2.4	"Council"	Council
+::node	"Security"	1.2.2.5	"Security"	Security
+::node	"Sciences"	1.2.2.6	"Sciences"	Sciences
+::node	n	1.1.2	name	
+::node	-	1.2.1	-	
+::node	r	1	run-01	run
+::node	n2	1.2.2	name	
+::node	o	1.1	organization	
+::node	u	1.2	university	
+::node	"Academy"	1.2.2.3	"Academy"	Academy
+::node	"for"	1.2.2.4	"for"	for
+::node	"Naif"	1.2.2.1	"Naif"	Naif
+::node	"Arab"	1.2.2.2	"Arab"	Arab
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Arab	"Arab"
+::edge	1.1.2		name	:op2	1.1.2.2	Interior	"Interior"
+::edge	1.1.2		name	:op3	1.1.2.3	'	"Ministers'"
+::edge	1.1.2		name	:op4	1.1.2.4	Council	"Council"
+::edge	1.2.2		name	:op5	1.2.2.5	Security	"Security"
+::edge	1.2.2		name	:op6	1.2.2.6	Sciences	"Sciences"
+::edge	1.1		organization	:name	1.1.2		name
+::edge	1.2		university	:wiki	1.2.1		-
+::edge	1.2		university	:name	1.2.2		name
+::edge	1	run	run-01	:ARG0	1.1		organization
+::edge	1	run	run-01	:ARG1	1.2		university
+::edge	1.2.2		name	:op3	1.2.2.3	Academy	"Academy"
+::edge	1.2.2		name	:op4	1.2.2.4	for	"for"
+::edge	1.2.2		name	:op1	1.2.2.1	Naif	"Naif"
+::edge	1.2.2		name	:op2	1.2.2.2	Arab	"Arab"
+::edge	1.1		organization	:wiki	1.1.1		-
+8	In a statement Naif Arab Academy for Security Sciences announced --
+8	In a statement Naif Arab Academy for Security Sciences announced --
+8	2-1.2 2-1.2.1 2-1.2.1.r 3-1.1.2.1 4-1.1.2.2 5-1.1.2.3 6-1.1.2.4 7-1.1.2.5 8-1.1.2.6 9-1
+::node	"Naif"	1.1.2.1	"Naif"	Naif
+::node	"Arab"	1.1.2.2	"Arab"	Arab
+::node	"Academy"	1.1.2.3	"Academy"	Academy
+::node	"for"	1.1.2.4	"for"	for
+::node	"Security"	1.1.2.5	"Security"	Security
+::node	n	1.1.2	name	
+::node	s	1.2.1	state-01	statement
+::node	a	1	announce-01	announced
+::node	u	1.1	university	
+::node	t	1.2	thing	statement
+::node	"Sciences"	1.1.2.6	"Sciences"	Sciences
+::node	u	1.2.1.1	university	
+::node	-	1.1.1	-	
+::edge	1.1		university	:name	1.1.2		name
+::edge	1.2	statement	thing	:ARG1-of	1.2.1	statement	state-01
+::edge	1.1.2		name	:op1	1.1.2.1	Naif	"Naif"
+::edge	1	announced	announce-01	:ARG0	1.1		university
+::edge	1.1.2		name	:op2	1.1.2.2	Arab	"Arab"
+::edge	1.1.2		name	:op3	1.1.2.3	Academy	"Academy"
+::edge	1	announced	announce-01	:manner	1.2	statement	thing
+::edge	1.1.2		name	:op4	1.1.2.4	for	"for"
+::edge	1.1.2		name	:op5	1.1.2.5	Security	"Security"
+::edge	1.1.2		name	:op6	1.1.2.6	Sciences	"Sciences"
+::edge	1.2.1	statement	state-01	:ARG0	1.2.1.1		university
+::edge	1.1		university	:wiki	1.1.1		-
+9	It will sponsor a 2-week workshop for 50 anti-terrorism experts.
+9	It will sponsor a 2 @-@ week workshop for 50 anti @-@ terrorism experts .
+9	0-1.1 2-1 4-1.2.2.1 6-1.2.2.2 7-1.2 8-1.2.1.r 9-1.2.1.1 10-1.2.1.2.1 12-1.2.1.2.1.1 13-1.2.1.2
+::node	p	1.2.1	person	
+::node	t2	1.2.1.2.1.1	terrorism	terrorism
+::node	s	1	sponsor-01	sponsor
+::node	t	1.2.2	temporal-quantity	
+::node	o	1.2.1.2.1	oppose-01	anti
+::node	i	1.1	it	It
+::node	w	1.2	workshop	workshop
+::node	e	1.2.1.2	expert-41	experts
+::node	2	1.2.2.1	2	2
+::node	w2	1.2.2.2	week	week
+::node	50	1.2.1.1	50	50
+::edge	1.2	workshop	workshop	:beneficiary	1.2.1		person
+::edge	1.2.1.2.1	anti	oppose-01	:ARG1	1.2.1.2.1.1	terrorism	terrorism
+::edge	1.2	workshop	workshop	:duration	1.2.2		temporal-quantity
+::edge	1.2.1.2	experts	expert-41	:ARG2	1.2.1.2.1	anti	oppose-01
+::edge	1	sponsor	sponsor-01	:ARG0	1.1	It	it
+::edge	1	sponsor	sponsor-01	:ARG1	1.2	workshop	workshop
+::edge	1.2.1		person	:ARG1-of	1.2.1.2	experts	expert-41
+::edge	1.2.2		temporal-quantity	:quant	1.2.2.1	2	2
+::edge	1.2.2		temporal-quantity	:unit	1.2.2.2	week	week
+::edge	1.2.1		person	:quant	1.2.1.1	50	50
+10	The workshop's anti-terrorism experts are from 11 Arab countries including Algeria, Bahrain, Egypt, Jordan, Lebanon, Mauritania, Morocco, Saudi Arabia, Sudan, Syria and Yemen.
+10	The workshop 's anti @-@ terrorism experts are from 11 Arab countries including Algeria , Bahrain , Egypt , Jordan , Lebanon , Mauritania , Morocco , Saudi Arabia , Sudan , Syria and Yemen .
+10	1-1.2.2.2 3-1.2.2.1.1 5-1.2.2.1.1.1 6-1.2.2.1 8-1.2.2.r 9-1.2.1 10-1.2.3.2.1 11-1.2 12-1 13-1.1.1.2.1 15-1.1.2.2.1 17-1.1.3.2.1 19-1.1.4.2.1 21-1.1.5.2.1 23-1.1.6.2.1 25-1.1.7.2.1 27-1.1.8.2.1 28-1.1.8.2.2 30-1.1.9.2.1 32-1.1.10.2.1 33-1.1 34-1.1.11.2.1
+::node	"Egypt"	1.1.3.2.1	"Egypt"	Egypt
+::node	t	1.2.2.1.1.1	terrorism	terrorism
+::node	"Bahrain"	1.1.2.2.1	"Bahrain"	Bahrain
+::node	"Syria"	1.1.10.2.1	"Syria"	Syria
+::node	"Jordan"	1.1.4.2.1	"Jordan"	Jordan
+::node	n6	1.1.6.2	name	
+::node	n12	1.2.3.2	name	
+::node	"Algeria"	1.1.1.2.1	"Algeria"	Algeria
+::node	"Saudi_Arabia"	1.1.8.1	"Saudi_Arabia"	
+::node	"Yemen"	1.1.11.2.1	"Yemen"	Yemen
+::node	n8	1.1.8.2	name	
+::node	"Arabs"	1.2.3.1	"Arabs"	
+::node	"Algeria"	1.1.1.1	"Algeria"	
+::node	"Lebanon"	1.1.5.2.1	"Lebanon"	Lebanon
+::node	n	1.1.1.2	name	
+::node	o	1.2.2.1.1	oppose-01	anti
+::node	"Egypt"	1.1.3.1	"Egypt"	
+::node	n3	1.1.3.2	name	
+::node	c10	1.1.10	country	
+::node	"Lebanon"	1.1.5.1	"Lebanon"	
+::node	c11	1.1.11	country	
+::node	n5	1.1.5.2	name	
+::node	"Syria"	1.1.10.1	"Syria"	
+::node	n10	1.1.10.2	name	
+::node	"Arab"	1.2.3.2.1	"Arab"	Arab
+::node	"Mauritania"	1.1.6.2.1	"Mauritania"	Mauritania
+::node	c2	1.1.2	country	
+::node	i	1	include-91	including
+::node	c3	1.1.3	country	
+::node	c4	1.1.4	country	
+::node	c5	1.1.5	country	
+::node	a	1.1	and	and
+::node	c6	1.1.6	country	
+::node	c7	1.1.7	country	
+::node	c12	1.2	country	countries
+::node	c8	1.1.8	country	
+::node	c9	1.1.9	country	
+::node	"Morocco"	1.1.7.2.1	"Morocco"	Morocco
+::node	c	1.1.1	country	
+::node	"Arabia"	1.1.8.2.2	"Arabia"	Arabia
+::node	"Saudi"	1.1.8.2.1	"Saudi"	Saudi
+::node	"Morocco"	1.1.7.1	"Morocco"	
+::node	n7	1.1.7.2	name	
+::node	"Sudan"	1.1.9.1	"Sudan"	
+::node	e	1.2.2.1	expert-41	experts
+::node	n9	1.1.9.2	name	
+::node	w	1.2.2.2	workshop	workshop
+::node	"Sudan"	1.1.9.2.1	"Sudan"	Sudan
+::node	"Bahrain"	1.1.2.1	"Bahrain"	
+::node	n2	1.1.2.2	name	
+::node	"Jordan"	1.1.4.1	"Jordan"	
+::node	n4	1.1.4.2	name	
+::node	"Mauritania"	1.1.6.1	"Mauritania"	
+::node	"Yemen"	1.1.11.1	"Yemen"	
+::node	n11	1.1.11.2	name	
+::node	11	1.2.1	11	11
+::node	p	1.2.2	person	
+::node	e2	1.2.3	ethnic-group	
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	Egypt	"Egypt"
+::edge	1.2.2.1.1	anti	oppose-01	:ARG1	1.2.2.1.1.1	terrorism	terrorism
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Bahrain	"Bahrain"
+::edge	1.1.10.2		name	:op1	1.1.10.2.1	Syria	"Syria"
+::edge	1.1.4.2		name	:op1	1.1.4.2.1	Jordan	"Jordan"
+::edge	1.1.6		country	:name	1.1.6.2		name
+::edge	1.2.3		ethnic-group	:name	1.2.3.2		name
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Algeria	"Algeria"
+::edge	1.1.8		country	:wiki	1.1.8.1		"Saudi_Arabia"
+::edge	1.1.11.2		name	:op1	1.1.11.2.1	Yemen	"Yemen"
+::edge	1.1.8		country	:name	1.1.8.2		name
+::edge	1.2.3		ethnic-group	:wiki	1.2.3.1		"Arabs"
+::edge	1.1.1		country	:wiki	1.1.1.1		"Algeria"
+::edge	1.1.5.2		name	:op1	1.1.5.2.1	Lebanon	"Lebanon"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.2.2.1	experts	expert-41	:ARG2	1.2.2.1.1	anti	oppose-01
+::edge	1.1.3		country	:wiki	1.1.3.1		"Egypt"
+::edge	1.1.3		country	:name	1.1.3.2		name
+::edge	1.1	and	and	:op10	1.1.10		country
+::edge	1.1.5		country	:wiki	1.1.5.1		"Lebanon"
+::edge	1.1	and	and	:op11	1.1.11		country
+::edge	1.1.5		country	:name	1.1.5.2		name
+::edge	1.1.10		country	:wiki	1.1.10.1		"Syria"
+::edge	1.1.10		country	:name	1.1.10.2		name
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	Arab	"Arab"
+::edge	1.1.6.2		name	:op1	1.1.6.2.1	Mauritania	"Mauritania"
+::edge	1.1	and	and	:op2	1.1.2		country
+::edge	1.1	and	and	:op3	1.1.3		country
+::edge	1.1	and	and	:op4	1.1.4		country
+::edge	1.1	and	and	:op5	1.1.5		country
+::edge	1	including	include-91	:ARG1	1.1	and	and
+::edge	1.1	and	and	:op6	1.1.6		country
+::edge	1.1	and	and	:op7	1.1.7		country
+::edge	1	including	include-91	:ARG2	1.2	countries	country
+::edge	1.1	and	and	:op8	1.1.8		country
+::edge	1.1	and	and	:op9	1.1.9		country
+::edge	1.1.7.2		name	:op1	1.1.7.2.1	Morocco	"Morocco"
+::edge	1.1	and	and	:op1	1.1.1		country
+::edge	1.1.8.2		name	:op2	1.1.8.2.2	Arabia	"Arabia"
+::edge	1.1.8.2		name	:op1	1.1.8.2.1	Saudi	"Saudi"
+::edge	1.1.7		country	:wiki	1.1.7.1		"Morocco"
+::edge	1.1.7		country	:name	1.1.7.2		name
+::edge	1.1.9		country	:wiki	1.1.9.1		"Sudan"
+::edge	1.2.2		person	:ARG1-of	1.2.2.1	experts	expert-41
+::edge	1.1.9		country	:name	1.1.9.2		name
+::edge	1.2.2		person	:poss	1.2.2.2	workshop	workshop
+::edge	1.1.9.2		name	:op1	1.1.9.2.1	Sudan	"Sudan"
+::edge	1.1.2		country	:wiki	1.1.2.1		"Bahrain"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.4		country	:wiki	1.1.4.1		"Jordan"
+::edge	1.1.4		country	:name	1.1.4.2		name
+::edge	1.1.6		country	:wiki	1.1.6.1		"Mauritania"
+::edge	1.1.11		country	:wiki	1.1.11.1		"Yemen"
+::edge	1.1.11		country	:name	1.1.11.2		name
+::edge	1.2	countries	country	:quant	1.2.1	11	11
+::edge	1.2	countries	country	:source-of	1.2.2		person
+::edge	1.2	countries	country	:mod	1.2.3		ethnic-group
+11	The workshop's anti-terrorism experts belong to anti-terror squads in Arab security agencies and Anti-Organized Crime Units.
+11	The workshop 's anti @-@ terrorism experts belong to anti @-@ terror squads in Arab security agencies and Anti @-@ Organized Crime Units .
+11	1-1.1.2 3-1.2.2 5-1.1.1.1.1 5-1.2.2.1 6-1.1.1 7-1 8-1.1.1.1.r 9-1.1.1.1 12-1.2 13-1.2.1.r 14-1.2.1.1.2.2.1 15-1.2.1.1.1 16-1.2.1.1 17-1.2.1 18-1.2.1.2.1 20-1.2.1.2.1.1.1 21-1.2.1.2.1.1 22-1.2.1.2
+::node	c4	1.1.1.1	counter-01	anti
+::node	"Arabs"	1.2.1.1.2.1	"Arabs"	
+::node	n	1.2.1.1.2.2	name	
+::node	o	1.2.1.2.1.1.1	organize-01	Organized
+::node	w	1.1.2	workshop	workshop
+::node	a3	1.2.1	and	and
+::node	c	1.2.1.2.1.1	crime	Crime
+::node	b	1	belong-01	belong
+::node	c3	1.2.2	counter-01	anti
+::node	e2	1.2.1.1.2	ethnic-group	
+::node	c2	1.2.1.2.1	counter-01	Anti
+::node	s2	1.2.1.1.1	security	security
+::node	p	1.1	person	
+::node	s	1.2	squad	squads
+::node	"Arab"	1.2.1.1.2.2.1	"Arab"	Arab
+::node	t2	1.1.1.1.1	terrorism	terrorism
+::node	u	1.2.1.2	unit	Units
+::node	t	1.2.2.1	terrorism	terrorism
+::node	a4	1.2.1.1	agency	agencies
+::node	e	1.1.1	expert-41	experts
+::edge	1.1.1	experts	expert-41	:ARG2	1.1.1.1	anti	counter-01
+::edge	1.2.1.1.2		ethnic-group	:wiki	1.2.1.1.2.1		"Arabs"
+::edge	1.2.1.1.2		ethnic-group	:name	1.2.1.1.2.2		name
+::edge	1.2.1.2.1.1	Crime	crime	:ARG1-of	1.2.1.2.1.1.1	Organized	organize-01
+::edge	1.1		person	:poss	1.1.2	workshop	workshop
+::edge	1.2	squads	squad	:part-of	1.2.1	and	and
+::edge	1.2.1.2.1	Anti	counter-01	:ARG1	1.2.1.2.1.1	Crime	crime
+::edge	1.2	squads	squad	:purpose	1.2.2	anti	counter-01
+::edge	1.2.1.1	agencies	agency	:mod	1.2.1.1.2		ethnic-group
+::edge	1.2.1.2	Units	unit	:purpose	1.2.1.2.1	Anti	counter-01
+::edge	1.2.1.1	agencies	agency	:purpose	1.2.1.1.1	security	security
+::edge	1	belong	belong-01	:ARG0	1.1		person
+::edge	1	belong	belong-01	:ARG1	1.2	squads	squad
+::edge	1.2.1.1.2.2		name	:op1	1.2.1.1.2.2.1	Arab	"Arab"
+::edge	1.1.1.1	anti	counter-01	:ARG1	1.1.1.1.1	terrorism	terrorism
+::edge	1.2.1	and	and	:op2	1.2.1.2	Units	unit
+::edge	1.2.2	anti	counter-01	:ARG1	1.2.2.1	terrorism	terrorism
+::edge	1.2.1	and	and	:op1	1.2.1.1	agencies	agency
+::edge	1.1		person	:ARG1-of	1.1.1	experts	expert-41
+12	Some specialize in dealing with kidnapping and hostage-taking scenarios.
+12	Some specialize in dealing with kidnapping and hostage @-@ taking scenarios .
+12	0-1.1.1 1-1 2-1.2.r 3-1.2 4-1.2.2.r 5-1.2.2.1 7-1.2.2.2.1 9-1.2.2.2 10-1.2.2
+::node	p	1.2.1	person	
+::node	s	1	specialize-01	specialize
+::node	s3	1.2.2	scenario	scenarios
+::node	p	1.1	person	
+::node	d	1.2	deal-01	dealing
+::node	k	1.2.2.1	kidnap-01	kidnapping
+::node	t	1.2.2.2	take-01	taking
+::node	h	1.2.2.2.1	hostage	hostage
+::node	s2	1.1.1	some	Some
+::edge	1.2	dealing	deal-01	:ARG0	1.2.1		person
+::edge	1.2	dealing	deal-01	:ARG1	1.2.2	scenarios	scenario
+::edge	1	specialize	specialize-01	:ARG0	1.1		person
+::edge	1	specialize	specialize-01	:ARG1	1.2	dealing	deal-01
+::edge	1.2.2	scenarios	scenario	:mod	1.2.2.1	kidnapping	kidnap-01
+::edge	1.2.2	scenarios	scenario	:mod	1.2.2.2	taking	take-01
+::edge	1.2.2.2	taking	take-01	:ARG1	1.2.2.2.1	hostage	hostage
+::edge	1.1		person	:quant	1.1.1	Some	some
+13	The workshop will address several terrorism-related issues including political factors leading to terror, the role of religion in fighting terrorists and economic factors that support crime and terrorism.
+13	The workshop will address several terrorism @-@ related issues including political factors leading to terror , the role of religion in fighting terrorists and economic factors that support crime and terrorism .
+13	1-1.1 3-1 4-1.2.2.2 5-1.2.2.1.1 7-1.2.2.1 8-1.2.2 9-1.2 10-1.2.1.1.1 11-1.2.1.3.1 12-1.2.1.1 13-1.2.1.1.2.r 14-1.2.1.1.2 17-1.2.1.2 18-1.2.1.2.1.r 19-1.2.1.2.1 20-1.2.1.2.2.r 21-1.2.1.2.2 22-1.2.1.2.2.1 23-1.2.1.3.2 24-1.2.1.3.1.1 25-1.2.1.3.1 27-1.2.1.3 28-1.2.1.3.2.1 29-1.2.1.3.2 30-1.2.1.3.2.2
+::node	e	1.2.1.3.1.1	economic	economic
+::node	t	1.2.2.1.1	terrorism	terrorism
+::node	c	1.2.1.3.2.1	crime	crime
+::node	t4	1.2.1.3.2.2	terrorism	terrorism
+::node	a3	1.2.1.3.2	and	and
+::node	f	1.2.1.2.2	fight-01	fighting
+::node	f2	1.2.1.3.1	factor	factors
+::node	a2	1.2.1	and	
+::node	a	1	address-02	address
+::node	t5	1.2.1.2.2.1	terrorist	terrorists
+::node	i2	1.2.2	issue	issues
+::node	t2	1.2.1.1.2	terror	terror
+::node	r3	1.2.1.2.1	religion	religion
+::node	p	1.2.1.1.1	political	political
+::node	w	1.1	workshop	workshop
+::node	i	1.2	include-91	including
+::node	r2	1.2.1.2	role	role
+::node	r	1.2.2.1	relate-01	related
+::node	s2	1.2.1.3	support-01	support
+::node	s	1.2.2.2	several	several
+::node	l	1.2.1.1	lead-03	leading
+::edge	1.2.1.3.1	factors	factor	:mod	1.2.1.3.1.1	economic	economic
+::edge	1.2.2.1	related	relate-01	:ARG2	1.2.2.1.1	terrorism	terrorism
+::edge	1.2.1.3.2	and	and	:op1	1.2.1.3.2.1	crime	crime
+::edge	1.2.1.3.2	and	and	:op2	1.2.1.3.2.2	terrorism	terrorism
+::edge	1.2.1.3	support	support-01	:ARG1	1.2.1.3.2	and	and
+::edge	1.2.1.2	role	role	:purpose	1.2.1.2.2	fighting	fight-01
+::edge	1.2.1.3	support	support-01	:ARG0	1.2.1.3.1	factors	factor
+::edge	1.2	including	include-91	:ARG1	1.2.1		and
+::edge	1.2.1.2.2	fighting	fight-01	:ARG1	1.2.1.2.2.1	terrorists	terrorist
+::edge	1.2	including	include-91	:ARG2	1.2.2	issues	issue
+::edge	1.2.1.1	leading	lead-03	:ARG2	1.2.1.1.2	terror	terror
+::edge	1.2.1.2	role	role	:poss-of	1.2.1.2.1	religion	religion
+::edge	1.2.1.1	leading	lead-03	:ARG0	1.2.1.1.1	political	political
+::edge	1	address	address-02	:ARG0	1.1	workshop	workshop
+::edge	1	address	address-02	:ARG1	1.2	including	include-91
+::edge	1.2.1		and	:op2	1.2.1.2	role	role
+::edge	1.2.2	issues	issue	:ARG1-of	1.2.2.1	related	relate-01
+::edge	1.2.1		and	:op3	1.2.1.3	support	support-01
+::edge	1.2.2	issues	issue	:quant	1.2.2.2	several	several
+::edge	1.2.1		and	:op1	1.2.1.1	leading	lead-03
+14	The workshop will study the use of the Internet to promote terrorism and the Internet's role in facilitating money transactions and funding terrorist groups.
+14	The workshop will study the use of the Internet to promote terrorism and the Internet 's role in facilitating money transactions and funding terrorist groups .
+14	1-1.1 3-1 5-1.2.1 6-1.2.1.1.r 8-1.2.1.1 10-1.2.1.2 11-1.2.1.2.1 12-1.2 14-1.2.2.1 15-1.2.2.1.r 16-1.2.2 17-1.2.2.2.r 18-1.2.2.2 19-1.2.2.2.2.1.1 20-1.2.2.2.2.1 21-1.2.2.2.2 22-1.2.2.2.2.2 23-1.2.2.2.2.2.1.1 24-1.2.2.2.2.2.1
+::node	i	1.2.1.2.2	internet	
+::node	u	1.2.1	use-01	use
+::node	s	1	study-01	study
+::node	r	1.2.2	role	role
+::node	t4	1.2.2.2.2.2.1.1	terrorist	terrorist
+::node	t	1.2.1.2.1	terrorism	terrorism
+::node	w	1.1	workshop	workshop
+::node	a	1.2	and	and
+::node	g	1.2.2.2.2.2.1	group	groups
+::node	p	1.2.1.2	promote-02	promote
+::node	i2	1.2.2.1	internet	Internet
+::node	m	1.2.2.2.2.1.1	money	money
+::node	f	1.2.2.2	facilitate-01	facilitating
+::node	i2	1.2.2.2.1	internet	
+::node	f2	1.2.2.2.2.2	fund-01	funding
+::node	i	1.2.1.1	internet	Internet
+::node	a2	1.2.2.2.2	and	and
+::node	t2	1.2.2.2.2.1	transact-01	transactions
+::edge	1.2.1.2	promote	promote-02	:instrument	1.2.1.2.2		internet
+::edge	1.2	and	and	:op1	1.2.1	use	use-01
+::edge	1.2	and	and	:op2	1.2.2	role	role
+::edge	1.2.2.2.2.2.1	groups	group	:consist-of	1.2.2.2.2.2.1.1	terrorist	terrorist
+::edge	1.2.1.2	promote	promote-02	:ARG1	1.2.1.2.1	terrorism	terrorism
+::edge	1	study	study-01	:ARG0	1.1	workshop	workshop
+::edge	1	study	study-01	:ARG1	1.2	and	and
+::edge	1.2.2.2.2.2	funding	fund-01	:ARG1	1.2.2.2.2.2.1	groups	group
+::edge	1.2.1	use	use-01	:ARG2	1.2.1.2	promote	promote-02
+::edge	1.2.2	role	role	:poss-of	1.2.2.1	Internet	internet
+::edge	1.2.2.2.2.1	transactions	transact-01	:mod	1.2.2.2.2.1.1	money	money
+::edge	1.2.2	role	role	:purpose	1.2.2.2	facilitating	facilitate-01
+::edge	1.2.2.2	facilitating	facilitate-01	:ARG0	1.2.2.2.1		internet
+::edge	1.2.2.2.2	and	and	:op2	1.2.2.2.2.2	funding	fund-01
+::edge	1.2.1	use	use-01	:ARG1	1.2.1.1	Internet	internet
+::edge	1.2.2.2	facilitating	facilitate-01	:ARG1	1.2.2.2.2	and	and
+::edge	1.2.2.2.2	and	and	:op1	1.2.2.2.2.1	transactions	transact-01
+15	In April 1998 Arab countries signed an anti-terrorism agreement that binds the signatories to coordinate to fight terrorism.
+15	In April 1998 Arab countries signed an anti @-@ terrorism agreement that binds the signatories to coordinate to fight terrorism .
+15	1-1.3.2 1-1.3.2.r 2-1.3.1 3-1.1.1.2.1 4-1.1 5-1 7-1.2.1 9-1.2.1.1 10-1.2 12-1.2.1.2 14-1 14-1.1 14-1.1.r 16-1.2.1.2.2 18-1.2.1.2.2.2 19-1.2.1.2.2.2.2
+::node	"Arabs"	1.1.1.1	"Arabs"	
+::node	n	1.1.1.2	name	
+::node	c2	1.2.1.2.2	coordinate-01	coordinate
+::node	c3	1.2.1	counter-01	anti
+::node	s	1	sign-02	signatories
+::node	c	1.2.1.2.2.1	country	
+::node	t	1.2.1.2.2.2.2	terrorism	terrorism
+::node	1998	1.3.1	1998	1998
+::node	c	1.2.1.2.1	country	
+::node	4	1.3.2	4	April
+::node	c	1.1	country	signatories
+::node	a2	1.2	agree-01	agreement
+::node	f	1.2.1.2.2.2	fight-01	fight
+::node	d	1.3	date-entity	
+::node	"Arab"	1.1.1.2.1	"Arab"	Arab
+::node	b	1.2.1.2	bind-01	binds
+::node	t2	1.2.1.1	terrorism	terrorism
+::node	c	1.2.1.2.2.2.1	country	
+::node	e	1.1.1	ethnic-group	
+::edge	1.1.1		ethnic-group	:wiki	1.1.1.1		"Arabs"
+::edge	1.1.1		ethnic-group	:name	1.1.1.2		name
+::edge	1.2.1.2	binds	bind-01	:ARG2	1.2.1.2.2	coordinate	coordinate-01
+::edge	1.2	agreement	agree-01	:topic	1.2.1	anti	counter-01
+::edge	1.2.1.2.2	coordinate	coordinate-01	:ARG1	1.2.1.2.2.1		country
+::edge	1.2.1.2.2.2	fight	fight-01	:ARG1	1.2.1.2.2.2.2	terrorism	terrorism
+::edge	1.3		date-entity	:year	1.3.1	1998	1998
+::edge	1.2.1.2	binds	bind-01	:ARG1	1.2.1.2.1		country
+::edge	1.3		date-entity	:month	1.3.2	April	4
+::edge	1	signatories	sign-02	:ARG0	1.1	signatories	country
+::edge	1	signatories	sign-02	:ARG1	1.2	agreement	agree-01
+::edge	1.2.1.2.2	coordinate	coordinate-01	:purpose	1.2.1.2.2.2	fight	fight-01
+::edge	1	signatories	sign-02	:time	1.3		date-entity
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Arab	"Arab"
+::edge	1.2.1	anti	counter-01	:ARG0-of	1.2.1.2	binds	bind-01
+::edge	1.2.1	anti	counter-01	:ARG1	1.2.1.1	terrorism	terrorism
+::edge	1.2.1.2.2.2	fight	fight-01	:ARG0	1.2.1.2.2.2.1		country
+::edge	1.1	signatories	country	:mod	1.1.1		ethnic-group

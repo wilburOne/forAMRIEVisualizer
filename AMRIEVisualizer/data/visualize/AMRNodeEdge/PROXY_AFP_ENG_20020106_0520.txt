@@ -1,0 +1,682 @@
+1	2002-01-07
+1	2002 @-@ 01 @-@ 07
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	1	1.2	1	01
+::node	7	1.3	7	07
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	01	1
+::edge	1		date-entity	:day	1.3	07	7
+2	North Korea (KP)
+2	North Korea ( KP )
+2	0-1.2.1 1-1.2.2
+::node	"North"	1.2.1	"North"	North
+::node	c	1	country	
+::node	"Korea"	1.2.2	"Korea"	Korea
+::node	"North_Korea"	1.1	"North_Korea"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	North	"North"
+::edge	1.2		name	:op2	1.2.2	Korea	"Korea"
+::edge	1		country	:wiki	1.1		"North_Korea"
+::edge	1		country	:name	1.2		name
+3	proliferation; international
+3	proliferation ; international
+3	0-1.1 2-1.2
+::node	a	1	and	
+::node	p	1.1	proliferate-01	proliferation
+::node	i	1.2	international	international
+::edge	1		and	:op1	1.1	proliferation	proliferate-01
+::edge	1		and	:op2	1.2	international	international
+4	A United Nation nuclear team will make a week-long visit to North Korea this weekend to inspect the Stalinist state's controversial nuclear site.
+4	A United Nation nuclear team will make a week @-@ long visit to North Korea this weekend to inspect the Stalinist state 's controversial nuclear site .
+4	1-1.1.1.1.2.1 3-1.1.1.2 4-1.1 6-1 7-1.3.1 8-1.3.2 11-1 12-1.2.r 13-1.2.2.1 14-1.2.2.2 15-1.4.1 16-1.4 18-1.5 20-1.5.2.2.1.2.1 21-1.5.2.2 22-1.5.2.2.r 23-1.5.2.3 24-1.5.2.1 25-1.5.2
+::node	p	1.5.2.2.1	person	
+::node	s2	1.5.2.2	state	state
+::node	c2	1.5.2.3	controversy	controversial
+::node	"Stalin"	1.5.2.2.1.2.1	"Stalin"	Stalinist
+::node	n2	1.1.1.1.2	name	
+::node	"United_Nations"	1.1.1.1.1	"United_Nations"	
+::node	"North"	1.2.2.1	"North"	North
+::node	"Korea"	1.2.2.2	"Korea"	Korea
+::node	"Joseph_Stalin"	1.5.2.2.1.1	"Joseph_Stalin"	
+::node	"United"	1.1.1.1.2.1	"United"	United
+::node	n4	1.5.2.2.1.2	name	
+::node	o	1.1.1.1	organization	
+::node	"Nations"	1.1.1.1.2.2	"Nations"	
+::node	n	1.1.1.2	nucleus	nuclear
+::node	n	1.5.2.1	nucleus	nuclear
+::node	"North_Korea"	1.2.1	"North_Korea"	
+::node	v	1	visit-01	visit
+::node	n3	1.2.2	name	
+::node	1	1.3.1	1	a
+::node	w	1.3.2	week	week
+::node	t3	1.4.1	this	this
+::node	t	1.5.1	team	
+::node	t	1.1	team	team
+::node	s	1.5.2	site	site
+::node	c	1.2	country	
+::node	t2	1.3	temporal-quantity	
+::node	w2	1.4	weekend	weekend
+::node	i	1.5	inspect-01	inspect
+::node	h	1.1.1	have-org-role-91	
+::edge	1.5.2.2	state	state	:manner	1.5.2.2.1		person
+::edge	1.5.2	site	site	:poss	1.5.2.2	state	state
+::edge	1.5.2	site	site	:mod	1.5.2.3	controversial	controversy
+::edge	1.5.2.2.1.2		name	:op1	1.5.2.2.1.2.1	Stalinist	"Stalin"
+::edge	1.1.1.1		organization	:name	1.1.1.1.2		name
+::edge	1.1.1.1		organization	:wiki	1.1.1.1.1		"United_Nations"
+::edge	1.2.2		name	:op1	1.2.2.1	North	"North"
+::edge	1.2.2		name	:op2	1.2.2.2	Korea	"Korea"
+::edge	1.5.2.2.1		person	:wiki	1.5.2.2.1.1		"Joseph_Stalin"
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	United	"United"
+::edge	1.5.2.2.1		person	:name	1.5.2.2.1.2		name
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		organization
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2		"Nations"
+::edge	1.1.1		have-org-role-91	:ARG3	1.1.1.2	nuclear	nucleus
+::edge	1.5.2	site	site	:mod	1.5.2.1	nuclear	nucleus
+::edge	1.2		country	:wiki	1.2.1		"North_Korea"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3		temporal-quantity	:quant	1.3.1	a	1
+::edge	1.3		temporal-quantity	:unit	1.3.2	week	week
+::edge	1.4	weekend	weekend	:mod	1.4.1	this	this
+::edge	1.5	inspect	inspect-01	:ARG0	1.5.1		team
+::edge	1	visit	visit-01	:ARG0	1.1	team	team
+::edge	1.5	inspect	inspect-01	:ARG1	1.5.2	site	site
+::edge	1	visit	visit-01	:ARG1	1.2		country
+::edge	1	visit	visit-01	:duration	1.3		temporal-quantity
+::edge	1	visit	visit-01	:time	1.4	weekend	weekend
+::edge	1	visit	visit-01	:purpose	1.5	inspect	inspect-01
+::edge	1.1	team	team	:ARG0-of	1.1.1		have-org-role-91
+5	Government sources said on January 7, 2002 that a united nation nuclear team will make a week-long visit to North Korea this weekend to inspect the Stalinist state's controversial nuclear site.
+5	Government sources said on January 7 , 2002 that a united nation nuclear team will make a week @-@ long visit to North Korea this weekend to inspect the Stalinist state 's controversial nuclear site .
+5	0-1.1.1 0-1.1.1.1 0-1.1.1.1.r 1-1.1 2-1 4-1.2.3.1 4-1.3.2 4-1.3.2.r 5-1.3.3 7-1.3.1 8-1.2.r 10-1.2.1.1.1.2.1 12-1.2.1.1.2 13-1.2.1 15-1.2 16-1.2.3.1 17-1.2.3.2 20-1.2 21-1.2.2.r 22-1.2.2.2.1 23-1.2.2.2.2 24-1.2.4.1 25-1.2.4 27-1.2.5 29-1.2.5.2.3.1.2.1 30-1.2.5.2.3 31-1.2.5.2.3.r 32-1.2.5.2.2 33-1.2.5.2.1 34-1.2.5.2
+::node	"United"	1.2.1.1.1.2.1	"United"	united
+::node	"Nations"	1.2.1.1.1.2.2	"Nations"	
+::node	c2	1.2.5.2.2	controversy	controversial
+::node	s4	1.2.5.2.3	state	state
+::node	p	1.2.5.2.3.1	person	
+::node	n	1.2.5.2.1	nucleus	nuclear
+::node	"Joseph_Stalin"	1.2.5.2.3.1.1	"Joseph_Stalin"	
+::node	n4	1.2.5.2.3.1.2	name	
+::node	w	1.2.3.2	week	week
+::node	t3	1.2.4.1	this	this
+::node	t	1.2.5.1	team	
+::node	"North_Korea"	1.2.2.1	"North_Korea"	
+::node	n3	1.2.2.2	name	
+::node	1	1.2.3.1	1	a
+::node	"North"	1.2.2.2.1	"North"	North
+::node	h	1.2.1.1	have-org-role-91	
+::node	"Korea"	1.2.2.2.2	"Korea"	Korea
+::node	g2	1.1.1.1	govern-01	Government
+::node	"United_Nations"	1.2.1.1.1.1	"United_Nations"	
+::node	n2	1.2.1.1.1.2	name	
+::node	s3	1.2.5.2	site	site
+::node	"Stalin"	1.2.5.2.3.1.2.1	"Stalin"	Stalinist
+::node	t	1.2.1	team	team
+::node	s	1	say-01	said
+::node	c	1.2.2	country	
+::node	2002	1.3.1	2002	2002
+::node	n	1.2.1.1.2	nucleus	nuclear
+::node	t2	1.2.3	temporal-quantity	
+::node	1	1.3.2	1	January
+::node	o	1.2.1.1.1	organization	
+::node	w2	1.2.4	weekend	weekend
+::node	7	1.3.3	7	7
+::node	s2	1.1	source	sources
+::node	i	1.2.5	inspect-01	inspect
+::node	v	1.2	visit-01	visit
+::node	d	1.3	date-entity	
+::node	g	1.1.1	government-organization	Government
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	united	"United"
+::edge	1.2.1.1.1.2		name	:op2	1.2.1.1.1.2.2		"Nations"
+::edge	1.2.5.2	site	site	:mod	1.2.5.2.2	controversial	controversy
+::edge	1.2.5.2	site	site	:poss	1.2.5.2.3	state	state
+::edge	1.2.5.2.3	state	state	:manner	1.2.5.2.3.1		person
+::edge	1.2.5.2	site	site	:mod	1.2.5.2.1	nuclear	nucleus
+::edge	1.2.5.2.3.1		person	:wiki	1.2.5.2.3.1.1		"Joseph_Stalin"
+::edge	1.2.5.2.3.1		person	:name	1.2.5.2.3.1.2		name
+::edge	1.2.3		temporal-quantity	:unit	1.2.3.2	week	week
+::edge	1.2.4	weekend	weekend	:mod	1.2.4.1	this	this
+::edge	1.2.5	inspect	inspect-01	:ARG0	1.2.5.1		team
+::edge	1.2.2		country	:wiki	1.2.2.1		"North_Korea"
+::edge	1.2.2		country	:name	1.2.2.2		name
+::edge	1.2.3		temporal-quantity	:quant	1.2.3.1	a	1
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	North	"North"
+::edge	1.2.1	team	team	:ARG0-of	1.2.1.1		have-org-role-91
+::edge	1.2.2.2		name	:op2	1.2.2.2.2	Korea	"Korea"
+::edge	1.1.1	Government	government-organization	:ARG0-of	1.1.1.1	Government	govern-01
+::edge	1.2.1.1.1		organization	:wiki	1.2.1.1.1.1		"United_Nations"
+::edge	1.2.1.1.1		organization	:name	1.2.1.1.1.2		name
+::edge	1.2.5	inspect	inspect-01	:ARG1	1.2.5.2	site	site
+::edge	1.2.5.2.3.1.2		name	:op1	1.2.5.2.3.1.2.1	Stalinist	"Stalin"
+::edge	1.2	visit	visit-01	:ARG0	1.2.1	team	team
+::edge	1.2	visit	visit-01	:ARG1	1.2.2		country
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2.1.1		have-org-role-91	:ARG3	1.2.1.1.2	nuclear	nucleus
+::edge	1.2	visit	visit-01	:duration	1.2.3		temporal-quantity
+::edge	1.3		date-entity	:month	1.3.2	January	1
+::edge	1.2.1.1		have-org-role-91	:ARG1	1.2.1.1.1		organization
+::edge	1.2	visit	visit-01	:time	1.2.4	weekend	weekend
+::edge	1.3		date-entity	:day	1.3.3	7	7
+::edge	1	said	say-01	:ARG0	1.1	sources	source
+::edge	1.2	visit	visit-01	:purpose	1.2.5	inspect	inspect-01
+::edge	1	said	say-01	:ARG1	1.2	visit	visit-01
+::edge	1	said	say-01	:time	1.3		date-entity
+::edge	1.1	sources	source	:mod	1.1.1	Government	government-organization
+6	The upcoming visit is viewed as part of the International Atomic Energy Agency (IAEA) drive to clarify North Korea's nuclear ambitions.
+6	The upcoming visit is viewed as part of the International Atomic Energy Agency ( IAEA ) drive to clarify North Korea 's nuclear ambitions .
+6	2-1.1 4-1 5-1.2.r 6-1.2 7-1.2.1.r 9-1.2.1.1.2.1 10-1.2.1.1.2.2 11-1.2.1.1.2.3 12-1.2.1.1.2.4 16-1.2.1 18-1.2.1.2 19-1.2.1.2.2.2.2.1 20-1.2.1.2.2.2.2.2 21-1.2.1.2.2.2.r 22-1.2.1.2.2.1 23-1.2.1.2.2
+::node	"Energy"	1.2.1.1.2.3	"Energy"	Energy
+::node	"Agency"	1.2.1.1.2.4	"Agency"	Agency
+::node	"International"	1.2.1.1.2.1	"International"	International
+::node	"Atomic"	1.2.1.1.2.2	"Atomic"	Atomic
+::node	a	1.2.1.2.2	ambition	ambitions
+::node	d	1.2.1	drive-02	drive
+::node	v	1	view-02	viewed
+::node	n2	1.2.1.2.2.1	nucleus	nuclear
+::node	n3	1.2.1.2.2.2.2	name	
+::node	n	1.2.1.1.2	name	
+::node	o	1.2.1.2.1	organization	
+::node	"International_Atomic_Energy_Agency"	1.2.1.1.1	"International_Atomic_Energy_Agency"	
+::node	v2	1.1	visit-01	visit
+::node	p	1.2	part	part
+::node	c3	1.2.1.2.2.2	country	
+::node	"Korea"	1.2.1.2.2.2.2.2	"Korea"	Korea
+::node	c2	1.2.1.2	clarify-01	clarify
+::node	o	1.2.1.1	organization	
+::node	"North_Korea"	1.2.1.2.2.2.1	"North_Korea"	
+::node	"North"	1.2.1.2.2.2.2.1	"North"	North
+::node	c	1.1.1	come-01	
+::edge	1.2.1.1.2		name	:op3	1.2.1.1.2.3	Energy	"Energy"
+::edge	1.2.1.1.2		name	:op4	1.2.1.1.2.4	Agency	"Agency"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	International	"International"
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	Atomic	"Atomic"
+::edge	1.2.1.2	clarify	clarify-01	:ARG1	1.2.1.2.2	ambitions	ambition
+::edge	1.2	part	part	:part-of	1.2.1	drive	drive-02
+::edge	1.2.1.2.2	ambitions	ambition	:mod	1.2.1.2.2.1	nuclear	nucleus
+::edge	1.2.1.2.2.2		country	:name	1.2.1.2.2.2.2		name
+::edge	1.2.1.1		organization	:name	1.2.1.1.2		name
+::edge	1.2.1.2	clarify	clarify-01	:ARG0	1.2.1.2.1		organization
+::edge	1.2.1.1		organization	:wiki	1.2.1.1.1		"International_Atomic_Energy_Agency"
+::edge	1	viewed	view-02	:ARG1	1.1	visit	visit-01
+::edge	1	viewed	view-02	:ARG2	1.2	part	part
+::edge	1.2.1.2.2	ambitions	ambition	:poss	1.2.1.2.2.2		country
+::edge	1.2.1.2.2.2.2		name	:op2	1.2.1.2.2.2.2.2	Korea	"Korea"
+::edge	1.2.1	drive	drive-02	:ARG2	1.2.1.2	clarify	clarify-01
+::edge	1.2.1	drive	drive-02	:ARG0	1.2.1.1		organization
+::edge	1.2.1.2.2.2		country	:wiki	1.2.1.2.2.2.1		"North_Korea"
+::edge	1.2.1.2.2.2.2		name	:op1	1.2.1.2.2.2.2.1	North	"North"
+::edge	1.1	visit	visit-01	:ARG1-of	1.1.1		come-01
+7	A government source stated the visit by a group of IAEA safety experts is scheduled to last for a week beginning January 12, 2002.
+7	A government source stated the visit by a group of IAEA safety experts is scheduled to last for a week beginning January 12 , 2002 .
+7	1-1.1.1 1-1.1.1.1 1-1.1.1.1.r 2-1.1 3-1 5-1.2.1 9-1.2.1.1.r 10-1.2.1.1.2.1.2.1 11-1.2.1.1.1.1 12-1.2.1.1.1 14-1.2 16-1.2.2 17-1.2.2.2.r 18-1.2.2.2.1 19-1.2.2.2.2 20-1.2.2.2.3 21-1.2.2.2.1 21-1.2.2.2.3.1.2 21-1.2.2.2.3.1.2.r 22-1.2.2.2.3.1.3 24-1.2.2.2.3.1.1
+::node	12	1.2.2.2.3.1.3	12	12
+::node	g2	1.1.1.1	govern-01	government
+::node	1	1.2.2.2.3.1.2	1	January
+::node	2002	1.2.2.2.3.1.1	2002	2002
+::node	s4	1.2.1.1.1.1	safe-41	safety
+::node	o	1.2.1.1.2.1	organization	
+::node	"IAEA"	1.2.1.1.2.1.2.1	"IAEA"	IAEA
+::node	v	1.2.1	visit-01	visit
+::node	s	1	state-01	stated
+::node	l	1.2.2	last-01	last
+::node	h	1.2.1.1.2	have-org-role-91	
+::node	e	1.2.1.1.1	expert-41	experts
+::node	s2	1.1	source	source
+::node	s3	1.2	schedule-01	scheduled
+::node	n	1.2.1.1.2.1.2	name	
+::node	"International_Atomic_Energy_Agency"	1.2.1.1.2.1.1	"International_Atomic_Energy_Agency"	
+::node	v	1.2.2.1	visit-01	
+::node	t	1.2.2.2	temporal-quantity	
+::node	1	1.2.2.2.1	1	January
+::node	d	1.2.2.2.3.1	date-entity	
+::node	p	1.2.1.1	person	
+::node	w	1.2.2.2.2	week	week
+::node	b	1.2.2.2.3	begin-01	beginning
+::node	g	1.1.1	government-organization	government
+::edge	1.2.2.2.3.1		date-entity	:day	1.2.2.2.3.1.3	12	12
+::edge	1.1.1	government	government-organization	:ARG0-of	1.1.1.1	government	govern-01
+::edge	1.2.2.2.3.1		date-entity	:month	1.2.2.2.3.1.2	January	1
+::edge	1.2.2.2.3.1		date-entity	:year	1.2.2.2.3.1.1	2002	2002
+::edge	1.2.1.1.1	experts	expert-41	:ARG2	1.2.1.1.1.1	safety	safe-41
+::edge	1.2.1.1.2		have-org-role-91	:ARG1	1.2.1.1.2.1		organization
+::edge	1.2.1.1.2.1.2		name	:op1	1.2.1.1.2.1.2.1	IAEA	"IAEA"
+::edge	1.2	scheduled	schedule-01	:ARG1	1.2.1	visit	visit-01
+::edge	1.2	scheduled	schedule-01	:ARG2	1.2.2	last	last-01
+::edge	1.2.1.1		person	:ARG0-of	1.2.1.1.2		have-org-role-91
+::edge	1.2.1.1		person	:ARG1-of	1.2.1.1.1	experts	expert-41
+::edge	1	stated	state-01	:ARG0	1.1	source	source
+::edge	1	stated	state-01	:ARG1	1.2	scheduled	schedule-01
+::edge	1.2.1.1.2.1		organization	:name	1.2.1.1.2.1.2		name
+::edge	1.2.1.1.2.1		organization	:wiki	1.2.1.1.2.1.1		"International_Atomic_Energy_Agency"
+::edge	1.2.2	last	last-01	:ARG1	1.2.2.1		visit-01
+::edge	1.2.2	last	last-01	:ARG2	1.2.2.2		temporal-quantity
+::edge	1.2.2.2		temporal-quantity	:quant	1.2.2.2.1	January	1
+::edge	1.2.2.2.3	beginning	begin-01	:time	1.2.2.2.3.1		date-entity
+::edge	1.2.1	visit	visit-01	:ARG0	1.2.1.1		person
+::edge	1.2.2.2		temporal-quantity	:unit	1.2.2.2.2	week	week
+::edge	1.2.2.2		temporal-quantity	:ARG1-of	1.2.2.2.3	beginning	begin-01
+::edge	1.1	source	source	:mod	1.1.1	government	government-organization
+8	The source stated that the inspection would focus on an isotope production laboratory in the Yongbyon nuclear complex which is north of North Korea's capital Pyongyang.
+8	The source stated that the inspection would focus on an isotope production laboratory in the Yongbyon nuclear complex which is north of North Korea 's capital Pyongyang .
+8	1-1.1 2-1 3-1.2.r 5-1.2.1 7-1.2 8-1.2.2.r 10-1.2.2.1.1 11-1.2.2.1 12-1.2.2 13-1.2.2.2.r 15-1.2.2.2.2.2.1 16-1.2.2.2.1 17-1.2.2.2 20-1.2.2.2.3.2 22-1.2.2.2.3.1.3.1.2.1 23-1.2.2.2.3.1.3.1.2.2 24-1.2.2.2.3.1.3 25-1.2.2.2.3.1.3.2 26-1.2.2.2.3.1.2.1
+::node	h	1.2.2.2.3.1.3	have-org-role-91	's
+::node	n3	1.2.2.2.3.1.2	name	
+::node	"Pyongyang"	1.2.2.2.3.1.1	"Pyongyang"	
+::node	n5	1.2.2.2.3.1.3.1.2	name	
+::node	"North_Korea"	1.2.2.2.3.1.3.1.1	"North_Korea"	
+::node	p	1.2.2.1	produce-01	production
+::node	c	1.2.2.2	complex	complex
+::node	n	1.2.2.2.1	nucleus	nuclear
+::node	n2	1.2.2.2.2.2	name	
+::node	c3	1.2.2.2.3.1	city	
+::node	c2	1.2.2.2.2	county	
+::node	"Nyongbyon_County"	1.2.2.2.2.1	"Nyongbyon_County"	
+::node	r	1.2.2.2.3	relative-position	
+::node	n4	1.2.2.2.3.2	north	north
+::node	i2	1.2.2.1.1	isotope	isotope
+::node	i	1.2.1	inspect-01	inspection
+::node	"North"	1.2.2.2.3.1.3.1.2.1	"North"	North
+::node	s	1	state-01	stated
+::node	l	1.2.2	laboratory	laboratory
+::node	"Korea"	1.2.2.2.3.1.3.1.2.2	"Korea"	Korea
+::node	s2	1.1	source	source
+::node	f	1.2	focus-01	focus
+::node	"Yongbyon"	1.2.2.2.2.2.1	"Yongbyon"	Yongbyon
+::node	c5	1.2.2.2.3.1.3.2	capital	capital
+::node	"Pyongyang"	1.2.2.2.3.1.2.1	"Pyongyang"	Pyongyang
+::node	c4	1.2.2.2.3.1.3.1	country	
+::edge	1.2.2.2.3.1		city	:ARG0-of	1.2.2.2.3.1.3	's	have-org-role-91
+::edge	1.2.2.2.3.1		city	:name	1.2.2.2.3.1.2		name
+::edge	1.2.2.2.3.1		city	:wiki	1.2.2.2.3.1.1		"Pyongyang"
+::edge	1.2.2.2.3.1.3.1		country	:name	1.2.2.2.3.1.3.1.2		name
+::edge	1.2.2.2.3.1.3.1		country	:wiki	1.2.2.2.3.1.3.1.1		"North_Korea"
+::edge	1.2.2	laboratory	laboratory	:ARG0-of	1.2.2.1	production	produce-01
+::edge	1.2.2	laboratory	laboratory	:location	1.2.2.2	complex	complex
+::edge	1.2.2.2	complex	complex	:mod	1.2.2.2.1	nuclear	nucleus
+::edge	1.2.2.2.2		county	:name	1.2.2.2.2.2		name
+::edge	1.2.2.2.3		relative-position	:op1	1.2.2.2.3.1		city
+::edge	1.2.2.2	complex	complex	:mod	1.2.2.2.2		county
+::edge	1.2.2.2.2		county	:wiki	1.2.2.2.2.1		"Nyongbyon_County"
+::edge	1.2.2.2	complex	complex	:location	1.2.2.2.3		relative-position
+::edge	1.2.2.2.3		relative-position	:direction	1.2.2.2.3.2	north	north
+::edge	1.2.2.1	production	produce-01	:ARG1	1.2.2.1.1	isotope	isotope
+::edge	1.2	focus	focus-01	:ARG0	1.2.1	inspection	inspect-01
+::edge	1.2.2.2.3.1.3.1.2		name	:op1	1.2.2.2.3.1.3.1.2.1	North	"North"
+::edge	1.2	focus	focus-01	:ARG2	1.2.2	laboratory	laboratory
+::edge	1.2.2.2.3.1.3.1.2		name	:op2	1.2.2.2.3.1.3.1.2.2	Korea	"Korea"
+::edge	1	stated	state-01	:ARG0	1.1	source	source
+::edge	1	stated	state-01	:ARG1	1.2	focus	focus-01
+::edge	1.2.2.2.2.2		name	:op1	1.2.2.2.2.2.1	Yongbyon	"Yongbyon"
+::edge	1.2.2.2.3.1.3	's	have-org-role-91	:ARG2	1.2.2.2.3.1.3.2	capital	capital
+::edge	1.2.2.2.3.1.2		name	:op1	1.2.2.2.3.1.2.1	Pyongyang	"Pyongyang"
+::edge	1.2.2.2.3.1.3	's	have-org-role-91	:ARG1	1.2.2.2.3.1.3.1		country
+9	The IAEA tour of the isotope production laboratory will unlikely give a full picture of North Korea's suspected nuclear weapons ambitions.
+9	The IAEA tour of the isotope production laboratory will unlikely give a full picture of North Korea 's suspected nuclear weapons ambitions .
+9	1-1.2.1.1.2.1 2-1.2.1 3-1.2.1.2.r 5-1.2.1.2.1.1 6-1.2.1.2.1 7-1.2.1.2 9-1 9-1.1 9-1.1.r 10-1.2 12-1.2.2.1 13-1.2.2 14-1.2.2.2.r 15-1.2.2.2.3.2.1 16-1.2.2.2.3.2.2 17-1.2.2.2.3.r 18-1.2.2.2.2 19-1.2.2.2.1.1 20-1.2.2.2.1 21-1.2.2.2
+::node	"Korea"	1.2.2.2.3.2.2	"Korea"	Korea
+::node	"North"	1.2.2.2.3.2.1	"North"	North
+::node	"IAEA"	1.2.1.1.2.1	"IAEA"	IAEA
+::node	t	1.2.1	tour-01	tour
+::node	i	1.2.1.2.1.1	isotope	isotope
+::node	l	1	likely	unlikely
+::node	p2	1.2.2	picture	picture
+::node	n	1.2.1.1.2	name	
+::node	p	1.2.1.2.1	produce-01	production
+::node	"International_Atomic_Energy_Agency"	1.2.1.1.1	"International_Atomic_Energy_Agency"	
+::node	-	1.1	-	unlikely
+::node	g	1.2	give-01	give
+::node	l2	1.2.1.2	laboratory	laboratory
+::node	f	1.2.2.1	full	full
+::node	n2	1.2.2.2.1.1	nucleus	nuclear
+::node	a	1.2.2.2	ambition	ambitions
+::node	w	1.2.2.2.1	weapon	weapons
+::node	"North_Korea"	1.2.2.2.3.1	"North_Korea"	
+::node	o	1.2.1.1	organization	
+::node	s	1.2.2.2.2	suspect-01	suspected
+::node	c	1.2.2.2.3	country	
+::node	n3	1.2.2.2.3.2	name	
+::edge	1.2.2.2.3.2		name	:op2	1.2.2.2.3.2.2	Korea	"Korea"
+::edge	1.2.2.2.3.2		name	:op1	1.2.2.2.3.2.1	North	"North"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	IAEA	"IAEA"
+::edge	1.2	give	give-01	:ARG0	1.2.1	tour	tour-01
+::edge	1.2.1.2.1	production	produce-01	:ARG1	1.2.1.2.1.1	isotope	isotope
+::edge	1.2	give	give-01	:ARG1	1.2.2	picture	picture
+::edge	1.2.1.1		organization	:name	1.2.1.1.2		name
+::edge	1.2.1.2	laboratory	laboratory	:ARG0-of	1.2.1.2.1	production	produce-01
+::edge	1.2.1.1		organization	:wiki	1.2.1.1.1		"International_Atomic_Energy_Agency"
+::edge	1	unlikely	likely	:polarity	1.1	unlikely	-
+::edge	1	unlikely	likely	:domain	1.2	give	give-01
+::edge	1.2.1	tour	tour-01	:ARG1	1.2.1.2	laboratory	laboratory
+::edge	1.2.2	picture	picture	:mod	1.2.2.1	full	full
+::edge	1.2.2.2.1	weapons	weapon	:mod	1.2.2.2.1.1	nuclear	nucleus
+::edge	1.2.2	picture	picture	:consist-of	1.2.2.2	ambitions	ambition
+::edge	1.2.2.2	ambitions	ambition	:mod	1.2.2.2.1	weapons	weapon
+::edge	1.2.2.2.3		country	:wiki	1.2.2.2.3.1		"North_Korea"
+::edge	1.2.1	tour	tour-01	:ARG0	1.2.1.1		organization
+::edge	1.2.2.2	ambitions	ambition	:ARG1-of	1.2.2.2.2	suspected	suspect-01
+::edge	1.2.2.2	ambitions	ambition	:poss	1.2.2.2.3		country
+::edge	1.2.2.2.3		country	:name	1.2.2.2.3.2		name
+10	The tour was a surprise offer made by North Korea in November 2001.
+10	The tour was a surprise offer made by North Korea in November 2001 .
+10	1-1.3 2-1.3.r 4-1.2 5-1 5-1.1 5-1.1.r 6-1 6-1.1 6-1.1.r 7-1.1.1.r 8-1.1.1.2.1 9-1.1.1.2.2 10-1.1.2.r 11-1.1.2.2 11-1.1.2.2.r 12-1.1.2.1
+::node	d	1.1.2	date-entity	
+::node	t	1	thing	made
+::node	"North_Korea"	1.1.1.1	"North_Korea"	
+::node	n	1.1.1.2	name	
+::node	2001	1.1.2.1	2001	2001
+::node	o	1.1	offer-01	made
+::node	11	1.1.2.2	11	November
+::node	s	1.2	surprise-01	surprise
+::node	t2	1.3	tour-01	tour
+::node	"Korea"	1.1.1.2.2	"Korea"	Korea
+::node	"North"	1.1.1.2.1	"North"	North
+::node	c	1.1.1	country	
+::edge	1.1	made	offer-01	:time	1.1.2		date-entity
+::edge	1.1.1		country	:wiki	1.1.1.1		"North_Korea"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		date-entity	:year	1.1.2.1	2001	2001
+::edge	1	made	thing	:ARG1-of	1.1	made	offer-01
+::edge	1.1.2		date-entity	:month	1.1.2.2	November	11
+::edge	1	made	thing	:ARG0-of	1.2	surprise	surprise-01
+::edge	1	made	thing	:domain	1.3	tour	tour-01
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Korea	"Korea"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	North	"North"
+::edge	1.1	made	offer-01	:ARG0	1.1.1		country
+11	IAEA accepted North Korea's proposal last month but cautioned that the proposal is not a breakthrough.
+11	IAEA accepted North Korea 's proposal last month but cautioned that the proposal is not a breakthrough .
+11	0-1.1.1.2.1 1-1.1 2-1.1.2.1.1.2.1 3-1.1.2.1.1.2.2 4-1.1.2.1.1.r 5-1.1.2 5-1.1.2.1 5-1.1.2.1.r 6-1.1.3.1 7-1.1.3 8-1 9-1.2 10-1.2.2.r 12-1.2.2.2 13-1.2.2.2.r 14-1.2.2.1 14-1.2.2.1.r 16-1.2.2
+::node	"North"	1.1.2.1.1.2.1	"North"	North
+::node	"International_Atomic_Energy_Agency"	1.1.1.1	"International_Atomic_Energy_Agency"	
+::node	"Korea"	1.1.2.1.1.2.2	"Korea"	Korea
+::node	n	1.1.1.2	name	
+::node	p	1.1.2.1	propose-01	proposal
+::node	n2	1.1.2.1.1.2	name	
+::node	l	1.1.3.1	last	last
+::node	"North_Korea"	1.1.2.1.1.1	"North_Korea"	
+::node	c2	1.1.2.1.1	country	
+::node	t	1.1.2	thing	proposal
+::node	o	1.2.1	organization	
+::node	c	1	contrast-01	but
+::node	m	1.1.3	month	month
+::node	b	1.2.2	breakthrough-01	breakthrough
+::node	a	1.1	accept-01	accepted
+::node	c3	1.2	caution-01	cautioned
+::node	"IAEA"	1.1.1.2.1	"IAEA"	IAEA
+::node	-	1.2.2.1	-	not
+::node	t	1.2.2.2	thing	proposal
+::node	o	1.1.1	organization	
+::edge	1.1.2.1.1.2		name	:op1	1.1.2.1.1.2.1	North	"North"
+::edge	1.1.1		organization	:wiki	1.1.1.1		"International_Atomic_Energy_Agency"
+::edge	1.1.2.1.1.2		name	:op2	1.1.2.1.1.2.2	Korea	"Korea"
+::edge	1.1.1		organization	:name	1.1.1.2		name
+::edge	1.1.2	proposal	thing	:ARG1-of	1.1.2.1	proposal	propose-01
+::edge	1.1.2.1.1		country	:name	1.1.2.1.1.2		name
+::edge	1.1.3	month	month	:mod	1.1.3.1	last	last
+::edge	1.1.2.1.1		country	:wiki	1.1.2.1.1.1		"North_Korea"
+::edge	1.1.2.1	proposal	propose-01	:ARG0	1.1.2.1.1		country
+::edge	1.1	accepted	accept-01	:ARG1	1.1.2	proposal	thing
+::edge	1.2	cautioned	caution-01	:ARG0	1.2.1		organization
+::edge	1.1	accepted	accept-01	:time	1.1.3	month	month
+::edge	1.2	cautioned	caution-01	:ARG1	1.2.2	breakthrough	breakthrough-01
+::edge	1	but	contrast-01	:ARG1	1.1	accepted	accept-01
+::edge	1	but	contrast-01	:ARG2	1.2	cautioned	caution-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	IAEA	"IAEA"
+::edge	1.2.2	breakthrough	breakthrough-01	:polarity	1.2.2.1	not	-
+::edge	1.2.2	breakthrough	breakthrough-01	:domain	1.2.2.2	proposal	thing
+::edge	1.1	accepted	accept-01	:ARG0	1.1.1		organization
+12	IAEA also stated the lab is not one of the frozen facilities it wants to look into.
+12	IAEA also stated the lab is not one of the frozen facilities it wants to look into .
+12	0-1.1.2.1 1-1.3 2-1 4-1.2.2 6-1.2.1 6-1.2.1.r 7-1.2.4 10-1.2.3.1 11-1.2.3 13-1.2.3.2.2 15-1.2.3.2
+::node	"IAEA"	1.1.2.1	"IAEA"	IAEA
+::node	w	1.2.3.2.2	want-01	wants
+::node	o	1.2.3.2.1	organization	
+::node	n	1.1.2	name	
+::node	-	1.2.1	-	not
+::node	s	1	state-01	stated
+::node	l	1.2.2	lab	lab
+::node	f	1.2.3	facility	facilities
+::node	o2	1.2.4	one	one
+::node	o	1.1	organization	
+::node	i	1.2	include-91	
+::node	a	1.3	also	also
+::node	l2	1.2.3.2	look-01	look
+::node	o	1.2.3.2.2.1	organization	
+::node	f2	1.2.3.1	freeze-01	frozen
+::node	"International_Atomic_Energy_Agency"	1.1.1	"International_Atomic_Energy_Agency"	
+::edge	1.1.2		name	:op1	1.1.2.1	IAEA	"IAEA"
+::edge	1.2.3.2	look	look-01	:ARG1-of	1.2.3.2.2	wants	want-01
+::edge	1.2.3.2	look	look-01	:ARG0	1.2.3.2.1		organization
+::edge	1.1		organization	:name	1.1.2		name
+::edge	1.2		include-91	:polarity	1.2.1	not	-
+::edge	1.2		include-91	:ARG1	1.2.2	lab	lab
+::edge	1.2		include-91	:ARG2	1.2.3	facilities	facility
+::edge	1.2		include-91	:ARG3	1.2.4	one	one
+::edge	1	stated	state-01	:ARG0	1.1		organization
+::edge	1	stated	state-01	:ARG1	1.2		include-91
+::edge	1	stated	state-01	:mod	1.3	also	also
+::edge	1.2.3	facilities	facility	:ARG1-of	1.2.3.2	look	look-01
+::edge	1.2.3.2.2	wants	want-01	:ARG0	1.2.3.2.2.1		organization
+::edge	1.2.3	facilities	facility	:ARG1-of	1.2.3.1	frozen	freeze-01
+::edge	1.1		organization	:wiki	1.1.1		"International_Atomic_Energy_Agency"
+13	IAEA is based in Vienna and is the UN's nuclear supervisor.
+13	IAEA is based in Vienna and is the UN 's nuclear supervisor .
+13	0-1.1.1.2.1 2-1.1 3-1.1.2.r 4-1.1.2.2.1 5-1 8-1.2.2.2.1 9-1.2.2.r 10-1.2.3 11-1.2
+::node	"International_Atomic_Energy_Agency"	1.1.1.1	"International_Atomic_Energy_Agency"	
+::node	n	1.1.1.2	name	
+::node	"Vienna"	1.1.2.1	"Vienna"	
+::node	n2	1.1.2.2	name	
+::node	"Vienna"	1.1.2.2.1	"Vienna"	Vienna
+::node	c	1.1.2	city	
+::node	o	1.2.1	organization	
+::node	a	1	and	and
+::node	o2	1.2.2	organization	
+::node	n4	1.2.3	nucleus	nuclear
+::node	b	1.1	base-01	based
+::node	s	1.2	supervise-01	supervisor
+::node	"IAEA"	1.1.1.2.1	"IAEA"	IAEA
+::node	"United_Nations"	1.2.2.1	"United_Nations"	
+::node	n3	1.2.2.2	name	
+::node	"UN"	1.2.2.2.1	"UN"	UN
+::node	o	1.1.1	organization	
+::edge	1.1.1		organization	:wiki	1.1.1.1		"International_Atomic_Energy_Agency"
+::edge	1.1.1		organization	:name	1.1.1.2		name
+::edge	1.1.2		city	:wiki	1.1.2.1		"Vienna"
+::edge	1.1.2		city	:name	1.1.2.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Vienna	"Vienna"
+::edge	1.1	based	base-01	:location	1.1.2		city
+::edge	1.2	supervisor	supervise-01	:ARG0	1.2.1		organization
+::edge	1.2	supervisor	supervise-01	:ARG1	1.2.2		organization
+::edge	1.2	supervisor	supervise-01	:topic	1.2.3	nuclear	nucleus
+::edge	1	and	and	:op1	1.1	based	base-01
+::edge	1	and	and	:op2	1.2	supervisor	supervise-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	IAEA	"IAEA"
+::edge	1.2.2		organization	:wiki	1.2.2.1		"United_Nations"
+::edge	1.2.2		organization	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	UN	"UN"
+::edge	1.1	based	base-01	:ARG1	1.1.1		organization
+14	North Korea has denied the IAEA full access to its facilities.
+14	North Korea has denied the IAEA full access to its facilities .
+14	0-1.1.2.1 1-1.1.2.2 3-1 5-1.3.2.1 6-1.2.3 7-1.2 8-1.2.2.r 9-1.2.2.1 9-1.2.2.1.r 10-1.2.2
+::node	"North"	1.1.2.1	"North"	North
+::node	"Korea"	1.1.2.2	"Korea"	Korea
+::node	"IAEA"	1.3.2.1	"IAEA"	IAEA
+::node	n	1.1.2	name	
+::node	o	1.2.1	organization	
+::node	d	1	deny-01	denied
+::node	f	1.2.2	facility	facilities
+::node	"International_Atomic_Energy_Agency"	1.3.1	"International_Atomic_Energy_Agency"	
+::node	f2	1.2.3	full	full
+::node	n2	1.3.2	name	
+::node	c	1.1	country	
+::node	a	1.2	access-01	access
+::node	o	1.3	organization	
+::node	c	1.2.2.1	country	its
+::node	"North_Korea"	1.1.1	"North_Korea"	
+::edge	1.1.2		name	:op1	1.1.2.1	North	"North"
+::edge	1.1.2		name	:op2	1.1.2.2	Korea	"Korea"
+::edge	1.3.2		name	:op1	1.3.2.1	IAEA	"IAEA"
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	access	access-01	:ARG0	1.2.1		organization
+::edge	1.2	access	access-01	:ARG1	1.2.2	facilities	facility
+::edge	1.3		organization	:wiki	1.3.1		"International_Atomic_Energy_Agency"
+::edge	1.2	access	access-01	:mod	1.2.3	full	full
+::edge	1.3		organization	:name	1.3.2		name
+::edge	1	denied	deny-01	:ARG0	1.1		country
+::edge	1	denied	deny-01	:ARG1	1.2	access	access-01
+::edge	1	denied	deny-01	:ARG2	1.3		organization
+::edge	1.2.2	facilities	facility	:poss	1.2.2.1	its	country
+::edge	1.1		country	:wiki	1.1.1		"North_Korea"
+15	North Korea froze its suspected nuclear weapons program at Yongbyon in exchange for receiving two nuclear reactors producing less weapons-grade plutonium under a 1994 accord with the United States.
+15	North Korea froze its suspected nuclear weapons program at Yongbyon in exchange for receiving two nuclear reactors producing less weapons @-@ grade plutonium under a 1994 accord with the United States .
+15	0-1.1.2.1 1-1.1.2.2 2-1.2 3-1.2.1 3-1.2.1.r 4-1.2.2.3 5-1.2.2.1.1 6-1.2.2.1 7-1.2.2 8-1.2.2.2.r 9-1.2.2.2.2.1 11-1 12-1.3.r 13-1.3 14-1.3.2.1 15-1.3.2.2 16-1.3.2 17-1.3.2.3 18-1.3.2.3.1.2 19-1.3.2.3.1.1 21-1.3.2.3.1.1 22-1.3.2.3.1 23-1.3.3.r 25-1.3.3.1.1 26-1.3.3 27-1.3.3.2.r 29-1.3.3.2.2.1 30-1.3.3.2.2.2
+::node	p3	1.3.2.3.1	plutonium	plutonium
+::node	"States"	1.3.3.2.2.2	"States"	States
+::node	"United"	1.3.3.2.2.1	"United"	United
+::node	2	1.3.2.1	2	two
+::node	n4	1.3.2.2	nucleus	nuclear
+::node	d	1.3.3.1	date-entity	
+::node	p2	1.3.2.3	produce-01	producing
+::node	c3	1.3.3.2	country	
+::node	1994	1.3.3.1.1	1994	1994
+::node	"United_States"	1.3.3.2.1	"United_States"	
+::node	n5	1.3.3.2.2	name	
+::node	s	1.2.2.3	suspect-01	suspected
+::node	w	1.2.2.1	weapons	weapons
+::node	c2	1.2.2.2	county	
+::node	"Nyongbyon_County"	1.2.2.2.1	"Nyongbyon_County"	
+::node	n3	1.2.2.2.2	name	
+::node	"Yongbyon"	1.2.2.2.2.1	"Yongbyon"	Yongbyon
+::node	"North"	1.1.2.1	"North"	North
+::node	n2	1.2.2.1.1	nucleus	nuclear
+::node	"Korea"	1.1.2.2	"Korea"	Korea
+::node	l	1.3.2.3.1.2	less	less
+::node	w2	1.3.2.3.1.1	weapons-grade	grade
+::node	n	1.1.2	name	
+::node	c	1.2.1	country	its
+::node	e	1	exchange-01	exchange
+::node	p	1.2.2	program	program
+::node	c	1.3.1	country	
+::node	r2	1.3.2	reactor	reactors
+::node	a	1.3.3	accord	accord
+::node	c	1.1	country	
+::node	f	1.2	freeze-01	froze
+::node	r	1.3	receive-01	receiving
+::node	"North_Korea"	1.1.1	"North_Korea"	
+::edge	1.3.2.3	producing	produce-01	:ARG1	1.3.2.3.1	plutonium	plutonium
+::edge	1.3.3.2.2		name	:op2	1.3.3.2.2.2	States	"States"
+::edge	1.3.3.2.2		name	:op1	1.3.3.2.2.1	United	"United"
+::edge	1.3.2	reactors	reactor	:quant	1.3.2.1	two	2
+::edge	1.3.2	reactors	reactor	:mod	1.3.2.2	nuclear	nucleus
+::edge	1.3.3	accord	accord	:time	1.3.3.1		date-entity
+::edge	1.3.2	reactors	reactor	:ARG0-of	1.3.2.3	producing	produce-01
+::edge	1.3.3	accord	accord	:prep-with	1.3.3.2		country
+::edge	1.3.3.1		date-entity	:year	1.3.3.1.1	1994	1994
+::edge	1.3.3.2		country	:wiki	1.3.3.2.1		"United_States"
+::edge	1.3.3.2		country	:name	1.3.3.2.2		name
+::edge	1.2.2	program	program	:ARG1-of	1.2.2.3	suspected	suspect-01
+::edge	1.2.2	program	program	:mod	1.2.2.1	weapons	weapons
+::edge	1.2.2	program	program	:location	1.2.2.2		county
+::edge	1.2.2.2		county	:wiki	1.2.2.2.1		"Nyongbyon_County"
+::edge	1.2.2.2		county	:name	1.2.2.2.2		name
+::edge	1.2.2.2.2		name	:op1	1.2.2.2.2.1	Yongbyon	"Yongbyon"
+::edge	1.1.2		name	:op1	1.1.2.1	North	"North"
+::edge	1.2.2.1	weapons	weapons	:mod	1.2.2.1.1	nuclear	nucleus
+::edge	1.1.2		name	:op2	1.1.2.2	Korea	"Korea"
+::edge	1.3.2.3.1	plutonium	plutonium	:degree	1.3.2.3.1.2	less	less
+::edge	1.3.2.3.1	plutonium	plutonium	:mod	1.3.2.3.1.1	grade	weapons-grade
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	froze	freeze-01	:ARG0	1.2.1	its	country
+::edge	1.2	froze	freeze-01	:ARG1	1.2.2	program	program
+::edge	1.3	receiving	receive-01	:ARG0	1.3.1		country
+::edge	1.3	receiving	receive-01	:ARG1	1.3.2	reactors	reactor
+::edge	1.3	receiving	receive-01	:prep-under	1.3.3	accord	accord
+::edge	1	exchange	exchange-01	:ARG0	1.1		country
+::edge	1	exchange	exchange-01	:ARG1	1.2	froze	freeze-01
+::edge	1	exchange	exchange-01	:ARG3	1.3	receiving	receive-01
+::edge	1.1		country	:wiki	1.1.1		"North_Korea"
+16	The 4.6-billion-dollar project was due to be completed by 2003.
+16	The 4.6 @-@ billion @-@ dollar project was due to be completed by 2003 .
+16	5-1.1.1.2 6-1.1 11-1.2 13-1.3.1
+::node	p	1.2.1	project	
+::node	s	1	schedule-01	
+::node	2003	1.3.1	2003	2003
+::node	d	1.1.1.1	dollar	
+::node	4600000000	1.1.1.2	4600000000	dollar
+::node	p	1.1	project	project
+::node	c	1.2	complete-01	completed
+::node	d2	1.3	date-entity	
+::node	m	1.1.1	monetary-quantity	
+::edge	1.2	completed	complete-01	:ARG1	1.2.1		project
+::edge	1.3		date-entity	:year	1.3.1	2003	2003
+::edge	1.1.1		monetary-quantity	:unit	1.1.1.1		dollar
+::edge	1.1.1		monetary-quantity	:quant	1.1.1.2	dollar	4600000000
+::edge	1		schedule-01	:ARG1	1.1	project	project
+::edge	1		schedule-01	:ARG2	1.2	completed	complete-01
+::edge	1		schedule-01	:ARG3	1.3		date-entity
+::edge	1.1	project	project	:mod	1.1.1		monetary-quantity
+17	Delays have pushed back the finish until at least 2008.
+17	Delays have pushed back the finish until at least 2008 .
+17	0-1.1 2-1 3-1.3 5-1.2 6-1.4 7-1.4.1 8-1.4.1 9-1.4.1.1.1
+::node	p	1	push-01	pushed
+::node	a	1.4.1	at-least	least
+::node	d	1.1	delay-01	Delays
+::node	f	1.2	finish-01	finish
+::node	b	1.3	back	back
+::node	u	1.4	until	until
+::node	2008	1.4.1.1.1	2008	2008
+::node	d2	1.4.1.1	date-entity	
+::edge	1.4	until	until	:op1	1.4.1	least	at-least
+::edge	1	pushed	push-01	:ARG0	1.1	Delays	delay-01
+::edge	1	pushed	push-01	:ARG1	1.2	finish	finish-01
+::edge	1	pushed	push-01	:ARG2	1.3	back	back
+::edge	1	pushed	push-01	:time	1.4	until	until
+::edge	1.4.1.1		date-entity	:year	1.4.1.1.1	2008	2008
+::edge	1.4.1	least	at-least	:op1	1.4.1.1		date-entity
+18	Pyongyang insists it will allow full IAEA inspections only when a significant portion of the project as defined in the 1994 accord is completed.
+18	Pyongyang insists it will allow full IAEA inspections only when a significant portion of the project as defined in the 1994 accord is completed .
+18	0-1.1.2.1 1-1 2-1.2.1 4-1.2 5-1.2.2.2 6-1.2.2.1.2.1 7-1.2.2 8-1.2.4 9-1.2.3.1.2.1.1.1.r 11-1.2.3.1.2 12-1.2.3.1 13-1.2.3.1.1.r 15-1.2.3.1.1 16-1.2.3.1.2.1.1.1.r 17-1.2.3.1.2.1 20-1.2.3.1.2.1.1.1.1 21-1.2.3.1.2.1.1 23-1.2.3
+::node	"Pyongyang"	1.1.2.1	"Pyongyang"	Pyongyang
+::node	"International_Atomic_Energy_Agency"	1.2.2.1.1	"International_Atomic_Energy_Agency"	
+::node	d2	1.2.3.1.2.1.1.1	date-entity	
+::node	"IAEA"	1.2.2.1.2.1	"IAEA"	IAEA
+::node	p2	1.2.3.1.1	project	project
+::node	s	1.2.3.1.2	significance	significant
+::node	n	1.1.2	name	
+::node	c	1.2.1	city	it
+::node	i	1	insist-01	insists
+::node	i2	1.2.2	inspect-01	inspections
+::node	c2	1.2.3	complete-01	completed
+::node	o2	1.2.4	only	only
+::node	c	1.1	city	
+::node	1994	1.2.3.1.2.1.1.1.1	1994	1994
+::node	a	1.2	allow-01	allow
+::node	d	1.2.3.1.2.1	define-01	defined
+::node	o	1.2.2.1	organization	
+::node	f	1.2.2.2	full	full
+::node	p	1.2.3.1	portion	portion
+::node	n2	1.2.2.1.2	name	
+::node	a2	1.2.3.1.2.1.1	accord	accord
+::node	"Pyongyang"	1.1.1	"Pyongyang"	
+::edge	1.1.2		name	:op1	1.1.2.1	Pyongyang	"Pyongyang"
+::edge	1.2.2.1		organization	:wiki	1.2.2.1.1		"International_Atomic_Energy_Agency"
+::edge	1.2.3.1.2.1.1	accord	accord	:time	1.2.3.1.2.1.1.1		date-entity
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	IAEA	"IAEA"
+::edge	1.2.3.1	portion	portion	:part-of	1.2.3.1.1	project	project
+::edge	1.2.3.1	portion	portion	:mod	1.2.3.1.2	significant	significance
+::edge	1.1		city	:name	1.1.2		name
+::edge	1.2	allow	allow-01	:ARG0	1.2.1	it	city
+::edge	1.2	allow	allow-01	:ARG1	1.2.2	inspections	inspect-01
+::edge	1.2	allow	allow-01	:condition	1.2.3	completed	complete-01
+::edge	1.2	allow	allow-01	:mod	1.2.4	only	only
+::edge	1	insists	insist-01	:ARG0	1.1		city
+::edge	1.2.3.1.2.1.1.1		date-entity	:year	1.2.3.1.2.1.1.1.1	1994	1994
+::edge	1	insists	insist-01	:ARG1	1.2	allow	allow-01
+::edge	1.2.3.1.2	significant	significance	:ARG1-of	1.2.3.1.2.1	defined	define-01
+::edge	1.2.2	inspections	inspect-01	:ARG0	1.2.2.1		organization
+::edge	1.2.2	inspections	inspect-01	:mod	1.2.2.2	full	full
+::edge	1.2.3	completed	complete-01	:ARG1	1.2.3.1	portion	portion
+::edge	1.2.2.1		organization	:name	1.2.2.1.2		name
+::edge	1.2.3.1.2.1	defined	define-01	:ARG0	1.2.3.1.2.1.1	accord	accord
+::edge	1.1		city	:wiki	1.1.1		"Pyongyang"

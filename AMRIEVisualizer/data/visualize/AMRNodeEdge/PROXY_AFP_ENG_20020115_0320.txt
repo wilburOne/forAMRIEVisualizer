@@ -1,0 +1,1734 @@
+1	2002-01-15
+1	2002 @-@ 01 @-@ 15
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	1	1.2	1	01
+::node	15	1.3	15	15
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	01	1
+::edge	1		date-entity	:day	1.3	15	15
+2	Pakistan (PK); India (IN)
+2	Pakistan ( PK ) ; India ( IN )
+2	0-1.1.2.1 5-1.2.2.1
+::node	n	1.1.2	name	
+::node	"India"	1.2.1	"India"	
+::node	a	1	and	
+::node	n2	1.2.2	name	
+::node	"Pakistan"	1.1.2.1	"Pakistan"	Pakistan
+::node	c	1.1	country	
+::node	c2	1.2	country	
+::node	"India"	1.2.2.1	"India"	India
+::node	"Pakistan"	1.1.1	"Pakistan"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"India"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Pakistan	"Pakistan"
+::edge	1		and	:op1	1.1		country
+::edge	1		and	:op2	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	India	"India"
+::edge	1.1		country	:wiki	1.1.1		"Pakistan"
+3	International; Government; terrorism; war and conflict; dissent; leader
+3	International ; Government ; terrorism ; war and conflict ; dissent ; leader
+3	0-1.1 2-1.2 2-1.2.1 2-1.2.1.r 4-1.3 6-1.4.1 7-1.4 8-1.4.2 10-1.5 12-1.6 12-1.6.1 12-1.6.1.r
+::node	g2	1.2.1	govern-01	Government
+::node	a	1	and	
+::node	w	1.4.1	war-01	war
+::node	c	1.4.2	conflict-01	conflict
+::node	i	1.1	international	International
+::node	l	1.6.1	lead-02	leader
+::node	g	1.2	government-organization	Government
+::node	t	1.3	terrorism	terrorism
+::node	a2	1.4	and	and
+::node	d	1.5	dissent-01	dissent
+::node	p	1.6	person	leader
+::edge	1.2	Government	government-organization	:ARG0-of	1.2.1	Government	govern-01
+::edge	1.4	and	and	:op1	1.4.1	war	war-01
+::edge	1.4	and	and	:op2	1.4.2	conflict	conflict-01
+::edge	1		and	:op1	1.1	International	international
+::edge	1.6	leader	person	:ARG0-of	1.6.1	leader	lead-02
+::edge	1		and	:op2	1.2	Government	government-organization
+::edge	1		and	:op3	1.3	terrorism	terrorism
+::edge	1		and	:op4	1.4	and	and
+::edge	1		and	:op5	1.5	dissent	dissent-01
+::edge	1		and	:op6	1.6	leader	person
+4	Religious extremism continues in Pakistan despite the banning of militant groups.
+4	Religious extremism continues in Pakistan despite the banning of militant groups .
+4	0-1.1.1 1-1.1 2-1 3-1.2.r 4-1.2.2.1 5-1.3.r 7-1.3 8-1.3.1.r 9-1.3.1.1 10-1.3.1
+::node	"Pakistan"	1.2.1	"Pakistan"	
+::node	c	1	continue-01	continues
+::node	n	1.2.2	name	
+::node	g	1.3.1	group	groups
+::node	e	1.1	extremism	extremism
+::node	c2	1.2	country	
+::node	b	1.3	ban-01	banning
+::node	m	1.3.1.1	militant	militant
+::node	"Pakistan"	1.2.2.1	"Pakistan"	Pakistan
+::node	r	1.1.1	religion	Religious
+::edge	1.2		country	:wiki	1.2.1		"Pakistan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3	banning	ban-01	:ARG1	1.3.1	groups	group
+::edge	1	continues	continue-01	:ARG1	1.1	extremism	extremism
+::edge	1	continues	continue-01	:location	1.2		country
+::edge	1	continues	continue-01	:concession	1.3	banning	ban-01
+::edge	1.3.1	groups	group	:consist-of	1.3.1.1	militant	militant
+::edge	1.2.2		name	:op1	1.2.2.1	Pakistan	"Pakistan"
+::edge	1.1	extremism	extremism	:mod	1.1.1	Religious	religion
+5	Religious extremism continues in Pakistan despite the banning of militant groups by the Pakistani Government.
+5	Religious extremism continues in Pakistan despite the banning of militant groups by the Pakistani Government .
+5	0-1.1.1 1-1.1 2-1 3-1.2.r 4-1.2.2.1 5-1.3.r 7-1.3 8-1.3.2.r 9-1.3.2.1 10-1.3.2 11-1.3.1.r 13-1.3.1.1.1 14-1.3.1 14-1.3.1.1 14-1.3.1.1.r
+::node	g2	1.3.1.1	govern-01	Government
+::node	m	1.3.2.1	militant	militant
+::node	c2	1.3.1.1.1	country	Pakistani
+::node	"Pakistan"	1.2.1	"Pakistan"	
+::node	c	1	continue-01	continues
+::node	n	1.2.2	name	
+::node	g	1.3.1	government-organization	Government
+::node	g3	1.3.2	group	groups
+::node	e	1.1	extremism	extremism
+::node	c2	1.2	country	
+::node	b	1.3	ban-01	banning
+::node	"Pakistan"	1.2.2.1	"Pakistan"	Pakistan
+::node	r	1.1.1	religion	Religious
+::edge	1.2		country	:wiki	1.2.1		"Pakistan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3	banning	ban-01	:ARG0	1.3.1	Government	government-organization
+::edge	1.3	banning	ban-01	:ARG1	1.3.2	groups	group
+::edge	1	continues	continue-01	:ARG1	1.1	extremism	extremism
+::edge	1	continues	continue-01	:location	1.2		country
+::edge	1	continues	continue-01	:concession	1.3	banning	ban-01
+::edge	1.3.1	Government	government-organization	:ARG0-of	1.3.1.1	Government	govern-01
+::edge	1.3.2	groups	group	:consist-of	1.3.2.1	militant	militant
+::edge	1.2.2		name	:op1	1.2.2.1	Pakistan	"Pakistan"
+::edge	1.3.1.1	Government	govern-01	:ARG1	1.3.1.1.1	Pakistani	country
+::edge	1.1	extremism	extremism	:mod	1.1.1	Religious	religion
+6	Newspapers and magazines extolling the virtues of Islamic holy war in Kashmir continue to fill the newstands in Pakistan despite the Pakistani military Government's attempt at a large scale containment of religious extremism.
+6	Newspapers and magazines extolling the virtues of Islamic holy war in Kashmir continue to fill the newstands in Pakistan despite the Pakistani military Government 's attempt at a large scale containment of religious extremism .
+6	0-1.1.2.1 1-1.1.2 2-1.1.2.2 3-1.1.2.3 5-1.1.2.3.1 6-1.1.2.3.1.1.r 7-1.1.2.3.1.1.2.2.1 8-1.1.2.3.1.1.1 9-1.1.2.3.1.1 10-1.1.2.3.1.1.3.r 11-1.1.2.3.1.1.3.2.1 12-1 14-1.1 18-1.1.1.1.2.1 19-1.2.r 22-1.2.1.2 23-1.2.1 23-1.2.1.1 23-1.2.1.1.r 24-1.2.1.r 25-1.2 26-1.2.2.r 28-1.2.2.2 29-1.2.2.2 30-1.2.2 31-1.2.2.1.r 32-1.2.2.1.1 33-1.2.2.1
+::node	"Islam"	1.1.2.3.1.1.2.2.1	"Islam"	Islamic
+::node	"Kashmir"	1.1.2.3.1.1.3.2.1	"Kashmir"	Kashmir
+::node	n2	1.1.1.1.2	name	
+::node	"Pakistan"	1.1.1.1.1	"Pakistan"	
+::node	m2	1.2.1.2	military	military
+::node	e2	1.2.2.1	extremism	extremism
+::node	l	1.2.2.2	large-scale	scale
+::node	g2	1.2.1.1	govern-01	Government
+::node	"Pakistan"	1.1.1.1.2.1	"Pakistan"	Pakistan
+::node	w	1.1.2.3.1.1	war	war
+::node	c2	1.1.1.1	country	
+::node	n3	1.1.2.1	newspaper	Newspapers
+::node	r2	1.2.2.1.1	religion	religious
+::node	m	1.1.2.2	magazine	magazines
+::node	e	1.1.2.3	extol-01	extolling
+::node	n5	1.1.2.3.1.1.3.2	name	
+::node	n4	1.1.2.3.1.1.2.2	name	
+::node	"Kashmir"	1.1.2.3.1.1.3.1	"Kashmir"	
+::node	"Islam"	1.1.2.3.1.1.2.1	"Islam"	
+::node	a	1.1.2	and	and
+::node	g	1.2.1	government-organization	Government
+::node	c	1	continue-01	continue
+::node	c4	1.2.2	contain-01	containment
+::node	c2	1.2.1.1.1	country	
+::node	f	1.1	fill-01	fill
+::node	v	1.1.2.3.1	virtue	virtues
+::node	a2	1.2	attempt-01	attempt
+::node	r	1.1.2.3.1.1.2	religious-group	
+::node	h	1.1.2.3.1.1.1	holy	holy
+::node	w2	1.1.2.3.1.1.3	world-region	
+::node	n	1.1.1	newsstand	
+::edge	1.1.2.3.1.1.2.2		name	:op1	1.1.2.3.1.1.2.2.1	Islamic	"Islam"
+::edge	1.1.2.3.1.1.3.2		name	:op1	1.1.2.3.1.1.3.2.1	Kashmir	"Kashmir"
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Pakistan"
+::edge	1.2.1	Government	government-organization	:mod	1.2.1.2	military	military
+::edge	1.2.2	containment	contain-01	:ARG1	1.2.2.1	extremism	extremism
+::edge	1.2.2	containment	contain-01	:degree	1.2.2.2	scale	large-scale
+::edge	1.2.1	Government	government-organization	:ARG0-of	1.2.1.1	Government	govern-01
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Pakistan	"Pakistan"
+::edge	1.1.2.3.1	virtues	virtue	:poss	1.1.2.3.1.1	war	war
+::edge	1.1.1		newsstand	:location	1.1.1.1		country
+::edge	1.1.2	and	and	:op1	1.1.2.1	Newspapers	newspaper
+::edge	1.2.2.1	extremism	extremism	:mod	1.2.2.1.1	religious	religion
+::edge	1.1.2	and	and	:op2	1.1.2.2	magazines	magazine
+::edge	1.1.2	and	and	:ARG0-of	1.1.2.3	extolling	extol-01
+::edge	1.1.2.3.1.1.3		world-region	:name	1.1.2.3.1.1.3.2		name
+::edge	1.1.2.3.1.1.2		religious-group	:name	1.1.2.3.1.1.2.2		name
+::edge	1.1.2.3.1.1.3		world-region	:wiki	1.1.2.3.1.1.3.1		"Kashmir"
+::edge	1.1.2.3.1.1.2		religious-group	:wiki	1.1.2.3.1.1.2.1		"Islam"
+::edge	1.1	fill	fill-01	:ARG2	1.1.2	and	and
+::edge	1.2	attempt	attempt-01	:ARG0	1.2.1	Government	government-organization
+::edge	1.2	attempt	attempt-01	:ARG1	1.2.2	containment	contain-01
+::edge	1.2.1.1	Government	govern-01	:ARG1	1.2.1.1.1		country
+::edge	1	continue	continue-01	:ARG1	1.1	fill	fill-01
+::edge	1.1.2.3	extolling	extol-01	:ARG1	1.1.2.3.1	virtues	virtue
+::edge	1	continue	continue-01	:concession	1.2	attempt	attempt-01
+::edge	1.1.2.3.1.1	war	war	:mod	1.1.2.3.1.1.2		religious-group
+::edge	1.1.2.3.1.1	war	war	:mod	1.1.2.3.1.1.1	holy	holy
+::edge	1.1.2.3.1.1	war	war	:location	1.1.2.3.1.1.3		world-region
+::edge	1.1	fill	fill-01	:ARG1	1.1.1		newsstand
+7	Around 1400 alleged religious extremists have been arrested since 020112 under severe actions against Islamic militants and sectarian radicals announced by President Pervez Musharraf during the weekend.
+7	Around 1400 alleged religious extremists have been arrested since 020112 under severe actions against Islamic militants and sectarian radicals announced by President Pervez Musharraf during the weekend .
+7	0-1.1.3 1-1.1.3.1 2-1.1.2 3-1.1.1 4-1.1 7-1 8-1.2 9-1.2.1 9-1.2.1.1 9-1.2.1.1.r 9-1.2.1.2 9-1.2.1.2.r 9-1.2.1.3 9-1.2.1.3.r 10-1.3.r 11-1.3.3 12-1.3 13-1.3.1.r 14-1.3.1.1.1.2.1 15-1.3.1.1 16-1.3.1 17-1.3.1.2.1 18-1.3.1.2 19-1.3.2 20-1.3.2.1.r 21-1.3.2.1.3.1 22-1.3.2.1.2.1 23-1.3.2.1.2.2 24-1.3.2.2.r 26-1.3.2.2
+::node	h	1.3.2.1.3	have-org-role-91	
+::node	"Pervez_Musharraf"	1.3.2.1.1	"Pervez_Musharraf"	
+::node	n2	1.3.2.1.2	name	
+::node	m	1.3.1.1	militant	militants
+::node	r3	1.3.1.2	radical	radicals
+::node	p	1.3.2.1	person	
+::node	"Musharraf"	1.3.2.1.2.2	"Musharraf"	Musharraf
+::node	p2	1.3.2.1.3.1	president	President
+::node	w	1.3.2.2	weekend	weekend
+::node	r2	1.3.1.1.1	religious-group	
+::node	"Pervez"	1.3.2.1.2.1	"Pervez"	Pervez
+::node	1	1.2.1.2	1	020112
+::node	12	1.2.1.3	12	020112
+::node	2002	1.2.1.1	2002	020112
+::node	1400	1.1.3.1	1400	1400
+::node	n	1.3.1.1.1.2	name	
+::node	"Islam"	1.3.1.1.1.1	"Islam"	
+::node	"Islam"	1.3.1.1.1.2.1	"Islam"	Islamic
+::node	a2	1.1.2	allege-01	alleged
+::node	d	1.2.1	date-entity	020112
+::node	a	1	arrest-01	arrested
+::node	a3	1.1.3	around	Around
+::node	a5	1.3.1	and	and
+::node	a6	1.3.2	announce-01	announced
+::node	s3	1.3.3	severe	severe
+::node	e	1.1	extremist	extremists
+::node	s2	1.3.1.2.1	sectarian	sectarian
+::node	s	1.2	since	since
+::node	a4	1.3	act-02	actions
+::node	r	1.1.1	religion	religious
+::edge	1.3.2.1		person	:ARG0-of	1.3.2.1.3		have-org-role-91
+::edge	1.3.2.1		person	:wiki	1.3.2.1.1		"Pervez_Musharraf"
+::edge	1.3.2.1		person	:name	1.3.2.1.2		name
+::edge	1.3.1	and	and	:op1	1.3.1.1	militants	militant
+::edge	1.3.1	and	and	:op2	1.3.1.2	radicals	radical
+::edge	1.3.2	announced	announce-01	:ARG0	1.3.2.1		person
+::edge	1.3.2.1.2		name	:op2	1.3.2.1.2.2	Musharraf	"Musharraf"
+::edge	1.3.2.1.3		have-org-role-91	:ARG2	1.3.2.1.3.1	President	president
+::edge	1.3.2	announced	announce-01	:time	1.3.2.2	weekend	weekend
+::edge	1.3.1.1	militants	militant	:mod	1.3.1.1.1		religious-group
+::edge	1.3.2.1.2		name	:op1	1.3.2.1.2.1	Pervez	"Pervez"
+::edge	1.2.1	020112	date-entity	:month	1.2.1.2	020112	1
+::edge	1.2.1	020112	date-entity	:day	1.2.1.3	020112	12
+::edge	1.2.1	020112	date-entity	:year	1.2.1.1	020112	2002
+::edge	1.1.3	Around	around	:op1	1.1.3.1	1400	1400
+::edge	1.3.1.1.1		religious-group	:name	1.3.1.1.1.2		name
+::edge	1.3.1.1.1		religious-group	:wiki	1.3.1.1.1.1		"Islam"
+::edge	1.3.1.1.1.2		name	:op1	1.3.1.1.1.2.1	Islamic	"Islam"
+::edge	1.1	extremists	extremist	:ARG1-of	1.1.2	alleged	allege-01
+::edge	1.2	since	since	:op1	1.2.1	020112	date-entity
+::edge	1.1	extremists	extremist	:quant	1.1.3	Around	around
+::edge	1.3	actions	act-02	:prep-against	1.3.1	and	and
+::edge	1.3	actions	act-02	:ARG1-of	1.3.2	announced	announce-01
+::edge	1.3	actions	act-02	:mod	1.3.3	severe	severe
+::edge	1	arrested	arrest-01	:ARG1	1.1	extremists	extremist
+::edge	1.3.1.2	radicals	radical	:mod	1.3.1.2.1	sectarian	sectarian
+::edge	1	arrested	arrest-01	:time	1.2	since	since
+::edge	1	arrested	arrest-01	:prep-under	1.3	actions	act-02
+::edge	1.1	extremists	extremist	:mod	1.1.1	religious	religion
+8	The severe actions against militants and radicals came as Pervez Musharraf banned 5 Islamic groups.
+8	The severe actions against militants and radicals came as Pervez Musharraf banned 5 Islamic groups .
+8	1-1.2 2-1 3-1.1.r 4-1.1.1 5-1.1 6-1.1.2 8-1.3.r 9-1.3.1.2.1 10-1.3.1.2.2 11-1.3 12-1.3.2.1.1 13-1.3.2.1.3.1 14-1.3.2
+::node	n2	1.3.2.1.3	name	
+::node	5	1.3.2.1.1	5	5
+::node	"Islam"	1.3.2.1.2	"Islam"	
+::node	"Pervez_Musharraf"	1.3.1.1	"Pervez_Musharraf"	
+::node	n	1.3.1.2	name	
+::node	r2	1.3.2.1	religious-group	
+::node	"Islam"	1.3.2.1.3.1	"Islam"	Islamic
+::node	r	1.1.2	radical	radicals
+::node	a	1	act-02	actions
+::node	p	1.3.1	person	
+::node	g	1.3.2	group	groups
+::node	a2	1.1	and	and
+::node	"Pervez"	1.3.1.2.1	"Pervez"	Pervez
+::node	s	1.2	severe	severe
+::node	"Musharraf"	1.3.1.2.2	"Musharraf"	Musharraf
+::node	b	1.3	ban-01	banned
+::node	m	1.1.1	militant	militants
+::edge	1.3.2.1		religious-group	:name	1.3.2.1.3		name
+::edge	1.3.2.1		religious-group	:quant	1.3.2.1.1	5	5
+::edge	1.3.2.1		religious-group	:wiki	1.3.2.1.2		"Islam"
+::edge	1.3.1		person	:wiki	1.3.1.1		"Pervez_Musharraf"
+::edge	1.3.1		person	:name	1.3.1.2		name
+::edge	1.3.2	groups	group	:mod	1.3.2.1		religious-group
+::edge	1.3.2.1.3		name	:op1	1.3.2.1.3.1	Islamic	"Islam"
+::edge	1.1	and	and	:op2	1.1.2	radicals	radical
+::edge	1.3	banned	ban-01	:ARG0	1.3.1		person
+::edge	1.3	banned	ban-01	:ARG1	1.3.2	groups	group
+::edge	1	actions	act-02	:prep-against	1.1	and	and
+::edge	1.3.1.2		name	:op1	1.3.1.2.1	Pervez	"Pervez"
+::edge	1	actions	act-02	:mod	1.2	severe	severe
+::edge	1.3.1.2		name	:op2	1.3.1.2.2	Musharraf	"Musharraf"
+::edge	1	actions	act-02	:time	1.3	banned	ban-01
+::edge	1.1	and	and	:op1	1.1.1	militants	militant
+9	The banned 5 Islamic groups included the 2 hardline militant groups fighting Indian rule in Kashmir which the Indian government accuses of staging the violent 011213 attack on the Indian parliament.
+9	The banned 5 Islamic groups included the 2 hardline militant groups fighting Indian rule in Kashmir which the Indian government accuses of staging the violent 011213 attack on the Indian parliament .
+9	1-1.2.3 2-1.2.1 3-1.2.2.2.1 4-1.2 5-1 7-1.1.1 8-1.1.2.1 9-1.1.2 10-1.1 11-1.1.3 12-1.1.3.1.1.2.1 13-1.1.3.1 14-1.1.3.1.2.r 15-1.1.3.1.2.2.1 18-1.1.3.1.1.2.1 19-1.1.4.1 19-1.1.4.1.1 19-1.1.4.1.1.r 20-1.1.4 21-1.1.4.2.r 22-1.1.4.2 24-1.1.4.2.2.2 25-1.1.4.2.2.3 25-1.1.4.2.2.3.1 25-1.1.4.2.2.3.1.r 25-1.1.4.2.2.3.2 25-1.1.4.2.2.3.2.r 25-1.1.4.2.2.3.3 25-1.1.4.2.2.3.3.r 26-1.1.4.2.2 27-1.1.4.2.2.1.r 29-1.1.4.2.2.1.1 30-1.1.4.2.2.1
+::node	w	1.1.3.1.2	world-region	
+::node	a2	1.1.4.2.2	attack-01	attack
+::node	c	1.1.4.1.1.1	country	
+::node	g4	1.1.4.1.1	govern-01	government
+::node	g2	1.1.4.2.1	group	
+::node	"Islam"	1.2.2.1	"Islam"	
+::node	n	1.2.2.2	name	
+::node	"Islam"	1.2.2.2.1	"Islam"	Islamic
+::node	h	1.1.2.1	hardline	hardline
+::node	r2	1.1.3.1	rule-03	rule
+::node	p	1.1.4.2.2.1	parliament	parliament
+::node	g3	1.1.4.1	government-organization	government
+::node	s	1.1.4.2	stage-01	staging
+::node	d	1.1.4.2.2.3	date-entity	011213
+::node	v	1.1.4.2.2.2	violence	violent
+::node	n3	1.1.3.1.2.2	name	
+::node	c	1.1.4.2.2.1.1	country	Indian
+::node	12	1.1.4.2.2.3.2	12	011213
+::node	2001	1.1.4.2.2.3.1	2001	011213
+::node	13	1.1.4.2.2.3.3	13	011213
+::node	"India"	1.1.3.1.1.1	"India"	
+::node	n2	1.1.3.1.1.2	name	
+::node	"India"	1.1.3.1.1.2.1	"India"	Indian
+::node	"Kashmir"	1.1.3.1.2.1	"Kashmir"	
+::node	m	1.1.2	militant	militant
+::node	"Kashmir"	1.1.3.1.2.2.1	"Kashmir"	Kashmir
+::node	5	1.2.1	5	5
+::node	i	1	include-91	included
+::node	f	1.1.3	fight-01	fighting
+::node	r	1.2.2	religious-group	
+::node	a	1.1.4	accuse-01	accuses
+::node	b	1.2.3	ban-01	banned
+::node	g2	1.1	group	groups
+::node	g	1.2	group	groups
+::node	c	1.1.3.1.1	country	
+::node	2	1.1.1	2	2
+::edge	1.1.3.1	rule	rule-03	:ARG1	1.1.3.1.2		world-region
+::edge	1.1.4.2	staging	stage-01	:ARG1	1.1.4.2.2	attack	attack-01
+::edge	1.1.4.1.1	government	govern-01	:ARG1	1.1.4.1.1.1		country
+::edge	1.1.4.1	government	government-organization	:ARG0-of	1.1.4.1.1	government	govern-01
+::edge	1.1.4.2	staging	stage-01	:ARG0	1.1.4.2.1		group
+::edge	1.2.2		religious-group	:wiki	1.2.2.1		"Islam"
+::edge	1.2.2		religious-group	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Islamic	"Islam"
+::edge	1.1.2	militant	militant	:mod	1.1.2.1	hardline	hardline
+::edge	1.1.3	fighting	fight-01	:ARG1	1.1.3.1	rule	rule-03
+::edge	1.1.4.2.2	attack	attack-01	:ARG1	1.1.4.2.2.1	parliament	parliament
+::edge	1.1.4	accuses	accuse-01	:ARG0	1.1.4.1	government	government-organization
+::edge	1.1.4	accuses	accuse-01	:ARG2	1.1.4.2	staging	stage-01
+::edge	1.1.4.2.2	attack	attack-01	:time	1.1.4.2.2.3	011213	date-entity
+::edge	1.1.4.2.2	attack	attack-01	:mod	1.1.4.2.2.2	violent	violence
+::edge	1.1.3.1.2		world-region	:name	1.1.3.1.2.2		name
+::edge	1.1.4.2.2.1	parliament	parliament	:mod	1.1.4.2.2.1.1	Indian	country
+::edge	1.1.4.2.2.3	011213	date-entity	:month	1.1.4.2.2.3.2	011213	12
+::edge	1.1.4.2.2.3	011213	date-entity	:year	1.1.4.2.2.3.1	011213	2001
+::edge	1.1.4.2.2.3	011213	date-entity	:day	1.1.4.2.2.3.3	011213	13
+::edge	1.1.3.1.1		country	:wiki	1.1.3.1.1.1		"India"
+::edge	1.1.3.1.1		country	:name	1.1.3.1.1.2		name
+::edge	1.1.3.1.1.2		name	:op1	1.1.3.1.1.2.1	Indian	"India"
+::edge	1.1.3.1.2		world-region	:wiki	1.1.3.1.2.1		"Kashmir"
+::edge	1.1	groups	group	:consist-of	1.1.2	militant	militant
+::edge	1.1.3.1.2.2		name	:op1	1.1.3.1.2.2.1	Kashmir	"Kashmir"
+::edge	1.2	groups	group	:quant	1.2.1	5	5
+::edge	1.1	groups	group	:ARG0-of	1.1.3	fighting	fight-01
+::edge	1.2	groups	group	:mod	1.2.2		religious-group
+::edge	1.1	groups	group	:ARG1-of	1.1.4	accuses	accuse-01
+::edge	1.2	groups	group	:ARG1-of	1.2.3	banned	ban-01
+::edge	1	included	include-91	:ARG1	1.1	groups	group
+::edge	1	included	include-91	:ARG2	1.2	groups	group
+::edge	1.1.3.1	rule	rule-03	:ARG0	1.1.3.1.1		country
+::edge	1.1	groups	group	:quant	1.1.1	2	2
+10	Pakistani authorities have stated that no statements or literature from the 5 banned Islamic groups would be tolerated after Pervez Musharraf's speech banning the 5 Islamic groups.
+10	Pakistani authorities have stated that no statements or literature from the 5 banned Islamic groups would be tolerated after Pervez Musharraf 's speech banning the 5 Islamic groups .
+10	0-1.1.1.2.1 1-1.1 3-1 4-1.2.r 5-1.2.1 5-1.2.1.r 6-1.2.2.1 6-1.2.2.1.1 6-1.2.2.1.1.r 7-1.2.2 8-1.2.2.2 9-1.2.2.3.r 11-1.2.2.3.1 12-1.2.2.3.3 13-1.2.2.3.2.2.1 14-1.2.2.3 17-1.2 18-1.2.3 19-1.2.3.1.1.2.1 20-1.2.3.1.1.2.2 23-1.2.3.1.2 25-1.2.2.3.1 26-1.2.2.3.2.2.1 27-1.2.2.3
+::node	"Musharraf"	1.2.3.1.1.2.2	"Musharraf"	Musharraf
+::node	"Pervez"	1.2.3.1.1.2.1	"Pervez"	Pervez
+::node	g	1.2.2.3	group	groups
+::node	"Pakistan"	1.1.1.2.1	"Pakistan"	Pakistani
+::node	t2	1.2.2.1	thing	statements
+::node	l	1.2.2.2	literature	literature
+::node	s3	1.2.3.1	speak-01	
+::node	5	1.2.2.3.1	5	5
+::node	r	1.2.2.3.2	religious-group	
+::node	b	1.2.2.3.3	ban-01	banned
+::node	n2	1.2.2.3.2.2	name	
+::node	"Pakistan"	1.1.1.1	"Pakistan"	
+::node	"Islam"	1.2.2.3.2.1	"Islam"	
+::node	n	1.1.1.2	name	
+::node	s2	1.2.2.1.1	state-01	statements
+::node	"Islam"	1.2.2.3.2.2.1	"Islam"	Islamic
+::node	p	1.2.3.1.1	person	
+::node	b	1.2.3.1.2	ban-01	banning
+::node	-	1.2.1	-	no
+::node	s	1	state-01	stated
+::node	o	1.2.2	or	or
+::node	a2	1.2.3	after	after
+::node	"Pervez_Musharraf"	1.2.3.1.1.1	"Pervez_Musharraf"	
+::node	a	1.1	authority	authorities
+::node	t	1.2	tolerate-01	tolerated
+::node	n3	1.2.3.1.1.2	name	
+::node	c	1.1.1	country	
+::edge	1.2.3.1.1.2		name	:op2	1.2.3.1.1.2.2	Musharraf	"Musharraf"
+::edge	1.2.3.1.1.2		name	:op1	1.2.3.1.1.2.1	Pervez	"Pervez"
+::edge	1.2.2	or	or	:source	1.2.2.3	groups	group
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Pakistani	"Pakistan"
+::edge	1.2.2	or	or	:op1	1.2.2.1	statements	thing
+::edge	1.2.2	or	or	:op2	1.2.2.2	literature	literature
+::edge	1.2.3	after	after	:op1	1.2.3.1		speak-01
+::edge	1.2.2.3	groups	group	:quant	1.2.2.3.1	5	5
+::edge	1.2.2.3	groups	group	:mod	1.2.2.3.2		religious-group
+::edge	1.2.2.3	groups	group	:ARG1-of	1.2.2.3.3	banned	ban-01
+::edge	1.2.2.3.2		religious-group	:name	1.2.2.3.2.2		name
+::edge	1.1.1		country	:wiki	1.1.1.1		"Pakistan"
+::edge	1.2.2.3.2		religious-group	:wiki	1.2.2.3.2.1		"Islam"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.2.2.1	statements	thing	:ARG1-of	1.2.2.1.1	statements	state-01
+::edge	1.2.2.3.2.2		name	:op1	1.2.2.3.2.2.1	Islamic	"Islam"
+::edge	1.2.3.1		speak-01	:ARG0	1.2.3.1.1		person
+::edge	1.2.3.1		speak-01	:ARG1	1.2.3.1.2	banning	ban-01
+::edge	1.2	tolerated	tolerate-01	:polarity	1.2.1	no	-
+::edge	1.2	tolerated	tolerate-01	:ARG1	1.2.2	or	or
+::edge	1.2	tolerated	tolerate-01	:time	1.2.3	after	after
+::edge	1.2.3.1.1		person	:wiki	1.2.3.1.1.1		"Pervez_Musharraf"
+::edge	1	stated	state-01	:ARG0	1.1	authorities	authority
+::edge	1	stated	state-01	:ARG1	1.2	tolerated	tolerate-01
+::edge	1.2.3.1.1		person	:name	1.2.3.1.1.2		name
+::edge	1.1	authorities	authority	:mod	1.1.1		country
+11	Pervez Musharraf's speech banning the 5 Islamic groups was applauded by the United States.
+11	Pervez Musharraf 's speech banning the 5 Islamic groups was applauded by the United States .
+11	0-1.2.1.2.1 1-1.2.1.2.2 4-1.2.2 6-1.2.2.1.1 7-1.2.2.1.2.2.1 8-1.2.2.1 10-1 11-1.1.r 13-1.1.2.1 14-1.1.2.2
+::node	"United"	1.1.2.1	"United"	United
+::node	5	1.2.2.1.1	5	5
+::node	"States"	1.1.2.2	"States"	States
+::node	"Islam"	1.2.2.1.2.1	"Islam"	
+::node	"Musharraf"	1.2.1.2.2	"Musharraf"	Musharraf
+::node	n2	1.2.2.1.2.2	name	
+::node	n	1.1.2	name	
+::node	p	1.2.1	person	
+::node	"Islam"	1.2.2.1.2.2.1	"Islam"	Islamic
+::node	a	1	applaud-01	applauded
+::node	b	1.2.2	ban-01	banning
+::node	"Pervez"	1.2.1.2.1	"Pervez"	Pervez
+::node	c	1.1	country	
+::node	s	1.2	speak-01	
+::node	n3	1.2.1.2	name	
+::node	g	1.2.2.1	group	groups
+::node	r	1.2.2.1.2	religious-group	
+::node	"Pervez_Musharraf"	1.2.1.1	"Pervez_Musharraf"	
+::node	"United_States"	1.1.1	"United_States"	
+::edge	1.1.2		name	:op1	1.1.2.1	United	"United"
+::edge	1.2.2.1	groups	group	:quant	1.2.2.1.1	5	5
+::edge	1.1.2		name	:op2	1.1.2.2	States	"States"
+::edge	1.2.2.1.2		religious-group	:wiki	1.2.2.1.2.1		"Islam"
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	Musharraf	"Musharraf"
+::edge	1.2.2.1.2		religious-group	:name	1.2.2.1.2.2		name
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		speak-01	:ARG0	1.2.1		person
+::edge	1.2.2.1.2.2		name	:op1	1.2.2.1.2.2.1	Islamic	"Islam"
+::edge	1.2		speak-01	:ARG0-of	1.2.2	banning	ban-01
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Pervez	"Pervez"
+::edge	1	applauded	applaud-01	:ARG0	1.1		country
+::edge	1	applauded	applaud-01	:ARG1	1.2		speak-01
+::edge	1.2.1		person	:name	1.2.1.2		name
+::edge	1.2.2	banning	ban-01	:ARG1	1.2.2.1	groups	group
+::edge	1.2.2.1	groups	group	:mod	1.2.2.1.2		religious-group
+::edge	1.2.1		person	:wiki	1.2.1.1		"Pervez_Musharraf"
+::edge	1.1		country	:wiki	1.1.1		"United_States"
+12	Iftikhar Ahmed stated that under the notification that was issued late at night on 020114 all publications, newspapers, weekly magazines, monthlies, etc of the 5 banned Islamic groups are banned and confiscated.
+12	Iftikhar Ahmed stated that under the notification that was issued late at night on 020114 all publications , newspapers , weekly magazines , monthlies , etc of the 5 banned Islamic groups are banned and confiscated .
+12	0-1.1.2.1 1-1.1.2.2 2-1 3-1.2.r 4-1.2.3.r 6-1.2.3 9-1.2.3.1 10-1.2.3.1.1 11-1.2.3.1.1.1.r 12-1.2.3.1.1.1 13-1.2.3.1.1.1.1.r 14-1.2.3.1.1.1.1 14-1.2.3.1.1.1.1.1 14-1.2.3.1.1.1.1.1.r 14-1.2.3.1.1.1.1.2 14-1.2.3.1.1.1.1.2.r 14-1.2.3.1.1.1.1.3 14-1.2.3.1.1.1.1.3.r 15-1.2.1.1.7 16-1.2.1.1.1 18-1.2.1.1.2 20-1.2.1.1.3.1 20-1.2.1.1.3.1.1.2 21-1.2.1.1.3 23-1.2.1.1.3.1.1 23-1.2.1.1.3.1.1.1 23-1.2.1.1.3.1.1.1.r 23-1.2.1.1.4.1 23-1.2.1.1.4.1.1 23-1.2.1.1.4.1.1.1 23-1.2.1.1.4.1.1.1.r 23-1.2.1.1.4.1.1.2 23-1.2.1.1.4.1.1.2.r 23-1.2.1.1.4.1.1.r 25-1.2.1.1.5 28-1.2.1.1.6.1 29-1.2.1.1.6.3 30-1.2.1.1.6.2.2.1 31-1.2.1.1.6 33-1.2.1 34-1.2 35-1.2.2
+::node	1	1.2.1.1.3.1.1.1	1	monthlies
+::node	n3	1.2.1.1.6.2.2	name	
+::node	"Islam"	1.2.1.1.6.2.1	"Islam"	
+::node	w	1.2.1.1.3.1.1.2	week	weekly
+::node	"Islam"	1.2.1.1.6.2.2.1	"Islam"	Islamic
+::node	a3	1.2.1.1.7	all	all
+::node	d	1.2.3.1.1.1.1	date-entity	020114
+::node	h	1.2.1.1.4	have-frequency-91	
+::node	1	1.2.3.1.1.1.1.2	1	020114
+::node	m	1.2.1.1.3	magazine	magazines
+::node	14	1.2.3.1.1.1.1.3	14	020114
+::node	g	1.2.1.1.6	group	groups
+::node	e	1.2.1.1.5	et-cetera	etc
+::node	2002	1.2.3.1.1.1.1.1	2002	020114
+::node	a	1.2.2.1	and	
+::node	i	1.2.3.1	issue-01	issued
+::node	a	1.2.1.1	and	
+::node	r3	1.2.1.1.4.1	rate-entity-91	monthlies
+::node	5	1.2.1.1.6.1	5	5
+::node	"Iftikhar"	1.1.2.1	"Iftikhar"	Iftikhar
+::node	r	1.2.1.1.6.2	religious-group	
+::node	"Ahmed"	1.1.2.2	"Ahmed"	Ahmed
+::node	m2	1.2.1.1.4.1.1.2	month	monthlies
+::node	1	1.2.1.1.4.1.1.1	1	monthlies
+::node	r2	1.2.1.1.3.1	rate-entity-91	weekly
+::node	t	1.2.1.1.3.1.1	temporal-quantity	monthlies
+::node	t2	1.2.1.1.4.1.1	temporal-quantity	monthlies
+::node	l	1.2.3.1.1	late	late
+::node	b	1.2.1.1.6.3	ban-01	banned
+::node	n	1.1.2	name	
+::node	b2	1.2.1	ban-01	banned
+::node	s	1	state-01	stated
+::node	c	1.2.2	confiscate-01	confiscated
+::node	n2	1.2.1.1.2	newspaper	newspapers
+::node	n4	1.2.3	notification	notification
+::node	n5	1.2.3.1.1.1	night	night
+::node	p2	1.2.1.1.1	publication	publications
+::node	p	1.1	person	
+::node	a2	1.2	and	and
+::node	"Iftikhar_Ahmed"	1.1.1	"Iftikhar_Ahmed"	
+::edge	1.2.1.1.3.1.1	monthlies	temporal-quantity	:quant	1.2.1.1.3.1.1.1	monthlies	1
+::edge	1.2.1.1.6.2		religious-group	:name	1.2.1.1.6.2.2		name
+::edge	1.2.1.1.6.2		religious-group	:wiki	1.2.1.1.6.2.1		"Islam"
+::edge	1.2.1.1.3.1.1	monthlies	temporal-quantity	:unit	1.2.1.1.3.1.1.2	weekly	week
+::edge	1.2.1.1.6.2.2		name	:op1	1.2.1.1.6.2.2.1	Islamic	"Islam"
+::edge	1.2.1.1		and	:quant	1.2.1.1.7	all	all
+::edge	1.2.3.1.1.1	night	night	:time	1.2.3.1.1.1.1	020114	date-entity
+::edge	1.2.1.1		and	:op4	1.2.1.1.4		have-frequency-91
+::edge	1.2.3.1.1.1.1	020114	date-entity	:month	1.2.3.1.1.1.1.2	020114	1
+::edge	1.2.1.1		and	:op3	1.2.1.1.3	magazines	magazine
+::edge	1.2.3.1.1.1.1	020114	date-entity	:day	1.2.3.1.1.1.1.3	020114	14
+::edge	1.2.1.1		and	:source	1.2.1.1.6	groups	group
+::edge	1.2.1.1		and	:op5	1.2.1.1.5	etc	et-cetera
+::edge	1.2.3.1.1.1.1	020114	date-entity	:year	1.2.3.1.1.1.1.1	020114	2002
+::edge	1.2.2	confiscated	confiscate-01	:ARG1	1.2.2.1		and
+::edge	1.2.3	notification	notification	:ARG1-of	1.2.3.1	issued	issue-01
+::edge	1.2.1	banned	ban-01	:ARG1	1.2.1.1		and
+::edge	1.2.1.1.4		have-frequency-91	:ARG2	1.2.1.1.4.1	monthlies	rate-entity-91
+::edge	1.2.1.1.6	groups	group	:quant	1.2.1.1.6.1	5	5
+::edge	1.1.2		name	:op1	1.1.2.1	Iftikhar	"Iftikhar"
+::edge	1.2.1.1.6	groups	group	:mod	1.2.1.1.6.2		religious-group
+::edge	1.1.2		name	:op2	1.1.2.2	Ahmed	"Ahmed"
+::edge	1.2.1.1.4.1.1	monthlies	temporal-quantity	:unit	1.2.1.1.4.1.1.2	monthlies	month
+::edge	1.2.1.1.4.1.1	monthlies	temporal-quantity	:quant	1.2.1.1.4.1.1.1	monthlies	1
+::edge	1.2.1.1.3	magazines	magazine	:frequency	1.2.1.1.3.1	weekly	rate-entity-91
+::edge	1.2.1.1.3.1	weekly	rate-entity-91	:ARG3	1.2.1.1.3.1.1	monthlies	temporal-quantity
+::edge	1.2.1.1.4.1	monthlies	rate-entity-91	:ARG3	1.2.1.1.4.1.1	monthlies	temporal-quantity
+::edge	1.2.3.1	issued	issue-01	:time	1.2.3.1.1	late	late
+::edge	1.2.1.1.6	groups	group	:ARG1-of	1.2.1.1.6.3	banned	ban-01
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1	banned	ban-01
+::edge	1.2	and	and	:op2	1.2.2	confiscated	confiscate-01
+::edge	1.2.1.1		and	:op2	1.2.1.1.2	newspapers	newspaper
+::edge	1.2	and	and	:prep-under	1.2.3	notification	notification
+::edge	1.2.3.1.1	late	late	:op1	1.2.3.1.1.1	night	night
+::edge	1.2.1.1		and	:op1	1.2.1.1.1	publications	publication
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	and	and
+::edge	1.1		person	:wiki	1.1.1		"Iftikhar_Ahmed"
+13	Iftikhar Ahmed is a Pakistani interior ministry official.
+13	Iftikhar Ahmed is a Pakistani interior ministry official .
+13	0-1.1.2.1 1-1.1.2.2 2-1.1.r 4-1.2.1.2.2.1 5-1.2.1.1 6-1.2.1 7-1.2.2
+::node	"Iftikhar"	1.1.2.1	"Iftikhar"	Iftikhar
+::node	"Ahmed"	1.1.2.2	"Ahmed"	Ahmed
+::node	n	1.2.1.2.2	name	
+::node	n2	1.1.2	name	
+::node	m	1.2.1	ministry	ministry
+::node	p2	1	person	
+::node	"Pakistan"	1.2.1.2.2.1	"Pakistan"	Pakistani
+::node	o	1.2.2	official	official
+::node	"Pakistan"	1.2.1.2.1	"Pakistan"	
+::node	p	1.1	person	
+::node	h	1.2	have-org-role-91	
+::node	c	1.2.1.2	country	
+::node	i	1.2.1.1	interior	interior
+::node	"Iftikhar_Ahmed"	1.1.1	"Iftikhar_Ahmed"	
+::edge	1.1.2		name	:op1	1.1.2.1	Iftikhar	"Iftikhar"
+::edge	1.1.2		name	:op2	1.1.2.2	Ahmed	"Ahmed"
+::edge	1.2.1.2		country	:name	1.2.1.2.2		name
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2		have-org-role-91	:ARG1	1.2.1	ministry	ministry
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	Pakistani	"Pakistan"
+::edge	1.2		have-org-role-91	:ARG2	1.2.2	official	official
+::edge	1.2.1.2		country	:wiki	1.2.1.2.1		"Pakistan"
+::edge	1		person	:domain	1.1		person
+::edge	1		person	:ARG0-of	1.2		have-org-role-91
+::edge	1.2.1	ministry	ministry	:poss	1.2.1.2		country
+::edge	1.2.1	ministry	ministry	:topic	1.2.1.1	interior	interior
+::edge	1.1		person	:wiki	1.1.1		"Iftikhar_Ahmed"
+14	Iftikhar Ahmed stated that Pakistan's provincial governments have been asked to implement the orders in the notification that was issued on 020114 and that Pakistan's provincial governments are in the process of taking action.
+14	Iftikhar Ahmed stated that Pakistan 's provincial governments have been asked to implement the orders in the notification that was issued on 020114 and that Pakistan 's provincial governments are in the process of taking action .
+14	0-1.1.2.1 1-1.1.2.2 2-1 3-1.2.r 4-1.2.1.2.1.1.1.2.1 6-1.2.1.2.1.1 7-1.2.1.2 7-1.2.1.2.1 7-1.2.1.2.1.r 10-1.2.1 12-1.2.1.1 14-1.2.1.1.2 15-1.2.1.1.2.1.r 17-1.2.1.1.2.1 20-1.2.1.1.2.1.1 21-1.2.1.1.2.1.1.1.r 22-1.2.1.1.2.1.1.1 22-1.2.1.1.2.1.1.1.1 22-1.2.1.1.2.1.1.1.1.r 22-1.2.1.1.2.1.1.1.2 22-1.2.1.1.2.1.1.1.2.r 22-1.2.1.1.2.1.1.1.3 22-1.2.1.1.2.1.1.1.3.r 25-1.2.1.2.1.1.1.2.1 27-1.2.1.2.1.1 28-1.2.1.2.1 34-1.2.2 35-1.2.2
+::node	n2	1.2.1.2.1.1.1.2	name	
+::node	"Pakistan"	1.2.1.2.1.1.1.1	"Pakistan"	
+::node	i2	1.2.1.1.2.1.1	issue-01	issued
+::node	2002	1.2.1.1.2.1.1.1.1	2002	020114
+::node	g	1.2.1.2	government-organization	governments
+::node	g	1.2.2.1	government-organization	
+::node	i	1.2.1.1	implement-01	implement
+::node	14	1.2.1.1.2.1.1.1.3	14	020114
+::node	1	1.2.1.1.2.1.1.1.2	1	020114
+::node	"Iftikhar"	1.1.2.1	"Iftikhar"	Iftikhar
+::node	"Ahmed"	1.1.2.2	"Ahmed"	Ahmed
+::node	n3	1.2.1.1.2.1	notification	notification
+::node	d	1.2.1.1.2.1.1.1	date-entity	020114
+::node	c	1.2.1.2.1.1.1	country	
+::node	n	1.1.2	name	
+::node	a2	1.2.1	ask-02	asked
+::node	p2	1.2.1.2.1.1	province	provincial
+::node	s	1	state-01	stated
+::node	a3	1.2.2	act-02	action
+::node	o	1.2.1.1.2	order-01	orders
+::node	g2	1.2.1.2.1	govern-01	governments
+::node	g	1.2.1.1.1	government-organization	
+::node	p	1.1	person	
+::node	a	1.2	and	
+::node	"Iftikhar_Ahmed"	1.1.1	"Iftikhar_Ahmed"	
+::node	"Pakistan"	1.2.1.2.1.1.1.2.1	"Pakistan"	Pakistan
+::edge	1.2.1.2.1.1.1		country	:name	1.2.1.2.1.1.1.2		name
+::edge	1.2.1.2.1.1.1		country	:wiki	1.2.1.2.1.1.1.1		"Pakistan"
+::edge	1.2.1.1.2.1	notification	notification	:ARG1-of	1.2.1.1.2.1.1	issued	issue-01
+::edge	1.2.1.1.2.1.1.1	020114	date-entity	:year	1.2.1.1.2.1.1.1.1	020114	2002
+::edge	1.2.1	asked	ask-02	:ARG2	1.2.1.2	governments	government-organization
+::edge	1.2.2	action	act-02	:ARG0	1.2.2.1		government-organization
+::edge	1.2.1	asked	ask-02	:ARG1	1.2.1.1	implement	implement-01
+::edge	1.2.1.1.2.1.1.1	020114	date-entity	:day	1.2.1.1.2.1.1.1.3	020114	14
+::edge	1.2.1.1.2.1.1.1	020114	date-entity	:month	1.2.1.1.2.1.1.1.2	020114	1
+::edge	1.1.2		name	:op1	1.1.2.1	Iftikhar	"Iftikhar"
+::edge	1.1.2		name	:op2	1.1.2.2	Ahmed	"Ahmed"
+::edge	1.2.1.1.2	orders	order-01	:ARG0	1.2.1.1.2.1	notification	notification
+::edge	1.2.1.1.2.1.1	issued	issue-01	:time	1.2.1.1.2.1.1.1	020114	date-entity
+::edge	1.2.1.2.1.1	provincial	province	:poss	1.2.1.2.1.1.1		country
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2		and	:op1	1.2.1	asked	ask-02
+::edge	1.2.1.2.1	governments	govern-01	:ARG1	1.2.1.2.1.1	provincial	province
+::edge	1.2		and	:op2	1.2.2	action	act-02
+::edge	1.2.1.1	implement	implement-01	:ARG1	1.2.1.1.2	orders	order-01
+::edge	1.2.1.2	governments	government-organization	:ARG0-of	1.2.1.2.1	governments	govern-01
+::edge	1.2.1.1	implement	implement-01	:ARG0	1.2.1.1.1		government-organization
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2		and
+::edge	1.1		person	:wiki	1.1.1		"Iftikhar_Ahmed"
+::edge	1.2.1.2.1.1.1.2		name	:op1	1.2.1.2.1.1.1.2.1	Pakistan	"Pakistan"
+15	Karachi police chief Tariq Jamil stated that the 5 banned Islamic groups would not be allowed to operate in any way.
+15	Karachi police chief Tariq Jamil stated that the 5 banned Islamic groups would not be allowed to operate in any way .
+15	0-1.1.3.1.2.1 1-1.1.3.2.1 2-1.1.3.2 3-1.1.2.1 4-1.1.2.2 5-1 6-1.2.r 8-1.2.2.1.1 9-1.2.2.1.3 10-1.2.2.1.2.2.1 11-1.2.2.1 13-1.2.1 13-1.2.1.r 15-1.2 17-1.2.2 18-1.2.2.2.r 19-1.2.2.2 20-1.2.2.2.1
+::node	n3	1.1.3.1.2	name	
+::node	p	1.1.3.2.1	police	police
+::node	"Islam"	1.2.2.1.2.1	"Islam"	
+::node	n2	1.2.2.1.2.2	name	
+::node	"Islam"	1.2.2.1.2.2.1	"Islam"	Islamic
+::node	g	1.2.2.1	group	groups
+::node	a2	1.2.2.2	any	any
+::node	r	1.2.2.1.2	religious-group	
+::node	w	1.2.2.2.1	way	way
+::node	b	1.2.2.1.3	ban-01	banned
+::node	"Tariq"	1.1.2.1	"Tariq"	Tariq
+::node	5	1.2.2.1.1	5	5
+::node	"Jamil"	1.1.2.2	"Jamil"	Jamil
+::node	c2	1.1.3.1	city	
+::node	c	1.1.3.2	chief	chief
+::node	"Karachi"	1.1.3.1.2.1	"Karachi"	Karachi
+::node	n	1.1.2	name	
+::node	-	1.2.1	-	not
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	
+::node	o	1.2.2	operate-01	operate
+::node	p2	1.1	person	
+::node	a	1.2	allow-01	allowed
+::node	"Karachi"	1.1.3.1.1	"Karachi"	
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Tariq	"Tariq"
+::edge	1.1.3.1		city	:name	1.1.3.1.2		name
+::edge	1.1.3.2	chief	chief	:topic	1.1.3.2.1	police	police
+::edge	1.2.2.1	groups	group	:quant	1.2.2.1.1	5	5
+::edge	1.1.2		name	:op2	1.1.2.2	Jamil	"Jamil"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		city
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	chief	chief
+::edge	1.2.2.1.2		religious-group	:wiki	1.2.2.1.2.1		"Islam"
+::edge	1.2.2.1.2		religious-group	:name	1.2.2.1.2.2		name
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Karachi	"Karachi"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	allowed	allow-01	:polarity	1.2.1	not	-
+::edge	1.2.2.1.2.2		name	:op1	1.2.2.1.2.2.1	Islamic	"Islam"
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	allowed	allow-01	:ARG1	1.2.2	operate	operate-01
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	allowed	allow-01
+::edge	1.2.2	operate	operate-01	:ARG0	1.2.2.1	groups	group
+::edge	1.2.2	operate	operate-01	:manner	1.2.2.2	any	any
+::edge	1.1.3.1		city	:wiki	1.1.3.1.1		"Karachi"
+::edge	1.2.2.1	groups	group	:mod	1.2.2.1.2		religious-group
+::edge	1.2.2.2	any	any	:op1	1.2.2.2.1	way	way
+::edge	1.2.2.1	groups	group	:ARG1-of	1.2.2.1.3	banned	ban-01
+::edge	1.1		person	:wiki	1.1.1		-
+16	Tariq Jamil stated that he would examine if the baned literature is still available in the market despite the ban.
+16	Tariq Jamil stated that he would examine if the baned literature is still available in the market despite the ban .
+16	0-1.1.2.1 1-1.1.2.2 2-1 3-1.2.r 4-1.2.1 6-1.2 10-1.2.2.2 11-1.2.2.2.r 12-1.2.2.3 13-1.2.2 14-1.2.2.4.r 16-1.2.2.4 17-1.2.2.5.r 19-1.2.2.2.1
+::node	"Tariq"	1.1.2.1	"Tariq"	Tariq
+::node	"Jamil"	1.1.2.2	"Jamil"	Jamil
+::node	b	1.2.2.5	ban-01	
+::node	n	1.1.2	name	
+::node	p	1.2.1	person	he
+::node	s	1	state-01	stated
+::node	a	1.2.2	available	available
+::node	p	1.1	person	
+::node	e	1.2	examine-01	examine
+::node	s2	1.2.2.3	still	still
+::node	m	1.2.2.4	market	market
+::node	interrogative	1.2.2.1	interrogative	
+::node	l	1.2.2.2	literature	literature
+::node	b	1.2.2.2.1	ban-01	ban
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Tariq	"Tariq"
+::edge	1.1.2		name	:op2	1.1.2.2	Jamil	"Jamil"
+::edge	1.2.2	available	available	:concession	1.2.2.5		ban-01
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	examine	examine-01	:ARG0	1.2.1	he	person
+::edge	1.2	examine	examine-01	:ARG1	1.2.2	available	available
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	examine	examine-01
+::edge	1.2.2	available	available	:mod	1.2.2.3	still	still
+::edge	1.2.2	available	available	:location	1.2.2.4	market	market
+::edge	1.2.2	available	available	:mode	1.2.2.1		interrogative
+::edge	1.2.2	available	available	:domain	1.2.2.2	literature	literature
+::edge	1.2.2.2	literature	literature	:ARG1-of	1.2.2.2.1	ban	ban-01
+::edge	1.1		person	:wiki	1.1.1		-
+17	The 2 hardline militant groups fighting Indian rule in Kashmir are the Lashkar-e-Taiba and Jaish-e-Mohammad.
+17	The 2 hardline militant groups fighting Indian rule in Kashmir are the Lashkar @-@ e-Taiba and Jaish @-@ e-Mohammad .
+17	1-1.1 2-1.2.1 3-1.2 4-1 5-1.3 6-1.3.1.1.2.1 7-1.3.1 8-1.3.1.2.r 9-1.3.1.2.2.1 10-1.4.r 12-1.4.1.2.1 15-1.4 16-1.4.2.2.1
+::node	c	1.3.1.1	country	
+::node	w	1.3.1.2	world-region	
+::node	"India"	1.3.1.1.2.1	"India"	Indian
+::node	"Jaish-e-Mohammad"	1.4.2.2.1	"Jaish-e-Mohammad"	Jaish
+::node	"India"	1.3.1.1.1	"India"	
+::node	h	1.2.1	hardline	hardline
+::node	g	1	group	groups
+::node	r	1.3.1	rule-03	rule
+::node	o	1.4.1	organization	
+::node	"Kashmir"	1.3.1.2.2.1	"Kashmir"	Kashmir
+::node	o2	1.4.2	organization	
+::node	2	1.1	2	2
+::node	n	1.3.1.1.2	name	
+::node	"Kashmir"	1.3.1.2.1	"Kashmir"	
+::node	m	1.2	militant	militant
+::node	n2	1.3.1.2.2	name	
+::node	f	1.3	fight-01	fighting
+::node	a	1.4	and	and
+::node	"Lashkar-e-Taiba"	1.4.1.2.1	"Lashkar-e-Taiba"	Lashkar
+::node	n3	1.4.1.2	name	
+::node	"Jaish-e-Mohammed"	1.4.2.1	"Jaish-e-Mohammed"	
+::node	n4	1.4.2.2	name	
+::node	"Lashkar-e-Taiba"	1.4.1.1	"Lashkar-e-Taiba"	
+::edge	1.3.1	rule	rule-03	:ARG0	1.3.1.1		country
+::edge	1.3.1	rule	rule-03	:ARG1	1.3.1.2		world-region
+::edge	1.3.1.1.2		name	:op1	1.3.1.1.2.1	Indian	"India"
+::edge	1.4.2.2		name	:op1	1.4.2.2.1	Jaish	"Jaish-e-Mohammad"
+::edge	1.3.1.1		country	:wiki	1.3.1.1.1		"India"
+::edge	1.2	militant	militant	:mod	1.2.1	hardline	hardline
+::edge	1.3	fighting	fight-01	:ARG1	1.3.1	rule	rule-03
+::edge	1.4	and	and	:op1	1.4.1		organization
+::edge	1.3.1.2.2		name	:op1	1.3.1.2.2.1	Kashmir	"Kashmir"
+::edge	1.4	and	and	:op2	1.4.2		organization
+::edge	1	groups	group	:quant	1.1	2	2
+::edge	1.3.1.1		country	:name	1.3.1.1.2		name
+::edge	1.3.1.2		world-region	:wiki	1.3.1.2.1		"Kashmir"
+::edge	1	groups	group	:consist-of	1.2	militant	militant
+::edge	1.3.1.2		world-region	:name	1.3.1.2.2		name
+::edge	1	groups	group	:ARG0-of	1.3	fighting	fight-01
+::edge	1	groups	group	:domain	1.4	and	and
+::edge	1.4.1.2		name	:op1	1.4.1.2.1	Lashkar	"Lashkar-e-Taiba"
+::edge	1.4.1		organization	:name	1.4.1.2		name
+::edge	1.4.2		organization	:wiki	1.4.2.1		"Jaish-e-Mohammed"
+::edge	1.4.2		organization	:name	1.4.2.2		name
+::edge	1.4.1		organization	:wiki	1.4.1.1		"Lashkar-e-Taiba"
+18	The Lashkar-e-Taiba and Jaish-e-Mohammad are still distributing their message through a range of publications and magazines easily available in Karachi.
+18	The Lashkar @-@ e-Taiba and Jaish @-@ e-Mohammad are still distributing their message through a range of publications and magazines easily available in Karachi .
+18	1-1.1.1.2.1 4-1.1 5-1.1.2.2.1 9-1.3 10-1 11-1.2.1 11-1.2.1.r 12-1.2 15-1.4.3 16-1.4.3.r 16-1.4.r 17-1.4.1 18-1.4 19-1.4.2 20-1.4.4.1 20-1.4.4.1.r 21-1.4.4 22-1.4.4.2.r 23-1.4.4.2.2.1
+::node	"Karachi"	1.4.4.2.1	"Karachi"	
+::node	n3	1.4.4.2.2	name	
+::node	"Lashkar-e-Taiba"	1.1.1.1	"Lashkar-e-Taiba"	
+::node	e	1.4.4.1	easy	easily
+::node	n	1.1.1.2	name	
+::node	"Jaish-e-Mohammed"	1.1.2.1	"Jaish-e-Mohammed"	
+::node	c	1.4.4.2	city	
+::node	n2	1.1.2.2	name	
+::node	"Karachi"	1.4.4.2.2.1	"Karachi"	Karachi
+::node	"Jaish-e-Mohammad"	1.1.2.2.1	"Jaish-e-Mohammad"	Jaish
+::node	o2	1.1.2	organization	
+::node	a	1.2.1	and	their
+::node	d	1	distribute-01	distributing
+::node	p	1.4.1	publication	publications
+::node	m2	1.4.2	magazine	magazines
+::node	a	1.1	and	and
+::node	r	1.4.3	range	range
+::node	m	1.2	message	message
+::node	a3	1.4.4	available	available
+::node	s	1.3	still	still
+::node	a2	1.4	and	and
+::node	"Lashkar-e-Taiba"	1.1.1.2.1	"Lashkar-e-Taiba"	Lashkar
+::node	o	1.1.1	organization	
+::edge	1.4.4.2		city	:wiki	1.4.4.2.1		"Karachi"
+::edge	1.4.4.2		city	:name	1.4.4.2.2		name
+::edge	1.1.1		organization	:wiki	1.1.1.1		"Lashkar-e-Taiba"
+::edge	1.4.4	available	available	:manner	1.4.4.1	easily	easy
+::edge	1.1.1		organization	:name	1.1.1.2		name
+::edge	1.1.2		organization	:wiki	1.1.2.1		"Jaish-e-Mohammed"
+::edge	1.4.4	available	available	:location	1.4.4.2		city
+::edge	1.1.2		organization	:name	1.1.2.2		name
+::edge	1.4.4.2.2		name	:op1	1.4.4.2.2.1	Karachi	"Karachi"
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Jaish	"Jaish-e-Mohammad"
+::edge	1.1	and	and	:op2	1.1.2		organization
+::edge	1.2	message	message	:poss	1.2.1	their	and
+::edge	1.4	and	and	:op1	1.4.1	publications	publication
+::edge	1.4	and	and	:op2	1.4.2	magazines	magazine
+::edge	1	distributing	distribute-01	:ARG0	1.1	and	and
+::edge	1.4	and	and	:quant	1.4.3	range	range
+::edge	1	distributing	distribute-01	:ARG1	1.2	message	message
+::edge	1.4	and	and	:mod	1.4.4	available	available
+::edge	1	distributing	distribute-01	:mod	1.3	still	still
+::edge	1	distributing	distribute-01	:medium	1.4	and	and
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Lashkar	"Lashkar-e-Taiba"
+::edge	1.1	and	and	:op1	1.1.1		organization
+19	Other groups linked to terrorism and included on the United States Terrorist Exclusion List are also publishing regular newspapers and journals containing rhetoric that is against Western countries and calls for war in the name of Islam.
+19	Other groups linked to terrorism and included on the United States Terrorist Exclusion List are also publishing regular newspapers and journals containing rhetoric that is against Western countries and calls for war in the name of Islam .
+19	0-1.1.1 1-1.1 2-1.1.2 3-1.1.2.1.r 4-1.1.2.1 6-1.1.3 7-1.1.3.1.r 9-1.1.3.1.2.1 10-1.1.3.1.2.2 11-1.1.3.1.2.3 12-1.1.3.1.2.4 13-1.1.3.1.2.5 15-1.3 16-1 17-1.2.3 18-1.2.1 19-1.2 20-1.2.2 21-1.2.4 22-1.2.4.1 25-1.2.4.1.1.r 26-1.2.4.1.1.1.2.1 27-1.2.4.1.1 29-1.2.4.1.2 30-1.2.4.1.2.1.r 31-1.2.4.1.2.1 34-1.1.3.1.2 34-1.2.4.1.1.1.2 34-1.2.4.1.2.1.1.2 35-1.2.4.1.2.1.1.r 36-1.2.4.1.2.1.1.2.1
+::node	n	1.1.3.1.2	name	name
+::node	w2	1.2.4.1.2.1	war	war
+::node	w	1.2.4.1.1.1	world-region	
+::node	"Islam"	1.2.4.1.2.1.1.2.1	"Islam"	Islam
+::node	"Western_world"	1.2.4.1.1.1.1	"Western_world"	
+::node	r2	1.2.4.1	rhetoric	rhetoric
+::node	n3	1.2.4.1.1.1.2	name	name
+::node	"Islam"	1.2.4.1.2.1.1.1	"Islam"	
+::node	n4	1.2.4.1.2.1.1.2	name	name
+::node	"West"	1.2.4.1.1.1.2.1	"West"	Western
+::node	t	1.1.2.1	terrorism	terrorism
+::node	t2	1.1.3.1	thing	
+::node	"States"	1.1.3.1.2.2	"States"	States
+::node	r3	1.2.4.1.2.1.1	religious-group	
+::node	"Terrorist"	1.1.3.1.2.3	"Terrorist"	Terrorist
+::node	"Exclusion"	1.1.3.1.2.4	"Exclusion"	Exclusion
+::node	"List"	1.1.3.1.2.5	"List"	List
+::node	"United"	1.1.3.1.2.1	"United"	United
+::node	l	1.1.2	link-01	linked
+::node	n2	1.2.1	newspaper	newspapers
+::node	p	1	publish-01	publishing
+::node	i	1.1.3	include-01	included
+::node	j	1.2.2	journal	journals
+::node	r	1.2.3	regular	regular
+::node	c	1.2.4	contain-01	containing
+::node	g	1.1	group	groups
+::node	a2	1.2	and	and
+::node	a	1.3	also	also
+::node	c2	1.2.4.1.1	country	countries
+::node	c3	1.2.4.1.2	call-03	calls
+::node	"Patriot_Act_Terrorist_Exclusion_List"	1.1.3.1.1	"Patriot_Act_Terrorist_Exclusion_List"	
+::node	o	1.1.1	other	Other
+::edge	1.1.3.1		thing	:name	1.1.3.1.2	name	name
+::edge	1.2.4.1.2	calls	call-03	:ARG1	1.2.4.1.2.1	war	war
+::edge	1.2.4.1.1	countries	country	:location	1.2.4.1.1.1		world-region
+::edge	1.2.4.1.2.1.1.2	name	name	:op1	1.2.4.1.2.1.1.2.1	Islam	"Islam"
+::edge	1.2.4.1.1.1		world-region	:wiki	1.2.4.1.1.1.1		"Western_world"
+::edge	1.2.4	containing	contain-01	:ARG1	1.2.4.1	rhetoric	rhetoric
+::edge	1.2.4.1.1.1		world-region	:name	1.2.4.1.1.1.2	name	name
+::edge	1.2.4.1.2.1.1		religious-group	:wiki	1.2.4.1.2.1.1.1		"Islam"
+::edge	1.2.4.1.2.1.1		religious-group	:name	1.2.4.1.2.1.1.2	name	name
+::edge	1.2.4.1.1.1.2	name	name	:op1	1.2.4.1.1.1.2.1	Western	"West"
+::edge	1.1.2	linked	link-01	:ARG2	1.1.2.1	terrorism	terrorism
+::edge	1.1.3	included	include-01	:ARG2	1.1.3.1		thing
+::edge	1.1.3.1.2	name	name	:op2	1.1.3.1.2.2	States	"States"
+::edge	1.2.4.1.2.1	war	war	:beneficiary	1.2.4.1.2.1.1		religious-group
+::edge	1.1.3.1.2	name	name	:op3	1.1.3.1.2.3	Terrorist	"Terrorist"
+::edge	1.1.3.1.2	name	name	:op4	1.1.3.1.2.4	Exclusion	"Exclusion"
+::edge	1.1.3.1.2	name	name	:op5	1.1.3.1.2.5	List	"List"
+::edge	1.1.3.1.2	name	name	:op1	1.1.3.1.2.1	United	"United"
+::edge	1.1	groups	group	:ARG1-of	1.1.2	linked	link-01
+::edge	1.2	and	and	:op1	1.2.1	newspapers	newspaper
+::edge	1.1	groups	group	:ARG1-of	1.1.3	included	include-01
+::edge	1.2	and	and	:op2	1.2.2	journals	journal
+::edge	1.2	and	and	:frequency	1.2.3	regular	regular
+::edge	1.2	and	and	:ARG0-of	1.2.4	containing	contain-01
+::edge	1	publishing	publish-01	:ARG0	1.1	groups	group
+::edge	1	publishing	publish-01	:ARG1	1.2	and	and
+::edge	1	publishing	publish-01	:mod	1.3	also	also
+::edge	1.2.4.1	rhetoric	rhetoric	:prep-against	1.2.4.1.1	countries	country
+::edge	1.2.4.1	rhetoric	rhetoric	:ARG0-of	1.2.4.1.2	calls	call-03
+::edge	1.1.3.1		thing	:wiki	1.1.3.1.1		"Patriot_Act_Terrorist_Exclusion_List"
+::edge	1.1	groups	group	:mod	1.1.1	Other	other
+20	Qari Mohammad Zafar stated that his elders urged him to read about Jihad through the Islam daily published by the Al-Rashid Trust and Lashkar-i-Taiba's zarb-e-Taiba weekly.
+20	Qari Mohammad Zafar stated that his elders urged him to read about Jihad through the Islam daily published by the Al @-@ Rashid Trust and Lashkar @-@ i-Taiba 's zarb @-@ e-Taiba weekly .
+20	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 3-1 4-1.2.r 5-1.2.1.1 5-1.2.1.1.r 6-1.2.1 7-1.2 10-1.2.3 11-1.2.3.2.r 12-1.2.3.2 15-1.2.3.3.1.2.1 16-1.2.3.3.1.2.2 17-1.2.3.3.1.3 17-1.2.3.3.2.3 18-1.2.3.3.1.3.1.r 20-1.2.3.3.1.3.1.2.1 22-1.2.3.3.1.3.1.2.1 23-1.2.3.3.1.3.1.2.2 24-1.2.3.3 25-1.2.3.3.2.3.1.2.1 32-1.2.3.3.2.2.2
+::node	p5	1.2.3.3.2.3	publish-01	published
+::node	-	1.2.3.3.1.1	-	
+::node	p3	1.2.3.3.1.3	publish-01	published
+::node	n4	1.2.3.3.2.2	name	
+::node	n2	1.2.3.3.1.2	name	
+::node	-	1.2.3.3.2.1	-	
+::node	"Daily"	1.2.3.3.1.2.2	"Daily"	daily
+::node	o	1.2.3.3.1.3.1	organization	
+::node	"Islam"	1.2.3.3.1.2.1	"Islam"	Islam
+::node	j	1.2.3.2	jihad	Jihad
+::node	a	1.2.3.3	and	and
+::node	p	1.2.3.1	person	
+::node	p	1.2.1.1	person	his
+::node	n5	1.2.3.3.2.3.1.2	name	
+::node	"Lashkar-e-Taiba"	1.2.3.3.2.3.1.1	"Lashkar-e-Taiba"	
+::node	"Zarb-e-Taiba"	1.2.3.3.2.2.1	"Zarb-e-Taiba"	
+::node	"Qari"	1.1.2.1	"Qari"	Qari
+::node	"Weekly"	1.2.3.3.2.2.2	"Weekly"	weekly
+::node	o2	1.2.3.3.2.3.1	organization	
+::node	"Mohammad"	1.1.2.2	"Mohammad"	Mohammad
+::node	"Zafar"	1.1.2.3	"Zafar"	Zafar
+::node	n3	1.2.3.3.1.3.1.2	name	
+::node	-	1.2.3.3.1.3.1.1	-	
+::node	p2	1.2.3.3.1	publication	
+::node	p4	1.2.3.3.2	publication	
+::node	n	1.1.2	name	
+::node	e	1.2.1	elder	elders
+::node	s	1	state-01	stated
+::node	p	1.2.2	person	
+::node	r	1.2.3	read-01	read
+::node	p	1.1	person	
+::node	u	1.2	urge-01	urged
+::node	"Trust"	1.2.3.3.1.3.1.2.2	"Trust"	Trust
+::node	"Al-Rashid"	1.2.3.3.1.3.1.2.1	"Al-Rashid"	Rashid
+::node	"Lashkar-i-Taiba"	1.2.3.3.2.3.1.2.1	"Lashkar-i-Taiba"	Lashkar
+::node	-	1.1.1	-	
+::edge	1.2.3.3.2		publication	:ARG1-of	1.2.3.3.2.3	published	publish-01
+::edge	1.2.3.3.1		publication	:wiki	1.2.3.3.1.1		-
+::edge	1.2.3.3.1		publication	:ARG1-of	1.2.3.3.1.3	published	publish-01
+::edge	1.2.3.3.2		publication	:name	1.2.3.3.2.2		name
+::edge	1.2.3.3.1		publication	:name	1.2.3.3.1.2		name
+::edge	1.2.3.3.2		publication	:wiki	1.2.3.3.2.1		-
+::edge	1.2.3.3.1.2		name	:op2	1.2.3.3.1.2.2	daily	"Daily"
+::edge	1.2.3.3.1.3	published	publish-01	:ARG0	1.2.3.3.1.3.1		organization
+::edge	1.2.3.3.1.2		name	:op1	1.2.3.3.1.2.1	Islam	"Islam"
+::edge	1.2.3	read	read-01	:ARG1	1.2.3.2	Jihad	jihad
+::edge	1.2.3	read	read-01	:medium	1.2.3.3	and	and
+::edge	1.2.3	read	read-01	:ARG0	1.2.3.1		person
+::edge	1.2.1	elders	elder	:poss	1.2.1.1	his	person
+::edge	1.2.3.3.2.3.1		organization	:name	1.2.3.3.2.3.1.2		name
+::edge	1.2.3.3.2.3.1		organization	:wiki	1.2.3.3.2.3.1.1		"Lashkar-e-Taiba"
+::edge	1.2.3.3.2.2		name	:op1	1.2.3.3.2.2.1		"Zarb-e-Taiba"
+::edge	1.1.2		name	:op1	1.1.2.1	Qari	"Qari"
+::edge	1.2.3.3.2.2		name	:op2	1.2.3.3.2.2.2	weekly	"Weekly"
+::edge	1.2.3.3.2.3	published	publish-01	:ARG0	1.2.3.3.2.3.1		organization
+::edge	1.1.2		name	:op2	1.1.2.2	Mohammad	"Mohammad"
+::edge	1.1.2		name	:op3	1.1.2.3	Zafar	"Zafar"
+::edge	1.2.3.3.1.3.1		organization	:name	1.2.3.3.1.3.1.2		name
+::edge	1.2.3.3.1.3.1		organization	:wiki	1.2.3.3.1.3.1.1		-
+::edge	1.2.3.3	and	and	:op1	1.2.3.3.1		publication
+::edge	1.2.3.3	and	and	:op2	1.2.3.3.2		publication
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	urged	urge-01	:ARG0	1.2.1	elders	elder
+::edge	1.2	urged	urge-01	:ARG1	1.2.2		person
+::edge	1.2	urged	urge-01	:ARG2	1.2.3	read	read-01
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	urged	urge-01
+::edge	1.2.3.3.1.3.1.2		name	:op2	1.2.3.3.1.3.1.2.2	Trust	"Trust"
+::edge	1.2.3.3.1.3.1.2		name	:op1	1.2.3.3.1.3.1.2.1	Rashid	"Al-Rashid"
+::edge	1.2.3.3.2.3.1.2		name	:op1	1.2.3.3.2.3.1.2.1	Lashkar	"Lashkar-i-Taiba"
+::edge	1.1		person	:wiki	1.1.1		-
+21	Qari Mohammad Zafar is an 18-year-old student of a religious seminary.
+21	Qari Mohammad Zafar is an 18 @-@ year @-@ old student of a religious seminary .
+21	0-1.3.2.1 1-1.3.2.2 2-1.3.2.3 3-1.3.r 5-1.1.1 7-1.1.2 9-1.1.r 10-1 10-1.4 10-1.4.r 11-1.2.r 13-1.2.1 14-1.2
+::node	"Qari"	1.3.2.1	"Qari"	Qari
+::node	"Mohammad"	1.3.2.2	"Mohammad"	Mohammad
+::node	"Zafar"	1.3.2.3	"Zafar"	Zafar
+::node	y	1.1.2	year	year
+::node	r	1.2.1	religion	religious
+::node	p2	1	person	student
+::node	-	1.3.1	-	
+::node	n	1.3.2	name	
+::node	t	1.1	temporal-quantity	
+::node	s2	1.2	seminary	seminary
+::node	p	1.3	person	
+::node	s	1.4	study-01	student
+::node	18	1.1.1	18	18
+::edge	1.1		temporal-quantity	:unit	1.1.2	year	year
+::edge	1.2	seminary	seminary	:mod	1.2.1	religious	religion
+::edge	1.3		person	:wiki	1.3.1		-
+::edge	1.3		person	:name	1.3.2		name
+::edge	1	student	person	:age	1.1		temporal-quantity
+::edge	1	student	person	:mod	1.2	seminary	seminary
+::edge	1	student	person	:domain	1.3		person
+::edge	1	student	person	:ARG0-of	1.4	student	study-01
+::edge	1.3.2		name	:op1	1.3.2.1	Qari	"Qari"
+::edge	1.3.2		name	:op2	1.3.2.2	Mohammad	"Mohammad"
+::edge	1.3.2		name	:op3	1.3.2.3	Zafar	"Zafar"
+::edge	1.1		temporal-quantity	:quant	1.1.1	18	18
+22	Qari Mohammad Zafar stated that he did not know whether the Pakistani government will also ban the publications encouraging Jihad.
+22	Qari Mohammad Zafar stated that he did not know whether the Pakistani government will also ban the publications encouraging Jihad .
+22	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 3-1 4-1.2.r 5-1.2.2 7-1.2.1 7-1.2.1.r 8-1.2 9-1.2.3.1 9-1.2.3.1.r 11-1.2.3.2.1.1.2.1 12-1.2.3.2 12-1.2.3.2.1 12-1.2.3.2.1.r 14-1.2.3.4 15-1.2.3 17-1.2.3.3 18-1.2.3.3.1 19-1.2.3.3.1.1
+::node	"Pakistan"	1.2.3.2.1.1.2.1	"Pakistan"	Pakistani
+::node	"Qari"	1.1.2.1	"Qari"	Qari
+::node	"Mohammad"	1.1.2.2	"Mohammad"	Mohammad
+::node	"Zafar"	1.1.2.3	"Zafar"	Zafar
+::node	a	1.2.3.4	also	also
+::node	e	1.2.3.3.1	encourage-01	encouraging
+::node	j	1.2.3.3.1.1	jihad	Jihad
+::node	g2	1.2.3.2.1	govern-01	government
+::node	n	1.1.2	name	
+::node	-	1.2.1	-	not
+::node	s	1	state-01	stated
+::node	p	1.2.2	person	he
+::node	b	1.2.3	ban-01	ban
+::node	"Pakistan"	1.2.3.2.1.1.1	"Pakistan"	
+::node	p	1.1	person	
+::node	k	1.2	know-01	know
+::node	g	1.2.3.2	government-organization	government
+::node	p2	1.2.3.3	publication	publications
+::node	interrogative	1.2.3.1	interrogative	whether
+::node	c	1.2.3.2.1.1	country	
+::node	n2	1.2.3.2.1.1.2	name	
+::node	-	1.1.1	-	
+::edge	1.2.3.2.1.1.2		name	:op1	1.2.3.2.1.1.2.1	Pakistani	"Pakistan"
+::edge	1.1.2		name	:op1	1.1.2.1	Qari	"Qari"
+::edge	1.1.2		name	:op2	1.1.2.2	Mohammad	"Mohammad"
+::edge	1.1.2		name	:op3	1.1.2.3	Zafar	"Zafar"
+::edge	1.2.3	ban	ban-01	:mod	1.2.3.4	also	also
+::edge	1.2.3.3	publications	publication	:ARG0-of	1.2.3.3.1	encouraging	encourage-01
+::edge	1.2.3.3.1	encouraging	encourage-01	:ARG2	1.2.3.3.1.1	Jihad	jihad
+::edge	1.2.3.2	government	government-organization	:ARG0-of	1.2.3.2.1	government	govern-01
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	know	know-01	:polarity	1.2.1	not	-
+::edge	1.2	know	know-01	:ARG0	1.2.2	he	person
+::edge	1.2	know	know-01	:ARG1	1.2.3	ban	ban-01
+::edge	1.2.3.2.1.1		country	:wiki	1.2.3.2.1.1.1		"Pakistan"
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	know	know-01
+::edge	1.2.3	ban	ban-01	:ARG0	1.2.3.2	government	government-organization
+::edge	1.2.3	ban	ban-01	:ARG1	1.2.3.3	publications	publication
+::edge	1.2.3	ban	ban-01	:mode	1.2.3.1	whether	interrogative
+::edge	1.2.3.2.1	government	govern-01	:ARG1	1.2.3.2.1.1		country
+::edge	1.2.3.2.1.1		country	:name	1.2.3.2.1.1.2		name
+::edge	1.1		person	:wiki	1.1.1		-
+23	Qari Mohammad Zafar stated that himself and other people have been told by our elders to read pro-Jihad newspapers and magazines.
+23	Qari Mohammad Zafar stated that himself and other people have been told by our elders to read pro @-@ Jihad newspapers and magazines .
+23	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 3-1 6-1.2.3 7-1.2.3.2.1 8-1.2.3.2 11-1.2 12-1.2.1.r 13-1.2.1.1 13-1.2.1.1.r 14-1.2.1 16-1.2.2 17-1.2.2.2.3 19-1.2.2.2.3.1.2.1 20-1.2.2.2.1 21-1.2.2.2 22-1.2.2.2.2
+::node	n3	1.2.2.2.3.1.2	name	
+::node	"Qari"	1.1.2.1	"Qari"	Qari
+::node	"Jihad"	1.2.2.2.3.1.1	"Jihad"	
+::node	"Mohammad"	1.1.2.2	"Mohammad"	Mohammad
+::node	"Zafar"	1.1.2.3	"Zafar"	Zafar
+::node	o	1.2.3.2.1	other	other
+::node	n	1.1.2	name	
+::node	e	1.2.1	elder	elders
+::node	s	1	state-01	stated
+::node	r	1.2.2	read-01	read
+::node	a	1.2.3	and	and
+::node	p	1.1	person	
+::node	t	1.2	tell-01	told
+::node	p2	1.2.3.2	person	people
+::node	a	1.2.2.1	and	
+::node	a2	1.2.2.2	and	and
+::node	p	1.2.3.1	person	
+::node	n2	1.2.2.2.1	newspaper	newspapers
+::node	w2	1.2.2.2.3.1	war	
+::node	w	1.2.1.1	we	our
+::node	m	1.2.2.2.2	magazine	magazines
+::node	f	1.2.2.2.3	favor-01	pro
+::node	"Jihad"	1.2.2.2.3.1.2.1	"Jihad"	Jihad
+::node	-	1.1.1	-	
+::edge	1.2.2.2.3.1		war	:name	1.2.2.2.3.1.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Qari	"Qari"
+::edge	1.2.2.2.3.1		war	:wiki	1.2.2.2.3.1.1		"Jihad"
+::edge	1.1.2		name	:op2	1.1.2.2	Mohammad	"Mohammad"
+::edge	1.1.2		name	:op3	1.1.2.3	Zafar	"Zafar"
+::edge	1.2.3.2	people	person	:mod	1.2.3.2.1	other	other
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	told	tell-01	:ARG0	1.2.1	elders	elder
+::edge	1.2	told	tell-01	:ARG1	1.2.2	read	read-01
+::edge	1.2	told	tell-01	:ARG2	1.2.3	and	and
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	told	tell-01
+::edge	1.2.3	and	and	:op2	1.2.3.2	people	person
+::edge	1.2.2	read	read-01	:ARG0	1.2.2.1		and
+::edge	1.2.2	read	read-01	:ARG1	1.2.2.2	and	and
+::edge	1.2.3	and	and	:op1	1.2.3.1		person
+::edge	1.2.2.2	and	and	:op1	1.2.2.2.1	newspapers	newspaper
+::edge	1.2.2.2.3	pro	favor-01	:ARG1	1.2.2.2.3.1		war
+::edge	1.2.1	elders	elder	:poss	1.2.1.1	our	we
+::edge	1.2.2.2	and	and	:op2	1.2.2.2.2	magazines	magazine
+::edge	1.2.2.2	and	and	:ARG0-of	1.2.2.2.3	pro	favor-01
+::edge	1.2.2.2.3.1.2		name	:op1	1.2.2.2.3.1.2.1	Jihad	"Jihad"
+::edge	1.1		person	:wiki	1.1.1		-
+24	The al-Rashid Trust and Lashkar-i-Taiba are on the United States Terrorist Exclusion List and the Al-Rashid Trust's and Lashkar-i-Taiba's assets frozen in Pakistan.
+24	The al @-@ Rashid Trust and Lashkar @-@ i-Taiba are on the United States Terrorist Exclusion List and the Al @-@ Rashid Trust 's and Lashkar @-@ i-Taiba 's assets frozen in Pakistan .
+24	1-1.1.1.1.2.1 3-1.1.1.1.2.1 4-1.1.1.1.2.2 5-1.1.1 6-1.1.1.2.2.1 12-1.1.2.2.1 13-1.1.2.2.2 14-1.1.2.2.3 15-1.1.2.2.4 16-1.1.2.2.5 17-1.1.1 19-1.1.1.1.2.1 21-1.1.1.1.2.1 22-1.1.1.1.2.2 24-1.1.1 25-1.1.1.2.2.1 29-1.2.1 30-1.2 31-1.2.2.r 32-1.2.2.2.1
+::node	"United"	1.1.2.2.1	"United"	United
+::node	n2	1.1.1.2.2	name	
+::node	n	1.1.1.1.2	name	
+::node	"Lashkar-e-Taiba"	1.1.1.2.1	"Lashkar-e-Taiba"	
+::node	-	1.1.1.1.1	-	
+::node	"Pakistan"	1.2.2.1	"Pakistan"	
+::node	n4	1.2.2.2	name	
+::node	"Pakistan"	1.2.2.2.1	"Pakistan"	Pakistan
+::node	a2	1.2.1.1	and	
+::node	"al-Rashid"	1.1.1.1.2.1	"al-Rashid"	Rashid
+::node	o	1.1.1.1	organization	
+::node	"Trust"	1.1.1.1.2.2	"Trust"	Trust
+::node	o2	1.1.1.2	organization	
+::node	"Patriot_Act_Terrorist_Exclusion_List"	1.1.2.1	"Patriot_Act_Terrorist_Exclusion_List"	
+::node	n3	1.1.2.2	name	
+::node	"Lashkar-i-Taiba"	1.1.1.2.2.1	"Lashkar-i-Taiba"	Lashkar
+::node	t	1.1.2	thing	
+::node	a3	1.2.1	asset	assets
+::node	a	1	and	
+::node	c	1.2.2	country	
+::node	i	1.1	include-01	
+::node	"Terrorist"	1.1.2.2.3	"Terrorist"	Terrorist
+::node	"States"	1.1.2.2.2	"States"	States
+::node	f	1.2	freeze-01	frozen
+::node	"List"	1.1.2.2.5	"List"	List
+::node	"Exclusion"	1.1.2.2.4	"Exclusion"	Exclusion
+::node	a2	1.1.1	and	and
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	United	"United"
+::edge	1.1.1.2		organization	:name	1.1.1.2.2		name
+::edge	1.1.1.1		organization	:name	1.1.1.1.2		name
+::edge	1.1.1.2		organization	:wiki	1.1.1.2.1		"Lashkar-e-Taiba"
+::edge	1.1.1.1		organization	:wiki	1.1.1.1.1		-
+::edge	1.2.2		country	:wiki	1.2.2.1		"Pakistan"
+::edge	1.2.2		country	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Pakistan	"Pakistan"
+::edge	1.2.1	assets	asset	:poss	1.2.1.1		and
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Rashid	"al-Rashid"
+::edge	1.1.1	and	and	:op1	1.1.1.1		organization
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	Trust	"Trust"
+::edge	1.1.1	and	and	:op2	1.1.1.2		organization
+::edge	1.1.2		thing	:wiki	1.1.2.1		"Patriot_Act_Terrorist_Exclusion_List"
+::edge	1.1.2		thing	:name	1.1.2.2		name
+::edge	1.1.1.2.2		name	:op1	1.1.1.2.2.1	Lashkar	"Lashkar-i-Taiba"
+::edge	1.1		include-01	:ARG2	1.1.2		thing
+::edge	1.2	frozen	freeze-01	:ARG1	1.2.1	assets	asset
+::edge	1.2	frozen	freeze-01	:location	1.2.2		country
+::edge	1		and	:op1	1.1		include-01
+::edge	1.1.2.2		name	:op3	1.1.2.2.3	Terrorist	"Terrorist"
+::edge	1.1.2.2		name	:op2	1.1.2.2.2	States	"States"
+::edge	1		and	:op2	1.2	frozen	freeze-01
+::edge	1.1.2.2		name	:op5	1.1.2.2.5	List	"List"
+::edge	1.1.2.2		name	:op4	1.1.2.2.4	Exclusion	"Exclusion"
+::edge	1.1		include-01	:ARG1	1.1.1	and	and
+25	The Al-Rashid Trust has not been officially banned in Pakistan.
+25	The Al @-@ Rashid Trust has not been officially banned in Pakistan .
+25	1-1.2.2.1 3-1.2.2.1 4-1.2.2.2 6-1.1 6-1.1.r 8-1.3 9-1 10-1.4.r 11-1.4.2.1
+::node	-	1.2.1	-	
+::node	b	1	ban-01	banned
+::node	n	1.2.2	name	
+::node	"Pakistan"	1.4.1	"Pakistan"	
+::node	n2	1.4.2	name	
+::node	-	1.1	-	not
+::node	o	1.2	organization	
+::node	o2	1.3	official	officially
+::node	c	1.4	country	
+::node	"Al-Rashid"	1.2.2.1	"Al-Rashid"	Rashid
+::node	"Trust"	1.2.2.2	"Trust"	Trust
+::node	"Pakistan"	1.4.2.1	"Pakistan"	Pakistan
+::edge	1.2		organization	:wiki	1.2.1		-
+::edge	1.2		organization	:name	1.2.2		name
+::edge	1.4		country	:wiki	1.4.1		"Pakistan"
+::edge	1.4		country	:name	1.4.2		name
+::edge	1	banned	ban-01	:polarity	1.1	not	-
+::edge	1	banned	ban-01	:ARG1	1.2		organization
+::edge	1	banned	ban-01	:mod	1.3	officially	official
+::edge	1	banned	ban-01	:location	1.4		country
+::edge	1.2.2		name	:op1	1.2.2.1	Rashid	"Al-Rashid"
+::edge	1.2.2		name	:op2	1.2.2.2	Trust	"Trust"
+::edge	1.4.2		name	:op1	1.4.2.1	Pakistan	"Pakistan"
+26	The primary editorial in The Islam daily of Al-Rashid Trust on 020115 carried a warning to the Pakistani government.
+26	The primary editorial in The Islam daily of Al @-@ Rashid Trust on 020115 carried a warning to the Pakistani government .
+26	1-1.1.1 2-1.1 3-1.1.2.r 4-1.1.2.2.1 5-1.1.2.2.2 6-1.1.2.2.3 8-1.1.2.3.2.1 10-1.1.2.3.2.1 11-1.1.2.3.2.2 12-1.1.3.r 13-1.1.3 13-1.1.3.1 13-1.1.3.1.r 13-1.1.3.2 13-1.1.3.2.r 13-1.1.3.3 13-1.1.3.3.r 14-1 16-1.2 17-1.2.1.r 19-1.2.1.1.1.2.1 20-1.2.1 20-1.2.1.1 20-1.2.1.1.r
+::node	"Pakistan"	1.2.1.1.1.2.1	"Pakistan"	Pakistani
+::node	"The"	1.1.2.2.1	"The"	The
+::node	g2	1.2.1.1	govern-01	government
+::node	-	1.1.2.1	-	
+::node	n	1.1.2.2	name	
+::node	2002	1.1.3.1	2002	020115
+::node	o	1.1.2.3	organization	
+::node	1	1.1.3.2	1	020115
+::node	"Pakistan"	1.2.1.1.1.1	"Pakistan"	
+::node	"Al-Rashid"	1.1.2.3.2.1	"Al-Rashid"	Rashid
+::node	15	1.1.3.3	15	020115
+::node	n3	1.2.1.1.1.2	name	
+::node	"Trust"	1.1.2.3.2.2	"Trust"	Trust
+::node	p2	1.1.2	publication	
+::node	g	1.2.1	government-organization	government
+::node	c	1	carry-01	carried
+::node	d	1.1.3	date-entity	020115
+::node	c2	1.2.1.1.1	country	
+::node	e	1.1	editorial	editorial
+::node	"Daily"	1.1.2.2.3	"Daily"	daily
+::node	n2	1.1.2.3.2	name	
+::node	"Islam"	1.1.2.2.2	"Islam"	Islam
+::node	-	1.1.2.3.1	-	
+::node	w	1.2	warn-01	warning
+::node	p	1.1.1	primary	primary
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	Pakistani	"Pakistan"
+::edge	1.1.2		publication	:wiki	1.1.2.1		-
+::edge	1.1.2		publication	:name	1.1.2.2		name
+::edge	1.1.3	020115	date-entity	:year	1.1.3.1	020115	2002
+::edge	1.1.2		publication	:poss	1.1.2.3		organization
+::edge	1.1.3	020115	date-entity	:month	1.1.3.2	020115	1
+::edge	1.2.1.1.1		country	:wiki	1.2.1.1.1.1		"Pakistan"
+::edge	1.1.2.3.2		name	:op1	1.1.2.3.2.1	Rashid	"Al-Rashid"
+::edge	1.1.3	020115	date-entity	:day	1.1.3.3	020115	15
+::edge	1.2.1.1.1		country	:name	1.2.1.1.1.2		name
+::edge	1.1.2.3.2		name	:op2	1.1.2.3.2.2	Trust	"Trust"
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	The	"The"
+::edge	1.1	editorial	editorial	:part-of	1.1.2		publication
+::edge	1.2	warning	warn-01	:ARG2	1.2.1	government	government-organization
+::edge	1.1	editorial	editorial	:time	1.1.3	020115	date-entity
+::edge	1.2.1.1	government	govern-01	:ARG1	1.2.1.1.1		country
+::edge	1	carried	carry-01	:ARG0	1.1	editorial	editorial
+::edge	1.1.2.2		name	:op3	1.1.2.2.3	daily	"Daily"
+::edge	1.1.2.3		organization	:name	1.1.2.3.2		name
+::edge	1.1.2.2		name	:op2	1.1.2.2.2	Islam	"Islam"
+::edge	1.1.2.3		organization	:wiki	1.1.2.3.1		-
+::edge	1	carried	carry-01	:ARG1	1.2	warning	warn-01
+::edge	1.2.1	government	government-organization	:ARG0-of	1.2.1.1	government	govern-01
+::edge	1.1	editorial	editorial	:mod	1.1.1	primary	primary
+27	The Islam daily of Al-Rashid Trust supports the Taliban Fund linked to Osama bin Laden's al-Qaeda network.
+27	The Islam daily of Al @-@ Rashid Trust supports the Taliban Fund linked to Osama bin Laden 's al @-@ Qaeda network .
+27	1-1.1.2.1 2-1.1.2.2 4-1.1.3.2.1 6-1.1.3.2.1 7-1.1.3.2.2 8-1 10-1.2.2.1 11-1.2.2.2 12-1.2.3 13-1.2.3.1.r 14-1.2.3.1.3.2.1 15-1.2.3.1.3.2.2 16-1.2.3.1.3.2.3 17-1.2.3.1.3.r 18-1.2.3.1.2.1 20-1.2.3.1.2.1
+::node	"Trust"	1.1.3.2.2	"Trust"	Trust
+::node	"Al-Rashid"	1.1.3.2.1	"Al-Rashid"	Rashid
+::node	"Taliban"	1.2.2.1	"Taliban"	Taliban
+::node	"Fund"	1.2.2.2	"Fund"	Fund
+::node	c	1.2.3.1	criminal-organization	
+::node	"Osama"	1.2.3.1.3.2.1	"Osama"	Osama
+::node	"Laden"	1.2.3.1.3.2.3	"Laden"	Laden
+::node	"Islam"	1.1.2.1	"Islam"	Islam
+::node	"bin"	1.2.3.1.3.2.2	"bin"	bin
+::node	"Daily"	1.1.2.2	"Daily"	daily
+::node	-	1.1.3.1	-	
+::node	n2	1.1.3.2	name	
+::node	p2	1.2.3.1.3	person	
+::node	"Al-Qaeda"	1.2.3.1.1	"Al-Qaeda"	
+::node	n6	1.2.3.1.2	name	
+::node	n	1.1.2	name	
+::node	-	1.2.1	-	
+::node	s	1	support-01	supports
+::node	o	1.1.3	organization	
+::node	n3	1.2.2	name	
+::node	l	1.2.3	link-01	linked
+::node	p	1.1	publication	
+::node	"Osama_bin_Laden"	1.2.3.1.3.1	"Osama_bin_Laden"	
+::node	o2	1.2	organization	
+::node	"al-Qaeda"	1.2.3.1.2.1	"al-Qaeda"	Qaeda
+::node	n5	1.2.3.1.3.2	name	
+::node	-	1.1.1	-	
+::edge	1.1.3.2		name	:op2	1.1.3.2.2	Trust	"Trust"
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	Rashid	"Al-Rashid"
+::edge	1.2.2		name	:op1	1.2.2.1	Taliban	"Taliban"
+::edge	1.2.2		name	:op2	1.2.2.2	Fund	"Fund"
+::edge	1.2.3	linked	link-01	:ARG1	1.2.3.1		criminal-organization
+::edge	1.2.3.1.3.2		name	:op1	1.2.3.1.3.2.1	Osama	"Osama"
+::edge	1.2.3.1.3.2		name	:op3	1.2.3.1.3.2.3	Laden	"Laden"
+::edge	1.1.2		name	:op1	1.1.2.1	Islam	"Islam"
+::edge	1.2.3.1.3.2		name	:op2	1.2.3.1.3.2.2	bin	"bin"
+::edge	1.1.2		name	:op2	1.1.2.2	daily	"Daily"
+::edge	1.1.3		organization	:wiki	1.1.3.1		-
+::edge	1.1.3		organization	:name	1.1.3.2		name
+::edge	1.2.3.1		criminal-organization	:poss	1.2.3.1.3		person
+::edge	1.2.3.1		criminal-organization	:wiki	1.2.3.1.1		"Al-Qaeda"
+::edge	1.2.3.1		criminal-organization	:name	1.2.3.1.2		name
+::edge	1.1		publication	:name	1.1.2		name
+::edge	1.2		organization	:wiki	1.2.1		-
+::edge	1.1		publication	:poss	1.1.3		organization
+::edge	1.2		organization	:name	1.2.2		name
+::edge	1.2		organization	:ARG1-of	1.2.3	linked	link-01
+::edge	1	supports	support-01	:ARG0	1.1		publication
+::edge	1.2.3.1.3		person	:wiki	1.2.3.1.3.1		"Osama_bin_Laden"
+::edge	1	supports	support-01	:ARG1	1.2		organization
+::edge	1.2.3.1.2		name	:op1	1.2.3.1.2.1	Qaeda	"al-Qaeda"
+::edge	1.2.3.1.3		person	:name	1.2.3.1.3.2		name
+::edge	1.1		publication	:wiki	1.1.1		-
+28	The headline in the Islam daily of Al-Rashid Trust on 020115 stated action extreme against extremism above an article stating that the Pakistani government should not domineer a large section of Pakistani society which supported the jihad against Indian rule in the divided Himalayan state of Kashmir.
+28	The headline in the Islam daily of Al @-@ Rashid Trust on 020115 stated action extreme against extremism above an article stating that the Pakistani government should not domineer a large section of Pakistani society which supported the jihad against Indian rule in the divided Himalayan state of Kashmir .
+28	1-1.1 2-1.1.1.r 4-1.1.1.2.1 5-1.1.1.2.2 7-1.1.1.3.2.1 9-1.1.1.3.2.1 10-1.1.1.3.2.2 11-1.1.2.r 12-1.1.2 12-1.1.2.1 12-1.1.2.1.r 12-1.1.2.2 12-1.1.2.2.r 12-1.1.2.3 12-1.1.2.3.r 13-1 14-1.2 15-1.2.1 16-1.2.2.r 17-1.2.2 18-1.3 20-1.3.1 21-1.3.1.1 24-1.3.1.1.1.1.2.1.1.2.1 25-1.3.1.1.1.1.2 25-1.3.1.1.1.1.2.1 25-1.3.1.1.1.1.2.1.r 26-1.3.1.1.1 27-1.3.1.1.1.1.1 27-1.3.1.1.1.1.1.r 28-1.3.1.1.1.1 30-1.3.1.1.1.1.3.1 31-1.3.1.1.1.1.3 32-1.3.1.1.1.1.3.2.r 33-1.3.1.1.1.1.3.2.1 34-1.3.1.1.1.1.3.2 36-1.3.1.1.1.1.3.3 38-1.3.1.1.1.1.3.3.1 39-1.3.1.1.1.1.3.3.1.1.r 40-1.3.1.1.1.1.3.3.1.1.1.2.1 41-1.3.1.1.1.1.3.3.1.1 42-1.3.1.1.1.1.3.3.1.1.2.r 44-1.3.1.1.1.1.3.3.1.1.2.3 46-1.3.1.1 48-1.3.1.1.1.1.3.3.1.1.2.2.1
+::node	s2	1.3.1.1	state-01	state
+::node	j	1.3.1.1.1.1.3.3.1	jihad	jihad
+::node	r	1.3.1.1.1	recommend-01	should
+::node	"Himalayas"	1.3.1.1.1.1.3.3.1.1.2.4.2.1	"Himalayas"	
+::node	"Pakistan"	1.3.1.1.1.1.2.1.1.1	"Pakistan"	
+::node	n3	1.3.1.1.1.1.2.1.1.2	name	
+::node	"Daily"	1.1.1.2.2	"Daily"	daily
+::node	"Islam"	1.1.1.2.1	"Islam"	Islam
+::node	-	1.1.1.1	-	
+::node	n	1.1.1.2	name	
+::node	o	1.1.1.3	organization	
+::node	n2	1.1.1.3.2	name	
+::node	d2	1.3.1.1.1.1	domineer-00	domineer
+::node	-	1.3.1.1.1.1.1	-	not
+::node	s3	1.3.1.1.1.1.3	section	section
+::node	g	1.3.1.1.1.1.2	government-organization	government
+::node	d	1.1.2	date-entity	020115
+::node	s	1	state-01	stated
+::node	a3	1.3.1	article	article
+::node	s5	1.3.1.1.1.1.3.3	support-01	supported
+::node	h	1.1	headline	headline
+::node	s4	1.3.1.1.1.1.3.2	society	society
+::node	"India"	1.3.1.1.1.1.3.3.1.1.1.1	"India"	
+::node	a	1.2	action	action
+::node	l	1.3.1.1.1.1.3.1	large	large
+::node	n4	1.3.1.1.1.1.3.3.1.1.1.2	name	
+::node	a2	1.3	above	above
+::node	p	1.1.1	publication	
+::node	c	1.3.1.1.1.1.3.2.1	country	Pakistani
+::node	n6	1.3.1.1.1.1.3.3.1.1.2.4.2	name	
+::node	r2	1.3.1.1.1.1.3.3.1.1	rule-03	rule
+::node	-	1.1.1.3.1	-	
+::node	c2	1.3.1.1.1.1.3.3.1.1.1	country	
+::node	w2	1.3.1.1.1.1.3.3.1.1.2	world-region	
+::node	2002	1.1.2.1	2002	020115
+::node	1	1.1.2.2	1	020115
+::node	15	1.1.2.3	15	020115
+::node	"Pakistan"	1.3.1.1.1.1.2.1.1.2.1	"Pakistan"	Pakistani
+::node	e	1.2.1	extreme	extreme
+::node	w	1.3.1.1.1.1.3.3.1.1.2.4	world-region	
+::node	"Himalayas"	1.3.1.1.1.1.3.3.1.1.2.4.1	"Himalayas"	
+::node	e2	1.2.2	extremism	extremism
+::node	"Kashmir"	1.3.1.1.1.1.3.3.1.1.2.2.1	"Kashmir"	Kashmir
+::node	c	1.3.1.1.1.1.2.1.1	country	
+::node	"Kashmir"	1.3.1.1.1.1.3.3.1.1.2.1	"Kashmir"	
+::node	g2	1.3.1.1.1.1.2.1	govern-01	government
+::node	n5	1.3.1.1.1.1.3.3.1.1.2.2	name	
+::node	d3	1.3.1.1.1.1.3.3.1.1.2.3	divide-02	divided
+::node	"Trust"	1.1.1.3.2.2	"Trust"	Trust
+::node	"India"	1.3.1.1.1.1.3.3.1.1.1.2.1	"India"	Indian
+::node	"Al-Rashid"	1.1.1.3.2.1	"Al-Rashid"	Rashid
+::edge	1.3.1	article	article	:ARG0-of	1.3.1.1	state	state-01
+::edge	1.3.1.1.1.1.3.3	supported	support-01	:ARG1	1.3.1.1.1.1.3.3.1	jihad	jihad
+::edge	1.3.1.1	state	state-01	:ARG1	1.3.1.1.1	should	recommend-01
+::edge	1.3.1.1.1.1.3.3.1.1.2.4.2		name	:op1	1.3.1.1.1.1.3.3.1.1.2.4.2.1		"Himalayas"
+::edge	1.3.1.1.1.1.2.1.1		country	:wiki	1.3.1.1.1.1.2.1.1.1		"Pakistan"
+::edge	1.3.1.1.1.1.2.1.1		country	:name	1.3.1.1.1.1.2.1.1.2		name
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	daily	"Daily"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Islam	"Islam"
+::edge	1.1.1		publication	:wiki	1.1.1.1		-
+::edge	1.1.1		publication	:name	1.1.1.2		name
+::edge	1.1.1		publication	:poss	1.1.1.3		organization
+::edge	1.1.1.3		organization	:name	1.1.1.3.2		name
+::edge	1.3.1.1.1	should	recommend-01	:ARG1	1.3.1.1.1.1	domineer	domineer-00
+::edge	1.3.1.1.1.1	domineer	domineer-00	:polarity	1.3.1.1.1.1.1	not	-
+::edge	1.3.1.1.1.1	domineer	domineer-00	:ARG1	1.3.1.1.1.1.3	section	section
+::edge	1.3.1.1.1.1	domineer	domineer-00	:ARG0	1.3.1.1.1.1.2	government	government-organization
+::edge	1.1	headline	headline	:time	1.1.2	020115	date-entity
+::edge	1.3	above	above	:op1	1.3.1	article	article
+::edge	1.3.1.1.1.1.3	section	section	:ARG0-of	1.3.1.1.1.1.3.3	supported	support-01
+::edge	1	stated	state-01	:ARG0	1.1	headline	headline
+::edge	1.3.1.1.1.1.3	section	section	:part-of	1.3.1.1.1.1.3.2	society	society
+::edge	1.3.1.1.1.1.3.3.1.1.1		country	:wiki	1.3.1.1.1.1.3.3.1.1.1.1		"India"
+::edge	1	stated	state-01	:ARG1	1.2	action	action
+::edge	1.3.1.1.1.1.3	section	section	:mod	1.3.1.1.1.1.3.1	large	large
+::edge	1.3.1.1.1.1.3.3.1.1.1		country	:name	1.3.1.1.1.1.3.3.1.1.1.2		name
+::edge	1	stated	state-01	:location	1.3	above	above
+::edge	1.1	headline	headline	:part-of	1.1.1		publication
+::edge	1.3.1.1.1.1.3.2	society	society	:mod	1.3.1.1.1.1.3.2.1	Pakistani	country
+::edge	1.3.1.1.1.1.3.3.1.1.2.4		world-region	:name	1.3.1.1.1.1.3.3.1.1.2.4.2		name
+::edge	1.3.1.1.1.1.3.3.1	jihad	jihad	:prep-against	1.3.1.1.1.1.3.3.1.1	rule	rule-03
+::edge	1.1.1.3		organization	:wiki	1.1.1.3.1		-
+::edge	1.3.1.1.1.1.3.3.1.1	rule	rule-03	:ARG0	1.3.1.1.1.1.3.3.1.1.1		country
+::edge	1.3.1.1.1.1.3.3.1.1	rule	rule-03	:ARG1	1.3.1.1.1.1.3.3.1.1.2		world-region
+::edge	1.1.2	020115	date-entity	:year	1.1.2.1	020115	2002
+::edge	1.1.2	020115	date-entity	:month	1.1.2.2	020115	1
+::edge	1.1.2	020115	date-entity	:day	1.1.2.3	020115	15
+::edge	1.3.1.1.1.1.2.1.1.2		name	:op1	1.3.1.1.1.1.2.1.1.2.1	Pakistani	"Pakistan"
+::edge	1.2	action	action	:mod	1.2.1	extreme	extreme
+::edge	1.3.1.1.1.1.3.3.1.1.2		world-region	:location	1.3.1.1.1.1.3.3.1.1.2.4		world-region
+::edge	1.3.1.1.1.1.3.3.1.1.2.4		world-region	:wiki	1.3.1.1.1.1.3.3.1.1.2.4.1		"Himalayas"
+::edge	1.2	action	action	:prep-against	1.2.2	extremism	extremism
+::edge	1.3.1.1.1.1.3.3.1.1.2.2		name	:op1	1.3.1.1.1.1.3.3.1.1.2.2.1	Kashmir	"Kashmir"
+::edge	1.3.1.1.1.1.2.1	government	govern-01	:ARG1	1.3.1.1.1.1.2.1.1		country
+::edge	1.3.1.1.1.1.3.3.1.1.2		world-region	:wiki	1.3.1.1.1.1.3.3.1.1.2.1		"Kashmir"
+::edge	1.3.1.1.1.1.2	government	government-organization	:ARG0-of	1.3.1.1.1.1.2.1	government	govern-01
+::edge	1.3.1.1.1.1.3.3.1.1.2		world-region	:name	1.3.1.1.1.1.3.3.1.1.2.2		name
+::edge	1.3.1.1.1.1.3.3.1.1.2		world-region	:ARG1-of	1.3.1.1.1.1.3.3.1.1.2.3	divided	divide-02
+::edge	1.1.1.3.2		name	:op2	1.1.1.3.2.2	Trust	"Trust"
+::edge	1.3.1.1.1.1.3.3.1.1.1.2		name	:op1	1.3.1.1.1.1.3.3.1.1.1.2.1	Indian	"India"
+::edge	1.1.1.3.2		name	:op1	1.1.1.3.2.1	Rashid	"Al-Rashid"
+29	Newspaper seller Mohammad Farooq stated that Pervez Musharraf's clamp-down on extremism had done little to limit the demand for banned religious extremist publications.
+29	Newspaper seller Mohammad Farooq stated that Pervez Musharraf 's clamp @-@ down on extremism had done little to limit the demand for banned religious extremist publications .
+29	0-1.1.3.1 1-1.1 1-1.1.3 1-1.1.3.r 2-1.1.2.1 3-1.1.2.2 4-1 5-1.2.r 6-1.2.1.1.2.1 7-1.2.1.1.2.2 8-1.2.1.1.r 9-1.2.1 13-1.2.1.2 13-1.2.2.1.2 16-1.2.3 18-1.2 20-1.2.2 21-1.2.2.1.r 22-1.2.2.1.3 23-1.2.2.1.2.1 25-1.2.2.1 25-1.2.2.1.1 25-1.2.2.1.1.r
+::node	"Mohammad"	1.1.2.1	"Mohammad"	Mohammad
+::node	p3	1.2.2.1.1	publish-01	publications
+::node	"Farooq"	1.1.2.2	"Farooq"	Farooq
+::node	n2	1.1.3.1	newspaper	Newspaper
+::node	"Pervez"	1.2.1.1.2.1	"Pervez"	Pervez
+::node	"Musharraf"	1.2.1.1.2.2	"Musharraf"	Musharraf
+::node	r	1.2.2.1.2.1	religious	religious
+::node	n	1.1.2	name	
+::node	c	1.2.1	clamp-01	clamp
+::node	s	1	state-01	stated
+::node	s2	1.1.3	sell-01	seller
+::node	d	1.2.2	demand-01	demand
+::node	n3	1.2.1.1.2	name	
+::node	l2	1.2.3	little	little
+::node	"Pervez_Musharraf"	1.2.1.1.1	"Pervez_Musharraf"	
+::node	p	1.1	person	seller
+::node	l	1.2	limit-01	limit
+::node	e	1.2.1.2	extremism	extremism
+::node	t	1.2.2.1	thing	publications
+::node	e2	1.2.2.1.2	extremism	extremism
+::node	p2	1.2.1.1	person	
+::node	b	1.2.2.1.3	ban-01	banned
+::node	"Mohammad_Farooq"	1.1.1	"Mohammad_Farooq"	
+::edge	1.1.2		name	:op1	1.1.2.1	Mohammad	"Mohammad"
+::edge	1.2.2.1	publications	thing	:ARG1-of	1.2.2.1.1	publications	publish-01
+::edge	1.1.2		name	:op2	1.1.2.2	Farooq	"Farooq"
+::edge	1.1.3	seller	sell-01	:ARG1	1.1.3.1	Newspaper	newspaper
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Pervez	"Pervez"
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	Musharraf	"Musharraf"
+::edge	1.2.2.1.2	extremism	extremism	:mod	1.2.2.1.2.1	religious	religious
+::edge	1.1	seller	person	:name	1.1.2		name
+::edge	1.2	limit	limit-01	:ARG0	1.2.1	clamp	clamp-01
+::edge	1.1	seller	person	:ARG0-of	1.1.3	seller	sell-01
+::edge	1.2	limit	limit-01	:ARG1	1.2.2	demand	demand-01
+::edge	1.2.1.1		person	:name	1.2.1.1.2		name
+::edge	1.2	limit	limit-01	:degree	1.2.3	little	little
+::edge	1.2.1.1		person	:wiki	1.2.1.1.1		"Pervez_Musharraf"
+::edge	1	stated	state-01	:ARG0	1.1	seller	person
+::edge	1	stated	state-01	:ARG1	1.2	limit	limit-01
+::edge	1.2.1	clamp	clamp-01	:ARG1	1.2.1.2	extremism	extremism
+::edge	1.2.2	demand	demand-01	:ARG1	1.2.2.1	publications	thing
+::edge	1.2.2.1	publications	thing	:mod	1.2.2.1.2	extremism	extremism
+::edge	1.2.1	clamp	clamp-01	:ARG0	1.2.1.1		person
+::edge	1.2.2.1	publications	thing	:ARG1-of	1.2.2.1.3	banned	ban-01
+::edge	1.1	seller	person	:wiki	1.1.1		"Mohammad_Farooq"
+30	Mohammad Farooq stated that the publication of the Islam daily of Al-Rashid Trust has not been affected yet by Pervez Musharraf's clamp-down on extremism and the circulation of the Islam daily of Al-Rashid Trust has increased in the past couple of days.
+30	Mohammad Farooq stated that the publication of the Islam daily of Al @-@ Rashid Trust has not been affected yet by Pervez Musharraf 's clamp @-@ down on extremism and the circulation of the Islam daily of Al @-@ Rashid Trust has increased in the past couple of days .
+30	0-1.1.2.1 1-1.1.2.2 2-1 3-1.2.r 5-1.2.1.3 6-1.2.1.3.1.r 8-1.2.1.3.1.2.1 9-1.2.1.3.1.2.2 11-1.2.1.3.1.3.2.1 13-1.2.1.3.1.3.2.1 14-1.2.1.3.1.3.2.2 16-1.2.1.1 16-1.2.1.1.r 18-1.2.1 19-1.2.1.4 20-1.2.1.2.r 21-1.2.1.2.1.2.1 22-1.2.1.2.1.2.2 23-1.2.1.2.1.r 24-1.2.1.2 26-1.2.1.2.3 27-1.2.1.2.2.r 28-1.2.1.2.2 29-1.2 31-1.2.2.1 32-1.2.2.1.1.r 34-1.2.2.1.1 35-1.2.2.1.1 36-1.2.2.1.1 37-1.2.2.1.1 38-1.2.2.1.1 39-1.2.2.1.1 40-1.2.2.1.1 42-1.2.2 46-1.2.2.2.2 47-1.2.2.2.2.1.r 48-1.2.2.2.2.1.2
+::node	-	1.2.1.3.1.1	-	
+::node	n3	1.2.1.3.1.2	name	
+::node	o	1.2.1.3.1.3	organization	
+::node	d	1.2.1.2.3	down	down
+::node	e	1.2.1.2.2	extremism	extremism
+::node	p4	1.2.1.3.1	publication	
+::node	"Islam"	1.2.1.3.1.2.1	"Islam"	Islam
+::node	n4	1.2.1.3.1.3.2	name	
+::node	y	1.2.1.4	yet	yet
+::node	"Daily"	1.2.1.3.1.2.2	"Daily"	daily
+::node	-	1.2.1.3.1.3.1	-	
+::node	c	1.2.1.2	clamp-01	clamp
+::node	c2	1.2.2.1	circulate-01	circulation
+::node	p3	1.2.1.3	publish-01	publication
+::node	b	1.2.2.2	before	
+::node	n5	1.2.2.2.1	now	
+::node	-	1.2.1.1	-	not
+::node	c3	1.2.2.2.2	couple	couple
+::node	t	1.2.2.2.2.1	temporal-quantity	
+::node	"Mohammad"	1.1.2.1	"Mohammad"	Mohammad
+::node	p4	1.2.2.1.1	publication	Trust
+::node	"Farooq"	1.1.2.2	"Farooq"	Farooq
+::node	"Musharraf"	1.2.1.2.1.2.2	"Musharraf"	Musharraf
+::node	"Trust"	1.2.1.3.1.3.2.2	"Trust"	Trust
+::node	"Pervez"	1.2.1.2.1.2.1	"Pervez"	Pervez
+::node	"Al-Rashid"	1.2.1.3.1.3.2.1	"Al-Rashid"	Rashid
+::node	n	1.1.2	name	
+::node	a2	1.2.1	affect-01	affected
+::node	"Pervez_Musharraf"	1.2.1.2.1.1	"Pervez_Musharraf"	
+::node	s	1	state-01	stated
+::node	n2	1.2.1.2.1.2	name	
+::node	i	1.2.2	increase-01	increased
+::node	p2	1.2.1.2.1	person	
+::node	p	1.1	person	
+::node	a	1.2	and	and
+::node	d2	1.2.2.2.2.1.2	day	days
+::node	1	1.2.2.2.2.1.1	1	
+::node	"Mohammad_Farooq"	1.1.1	"Mohammad_Farooq"	
+::edge	1.2.1.3.1		publication	:wiki	1.2.1.3.1.1		-
+::edge	1.2.1.3.1		publication	:name	1.2.1.3.1.2		name
+::edge	1.2.1.3.1		publication	:poss	1.2.1.3.1.3		organization
+::edge	1.2.1.2	clamp	clamp-01	:direction	1.2.1.2.3	down	down
+::edge	1.2.1.2	clamp	clamp-01	:ARG1	1.2.1.2.2	extremism	extremism
+::edge	1.2.1.3	publication	publish-01	:ARG1	1.2.1.3.1		publication
+::edge	1.2.1.3.1.2		name	:op1	1.2.1.3.1.2.1	Islam	"Islam"
+::edge	1.2.1.3.1.3		organization	:name	1.2.1.3.1.3.2		name
+::edge	1.2.1	affected	affect-01	:mod	1.2.1.4	yet	yet
+::edge	1.2.1.3.1.2		name	:op2	1.2.1.3.1.2.2	daily	"Daily"
+::edge	1.2.1.3.1.3		organization	:wiki	1.2.1.3.1.3.1		-
+::edge	1.2.1	affected	affect-01	:ARG0	1.2.1.2	clamp	clamp-01
+::edge	1.2.2	increased	increase-01	:ARG1	1.2.2.1	circulation	circulate-01
+::edge	1.2.1	affected	affect-01	:ARG1	1.2.1.3	publication	publish-01
+::edge	1.2.2	increased	increase-01	:time	1.2.2.2		before
+::edge	1.2.2.2		before	:op1	1.2.2.2.1		now
+::edge	1.2.1	affected	affect-01	:polarity	1.2.1.1	not	-
+::edge	1.2.2.2		before	:duration	1.2.2.2.2	couple	couple
+::edge	1.2.2.2.2	couple	couple	:op1	1.2.2.2.2.1		temporal-quantity
+::edge	1.1.2		name	:op1	1.1.2.1	Mohammad	"Mohammad"
+::edge	1.2.2.1	circulation	circulate-01	:ARG1	1.2.2.1.1	Trust	publication
+::edge	1.1.2		name	:op2	1.1.2.2	Farooq	"Farooq"
+::edge	1.2.1.2.1.2		name	:op2	1.2.1.2.1.2.2	Musharraf	"Musharraf"
+::edge	1.2.1.3.1.3.2		name	:op2	1.2.1.3.1.3.2.2	Trust	"Trust"
+::edge	1.2.1.2.1.2		name	:op1	1.2.1.2.1.2.1	Pervez	"Pervez"
+::edge	1.2.1.3.1.3.2		name	:op1	1.2.1.3.1.3.2.1	Rashid	"Al-Rashid"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1	affected	affect-01
+::edge	1.2.1.2.1		person	:wiki	1.2.1.2.1.1		"Pervez_Musharraf"
+::edge	1.2.1.2.1		person	:name	1.2.1.2.1.2		name
+::edge	1.2	and	and	:op2	1.2.2	increased	increase-01
+::edge	1.2.1.2	clamp	clamp-01	:ARG0	1.2.1.2.1		person
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	and	and
+::edge	1.2.2.2.2.1		temporal-quantity	:unit	1.2.2.2.2.1.2	days	day
+::edge	1.2.2.2.2.1		temporal-quantity	:quant	1.2.2.2.2.1.1		1
+::edge	1.1		person	:wiki	1.1.1		"Mohammad_Farooq"
+31	Over 12 publications including dailies, weeklies and monthlies of various extremist groups including those banned on 020112 still sell in large numbers in the markets and bazaars of Karachi.
+31	Over 12 publications including dailies , weeklies and monthlies of various extremist groups including those banned on 020112 still sell in large numbers in the markets and bazaars of Karachi .
+31	0-1.1.2 1-1.1.2.1 2-1.1 3-1.1.1 4-1.1.1.1.1.1 4-1.1.1.1.1.1.1 4-1.1.1.1.1.1.1.1 4-1.1.1.1.1.1.1.1.r 4-1.1.1.1.1.1.1.2 4-1.1.1.1.1.1.1.2.r 4-1.1.1.1.1.1.1.r 4-1.1.1.1.2.1 4-1.1.1.1.2.1.1 4-1.1.1.1.2.1.1.1 4-1.1.1.1.2.1.1.1.r 4-1.1.1.1.2.1.1.r 6-1.1.1.1.1.1 6-1.1.1.1.2.1.1.2 7-1.1.1.1 8-1.1.1.1.2.1 8-1.1.1.1.2.1.1 8-1.1.1.1.2.1.1.1 8-1.1.1.1.2.1.1.1.r 8-1.1.1.1.2.1.1.r 8-1.1.1.1.3.1 8-1.1.1.1.3.1.1 8-1.1.1.1.3.1.1.1 8-1.1.1.1.3.1.1.1.r 8-1.1.1.1.3.1.1.2 8-1.1.1.1.3.1.1.2.r 8-1.1.1.1.3.1.1.r 9-1.1.3.r 10-1.1.3.2 12-1.1.3 13-1.1.3.3 14-1.1.3.3.1 15-1.1.3.3.1.1 16-1.1.3.3.1.1.1.r 17-1.1.3.3.1.1.1 17-1.1.3.3.1.1.1.1 17-1.1.3.3.1.1.1.1.r 17-1.1.3.3.1.1.1.2 17-1.1.3.3.1.1.1.2.r 17-1.1.3.3.1.1.1.3 17-1.1.3.3.1.1.1.3.r 18-1.2 19-1 20-1.3.r 21-1.3.1 22-1.3 23-1.4.r 25-1.4.1 26-1.4 27-1.4.2 29-1.4.3.2.1
+::node	12	1.1.3.3.1.1.1.3	12	020112
+::node	t	1.1.3.3.1	that	those
+::node	n2	1.4.3.2	name	
+::node	2002	1.1.3.3.1.1.1.1	2002	020112
+::node	1	1.1.3.3.1.1.1.2	1	020112
+::node	b	1.1.3.3.1.1	ban-01	banned
+::node	1	1.1.1.1.3.1.1.1	1	monthlies
+::node	m	1.1.1.1.3.1.1.2	month	monthlies
+::node	h3	1.1.1.1.3	have-frequency-91	
+::node	h2	1.1.1.1.2	have-frequency-91	
+::node	h	1.1.1.1.1	have-frequency-91	
+::node	r	1.1.1.1.1.1	rate-entity-91	weeklies
+::node	r2	1.1.1.1.2.1	rate-entity-91	monthlies
+::node	a	1.1.1.1	and	and
+::node	r3	1.1.1.1.3.1	rate-entity-91	monthlies
+::node	t2	1.1.1.1.1.1.1	temporal-quantity	dailies
+::node	12	1.1.2.1	12	12
+::node	e	1.1.3.1	extremism	
+::node	v	1.1.3.2	various	various
+::node	i2	1.1.3.3	include-91	including
+::node	1	1.1.1.1.2.1.1.1	1	monthlies
+::node	w	1.1.1.1.2.1.1.2	week	weeklies
+::node	t3	1.1.1.1.2.1.1	temporal-quantity	monthlies
+::node	o	1.1.2	over	Over
+::node	s	1	sell-01	sell
+::node	g	1.1.3	group	groups
+::node	l	1.3.1	large	large
+::node	d2	1.1.3.3.1.1.1	date-entity	020112
+::node	m2	1.4.1	market	markets
+::node	b2	1.4.2	bazaar	bazaars
+::node	p	1.1	publication	publications
+::node	c	1.4.3	city	
+::node	s2	1.2	still	still
+::node	"Karachi"	1.4.3.2.1	"Karachi"	Karachi
+::node	n	1.3	number	numbers
+::node	a2	1.4	and	and
+::node	t4	1.1.1.1.3.1.1	temporal-quantity	monthlies
+::node	"Karachi"	1.4.3.1	"Karachi"	
+::node	d	1.1.1.1.1.1.1.2	day	dailies
+::node	i	1.1.1	include-91	including
+::node	1	1.1.1.1.1.1.1.1	1	dailies
+::edge	1.1.3.3.1.1.1	020112	date-entity	:day	1.1.3.3.1.1.1.3	020112	12
+::edge	1.1.3.3	including	include-91	:ARG1	1.1.3.3.1	those	that
+::edge	1.4.3		city	:name	1.4.3.2		name
+::edge	1.1.3.3.1.1.1	020112	date-entity	:year	1.1.3.3.1.1.1.1	020112	2002
+::edge	1.1.3.3.1.1.1	020112	date-entity	:month	1.1.3.3.1.1.1.2	020112	1
+::edge	1.1.3.3.1	those	that	:ARG1-of	1.1.3.3.1.1	banned	ban-01
+::edge	1.1.1.1.3.1.1	monthlies	temporal-quantity	:quant	1.1.1.1.3.1.1.1	monthlies	1
+::edge	1.1.1.1.3.1.1	monthlies	temporal-quantity	:unit	1.1.1.1.3.1.1.2	monthlies	month
+::edge	1.1.1.1	and	and	:op3	1.1.1.1.3		have-frequency-91
+::edge	1.1.1.1	and	and	:op2	1.1.1.1.2		have-frequency-91
+::edge	1.1.1.1	and	and	:op1	1.1.1.1.1		have-frequency-91
+::edge	1.1.1.1.1		have-frequency-91	:ARG2	1.1.1.1.1.1	weeklies	rate-entity-91
+::edge	1.1.1.1.2		have-frequency-91	:ARG2	1.1.1.1.2.1	monthlies	rate-entity-91
+::edge	1.1.1	including	include-91	:ARG1	1.1.1.1	and	and
+::edge	1.1.1.1.3		have-frequency-91	:ARG2	1.1.1.1.3.1	monthlies	rate-entity-91
+::edge	1.1.1.1.1.1	weeklies	rate-entity-91	:ARG3	1.1.1.1.1.1.1	dailies	temporal-quantity
+::edge	1.1.2	Over	over	:op1	1.1.2.1	12	12
+::edge	1.1.3	groups	group	:mod	1.1.3.1		extremism
+::edge	1.1.3	groups	group	:mod	1.1.3.2	various	various
+::edge	1.1.3	groups	group	:ARG2-of	1.1.3.3	including	include-91
+::edge	1.1.1.1.2.1.1	monthlies	temporal-quantity	:quant	1.1.1.1.2.1.1.1	monthlies	1
+::edge	1.1.1.1.2.1.1	monthlies	temporal-quantity	:unit	1.1.1.1.2.1.1.2	weeklies	week
+::edge	1.1.1.1.2.1	monthlies	rate-entity-91	:ARG3	1.1.1.1.2.1.1	monthlies	temporal-quantity
+::edge	1.1	publications	publication	:quant	1.1.2	Over	over
+::edge	1.1	publications	publication	:poss	1.1.3	groups	group
+::edge	1.3	numbers	number	:mod	1.3.1	large	large
+::edge	1.1.3.3.1.1	banned	ban-01	:time	1.1.3.3.1.1.1	020112	date-entity
+::edge	1.4	and	and	:op1	1.4.1	markets	market
+::edge	1.4	and	and	:op2	1.4.2	bazaars	bazaar
+::edge	1	sell	sell-01	:ARG1	1.1	publications	publication
+::edge	1.4	and	and	:location	1.4.3		city
+::edge	1	sell	sell-01	:mod	1.2	still	still
+::edge	1.4.3.2		name	:op1	1.4.3.2.1	Karachi	"Karachi"
+::edge	1	sell	sell-01	:quant	1.3	numbers	number
+::edge	1	sell	sell-01	:location	1.4	and	and
+::edge	1.1.1.1.3.1	monthlies	rate-entity-91	:ARG3	1.1.1.1.3.1.1	monthlies	temporal-quantity
+::edge	1.4.3		city	:wiki	1.4.3.1		"Karachi"
+::edge	1.1.1.1.1.1.1	dailies	temporal-quantity	:unit	1.1.1.1.1.1.1.2	dailies	day
+::edge	1.1	publications	publication	:ARG2-of	1.1.1	including	include-91
+::edge	1.1.1.1.1.1.1	dailies	temporal-quantity	:quant	1.1.1.1.1.1.1.1	dailies	1
+32	Police officer Mohammad Iqbal stated that the police so far have not received any instructions to take action against any banned religious extremist publications.
+32	Police officer Mohammad Iqbal stated that the police so far have not received any instructions to take action against any banned religious extremist publications .
+32	0-1.1.3.1 1-1.1.3.2 2-1.1.2.1 3-1.1.2.2 4-1 5-1.2.r 7-1.2.2 8-1.2.4 9-1.2.4 11-1.2.1 11-1.2.1.r 12-1.2 13-1.2.3.3 14-1.2.3 15-1.2.3.2.r 16-1.2.3.2 17-1.2.3.2 18-1.2.3.2.2.r 19-1.2.3.2.2.3 20-1.2.3.2.2.2 21-1.2.3.2.2.1.1 23-1.2.3.2.2
+::node	"Mohammad"	1.1.2.1	"Mohammad"	Mohammad
+::node	"Iqbal"	1.1.2.2	"Iqbal"	Iqbal
+::node	p	1.1.3.1	police	Police
+::node	o	1.1.3.2	officer	officer
+::node	p2	1.2.3.2.2	publication	publications
+::node	r2	1.2.3.2.2.1.1	religion	religious
+::node	p	1.2.3.2.1	police	
+::node	n	1.1.2	name	
+::node	-	1.2.1	-	not
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	
+::node	p	1.2.2	police	police
+::node	i	1.2.3	instruct-01	instructions
+::node	s2	1.2.4	so-far	far
+::node	p3	1.1	person	
+::node	r	1.2	receive-01	received
+::node	a	1.2.3.2	act-02	action
+::node	a2	1.2.3.2.2.3	any	any
+::node	b	1.2.3.2.2.2	ban-01	banned
+::node	a3	1.2.3.3	any	any
+::node	e	1.2.3.2.2.1	extremism	
+::node	p	1.2.3.1	police	
+::node	"Muhammad_Iqbal"	1.1.1	"Muhammad_Iqbal"	
+::edge	1.1.2		name	:op1	1.1.2.1	Mohammad	"Mohammad"
+::edge	1.1.2		name	:op2	1.1.2.2	Iqbal	"Iqbal"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1	Police	police
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	officer	officer
+::edge	1.2.3.2	action	act-02	:prep-against	1.2.3.2.2	publications	publication
+::edge	1.2.3.2.2.1		extremism	:mod	1.2.3.2.2.1.1	religious	religion
+::edge	1.2.3.2	action	act-02	:ARG0	1.2.3.2.1		police
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	received	receive-01	:polarity	1.2.1	not	-
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	received	receive-01	:ARG0	1.2.2	police	police
+::edge	1.2	received	receive-01	:ARG1	1.2.3	instructions	instruct-01
+::edge	1.2	received	receive-01	:time	1.2.4	far	so-far
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	received	receive-01
+::edge	1.2.3	instructions	instruct-01	:ARG2	1.2.3.2	action	act-02
+::edge	1.2.3.2.2	publications	publication	:mod	1.2.3.2.2.3	any	any
+::edge	1.2.3.2.2	publications	publication	:ARG1-of	1.2.3.2.2.2	banned	ban-01
+::edge	1.2.3	instructions	instruct-01	:mod	1.2.3.3	any	any
+::edge	1.2.3.2.2	publications	publication	:mod	1.2.3.2.2.1		extremism
+::edge	1.2.3	instructions	instruct-01	:ARG1	1.2.3.1		police
+::edge	1.1		person	:wiki	1.1.1		"Muhammad_Iqbal"
+33	Analysts stated that the Pakistani government may have trouble explaining the Pakistani government's reasoning if the banned religious extremist groups' publications are suddenly removed from the newsstands because the Pakistani Government generally supports the freedom of the press.
+33	Analysts stated that the Pakistani government may have trouble explaining the Pakistani government 's reasoning if the banned religious extremist groups ' publications are suddenly removed from the newsstands because the Pakistani Government generally supports the freedom of the press .
+33	0-1.1 0-1.1.1 0-1.1.1.r 1-1 2-1.2.r 4-1.2.1.1.1.1.1.2.1 5-1.2.1.1.1.1.r 6-1.2 8-1.2.1 9-1.2.1.1 11-1.2.1.1.2.1 12-1.2.1.1.2.1 13-1.2.1.1.2.1.r 13-1.2.1.1.r 14-1.2.1.1.2 15-1.2.2.r 17-1.2.2.1.1.2 18-1.2.2.1.1.1.1 20-1.2.2.1.1 21-1.2.2.1.1.r 22-1.2.2.1 24-1.2.2.3 25-1.2.2 26-1.2.2.2.r 28-1.2.2.2 29-1.2.3 31-1.2.3.1.1 32-1.2.3.1.1 33-1.2.3.1.3 34-1.2.3.1 36-1.2.3.1.2 37-1.2.3.1.2.1.r 39-1.2.3.1.2.1
+::node	c	1.2.1.1.1.1.1	country	
+::node	"Pakistan"	1.2.1.1.1.1.1.2.1	"Pakistan"	Pakistani
+::node	e2	1.2.2.1.1.1	extremism	
+::node	b	1.2.2.1.1.2	ban-01	banned
+::node	r3	1.2.2.1.1.1.1	religion	religious
+::node	s2	1.2.2.3	sudden	suddenly
+::node	p2	1.2.2.1	publication	publications
+::node	n2	1.2.2.2	newsstand	newsstands
+::node	s3	1.2.3.1	support-01	supports
+::node	e	1.2.1.1	explain-01	explaining
+::node	g3	1.2.2.1.1	group	groups
+::node	g2	1.2.1.1.1.1	govern-01	
+::node	g	1.2.1.1.2.1	government-organization	government
+::node	g4	1.2.3.1.3	general	generally
+::node	g	1.2.3.1.1	government-organization	Government
+::node	f	1.2.3.1.2	free-41	freedom
+::node	t	1.2.1	trouble	trouble
+::node	s	1	state-01	stated
+::node	r2	1.2.2	remove-01	removed
+::node	r	1.2.1.1.2	reason-01	reasoning
+::node	c2	1.2.3	cause-01	because
+::node	g	1.2.1.1.1	government-organization	
+::node	p4	1.1	person	Analysts
+::node	n	1.2.1.1.1.1.1.2	name	
+::node	p	1.2	possible	may
+::node	p3	1.2.3.1.2.1	press	press
+::node	"Pakistan"	1.2.1.1.1.1.1.1	"Pakistan"	
+::node	a	1.1.1	analyze-01	Analysts
+::edge	1.2.1.1.1.1		govern-01	:ARG1	1.2.1.1.1.1.1		country
+::edge	1.2.1.1.1.1.1.2		name	:op1	1.2.1.1.1.1.1.2.1	Pakistani	"Pakistan"
+::edge	1.2.2.1.1	groups	group	:mod	1.2.2.1.1.1		extremism
+::edge	1.2.2.1.1	groups	group	:ARG1-of	1.2.2.1.1.2	banned	ban-01
+::edge	1.2.2.1.1.1		extremism	:mod	1.2.2.1.1.1.1	religious	religion
+::edge	1.2.2	removed	remove-01	:mod	1.2.2.3	suddenly	sudden
+::edge	1.2.2	removed	remove-01	:ARG1	1.2.2.1	publications	publication
+::edge	1.2.2	removed	remove-01	:ARG2	1.2.2.2	newsstands	newsstand
+::edge	1.2.3	because	cause-01	:ARG0	1.2.3.1	supports	support-01
+::edge	1.2.1	trouble	trouble	:domain	1.2.1.1	explaining	explain-01
+::edge	1.2.2.1	publications	publication	:poss	1.2.2.1.1	groups	group
+::edge	1.2.1.1.1		government-organization	:ARG0-of	1.2.1.1.1.1		govern-01
+::edge	1.2.1.1.2	reasoning	reason-01	:ARG0	1.2.1.1.2.1	government	government-organization
+::edge	1.2.3.1	supports	support-01	:mod	1.2.3.1.3	generally	general
+::edge	1.2.3.1	supports	support-01	:ARG0	1.2.3.1.1	Government	government-organization
+::edge	1.2.3.1	supports	support-01	:ARG1	1.2.3.1.2	freedom	free-41
+::edge	1.2	may	possible	:domain	1.2.1	trouble	trouble
+::edge	1.2	may	possible	:condition	1.2.2	removed	remove-01
+::edge	1.2.1.1	explaining	explain-01	:ARG1	1.2.1.1.2	reasoning	reason-01
+::edge	1.2	may	possible	:ARG1-of	1.2.3	because	cause-01
+::edge	1.2.1.1	explaining	explain-01	:ARG0	1.2.1.1.1		government-organization
+::edge	1	stated	state-01	:ARG0	1.1	Analysts	person
+::edge	1.2.1.1.1.1.1		country	:name	1.2.1.1.1.1.1.2		name
+::edge	1	stated	state-01	:ARG1	1.2	may	possible
+::edge	1.2.3.1.2	freedom	free-41	:ARG1	1.2.3.1.2.1	press	press
+::edge	1.2.1.1.1.1.1		country	:wiki	1.2.1.1.1.1.1.1		"Pakistan"
+::edge	1.1	Analysts	person	:ARG0-of	1.1.1	Analysts	analyze-01
+34	A reporter who did not want to be named from the publication of the Islam daily of Al-Rashid Trust stated that it would not be easy for the Pakistani government to ban the religious extremist publications and make over 500 employees jobless.
+34	A reporter who did not want to be named from the publication of the Islam daily of Al @-@ Rashid Trust stated that it would not be easy for the Pakistani government to ban the religious extremist publications and make over 500 employees jobless .
+34	1-1.1 1-1.1.1 1-1.1.1.r 4-1.1.2.1 4-1.1.2.1.r 5-1.1.2 8-1.1.2.2 11-1.1.3.1 14-1.1.3.1.2.1 15-1.1.3.1.2.2 16-1.1.3.1.3.r 17-1.1.3.1.3.2.1 19-1.1.3.1.3.2.1 20-1.1.3.1.3.2.2 21-1 25-1.2.1 25-1.2.1.r 26-1.2.2.r 27-1.2 30-1.2.2.1.1.1.1.2.1 31-1.2.2.1.1 31-1.2.2.1.1.1 31-1.2.2.1.1.1.r 33-1.2.2.1 35-1.2.2.1.2.1.1 37-1.2.2.1.2 38-1.2.2 39-1.2.2.2 40-1.2.2.2.2.1.1 41-1.2.2.2.2.1.1.1 42-1.2.2.2.2.1 42-1.2.2.2.2.1.2 42-1.2.2.2.2.1.2.r 43-1.2.2.2.2
+::node	o	1.1.3.1.3	organization	
+::node	n2	1.1.3.1.2	name	
+::node	500	1.2.2.2.2.1.1.1	500	500
+::node	g2	1.2.2.1.1.1	govern-01	government
+::node	e2	1.2.2.1.2.1	extremism	
+::node	p	1.1.2.2.1	person	
+::node	"Trust"	1.1.3.1.3.2.2	"Trust"	Trust
+::node	c	1.2.2.1.1.1.1	country	
+::node	"Al-Rashid"	1.1.3.1.3.2.1	"Al-Rashid"	Rashid
+::node	r2	1.2.2.1.2.1.1	religion	religious
+::node	b	1.2.2.1	ban-01	ban
+::node	m	1.2.2.2	make-02	make
+::node	p3	1.2.2.1.2	publication	publications
+::node	g	1.2.2.2.1	government-organization	
+::node	"Pakistan"	1.2.2.1.1.1.1.2.1	"Pakistan"	Pakistani
+::node	j	1.2.2.2.2	jobless	jobless
+::node	p4	1.2.2.2.2.1	person	employees
+::node	-	1.1.2.1	-	not
+::node	g	1.2.2.1.1	government-organization	government
+::node	n	1.1.2.2	name-01	named
+::node	p2	1.1.3.1	publication	publication
+::node	"Daily"	1.1.3.1.2.2	"Daily"	daily
+::node	-	1.1.3.1.3.1	-	
+::node	n4	1.2.2.1.1.1.1.2	name	
+::node	n3	1.1.3.1.3.2	name	
+::node	"Pakistan"	1.2.2.1.1.1.1.1	"Pakistan"	
+::node	"Islam"	1.1.3.1.2.1	"Islam"	Islam
+::node	w	1.1.2	want-01	want
+::node	-	1.2.1	-	not
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	
+::node	a	1.2.2	and	and
+::node	p	1.1	person	reporter
+::node	e	1.2	easy	easy
+::node	e3	1.2.2.2.2.1.2	employ-01	employees
+::node	o2	1.2.2.2.2.1.1	over	over
+::node	-	1.1.3.1.1	-	
+::node	r	1.1.1	report-01	reporter
+::edge	1.1.3.1	publication	publication	:poss	1.1.3.1.3		organization
+::edge	1.1.3.1	publication	publication	:name	1.1.3.1.2		name
+::edge	1.2.2.2.2.1.1	over	over	:op1	1.2.2.2.2.1.1.1	500	500
+::edge	1.2.2.1.1	government	government-organization	:ARG0-of	1.2.2.1.1.1	government	govern-01
+::edge	1.2.2.1.2	publications	publication	:mod	1.2.2.1.2.1		extremism
+::edge	1.1.2.2	named	name-01	:ARG1	1.1.2.2.1		person
+::edge	1.1.3.1.3.2		name	:op2	1.1.3.1.3.2.2	Trust	"Trust"
+::edge	1.2.2.1.1.1	government	govern-01	:ARG1	1.2.2.1.1.1.1		country
+::edge	1.1.3.1.3.2		name	:op1	1.1.3.1.3.2.1	Rashid	"Al-Rashid"
+::edge	1.2.2.1.2.1		extremism	:mod	1.2.2.1.2.1.1	religious	religion
+::edge	1.2.2	and	and	:op1	1.2.2.1	ban	ban-01
+::edge	1.2.2	and	and	:op2	1.2.2.2	make	make-02
+::edge	1.2.2.1	ban	ban-01	:ARG1	1.2.2.1.2	publications	publication
+::edge	1.2.2.2	make	make-02	:ARG0	1.2.2.2.1		government-organization
+::edge	1.2.2.1.1.1.1.2		name	:op1	1.2.2.1.1.1.1.2.1	Pakistani	"Pakistan"
+::edge	1.2.2.2	make	make-02	:ARG1	1.2.2.2.2	jobless	jobless
+::edge	1.2.2.2.2	jobless	jobless	:domain	1.2.2.2.2.1	employees	person
+::edge	1.1.2	want	want-01	:polarity	1.1.2.1	not	-
+::edge	1.2.2.1	ban	ban-01	:ARG0	1.2.2.1.1	government	government-organization
+::edge	1.1.2	want	want-01	:ARG1	1.1.2.2	named	name-01
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1	publication	publication
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	daily	"Daily"
+::edge	1.1.3.1.3		organization	:wiki	1.1.3.1.3.1		-
+::edge	1.2.2.1.1.1.1		country	:name	1.2.2.1.1.1.1.2		name
+::edge	1.1.3.1.3		organization	:name	1.1.3.1.3.2		name
+::edge	1.2.2.1.1.1.1		country	:wiki	1.2.2.1.1.1.1.1		"Pakistan"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Islam	"Islam"
+::edge	1.1	reporter	person	:ARG0-of	1.1.2	want	want-01
+::edge	1.2	easy	easy	:polarity	1.2.1	not	-
+::edge	1.1	reporter	person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	easy	easy	:domain	1.2.2	and	and
+::edge	1	stated	state-01	:ARG0	1.1	reporter	person
+::edge	1	stated	state-01	:ARG1	1.2	easy	easy
+::edge	1.2.2.2.2.1	employees	person	:ARG1-of	1.2.2.2.2.1.2	employees	employ-01
+::edge	1.2.2.2.2.1	employees	person	:quant	1.2.2.2.2.1.1	over	over
+::edge	1.1.3.1	publication	publication	:wiki	1.1.3.1.1		-
+::edge	1.1	reporter	person	:ARG0-of	1.1.1	reporter	report-01

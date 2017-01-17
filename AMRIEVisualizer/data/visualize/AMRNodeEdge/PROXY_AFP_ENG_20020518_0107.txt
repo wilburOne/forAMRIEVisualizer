@@ -1,0 +1,1460 @@
+1	2002-05-18
+1	2002 @-@ 05 @-@ 18
+1	0-1.1 2-1.2 4-1.3
+::node	d2	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	5	1.2	5	05
+::node	18	1.3	18	18
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	05	5
+::edge	1		date-entity	:day	1.3	18	18
+2	Iran, Islamic Republic of (IR): Pakistan (PK); Afghanistan (AF)
+2	Iran , Islamic Republic of ( IR ): Pakistan ( PK ) ; Afghanistan ( AF )
+2	0-1.1.2.4 2-1.1.2.1 3-1.1.2.2 4-1.1.2.3 6-1.1.2.1 6-1.1.2.2 6-1.1.2.3 6-1.1.2.4 8-1.2.2.1 13-1.3.2.1
+::node	"Islamic"	1.1.2.1	"Islamic"	IR
+::node	"Republic"	1.1.2.2	"Republic"	IR
+::node	"of"	1.1.2.3	"of"	IR
+::node	"Iran"	1.1.2.4	"Iran"	IR
+::node	"Afghanistan"	1.3.2.1	"Afghanistan"	Afghanistan
+::node	n	1.1.2	name	
+::node	"Pakistan"	1.2.1	"Pakistan"	
+::node	a	1	and	
+::node	n3	1.2.2	name	
+::node	"Afghanistan"	1.3.1	"Afghanistan"	
+::node	n2	1.3.2	name	
+::node	c	1.1	country	
+::node	c2	1.2	country	
+::node	c3	1.3	country	
+::node	"Pakistan"	1.2.2.1	"Pakistan"	Pakistan
+::node	"Iran"	1.1.1	"Iran"	
+::edge	1.1.2		name	:op1	1.1.2.1	IR	"Islamic"
+::edge	1.1.2		name	:op2	1.1.2.2	IR	"Republic"
+::edge	1.1.2		name	:op3	1.1.2.3	IR	"of"
+::edge	1.1.2		name	:op4	1.1.2.4	IR	"Iran"
+::edge	1.3.2		name	:op1	1.3.2.1	Afghanistan	"Afghanistan"
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"Pakistan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3		country	:wiki	1.3.1		"Afghanistan"
+::edge	1.3		country	:name	1.3.2		name
+::edge	1		and	:op1	1.1		country
+::edge	1		and	:op2	1.2		country
+::edge	1		and	:op3	1.3		country
+::edge	1.2.2		name	:op1	1.2.2.1	Pakistan	"Pakistan"
+::edge	1.1		country	:wiki	1.1.1		"Iran"
+3	International; economy; politics
+3	International ; economy ; politics
+3	0-1.1 2-1.2 4-1.3
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	e	1.2	economy	economy
+::node	p	1.3	politics	politics
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	economy	economy
+::edge	1		and	:op3	1.3	politics	politics
+4	At a UN-sponsored conference Iran and Pakistan pledged to assist neighboring Afghanistan by increasing private sector activity.
+4	At a UN @-@ sponsored conference Iran and Pakistan pledged to assist neighboring Afghanistan by increasing private sector activity .
+4	2-1.5.1.1.2.1 4-1.5.1 5-1.5 6-1.1.1.2.1 7-1.1 8-1.1.2.2.1 9-1 11-1.3 12-1.2.3 13-1.2.2.1 14-1.4.r 15-1.4 16-1.4.2.1.1 17-1.4.2.1 18-1.4.2
+::node	"United_Nations"	1.5.1.1.1	"United_Nations"	
+::node	n2	1.5.1.1.2	name	
+::node	"Pakistan"	1.1.2.2.1	"Pakistan"	Pakistan
+::node	"Iran"	1.1.1.2.1	"Iran"	Iran
+::node	"Afghanistan"	1.2.2.1	"Afghanistan"	Afghanistan
+::node	"Iran"	1.1.1.1	"Iran"	
+::node	n5	1.1.1.2	name	
+::node	"Pakistan"	1.1.2.1	"Pakistan"	
+::node	n4	1.1.2.2	name	
+::node	p2	1.4.2.1.1	private	private
+::node	o	1.5.1.1	organization	
+::node	c2	1.1.2	country	
+::node	"Afghanistan"	1.2.1	"Afghanistan"	
+::node	p	1	pledge-01	pledged
+::node	n3	1.2.2	name	
+::node	a	1.3.1	and	
+::node	n	1.2.3	neighbor-01	neighboring
+::node	a	1.4.1	and	
+::node	a3	1.4.2	activity	activity
+::node	s2	1.5.1	sponsor-01	sponsored
+::node	a	1.1	and	and
+::node	c3	1.2	country	
+::node	a2	1.3	assist-01	assist
+::node	i	1.4	increase-01	increasing
+::node	"UN"	1.5.1.1.2.1	"UN"	UN
+::node	c4	1.5	conference	conference
+::node	s	1.4.2.1	sector	sector
+::node	c	1.1.1	country	
+::edge	1.5.1.1		organization	:wiki	1.5.1.1.1		"United_Nations"
+::edge	1.5.1.1		organization	:name	1.5.1.1.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Pakistan	"Pakistan"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Iran	"Iran"
+::edge	1.2.2		name	:op1	1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.1		country	:wiki	1.1.1.1		"Iran"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		country	:wiki	1.1.2.1		"Pakistan"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.4.2.1	sector	sector	:mod	1.4.2.1.1	private	private
+::edge	1.5.1	sponsored	sponsor-01	:ARG0	1.5.1.1		organization
+::edge	1.1	and	and	:op2	1.1.2		country
+::edge	1.2		country	:wiki	1.2.1		"Afghanistan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3	assist	assist-01	:ARG0	1.3.1		and
+::edge	1.2		country	:ARG1-of	1.2.3	neighboring	neighbor-01
+::edge	1.4	increasing	increase-01	:ARG0	1.4.1		and
+::edge	1.4	increasing	increase-01	:ARG1	1.4.2	activity	activity
+::edge	1.5	conference	conference	:ARG1-of	1.5.1	sponsored	sponsor-01
+::edge	1	pledged	pledge-01	:ARG0	1.1	and	and
+::edge	1	pledged	pledge-01	:ARG1	1.2		country
+::edge	1	pledged	pledge-01	:ARG2	1.3	assist	assist-01
+::edge	1	pledged	pledge-01	:manner	1.4	increasing	increase-01
+::edge	1.5.1.1.2		name	:op1	1.5.1.1.2.1	UN	"UN"
+::edge	1	pledged	pledge-01	:location	1.5	conference	conference
+::edge	1.4.2	activity	activity	:poss	1.4.2.1	sector	sector
+::edge	1.1	and	and	:op1	1.1.1		country
+5	On 18 May 2002 at a UN-sponsored conference Iran and Pakistan pledged economic assistance to Afghanistan.
+5	On 18 May 2002 at a UN @-@ sponsored conference Iran and Pakistan pledged economic assistance to Afghanistan .
+5	1-1.4.3 2-1.4.2 2-1.4.2.r 3-1.4.1 6-1.5.1.1.2.1 8-1.5.1 9-1.5 10-1.1.1.2.1 11-1.1 12-1.1.2.2.1 13-1 14-1.3.1 15-1.3 16-1.2.r 17-1.2.2.1
+::node	"United_Nations"	1.5.1.1.1	"United_Nations"	
+::node	n	1.5.1.1.2	name	
+::node	"Pakistan"	1.1.2.2.1	"Pakistan"	Pakistan
+::node	"Iran"	1.1.1.2.1	"Iran"	Iran
+::node	"Afghanistan"	1.2.2.1	"Afghanistan"	Afghanistan
+::node	"Iran"	1.1.1.1	"Iran"	
+::node	n4	1.1.1.2	name	
+::node	"Pakistan"	1.1.2.1	"Pakistan"	
+::node	n3	1.1.2.2	name	
+::node	o	1.5.1.1	organization	
+::node	c2	1.1.2	country	
+::node	"Afghanistan"	1.2.1	"Afghanistan"	
+::node	p	1	pledge-01	pledged
+::node	n2	1.2.2	name	
+::node	e	1.3.1	economic	economic
+::node	2002	1.4.1	2002	2002
+::node	5	1.4.2	5	May
+::node	s	1.5.1	sponsor-01	sponsored
+::node	a	1.1	and	and
+::node	18	1.4.3	18	18
+::node	c3	1.2	country	
+::node	a2	1.3	assist-01	assistance
+::node	d2	1.4	date-entity	
+::node	"UN"	1.5.1.1.2.1	"UN"	UN
+::node	c4	1.5	conference	conference
+::node	c	1.1.1	country	
+::edge	1.5.1.1		organization	:wiki	1.5.1.1.1		"United_Nations"
+::edge	1.5.1.1		organization	:name	1.5.1.1.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Pakistan	"Pakistan"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Iran	"Iran"
+::edge	1.2.2		name	:op1	1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.1		country	:wiki	1.1.1.1		"Iran"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		country	:wiki	1.1.2.1		"Pakistan"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.5.1	sponsored	sponsor-01	:ARG0	1.5.1.1		organization
+::edge	1.1	and	and	:op2	1.1.2		country
+::edge	1.2		country	:wiki	1.2.1		"Afghanistan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3	assistance	assist-01	:ARG2	1.3.1	economic	economic
+::edge	1.4		date-entity	:year	1.4.1	2002	2002
+::edge	1.4		date-entity	:month	1.4.2	May	5
+::edge	1.5	conference	conference	:ARG1-of	1.5.1	sponsored	sponsor-01
+::edge	1	pledged	pledge-01	:ARG0	1.1	and	and
+::edge	1.4		date-entity	:day	1.4.3	18	18
+::edge	1	pledged	pledge-01	:ARG1	1.2		country
+::edge	1	pledged	pledge-01	:ARG2	1.3	assistance	assist-01
+::edge	1	pledged	pledge-01	:time	1.4		date-entity
+::edge	1.5.1.1.2		name	:op1	1.5.1.1.2.1	UN	"UN"
+::edge	1	pledged	pledge-01	:location	1.5	conference	conference
+::edge	1.1	and	and	:op1	1.1.1		country
+6	Afghanistan neighbors Iran and Pakistan.
+6	Afghanistan neighbors Iran and Pakistan .
+6	0-1.1.1.2.1 1-1.1 1-1.2 2-1.1.2.2.1 3-1 4-1.2.2.2.1
+::node	"Afghanistan"	1.1.1.1	"Afghanistan"	
+::node	n2	1.1.1.2	name	
+::node	"Iran"	1.1.2.1	"Iran"	
+::node	n3	1.1.2.2	name	
+::node	"Iran"	1.1.2.2.1	"Iran"	Iran
+::node	c2	1.1.2	country	
+::node	c	1.2.1	country	
+::node	a	1	and	and
+::node	c3	1.2.2	country	
+::node	n	1.1	neighbor-01	neighbors
+::node	n4	1.2	neighbor-01	neighbors
+::node	"Afghanistan"	1.1.1.2.1	"Afghanistan"	Afghanistan
+::node	"Pakistan"	1.2.2.1	"Pakistan"	
+::node	n5	1.2.2.2	name	
+::node	"Pakistan"	1.2.2.2.1	"Pakistan"	Pakistan
+::node	c	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"Afghanistan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		country	:wiki	1.1.2.1		"Iran"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Iran	"Iran"
+::edge	1.1	neighbors	neighbor-01	:ARG1	1.1.2		country
+::edge	1.2	neighbors	neighbor-01	:ARG1	1.2.1		country
+::edge	1.2	neighbors	neighbor-01	:ARG1	1.2.2		country
+::edge	1	and	and	:op1	1.1	neighbors	neighbor-01
+::edge	1	and	and	:op2	1.2	neighbors	neighbor-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.2		country	:wiki	1.2.2.1		"Pakistan"
+::edge	1.2.2		country	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Pakistan	"Pakistan"
+::edge	1.1	neighbors	neighbor-01	:ARG1	1.1.1		country
+7	Iran and Pakistan plan to increase private sector activity with Afghanistan.
+7	Iran and Pakistan plan to increase private sector activity with Afghanistan .
+7	0-1.1.1.2.1 1-1.1 2-1.1.2.2.1 3-1 5-1.2 6-1.2.2.1.1 7-1.2.2.1 8-1.2.2 9-1.2.2.2.r 10-1.2.2.2.2.1
+::node	"Iran"	1.1.1.1	"Iran"	
+::node	n3	1.1.1.2	name	
+::node	"Pakistan"	1.1.2.1	"Pakistan"	
+::node	p2	1.2.2.1.1	private	private
+::node	n2	1.1.2.2	name	
+::node	"Pakistan"	1.1.2.2.1	"Pakistan"	Pakistan
+::node	c2	1.1.2	country	
+::node	a	1.2.1	and	
+::node	p	1	plan-01	plan
+::node	a2	1.2.2	activity	activity
+::node	a	1.1	and	and
+::node	i	1.2	increase-01	increase
+::node	"Iran"	1.1.1.2.1	"Iran"	Iran
+::node	s	1.2.2.1	sector	sector
+::node	c3	1.2.2.2	country	
+::node	"Afghanistan"	1.2.2.2.1	"Afghanistan"	
+::node	n	1.2.2.2.2	name	
+::node	"Afghanistan"	1.2.2.2.2.1	"Afghanistan"	Afghanistan
+::node	c	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"Iran"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		country	:wiki	1.1.2.1		"Pakistan"
+::edge	1.2.2.1	sector	sector	:mod	1.2.2.1.1	private	private
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Pakistan	"Pakistan"
+::edge	1.1	and	and	:op2	1.1.2		country
+::edge	1.2	increase	increase-01	:ARG0	1.2.1		and
+::edge	1.2	increase	increase-01	:ARG1	1.2.2	activity	activity
+::edge	1	plan	plan-01	:ARG0	1.1	and	and
+::edge	1	plan	plan-01	:ARG1	1.2	increase	increase-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Iran	"Iran"
+::edge	1.2.2	activity	activity	:poss	1.2.2.1	sector	sector
+::edge	1.2.2	activity	activity	:accompanier	1.2.2.2		country
+::edge	1.2.2.2		country	:wiki	1.2.2.2.1		"Afghanistan"
+::edge	1.2.2.2		country	:name	1.2.2.2.2		name
+::edge	1.2.2.2.2		name	:op1	1.2.2.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.1	and	and	:op1	1.1.1		country
+8	Iranian Finance and Economy Minister tahmaseb Mazaheri announced --
+8	Iranian Finance and Economy Minister tahmaseb Mazaheri announced --
+8	0-1.1.3.1.2.1 1-1.1.3.2.1.1 2-1.1.3.2.1 3-1.1.3.2.1.2 4-1.1.3.2 5-1.1.2.1 6-1.1.2.2 7-1
+::node	"Tahmaseb"	1.1.2.1	"Tahmaseb"	tahmaseb
+::node	n2	1.1.3.1.2	name	
+::node	a2	1.1.3.2.1	and	and
+::node	"Mazaheri"	1.1.2.2	"Mazaheri"	Mazaheri
+::node	c	1.1.3.1	country	
+::node	m	1.1.3.2	minister	Minister
+::node	"Iran"	1.1.3.1.2.1	"Iran"	Iranian
+::node	n	1.1.2	name	
+::node	a	1	announce-01	announced
+::node	h	1.1.3	have-org-role-91	
+::node	p	1.1	person	
+::node	f	1.1.3.2.1.1	finance	Finance
+::node	"Iran"	1.1.3.1.1	"Iran"	
+::node	e	1.1.3.2.1.2	economy	Economy
+::node	"Tahmasb_Mazaheri"	1.1.1	"Tahmasb_Mazaheri"	
+::edge	1.1.2		name	:op1	1.1.2.1	tahmaseb	"Tahmaseb"
+::edge	1.1.3.1		country	:name	1.1.3.1.2		name
+::edge	1.1.3.2	Minister	minister	:topic	1.1.3.2.1	and	and
+::edge	1.1.2		name	:op2	1.1.2.2	Mazaheri	"Mazaheri"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		country
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	Minister	minister
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Iranian	"Iran"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1	announced	announce-01	:ARG0	1.1		person
+::edge	1.1.3.2.1	and	and	:op2	1.1.3.2.1.1	Finance	finance
+::edge	1.1.3.1		country	:wiki	1.1.3.1.1		"Iran"
+::edge	1.1.3.2.1	and	and	:op2	1.1.3.2.1.2	Economy	economy
+::edge	1.1		person	:wiki	1.1.1		"Tahmasb_Mazaheri"
+9	Increasing Afghanistan's trade with Iran and Pakistan will reinstate Afghanistan's economy after 23 years of war.
+9	Increasing Afghanistan 's trade with Iran and Pakistan will reinstate Afghanistan 's economy after 23 years of war .
+9	0-1.1 1-1.1.1.1.2.1 2-1.1.1.1.r 3-1.1.1 4-1.1.1.2.r 5-1.1.1.2.1.2.1 6-1.1.1.2 7-1.1.1.2.2.2.1 9-1 10-1.2.1 11-1.2.1.r 12-1.2 13-1.3 14-1.3.1.1.1 15-1.3.1.1.2 17-1.3.1
+::node	"Afghanistan"	1.1.1.1.2.1	"Afghanistan"	Afghanistan
+::node	c	1.1.1.1	country	
+::node	a	1.1.1.2	and	and
+::node	"Iran"	1.1.1.2.1.2.1	"Iran"	Iran
+::node	t	1.3.1.1	temporal-quantity	
+::node	23	1.3.1.1.1	23	23
+::node	n2	1.1.1.2.1.2	name	
+::node	"Pakistan"	1.1.1.2.2.1	"Pakistan"	
+::node	n	1.1.1.2.2.2	name	
+::node	"Iran"	1.1.1.2.1.1	"Iran"	
+::node	c	1.2.1	country	Afghanistan
+::node	r	1	reinstate-01	reinstate
+::node	w	1.3.1	war	war
+::node	"Pakistan"	1.1.1.2.2.2.1	"Pakistan"	Pakistan
+::node	i	1.1	increase-01	Increasing
+::node	y2	1.3.1.1.2	year	years
+::node	e	1.2	economy	economy
+::node	a2	1.3	after	after
+::node	c3	1.1.1.2.2	country	
+::node	n3	1.1.1.1.2	name	
+::node	c2	1.1.1.2.1	country	
+::node	"Afghanistan"	1.1.1.1.1	"Afghanistan"	
+::node	t2	1.1.1	trade-01	trade
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.1	trade	trade-01	:ARG0	1.1.1.1		country
+::edge	1.1.1	trade	trade-01	:ARG2	1.1.1.2	and	and
+::edge	1.1.1.2.1.2		name	:op1	1.1.1.2.1.2.1	Iran	"Iran"
+::edge	1.3.1	war	war	:duration	1.3.1.1		temporal-quantity
+::edge	1.3.1.1		temporal-quantity	:quant	1.3.1.1.1	23	23
+::edge	1.1.1.2.1		country	:name	1.1.1.2.1.2		name
+::edge	1.1.1.2.2		country	:wiki	1.1.1.2.2.1		"Pakistan"
+::edge	1.1.1.2.2		country	:name	1.1.1.2.2.2		name
+::edge	1.1.1.2.1		country	:wiki	1.1.1.2.1.1		"Iran"
+::edge	1.2	economy	economy	:poss	1.2.1	Afghanistan	country
+::edge	1.3	after	after	:op1	1.3.1	war	war
+::edge	1.1.1.2.2.2		name	:op1	1.1.1.2.2.2.1	Pakistan	"Pakistan"
+::edge	1	reinstate	reinstate-01	:ARG0	1.1	Increasing	increase-01
+::edge	1.3.1.1		temporal-quantity	:unit	1.3.1.1.2	years	year
+::edge	1	reinstate	reinstate-01	:ARG1	1.2	economy	economy
+::edge	1	reinstate	reinstate-01	:time	1.3	after	after
+::edge	1.1.1.2	and	and	:op2	1.1.1.2.2		country
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.2	and	and	:op1	1.1.1.2.1		country
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Afghanistan"
+::edge	1.1	Increasing	increase-01	:ARG1	1.1.1	trade	trade-01
+10	Key sectors of cooperation between Iran and Afghanistan include Oil and Petro-chemical industries, building and road construction, agricultural machinery and manufacturing.
+10	Key sectors of cooperation between Iran and Afghanistan include Oil and Petro @-@ chemical industries , building and road construction , agricultural machinery and manufacturing .
+10	0-1.2.2 1-1.2 2-1.2.1.r 3-1.2.1 5-1.2.1.1.2.1 7-1.2.1.2.2.1 8-1 9-1.1.1.1 11-1.1.1.2 13-1.1.1.2 14-1.1.1 16-1.1.2.1.1 17-1.1.2.1 18-1.1.2.1.2 19-1.1.2 21-1.1.3.1 22-1.1.3 23-1.1 24-1.1.4
+::node	o	1.1.1.1	oil	Oil
+::node	p	1.1.1.2	petro-chemical	chemical
+::node	a3	1.1.2.1	and	and
+::node	a4	1.1.3.1	agriculture	agricultural
+::node	"Iran"	1.2.1.1.2.1	"Iran"	Iran
+::node	r	1.1.2.1.2	road	road
+::node	b	1.1.2.1.1	building	building
+::node	n	1.2.1.2.2	name	
+::node	c4	1.1.2	construct-01	construction
+::node	c	1.2.1	cooperate-01	cooperation
+::node	i	1	include-01	include
+::node	m	1.1.3	machinery	machinery
+::node	"Afghanistan"	1.2.1.2.2.1	"Afghanistan"	Afghanistan
+::node	k	1.2.2	key	Key
+::node	m2	1.1.4	manufacture-01	manufacturing
+::node	n2	1.2.1.1.2	name	
+::node	"Afghanistan"	1.2.1.2.1	"Afghanistan"	
+::node	"Iran"	1.2.1.1.1	"Iran"	
+::node	a	1.1	and	and
+::node	s	1.2	sector	sectors
+::node	c3	1.2.1.2	country	
+::node	c2	1.2.1.1	country	
+::node	i2	1.1.1	industry	industries
+::edge	1.1.1	industries	industry	:mod	1.1.1.1	Oil	oil
+::edge	1.1.1	industries	industry	:mod	1.1.1.2	chemical	petro-chemical
+::edge	1.1.2	construction	construct-01	:ARG1	1.1.2.1	and	and
+::edge	1.1.3	machinery	machinery	:mod	1.1.3.1	agricultural	agriculture
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Iran	"Iran"
+::edge	1.1.2.1	and	and	:op2	1.1.2.1.2	road	road
+::edge	1.1.2.1	and	and	:op1	1.1.2.1.1	building	building
+::edge	1.2.1.2		country	:name	1.2.1.2.2		name
+::edge	1.1	and	and	:op2	1.1.2	construction	construct-01
+::edge	1.2	sectors	sector	:ARG2-of	1.2.1	cooperation	cooperate-01
+::edge	1.1	and	and	:op3	1.1.3	machinery	machinery
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.2	sectors	sector	:mod	1.2.2	Key	key
+::edge	1.1	and	and	:op4	1.1.4	manufacturing	manufacture-01
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.2.1.2		country	:wiki	1.2.1.2.1		"Afghanistan"
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"Iran"
+::edge	1	include	include-01	:ARG1	1.1	and	and
+::edge	1	include	include-01	:ARG2	1.2	sectors	sector
+::edge	1.2.1	cooperation	cooperate-01	:ARG1	1.2.1.2		country
+::edge	1.2.1	cooperation	cooperate-01	:ARG0	1.2.1.1		country
+::edge	1.1	and	and	:op1	1.1.1	industries	industry
+11	Iran, Pakistan and Afghanistan must collaborate to end the illegal opium trade.
+11	Iran , Pakistan and Afghanistan must collaborate to end the illegal opium trade .
+11	0-1.1.1.2.1 2-1.1.2.2.1 3-1.1 4-1.1.3.2.1 5-1 6-1.2 8-1.2.1 10-1.2.1.1.2 10-1.2.1.1.2.1 10-1.2.1.1.2.1.r 11-1.2.1.1.1 12-1.2.1.1
+::node	"Iran"	1.1.1.1	"Iran"	
+::node	n3	1.1.1.2	name	
+::node	"Pakistan"	1.1.2.1	"Pakistan"	
+::node	"Afghanistan"	1.1.3.2.1	"Afghanistan"	Afghanistan
+::node	n2	1.1.2.2	name	
+::node	"Afghanistan"	1.1.3.1	"Afghanistan"	
+::node	n	1.1.3.2	name	
+::node	-	1.2.1.1.2.1	-	illegal
+::node	"Pakistan"	1.1.2.2.1	"Pakistan"	Pakistan
+::node	c3	1.1.2	country	
+::node	e	1.2.1	end-01	end
+::node	o	1	obligate-01	must
+::node	c4	1.1.3	country	
+::node	l	1.2.1.1.2	law	illegal
+::node	o2	1.2.1.1.1	opium	opium
+::node	a	1.1	and	and
+::node	c	1.2	collaborate-01	collaborate
+::node	"Iran"	1.1.1.2.1	"Iran"	Iran
+::node	t	1.2.1.1	trade-01	trade
+::node	c2	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"Iran"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		country	:wiki	1.1.2.1		"Pakistan"
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.3		country	:wiki	1.1.3.1		"Afghanistan"
+::edge	1.1.3		country	:name	1.1.3.2		name
+::edge	1.2.1.1.2	illegal	law	:polarity	1.2.1.1.2.1	illegal	-
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Pakistan	"Pakistan"
+::edge	1.1	and	and	:op2	1.1.2		country
+::edge	1.2	collaborate	collaborate-01	:ARG2	1.2.1	end	end-01
+::edge	1.1	and	and	:op3	1.1.3		country
+::edge	1.2.1.1	trade	trade-01	:mod	1.2.1.1.2	illegal	law
+::edge	1.2.1.1	trade	trade-01	:ARG1	1.2.1.1.1	opium	opium
+::edge	1	must	obligate-01	:ARG1	1.1	and	and
+::edge	1	must	obligate-01	:ARG2	1.2	collaborate	collaborate-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Iran	"Iran"
+::edge	1.2.1	end	end-01	:ARG1	1.2.1.1	trade	trade-01
+::edge	1.1	and	and	:op1	1.1.1		country
+12	Pakistani Finance and Economy Minister Shaukat Aziz announced --
+12	Pakistani Finance and Economy Minister Shaukat Aziz announced --
+12	0-1.1.3.1.2.1 1-1.1.3.2.1.1 2-1.1.3.2.1 3-1.1.3.2.1.2 4-1.1.3.2 5-1.1.2.1 6-1.1.2.2 7-1
+::node	"Shaukat"	1.1.2.1	"Shaukat"	Shaukat
+::node	n2	1.1.3.1.2	name	
+::node	a2	1.1.3.2.1	and	and
+::node	"Aziz"	1.1.2.2	"Aziz"	Aziz
+::node	c	1.1.3.1	country	
+::node	m	1.1.3.2	minister	Minister
+::node	"Pakistan"	1.1.3.1.2.1	"Pakistan"	Pakistani
+::node	n	1.1.2	name	
+::node	a	1	announce-01	announced
+::node	h	1.1.3	have-org-role-91	
+::node	p	1.1	person	
+::node	f	1.1.3.2.1.1	finance	Finance
+::node	"Pakistan"	1.1.3.1.1	"Pakistan"	
+::node	e	1.1.3.2.1.2	economy	Economy
+::node	"Shaukat_Aziz"	1.1.1	"Shaukat_Aziz"	
+::edge	1.1.2		name	:op1	1.1.2.1	Shaukat	"Shaukat"
+::edge	1.1.3.1		country	:name	1.1.3.1.2		name
+::edge	1.1.3.2	Minister	minister	:topic	1.1.3.2.1	and	and
+::edge	1.1.2		name	:op2	1.1.2.2	Aziz	"Aziz"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		country
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	Minister	minister
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Pakistani	"Pakistan"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1	announced	announce-01	:ARG0	1.1		person
+::edge	1.1.3.2.1	and	and	:op1	1.1.3.2.1.1	Finance	finance
+::edge	1.1.3.1		country	:wiki	1.1.3.1.1		"Pakistan"
+::edge	1.1.3.2.1	and	and	:op2	1.1.3.2.1.2	Economy	economy
+::edge	1.1		person	:wiki	1.1.1		"Shaukat_Aziz"
+13	Pakistan is eager to cooperate with Afghanistan in international and regional efforts.
+13	Pakistan is eager to cooperate with Afghanistan in international and regional efforts .
+13	0-1.2.1.2.1 2-1 4-1.2 5-1.2.2.r 6-1.2.2.2.1 7-1.2.3.r 8-1.2.3.1 10-1.2.3.2 11-1.2.3
+::node	c2	1.2.1	country	
+::node	e3	1	eager-41	eager
+::node	c3	1.2.2	country	
+::node	"Pakistan"	1.2.1.2.1	"Pakistan"	Pakistan
+::node	e2	1.2.3	effort	efforts
+::node	c2	1.1	country	
+::node	c	1.2	cooperate-01	cooperate
+::node	r	1.2.3.2	regional	regional
+::node	n2	1.2.1.2	name	
+::node	"Afghanistan"	1.2.2.1	"Afghanistan"	
+::node	n	1.2.2.2	name	
+::node	i	1.2.3.1	international	international
+::node	"Afghanistan"	1.2.2.2.1	"Afghanistan"	Afghanistan
+::node	"Pakistan"	1.2.1.1	"Pakistan"	
+::edge	1.2	cooperate	cooperate-01	:ARG0	1.2.1		country
+::edge	1.2	cooperate	cooperate-01	:ARG1	1.2.2		country
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Pakistan	"Pakistan"
+::edge	1.2	cooperate	cooperate-01	:ARG2	1.2.3	efforts	effort
+::edge	1	eager	eager-41	:ARG0	1.1		country
+::edge	1	eager	eager-41	:ARG1	1.2	cooperate	cooperate-01
+::edge	1.2.3	efforts	effort	:mod	1.2.3.2	regional	regional
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.2		country	:wiki	1.2.2.1		"Afghanistan"
+::edge	1.2.2		country	:name	1.2.2.2		name
+::edge	1.2.3	efforts	effort	:mod	1.2.3.1	international	international
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.1		country	:wiki	1.2.1.1		"Pakistan"
+14	Pakistan has taken steps to facilitate movement of people and goods between Pakistan and Afghanistan for economic reconstruction.
+14	Pakistan has taken steps to facilitate movement of people and goods between Pakistan and Afghanistan for economic reconstruction .
+14	0-1.1.2.1 2-1 3-1.2 5-1.2.2 6-1.2.2.2 7-1.2.2.2.1.r 8-1.2.2.2.1.1 9-1.2.2.2.1 10-1.2.2.2.1.2 12-1.2.2.2.2.1 13-1.2.2.2.1 14-1.2.2.2.2.2.2.1 15-1.2.2.2.3.r 16-1.2.2.2.3.1 17-1.2.2.2.3
+::node	"Pakistan"	1.1.2.1	"Pakistan"	Pakistan
+::node	n2	1.1.2	name	
+::node	c	1.2.1	country	
+::node	t	1	take-01	taken
+::node	f	1.2.2	facilitate-01	facilitate
+::node	c	1.1	country	
+::node	n	1.2.2.2.2.2.2	name	
+::node	s	1.2	step-01	steps
+::node	"Afghanistan"	1.2.2.2.2.2.1	"Afghanistan"	
+::node	"Afghanistan"	1.2.2.2.2.2.2.1	"Afghanistan"	Afghanistan
+::node	c	1.2.2.1	country	
+::node	p	1.2.2.2.1.1	person	people
+::node	m	1.2.2.2	move-01	movement
+::node	a	1.2.2.2.1	and	and
+::node	c2	1.2.2.2.2.2	country	
+::node	e	1.2.2.2.3.1	economy	economic
+::node	g	1.2.2.2.1.2	good	goods
+::node	a2	1.2.2.2.2	and	
+::node	c	1.2.2.2.2.1	country	Pakistan
+::node	r	1.2.2.2.3	reconstruct-01	reconstruction
+::node	"Pakistan"	1.1.1	"Pakistan"	
+::edge	1.1.2		name	:op1	1.1.2.1	Pakistan	"Pakistan"
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	steps	step-01	:ARG1	1.2.1		country
+::edge	1.2	steps	step-01	:ARG2	1.2.2	facilitate	facilitate-01
+::edge	1	taken	take-01	:ARG0	1.1		country
+::edge	1.2.2.2.2.2		country	:name	1.2.2.2.2.2.2		name
+::edge	1	taken	take-01	:ARG1	1.2	steps	step-01
+::edge	1.2.2.2.2.2		country	:wiki	1.2.2.2.2.2.1		"Afghanistan"
+::edge	1.2.2.2.2.2.2		name	:op1	1.2.2.2.2.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.2	facilitate	facilitate-01	:ARG0	1.2.2.1		country
+::edge	1.2.2.2.1	and	and	:op1	1.2.2.2.1.1	people	person
+::edge	1.2.2	facilitate	facilitate-01	:ARG1	1.2.2.2	movement	move-01
+::edge	1.2.2.2	movement	move-01	:ARG1	1.2.2.2.1	and	and
+::edge	1.2.2.2.2		and	:op2	1.2.2.2.2.2		country
+::edge	1.2.2.2.3	reconstruction	reconstruct-01	:ARG1	1.2.2.2.3.1	economic	economy
+::edge	1.2.2.2.1	and	and	:op2	1.2.2.2.1.2	goods	good
+::edge	1.2.2.2	movement	move-01	:ARG2	1.2.2.2.2		and
+::edge	1.2.2.2.2		and	:op1	1.2.2.2.2.1	Pakistan	country
+::edge	1.2.2.2	movement	move-01	:purpose	1.2.2.2.3	reconstruction	reconstruct-01
+::edge	1.1		country	:wiki	1.1.1		"Pakistan"
+15	Key sectors of cooperation between Pakistan and Afghanistan include agriculture, rural development, civil aviation, finance and banking, engineering services, judicial and legal services and the establishment of small and medium-sized firms.
+15	Key sectors of cooperation between Pakistan and Afghanistan include agriculture , rural development , civil aviation , finance and banking , engineering services , judicial and legal services and the establishment of small and medium @-@ sized firms .
+15	0-1.2.2 1-1.2 2-1.2.1.r 3-1.2.1 4-1.2.1.1.r 5-1.2.1.1.2.1 6-1.2.1.2.r 7-1.2.1.2.2.1 8-1 9-1.1.1 11-1.1.2.1 12-1.1.2 14-1.1.3.1 15-1.1.3 17-1.1.4.1 18-1.1.4 19-1.1.4.2 21-1.1.5.1 22-1.1.5 24-1.1.6.1 26-1.1.6.2 27-1.1.6 28-1.1 30-1.1.7 31-1.1.7.1.r 32-1.1.7.1.1.1.1 33-1.1.7.1 34-1.1.7.1.2.1.1 36-1.1.7.1.1.1 36-1.1.7.1.2.1 37-1.1.7.1.1 37-1.1.7.1.2
+::node	s5	1.1.7.1.2.1	size-01	sized
+::node	m	1.1.7.1.2.1.1	medium	medium
+::node	s6	1.1.7.1.1.1	size-01	sized
+::node	n	1.2.1.2.2	name	
+::node	l	1.1.6.2	law	legal
+::node	a5	1.1.7.1	and	and
+::node	c3	1.2.1.2	country	
+::node	c2	1.2.1.1	country	
+::node	r	1.1.2.1	rural	rural
+::node	c4	1.1.3.1	civil	civil
+::node	f	1.1.4.1	finance	finance
+::node	b	1.1.4.2	bank-01	banking
+::node	e	1.1.5.1	engineer-01	engineering
+::node	"Pakistan"	1.2.1.1.2.1	"Pakistan"	Pakistan
+::node	j	1.1.6.1	judicial	judicial
+::node	d	1.1.2	develop-02	development
+::node	c	1.2.1	cooperate-01	cooperation
+::node	i	1	include-01	include
+::node	a3	1.1.3	aviation	aviation
+::node	"Afghanistan"	1.2.1.2.2.1	"Afghanistan"	Afghanistan
+::node	k	1.2.2	key	Key
+::node	a4	1.1.4	and	and
+::node	n2	1.2.1.1.2	name	
+::node	"Afghanistan"	1.2.1.2.1	"Afghanistan"	
+::node	s2	1.1.5	service	services
+::node	s4	1.1.7.1.1.1.1	small	small
+::node	"Pakistan"	1.2.1.1.1	"Pakistan"	
+::node	a	1.1	and	and
+::node	s3	1.1.6	service	services
+::node	e2	1.1.7	establish-01	establishment
+::node	s	1.2	sector	sectors
+::node	f3	1.1.7.1.2	firm	firms
+::node	a2	1.1.1	agriculture	agriculture
+::node	f2	1.1.7.1.1	firm	firms
+::edge	1.1.7.1.2	firms	firm	:ARG1-of	1.1.7.1.2.1	sized	size-01
+::edge	1.1.7.1.2.1	sized	size-01	:ARG2	1.1.7.1.2.1.1	medium	medium
+::edge	1.1.7.1.1	firms	firm	:ARG1-of	1.1.7.1.1.1	sized	size-01
+::edge	1.2.1.2		country	:name	1.2.1.2.2		name
+::edge	1.1.6	services	service	:mod	1.1.6.2	legal	law
+::edge	1.1.7	establishment	establish-01	:ARG1	1.1.7.1	and	and
+::edge	1.2.1	cooperation	cooperate-01	:ARG1	1.2.1.2		country
+::edge	1.2.1	cooperation	cooperate-01	:ARG0	1.2.1.1		country
+::edge	1.1.2	development	develop-02	:ARG1	1.1.2.1	rural	rural
+::edge	1.1.3	aviation	aviation	:mod	1.1.3.1	civil	civil
+::edge	1.1.4	and	and	:op1	1.1.4.1	finance	finance
+::edge	1.1.4	and	and	:op2	1.1.4.2	banking	bank-01
+::edge	1.1.5	services	service	:mod	1.1.5.1	engineering	engineer-01
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Pakistan	"Pakistan"
+::edge	1.1.6	services	service	:mod	1.1.6.1	judicial	judicial
+::edge	1.1	and	and	:op2	1.1.2	development	develop-02
+::edge	1.2	sectors	sector	:ARG2-of	1.2.1	cooperation	cooperate-01
+::edge	1.1	and	and	:op3	1.1.3	aviation	aviation
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.2	sectors	sector	:mod	1.2.2	Key	key
+::edge	1.1	and	and	:op4	1.1.4	and	and
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.2.1.2		country	:wiki	1.2.1.2.1		"Afghanistan"
+::edge	1.1	and	and	:op5	1.1.5	services	service
+::edge	1.1.7.1.1.1	sized	size-01	:ARG2	1.1.7.1.1.1.1	small	small
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"Pakistan"
+::edge	1	include	include-01	:ARG1	1.1	and	and
+::edge	1.1	and	and	:op6	1.1.6	services	service
+::edge	1.1	and	and	:op7	1.1.7	establishment	establish-01
+::edge	1	include	include-01	:ARG2	1.2	sectors	sector
+::edge	1.1.7.1	and	and	:op2	1.1.7.1.2	firms	firm
+::edge	1.1	and	and	:op1	1.1.1	agriculture	agriculture
+::edge	1.1.7.1	and	and	:op1	1.1.7.1.1	firms	firm
+16	Pakistan will offer College places for teachers, doctors, nurses and paramedics.
+16	Pakistan will offer College places for teachers , doctors , nurses and paramedics .
+16	0-1.1.2.1 2-1 3-1.2.1 4-1.2 5-1.3.r 6-1.3.1 6-1.3.1.1 6-1.3.1.1.r 8-1.3.2 10-1.3.3 11-1.3 12-1.3.4
+::node	"Pakistan"	1.1.2.1	"Pakistan"	Pakistan
+::node	t	1.3.1.1	teach-01	teachers
+::node	n2	1.1.2	name	
+::node	c2	1.2.1	college	College
+::node	o	1	offer-01	offer
+::node	p2	1.3.1	person	teachers
+::node	d	1.3.2	doctor	doctors
+::node	n	1.3.3	nurse	nurses
+::node	c	1.1	country	
+::node	p3	1.3.4	paramedic	paramedics
+::node	p	1.2	place	places
+::node	a	1.3	and	and
+::node	"Pakistan"	1.1.1	"Pakistan"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	places	place	:mod	1.2.1	College	college
+::edge	1.3	and	and	:op1	1.3.1	teachers	person
+::edge	1.3	and	and	:op2	1.3.2	doctors	doctor
+::edge	1.1.2		name	:op1	1.1.2.1	Pakistan	"Pakistan"
+::edge	1.3	and	and	:op3	1.3.3	nurses	nurse
+::edge	1	offer	offer-01	:ARG0	1.1		country
+::edge	1.3	and	and	:op4	1.3.4	paramedics	paramedic
+::edge	1	offer	offer-01	:ARG1	1.2	places	place
+::edge	1	offer	offer-01	:ARG3	1.3	and	and
+::edge	1.3.1	teachers	person	:ARG0-of	1.3.1.1	teachers	teach-01
+::edge	1.1		country	:wiki	1.1.1		"Pakistan"
+17	Pakistani trade with Afghanistan has increased since the war ended.
+17	Pakistani trade with Afghanistan has increased since the war ended .
+17	0-1.1.1.2.1 1-1.1 2-1.1.2.r 3-1.1.2.2.1 5-1 6-1.2 8-1.2.1.1 9-1.2.1
+::node	"Pakistan"	1.1.1.1	"Pakistan"	
+::node	n2	1.1.1.2	name	
+::node	"Afghanistan"	1.1.2.1	"Afghanistan"	
+::node	n	1.1.2.2	name	
+::node	"Afghanistan"	1.1.2.2.1	"Afghanistan"	Afghanistan
+::node	c2	1.1.2	country	
+::node	e	1.2.1	end-01	ended
+::node	i	1	increase-01	increased
+::node	t	1.1	trade-01	trade
+::node	s	1.2	since	since
+::node	"Pakistan"	1.1.1.2.1	"Pakistan"	Pakistani
+::node	w	1.2.1.1	war	war
+::node	c	1.1.1	country	
+::edge	1.1	trade	trade-01	:ARG2	1.1.2		country
+::edge	1.2	since	since	:op1	1.2.1	ended	end-01
+::edge	1.1.1		country	:wiki	1.1.1.1		"Pakistan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		country	:wiki	1.1.2.1		"Afghanistan"
+::edge	1	increased	increase-01	:ARG1	1.1	trade	trade-01
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1	increased	increase-01	:time	1.2	since	since
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Pakistani	"Pakistan"
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.1	ended	end-01	:ARG1	1.2.1.1	war	war
+::edge	1.1	trade	trade-01	:ARG0	1.1.1		country
+18	Pakistan expects private sector activity between Iran and Afghanistan to further develop peace.
+18	Pakistan expects private sector activity between Iran and Afghanistan to further develop peace .
+18	0-1.1.2.1 1-1 2-1.2.1.1.1 3-1.2.1.1 4-1.2.1 6-1.2.1.2.1.2.1 7-1.2.1.2 8-1.2.1.2.2.2.1 10-1.2.3 11-1.2 12-1.2.2
+::node	"Pakistan"	1.1.2.1	"Pakistan"	Pakistan
+::node	"Iran"	1.2.1.2.1.2.1	"Iran"	Iran
+::node	c3	1.2.1.2.2	country	
+::node	n3	1.1.2	name	
+::node	a	1.2.1	activity	activity
+::node	"Iran"	1.2.1.2.1.1	"Iran"	
+::node	e	1	expect-01	expects
+::node	n2	1.2.1.2.1.2	name	
+::node	"Afghanistan"	1.2.1.2.2.1	"Afghanistan"	
+::node	p	1.2.2	peace	peace
+::node	c2	1.2.1.2.1	country	
+::node	f	1.2.3	further	further
+::node	p2	1.2.1.1.1	private	private
+::node	c	1.1	country	
+::node	d	1.2	develop-02	develop
+::node	n	1.2.1.2.2.2	name	
+::node	a2	1.2.1.2	and	and
+::node	s	1.2.1.1	sector	sector
+::node	"Afghanistan"	1.2.1.2.2.2.1	"Afghanistan"	Afghanistan
+::node	"Pakistan"	1.1.1	"Pakistan"	
+::edge	1.1.2		name	:op1	1.1.2.1	Pakistan	"Pakistan"
+::edge	1.2.1.2.1.2		name	:op1	1.2.1.2.1.2.1	Iran	"Iran"
+::edge	1.2.1.2	and	and	:op2	1.2.1.2.2		country
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	develop	develop-02	:ARG0	1.2.1	activity	activity
+::edge	1.2.1.2.1		country	:wiki	1.2.1.2.1.1		"Iran"
+::edge	1.2.1.2.1		country	:name	1.2.1.2.1.2		name
+::edge	1.2.1.2.2		country	:wiki	1.2.1.2.2.1		"Afghanistan"
+::edge	1.2	develop	develop-02	:ARG1	1.2.2	peace	peace
+::edge	1.2.1.2	and	and	:op1	1.2.1.2.1		country
+::edge	1.2	develop	develop-02	:degree	1.2.3	further	further
+::edge	1.2.1.1	sector	sector	:mod	1.2.1.1.1	private	private
+::edge	1	expects	expect-01	:ARG0	1.1		country
+::edge	1	expects	expect-01	:ARG1	1.2	develop	develop-02
+::edge	1.2.1.2.2		country	:name	1.2.1.2.2.2		name
+::edge	1.2.1	activity	activity	:prep-among	1.2.1.2	and	and
+::edge	1.2.1	activity	activity	:poss	1.2.1.1	sector	sector
+::edge	1.2.1.2.2.2		name	:op1	1.2.1.2.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.1		country	:wiki	1.1.1		"Pakistan"
+19	Deputy head of Afghanistan's interim government and Minister of Finance Hedayat Amin-Arsala stated --
+19	Deputy head of Afghanistan 's interim government and Minister of Finance Hedayat Amin @-@ Arsala stated --
+19	0-1.1.3.2 1-1.1 1-1.1.3 1-1.1.3.r 2-1.1.3.1.r 3-1.1.3.1.1.1.2.1 4-1.1.3.1.1.1.r 5-1.1.3.1.2 6-1.1.3.1 6-1.1.3.1.1 6-1.1.3.1.1.r 8-1.1.4.2 9-1.1.4.2.1.r 10-1.1.4.2.1 11-1.1.2.1 12-1.1.2.2 14-1.1.2.2 15-1
+::node	"Hedayat"	1.1.2.1	"Hedayat"	Hedayat
+::node	i	1.1.3.1.2	interim	interim
+::node	"Amin-Arsala"	1.1.2.2	"Amin-Arsala"	Arsala
+::node	g	1.1.3.1	government-organization	government
+::node	d	1.1.3.2	deputy	Deputy
+::node	c	1.1.4.1	country	
+::node	m	1.1.4.2	minister	Minister
+::node	"Afghanistan"	1.1.3.1.1.1.2.1	"Afghanistan"	Afghanistan
+::node	"Afghanistan"	1.1.3.1.1.1.1	"Afghanistan"	
+::node	c	1.1.3.1.1.1	country	
+::node	n2	1.1.3.1.1.1.2	name	
+::node	n	1.1.2	name	
+::node	s	1	state-01	stated
+::node	h	1.1.3	head-01	head
+::node	h2	1.1.4	have-org-role-91	
+::node	f	1.1.4.2.1	finance	Finance
+::node	p	1.1	person	head
+::node	g2	1.1.3.1.1	govern-01	government
+::node	"Hedayat_Amin_Arsala"	1.1.1	"Hedayat_Amin_Arsala"	
+::edge	1.1.2		name	:op1	1.1.2.1	Hedayat	"Hedayat"
+::edge	1.1.3.1	government	government-organization	:mod	1.1.3.1.2	interim	interim
+::edge	1.1.2		name	:op2	1.1.2.2	Arsala	"Amin-Arsala"
+::edge	1.1.3	head	head-01	:ARG1	1.1.3.1	government	government-organization
+::edge	1.1.3	head	head-01	:mod	1.1.3.2	Deputy	deputy
+::edge	1.1.4		have-org-role-91	:ARG1	1.1.4.1		country
+::edge	1.1.4		have-org-role-91	:ARG2	1.1.4.2	Minister	minister
+::edge	1.1.3.1.1.1.2		name	:op1	1.1.3.1.1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.3.1.1.1		country	:wiki	1.1.3.1.1.1.1		"Afghanistan"
+::edge	1.1.3.1.1	government	govern-01	:ARG1	1.1.3.1.1.1		country
+::edge	1.1.3.1.1.1		country	:name	1.1.3.1.1.1.2		name
+::edge	1.1	head	person	:name	1.1.2		name
+::edge	1.1	head	person	:ARG0-of	1.1.3	head	head-01
+::edge	1.1	head	person	:ARG0-of	1.1.4		have-org-role-91
+::edge	1.1.4.2	Minister	minister	:topic	1.1.4.2.1	Finance	finance
+::edge	1	stated	state-01	:ARG0	1.1	head	person
+::edge	1.1.3.1	government	government-organization	:ARG0-of	1.1.3.1.1	government	govern-01
+::edge	1.1	head	person	:wiki	1.1.1		"Hedayat_Amin_Arsala"
+20	Afghanistan expects private sector activity to aid Afghanistan's reconstruction.
+20	Afghanistan expects private sector activity to aid Afghanistan 's reconstruction .
+20	0-1.1.2.1 1-1 2-1.2.1.1.1 3-1.2.1.1 4-1.2.1 6-1.2 7-1.2.2.1 8-1.2.2.1.r 9-1.2.2
+::node	n	1.1.2	name	
+::node	a2	1.2.1	activity	activity
+::node	e	1	expect-01	expects
+::node	r	1.2.2	reconstruct-01	reconstruction
+::node	"Afghanistan"	1.1.2.1	"Afghanistan"	Afghanistan
+::node	p	1.2.1.1.1	private	private
+::node	c	1.1	country	
+::node	a	1.2	aid-01	aid
+::node	c	1.2.2.1	country	Afghanistan
+::node	s	1.2.1.1	sector	sector
+::node	"Afghanistan"	1.1.1	"Afghanistan"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	aid	aid-01	:ARG0	1.2.1	activity	activity
+::edge	1.2	aid	aid-01	:ARG2	1.2.2	reconstruction	reconstruct-01
+::edge	1.1.2		name	:op1	1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.1.1	sector	sector	:mod	1.2.1.1.1	private	private
+::edge	1	expects	expect-01	:ARG0	1.1		country
+::edge	1	expects	expect-01	:ARG1	1.2	aid	aid-01
+::edge	1.2.2	reconstruction	reconstruct-01	:ARG1	1.2.2.1	Afghanistan	country
+::edge	1.2.1	activity	activity	:poss	1.2.1.1	sector	sector
+::edge	1.1		country	:wiki	1.1.1		"Afghanistan"
+21	Afghanistan is preparing liberal economic legislation that will facilitate foreign trade and private sector activity.
+21	Afghanistan is preparing liberal economic legislation that will facilitate foreign trade and private sector activity .
+21	0-1.1.2.1 2-1 3-1.2.2 4-1.2.1 5-1.2 8-1.2.3 9-1.2.3.1.1.1 10-1.2.3.1.1 11-1.2.3.1 12-1.2.3.1.2.1.1 13-1.2.3.1.2.1 14-1.2.3.1.2
+::node	"Afghanistan"	1.1.2.1	"Afghanistan"	Afghanistan
+::node	t	1.2.3.1.1	trade-01	trade
+::node	a2	1.2.3.1.2	activity	activity
+::node	n	1.1.2	name	
+::node	e	1.2.1	economy	economic
+::node	p	1	prepare-01	preparing
+::node	l2	1.2.2	liberal	liberal
+::node	f	1.2.3	facilitate-01	facilitate
+::node	f2	1.2.3.1.1.1	foreign	foreign
+::node	c	1.1	country	
+::node	l	1.2	legislate-01	legislation
+::node	s	1.2.3.1.2.1	sector	sector
+::node	a	1.2.3.1	and	and
+::node	p2	1.2.3.1.2.1.1	private	private
+::node	"Afghanistan"	1.1.1	"Afghanistan"	
+::edge	1.1.2		name	:op1	1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.3.1	and	and	:op1	1.2.3.1.1	trade	trade-01
+::edge	1.2.3.1	and	and	:op2	1.2.3.1.2	activity	activity
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	legislation	legislate-01	:ARG1	1.2.1	economic	economy
+::edge	1.2	legislation	legislate-01	:mod	1.2.2	liberal	liberal
+::edge	1.2	legislation	legislate-01	:ARG0-of	1.2.3	facilitate	facilitate-01
+::edge	1.2.3.1.1	trade	trade-01	:mod	1.2.3.1.1.1	foreign	foreign
+::edge	1	preparing	prepare-01	:ARG0	1.1		country
+::edge	1	preparing	prepare-01	:ARG1	1.2	legislation	legislate-01
+::edge	1.2.3.1.2	activity	activity	:poss	1.2.3.1.2.1	sector	sector
+::edge	1.2.3	facilitate	facilitate-01	:ARG1	1.2.3.1	and	and
+::edge	1.2.3.1.2.1	sector	sector	:mod	1.2.3.1.2.1.1	private	private
+::edge	1.1		country	:wiki	1.1.1		"Afghanistan"
+22	Afghanistan seeks political stability, economic development and a legislative and institutional base.
+22	Afghanistan seeks political stability , economic development and a legislative and institutional base .
+22	0-1.1.2.1 1-1 2-1.2.1.1 3-1.2.1 5-1.2.2.1 6-1.2.2 7-1.2 9-1.2.3.1 11-1.2.3.2 12-1.2.3
+::node	"Afghanistan"	1.1.2.1	"Afghanistan"	Afghanistan
+::node	n	1.1.2	name	
+::node	s2	1.2.1	stability	stability
+::node	s	1	seek-01	seeks
+::node	d	1.2.2	develop-02	development
+::node	b	1.2.3	base	base
+::node	c	1.1	country	
+::node	a	1.2	and	and
+::node	i	1.2.3.2	institution	institutional
+::node	e	1.2.2.1	economy	economic
+::node	l	1.2.3.1	legislate-01	legislative
+::node	p	1.2.1.1	political	political
+::node	"Afghanistan"	1.1.1	"Afghanistan"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1	stability	stability
+::edge	1.2	and	and	:op2	1.2.2	development	develop-02
+::edge	1.2	and	and	:op3	1.2.3	base	base
+::edge	1.1.2		name	:op1	1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1	seeks	seek-01	:ARG0	1.1		country
+::edge	1	seeks	seek-01	:ARG1	1.2	and	and
+::edge	1.2.3	base	base	:mod	1.2.3.2	institutional	institution
+::edge	1.2.2	development	develop-02	:ARG1	1.2.2.1	economic	economy
+::edge	1.2.3	base	base	:mod	1.2.3.1	legislative	legislate-01
+::edge	1.2.1	stability	stability	:mod	1.2.1.1	political	political
+::edge	1.1		country	:wiki	1.1.1		"Afghanistan"
+23	Afghanistan plans to serve as a bridge between Central Asia and Southeast Asia and seeks help from the Economic Cooperation Organization.
+23	Afghanistan plans to serve as a bridge between Central Asia and Southeast Asia and seeks help from the Economic Cooperation Organization .
+23	0-1.1.1.2.1 1-1.1 3-1.1.2 4-1.1.2.2.r 6-1.1.2.2 8-1.1.2.2.1.2.1 9-1.1.2.2.1.2.2 11-1.1.2.2.2.2.1 12-1.1.2.2.2.2.2 13-1 14-1.2 15-1.2.2 16-1.2.3.r 18-1.2.3.2.1 19-1.2.3.2.2 20-1.2.3.2.3
+::node	w	1.1.2.2.1	world-region	
+::node	"Central"	1.1.2.2.1.2.1	"Central"	Central
+::node	"Asia"	1.1.2.2.1.2.2	"Asia"	Asia
+::node	n2	1.1.2.2.2.2	name	
+::node	"Asia"	1.1.2.2.2.2.2	"Asia"	Asia
+::node	"Central_Asia"	1.1.2.2.1.1	"Central_Asia"	
+::node	n	1.1.2.2.1.2	name	
+::node	"Southeast_Asia"	1.1.2.2.2.1	"Southeast_Asia"	
+::node	n3	1.2.3.2	name	
+::node	"Afghanistan"	1.1.1.2.1	"Afghanistan"	Afghanistan
+::node	"Economic_Cooperation_Organization"	1.2.3.1	"Economic_Cooperation_Organization"	
+::node	"Southeast"	1.1.2.2.2.2.1	"Southeast"	Southeast
+::node	"Afghanistan"	1.1.1.1	"Afghanistan"	
+::node	n4	1.1.1.2	name	
+::node	c	1.1.2.1	country	
+::node	b	1.1.2.2	bridge-01	bridge
+::node	"Cooperation"	1.2.3.2.2	"Cooperation"	Cooperation
+::node	"Organization"	1.2.3.2.3	"Organization"	Organization
+::node	"Economic"	1.2.3.2.1	"Economic"	Economic
+::node	s2	1.1.2	serve-01	serve
+::node	c	1.2.1	country	
+::node	a	1	and	and
+::node	h	1.2.2	help-01	help
+::node	o	1.2.3	organization	
+::node	p	1.1	plan-01	plans
+::node	w2	1.1.2.2.2	world-region	
+::node	s	1.2	seek-01	seeks
+::node	c	1.1.1	country	
+::edge	1.1.2.2	bridge	bridge-01	:ARG1	1.1.2.2.1		world-region
+::edge	1.1.2.2.1.2		name	:op1	1.1.2.2.1.2.1	Central	"Central"
+::edge	1.1.2.2.1.2		name	:op2	1.1.2.2.1.2.2	Asia	"Asia"
+::edge	1.1.2.2.2		world-region	:name	1.1.2.2.2.2		name
+::edge	1.1.2.2.2.2		name	:op2	1.1.2.2.2.2.2	Asia	"Asia"
+::edge	1.1.2.2.1		world-region	:wiki	1.1.2.2.1.1		"Central_Asia"
+::edge	1.1.2.2.1		world-region	:name	1.1.2.2.1.2		name
+::edge	1.1.2.2.2		world-region	:wiki	1.1.2.2.2.1		"Southeast_Asia"
+::edge	1.2.3		organization	:name	1.2.3.2		name
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.3		organization	:wiki	1.2.3.1		"Economic_Cooperation_Organization"
+::edge	1.1.2.2.2.2		name	:op1	1.1.2.2.2.2.1	Southeast	"Southeast"
+::edge	1.1.1		country	:wiki	1.1.1.1		"Afghanistan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2	serve	serve-01	:ARG0	1.1.2.1		country
+::edge	1.1.2	serve	serve-01	:ARG1	1.1.2.2	bridge	bridge-01
+::edge	1.2.3.2		name	:op2	1.2.3.2.2	Cooperation	"Cooperation"
+::edge	1.2.3.2		name	:op3	1.2.3.2.3	Organization	"Organization"
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	Economic	"Economic"
+::edge	1.1	plans	plan-01	:ARG1	1.1.2	serve	serve-01
+::edge	1.2	seeks	seek-01	:ARG0	1.2.1		country
+::edge	1.2	seeks	seek-01	:ARG1	1.2.2	help	help-01
+::edge	1.2	seeks	seek-01	:ARG2	1.2.3		organization
+::edge	1	and	and	:op1	1.1	plans	plan-01
+::edge	1.1.2.2	bridge	bridge-01	:ARG2	1.1.2.2.2		world-region
+::edge	1	and	and	:op2	1.2	seeks	seek-01
+::edge	1.1	plans	plan-01	:ARG0	1.1.1		country
+24	Iranian Foreign Minister Kamal Kharazi stated the meeting must reinforce the friendship and speed up regional cooperation between Iran, Pakistan and Afghanistan.
+24	Iranian Foreign Minister Kamal Kharazi stated the meeting must reinforce the friendship and speed up regional cooperation between Iran , Pakistan and Afghanistan .
+24	0-1.1.3.1.2.1 1-1.1.3.2.1 2-1.1.3.2 3-1.1.2.1 4-1.1.2.2 5-1 7-1.2.1 8-1.2 9-1.2.2.1 11-1.2.2.1.1 12-1.2.2 13-1.2.2.2 14-1.2.2.2 15-1.2.2.2.1.3 16-1.2.2.2.1 18-1.2.2.2.1.1 20-1.2.2.2.1.2.1.2.1 21-1.2.2.2.1.2 22-1.2.2.2.1.2.2.2.1
+::node	n4	1.1.3.1.2	name	
+::node	f	1.1.3.2.1	foreign	Foreign
+::node	"Pakistan"	1.2.2.2.1.2.1.2.1	"Pakistan"	Pakistan
+::node	r	1.2.2.1	reinforce-01	reinforce
+::node	c	1.2.2.2.1.1	country	Iran
+::node	s2	1.2.2.2	speed-02	up
+::node	c2	1.2.2.2.1	cooperate-01	cooperation
+::node	r2	1.2.2.2.1.3	regional	regional
+::node	a2	1.2.2.2.1.2	and	and
+::node	"Kamal"	1.1.2.1	"Kamal"	Kamal
+::node	f2	1.2.2.1.1	friendship	friendship
+::node	"Kharazi"	1.1.2.2	"Kharazi"	Kharazi
+::node	c	1.1.3.1	country	
+::node	m	1.1.3.2	minister	Minister
+::node	"Afghanistan"	1.2.2.2.1.2.2.2.1	"Afghanistan"	Afghanistan
+::node	c4	1.2.2.2.1.2.2	country	
+::node	c3	1.2.2.2.1.2.1	country	
+::node	"Iran"	1.1.3.1.2.1	"Iran"	Iranian
+::node	n	1.1.2	name	
+::node	m2	1.2.1	meet-03	meeting
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	
+::node	a	1.2.2	and	and
+::node	p	1.1	person	
+::node	o	1.2	obligate-01	must
+::node	n2	1.2.2.2.1.2.2.2	name	
+::node	"Iran"	1.1.3.1.1	"Iran"	
+::node	"Pakistan"	1.2.2.2.1.2.1.1	"Pakistan"	
+::node	"Kamal_Kharazi"	1.1.1	"Kamal_Kharazi"	
+::node	n3	1.2.2.2.1.2.1.2	name	
+::node	"Afghanistan"	1.2.2.2.1.2.2.1	"Afghanistan"	
+::edge	1.1.3.1		country	:name	1.1.3.1.2		name
+::edge	1.1.3.2	Minister	minister	:topic	1.1.3.2.1	Foreign	foreign
+::edge	1.2.2.2.1.2.1.2		name	:op1	1.2.2.2.1.2.1.2.1	Pakistan	"Pakistan"
+::edge	1.2.2	and	and	:op1	1.2.2.1	reinforce	reinforce-01
+::edge	1.2.2.2.1	cooperation	cooperate-01	:ARG0	1.2.2.2.1.1	Iran	country
+::edge	1.2.2	and	and	:op2	1.2.2.2	up	speed-02
+::edge	1.2.2.2	up	speed-02	:ARG1	1.2.2.2.1	cooperation	cooperate-01
+::edge	1.2.2.2.1	cooperation	cooperate-01	:mod	1.2.2.2.1.3	regional	regional
+::edge	1.2.2.2.1	cooperation	cooperate-01	:ARG1	1.2.2.2.1.2	and	and
+::edge	1.1.2		name	:op1	1.1.2.1	Kamal	"Kamal"
+::edge	1.2.2.1	reinforce	reinforce-01	:ARG1	1.2.2.1.1	friendship	friendship
+::edge	1.1.2		name	:op2	1.1.2.2	Kharazi	"Kharazi"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		country
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	Minister	minister
+::edge	1.2.2.2.1.2.2.2		name	:op1	1.2.2.2.1.2.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.2.2.1.2	and	and	:op2	1.2.2.2.1.2.2		country
+::edge	1.2.2.2.1.2	and	and	:op1	1.2.2.2.1.2.1		country
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Iranian	"Iran"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	must	obligate-01	:ARG0	1.2.1	meeting	meet-03
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2	must	obligate-01	:ARG2	1.2.2	and	and
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	must	obligate-01
+::edge	1.2.2.2.1.2.2		country	:name	1.2.2.2.1.2.2.2		name
+::edge	1.1.3.1		country	:wiki	1.1.3.1.1		"Iran"
+::edge	1.2.2.2.1.2.1		country	:wiki	1.2.2.2.1.2.1.1		"Pakistan"
+::edge	1.1		person	:wiki	1.1.1		"Kamal_Kharazi"
+::edge	1.2.2.2.1.2.1		country	:name	1.2.2.2.1.2.1.2		name
+::edge	1.2.2.2.1.2.2		country	:wiki	1.2.2.2.1.2.2.1		"Afghanistan"
+25	Speakers addressed opium production and trafficking in Afghanistan.
+25	Speakers addressed opium production and trafficking in Afghanistan .
+25	0-1.1 0-1.1.1 0-1.1.1.r 1-1 2-1.2.1.1 3-1.2.1 4-1.2 5-1.2.2 6-1.2.r 7-1.2.3.2.1
+::node	p2	1.2.1	produce-01	production
+::node	a	1	address-01	addressed
+::node	t	1.2.2	traffic-01	trafficking
+::node	c	1.2.3	country	
+::node	p	1.1	person	Speakers
+::node	a2	1.2	and	and
+::node	n	1.2.3.2	name	
+::node	"Afghanistan"	1.2.3.1	"Afghanistan"	
+::node	"Afghanistan"	1.2.3.2.1	"Afghanistan"	Afghanistan
+::node	o	1.2.1.1	opium	opium
+::node	s	1.1.1	speak-01	Speakers
+::edge	1.2	and	and	:op1	1.2.1	production	produce-01
+::edge	1.2	and	and	:op2	1.2.2	trafficking	traffic-01
+::edge	1.2	and	and	:location	1.2.3		country
+::edge	1	addressed	address-01	:ARG0	1.1	Speakers	person
+::edge	1	addressed	address-01	:ARG1	1.2	and	and
+::edge	1.2.3		country	:name	1.2.3.2		name
+::edge	1.2.3		country	:wiki	1.2.3.1		"Afghanistan"
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.1	production	produce-01	:ARG1	1.2.1.1	opium	opium
+::edge	1.1	Speakers	person	:ARG0-of	1.1.1	Speakers	speak-01
+26	Opium crops were suppressed by the later rule of the Taliban.
+26	Opium crops were suppressed by the later rule of the Taliban .
+26	0-1.2.1 1-1.2 3-1 4-1.1.r 6-1.1.2 6-1.1.2.1 6-1.1.2.1.r 7-1.1 8-1.1.1.r 10-1.1.1.2.1
+::node	l	1.1.2	late	later
+::node	o	1.2.1	opium	Opium
+::node	s	1	suppress-01	suppressed
+::node	"Taliban"	1.1.1.1	"Taliban"	
+::node	n	1.1.1.2	name	
+::node	m	1.1.2.1	more	later
+::node	r	1.1	rule-03	rule
+::node	c	1.2	crop	crops
+::node	"Taliban"	1.1.1.2.1	"Taliban"	Taliban
+::node	c2	1.1.1	criminal-organization	
+::edge	1.1	rule	rule-03	:time	1.1.2	later	late
+::edge	1.2	crops	crop	:mod	1.2.1	Opium	opium
+::edge	1.1.1		criminal-organization	:wiki	1.1.1.1		"Taliban"
+::edge	1.1.1		criminal-organization	:name	1.1.1.2		name
+::edge	1.1.2	later	late	:degree	1.1.2.1	later	more
+::edge	1	suppressed	suppress-01	:ARG0	1.1	rule	rule-03
+::edge	1	suppressed	suppress-01	:ARG1	1.2	crops	crop
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Taliban	"Taliban"
+::edge	1.1	rule	rule-03	:ARG0	1.1.1		criminal-organization
+27	Opium has reemerged since a US-led military alliance toppled the Taliban in December 2001.
+27	Opium has reemerged since a US @-@ led military alliance toppled the Taliban in December 2001 .
+27	0-1.1 3-1.2 5-1.2.1.1.2.1.2.1 5-1.2.1.1.2.1.2.2 7-1.2.1.1.2 8-1.2.1.1.1 9-1.2.1.1 10-1.2.1 12-1.2.1.2.2.1 13-1.2.1.3.r 14-1.2.1.3.1 14-1.2.1.3.1.r 15-1.2.1.3.2
+::node	c	1.2.1.1.2.1	country	
+::node	"States"	1.2.1.1.2.1.2.2	"States"	US
+::node	"United"	1.2.1.1.2.1.2.1	"United"	US
+::node	2001	1.2.1.3.2	2001	2001
+::node	n2	1.2.1.2.2	name	
+::node	12	1.2.1.3.1	12	December
+::node	t	1.2.1	topple-01	toppled
+::node	r	1	re-emerge-01	
+::node	"Taliban"	1.2.1.2.2.1	"Taliban"	Taliban
+::node	l	1.2.1.1.2	lead-02	led
+::node	"Taliban"	1.2.1.2.1	"Taliban"	
+::node	m	1.2.1.1.1	military	military
+::node	o	1.1	opium	Opium
+::node	s	1.2	since	since
+::node	n	1.2.1.1.2.1.2	name	
+::node	"United_States"	1.2.1.1.2.1.1	"United_States"	
+::node	c2	1.2.1.2	criminal-organization	
+::node	d	1.2.1.3	date-entity	
+::node	a	1.2.1.1	alliance	alliance
+::edge	1.2.1.1.2	led	lead-02	:ARG0	1.2.1.1.2.1		country
+::edge	1.2.1.1.2.1.2		name	:op2	1.2.1.1.2.1.2.2	US	"States"
+::edge	1.2.1.1.2.1.2		name	:op1	1.2.1.1.2.1.2.1	US	"United"
+::edge	1.2.1.3		date-entity	:year	1.2.1.3.2	2001	2001
+::edge	1.2.1.2		criminal-organization	:name	1.2.1.2.2		name
+::edge	1.2.1.3		date-entity	:month	1.2.1.3.1	December	12
+::edge	1.2	since	since	:op1	1.2.1	toppled	topple-01
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	Taliban	"Taliban"
+::edge	1.2.1.1	alliance	alliance	:ARG1-of	1.2.1.1.2	led	lead-02
+::edge	1.2.1.2		criminal-organization	:wiki	1.2.1.2.1		"Taliban"
+::edge	1.2.1.1	alliance	alliance	:mod	1.2.1.1.1	military	military
+::edge	1		re-emerge-01	:ARG0	1.1	Opium	opium
+::edge	1		re-emerge-01	:time	1.2	since	since
+::edge	1.2.1.1.2.1		country	:name	1.2.1.1.2.1.2		name
+::edge	1.2.1.1.2.1		country	:wiki	1.2.1.1.2.1.1		"United_States"
+::edge	1.2.1	toppled	topple-01	:ARG1	1.2.1.2		criminal-organization
+::edge	1.2.1	toppled	topple-01	:time	1.2.1.3		date-entity
+::edge	1.2.1	toppled	topple-01	:ARG0	1.2.1.1	alliance	alliance
+28	Afghan interim government head Hamid Karzai and the international community promote a crop substitution program for farmers.
+28	Afghan interim government head Hamid Karzai and the international community promote a crop substitution program for farmers .
+28	0-1.1.1.3.1.1.1.2.1 1-1.1.1.3.1.2 2-1.1.1.3.1 2-1.1.1.3.1.1 2-1.1.1.3.1.1.r 3-1.1.1 3-1.1.1.3 3-1.1.1.3.r 4-1.1.1.2.1 5-1.1.1.2.2 6-1.1 8-1.1.2.1 9-1.1.2 10-1 12-1.2.1.1 13-1.2.1 14-1.2 15-1.3.r 16-1.3 16-1.3.1 16-1.3.1.r
+::node	"Hamid_Karzai"	1.1.1.1	"Hamid_Karzai"	
+::node	n	1.1.1.2	name	
+::node	i2	1.1.2.1	international	international
+::node	h	1.1.1.3	head-01	head
+::node	c2	1.1.1.3.1.1.1	country	
+::node	"Afghanistan"	1.1.1.3.1.1.1.1	"Afghanistan"	
+::node	n2	1.1.1.3.1.1.1.2	name	
+::node	"Afghanistan"	1.1.1.3.1.1.1.2.1	"Afghanistan"	Afghan
+::node	c3	1.1.2	community	community
+::node	s	1.2.1	substitute-01	substitution
+::node	p	1	promote-02	promote
+::node	f	1.3.1	farm-01	farmers
+::node	a	1.1	and	and
+::node	p3	1.2	program	program
+::node	p2	1.3	person	farmers
+::node	"Karzai"	1.1.1.2.2	"Karzai"	Karzai
+::node	g	1.1.1.3.1	government-organization	government
+::node	"Hamid"	1.1.1.2.1	"Hamid"	Hamid
+::node	c	1.2.1.1	crop	crop
+::node	g2	1.1.1.3.1.1	govern-01	government
+::node	p4	1.1.1	person	head
+::node	i	1.1.1.3.1.2	interim	interim
+::edge	1.1.1	head	person	:wiki	1.1.1.1		"Hamid_Karzai"
+::edge	1.1.1	head	person	:name	1.1.1.2		name
+::edge	1.1.2	community	community	:mod	1.1.2.1	international	international
+::edge	1.1.1	head	person	:ARG0-of	1.1.1.3	head	head-01
+::edge	1.1.1.3.1.1	government	govern-01	:ARG1	1.1.1.3.1.1.1		country
+::edge	1.1.1.3.1.1.1		country	:wiki	1.1.1.3.1.1.1.1		"Afghanistan"
+::edge	1.1.1.3.1.1.1		country	:name	1.1.1.3.1.1.1.2		name
+::edge	1.1.1.3.1.1.1.2		name	:op1	1.1.1.3.1.1.1.2.1	Afghan	"Afghanistan"
+::edge	1.1	and	and	:op2	1.1.2	community	community
+::edge	1.2	program	program	:mod	1.2.1	substitution	substitute-01
+::edge	1.3	farmers	person	:ARG0-of	1.3.1	farmers	farm-01
+::edge	1	promote	promote-02	:ARG0	1.1	and	and
+::edge	1	promote	promote-02	:ARG1	1.2	program	program
+::edge	1	promote	promote-02	:ARG2	1.3	farmers	person
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Karzai	"Karzai"
+::edge	1.1.1.3	head	head-01	:ARG1	1.1.1.3.1	government	government-organization
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Hamid	"Hamid"
+::edge	1.2.1	substitution	substitute-01	:ARG1	1.2.1.1	crop	crop
+::edge	1.1.1.3.1	government	government-organization	:ARG0-of	1.1.1.3.1.1	government	govern-01
+::edge	1.1	and	and	:op1	1.1.1	head	person
+::edge	1.1.1.3.1	government	government-organization	:mod	1.1.1.3.1.2	interim	interim
+29	Head of United Nations Development Program Mark Malloch Brown announced concerns about Afghan interim government head Hamid Karzai's ability to police the drug trade.
+29	Head of United Nations Development Program Mark Malloch Brown announced concerns about Afghan interim government head Hamid Karzai 's ability to police the drug trade .
+29	0-1.1 0-1.1.3 0-1.1.3.r 1-1.1.3.1.r 2-1.1.3.1.2.1 3-1.1.3.1.2.2 4-1.1.3.1.2.3 5-1.1.3.1.2.4 6-1.1.2.1 7-1.1.2.2 8-1.1.2.3 9-1 10-1.2 11-1.2.1.r 12-1.2.1.1.3.1.1.1.2.1 13-1.2.1.1.3.2 14-1.2.1.1.3.1 14-1.2.1.1.3.1.1 14-1.2.1.1.3.1.1.r 15-1.2.1.1 15-1.2.1.1.3 15-1.2.1.1.3.r 16-1.2.1.1.2.1 17-1.2.1.1.2.2 18-1.2.1.1.r 19-1.2.1 21-1.2.1.2 23-1.2.1.2.2.1 24-1.2.1.2.2
+::node	c2	1.2.1.1.3.1.1.1	country	
+::node	n2	1.1.3.1.2	name	
+::node	h2	1.2.1.1.3	head-01	head
+::node	t	1.2.1.2.2	trade-01	trade
+::node	n4	1.2.1.1.3.1.1.1.2	name	
+::node	p4	1.2.1.2	police-01	police
+::node	"Afghanistan"	1.2.1.1.3.1.1.1.1	"Afghanistan"	
+::node	p2	1.2.1.1	person	head
+::node	i	1.2.1.1.3.2	interim	interim
+::node	"Mark"	1.1.2.1	"Mark"	Mark
+::node	"Malloch"	1.1.2.2	"Malloch"	Malloch
+::node	o	1.1.3.1	organization	
+::node	"Brown"	1.1.2.3	"Brown"	Brown
+::node	"Hamid"	1.2.1.1.2.1	"Hamid"	Hamid
+::node	"Karzai"	1.2.1.1.2.2	"Karzai"	Karzai
+::node	g	1.2.1.1.3.1	government-organization	government
+::node	g2	1.2.1.1.3.1.1	govern-01	government
+::node	"Nations"	1.1.3.1.2.2	"Nations"	Nations
+::node	"Development"	1.1.3.1.2.3	"Development"	Development
+::node	"Afghanistan"	1.2.1.1.3.1.1.1.2.1	"Afghanistan"	Afghan
+::node	"Program"	1.1.3.1.2.4	"Program"	Program
+::node	"United"	1.1.3.1.2.1	"United"	United
+::node	n	1.1.2	name	
+::node	c3	1.2.1	capable-41	ability
+::node	a	1	announce-01	announced
+::node	h	1.1.3	head-01	Head
+::node	d	1.2.1.2.2.1	drug	drug
+::node	n3	1.2.1.1.2	name	
+::node	p2	1.2.1.2.1	person	
+::node	"Hamid_Karzai"	1.2.1.1.1	"Hamid_Karzai"	
+::node	p	1.1	person	Head
+::node	c	1.2	concern-01	concerns
+::node	"United_Nations_Development_Programme"	1.1.3.1.1	"United_Nations_Development_Programme"	
+::node	"Mark_Malloch_Brown,_Baron_Malloch-Brown"	1.1.1	"Mark_Malloch_Brown,_Baron_Malloch-Brown"	
+::edge	1.2.1.1.3.1.1	government	govern-01	:ARG1	1.2.1.1.3.1.1.1		country
+::edge	1.1.3.1		organization	:name	1.1.3.1.2		name
+::edge	1.2.1.1	head	person	:ARG0-of	1.2.1.1.3	head	head-01
+::edge	1.2.1.2	police	police-01	:ARG1	1.2.1.2.2	trade	trade-01
+::edge	1.2.1.1.3.1.1.1		country	:name	1.2.1.1.3.1.1.1.2		name
+::edge	1.2.1	ability	capable-41	:ARG2	1.2.1.2	police	police-01
+::edge	1.2.1.1.3.1.1.1		country	:wiki	1.2.1.1.3.1.1.1.1		"Afghanistan"
+::edge	1.2.1	ability	capable-41	:ARG1	1.2.1.1	head	person
+::edge	1.2.1.1.3	head	head-01	:mod	1.2.1.1.3.2	interim	interim
+::edge	1.1.2		name	:op1	1.1.2.1	Mark	"Mark"
+::edge	1.1.2		name	:op2	1.1.2.2	Malloch	"Malloch"
+::edge	1.1.3	Head	head-01	:ARG1	1.1.3.1		organization
+::edge	1.1.2		name	:op3	1.1.2.3	Brown	"Brown"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Hamid	"Hamid"
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	Karzai	"Karzai"
+::edge	1.2.1.1.3	head	head-01	:ARG1	1.2.1.1.3.1	government	government-organization
+::edge	1.2.1.1.3.1	government	government-organization	:ARG0-of	1.2.1.1.3.1.1	government	govern-01
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	Nations	"Nations"
+::edge	1.1.3.1.2		name	:op3	1.1.3.1.2.3	Development	"Development"
+::edge	1.2.1.1.3.1.1.1.2		name	:op1	1.2.1.1.3.1.1.1.2.1	Afghan	"Afghanistan"
+::edge	1.1.3.1.2		name	:op4	1.1.3.1.2.4	Program	"Program"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	United	"United"
+::edge	1.1	Head	person	:name	1.1.2		name
+::edge	1.2	concerns	concern-01	:ARG0	1.2.1	ability	capable-41
+::edge	1.1	Head	person	:ARG0-of	1.1.3	Head	head-01
+::edge	1.2.1.2.2	trade	trade-01	:ARG1	1.2.1.2.2.1	drug	drug
+::edge	1.2.1.1	head	person	:name	1.2.1.1.2		name
+::edge	1.2.1.2	police	police-01	:ARG0	1.2.1.2.1		person
+::edge	1.2.1.1	head	person	:wiki	1.2.1.1.1		"Hamid_Karzai"
+::edge	1	announced	announce-01	:ARG0	1.1	Head	person
+::edge	1	announced	announce-01	:ARG1	1.2	concerns	concern-01
+::edge	1.1.3.1		organization	:wiki	1.1.3.1.1		"United_Nations_Development_Programme"
+::edge	1.1	Head	person	:wiki	1.1.1		"Mark_Malloch_Brown,_Baron_Malloch-Brown"
+30	He stated --
+30	He stated --
+30	0-1.1 1-1
+::node	s	1	state-01	stated
+::node	h	1.1	he	He
+::edge	1	stated	state-01	:ARG0	1.1	He	he
+31	Afghanistan is in a state of flux.
+31	Afghanistan is in a state of flux .
+31	0-1.1.2.1 6-1
+::node	n	1.1.2	name	
+::node	f	1	flux-01	flux
+::node	"Afghanistan"	1.1.2.1	"Afghanistan"	Afghanistan
+::node	c	1.1	country	
+::node	"Afghanistan"	1.1.1	"Afghanistan"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1	flux	flux-01	:ARG1	1.1		country
+::edge	1.1		country	:wiki	1.1.1		"Afghanistan"
+32	Afghanistan has security problems.
+32	Afghanistan has security problems .
+32	0-1.1.2.1 1-1 2-1.2.1 3-1.2
+::node	n	1.1.2	name	
+::node	s	1.2.1	security	security
+::node	h	1	have-03	has
+::node	"Afghanistan"	1.1.2.1	"Afghanistan"	Afghanistan
+::node	c	1.1	country	
+::node	p	1.2	problem	problems
+::node	"Afghanistan"	1.1.1	"Afghanistan"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	problems	problem	:topic	1.2.1	security	security
+::edge	1.1.2		name	:op1	1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1	has	have-03	:ARG0	1.1		country
+::edge	1	has	have-03	:ARG1	1.2	problems	problem
+::edge	1.1		country	:wiki	1.1.1		"Afghanistan"
+33	Iran and Pakistan have long fought over Afghanistan.
+33	Iran and Pakistan have long fought over Afghanistan .
+33	0-1.1.2.1 2-1.2.2.1 4-1.4 5-1 7-1.3.2.1
+::node	"Iran"	1.1.2.1	"Iran"	Iran
+::node	"Afghanistan"	1.3.2.1	"Afghanistan"	Afghanistan
+::node	n3	1.1.2	name	
+::node	"Pakistan"	1.2.1	"Pakistan"	
+::node	f	1	fight-01	fought
+::node	n2	1.2.2	name	
+::node	"Afghanistan"	1.3.1	"Afghanistan"	
+::node	n	1.3.2	name	
+::node	c	1.1	country	
+::node	c2	1.2	country	
+::node	c3	1.3	country	
+::node	l	1.4	long	long
+::node	"Pakistan"	1.2.2.1	"Pakistan"	Pakistan
+::node	"Iran"	1.1.1	"Iran"	
+::edge	1.1.2		name	:op1	1.1.2.1	Iran	"Iran"
+::edge	1.3.2		name	:op1	1.3.2.1	Afghanistan	"Afghanistan"
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"Pakistan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3		country	:wiki	1.3.1		"Afghanistan"
+::edge	1.3		country	:name	1.3.2		name
+::edge	1	fought	fight-01	:ARG0	1.1		country
+::edge	1	fought	fight-01	:ARG1	1.2		country
+::edge	1	fought	fight-01	:ARG2	1.3		country
+::edge	1	fought	fight-01	:duration	1.4	long	long
+::edge	1.2.2		name	:op1	1.2.2.1	Pakistan	"Pakistan"
+::edge	1.1		country	:wiki	1.1.1		"Iran"
+34	The Taliban ruled Afghanistan from 1996-2001.
+34	The Taliban ruled Afghanistan from 1996 @-@ 2001 .
+34	1-1.1.2.1 2-1 3-1.2.2.1 4-1.3.1.r 4-1.3.r 5-1.3.1.1 7-1.3.2.1
+::node	"Taliban"	1.1.2.1	"Taliban"	Taliban
+::node	1996	1.3.1.1	1996	1996
+::node	2001	1.3.2.1	2001	2001
+::node	n2	1.1.2	name	
+::node	"Afghanistan"	1.2.1	"Afghanistan"	
+::node	r	1	rule-03	ruled
+::node	n	1.2.2	name	
+::node	d4	1.3.1	date-entity	
+::node	d5	1.3.2	date-entity	
+::node	c2	1.1	criminal-organization	
+::node	c	1.2	country	
+::node	d3	1.3	date-interval	
+::node	"Afghanistan"	1.2.2.1	"Afghanistan"	Afghanistan
+::node	"Taliban"	1.1.1	"Taliban"	
+::edge	1.1.2		name	:op1	1.1.2.1	Taliban	"Taliban"
+::edge	1.3.1		date-entity	:year	1.3.1.1	1996	1996
+::edge	1.3.2		date-entity	:year	1.3.2.1	2001	2001
+::edge	1.1		criminal-organization	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"Afghanistan"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3		date-interval	:op1	1.3.1		date-entity
+::edge	1.3		date-interval	:op2	1.3.2		date-entity
+::edge	1	ruled	rule-03	:ARG0	1.1		criminal-organization
+::edge	1	ruled	rule-03	:ARG1	1.2		country
+::edge	1	ruled	rule-03	:time	1.3		date-interval
+::edge	1.2.2		name	:op1	1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.1		criminal-organization	:wiki	1.1.1		"Taliban"
+35	Pakistan backed the deposed Taliban.
+35	Pakistan backed the deposed Taliban .
+35	0-1.1.2.1 1-1 3-1.2.3 4-1.2.2.1
+::node	n2	1.1.2	name	
+::node	"Taliban"	1.2.1	"Taliban"	
+::node	b	1	back-01	backed
+::node	n	1.2.2	name	
+::node	d	1.2.3	depose-01	deposed
+::node	"Pakistan"	1.1.2.1	"Pakistan"	Pakistan
+::node	c	1.1	country	
+::node	c2	1.2	criminal-organization	
+::node	"Taliban"	1.2.2.1	"Taliban"	Taliban
+::node	"Pakistan"	1.1.1	"Pakistan"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		criminal-organization	:wiki	1.2.1		"Taliban"
+::edge	1.2		criminal-organization	:name	1.2.2		name
+::edge	1.2		criminal-organization	:ARG1-of	1.2.3	deposed	depose-01
+::edge	1.1.2		name	:op1	1.1.2.1	Pakistan	"Pakistan"
+::edge	1	backed	back-01	:ARG0	1.1		country
+::edge	1	backed	back-01	:ARG1	1.2		criminal-organization
+::edge	1.2.2		name	:op1	1.2.2.1	Taliban	"Taliban"
+::edge	1.1		country	:wiki	1.1.1		"Pakistan"
+36	Iran funded Afghanistan's rebel Northern Alliance.
+36	Iran funded Afghanistan 's rebel Northern Alliance .
+36	0-1.1.2.1 1-1 2-1.2.4.2.1 3-1.2.4.r 4-1.2.3 5-1.2.2.1 6-1.2.2.2
+::node	"Iran"	1.1.2.1	"Iran"	Iran
+::node	n3	1.1.2	name	
+::node	"Northern_Alliance"	1.2.1	"Northern_Alliance"	
+::node	f	1	fund-01	funded
+::node	n	1.2.2	name	
+::node	r	1.2.3	rebel	rebel
+::node	c2	1.2.4	country	
+::node	c	1.1	country	
+::node	o	1.2	organization	
+::node	"Afghanistan"	1.2.4.1	"Afghanistan"	
+::node	n2	1.2.4.2	name	
+::node	"Northern"	1.2.2.1	"Northern"	Northern
+::node	"Afghanistan"	1.2.4.2.1	"Afghanistan"	Afghanistan
+::node	"Alliance"	1.2.2.2	"Alliance"	Alliance
+::node	"Iran"	1.1.1	"Iran"	
+::edge	1.1.2		name	:op1	1.1.2.1	Iran	"Iran"
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		organization	:wiki	1.2.1		"Northern_Alliance"
+::edge	1.2		organization	:name	1.2.2		name
+::edge	1.2		organization	:mod	1.2.3	rebel	rebel
+::edge	1.2		organization	:poss	1.2.4		country
+::edge	1	funded	fund-01	:ARG0	1.1		country
+::edge	1	funded	fund-01	:ARG1	1.2		organization
+::edge	1.2.4		country	:wiki	1.2.4.1		"Afghanistan"
+::edge	1.2.4		country	:name	1.2.4.2		name
+::edge	1.2.2		name	:op1	1.2.2.1	Northern	"Northern"
+::edge	1.2.4.2		name	:op1	1.2.4.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.2		name	:op2	1.2.2.2	Alliance	"Alliance"
+::edge	1.1		country	:wiki	1.1.1		"Iran"
+37	The Northern Alliance played a major roll in unseating the Taliban.
+37	The Northern Alliance played a major roll in unseating the Taliban .
+37	1-1.1.2.1 2-1.1.2.2 3-1 5-1.3 7-1.2.r 8-1.2 10-1.2.1.2.1
+::node	n	1.1.2	name	
+::node	c	1.2.1	criminal-organization	
+::node	p	1	play-02	played
+::node	"Taliban"	1.2.1.2.1	"Taliban"	Taliban
+::node	"Northern"	1.1.2.1	"Northern"	Northern
+::node	o	1.1	organization	
+::node	"Alliance"	1.1.2.2	"Alliance"	Alliance
+::node	u	1.2	unseat-01	unseating
+::node	m	1.3	major	major
+::node	n2	1.2.1.2	name	
+::node	"Taliban"	1.2.1.1	"Taliban"	
+::node	"Northern_Alliance"	1.1.1	"Northern_Alliance"	
+::edge	1.1		organization	:name	1.1.2		name
+::edge	1.2	unseating	unseat-01	:ARG1	1.2.1		criminal-organization
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Taliban	"Taliban"
+::edge	1.1.2		name	:op1	1.1.2.1	Northern	"Northern"
+::edge	1	played	play-02	:ARG0	1.1		organization
+::edge	1.1.2		name	:op2	1.1.2.2	Alliance	"Alliance"
+::edge	1	played	play-02	:ARG1	1.2	unseating	unseat-01
+::edge	1	played	play-02	:mod	1.3	major	major
+::edge	1.2.1		criminal-organization	:name	1.2.1.2		name
+::edge	1.2.1		criminal-organization	:wiki	1.2.1.1		"Taliban"
+::edge	1.1		organization	:wiki	1.1.1		"Northern_Alliance"
+38	Together Iran and Pakistan have hosted more than 3 million Afghan refugees during years of civil war.
+38	Together Iran and Pakistan have hosted more than 3 million Afghan refugees during years of civil war .
+38	0-1.1.3 1-1.1.1.2.1 2-1.1 3-1.1.2.2.1 5-1 6-1.2.2 7-1.2.2 8-1.2.2.1 9-1.2.2.1 10-1.2.1.2.1 11-1.2 12-1.3.r 13-1.3.2 15-1.3.1 16-1.3
+::node	"Iran"	1.1.1.1	"Iran"	
+::node	n3	1.1.1.2	name	
+::node	"Pakistan"	1.1.2.1	"Pakistan"	
+::node	n2	1.1.2.2	name	
+::node	"Pakistan"	1.1.2.2.1	"Pakistan"	Pakistan
+::node	c2	1.1.2	country	
+::node	c3	1.2.1	country	
+::node	h	1	host-01	hosted
+::node	t	1.1.3	together	Together
+::node	m2	1.2.2	more-than	than
+::node	c4	1.3.1	civil	civil
+::node	"Afghanistan"	1.2.1.2.1	"Afghanistan"	Afghan
+::node	y	1.3.2	year	years
+::node	a	1.1	and	and
+::node	r	1.2	refugee	refugees
+::node	w	1.3	war	war
+::node	"Iran"	1.1.1.2.1	"Iran"	Iran
+::node	n	1.2.1.2	name	
+::node	3000000	1.2.2.1	3000000	million
+::node	"Afghanistan"	1.2.1.1	"Afghanistan"	
+::node	c	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"Iran"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		country	:wiki	1.1.2.1		"Pakistan"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Pakistan	"Pakistan"
+::edge	1.1	and	and	:op2	1.1.2		country
+::edge	1.2	refugees	refugee	:mod	1.2.1		country
+::edge	1.1	and	and	:mod	1.1.3	Together	together
+::edge	1.2	refugees	refugee	:quant	1.2.2	than	more-than
+::edge	1.3	war	war	:mod	1.3.1	civil	civil
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Afghan	"Afghanistan"
+::edge	1.3	war	war	:duration	1.3.2	years	year
+::edge	1	hosted	host-01	:ARG0	1.1	and	and
+::edge	1	hosted	host-01	:ARG1	1.2	refugees	refugee
+::edge	1	hosted	host-01	:time	1.3	war	war
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Iran	"Iran"
+::edge	1.2.1		country	:name	1.2.1.2		name
+::edge	1.2.2	than	more-than	:op1	1.2.2.1	million	3000000
+::edge	1.2.1		country	:wiki	1.2.1.1		"Afghanistan"
+::edge	1.1	and	and	:op1	1.1.1		country
+39	Afghan refugees are now starting to return to Afghanistan after civil war.
+39	Afghan refugees are now starting to return to Afghanistan after civil war .
+39	0-1.1.1.2.1 1-1.1 3-1.3 4-1 6-1.2 7-1.2.2.r 8-1.2.2 9-1.2.3 10-1.2.3.1.1 11-1.2.3.1
+::node	"Afghanistan"	1.1.1.1	"Afghanistan"	
+::node	n2	1.1.1.2	name	
+::node	c2	1.2.3.1.1	civil	civil
+::node	r	1.2.1	refugee	
+::node	s	1	start-01	starting
+::node	c	1.2.2	country	Afghanistan
+::node	a	1.2.3	after	after
+::node	r	1.1	refugee	refugees
+::node	r2	1.2	return-01	return
+::node	n	1.3	now	now
+::node	"Afghanistan"	1.1.1.2.1	"Afghanistan"	Afghan
+::node	w	1.2.3.1	war	war
+::node	c	1.1.1	country	
+::edge	1.2	return	return-01	:ARG1	1.2.1		refugee
+::edge	1.2	return	return-01	:ARG4	1.2.2	Afghanistan	country
+::edge	1.1.1		country	:wiki	1.1.1.1		"Afghanistan"
+::edge	1.2	return	return-01	:time	1.2.3	after	after
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1	starting	start-01	:ARG0	1.1	refugees	refugee
+::edge	1	starting	start-01	:ARG1	1.2	return	return-01
+::edge	1	starting	start-01	:time	1.3	now	now
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Afghan	"Afghanistan"
+::edge	1.2.3.1	war	war	:mod	1.2.3.1.1	civil	civil
+::edge	1.2.3	after	after	:op1	1.2.3.1	war	war
+::edge	1.1	refugees	refugee	:mod	1.1.1		country
+40	Deputy head of Afghanistan interim government Hedayat Amin-Arsala visited Tehran for the first time.
+40	Deputy head of Afghanistan interim government Hedayat Amin @-@ Arsala visited Tehran for the first time .
+40	0-1.1.3.2 1-1.1 1-1.1.3 1-1.1.3.r 2-1.1.3.1.r 3-1.1.3.1.2.1.2.1 4-1.1.3.1.1 5-1.1.3.1 5-1.1.3.1.2 5-1.1.3.1.2.r 6-1.1.2.1 7-1.1.2.2 9-1.1.2.2 10-1 11-1.2.2.1 14-1.3 15-1.3.r
+::node	"Hedayat"	1.1.2.1	"Hedayat"	Hedayat
+::node	g2	1.1.3.1.2	govern-01	government
+::node	"Afghanistan"	1.1.3.1.2.1.2.1	"Afghanistan"	Afghanistan
+::node	"Amin-Arsala"	1.1.2.2	"Amin-Arsala"	Arsala
+::node	g	1.1.3.1	government-organization	government
+::node	d	1.1.3.2	deputy	Deputy
+::node	c2	1.1.3.1.2.1	country	
+::node	n	1.1.2	name	
+::node	n3	1.1.3.1.2.1.2	name	
+::node	"Tehran"	1.2.1	"Tehran"	
+::node	v	1	visit-01	visited
+::node	h	1.1.3	head-01	head
+::node	"Afghanistan"	1.1.3.1.2.1.1	"Afghanistan"	
+::node	n2	1.2.2	name	
+::node	p	1.1	person	head
+::node	c	1.2	city	
+::node	f	1.3	first	first
+::node	"Tehran"	1.2.2.1	"Tehran"	Tehran
+::node	i	1.1.3.1.1	interim	interim
+::node	"Hedayat_Amin_Arsala"	1.1.1	"Hedayat_Amin_Arsala"	
+::edge	1.1.2		name	:op1	1.1.2.1	Hedayat	"Hedayat"
+::edge	1.1.3.1	government	government-organization	:ARG0-of	1.1.3.1.2	government	govern-01
+::edge	1.1.3.1.2.1.2		name	:op1	1.1.3.1.2.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.2		name	:op2	1.1.2.2	Arsala	"Amin-Arsala"
+::edge	1.1.3	head	head-01	:ARG1	1.1.3.1	government	government-organization
+::edge	1.1.3	head	head-01	:mod	1.1.3.2	Deputy	deputy
+::edge	1.1.3.1.2	government	govern-01	:ARG1	1.1.3.1.2.1		country
+::edge	1.1	head	person	:name	1.1.2		name
+::edge	1.1.3.1.2.1		country	:name	1.1.3.1.2.1.2		name
+::edge	1.2		city	:wiki	1.2.1		"Tehran"
+::edge	1.1	head	person	:ARG0-of	1.1.3	head	head-01
+::edge	1.1.3.1.2.1		country	:wiki	1.1.3.1.2.1.1		"Afghanistan"
+::edge	1.2		city	:name	1.2.2		name
+::edge	1	visited	visit-01	:ARG0	1.1	head	person
+::edge	1	visited	visit-01	:ARG1	1.2		city
+::edge	1	visited	visit-01	:time	1.3	first	first
+::edge	1.2.2		name	:op1	1.2.2.1	Tehran	"Tehran"
+::edge	1.1.3.1	government	government-organization	:mod	1.1.3.1.1	interim	interim
+::edge	1.1	head	person	:wiki	1.1.1		"Hedayat_Amin_Arsala"
+41	Members of the Economic Cooperation Organization include the Central Asian countries and Turkey.
+41	Members of the Economic Cooperation Organization include the Central Asian countries and Turkey .
+41	0-1.2 1-1.2.1.r 3-1.2.1.2.1 4-1.2.1.2.2 5-1.2.1.2.3 6-1 8-1.1.1.1.2.1 9-1.1.1.1.2.2 10-1.1.1 11-1.1 12-1.1.2.2.1
+::node	"Central"	1.1.1.1.2.1	"Central"	Central
+::node	w	1.1.1.1	world-region	
+::node	"Asia"	1.1.1.1.2.2	"Asia"	Asian
+::node	"Turkey"	1.1.2.1	"Turkey"	
+::node	n3	1.1.2.2	name	
+::node	"Turkey"	1.1.2.2.1	"Turkey"	Turkey
+::node	"Organization"	1.2.1.2.3	"Organization"	Organization
+::node	"Cooperation"	1.2.1.2.2	"Cooperation"	Cooperation
+::node	c	1.1.2	country	
+::node	o	1.2.1	organization	
+::node	i	1	include-01	include
+::node	"Economic"	1.2.1.2.1	"Economic"	Economic
+::node	a	1.1	and	and
+::node	m	1.2	member	Members
+::node	n2	1.1.1.1.2	name	
+::node	"Central_Asia"	1.1.1.1.1	"Central_Asia"	
+::node	n	1.2.1.2	name	
+::node	"Economic_Cooperation_Organization"	1.2.1.1	"Economic_Cooperation_Organization"	
+::node	c2	1.1.1	country	countries
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Central	"Central"
+::edge	1.1.1	countries	country	:location	1.1.1.1		world-region
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	Asian	"Asia"
+::edge	1.1.2		country	:wiki	1.1.2.1		"Turkey"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Turkey	"Turkey"
+::edge	1.2.1.2		name	:op3	1.2.1.2.3	Organization	"Organization"
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	Cooperation	"Cooperation"
+::edge	1.1	and	and	:op2	1.1.2		country
+::edge	1.2	Members	member	:poss	1.2.1		organization
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Economic	"Economic"
+::edge	1	include	include-01	:ARG1	1.1	and	and
+::edge	1	include	include-01	:ARG2	1.2	Members	member
+::edge	1.1.1.1		world-region	:name	1.1.1.1.2		name
+::edge	1.1.1.1		world-region	:wiki	1.1.1.1.1		"Central_Asia"
+::edge	1.2.1		organization	:name	1.2.1.2		name
+::edge	1.2.1		organization	:wiki	1.2.1.1		"Economic_Cooperation_Organization"
+::edge	1.1	and	and	:op1	1.1.1	countries	country

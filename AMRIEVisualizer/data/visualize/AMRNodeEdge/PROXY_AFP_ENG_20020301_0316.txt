@@ -1,0 +1,954 @@
+1	2002-03-01
+1	2002 @-@ 03 @-@ 01
+1	0-1.1 2-1.2 4-1.3
+::node	d2	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	3	1.2	3	03
+::node	1	1.3	1	01
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	03	3
+::edge	1		date-entity	:day	1.3	01	1
+2	Afghanistan (AF); Russian Federation (RU)
+2	Afghanistan ( AF ) ; Russian Federation ( RU )
+2	0-1.1.2.1 5-1.2.2.1 6-1.2.2.2
+::node	n	1.1.2	name	
+::node	"Russia"	1.2.1	"Russia"	
+::node	a	1	and	
+::node	n2	1.2.2	name	
+::node	"Afghanistan"	1.1.2.1	"Afghanistan"	Afghanistan
+::node	c	1.1	country	
+::node	c2	1.2	country	
+::node	"Russian"	1.2.2.1	"Russian"	Russian
+::node	"Federation"	1.2.2.2	"Federation"	Federation
+::node	"Afghanistan"	1.1.1	"Afghanistan"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"Russia"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1		and	:op1	1.1		country
+::edge	1		and	:op2	1.2		country
+::edge	1.2.2		name	:op1	1.2.2.1	Russian	"Russian"
+::edge	1.2.2		name	:op2	1.2.2.2	Federation	"Federation"
+::edge	1.1		country	:wiki	1.1.1		"Afghanistan"
+3	International; narcotics; terrorism
+3	International ; narcotics ; terrorism
+3	0-1.1 2-1.2 4-1.3
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	n	1.2	narcotics	narcotics
+::node	t	1.3	terrorism	terrorism
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	narcotics	narcotics
+::edge	1		and	:op3	1.3	terrorism	terrorism
+4	Afghan officials conducted talks with Russian officials asking for assistance in stopping Afghanistan's large illegal opium and heroin trade.
+4	Afghan officials conducted talks with Russian officials asking for assistance in stopping Afghanistan 's large illegal opium and heroin trade .
+4	1-1.1.1.2 2-1 3-1.2 4-1.2.2.r 5-1.2.2.1.1.2.1 6-1.1.1.2 6-1.2.2.1.2 7-1.3 8-1.3.2.r 9-1.3.2 10-1.3.2.2.r 11-1.3.2.2 12-1.1.1.1.2.1 13-1.1.1 13-1.2.2.1 14-1.3.2.2.1.2 15-1.3.2.2.1.3 15-1.3.2.2.1.3.1 15-1.3.2.2.1.3.1.r 16-1.3.2.2.1.1.1 17-1.3.2.2.1.1 18-1.3.2.2.1.1.2 19-1.3.2.2.1
+::node	t2	1.3.2.2.1	trade-01	trade
+::node	"Russia"	1.2.2.1.1.1	"Russia"	
+::node	n2	1.2.2.1.1.2	name	
+::node	p2	1.3.2.1	person	
+::node	s	1.3.2.2	stop-01	stopping
+::node	"Russia"	1.2.2.1.1.2.1	"Russia"	Russian
+::node	o3	1.3.2.2.1.1.1	opium	opium
+::node	l	1.3.2.2.1.2	large	large
+::node	n	1.1.1.1.2	name	
+::node	a3	1.3.2.2.1.1	and	and
+::node	"Afghanistan"	1.1.1.1.1	"Afghanistan"	
+::node	h3	1.2.2.1	have-org-role-91	's
+::node	l2	1.3.2.2.1.3	law	illegal
+::node	o2	1.2.2.1.2	official	officials
+::node	h	1.3.2.2.1.1.2	heroin	heroin
+::node	-	1.3.2.2.1.3.1	-	illegal
+::node	"Afghanistan"	1.1.1.1.2.1	"Afghanistan"	Afghanistan
+::node	c2	1.1.1.1	country	
+::node	o	1.1.1.2	official	officials
+::node	c3	1.2.2.1.1	country	
+::node	p	1.2.1	person	
+::node	c	1	conduct-01	conducted
+::node	p2	1.2.2	person	
+::node	p	1.3.1	person	
+::node	a2	1.3.2	assist-01	assistance
+::node	p2	1.3.3	person	
+::node	p	1.1	person	
+::node	t	1.2	talk-01	talks
+::node	a	1.3	ask-02	asking
+::node	h2	1.1.1	have-org-role-91	's
+::edge	1.3.2.2	stopping	stop-01	:ARG1	1.3.2.2.1	trade	trade-01
+::edge	1.2.2.1.1		country	:wiki	1.2.2.1.1.1		"Russia"
+::edge	1.2.2.1.1		country	:name	1.2.2.1.1.2		name
+::edge	1.3.2	assistance	assist-01	:ARG0	1.3.2.1		person
+::edge	1.3.2	assistance	assist-01	:ARG2	1.3.2.2	stopping	stop-01
+::edge	1.2.2.1.1.2		name	:op1	1.2.2.1.1.2.1	Russian	"Russia"
+::edge	1.3.2.2.1.1	and	and	:op1	1.3.2.2.1.1.1	opium	opium
+::edge	1.3.2.2.1	trade	trade-01	:mod	1.3.2.2.1.2	large	large
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.3.2.2.1	trade	trade-01	:ARG1	1.3.2.2.1.1	and	and
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Afghanistan"
+::edge	1.2.2		person	:ARG0-of	1.2.2.1	's	have-org-role-91
+::edge	1.3.2.2.1	trade	trade-01	:mod	1.3.2.2.1.3	illegal	law
+::edge	1.2.2.1	's	have-org-role-91	:ARG2	1.2.2.1.2	officials	official
+::edge	1.3.2.2.1.1	and	and	:op2	1.3.2.2.1.1.2	heroin	heroin
+::edge	1.3.2.2.1.3	illegal	law	:polarity	1.3.2.2.1.3.1	illegal	-
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.1	's	have-org-role-91	:ARG1	1.1.1.1		country
+::edge	1.1.1	's	have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.2.2.1	's	have-org-role-91	:ARG1	1.2.2.1.1		country
+::edge	1.2	talks	talk-01	:ARG0	1.2.1		person
+::edge	1.2	talks	talk-01	:ARG2	1.2.2		person
+::edge	1.3	asking	ask-02	:ARG0	1.3.1		person
+::edge	1.3	asking	ask-02	:ARG1	1.3.2	assistance	assist-01
+::edge	1.3	asking	ask-02	:ARG2	1.3.3		person
+::edge	1	conducted	conduct-01	:ARG0	1.1		person
+::edge	1	conducted	conduct-01	:ARG1	1.2	talks	talk-01
+::edge	1	conducted	conduct-01	:purpose	1.3	asking	ask-02
+::edge	1.1		person	:ARG0-of	1.1.1	's	have-org-role-91
+5	Afghanistan seeks to end poppy harvesting and increase border control.
+5	Afghanistan seeks to end poppy harvesting and increase border control .
+5	0-1.1.2.1 1-1 2-1.2.r 3-1.2.1 4-1.2.1.2.1 5-1.2.1.2 6-1.2 7-1.2.2 8-1.2.2.2.2 9-1.2.2.2
+::node	"Afghanistan"	1.1.2.1	"Afghanistan"	Afghanistan
+::node	n	1.1.2	name	
+::node	e	1.2.1	end-01	end
+::node	s	1	seek-01	seeks
+::node	i	1.2.2	increase-01	increase
+::node	p	1.2.1.2.1	poppy	poppy
+::node	c	1.1	country	
+::node	a	1.2	and	and
+::node	h	1.2.1.2	harvest-01	harvesting
+::node	c	1.2.2.1	country	
+::node	c2	1.2.2.2	control-01	control
+::node	c	1.2.2.2.1	country	
+::node	c	1.2.1.1	country	
+::node	b	1.2.2.2.2	border	border
+::node	"Afghanistan"	1.1.1	"Afghanistan"	
+::edge	1.1.2		name	:op1	1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	and	and	:op1	1.2.1	end	end-01
+::edge	1.2	and	and	:op2	1.2.2	increase	increase-01
+::edge	1.2.1.2	harvesting	harvest-01	:ARG1	1.2.1.2.1	poppy	poppy
+::edge	1	seeks	seek-01	:ARG0	1.1		country
+::edge	1	seeks	seek-01	:ARG1	1.2	and	and
+::edge	1.2.1	end	end-01	:ARG1	1.2.1.2	harvesting	harvest-01
+::edge	1.2.2	increase	increase-01	:ARG0	1.2.2.1		country
+::edge	1.2.2	increase	increase-01	:ARG1	1.2.2.2	control	control-01
+::edge	1.2.2.2	control	control-01	:ARG0	1.2.2.2.1		country
+::edge	1.2.1	end	end-01	:ARG0	1.2.1.1		country
+::edge	1.2.2.2	control	control-01	:ARG1	1.2.2.2.2	border	border
+::edge	1.1		country	:wiki	1.1.1		"Afghanistan"
+6	March 1, 2002 interim interior minister of Afghanistan Yunus Qanooni asked Russian officials to assist in combating the drugs trade and establishing security in Afghanistan.
+6	March 1 , 2002 interim interior minister of Afghanistan Yunus Qanooni asked Russian officials to assist in combating the drugs trade and establishing security in Afghanistan .
+6	0-1.4.2 0-1.4.2.r 1-1.4.3 3-1.4.1 4-1.1.3.2.2 5-1.1.3.2.1 6-1.1.3.2 7-1.1.3 8-1.1.3.1.2.1 9-1.1.2.1 10-1.1.2.2 11-1 12-1.3.1.1.2.1 13-1.3.1.2 15-1.2 16-1.2.2.r 17-1.2.2.1 19-1.2.2.1.1.1 20-1.2.2.1.1 21-1.2.2 22-1.2.2.2 23-1.2.2.2.1 24-1.2.2.2.1.1.r 25-1.2.2.2.1.1
+::node	i	1.1.3.2.2	interim	interim
+::node	n2	1.1.3.1.2	name	
+::node	i2	1.1.3.2.1	interior	interior
+::node	d2	1.2.2.1.1.1	drug	drugs
+::node	c2	1.3.1.1	country	
+::node	o	1.3.1.2	official	officials
+::node	"Russia"	1.3.1.1.1	"Russia"	
+::node	c3	1.2.2.1	combat-01	combating
+::node	c	1.2.2.2.1.1	country	Afghanistan
+::node	e	1.2.2.2	establish-01	establishing
+::node	s	1.2.2.2.1	security	security
+::node	"Yunus"	1.1.2.1	"Yunus"	Yunus
+::node	t	1.2.2.1.1	trade-01	trade
+::node	"Qanooni"	1.1.2.2	"Qanooni"	Qanooni
+::node	c	1.1.3.1	country	
+::node	m	1.1.3.2	minister	minister
+::node	"Russia"	1.3.1.1.2.1	"Russia"	Russian
+::node	"Afghanistan"	1.1.3.1.2.1	"Afghanistan"	Afghanistan
+::node	n	1.1.2	name	
+::node	p2	1.2.1	person	
+::node	a	1	ask-02	asked
+::node	h	1.1.3	have-org-role-91	of
+::node	a3	1.2.2	and	and
+::node	h2	1.3.1	have-org-role-91	
+::node	2002	1.4.1	2002	2002
+::node	3	1.4.2	3	March
+::node	p	1.1	person	
+::node	n3	1.3.1.1.2	name	
+::node	1	1.4.3	1	1
+::node	a2	1.2	assist-01	assist
+::node	p2	1.3	person	
+::node	d	1.4	date-entity	
+::node	"Afghanistan"	1.1.3.1.1	"Afghanistan"	
+::node	"Yunus_Qanuni"	1.1.1	"Yunus_Qanuni"	
+::edge	1.1.3.2	minister	minister	:mod	1.1.3.2.2	interim	interim
+::edge	1.1.3.1		country	:name	1.1.3.1.2		name
+::edge	1.1.3.2	minister	minister	:topic	1.1.3.2.1	interior	interior
+::edge	1.2.2.1.1	trade	trade-01	:ARG1	1.2.2.1.1.1	drugs	drug
+::edge	1.3.1		have-org-role-91	:ARG1	1.3.1.1		country
+::edge	1.3.1		have-org-role-91	:ARG2	1.3.1.2	officials	official
+::edge	1.3.1.1		country	:wiki	1.3.1.1.1		"Russia"
+::edge	1.2.2	and	and	:op1	1.2.2.1	combating	combat-01
+::edge	1.2.2.2.1	security	security	:location	1.2.2.2.1.1	Afghanistan	country
+::edge	1.2.2	and	and	:op2	1.2.2.2	establishing	establish-01
+::edge	1.2.2.2	establishing	establish-01	:ARG1	1.2.2.2.1	security	security
+::edge	1.1.2		name	:op1	1.1.2.1	Yunus	"Yunus"
+::edge	1.2.2.1	combating	combat-01	:ARG1	1.2.2.1.1	trade	trade-01
+::edge	1.1.2		name	:op2	1.1.2.2	Qanooni	"Qanooni"
+::edge	1.1.3	of	have-org-role-91	:ARG1	1.1.3.1		country
+::edge	1.1.3	of	have-org-role-91	:ARG2	1.1.3.2	minister	minister
+::edge	1.3.1.1.2		name	:op1	1.3.1.1.2.1	Russian	"Russia"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	assist	assist-01	:ARG0	1.2.1		person
+::edge	1.1		person	:ARG0-of	1.1.3	of	have-org-role-91
+::edge	1.2	assist	assist-01	:ARG2	1.2.2	and	and
+::edge	1.3		person	:ARG0-of	1.3.1		have-org-role-91
+::edge	1.4		date-entity	:year	1.4.1	2002	2002
+::edge	1.4		date-entity	:month	1.4.2	March	3
+::edge	1	asked	ask-02	:ARG0	1.1		person
+::edge	1.3.1.1		country	:name	1.3.1.1.2		name
+::edge	1.4		date-entity	:day	1.4.3	1	1
+::edge	1	asked	ask-02	:ARG1	1.2	assist	assist-01
+::edge	1	asked	ask-02	:ARG2	1.3		person
+::edge	1	asked	ask-02	:time	1.4		date-entity
+::edge	1.1.3.1		country	:wiki	1.1.3.1.1		"Afghanistan"
+::edge	1.1		person	:wiki	1.1.1		"Yunus_Qanuni"
+7	Qanooni is a member of the Northern Alliance.
+7	Qanooni is a member of the Northern Alliance .
+7	0-1.2.2.1 1-1.2.r 3-1 4-1.1.r 6-1.1.2.1 7-1.1.2.2
+::node	n	1.1.2	name	
+::node	"Yunus_Qanuni"	1.2.1	"Yunus_Qanuni"	
+::node	m	1	member	member
+::node	n2	1.2.2	name	
+::node	"Northern"	1.1.2.1	"Northern"	Northern
+::node	o	1.1	organization	
+::node	"Alliance"	1.1.2.2	"Alliance"	Alliance
+::node	p	1.2	person	
+::node	"Qanooni"	1.2.2.1	"Qanooni"	Qanooni
+::node	"Northern_Alliance"	1.1.1	"Northern_Alliance"	
+::edge	1.1		organization	:name	1.1.2		name
+::edge	1.2		person	:wiki	1.2.1		"Yunus_Qanuni"
+::edge	1.2		person	:name	1.2.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Northern	"Northern"
+::edge	1	member	member	:poss	1.1		organization
+::edge	1.1.2		name	:op2	1.1.2.2	Alliance	"Alliance"
+::edge	1	member	member	:domain	1.2		person
+::edge	1.2.2		name	:op1	1.2.2.1	Qanooni	"Qanooni"
+::edge	1.1		organization	:wiki	1.1.1		"Northern_Alliance"
+8	Qanooni told Russian Deputy Minister for Emergency Situations Yury Vorobyov --
+8	Qanooni told Russian Deputy Minister for Emergency Situations Yury Vorobyov --
+8	0-1.1.2.1 1-1 2-1.2.3.1.2.1 3-1.2.3.2.1 4-1.2.3.2 5-1.2.3.2.2.r 6-1.2.3.2.2.1 7-1.2.3.2.2 8-1.2.2.1 9-1.2.2.2
+::node	"Qanooni"	1.1.2.1	"Qanooni"	Qanooni
+::node	s	1.2.3.2.2	situation	Situations
+::node	"Russia"	1.2.3.1.1	"Russia"	
+::node	n3	1.2.3.1.2	name	
+::node	d	1.2.3.2.1	deputy	Deputy
+::node	n	1.1.2	name	
+::node	-	1.2.1	-	
+::node	t	1	tell-01	told
+::node	n2	1.2.2	name	
+::node	h	1.2.3	have-org-role-91	
+::node	p	1.1	person	
+::node	p2	1.2	person	
+::node	"Russia"	1.2.3.1.2.1	"Russia"	Russian
+::node	m	1.2.3.2	minister	Minister
+::node	"Yury"	1.2.2.1	"Yury"	Yury
+::node	e	1.2.3.2.2.1	emergency	Emergency
+::node	"Vorobyov"	1.2.2.2	"Vorobyov"	Vorobyov
+::node	c	1.2.3.1	country	
+::node	"Yunus_Qanuni"	1.1.1	"Yunus_Qanuni"	
+::edge	1.1.2		name	:op1	1.1.2.1	Qanooni	"Qanooni"
+::edge	1.2.3.2	Minister	minister	:topic	1.2.3.2.2	Situations	situation
+::edge	1.2.3.1		country	:wiki	1.2.3.1.1		"Russia"
+::edge	1.2.3.1		country	:name	1.2.3.1.2		name
+::edge	1.2.3.2	Minister	minister	:mod	1.2.3.2.1	Deputy	deputy
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2		person	:wiki	1.2.1		-
+::edge	1.2		person	:name	1.2.2		name
+::edge	1.2		person	:ARG0-of	1.2.3		have-org-role-91
+::edge	1	told	tell-01	:ARG0	1.1		person
+::edge	1	told	tell-01	:ARG2	1.2		person
+::edge	1.2.3.1.2		name	:op1	1.2.3.1.2.1	Russian	"Russia"
+::edge	1.2.3		have-org-role-91	:ARG2	1.2.3.2	Minister	minister
+::edge	1.2.2		name	:op1	1.2.2.1	Yury	"Yury"
+::edge	1.2.3.2.2	Situations	situation	:mod	1.2.3.2.2.1	Emergency	emergency
+::edge	1.2.2		name	:op2	1.2.2.2	Vorobyov	"Vorobyov"
+::edge	1.2.3		have-org-role-91	:ARG1	1.2.3.1		country
+::edge	1.1		person	:wiki	1.1.1		"Yunus_Qanuni"
+9	Unfortunately over the past six years, the rule of the Taliban turned Afghanistan into a center of terrorism and drugs.
+9	Unfortunately over the past six years , the rule of the Taliban turned Afghanistan into a center of terrorism and drugs .
+9	0-1.4 0-1.4.1 0-1.4.1.r 4-1.5.2.1 5-1.5.2.2 8-1.1 9-1.1.1.r 11-1.1.1.2.1 12-1 13-1.2.2.1 14-1.3.r 16-1.3 17-1.3.1.r 18-1.3.1.1 19-1.3.1 20-1.3.1.2
+::node	"Taliban"	1.1.1.1	"Taliban"	
+::node	n	1.1.1.2	name	
+::node	t3	1.3.1.1	terrorism	terrorism
+::node	d	1.3.1.2	drug	drugs
+::node	6	1.5.2.1	6	six
+::node	"Afghanistan"	1.2.1	"Afghanistan"	
+::node	y2	1.5.2.2	year	years
+::node	t2	1	turn-02	turned
+::node	n2	1.2.2	name	
+::node	a	1.3.1	and	and
+::node	-	1.4.1	-	Unfortunately
+::node	n3	1.5.1	now	
+::node	r	1.1	rule-03	rule
+::node	t4	1.5.2	temporal-quantity	
+::node	c	1.2	country	
+::node	c2	1.3	center	center
+::node	f	1.4	fortunate	Unfortunately
+::node	b	1.5	before	
+::node	"Taliban"	1.1.1.2.1	"Taliban"	Taliban
+::node	"Afghanistan"	1.2.2.1	"Afghanistan"	Afghanistan
+::node	c3	1.1.1	criminal-organization	
+::edge	1.1.1		criminal-organization	:wiki	1.1.1.1		"Taliban"
+::edge	1.1.1		criminal-organization	:name	1.1.1.2		name
+::edge	1.3.1	and	and	:op1	1.3.1.1	terrorism	terrorism
+::edge	1.3.1	and	and	:op2	1.3.1.2	drugs	drug
+::edge	1.5.2		temporal-quantity	:quant	1.5.2.1	six	6
+::edge	1.2		country	:wiki	1.2.1		"Afghanistan"
+::edge	1.5.2		temporal-quantity	:unit	1.5.2.2	years	year
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3	center	center	:location-of	1.3.1	and	and
+::edge	1.4	Unfortunately	fortunate	:polarity	1.4.1	Unfortunately	-
+::edge	1.5		before	:op1	1.5.1		now
+::edge	1	turned	turn-02	:ARG0	1.1	rule	rule-03
+::edge	1.5		before	:duration	1.5.2		temporal-quantity
+::edge	1	turned	turn-02	:ARG1	1.2		country
+::edge	1	turned	turn-02	:ARG2	1.3	center	center
+::edge	1	turned	turn-02	:mod	1.4	Unfortunately	fortunate
+::edge	1	turned	turn-02	:time	1.5		before
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Taliban	"Taliban"
+::edge	1.2.2		name	:op1	1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.1	rule	rule-03	:ARG0	1.1.1		criminal-organization
+10	The struggle against terrorism and against drugs, and the establishment of security is a priority for the Administration of Afghanistan.
+10	The struggle against terrorism and against drugs , and the establishment of security is a priority for the Administration of Afghanistan .
+10	1-1.2.1 3-1.2.1.1.1 4-1.2.1.1 6-1.2.1.1.2 8-1.2 8-1.2.1.1 10-1.2.2 11-1.2.2.1.r 12-1.2.2.1 18-1.1 18-1.1.1 18-1.1.1.r 19-1.1.1.1.r 20-1.1.1.1.2.1
+::node	"Afghanistan"	1.1.1.1.2.1	"Afghanistan"	Afghanistan
+::node	c	1.1.1.1	country	
+::node	s	1.2.1	struggle-01	struggle
+::node	p	1	prioritize-01	
+::node	e	1.2.2	establish-01	establishment
+::node	d	1.2.1.1.2	drug	drugs
+::node	t	1.2.1.1.1	terrorism	terrorism
+::node	g	1.1	government-organization	Administration
+::node	a2	1.2	and	and
+::node	n	1.1.1.1.2	name	
+::node	"Afghanistan"	1.1.1.1.1	"Afghanistan"	
+::node	s2	1.2.2.1	security	security
+::node	a3	1.2.1.1	and	and
+::node	a	1.1.1	administrate-01	Administration
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.1	Administration	administrate-01	:ARG1	1.1.1.1		country
+::edge	1.2	and	and	:op1	1.2.1	struggle	struggle-01
+::edge	1.2	and	and	:op2	1.2.2	establishment	establish-01
+::edge	1.2.1.1	and	and	:op2	1.2.1.1.2	drugs	drug
+::edge	1.2.1.1	and	and	:op1	1.2.1.1.1	terrorism	terrorism
+::edge	1		prioritize-01	:ARG0	1.1	Administration	government-organization
+::edge	1		prioritize-01	:ARG1	1.2	and	and
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Afghanistan"
+::edge	1.2.2	establishment	establish-01	:ARG1	1.2.2.1	security	security
+::edge	1.2.1	struggle	struggle-01	:ARG1	1.2.1.1	and	and
+::edge	1.1	Administration	government-organization	:ARG0-of	1.1.1	Administration	administrate-01
+11	But combating terrorism and drugs requires joint efforts.
+11	But combating terrorism and drugs requires joint efforts .
+11	0-1 1-1.1.1 2-1.1.1.1.1 3-1.1.1.1 4-1.1.1.1.2 5-1.1 6-1.1.2.1 7-1.1.2
+::node	e	1.1.2	effort	efforts
+::node	c	1	contrast-01	But
+::node	a	1.1.1.1	and	and
+::node	j	1.1.2.1	joint	joint
+::node	r	1.1	require-01	requires
+::node	d	1.1.1.1.2	drug	drugs
+::node	t	1.1.1.1.1	terrorism	terrorism
+::node	c2	1.1.1	combat-01	combating
+::edge	1.1	requires	require-01	:ARG1	1.1.2	efforts	effort
+::edge	1.1.1	combating	combat-01	:ARG1	1.1.1.1	and	and
+::edge	1.1.2	efforts	effort	:mod	1.1.2.1	joint	joint
+::edge	1	But	contrast-01	:ARG2	1.1	requires	require-01
+::edge	1.1.1.1	and	and	:op2	1.1.1.1.2	drugs	drug
+::edge	1.1.1.1	and	and	:op1	1.1.1.1.1	terrorism	terrorism
+::edge	1.1	requires	require-01	:ARG0	1.1.1	combating	combat-01
+12	Peace and stability in Afghanistan is not only in the interests of the Afghani people and nation but of all the countries in the region.
+12	Peace and stability in Afghanistan is not only in the interests of the Afghani people and nation but of all the countries in the region .
+12	0-1.2.1 1-1.2 2-1.2.2 4-1.2.3.2.1 10-1 14-1.1.1 15-1.1 18-1.1.r 19-1.1.3.2 21-1.1.3 22-1.1.3.1.r 24-1.1.3.1
+::node	c	1.1.1.1	country	
+::node	r	1.1.3.1	region	region
+::node	a3	1.1.3.2	all	all
+::node	"Afghanistan"	1.2.3.2.1	"Afghanistan"	Afghanistan
+::node	c	1.1.2	country	
+::node	p	1.2.1	peace	Peace
+::node	i	1	interest-01	interests
+::node	c2	1.1.3	country	countries
+::node	s	1.2.2	stability	stability
+::node	c	1.2.3	country	
+::node	a2	1.1	and	and
+::node	a	1.2	and	and
+::node	n	1.2.3.2	name	
+::node	"Afghanistan"	1.2.3.1	"Afghanistan"	
+::node	p2	1.1.1	person	people
+::edge	1.1.1	people	person	:mod	1.1.1.1		country
+::edge	1.1.3	countries	country	:location	1.1.3.1	region	region
+::edge	1.1.3	countries	country	:quant	1.1.3.2	all	all
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	Afghanistan	"Afghanistan"
+::edge	1.1	and	and	:op2	1.1.2		country
+::edge	1.2	and	and	:op1	1.2.1	Peace	peace
+::edge	1.1	and	and	:op3	1.1.3	countries	country
+::edge	1.2	and	and	:op2	1.2.2	stability	stability
+::edge	1.2	and	and	:location	1.2.3		country
+::edge	1	interests	interest-01	:ARG1	1.1	and	and
+::edge	1	interests	interest-01	:ARG2	1.2	and	and
+::edge	1.2.3		country	:name	1.2.3.2		name
+::edge	1.2.3		country	:wiki	1.2.3.1		"Afghanistan"
+::edge	1.1	and	and	:op1	1.1.1	people	person
+13	Afghanistan's interim government stated that it would take firm measures very quickly to prevent the harvest of poppy in the wake of the Taliban regime's fall late last year.
+13	Afghanistan 's interim government stated that it would take firm measures very quickly to prevent the harvest of poppy in the wake of the Taliban regime 's fall late last year .
+13	0-1.1.1.1.2.1 1-1.1.1.1.r 2-1.1.2 3-1.1 3-1.1.1 3-1.1.1.r 4-1 5-1.2.r 6-1.2.1 8-1.2 9-1.2.2.1 10-1.2.2 11-1.2.3.1 12-1.2.3 12-1.2.3.r 14-1.2.4 16-1.2.4.2 17-1.2.4.2.1.r 18-1.2.4.2.1 19-1.2.4.3.r 21-1.2.4.3 24-1.2.4.3.1.1.1.1.2.1 25-1.2.4.3.1.1.1 26-1.2.4.3.1.1.1.r 27-1.2.4.3.1.1 28-1.2.4.3.1.1.2 29-1.2.4.3.1.1.2.1.1 30-1.2.4.3.1.1.2.1
+::node	l	1.2.4.3.1.1.2	late	late
+::node	r	1.2.4.3.1.1.1	regime	regime
+::node	g	1.2.4.1	government-organization	
+::node	n3	1.1.1.1.2	name	
+::node	h	1.2.4.2	harvest-01	harvest
+::node	"Afghanistan"	1.1.1.1.1	"Afghanistan"	
+::node	f2	1.2.2.1	firm	firm
+::node	v	1.2.3.1	very	very
+::node	"Taliban"	1.2.4.3.1.1.1.1.2.1	"Taliban"	Taliban
+::node	"Afghanistan"	1.1.1.1.2.1	"Afghanistan"	Afghanistan
+::node	c3	1.1.1.1	country	
+::node	w	1.2.4.3	wake	wake
+::node	"Taliban"	1.2.4.3.1.1.1.1.1	"Taliban"	
+::node	i	1.1.2	interim	interim
+::node	g	1.2.1	government-organization	it
+::node	s	1	state-01	stated
+::node	m	1.2.2	measure	measures
+::node	n2	1.2.4.3.1.1.1.1.2	name	
+::node	q	1.2.3	quick	quickly
+::node	p	1.2.4	prevent-01	prevent
+::node	g	1.1	government-organization	government
+::node	t	1.2	take-03	take
+::node	f	1.2.4.3.1.1	fall-05	fall
+::node	p2	1.2.4.2.1	poppy	poppy
+::node	c	1.2.4.3.1	cause-01	
+::node	y	1.2.4.3.1.1.2.1	year	year
+::node	g2	1.1.1	govern-01	government
+::node	c2	1.2.4.3.1.1.1.1	criminal-organization	
+::node	l2	1.2.4.3.1.1.2.1.1	last	last
+::edge	1.2.4.3.1.1	fall	fall-05	:time	1.2.4.3.1.1.2	late	late
+::edge	1.2.4.3.1.1	fall	fall-05	:ARG1	1.2.4.3.1.1.1	regime	regime
+::edge	1.2.4	prevent	prevent-01	:ARG0	1.2.4.1		government-organization
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.2.4	prevent	prevent-01	:ARG1	1.2.4.2	harvest	harvest-01
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Afghanistan"
+::edge	1.2.2	measures	measure	:mod	1.2.2.1	firm	firm
+::edge	1.2.3	quickly	quick	:degree	1.2.3.1	very	very
+::edge	1.2.4.3.1.1.1.1.2		name	:op1	1.2.4.3.1.1.1.1.2.1	Taliban	"Taliban"
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.1	government	govern-01	:ARG1	1.1.1.1		country
+::edge	1.2.4	prevent	prevent-01	:time	1.2.4.3	wake	wake
+::edge	1.2.4.3.1.1.1.1		criminal-organization	:wiki	1.2.4.3.1.1.1.1.1		"Taliban"
+::edge	1.1	government	government-organization	:mod	1.1.2	interim	interim
+::edge	1.2	take	take-03	:ARG0	1.2.1	it	government-organization
+::edge	1.2	take	take-03	:ARG1	1.2.2	measures	measure
+::edge	1.2.4.3.1.1.1.1		criminal-organization	:name	1.2.4.3.1.1.1.1.2		name
+::edge	1.2	take	take-03	:manner	1.2.3	quickly	quick
+::edge	1.2	take	take-03	:purpose	1.2.4	prevent	prevent-01
+::edge	1	stated	state-01	:ARG0	1.1	government	government-organization
+::edge	1	stated	state-01	:ARG1	1.2	take	take-03
+::edge	1.2.4.3.1		cause-01	:ARG0	1.2.4.3.1.1	fall	fall-05
+::edge	1.2.4.2	harvest	harvest-01	:ARG1	1.2.4.2.1	poppy	poppy
+::edge	1.2.4.3	wake	wake	:ARG1-of	1.2.4.3.1		cause-01
+::edge	1.2.4.3.1.1.2	late	late	:op1	1.2.4.3.1.1.2.1	year	year
+::edge	1.1	government	government-organization	:ARG0-of	1.1.1	government	govern-01
+::edge	1.2.4.3.1.1.1	regime	regime	:part-of	1.2.4.3.1.1.1.1		criminal-organization
+::edge	1.2.4.3.1.1.2.1	year	year	:mod	1.2.4.3.1.1.2.1.1	last	last
+14	Leader of Afghanistan's interim government Hamid Karzai said the fight against poppy harvesting and the lucrative trafficking of opium and heroin will be a top priority.
+14	Leader of Afghanistan 's interim government Hamid Karzai said the fight against poppy harvesting and the lucrative trafficking of opium and heroin will be a top priority .
+14	0-1.1 0-1.1.3 0-1.1.3.r 1-1.1.3.1.r 2-1.1.3.1.1.1.2.1 3-1.1.3.1.1.1.r 4-1.1.3.1.2 5-1.1.3.1 5-1.1.3.1.1 5-1.1.3.1.1.r 6-1.1.2.1 7-1.1.2.2 8-1 10-1.2.2 11-1.2.2.1.r 12-1.2.2.1.1.1 13-1.2.2.1.1 14-1.2.2.1 16-1.2.2.1.2.2 17-1.2.2.1.2 18-1.2.2.1.2.1.r 19-1.2.2.1.2.1.1 20-1.2.2.1.2.1 21-1.2.2.1.2.1.2 23-1.2.2.r 25-1.2.1 26-1.2
+::node	i	1.1.3.1.2	interim	interim
+::node	p3	1.2.2.1.1.1	poppy	poppy
+::node	a2	1.2.2.1.2.1	and	and
+::node	"Afghanistan"	1.1.3.1.1.1.2.1	"Afghanistan"	Afghanistan
+::node	l2	1.2.2.1.2.2	lucrative	lucrative
+::node	h2	1.2.2.1.2.1.2	heroin	heroin
+::node	o	1.2.2.1.2.1.1	opium	opium
+::node	a	1.2.2.1	and	and
+::node	t2	1.2.2.1.2	traffic-01	trafficking
+::node	"Hamid"	1.1.2.1	"Hamid"	Hamid
+::node	h	1.2.2.1.1	harvest-01	harvesting
+::node	"Karzai"	1.1.2.2	"Karzai"	Karzai
+::node	g	1.1.3.1	government-organization	government
+::node	"Afghanistan"	1.1.3.1.1.1.1	"Afghanistan"	
+::node	c	1.1.3.1.1.1	country	
+::node	n2	1.1.3.1.1.1.2	name	
+::node	n	1.1.2	name	
+::node	t	1.2.1	top	top
+::node	s	1	say-01	said
+::node	l	1.1.3	lead-02	Leader
+::node	f	1.2.2	fight-01	fight
+::node	p	1.1	person	Leader
+::node	p2	1.2	priority	priority
+::node	g2	1.1.3.1.1	govern-01	government
+::node	"Hamid_Karzai"	1.1.1	"Hamid_Karzai"	
+::edge	1.1.2		name	:op1	1.1.2.1	Hamid	"Hamid"
+::edge	1.1.3.1	government	government-organization	:duration	1.1.3.1.2	interim	interim
+::edge	1.2.2.1	and	and	:op1	1.2.2.1.1	harvesting	harvest-01
+::edge	1.1.2		name	:op2	1.1.2.2	Karzai	"Karzai"
+::edge	1.1.3	Leader	lead-02	:ARG1	1.1.3.1	government	government-organization
+::edge	1.2.2.1.1	harvesting	harvest-01	:ARG1	1.2.2.1.1.1	poppy	poppy
+::edge	1.2.2.1.2	trafficking	traffic-01	:ARG1	1.2.2.1.2.1	and	and
+::edge	1.1.3.1.1.1.2		name	:op1	1.1.3.1.1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.3.1.1.1		country	:wiki	1.1.3.1.1.1.1		"Afghanistan"
+::edge	1.1.3.1.1	government	govern-01	:ARG1	1.1.3.1.1.1		country
+::edge	1.2.2.1.2	trafficking	traffic-01	:mod	1.2.2.1.2.2	lucrative	lucrative
+::edge	1.1.3.1.1.1		country	:name	1.1.3.1.1.1.2		name
+::edge	1.1	Leader	person	:name	1.1.2		name
+::edge	1.2	priority	priority	:degree	1.2.1	top	top
+::edge	1.2.2.1.2.1	and	and	:op2	1.2.2.1.2.1.2	heroin	heroin
+::edge	1.1	Leader	person	:ARG0-of	1.1.3	Leader	lead-02
+::edge	1.2	priority	priority	:domain	1.2.2	fight	fight-01
+::edge	1.2.2.1.2.1	and	and	:op1	1.2.2.1.2.1.1	opium	opium
+::edge	1	said	say-01	:ARG0	1.1	Leader	person
+::edge	1	said	say-01	:ARG1	1.2	priority	priority
+::edge	1.2.2	fight	fight-01	:ARG1	1.2.2.1	and	and
+::edge	1.1.3.1	government	government-organization	:ARG0-of	1.1.3.1.1	government	govern-01
+::edge	1.2.2.1	and	and	:op2	1.2.2.1.2	trafficking	traffic-01
+::edge	1.1	Leader	person	:wiki	1.1.1		"Hamid_Karzai"
+15	The anti-drug effort is strongly supported by Western countries, whose populations are a major market for heroin and opium from Afghanistan.
+15	The anti @-@ drug effort is strongly supported by Western countries , whose populations are a major market for heroin and opium from Afghanistan .
+15	1-1.2.1 3-1.2.1.1 4-1.2 6-1.3 7-1 8-1.1.r 9-1.1.1.2.1 10-1.1 13-1.1.2 16-1.1.2.1.2 17-1.1.2.1 18-1.1.2.1.1.r 19-1.1.2.1.1.1 20-1.1.2.1.1 21-1.1.2.1.1.2 22-1.1.2.1.1.3.r 23-1.1.2.1.1.3.2.1
+::node	"Western_world"	1.1.1.1	"Western_world"	
+::node	"Afghanistan"	1.1.2.1.1.3.1	"Afghanistan"	
+::node	n	1.1.1.2	name	
+::node	m	1.1.2.1	market	market
+::node	n2	1.1.2.1.1.3.2	name	
+::node	o	1.1.2.1.1.2	opium	opium
+::node	c2	1.1.2.1.1.3	country	
+::node	h	1.1.2.1.1.1	heroin	heroin
+::node	m2	1.1.2.1.2	major	major
+::node	a	1.1.2.1.1	and	and
+::node	p	1.1.2	population	populations
+::node	"Afghanistan"	1.1.2.1.1.3.2.1	"Afghanistan"	Afghanistan
+::node	o2	1.2.1	oppose-01	anti
+::node	s	1	support-01	supported
+::node	c	1.1	country	countries
+::node	e	1.2	effort	effort
+::node	s2	1.3	strong	strongly
+::node	"West"	1.1.1.2.1	"West"	Western
+::node	d	1.2.1.1	drug	drug
+::node	w	1.1.1	world-region	
+::edge	1.1.1		world-region	:wiki	1.1.1.1		"Western_world"
+::edge	1.1.2.1.1.3		country	:wiki	1.1.2.1.1.3.1		"Afghanistan"
+::edge	1.1.1		world-region	:name	1.1.1.2		name
+::edge	1.1.2	populations	population	:mod	1.1.2.1	market	market
+::edge	1.1.2.1.1.3		country	:name	1.1.2.1.1.3.2		name
+::edge	1.1.2.1.1	and	and	:op2	1.1.2.1.1.2	opium	opium
+::edge	1.1.2.1.1	and	and	:source	1.1.2.1.1.3		country
+::edge	1.1.2.1.1	and	and	:op1	1.1.2.1.1.1	heroin	heroin
+::edge	1.1.2.1	market	market	:mod	1.1.2.1.2	major	major
+::edge	1.1.2.1	market	market	:prep-for	1.1.2.1.1	and	and
+::edge	1.1	countries	country	:poss-of	1.1.2	populations	population
+::edge	1.1.2.1.1.3.2		name	:op1	1.1.2.1.1.3.2.1	Afghanistan	"Afghanistan"
+::edge	1.2	effort	effort	:ARG0-of	1.2.1	anti	oppose-01
+::edge	1	supported	support-01	:ARG0	1.1	countries	country
+::edge	1	supported	support-01	:ARG1	1.2	effort	effort
+::edge	1	supported	support-01	:degree	1.3	strongly	strong
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Western	"West"
+::edge	1.2.1	anti	oppose-01	:ARG1	1.2.1.1	drug	drug
+::edge	1.1	countries	country	:location	1.1.1		world-region
+16	February 28, 2002 Kabul officials announced that Afghan police are creating their first anti-narcotics units with the help of the United Nations due to concern that the country could again become a major producer of opium.
+16	February 28 , 2002 Kabul officials announced that Afghan police are creating their first anti @-@ narcotics units with the help of the United Nations due to concern that the country could again become a major producer of opium .
+16	0-1.3.2 0-1.3.2.r 1-1.3.3 3-1.3.1 4-1.1.1.1.2.1 5-1.1.1.2 6-1 7-1.2.r 8-1.2.1.1.2.1 9-1.2.1 11-1.2 12-1.2.2.2.1 12-1.2.2.2.1.r 13-1.2.2.2 14-1.2.2.1 16-1.2.2.1.1 17-1.2.2 18-1.2.3.r 20-1.2.3 21-1.2.3.1.r 23-1.2.3.1.2.1 24-1.2.3.1.2.2 25-1.2.4 26-1.2.4 27-1.2.4.1 30-1.2.1.1 31-1.2.4.1.1 32-1.2.4.1.1.1.3 33-1.2.4.1.1.1 35-1.2.4.1.1.1.2.1.2 36-1.2.4.1.1.1.2 36-1.2.4.1.1.1.2.1 36-1.2.4.1.1.1.2.1.r 37-1.2.4.1.1.1.2.1.1.r 38-1.2.4.1.1.1.2.1.1
+::node	b	1.2.4.1.1.1	become-01	become
+::node	c3	1.2.4.1.1.1.1	country	
+::node	c5	1.2.4.1	concern-01	concern
+::node	n	1.1.1.1.2	name	
+::node	"Kabul"	1.1.1.1.1	"Kabul"	
+::node	c6	1.2.2.1	counter-01	anti
+::node	t	1.2.4.1.1.1.2	thing	producer
+::node	f	1.2.2.2	first	first
+::node	o2	1.2.3.1	organization	
+::node	a3	1.2.4.1.1.1.3	again	again
+::node	p	1.2.2.2.1	police	their
+::node	c3	1.2.1.1	country	country
+::node	"Kabul"	1.1.1.1.2.1	"Kabul"	Kabul
+::node	p3	1.2.4.1.1.1.2.1	produce-01	producer
+::node	c	1.1.1.1	city	
+::node	o	1.1.1.2	official	officials
+::node	n4	1.2.2.1.1	narcotics	narcotics
+::node	"Afghanistan"	1.2.1.1.2.1	"Afghanistan"	Afghan
+::node	"United_Nations"	1.2.3.1.1	"United_Nations"	
+::node	m	1.2.4.1.1.1.2.1.2	major	major
+::node	n3	1.2.3.1.2	name	
+::node	o3	1.2.4.1.1.1.2.1.1	opium	opium
+::node	p	1.2.1	police	police
+::node	a	1	announce-01	announced
+::node	u	1.2.2	unit	units
+::node	2002	1.3.1	2002	2002
+::node	n2	1.2.1.1.2	name	
+::node	h	1.2.3	help-01	help
+::node	2	1.3.2	2	February
+::node	"Afghanistan"	1.2.1.1.1	"Afghanistan"	
+::node	c4	1.2.4	cause-01	to
+::node	28	1.3.3	28	28
+::node	p4	1.1	person	
+::node	"Nations"	1.2.3.1.2.2	"Nations"	Nations
+::node	c2	1.2	create-01	creating
+::node	"United"	1.2.3.1.2.1	"United"	United
+::node	d2	1.3	date-entity	
+::node	p2	1.2.4.1.1	possible	could
+::node	h2	1.1.1	have-org-role-91	
+::edge	1.2.4.1.1	could	possible	:domain	1.2.4.1.1.1	become	become-01
+::edge	1.2.4.1.1.1	become	become-01	:ARG1	1.2.4.1.1.1.1		country
+::edge	1.2.4	to	cause-01	:ARG0	1.2.4.1	concern	concern-01
+::edge	1.1.1.1		city	:name	1.1.1.1.2		name
+::edge	1.1.1.1		city	:wiki	1.1.1.1.1		"Kabul"
+::edge	1.2.2	units	unit	:purpose	1.2.2.1	anti	counter-01
+::edge	1.2.4.1.1.1	become	become-01	:ARG2	1.2.4.1.1.1.2	producer	thing
+::edge	1.2.2	units	unit	:mod	1.2.2.2	first	first
+::edge	1.2.3	help	help-01	:ARG0	1.2.3.1		organization
+::edge	1.2.4.1.1.1	become	become-01	:mod	1.2.4.1.1.1.3	again	again
+::edge	1.2.2.2	first	first	:poss	1.2.2.2.1	their	police
+::edge	1.2.1	police	police	:mod	1.2.1.1	country	country
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Kabul	"Kabul"
+::edge	1.2.4.1.1.1.2	producer	thing	:ARG0-of	1.2.4.1.1.1.2.1	producer	produce-01
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		city
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.2.2.1	anti	counter-01	:ARG1	1.2.2.1.1	narcotics	narcotics
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Afghan	"Afghanistan"
+::edge	1.2.3.1		organization	:wiki	1.2.3.1.1		"United_Nations"
+::edge	1.2.4.1.1.1.2.1	producer	produce-01	:mod	1.2.4.1.1.1.2.1.2	major	major
+::edge	1.2.3.1		organization	:name	1.2.3.1.2		name
+::edge	1.2.4.1.1.1.2.1	producer	produce-01	:ARG1	1.2.4.1.1.1.2.1.1	opium	opium
+::edge	1.2	creating	create-01	:ARG0	1.2.1	police	police
+::edge	1.2	creating	create-01	:ARG1	1.2.2	units	unit
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2.1.1	country	country	:name	1.2.1.1.2		name
+::edge	1.2	creating	create-01	:ARG1-of	1.2.3	help	help-01
+::edge	1.3		date-entity	:month	1.3.2	February	2
+::edge	1.2.1.1	country	country	:wiki	1.2.1.1.1		"Afghanistan"
+::edge	1.2	creating	create-01	:ARG1-of	1.2.4	to	cause-01
+::edge	1.3		date-entity	:day	1.3.3	28	28
+::edge	1	announced	announce-01	:ARG0	1.1		person
+::edge	1.2.3.1.2		name	:op2	1.2.3.1.2.2	Nations	"Nations"
+::edge	1	announced	announce-01	:ARG1	1.2	creating	create-01
+::edge	1.2.3.1.2		name	:op1	1.2.3.1.2.1	United	"United"
+::edge	1	announced	announce-01	:time	1.3		date-entity
+::edge	1.2.4.1	concern	concern-01	:ARG0	1.2.4.1.1	could	possible
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+17	February 28, 2002 Qanooni stated in talks with Russian Interior Minister Boris Gryzlov that Afghanistan's main task is to prevent future drugs production.
+17	February 28 , 2002 Qanooni stated in talks with Russian Interior Minister Boris Gryzlov that Afghanistan 's main task is to prevent future drugs production .
+17	0-1.3.2 0-1.3.2.r 1-1.3.3 3-1.3.1 4-1.1.2.1 5-1 6-1.4.r 7-1.4 8-1.4.2.r 9-1.4.2.3.1.2.1 10-1.4.2.3.2.1 11-1.4.2.3.2 12-1.4.2.2.1 13-1.4.2.2.2 14-1.2.r 15-1.2.2.2.1 16-1.2.2.r 16-1.2.3.r 17-1.2.1 18-1.2 19-1.2.3.r 21-1.2.3 22-1.2.3.1.2 23-1.2.3.1.1 24-1.2.3.1
+::node	h	1.4.2.3	have-org-role-91	
+::node	"Russia"	1.4.2.3.1.2.1	"Russia"	Russian
+::node	"Afghanistan"	1.2.2.1	"Afghanistan"	
+::node	n2	1.2.2.2	name	
+::node	p3	1.2.3.1	produce-01	production
+::node	"Afghanistan"	1.2.2.2.1	"Afghanistan"	Afghanistan
+::node	"Qanooni"	1.1.2.1	"Qanooni"	Qanooni
+::node	n4	1.4.2.3.1.2	name	
+::node	i	1.4.2.3.2.1	interior	Interior
+::node	"Russia"	1.4.2.3.1.1	"Russia"	
+::node	d3	1.2.3.1.1	drug	drugs
+::node	"Boris"	1.4.2.2.1	"Boris"	Boris
+::node	f	1.2.3.1.2	future	future
+::node	"Gryzlov"	1.4.2.2.2	"Gryzlov"	Gryzlov
+::node	c2	1.4.2.3.1	country	
+::node	m2	1.4.2.3.2	minister	Minister
+::node	n	1.1.2	name	
+::node	m	1.2.1	main	main
+::node	s	1	state-01	stated
+::node	c	1.2.2	country	
+::node	2002	1.3.1	2002	2002
+::node	p2	1.2.3	prevent-01	prevent
+::node	2	1.3.2	2	February
+::node	p	1.4.1	person	
+::node	28	1.3.3	28	28
+::node	p4	1.4.2	person	
+::node	p	1.1	person	
+::node	t	1.2	task	task
+::node	d2	1.3	date-entity	
+::node	t2	1.4	talk-01	talks
+::node	-	1.4.2.1	-	
+::node	n3	1.4.2.2	name	
+::node	"Yunus_Qanuni"	1.1.1	"Yunus_Qanuni"	
+::edge	1.4.2		person	:ARG0-of	1.4.2.3		have-org-role-91
+::edge	1.4.2.3.1.2		name	:op1	1.4.2.3.1.2.1	Russian	"Russia"
+::edge	1.2.2		country	:wiki	1.2.2.1		"Afghanistan"
+::edge	1.2.2		country	:name	1.2.2.2		name
+::edge	1.2.3	prevent	prevent-01	:ARG1	1.2.3.1	production	produce-01
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.2		name	:op1	1.1.2.1	Qanooni	"Qanooni"
+::edge	1.4.2.3.1		country	:name	1.4.2.3.1.2		name
+::edge	1.4.2.3.2	Minister	minister	:topic	1.4.2.3.2.1	Interior	interior
+::edge	1.4.2.3.1		country	:wiki	1.4.2.3.1.1		"Russia"
+::edge	1.2.3.1	production	produce-01	:ARG1	1.2.3.1.1	drugs	drug
+::edge	1.4.2.2		name	:op1	1.4.2.2.1	Boris	"Boris"
+::edge	1.2.3.1	production	produce-01	:time	1.2.3.1.2	future	future
+::edge	1.4.2.2		name	:op2	1.4.2.2.2	Gryzlov	"Gryzlov"
+::edge	1.4.2.3		have-org-role-91	:ARG1	1.4.2.3.1		country
+::edge	1.4.2.3		have-org-role-91	:ARG2	1.4.2.3.2	Minister	minister
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	task	task	:mod	1.2.1	main	main
+::edge	1.2	task	task	:poss	1.2.2		country
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2	task	task	:domain	1.2.3	prevent	prevent-01
+::edge	1.3		date-entity	:month	1.3.2	February	2
+::edge	1.4	talks	talk-01	:ARG0	1.4.1		person
+::edge	1.3		date-entity	:day	1.3.3	28	28
+::edge	1.4	talks	talk-01	:ARG2	1.4.2		person
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	task	task
+::edge	1	stated	state-01	:time	1.3		date-entity
+::edge	1	stated	state-01	:time	1.4	talks	talk-01
+::edge	1.4.2		person	:wiki	1.4.2.1		-
+::edge	1.4.2		person	:name	1.4.2.2		name
+::edge	1.1		person	:wiki	1.1.1		"Yunus_Qanuni"
+18	Qanooni outlined a three-stage plan of action --
+18	Qanooni outlined a three @-@ stage plan of action --
+18	0-1.1.2.1 1-1 3-1.2.2.1 5-1.2.2 6-1.2 7-1.2.1.r 8-1.2.1
+::node	n	1.1.2	name	
+::node	a	1.2.1	action	action
+::node	o	1	outline-01	outlined
+::node	s	1.2.2	stage	stage
+::node	"Qanooni"	1.1.2.1	"Qanooni"	Qanooni
+::node	p	1.1	person	
+::node	p2	1.2	plan	plan
+::node	3	1.2.2.1	3	three
+::node	"Yunus_Qanuni"	1.1.1	"Yunus_Qanuni"	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	plan	plan	:mod	1.2.1	action	action
+::edge	1.2	plan	plan	:consist-of	1.2.2	stage	stage
+::edge	1.1.2		name	:op1	1.1.2.1	Qanooni	"Qanooni"
+::edge	1	outlined	outline-01	:ARG0	1.1		person
+::edge	1	outlined	outline-01	:ARG1	1.2	plan	plan
+::edge	1.2.2	stage	stage	:quant	1.2.2.1	three	3
+::edge	1.1		person	:wiki	1.1.1		"Yunus_Qanuni"
+19	Afghan authorities will seek to ban poppy harvesting.
+19	Afghan authorities will seek to ban poppy harvesting .
+19	0-1.1.1.2.1 1-1.1 3-1 5-1.2 6-1.2.2.1 7-1.2.2
+::node	a	1.2.1	authority	
+::node	s	1	seek-01	seek
+::node	h	1.2.2	harvest-01	harvesting
+::node	"Afghanistan"	1.1.1.1	"Afghanistan"	
+::node	n	1.1.1.2	name	
+::node	a	1.1	authority	authorities
+::node	b	1.2	ban-01	ban
+::node	"Afghanistan"	1.1.1.2.1	"Afghanistan"	Afghan
+::node	p	1.2.2.1	poppy	poppy
+::node	c	1.1.1	country	
+::edge	1.2	ban	ban-01	:ARG0	1.2.1		authority
+::edge	1.2	ban	ban-01	:ARG1	1.2.2	harvesting	harvest-01
+::edge	1.1.1		country	:wiki	1.1.1.1		"Afghanistan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1	seek	seek-01	:ARG0	1.1	authorities	authority
+::edge	1	seek	seek-01	:ARG1	1.2	ban	ban-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Afghan	"Afghanistan"
+::edge	1.2.2	harvesting	harvest-01	:ARG1	1.2.2.1	poppy	poppy
+::edge	1.1	authorities	authority	:mod	1.1.1		country
+20	Afghan authorities will strengthen the borders around Afghanistan.
+20	Afghan authorities will strengthen the borders around Afghanistan .
+20	0-1.1.1.2.1 1-1.1 3-1 5-1.2 6-1.2.1 7-1.2.1.1
+::node	a2	1.2.1	around	around
+::node	s	1	strengthen-01	strengthen
+::node	"Afghanistan"	1.1.1.1	"Afghanistan"	
+::node	n	1.1.1.2	name	
+::node	a	1.1	authority	authorities
+::node	b	1.2	border	borders
+::node	"Afghanistan"	1.1.1.2.1	"Afghanistan"	Afghan
+::node	c	1.2.1.1	country	Afghanistan
+::node	c	1.1.1	country	
+::edge	1.2	borders	border	:location	1.2.1	around	around
+::edge	1.1.1		country	:wiki	1.1.1.1		"Afghanistan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1	strengthen	strengthen-01	:ARG0	1.1	authorities	authority
+::edge	1	strengthen	strengthen-01	:ARG1	1.2	borders	border
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Afghan	"Afghanistan"
+::edge	1.2.1	around	around	:op1	1.2.1.1	Afghanistan	country
+::edge	1.1	authorities	authority	:mod	1.1.1		country
+21	Afghan authorities will cooperate with the security forces of neighboring states.
+21	Afghan authorities will cooperate with the security forces of neighboring states .
+21	0-1.1.1.2.1 1-1.1 3-1 4-1.2.r 6-1.2.1 7-1.2 8-1.2.2.r 9-1.2.2.1 10-1.2.2
+::node	s	1.2.1	security	security
+::node	c	1	cooperate-01	cooperate
+::node	s2	1.2.2	state	states
+::node	"Afghanistan"	1.1.1.1	"Afghanistan"	
+::node	n	1.1.1.2	name	
+::node	a	1.1	authority	authorities
+::node	f	1.2	force	forces
+::node	"Afghanistan"	1.1.1.2.1	"Afghanistan"	Afghan
+::node	n2	1.2.2.1	neighbor-01	neighboring
+::node	c2	1.1.1	country	
+::edge	1.2	forces	force	:mod	1.2.1	security	security
+::edge	1.2	forces	force	:location	1.2.2	states	state
+::edge	1.1.1		country	:wiki	1.1.1.1		"Afghanistan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1	cooperate	cooperate-01	:ARG0	1.1	authorities	authority
+::edge	1	cooperate	cooperate-01	:ARG1	1.2	forces	force
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Afghan	"Afghanistan"
+::edge	1.2.2	states	state	:ARG1-of	1.2.2.1	neighboring	neighbor-01
+::edge	1.1	authorities	authority	:mod	1.1.1		country
+22	Afghanistan is thought to be responsible for 75 percent of the world's opium and 80 percent of the heroin traded illegally in Europe.
+22	Afghanistan is thought to be responsible for 75 percent of the world 's opium and 80 percent of the heroin traded illegally in Europe .
+22	0-1.1.1.2.1 2-1 5-1.1 6-1.1.2.r 7-1.1.2.1.1.1 8-1.1.2.1.1 9-1.1.2.1.1.r 11-1.1.2.1.2 12-1.1.2.1.2.r 13-1.1.2.1 14-1.1.2 15-1.1.2.2.1.1 16-1.1.2.2.1 17-1.1.2.2.1.r 19-1.1.2.2 20-1.1.2.2.2 21-1.1.2.2.2.1.1 22-1.1.2.2.2.2.r 23-1.1.2.2.2.2.2.1
+::node	"Afghanistan"	1.1.1.1	"Afghanistan"	
+::node	n	1.1.1.2	name	
+::node	o	1.1.2.1	opium	opium
+::node	h	1.1.2.2	heroin	heroin
+::node	75	1.1.2.1.1.1	75	75
+::node	w	1.1.2.1.2	world	world
+::node	p4	1.1.2.2.1	percentage-entity	percent
+::node	p3	1.1.2.1.1	percentage-entity	percent
+::node	a	1.1.2	and	and
+::node	c3	1.1.2.2.2.2	continent	
+::node	n2	1.1.2.2.2.2.2	name	
+::node	t	1	think-01	thought
+::node	r	1.1	responsible-41	responsible
+::node	t2	1.1.2.2.2	trade-01	traded
+::node	80	1.1.2.2.1.1	80	80
+::node	l	1.1.2.2.2.1	law	
+::node	"Afghanistan"	1.1.1.2.1	"Afghanistan"	Afghanistan
+::node	"Europe"	1.1.2.2.2.2.2.1	"Europe"	Europe
+::node	-	1.1.2.2.2.1.1	-	illegally
+::node	c2	1.1.1	country	
+::node	"Europe"	1.1.2.2.2.2.1	"Europe"	
+::edge	1.1.1		country	:wiki	1.1.1.1		"Afghanistan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2	and	and	:op1	1.1.2.1	opium	opium
+::edge	1.1.2	and	and	:op2	1.1.2.2	heroin	heroin
+::edge	1.1.2.1.1	percent	percentage-entity	:value	1.1.2.1.1.1	75	75
+::edge	1.1.2.1	opium	opium	:poss	1.1.2.1.2	world	world
+::edge	1.1.2.2	heroin	heroin	:quant	1.1.2.2.1	percent	percentage-entity
+::edge	1.1.2.1	opium	opium	:quant	1.1.2.1.1	percent	percentage-entity
+::edge	1.1	responsible	responsible-41	:ARG2	1.1.2	and	and
+::edge	1.1.2.2.2	traded	trade-01	:location	1.1.2.2.2.2		continent
+::edge	1.1.2.2.2.2		continent	:name	1.1.2.2.2.2.2		name
+::edge	1	thought	think-01	:ARG1	1.1	responsible	responsible-41
+::edge	1.1.2.2	heroin	heroin	:ARG1-of	1.1.2.2.2	traded	trade-01
+::edge	1.1.2.2.1	percent	percentage-entity	:value	1.1.2.2.1.1	80	80
+::edge	1.1.2.2.2	traded	trade-01	:manner	1.1.2.2.2.1		law
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.1.2.2.2.2.2		name	:op1	1.1.2.2.2.2.2.1	Europe	"Europe"
+::edge	1.1.2.2.2.1		law	:polarity	1.1.2.2.2.1.1	illegally	-
+::edge	1.1	responsible	responsible-41	:ARG1	1.1.1		country
+::edge	1.1.2.2.2.2		continent	:wiki	1.1.2.2.2.2.1		"Europe"
+23	Approximately 11000 Russian guards patrol the 1200-kilometre (750-mile) border between Russia and Afghanistan under a 1992 agreement signed by Moscow and Dushanbe.
+23	Approximately 11000 Russian guards patrol the 1200 @-@ kilometre ( 750 @-@ mile ) border between Russia and Afghanistan under a 1992 agreement signed by Moscow and Dushanbe .
+23	0-1.1.2 1-1.1.2.1 2-1.1.1.2.1 3-1.1 4-1 6-1.2.1.1 8-1.2.1.2 10-1.2.2.1 12-1.2.2.2 14-1.2 15-1.2.3 16-1.2.3.1 17-1.2.3 18-1.2.3.2.2.1 19-1.3.r 21-1.3.1.1 22-1.3 23-1.3.2 24-1.3.2.1.r 25-1.3.2.1.1.2.1 26-1.3.2.1 27-1.3.2.1.2.2.1
+::node	c3	1.3.2.1.1	city	
+::node	c4	1.3.2.1.2	city	
+::node	1992	1.3.1.1	1992	1992
+::node	a3	1.3.2.1	and	and
+::node	n4	1.3.2.1.2.2	name	
+::node	n3	1.3.2.1.1.2	name	
+::node	"Dushanbe"	1.3.2.1.2.1	"Dushanbe"	
+::node	"Moscow"	1.3.2.1.1.1	"Moscow"	
+::node	c2	1.2.3.2	country	
+::node	"Russia"	1.1.1.2.1	"Russia"	Russian
+::node	k2	1.2.1.2	kilometer	kilometre
+::node	750	1.2.2.1	750	750
+::node	m2	1.2.2.2	mile	mile
+::node	c	1.2.3.1	country	Russia
+::node	1200	1.2.1.1	1200	1200
+::node	"Russia"	1.1.1.1	"Russia"	
+::node	n	1.1.1.2	name	
+::node	11000	1.1.2.1	11000	11000
+::node	n2	1.2.3.2.2	name	
+::node	"Moscow"	1.3.2.1.1.2.1	"Moscow"	Moscow
+::node	"Afghanistan"	1.2.3.2.1	"Afghanistan"	
+::node	a2	1.1.2	approximately	Approximately
+::node	d4	1.2.1	distance-quantity	
+::node	p	1	patrol-01	patrol
+::node	d	1.2.2	distance-quantity	
+::node	d2	1.3.1	date-entity	
+::node	b2	1.2.3	between	and
+::node	s	1.3.2	sign-02	signed
+::node	g	1.1	guard	guards
+::node	"Dushanbe"	1.3.2.1.2.2.1	"Dushanbe"	Dushanbe
+::node	b	1.2	border	border
+::node	a	1.3	agreement	agreement
+::node	"Afghanistan"	1.2.3.2.2.1	"Afghanistan"	Afghanistan
+::node	c	1.1.1	country	
+::edge	1.3.2.1	and	and	:op1	1.3.2.1.1		city
+::edge	1.3.2.1	and	and	:op2	1.3.2.1.2		city
+::edge	1.3.1		date-entity	:year	1.3.1.1	1992	1992
+::edge	1.3.2	signed	sign-02	:ARG0	1.3.2.1	and	and
+::edge	1.3.2.1.2		city	:name	1.3.2.1.2.2		name
+::edge	1.3.2.1.1		city	:name	1.3.2.1.1.2		name
+::edge	1.3.2.1.2		city	:wiki	1.3.2.1.2.1		"Dushanbe"
+::edge	1.3.2.1.1		city	:wiki	1.3.2.1.1.1		"Moscow"
+::edge	1.2.3	and	between	:op2	1.2.3.2		country
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Russian	"Russia"
+::edge	1.2.1		distance-quantity	:unit	1.2.1.2	kilometre	kilometer
+::edge	1.2.2		distance-quantity	:quant	1.2.2.1	750	750
+::edge	1.2.2		distance-quantity	:unit	1.2.2.2	mile	mile
+::edge	1.2.3	and	between	:op1	1.2.3.1	Russia	country
+::edge	1.2.1		distance-quantity	:quant	1.2.1.1	1200	1200
+::edge	1.1.1		country	:wiki	1.1.1.1		"Russia"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2	Approximately	approximately	:op1	1.1.2.1	11000	11000
+::edge	1.2.3.2		country	:name	1.2.3.2.2		name
+::edge	1.3.2.1.1.2		name	:op1	1.3.2.1.1.2.1	Moscow	"Moscow"
+::edge	1.2.3.2		country	:wiki	1.2.3.2.1		"Afghanistan"
+::edge	1.1	guards	guard	:quant	1.1.2	Approximately	approximately
+::edge	1.2	border	border	:quant	1.2.1		distance-quantity
+::edge	1.2	border	border	:quant	1.2.2		distance-quantity
+::edge	1.3	agreement	agreement	:time	1.3.1		date-entity
+::edge	1.2	border	border	:location	1.2.3	and	between
+::edge	1.3	agreement	agreement	:ARG1-of	1.3.2	signed	sign-02
+::edge	1	patrol	patrol-01	:ARG0	1.1	guards	guard
+::edge	1.3.2.1.2.2		name	:op1	1.3.2.1.2.2.1	Dushanbe	"Dushanbe"
+::edge	1	patrol	patrol-01	:ARG1	1.2	border	border
+::edge	1	patrol	patrol-01	:prep-under	1.3	agreement	agreement
+::edge	1.2.3.2.2		name	:op1	1.2.3.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.1	guards	guard	:mod	1.1.1		country
+24	The Northern Alliance opposes the Taliban but tolerated the harvest of poppy in territory it controlled.
+24	The Northern Alliance opposes the Taliban but tolerated the harvest of poppy in territory it controlled .
+24	1-1.1.1.2.1 2-1.1.1.2.2 3-1.1 5-1.1.2.2.1 6-1 7-1.2 9-1.2.2 10-1.2.2.1.r 11-1.2.2.1 12-1.2.2.2.r 13-1.2.2.2 14-1.2.2.2.1.1 15-1.2.2.2.1
+::node	"Northern_Alliance"	1.1.1.1	"Northern_Alliance"	
+::node	n	1.1.1.2	name	
+::node	"Taliban"	1.1.2.1	"Taliban"	
+::node	n2	1.1.2.2	name	
+::node	"Taliban"	1.1.2.2.1	"Taliban"	Taliban
+::node	c	1.1.2	criminal-organization	
+::node	o	1.2.1	organization	
+::node	c2	1	contrast-01	but
+::node	h	1.2.2	harvest-01	harvest
+::node	o2	1.1	oppose-01	opposes
+::node	t	1.2	tolerate-01	tolerated
+::node	"Alliance"	1.1.1.2.2	"Alliance"	Alliance
+::node	"Northern"	1.1.1.2.1	"Northern"	Northern
+::node	p	1.2.2.1	poppy	poppy
+::node	o	1.2.2.2.1.1	organization	it
+::node	t2	1.2.2.2	territory	territory
+::node	c3	1.2.2.2.1	control-01	controlled
+::node	o	1.1.1	organization	
+::edge	1.1.1		organization	:wiki	1.1.1.1		"Northern_Alliance"
+::edge	1.1.1		organization	:name	1.1.1.2		name
+::edge	1.1.2		criminal-organization	:wiki	1.1.2.1		"Taliban"
+::edge	1.1.2		criminal-organization	:name	1.1.2.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Taliban	"Taliban"
+::edge	1.1	opposes	oppose-01	:ARG1	1.1.2		criminal-organization
+::edge	1.2	tolerated	tolerate-01	:ARG0	1.2.1		organization
+::edge	1.2	tolerated	tolerate-01	:ARG1	1.2.2	harvest	harvest-01
+::edge	1	but	contrast-01	:ARG1	1.1	opposes	oppose-01
+::edge	1	but	contrast-01	:ARG2	1.2	tolerated	tolerate-01
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Alliance	"Alliance"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Northern	"Northern"
+::edge	1.2.2	harvest	harvest-01	:ARG1	1.2.2.1	poppy	poppy
+::edge	1.2.2.2.1	controlled	control-01	:ARG0	1.2.2.2.1.1	it	organization
+::edge	1.2.2	harvest	harvest-01	:location	1.2.2.2	territory	territory
+::edge	1.2.2.2	territory	territory	:ARG1-of	1.2.2.2.1	controlled	control-01
+::edge	1.1	opposes	oppose-01	:ARG0	1.1.1		organization
+25	Afghanistan's interim government has been in power for 2 months.
+25	Afghanistan 's interim government has been in power for 2 months .
+25	0-1.1.1.1.2.1 1-1.1.1.1.r 2-1.1.2 3-1.1 3-1.1.1 3-1.1.1.r 9-1.2.1 10-1.2.2
+::node	i	1.1.2	interim	interim
+::node	2	1.2.1	2	2
+::node	r	1	rule-03	
+::node	"Afghanistan"	1.1.1.1.2.1	"Afghanistan"	Afghanistan
+::node	m2	1.2.2	month	months
+::node	c	1.1.1.1	country	
+::node	g	1.1	government-organization	government
+::node	t2	1.2	temporal-quantity	
+::node	n	1.1.1.1.2	name	
+::node	"Afghanistan"	1.1.1.1.1	"Afghanistan"	
+::node	g2	1.1.1	govern-01	government
+::edge	1.1	government	government-organization	:duration	1.1.2	interim	interim
+::edge	1.2		temporal-quantity	:quant	1.2.1	2	2
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Afghanistan	"Afghanistan"
+::edge	1.2		temporal-quantity	:unit	1.2.2	months	month
+::edge	1.1.1	government	govern-01	:ARG1	1.1.1.1		country
+::edge	1		rule-03	:ARG0	1.1	government	government-organization
+::edge	1		rule-03	:duration	1.2		temporal-quantity
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Afghanistan"
+::edge	1.1	government	government-organization	:ARG0-of	1.1.1	government	govern-01

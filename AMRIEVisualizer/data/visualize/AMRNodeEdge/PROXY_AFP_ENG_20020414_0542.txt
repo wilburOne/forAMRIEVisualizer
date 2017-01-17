@@ -1,0 +1,594 @@
+1	2002-04-08
+1	2002 @-@ 04 @-@ 08
+1	0-1.1 2-1.2 4-1.3
+::node	d2	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	4	1.2	4	04
+::node	8	1.3	8	08
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	04	4
+::edge	1		date-entity	:day	1.3	08	8
+2	United Kingdom (GB)
+2	United Kingdom ( GB )
+2	0-1.2.1 1-1.2.2
+::node	"United"	1.2.1	"United"	United
+::node	c	1	country	
+::node	"Kingdom"	1.2.2	"Kingdom"	Kingdom
+::node	"United_Kingdom"	1.1	"United_Kingdom"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	United	"United"
+::edge	1.2		name	:op2	1.2.2	Kingdom	"Kingdom"
+::edge	1		country	:wiki	1.1		"United_Kingdom"
+::edge	1		country	:name	1.2		name
+3	International; Government; weapons; media; technology; terrorism; proliferation
+3	International ; Government ; weapons ; media ; technology ; terrorism ; proliferation
+3	0-1.1 2-1.2 2-1.2.1 2-1.2.1.r 4-1.3 6-1.4 8-1.5 10-1.6 12-1.7
+::node	g2	1.2.1	govern-01	Government
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	g	1.2	government-organization	Government
+::node	w	1.3	weapon	weapons
+::node	m	1.4	media	media
+::node	t	1.5	technology	technology
+::node	t2	1.6	terrorism	terrorism
+::node	p	1.7	proliferate-01	proliferation
+::edge	1.2	Government	government-organization	:ARG0-of	1.2.1	Government	govern-01
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	Government	government-organization
+::edge	1		and	:op3	1.3	weapons	weapon
+::edge	1		and	:op4	1.4	media	media
+::edge	1		and	:op5	1.5	technology	technology
+::edge	1		and	:op6	1.6	terrorism	terrorism
+::edge	1		and	:op7	1.7	proliferation	proliferate-01
+4	Declassified British Ministry of Defense documents explain how Britain made its first nuclear bomb.
+4	Declassified British Ministry of Defense documents explain how Britain made its first nuclear bomb .
+4	0-1.1.2 1-1.1.1.3.2.1 2-1.1.1.2.1 3-1.1.1.2.2 4-1.1.1.2.3 5-1.1 6-1 7-1.2.1.r 8-1.2.1.1 9-1.2.1 10-1.2.1.2.3 10-1.2.1.2.3.r 11-1.2.1.2.2 11-1.2.1.2.2.1 11-1.2.1.2.2.1.r 12-1.2.1.2.1 13-1.2.1.2
+::node	"Ministry_of_Defence_BLANKETPAIR1"	1.1.1.1	"Ministry_of_Defence_BLANKETPAIR1"	
+::node	n	1.1.1.2	name	
+::node	c	1.1.1.3	country	
+::node	"Defense"	1.1.1.2.3	"Defense"	Defense
+::node	n2	1.1.1.3.2	name	
+::node	c	1.2.1.2.3	country	its
+::node	o	1.2.1.2.2	ordinal-entity	first
+::node	d2	1.1.2	declassify-01	Declassified
+::node	m	1.2.1	make-01	made
+::node	e	1	explain-01	explain
+::node	1	1.2.1.2.2.1	1	first
+::node	n3	1.2.1.2.1	nucleus	nuclear
+::node	d	1.1	document	documents
+::node	t	1.2	thing	
+::node	"of"	1.1.1.2.2	"of"	of
+::node	"United_Kingdom"	1.1.1.3.1	"United_Kingdom"	
+::node	"Ministry"	1.1.1.2.1	"Ministry"	Ministry
+::node	b	1.2.1.2	bomb	bomb
+::node	c	1.2.1.1	country	Britain
+::node	g	1.1.1	government-organization	
+::node	"Britain"	1.1.1.3.2.1	"Britain"	British
+::edge	1.1.1		government-organization	:wiki	1.1.1.1		"Ministry_of_Defence_BLANKETPAIR1"
+::edge	1.1.1		government-organization	:name	1.1.1.2		name
+::edge	1.1.1		government-organization	:mod	1.1.1.3		country
+::edge	1.1.1.2		name	:op3	1.1.1.2.3	Defense	"Defense"
+::edge	1.1.1.3		country	:name	1.1.1.3.2		name
+::edge	1.2.1.2	bomb	bomb	:poss	1.2.1.2.3	its	country
+::edge	1.2.1.2	bomb	bomb	:ord	1.2.1.2.2	first	ordinal-entity
+::edge	1.1	documents	document	:ARG1-of	1.1.2	Declassified	declassify-01
+::edge	1.2		thing	:manner-of	1.2.1	made	make-01
+::edge	1.2.1.2.2	first	ordinal-entity	:value	1.2.1.2.2.1	first	1
+::edge	1.2.1.2	bomb	bomb	:mod	1.2.1.2.1	nuclear	nucleus
+::edge	1	explain	explain-01	:ARG0	1.1	documents	document
+::edge	1	explain	explain-01	:ARG1	1.2		thing
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	of	"of"
+::edge	1.1.1.3		country	:wiki	1.1.1.3.1		"United_Kingdom"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Ministry	"Ministry"
+::edge	1.2.1	made	make-01	:ARG1	1.2.1.2	bomb	bomb
+::edge	1.2.1	made	make-01	:ARG0	1.2.1.1	Britain	country
+::edge	1.1	documents	document	:source	1.1.1		government-organization
+::edge	1.1.1.3.2		name	:op1	1.1.1.3.2.1	British	"Britain"
+5	Critics state that with access to plutonium available from rogue States terrorists could consult the detailed documents and build an atomic bomb.
+5	Critics state that with access to plutonium available from rogue States terrorists could consult the detailed documents and build an atomic bomb .
+5	0-1.1 1-1 3-1.2.r 4-1.2.2.1 5-1.2.2.1.2.r 6-1.2.2.1.2 7-1.2.2.1.2.1 8-1.2.2.1.2.2.r 9-1.2.2.1.2.2.1 10-1.2.2.1.2.2 11-1.2.1.1.1 12-1.2 13-1.2.1.1 15-1.2.1.1.2.1 16-1.2.1.1.2 17-1.2.1 18-1.2.1.2 20-1.2.1.2.2.1 21-1.2.1.2.2
+::node	t	1.2.2.1.1	terrorist	
+::node	d2	1.2.1.1.2.1	detail-01	detailed
+::node	a4	1.2.2.1.2.1	available	available
+::node	b2	1.2.1.2.2	bomb	bomb
+::node	s2	1.2.2.1.2.2	state	States
+::node	a	1.2.1	and	and
+::node	r	1.2.2.1.2.2.1	rogue	rogue
+::node	s	1	state-01	state
+::node	a2	1.2.1.2.2.1	atom	atomic
+::node	c3	1.2.2	cause-01	
+::node	d	1.2.1.1.2	document	documents
+::node	t	1.2.1.2.1	terrorist	
+::node	t	1.2.1.1.1	terrorist	terrorists
+::node	c	1.1	critic	Critics
+::node	p	1.2	possible	could
+::node	b	1.2.1.2	build-01	build
+::node	a3	1.2.2.1	access-01	access
+::node	p2	1.2.2.1.2	plutonium	plutonium
+::node	c2	1.2.1.1	consult-01	consult
+::edge	1.2.2.1	access	access-01	:ARG0	1.2.2.1.1		terrorist
+::edge	1.2.1.1.2	documents	document	:ARG0-of	1.2.1.1.2.1	detailed	detail-01
+::edge	1.2.2.1.2	plutonium	plutonium	:mod	1.2.2.1.2.1	available	available
+::edge	1.2.1.2	build	build-01	:ARG1	1.2.1.2.2	bomb	bomb
+::edge	1.2.2.1.2	plutonium	plutonium	:source	1.2.2.1.2.2	States	state
+::edge	1.2	could	possible	:domain	1.2.1	and	and
+::edge	1.2.2.1.2.2	States	state	:mod	1.2.2.1.2.2.1	rogue	rogue
+::edge	1.2.1.2.2	bomb	bomb	:mod	1.2.1.2.2.1	atomic	atom
+::edge	1.2	could	possible	:ARG1-of	1.2.2		cause-01
+::edge	1.2.1.1	consult	consult-01	:ARG1	1.2.1.1.2	documents	document
+::edge	1.2.1.2	build	build-01	:ARG0	1.2.1.2.1		terrorist
+::edge	1.2.1.1	consult	consult-01	:ARG0	1.2.1.1.1	terrorists	terrorist
+::edge	1	state	state-01	:ARG0	1.1	Critics	critic
+::edge	1	state	state-01	:ARG1	1.2	could	possible
+::edge	1.2.1	and	and	:op2	1.2.1.2	build	build-01
+::edge	1.2.2		cause-01	:ARG0	1.2.2.1	access	access-01
+::edge	1.2.2.1	access	access-01	:ARG1	1.2.2.1.2	plutonium	plutonium
+::edge	1.2.1	and	and	:op1	1.2.1.1	consult	consult-01
+6	The Daily Telegraph reported on 08 April 2002 that declassified British Ministry of Defense documents explain how to make an atomic bomb.
+6	The Daily Telegraph reported on 08 April 2002 that declassified British Ministry of Defense documents explain how to make an atomic bomb .
+6	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 3-1 4-1.3.r 5-1.3.3 6-1.3.2 6-1.3.2.r 7-1.3.1 8-1.2.r 9-1.2.1.2 10-1.2.1.1.3.2.1 11-1.2.1.1.2.1 12-1.2.1.1.2.2 13-1.2.1.1.2.3 14-1.2.1 15-1.2 16-1.2.2.1.r 18-1.2.2.1 20-1.2.2.1.1.1 21-1.2.2.1.1
+::node	a	1.2.2.1.1.1	atom	atomic
+::node	c	1.2.1.1.3	country	
+::node	d	1.2.1.2	declassify-01	declassified
+::node	m	1.2.2.1	make-01	make
+::node	g	1.2.1.1	government-organization	
+::node	"Defense"	1.2.1.1.2.3	"Defense"	Defense
+::node	n4	1.2.1.1.3.2	name	
+::node	"The"	1.1.2.1	"The"	The
+::node	b	1.2.2.1.1	bomb	bomb
+::node	"Daily"	1.1.2.2	"Daily"	Daily
+::node	"Telegraph"	1.1.2.3	"Telegraph"	Telegraph
+::node	"Ministry"	1.2.1.1.2.1	"Ministry"	Ministry
+::node	"Britain"	1.2.1.1.3.2.1	"Britain"	British
+::node	"of"	1.2.1.1.2.2	"of"	of
+::node	"United_Kingdom"	1.2.1.1.3.1	"United_Kingdom"	
+::node	n2	1.1.2	name	
+::node	d2	1.2.1	document	documents
+::node	r	1	report-01	reported
+::node	t	1.2.2	thing	
+::node	2002	1.3.1	2002	2002
+::node	n3	1.2.1.1.2	name	
+::node	4	1.3.2	4	April
+::node	"Ministry_of_Defence_BLANKETPAIR1"	1.2.1.1.1	"Ministry_of_Defence_BLANKETPAIR1"	
+::node	8	1.3.3	8	08
+::node	n	1.1	newspaper	
+::node	e	1.2	explain-01	explain
+::node	d3	1.3	date-entity	
+::node	"The_Daily_Telegraph"	1.1.1	"The_Daily_Telegraph"	
+::edge	1.2.2.1.1	bomb	bomb	:mod	1.2.2.1.1.1	atomic	atom
+::edge	1.2.1.1		government-organization	:mod	1.2.1.1.3		country
+::edge	1.2.1	documents	document	:ARG1-of	1.2.1.2	declassified	declassify-01
+::edge	1.2.2		thing	:manner-of	1.2.2.1	make	make-01
+::edge	1.2.1	documents	document	:source	1.2.1.1		government-organization
+::edge	1.2.1.1.2		name	:op3	1.2.1.1.2.3	Defense	"Defense"
+::edge	1.2.1.1.3		country	:name	1.2.1.1.3.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	The	"The"
+::edge	1.2.2.1	make	make-01	:ARG1	1.2.2.1.1	bomb	bomb
+::edge	1.1.2		name	:op2	1.1.2.2	Daily	"Daily"
+::edge	1.1.2		name	:op3	1.1.2.3	Telegraph	"Telegraph"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Ministry	"Ministry"
+::edge	1.2.1.1.3.2		name	:op1	1.2.1.1.3.2.1	British	"Britain"
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	of	"of"
+::edge	1.2.1.1.3		country	:wiki	1.2.1.1.3.1		"United_Kingdom"
+::edge	1.1		newspaper	:name	1.1.2		name
+::edge	1.2	explain	explain-01	:ARG0	1.2.1	documents	document
+::edge	1.2	explain	explain-01	:ARG1	1.2.2		thing
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2.1.1		government-organization	:name	1.2.1.1.2		name
+::edge	1.3		date-entity	:month	1.3.2	April	4
+::edge	1.2.1.1		government-organization	:wiki	1.2.1.1.1		"Ministry_of_Defence_BLANKETPAIR1"
+::edge	1.3		date-entity	:day	1.3.3	08	8
+::edge	1	reported	report-01	:ARG0	1.1		newspaper
+::edge	1	reported	report-01	:ARG1	1.2	explain	explain-01
+::edge	1	reported	report-01	:time	1.3		date-entity
+::edge	1.1		newspaper	:wiki	1.1.1		"The_Daily_Telegraph"
+7	The Daily Telegraph reports that the documents became public domain over the past 5 years.
+7	The Daily Telegraph reports that the documents became public domain over the past 5 years .
+7	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 3-1 4-1.2.r 6-1.2.1 7-1.2 8-1.2.2.1 9-1.2.2 13-1.2.3.2.1 14-1.2.3.2.2
+::node	"The"	1.1.2.1	"The"	The
+::node	"Daily"	1.1.2.2	"Daily"	Daily
+::node	"Telegraph"	1.1.2.3	"Telegraph"	Telegraph
+::node	y2	1.2.3.2.2	year	years
+::node	5	1.2.3.2.1	5	5
+::node	n2	1.1.2	name	
+::node	d	1.2.1	document	documents
+::node	r	1	report-01	reports
+::node	d2	1.2.2	domain	domain
+::node	b2	1.2.3	before	
+::node	n	1.1	newspaper	
+::node	b	1.2	become-01	became
+::node	t2	1.2.3.2	temporal-quantity	
+::node	p	1.2.2.1	public	public
+::node	n3	1.2.3.1	now	
+::node	"The_Daily_Telegraph"	1.1.1	"The_Daily_Telegraph"	
+::edge	1.1.2		name	:op1	1.1.2.1	The	"The"
+::edge	1.1.2		name	:op2	1.1.2.2	Daily	"Daily"
+::edge	1.1.2		name	:op3	1.1.2.3	Telegraph	"Telegraph"
+::edge	1.2.3.2		temporal-quantity	:unit	1.2.3.2.2	years	year
+::edge	1.2.3.2		temporal-quantity	:quant	1.2.3.2.1	5	5
+::edge	1.1		newspaper	:name	1.1.2		name
+::edge	1.2	became	become-01	:ARG1	1.2.1	documents	document
+::edge	1.2	became	become-01	:ARG2	1.2.2	domain	domain
+::edge	1.2	became	become-01	:time	1.2.3		before
+::edge	1	reports	report-01	:ARG0	1.1		newspaper
+::edge	1	reports	report-01	:ARG1	1.2	became	become-01
+::edge	1.2.3		before	:duration	1.2.3.2		temporal-quantity
+::edge	1.2.2	domain	domain	:mod	1.2.2.1	public	public
+::edge	1.2.3		before	:op1	1.2.3.1		now
+::edge	1.1		newspaper	:wiki	1.1.1		"The_Daily_Telegraph"
+8	The declassified documents are available to the public and could therefore be consulted by terrorists.
+8	The declassified documents are available to the public and could therefore be consulted by terrorists .
+8	1-1.1.2.1 2-1.1.2 3-1.2.1.2.r 4-1.2.1 5-1.2.1.1.r 7-1.2.1.1 9-1 10-1.2 11-1.1.r 12-1.1 13-1.1.1.r 14-1.1.1
+::node	d	1.1.2	document	documents
+::node	a	1.2.1	available	available
+::node	p	1	possible	could
+::node	d2	1.1.2.1	declassify-01	declassified
+::node	c	1.1	consult-01	consulted
+::node	c3	1.2	cause-01	therefore
+::node	d	1.2.1.2	document	
+::node	p2	1.2.1.1	public	public
+::node	t	1.1.1	terrorist	terrorists
+::edge	1.1	consulted	consult-01	:ARG1	1.1.2	documents	document
+::edge	1.2	therefore	cause-01	:ARG0	1.2.1	available	available
+::edge	1.1.2	documents	document	:ARG1-of	1.1.2.1	declassified	declassify-01
+::edge	1	could	possible	:domain	1.1	consulted	consult-01
+::edge	1	could	possible	:ARG1-of	1.2	therefore	cause-01
+::edge	1.2.1	available	available	:domain	1.2.1.2		document
+::edge	1.2.1	available	available	:mod	1.2.1.1	public	public
+::edge	1.1	consulted	consult-01	:ARG0	1.1.1	terrorists	terrorist
+9	The Daily Telegraph reports that the documents give details of the manufacture of Britain's first nuclear bomb at the end of the 1940s and start of the 1950s.
+9	The Daily Telegraph reports that the documents give details of the manufacture of Britain 's first nuclear bomb at the end of the 1940 s and start of the 1950 s .
+9	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 3-1 4-1.2.r 6-1.2.1 8-1.2 9-1.2.2.r 11-1.2.2 12-1.2.2.1.r 13-1.2.2.1.2.1 15-1.2.2.2.2 15-1.2.2.2.2.1 15-1.2.2.2.2.1.r 16-1.2.2.2.1 17-1.2.2.2 18-1.2.2.3.r 20-1.2.2.3.1 21-1.2.2.3.1.1.r 23-1.2.2.3.1.1.1 24-1.2.2.3.1.1.1.r 25-1.2.2.3 26-1.2.2.3.2 27-1.2.2.3.2.1.r 29-1.2.2.3.2.1.1 30-1.2.2.3.2.1.1.r
+::node	"Britain"	1.2.2.1.2.1	"Britain"	Britain
+::node	1940	1.2.2.3.1.1.1	1940	1940
+::node	a	1.2.2.3	and	and
+::node	c	1.2.2.1	country	
+::node	b	1.2.2.2	bomb	bomb
+::node	n3	1.2.2.1.2	name	
+::node	n4	1.2.2.2.1	nucleus	nuclear
+::node	o	1.2.2.2.2	ordinal-entity	first
+::node	1	1.2.2.2.2.1	1	first
+::node	e	1.2.2.3.1	end	end
+::node	s	1.2.2.3.2	start	start
+::node	d6	1.2.2.3.2.1	date-entity	
+::node	"The"	1.1.2.1	"The"	The
+::node	"United_Kingdom"	1.2.2.1.1	"United_Kingdom"	
+::node	d4	1.2.2.3.1.1	date-entity	
+::node	"Daily"	1.1.2.2	"Daily"	Daily
+::node	"Telegraph"	1.1.2.3	"Telegraph"	Telegraph
+::node	1950	1.2.2.3.2.1.1	1950	1950
+::node	n2	1.1.2	name	
+::node	d3	1.2.1	document	documents
+::node	r	1	report-01	reports
+::node	m	1.2.2	manufacture-01	manufacture
+::node	n	1.1	newspaper	
+::node	d5	1.2	detail-01	details
+::node	"The_Daily_Telegraph"	1.1.1	"The_Daily_Telegraph"	
+::edge	1.2.2.3.2	start	start	:op1	1.2.2.3.2.1		date-entity
+::edge	1.1.2		name	:op1	1.1.2.1	The	"The"
+::edge	1.2.2.1		country	:wiki	1.2.2.1.1		"United_Kingdom"
+::edge	1.2.2.3.1	end	end	:op1	1.2.2.3.1.1		date-entity
+::edge	1.1.2		name	:op2	1.1.2.2	Daily	"Daily"
+::edge	1.1.2		name	:op3	1.1.2.3	Telegraph	"Telegraph"
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	Britain	"Britain"
+::edge	1.2.2.3.2.1		date-entity	:decade	1.2.2.3.2.1.1	1950	1950
+::edge	1.1		newspaper	:name	1.1.2		name
+::edge	1.2	details	detail-01	:ARG0	1.2.1	documents	document
+::edge	1.2	details	detail-01	:ARG1	1.2.2	manufacture	manufacture-01
+::edge	1.2.2.3.1.1		date-entity	:decade	1.2.2.3.1.1.1	1940	1940
+::edge	1	reports	report-01	:ARG0	1.1		newspaper
+::edge	1	reports	report-01	:ARG1	1.2	details	detail-01
+::edge	1.2.2	manufacture	manufacture-01	:time	1.2.2.3	and	and
+::edge	1.2.2	manufacture	manufacture-01	:ARG0	1.2.2.1		country
+::edge	1.2.2	manufacture	manufacture-01	:ARG1	1.2.2.2	bomb	bomb
+::edge	1.2.2.1		country	:name	1.2.2.1.2		name
+::edge	1.2.2.2	bomb	bomb	:mod	1.2.2.2.1	nuclear	nucleus
+::edge	1.2.2.2	bomb	bomb	:ord	1.2.2.2.2	first	ordinal-entity
+::edge	1.2.2.2.2	first	ordinal-entity	:value	1.2.2.2.2.1	first	1
+::edge	1.2.2.3	and	and	:op1	1.2.2.3.1	end	end
+::edge	1.2.2.3	and	and	:op2	1.2.2.3.2	start	start
+::edge	1.1		newspaper	:wiki	1.1.1		"The_Daily_Telegraph"
+10	The declassified documents provide a list of the ingredients for such a weapon including the amount of plutonium necessary and how to spark off a chain reaction.
+10	The declassified documents provide a list of the ingredients for such a weapon including the amount of plutonium necessary and how to spark off a chain reaction .
+10	1-1.1.1 2-1.1 3-1 5-1.2.1 6-1.2.1.1.r 8-1.2.1.1 9-1.2.1.1.1.r 10-1.2.1.1.1.1 12-1.2.1.1.1 13-1.2.1.1.2 15-1.2.1.1.2.1 16-1.2.1.1.2.1.1.r 17-1.2.1.1.2.1.1 18-1.2.1.1.2.1.2 19-1.2 20-1.2.2.1.r 22-1.2.2.1 25-1.2.2.1.1.1 26-1.2.2.1.1
+::node	r	1.2.2.1.1	reaction	reaction
+::node	s	1.2.1.1.1.1	such	such
+::node	a2	1.2.1.1.2.1	amount	amount
+::node	c2	1.2.2.1.1.1	chain	chain
+::node	l	1.2.1	list	list
+::node	p	1	provide-01	provide
+::node	t	1.2.2	thing	
+::node	i2	1.2.1.1.2	include-91	including
+::node	w	1.2.1.1.1	weapon	weapon
+::node	d	1.1	document	documents
+::node	a	1.2	and	and
+::node	n	1.2.1.1.2.1.2	need-01	necessary
+::node	p2	1.2.1.1.2.1.1	plutonium	plutonium
+::node	s2	1.2.2.1	spark-01	spark
+::node	i	1.2.1.1	ingredient	ingredients
+::node	d2	1.1.1	declassify-01	declassified
+::edge	1.2.2.1	spark	spark-01	:ARG1	1.2.2.1.1	reaction	reaction
+::edge	1.2.1.1.1	weapon	weapon	:mod	1.2.1.1.1.1	such	such
+::edge	1.2.1.1.2	including	include-91	:ARG1	1.2.1.1.2.1	amount	amount
+::edge	1.2.2.1.1	reaction	reaction	:mod	1.2.2.1.1.1	chain	chain
+::edge	1.2	and	and	:op1	1.2.1	list	list
+::edge	1.2	and	and	:op2	1.2.2		thing
+::edge	1.2.1.1	ingredients	ingredient	:ARG2-of	1.2.1.1.2	including	include-91
+::edge	1.2.1.1	ingredients	ingredient	:purpose	1.2.1.1.1	weapon	weapon
+::edge	1	provide	provide-01	:ARG0	1.1	documents	document
+::edge	1	provide	provide-01	:ARG1	1.2	and	and
+::edge	1.2.1.1.2.1	amount	amount	:ARG1-of	1.2.1.1.2.1.2	necessary	need-01
+::edge	1.2.1.1.2.1	amount	amount	:quant-of	1.2.1.1.2.1.1	plutonium	plutonium
+::edge	1.2.2		thing	:manner-of	1.2.2.1	spark	spark-01
+::edge	1.2.1	list	list	:consist-of	1.2.1.1	ingredients	ingredient
+::edge	1.1	documents	document	:ARG1-of	1.1.1	declassified	declassify-01
+11	Britain's first nuclear bomb was called Blue Danube.
+11	Britain 's first nuclear bomb was called Blue Danube .
+11	0-1.5.2.1 1-1.5.r 2-1.4 2-1.4.1 2-1.4.1.r 3-1.3 4-1 6-1.2.r 6-1.5.2.r 7-1.2.1 8-1.2.2
+::node	"Blue"	1.2.1	"Blue"	Blue
+::node	b2	1	bomb	bomb
+::node	"Danube"	1.2.2	"Danube"	Danube
+::node	1	1.4.1	1	first
+::node	"United_Kingdom"	1.5.1	"United_Kingdom"	
+::node	"Blue_Danube_BLANKETPAIR4"	1.1	"Blue_Danube_BLANKETPAIR4"	
+::node	n2	1.5.2	name	
+::node	n3	1.2	name	
+::node	n	1.3	nucleus	nuclear
+::node	o	1.4	ordinal-entity	first
+::node	c2	1.5	country	
+::node	"Britain"	1.5.2.1	"Britain"	Britain
+::edge	1.2		name	:op1	1.2.1	Blue	"Blue"
+::edge	1.2		name	:op2	1.2.2	Danube	"Danube"
+::edge	1.4	first	ordinal-entity	:value	1.4.1	first	1
+::edge	1.5		country	:wiki	1.5.1		"United_Kingdom"
+::edge	1	bomb	bomb	:wiki	1.1		"Blue_Danube_BLANKETPAIR4"
+::edge	1.5		country	:name	1.5.2		name
+::edge	1	bomb	bomb	:name	1.2		name
+::edge	1	bomb	bomb	:mod	1.3	nuclear	nucleus
+::edge	1	bomb	bomb	:ord	1.4	first	ordinal-entity
+::edge	1	bomb	bomb	:poss	1.5		country
+::edge	1.5.2		name	:op1	1.5.2.1	Britain	"Britain"
+12	Former engineer who worked on Britain's military nuclear program Brian Burnell stated that the instructions could enable a terrorist to construct a rudimentary atomic bomb.
+12	Former engineer who worked on Britain 's military nuclear program Brian Burnell stated that the instructions could enable a terrorist to construct a rudimentary atomic bomb .
+12	0-1.1.3.1 1-1.1 1-1.1.3 1-1.1.3.r 3-1.1.4 4-1.1.4.1.r 5-1.1.4.1.3.2.1 6-1.1.4.1.3.r 7-1.1.4.1.1 8-1.1.4.1.2 9-1.1.4.1 10-1.1.2.1 11-1.1.2.2 12-1 13-1.2.r 15-1.2.1.1 16-1.2 17-1.2.1 19-1.2.1.3 21-1.2.1.2 23-1.2.1.2.2.2 24-1.2.1.2.2.1 25-1.2.1.2.2
+::node	"Britain"	1.1.4.1.3.2.1	"Britain"	Britain
+::node	b	1.2.1.2.2	bomb	bomb
+::node	c	1.1.4.1.3	country	
+::node	m	1.1.4.1.1	military	military
+::node	n2	1.1.4.1.2	nucleus	nuclear
+::node	n3	1.1.4.1.3.2	name	
+::node	"United_Kingdom"	1.1.4.1.3.1	"United_Kingdom"	
+::node	c2	1.2.1.2	construct-01	construct
+::node	t	1.2.1.3	terrorist	terrorist
+::node	i	1.2.1.1	instruction	instructions
+::node	"Brian"	1.1.2.1	"Brian"	Brian
+::node	"Burnell"	1.1.2.2	"Burnell"	Burnell
+::node	f	1.1.3.1	former	Former
+::node	p2	1.1.4.1	program	program
+::node	n	1.1.2	name	
+::node	e2	1.2.1	enable-01	enable
+::node	s	1	state-01	stated
+::node	e	1.1.3	engineer-01	engineer
+::node	a	1.2.1.2.2.1	atom	atomic
+::node	w	1.1.4	work-01	worked
+::node	t	1.2.1.2.1	terrorist	
+::node	p	1.1	person	engineer
+::node	p3	1.2	possible	could
+::node	r	1.2.1.2.2.2	rudimentary	rudimentary
+::node	-	1.1.1	-	
+::edge	1.1.4.1.3.2		name	:op1	1.1.4.1.3.2.1	Britain	"Britain"
+::edge	1.1.2		name	:op1	1.1.2.1	Brian	"Brian"
+::edge	1.1.2		name	:op2	1.1.2.2	Burnell	"Burnell"
+::edge	1.1.3	engineer	engineer-01	:time	1.1.3.1	Former	former
+::edge	1.1.4	worked	work-01	:ARG1	1.1.4.1	program	program
+::edge	1.2.1.2	construct	construct-01	:ARG1	1.2.1.2.2	bomb	bomb
+::edge	1.1	engineer	person	:name	1.1.2		name
+::edge	1.1.4.1	program	program	:poss	1.1.4.1.3		country
+::edge	1.2	could	possible	:domain	1.2.1	enable	enable-01
+::edge	1.1	engineer	person	:ARG0-of	1.1.3	engineer	engineer-01
+::edge	1.2.1.2.2	bomb	bomb	:mod	1.2.1.2.2.1	atomic	atom
+::edge	1.1	engineer	person	:ARG0-of	1.1.4	worked	work-01
+::edge	1.1.4.1	program	program	:mod	1.1.4.1.1	military	military
+::edge	1.2.1.2	construct	construct-01	:ARG0	1.2.1.2.1		terrorist
+::edge	1.1.4.1	program	program	:mod	1.1.4.1.2	nuclear	nucleus
+::edge	1	stated	state-01	:ARG0	1.1	engineer	person
+::edge	1.1.4.1.3		country	:name	1.1.4.1.3.2		name
+::edge	1	stated	state-01	:ARG1	1.2	could	possible
+::edge	1.2.1.2.2	bomb	bomb	:mod	1.2.1.2.2.2	rudimentary	rudimentary
+::edge	1.1.4.1.3		country	:wiki	1.1.4.1.3.1		"United_Kingdom"
+::edge	1.2.1	enable	enable-01	:ARG1	1.2.1.2	construct	construct-01
+::edge	1.2.1	enable	enable-01	:ARG2	1.2.1.3	terrorist	terrorist
+::edge	1.2.1	enable	enable-01	:ARG0	1.2.1.1	instructions	instruction
+::edge	1.1	engineer	person	:wiki	1.1.1		-
+13	The Telegraph reported that the principle challenge would be obtaining the necessary plutonium but that several outlaw states like Iraq might possess plutonium.
+13	The Telegraph reported that the principle challenge would be obtaining the necessary plutonium but that several outlaw states like Iraq might possess plutonium .
+13	0-1.1.2.1 1-1.1.2.2 2-1 3-1.2.r 5-1.2.1.2 6-1.2.1 9-1.2.1.1 11-1.2.1.1.1.1 12-1.2.1.1.1 13-1.2 15-1.2.2.1.1.2 16-1.2.2.1.1.1 17-1.2.2.1.1 18-1.2.2.1.1.3.r 19-1.2.2.1.1.3.2.1 20-1.2.2 21-1.2.2.1 22-1.2.2.1.2
+::node	n4	1.2.2.1.1.3.2	name	
+::node	"The"	1.1.2.1	"The"	The
+::node	s	1.2.2.1.1	state	states
+::node	"Telegraph"	1.1.2.2	"Telegraph"	Telegraph
+::node	n3	1.2.1.1.1.1	need-01	necessary
+::node	o2	1.2.2.1.1.1	outlaw	outlaw
+::node	s2	1.2.2.1.1.2	several	several
+::node	c3	1.2.2.1.1.3	country	
+::node	"Iraq"	1.2.2.1.1.3.1	"Iraq"	
+::node	n2	1.1.2	name	
+::node	c2	1.2.1	challenge-01	challenge
+::node	r	1	report-01	reported
+::node	p3	1.2.2	possible	might
+::node	p2	1.2.1.1.1	plutonium	plutonium
+::node	n	1.1	newspaper	
+::node	c	1.2	contrast-01	but
+::node	"Iraq"	1.2.2.1.1.3.2.1	"Iraq"	Iraq
+::node	p	1.2.1.2	principle	principle
+::node	p4	1.2.2.1	possess-01	possess
+::node	p5	1.2.2.1.2	plutonium	plutonium
+::node	o	1.2.1.1	obtain-01	obtaining
+::node	"The_Daily_Telegraph"	1.1.1	"The_Daily_Telegraph"	
+::edge	1.2.2.1.1.3		country	:name	1.2.2.1.1.3.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	The	"The"
+::edge	1.2.2.1	possess	possess-01	:ARG0	1.2.2.1.1	states	state
+::edge	1.1.2		name	:op2	1.1.2.2	Telegraph	"Telegraph"
+::edge	1.2.1.1.1	plutonium	plutonium	:ARG1-of	1.2.1.1.1.1	necessary	need-01
+::edge	1.2.2.1.1	states	state	:mod	1.2.2.1.1.1	outlaw	outlaw
+::edge	1.2.2.1.1	states	state	:quant	1.2.2.1.1.2	several	several
+::edge	1.2.2.1.1	states	state	:example	1.2.2.1.1.3		country
+::edge	1.2.2.1.1.3		country	:wiki	1.2.2.1.1.3.1		"Iraq"
+::edge	1.1		newspaper	:name	1.1.2		name
+::edge	1.2	but	contrast-01	:ARG1	1.2.1	challenge	challenge-01
+::edge	1.2	but	contrast-01	:ARG2	1.2.2	might	possible
+::edge	1.2.1.1	obtaining	obtain-01	:ARG1	1.2.1.1.1	plutonium	plutonium
+::edge	1	reported	report-01	:ARG0	1.1		newspaper
+::edge	1	reported	report-01	:ARG1	1.2	but	contrast-01
+::edge	1.2.2.1.1.3.2		name	:op1	1.2.2.1.1.3.2.1	Iraq	"Iraq"
+::edge	1.2.1	challenge	challenge-01	:mod	1.2.1.2	principle	principle
+::edge	1.2.2	might	possible	:domain	1.2.2.1	possess	possess-01
+::edge	1.2.2.1	possess	possess-01	:ARG1	1.2.2.1.2	plutonium	plutonium
+::edge	1.2.1	challenge	challenge-01	:ARG2	1.2.1.1	obtaining	obtain-01
+::edge	1.1		newspaper	:wiki	1.1.1		"The_Daily_Telegraph"
+14	Terror organizations like al-Qaeda have tried to obtain plutonium.
+14	Terror organizations like al @-@ Qaeda have tried to obtain plutonium .
+14	1-1.1 2-1.1.2.r 3-1.1.2.2.1 5-1.1.2.2.1 7-1 9-1.2 10-1.2.2
+::node	c	1.1.2	criminal-organization	
+::node	o	1.2.1	organization	
+::node	t	1	try-01	tried
+::node	p	1.2.2	plutonium	plutonium
+::node	"Al-Qaeda"	1.1.2.1	"Al-Qaeda"	
+::node	o	1.1	organization	organizations
+::node	n	1.1.2.2	name	
+::node	o3	1.2	obtain-01	obtain
+::node	"al-Qaeda"	1.1.2.2.1	"al-Qaeda"	Qaeda
+::node	t2	1.1.1	terrorism	
+::edge	1.1	organizations	organization	:example	1.1.2		criminal-organization
+::edge	1.2	obtain	obtain-01	:ARG0	1.2.1		organization
+::edge	1.2	obtain	obtain-01	:ARG1	1.2.2	plutonium	plutonium
+::edge	1.1.2		criminal-organization	:wiki	1.1.2.1		"Al-Qaeda"
+::edge	1	tried	try-01	:ARG0	1.1	organizations	organization
+::edge	1.1.2		criminal-organization	:name	1.1.2.2		name
+::edge	1	tried	try-01	:ARG1	1.2	obtain	obtain-01
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Qaeda	"al-Qaeda"
+::edge	1.1	organizations	organization	:mod	1.1.1		terrorism
+15	Burnell was quoted as stating that the documents should never have been declassified and after the events of 11 September 2001 there is a case for removing them from public access.
+15	Burnell was quoted as stating that the documents should never have been declassified and after the events of 11 September 2001 there is a case for removing them from public access .
+15	0-1.1.2.1 2-1 3-1.2.2.1.2.3.r 3-1.2.2.2.2.r 4-1.2 5-1.2.2.r 7-1.2.2.1.2.2 8-1.2.2.1 9-1.2.2.1.2.1 9-1.2.2.1.2.1.r 9-1.2.2.1.2.3 12-1.2.2.1.2 13-1.2.2 14-1.2.2.2.2 16-1.2.2.2.2.1 17-1.2.2.2.2.1.1.r 18-1.2.2.2.2.1.1.3 19-1.2.2.2.2.1.1.2 19-1.2.2.2.2.1.1.2.r 20-1.2.2.2.2.1.1.1 24-1.2.2.2 25-1.2.2.2.1.r 26-1.2.2.2.1 27-1.2.2.2.1.1 28-1.2.2.2.1.2.r 29-1.2.2.2.1.2.1 30-1.2.2.2.1.2
+::node	11	1.2.2.2.2.1.1.3	11	11
+::node	2001	1.2.2.2.2.1.1.1	2001	2001
+::node	9	1.2.2.2.2.1.1.2	9	September
+::node	-	1.2.2.1.2.1	-	never
+::node	d3	1.2.2.1.2.2	document	documents
+::node	e	1.2.2.1.2.3	ever	never
+::node	r	1.2.2.1	recommend-01	should
+::node	d3	1.2.2.2.1.1	document	them
+::node	c	1.2.2.2	case	case
+::node	d2	1.2.2.1.2	declassify-01	declassified
+::node	r2	1.2.2.2.1	remove-01	removing
+::node	a3	1.2.2.2.1.2	access-01	access
+::node	a2	1.2.2.2.2	after	after
+::node	e2	1.2.2.2.2.1	event	events
+::node	"Burnell"	1.1.2.1	"Burnell"	Burnell
+::node	p	1.2.2.1.1	person	
+::node	p2	1.2.2.2.1.2.1	public	public
+::node	n	1.1.2	name	
+::node	p	1.2.1	person	
+::node	q	1	quote-01	quoted
+::node	a	1.2.2	and	and
+::node	p	1.1	person	
+::node	s	1.2	state-01	stating
+::node	d4	1.2.2.2.2.1.1	date-entity	
+::node	-	1.1.1	-	
+::edge	1.2.2.2.2.1.1		date-entity	:day	1.2.2.2.2.1.1.3	11	11
+::edge	1.1.2		name	:op1	1.1.2.1	Burnell	"Burnell"
+::edge	1.2.2.1	should	recommend-01	:ARG0	1.2.2.1.1		person
+::edge	1.2.2.2.2.1.1		date-entity	:year	1.2.2.2.2.1.1.1	2001	2001
+::edge	1.2.2.2.2.1.1		date-entity	:month	1.2.2.2.2.1.1.2	September	9
+::edge	1.2.2.2.1.2	access	access-01	:ARG0	1.2.2.2.1.2.1	public	public
+::edge	1.2.2.1.2	declassified	declassify-01	:polarity	1.2.2.1.2.1	never	-
+::edge	1.2.2.1.2	declassified	declassify-01	:ARG1	1.2.2.1.2.2	documents	document
+::edge	1.2.2.1.2	declassified	declassify-01	:time	1.2.2.1.2.3	never	ever
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	stating	state-01	:ARG0	1.2.1		person
+::edge	1.2	stating	state-01	:ARG1	1.2.2	and	and
+::edge	1	quoted	quote-01	:ARG1	1.1		person
+::edge	1	quoted	quote-01	:ARG2	1.2	stating	state-01
+::edge	1.2.2	and	and	:op1	1.2.2.1	should	recommend-01
+::edge	1.2.2.2.1	removing	remove-01	:ARG1	1.2.2.2.1.1	them	document
+::edge	1.2.2.2.2.1	events	event	:time	1.2.2.2.2.1.1		date-entity
+::edge	1.2.2	and	and	:op2	1.2.2.2	case	case
+::edge	1.2.2.1	should	recommend-01	:ARG1	1.2.2.1.2	declassified	declassify-01
+::edge	1.2.2.2	case	case	:purpose	1.2.2.2.1	removing	remove-01
+::edge	1.2.2.2.1	removing	remove-01	:ARG2	1.2.2.2.1.2	access	access-01
+::edge	1.2.2.2	case	case	:time	1.2.2.2.2	after	after
+::edge	1.2.2.2.2	after	after	:op1	1.2.2.2.2.1	events	event
+::edge	1.1		person	:wiki	1.1.1		-
+16	The Telegraph stated that opposition Conservative Party defense spokesman Bernard Jenkin immediately called for explanations from the Labour government calling the documents a monstrous free gift to terrorists.
+16	The Telegraph stated that opposition Conservative Party defense spokesman Bernard Jenkin immediately called for explanations from the Labour government calling the documents a monstrous free gift to terrorists .
+16	1-1.1.2.1 2-1 3-1.2.r 4-1.2.1.4.1 4-1.2.1.4.1.3 4-1.2.1.4.1.3.r 5-1.2.1.4.1.2.1 6-1.2.1.4.1.2.2 7-1.2.1.4.2.1 8-1.2.1.4.2 9-1.2.1.2.1 10-1.2.1.2.2 11-1.2.3 12-1.2 12-1.2.1.2.r 13-1.2.2.r 14-1.2.2 15-1.2.2.1.r 17-1.2.2.1.2.2.1 18-1.2.2.1 18-1.2.2.1.1 18-1.2.2.1.1.r 19-1.2.1.3 21-1.2.1.3.1 23-1.2.1.3.2.3 24-1.2.1.3.2.2 25-1.2.1.3.2 25-1.2.1.3.2.1 25-1.2.1.3.2.1.r 26-1.2.1.3.2.1.1.r 27-1.2.1.3.2.1.1
+::node	g3	1.2.1.3.2.1	gift-01	gift
+::node	f	1.2.1.3.2.2	free	free
+::node	m	1.2.1.3.2.3	monstrous	monstrous
+::node	o	1.2.1.4.1.3	oppose-01	opposition
+::node	"Labour_Party_BLANKETPAIR1"	1.2.2.1.2.1	"Labour_Party_BLANKETPAIR1"	
+::node	"Conservative_Party_BLANKETPAIR2"	1.2.1.4.1.1	"Conservative_Party_BLANKETPAIR2"	
+::node	n2	1.2.1.4.1.2	name	
+::node	d	1.2.1.4.2.1	defense	defense
+::node	t	1.2.1.3.2	thing	gift
+::node	s2	1.2.1.4.2	spokesman	spokesman
+::node	"Jenkin"	1.2.1.2.2	"Jenkin"	Jenkin
+::node	d2	1.2.1.3.1	document	documents
+::node	n5	1.2.2.1.2.2	name	
+::node	p	1.2.1.4.1	political-party	opposition
+::node	"Labour"	1.2.2.1.2.2.1	"Labour"	Labour
+::node	t2	1.2.1.3.2.1.1	terrorist	terrorists
+::node	h	1.2.1.4	have-org-role-91	
+::node	n4	1.2.1.2	name	
+::node	g	1.2.2.1	government-organization	government
+::node	c2	1.2.1.3	call-01	calling
+::node	p4	1.2.2.1.2	political-party	
+::node	"Bernard_Jenkin"	1.2.1.1	"Bernard_Jenkin"	
+::node	"Telegraph"	1.1.2.1	"Telegraph"	Telegraph
+::node	g2	1.2.2.1.1	govern-01	government
+::node	n	1.1.2	name	
+::node	p2	1.2.1	person	
+::node	s	1	state-01	stated
+::node	e	1.2.2	explain-01	explanations
+::node	"Bernard"	1.2.1.2.1	"Bernard"	Bernard
+::node	i	1.2.3	immediate	immediately
+::node	p3	1.1	publication	
+::node	c	1.2	call-03	called
+::node	"Party"	1.2.1.4.1.2.2	"Party"	Party
+::node	"The_Daily_Telegraph"	1.1.1	"The_Daily_Telegraph"	
+::node	"Conservative"	1.2.1.4.1.2.1	"Conservative"	Conservative
+::edge	1.2.1.3.2	gift	thing	:ARG1-of	1.2.1.3.2.1	gift	gift-01
+::edge	1.2.1.3.2	gift	thing	:mod	1.2.1.3.2.2	free	free
+::edge	1.2.1.3.2	gift	thing	:mod	1.2.1.3.2.3	monstrous	monstrous
+::edge	1.2.1.4.1	opposition	political-party	:ARG0-of	1.2.1.4.1.3	opposition	oppose-01
+::edge	1.2.2.1.2		political-party	:wiki	1.2.2.1.2.1		"Labour_Party_BLANKETPAIR1"
+::edge	1.2.1.4.1	opposition	political-party	:wiki	1.2.1.4.1.1		"Conservative_Party_BLANKETPAIR2"
+::edge	1.2.1.4.1	opposition	political-party	:name	1.2.1.4.1.2		name
+::edge	1.2.1.4.2	spokesman	spokesman	:topic	1.2.1.4.2.1	defense	defense
+::edge	1.2.1.3	calling	call-01	:ARG2	1.2.1.3.2	gift	thing
+::edge	1.2.1.4		have-org-role-91	:ARG2	1.2.1.4.2	spokesman	spokesman
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	Jenkin	"Jenkin"
+::edge	1.2.1.3	calling	call-01	:ARG1	1.2.1.3.1	documents	document
+::edge	1.2.2.1.2		political-party	:name	1.2.2.1.2.2		name
+::edge	1.2.1.4		have-org-role-91	:ARG1	1.2.1.4.1	opposition	political-party
+::edge	1.2.2.1.2.2		name	:op1	1.2.2.1.2.2.1	Labour	"Labour"
+::edge	1.2.1.3.2.1	gift	gift-01	:ARG2	1.2.1.3.2.1.1	terrorists	terrorist
+::edge	1.2.1		person	:ARG0-of	1.2.1.4		have-org-role-91
+::edge	1.2.1		person	:name	1.2.1.2		name
+::edge	1.2.2	explanations	explain-01	:ARG0	1.2.2.1	government	government-organization
+::edge	1.2.1		person	:ARG0-of	1.2.1.3	calling	call-01
+::edge	1.2.2.1	government	government-organization	:mod	1.2.2.1.2		political-party
+::edge	1.2.1		person	:wiki	1.2.1.1		"Bernard_Jenkin"
+::edge	1.1.2		name	:op1	1.1.2.1	Telegraph	"Telegraph"
+::edge	1.2.2.1	government	government-organization	:ARG0-of	1.2.2.1.1	government	govern-01
+::edge	1.1		publication	:name	1.1.2		name
+::edge	1.2	called	call-03	:ARG0	1.2.1		person
+::edge	1.2	called	call-03	:ARG1	1.2.2	explanations	explain-01
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Bernard	"Bernard"
+::edge	1.2	called	call-03	:time	1.2.3	immediately	immediate
+::edge	1	stated	state-01	:ARG0	1.1		publication
+::edge	1	stated	state-01	:ARG1	1.2	called	call-03
+::edge	1.2.1.4.1.2		name	:op2	1.2.1.4.1.2.2	Party	"Party"
+::edge	1.1		publication	:wiki	1.1.1		"The_Daily_Telegraph"
+::edge	1.2.1.4.1.2		name	:op1	1.2.1.4.1.2.1	Conservative	"Conservative"

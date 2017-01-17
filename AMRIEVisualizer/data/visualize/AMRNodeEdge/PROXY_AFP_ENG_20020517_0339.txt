@@ -1,0 +1,824 @@
+1	2002-05-17
+1	2002 @-@ 05 @-@ 17
+1	0-1.1 2-1.2 4-1.3
+::node	d2	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	5	1.2	5	05
+::node	17	1.3	17	17
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	05	5
+::edge	1		date-entity	:day	1.3	17	17
+2	Myanmar (MM); Thailand (TH); Lao People's Democratic Republic (LA)
+2	Myanmar ( MM ) ; Thailand ( TH ) ; Lao People 's Democratic Republic ( LA )
+2	0-1.1.2.1 5-1.2.2.1 10-1.3.2.1 11-1.3.2.2 12-1.3.2.2 13-1.3.2.3 14-1.3.2.4 16-1.3.2.1 16-1.3.2.2 16-1.3.2.3 16-1.3.2.4
+::node	"Myanmar"	1.1.2.1	"Myanmar"	Myanmar
+::node	"Lao"	1.3.2.1	"Lao"	LA
+::node	"People's"	1.3.2.2	"People's"	LA
+::node	"Democratic"	1.3.2.3	"Democratic"	LA
+::node	n7	1.1.2	name	
+::node	"Thailand"	1.2.1	"Thailand"	
+::node	a	1	and	
+::node	n8	1.2.2	name	
+::node	"Laos"	1.3.1	"Laos"	
+::node	n9	1.3.2	name	
+::node	c3	1.1	country	
+::node	"Republic"	1.3.2.4	"Republic"	LA
+::node	c4	1.2	country	
+::node	c5	1.3	country	
+::node	"Thailand"	1.2.2.1	"Thailand"	Thailand
+::node	"Burma"	1.1.1	"Burma"	
+::edge	1.1.2		name	:op1	1.1.2.1	Myanmar	"Myanmar"
+::edge	1.3.2		name	:op1	1.3.2.1	LA	"Lao"
+::edge	1.3.2		name	:op2	1.3.2.2	LA	"People's"
+::edge	1.3.2		name	:op3	1.3.2.3	LA	"Democratic"
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2		country	:wiki	1.2.1		"Thailand"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3		country	:wiki	1.3.1		"Laos"
+::edge	1.3		country	:name	1.3.2		name
+::edge	1		and	:op1	1.1		country
+::edge	1.3.2		name	:op4	1.3.2.4	LA	"Republic"
+::edge	1		and	:op2	1.2		country
+::edge	1		and	:op3	1.3		country
+::edge	1.2.2		name	:op1	1.2.2.1	Thailand	"Thailand"
+::edge	1.1		country	:wiki	1.1.1		"Burma"
+3	International; narcotics; politics
+3	International ; narcotics ; politics
+3	0-1.1 2-1.2 4-1.3
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	n	1.2	narcotic	narcotics
+::node	p	1.3	politics	politics
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	narcotics	narcotic
+::edge	1		and	:op3	1.3	politics	politics
+4	Myanmar is the world's largest producer of illegal opium but has limited financial and technical resources for ending the drug trade.
+4	Myanmar is the world 's largest producer of illegal opium but has limited financial and technical resources for ending the drug trade .
+4	0-1.1.1.2.1 3-1.1.4 4-1.1.4.r 5-1.1.3 5-1.1.3.1 5-1.1.3.1.r 6-1.1 7-1.1.2.r 8-1.1.2.1 8-1.1.2.1.1 8-1.1.2.1.1.r 9-1.1.2 10-1 11-1.2 12-1.2.2.3 13-1.2.2.1.1 14-1.2.2 15-1.2.2.2.1 16-1.2.2.1 16-1.2.2.2 17-1.2.2.r 18-1.2.2.4 20-1.2.2.4.2.1 21-1.2.2.4.2
+::node	"Burma"	1.1.1.1	"Burma"	
+::node	n2	1.1.1.2	name	
+::node	l	1.1.2.1	law	illegal
+::node	f	1.2.2.1.1	finance	financial
+::node	m	1.1.3.1	most	largest
+::node	-	1.1.2.1.1	-	illegal
+::node	o	1.1.2	opium	opium
+::node	c3	1.2.1	country	
+::node	c2	1	contrast-01	but
+::node	l2	1.1.3	large	largest
+::node	a	1.2.2	and	and
+::node	w	1.1.4	world	world
+::node	d	1.2.2.4.2.1	drug	drug
+::node	p	1.1	produce-01	producer
+::node	h	1.2	have-03	has
+::node	l3	1.2.2.3	limit-01	limited
+::node	"Myanmar"	1.1.1.2.1	"Myanmar"	Myanmar
+::node	e	1.2.2.4	end-01	ending
+::node	r	1.2.2.1	resource	resources
+::node	r2	1.2.2.2	resource	resources
+::node	t	1.2.2.2.1	technical	technical
+::node	c3	1.2.2.4.1	country	
+::node	c3	1.1.1	country	
+::node	t2	1.2.2.4.2	trade-01	trade
+::edge	1.1.1		country	:wiki	1.1.1.1		"Burma"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2	opium	opium	:mod	1.1.2.1	illegal	law
+::edge	1.2.2.1	resources	resource	:mod	1.2.2.1.1	financial	finance
+::edge	1.1.3	largest	large	:degree	1.1.3.1	largest	most
+::edge	1.1.2.1	illegal	law	:polarity	1.1.2.1.1	illegal	-
+::edge	1.1	producer	produce-01	:ARG1	1.1.2	opium	opium
+::edge	1.2	has	have-03	:ARG0	1.2.1		country
+::edge	1.1	producer	produce-01	:mod	1.1.3	largest	large
+::edge	1.2	has	have-03	:ARG1	1.2.2	and	and
+::edge	1.1	producer	produce-01	:location	1.1.4	world	world
+::edge	1.2.2.4.2	trade	trade-01	:ARG1	1.2.2.4.2.1	drug	drug
+::edge	1	but	contrast-01	:ARG1	1.1	producer	produce-01
+::edge	1	but	contrast-01	:ARG2	1.2	has	have-03
+::edge	1.2.2	and	and	:ARG1-of	1.2.2.3	limited	limit-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Myanmar	"Myanmar"
+::edge	1.2.2	and	and	:purpose	1.2.2.4	ending	end-01
+::edge	1.2.2	and	and	:op1	1.2.2.1	resources	resource
+::edge	1.2.2	and	and	:op2	1.2.2.2	resources	resource
+::edge	1.2.2.2	resources	resource	:mod	1.2.2.2.1	technical	technical
+::edge	1.2.2.4	ending	end-01	:ARG0	1.2.2.4.1		country
+::edge	1.1	producer	produce-01	:ARG0	1.1.1		country
+::edge	1.2.2.4	ending	end-01	:ARG1	1.2.2.4.2	trade	trade-01
+5	Myanmar has asked the Association of Southeast Asian Nations and the international community to assist in these efforts.
+5	Myanmar has asked the Association of Southeast Asian Nations and the international community to assist in these efforts .
+5	0-1.1.2.1 2-1 4-1.3.1.2.1 5-1.3.1.2.2 6-1.3.1.2.3 7-1.3.1.2.4 8-1.3.1.2.5 9-1.3 11-1.3.2.1 12-1.3.2 14-1.2 15-1.2.3.r 16-1.2.3.1 17-1.2.3
+::node	"Myanmar"	1.1.2.1	"Myanmar"	Myanmar
+::node	"Association_of_Southeast_Asian_Nations"	1.3.1.1	"Association_of_Southeast_Asian_Nations"	
+::node	n4	1.3.1.2	name	
+::node	i	1.3.2.1	international	international
+::node	n3	1.1.2	name	
+::node	a2	1.2.1	and	
+::node	"Nations"	1.3.1.2.5	"Nations"	Nations
+::node	a	1	ask-02	asked
+::node	c2	1.2.2	country	
+::node	o2	1.3.1	organization	
+::node	e	1.2.3	effort	efforts
+::node	c3	1.3.2	community	community
+::node	c2	1.1	country	
+::node	"Association"	1.3.1.2.1	"Association"	Association
+::node	a3	1.2	assist-01	assist
+::node	"of"	1.3.1.2.2	"of"	of
+::node	a2	1.3	and	and
+::node	"Southeast"	1.3.1.2.3	"Southeast"	Southeast
+::node	"Asian"	1.3.1.2.4	"Asian"	Asian
+::node	t	1.2.3.1	this	these
+::node	"Burma"	1.1.1	"Burma"	
+::edge	1.1.2		name	:op1	1.1.2.1	Myanmar	"Myanmar"
+::edge	1.3.1		organization	:wiki	1.3.1.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.3.1		organization	:name	1.3.1.2		name
+::edge	1.3.2	community	community	:mod	1.3.2.1	international	international
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	assist	assist-01	:ARG0	1.2.1		and
+::edge	1.3.1.2		name	:op5	1.3.1.2.5	Nations	"Nations"
+::edge	1.2	assist	assist-01	:ARG1	1.2.2		country
+::edge	1.3	and	and	:op1	1.3.1		organization
+::edge	1.2	assist	assist-01	:ARG2	1.2.3	efforts	effort
+::edge	1.3	and	and	:op2	1.3.2	community	community
+::edge	1	asked	ask-02	:ARG0	1.1		country
+::edge	1.3.1.2		name	:op1	1.3.1.2.1	Association	"Association"
+::edge	1	asked	ask-02	:ARG1	1.2	assist	assist-01
+::edge	1.3.1.2		name	:op2	1.3.1.2.2	of	"of"
+::edge	1	asked	ask-02	:ARG2	1.3	and	and
+::edge	1.3.1.2		name	:op3	1.3.1.2.3	Southeast	"Southeast"
+::edge	1.3.1.2		name	:op4	1.3.1.2.4	Asian	"Asian"
+::edge	1.2.3	efforts	effort	:mod	1.2.3.1	these	this
+::edge	1.1		country	:wiki	1.1.1		"Burma"
+6	Myanmar proposed a ministerial meeting with Thailand and Laos to discuss effective ways to end drug trafficking.
+6	Myanmar proposed a ministerial meeting with Thailand and Laos to discuss effective ways to end drug trafficking .
+6	0-1.1.2.1 1-1 3-1.2.3 4-1.2 5-1.2.2.r 6-1.2.2.1.2.1 7-1.2.2 8-1.2.2.2.2.1 10-1.2.4 11-1.2.4.2.1 12-1.2.4.2 14-1.2.4.2.2 15-1.2.4.2.2.1.1 16-1.2.4.2.2.1
+::node	"Thailand"	1.2.2.1.2.1	"Thailand"	Thailand
+::node	d2	1.2.4.2.2.1.1	drug	drug
+::node	c	1.2.4.1	country	
+::node	w	1.2.4.2	way	ways
+::node	c2	1.2.2.1	country	
+::node	c3	1.2.2.2	country	
+::node	n2	1.2.2.1.2	name	
+::node	"Laos"	1.2.2.2.1	"Laos"	
+::node	n3	1.2.2.2.2	name	
+::node	"Laos"	1.2.2.2.2.1	"Laos"	Laos
+::node	"Myanmar"	1.1.2.1	"Myanmar"	Myanmar
+::node	"Thailand"	1.2.2.1.1	"Thailand"	
+::node	t	1.2.4.2.2.1	traffic-01	trafficking
+::node	a	1.2.4.3	and	
+::node	n	1.1.2	name	
+::node	c	1.2.1	country	
+::node	p	1	propose-01	proposed
+::node	a	1.2.2	and	and
+::node	m2	1.2.3	minister	ministerial
+::node	d	1.2.4	discuss-01	discuss
+::node	c	1.1	country	
+::node	m	1.2	meet-03	meeting
+::node	e	1.2.4.2.1	effective	effective
+::node	e2	1.2.4.2.2	end-01	end
+::node	"Burma"	1.1.1	"Burma"	
+::edge	1.1.2		name	:op1	1.1.2.1	Myanmar	"Myanmar"
+::edge	1.2.2.1		country	:wiki	1.2.2.1.1		"Thailand"
+::edge	1.2.4.2.2	end	end-01	:ARG1	1.2.4.2.2.1	trafficking	traffic-01
+::edge	1.2.4	discuss	discuss-01	:ARG2	1.2.4.3		and
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	Thailand	"Thailand"
+::edge	1.2.4.2.2.1	trafficking	traffic-01	:ARG1	1.2.4.2.2.1.1	drug	drug
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	meeting	meet-03	:ARG0	1.2.1		country
+::edge	1.2	meeting	meet-03	:ARG1	1.2.2	and	and
+::edge	1.2	meeting	meet-03	:mod	1.2.3	ministerial	minister
+::edge	1.2	meeting	meet-03	:purpose	1.2.4	discuss	discuss-01
+::edge	1	proposed	propose-01	:ARG0	1.1		country
+::edge	1	proposed	propose-01	:ARG1	1.2	meeting	meet-03
+::edge	1.2.4	discuss	discuss-01	:ARG0	1.2.4.1		country
+::edge	1.2.4	discuss	discuss-01	:ARG1	1.2.4.2	ways	way
+::edge	1.2.2	and	and	:op1	1.2.2.1		country
+::edge	1.2.4.2	ways	way	:mod	1.2.4.2.1	effective	effective
+::edge	1.2.2	and	and	:op2	1.2.2.2		country
+::edge	1.2.4.2	ways	way	:ARG2-of	1.2.4.2.2	end	end-01
+::edge	1.2.2.1		country	:name	1.2.2.1.2		name
+::edge	1.2.2.2		country	:wiki	1.2.2.2.1		"Laos"
+::edge	1.2.2.2		country	:name	1.2.2.2.2		name
+::edge	1.2.2.2.2		name	:op1	1.2.2.2.2.1	Laos	"Laos"
+::edge	1.1		country	:wiki	1.1.1		"Burma"
+7	Myanmar proposed talks to be held in June 2002 or July 2002.
+7	Myanmar proposed talks to be held in June 2002 or July 2002 .
+7	0-1.1.2.1 1-1 2-1.2.1 5-1.2 6-1.2.2.r 7-1.2.2.1.2 7-1.2.2.1.2.r 8-1.2.2.1.1 8-1.2.2.2.1 9-1.2.2 10-1.2.2.2.2 10-1.2.2.2.2.r 11-1.2.2.1.1 11-1.2.2.2.1
+::node	"Myanmar"	1.1.2.1	"Myanmar"	Myanmar
+::node	2002	1.2.2.1.1	2002	2002
+::node	n2	1.1.2	name	
+::node	t	1.2.1	talk-01	talks
+::node	p	1	propose-01	proposed
+::node	o	1.2.2	or	or
+::node	c2	1.1	country	
+::node	h	1.2	hold-04	held
+::node	d3	1.2.2.1	date-entity	
+::node	d4	1.2.2.2	date-entity	
+::node	6	1.2.2.1.2	6	June
+::node	2002	1.2.2.2.1	2002	2002
+::node	7	1.2.2.2.2	7	July
+::node	"Burma"	1.1.1	"Burma"	
+::edge	1.1.2		name	:op1	1.1.2.1	Myanmar	"Myanmar"
+::edge	1.2.2.1		date-entity	:year	1.2.2.1.1	2002	2002
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	held	hold-04	:ARG1	1.2.1	talks	talk-01
+::edge	1.2	held	hold-04	:time	1.2.2	or	or
+::edge	1	proposed	propose-01	:ARG0	1.1		country
+::edge	1	proposed	propose-01	:ARG1	1.2	held	hold-04
+::edge	1.2.2	or	or	:op1	1.2.2.1		date-entity
+::edge	1.2.2	or	or	:op2	1.2.2.2		date-entity
+::edge	1.2.2.1		date-entity	:month	1.2.2.1.2	June	6
+::edge	1.2.2.2		date-entity	:year	1.2.2.2.1	2002	2002
+::edge	1.2.2.2		date-entity	:month	1.2.2.2.2	July	7
+::edge	1.1		country	:wiki	1.1.1		"Burma"
+8	According to the US State Department anti-narcotics report published earlier in 2002 --
+8	According to the US State Department anti @-@ narcotics report published earlier in 2002 --
+8	0-1 1-1 3-1.1.1.1.3.2.1 4-1.1.1.1.2.1 5-1.1.1.1.2.2 6-1.1.2 8-1.1.2.1 9-1.1 10-1.1.1 11-1.1.1.2 11-1.1.1.2.2 11-1.1.1.2.2.r 12-1.1.1.2.1.r 13-1.1.1.2.1.1
+::node	"State"	1.1.1.1.2.1	"State"	State
+::node	g	1.1.1.1	government-organization	
+::node	"Department"	1.1.1.1.2.2	"Department"	Department
+::node	"United_States"	1.1.1.1.3.1	"United_States"	
+::node	n3	1.1.1.1.3.2	name	
+::node	e	1.1.1.2	early	earlier
+::node	n	1.1.2.1	narcotic	narcotics
+::node	2002	1.1.1.2.1.1	2002	2002
+::node	o	1.1.2	oppose-01	anti
+::node	s	1	say-01	to
+::node	r	1.1	report	report
+::node	c	1.1.1.1.3	country	
+::node	m	1.1.1.2.2	more	earlier
+::node	n2	1.1.1.1.2	name	
+::node	d2	1.1.1.2.1	date-entity	
+::node	"United_States_Department_of_State"	1.1.1.1.1	"United_States_Department_of_State"	
+::node	"US"	1.1.1.1.3.2.1	"US"	US
+::node	p	1.1.1	publish-01	published
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	State	"State"
+::edge	1.1.1	published	publish-01	:ARG0	1.1.1.1		government-organization
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	Department	"Department"
+::edge	1.1.1.1.3		country	:wiki	1.1.1.1.3.1		"United_States"
+::edge	1.1.1.1.3		country	:name	1.1.1.1.3.2		name
+::edge	1.1.1	published	publish-01	:time	1.1.1.2	earlier	early
+::edge	1.1.2	anti	oppose-01	:ARG1	1.1.2.1	narcotics	narcotic
+::edge	1.1.1.2.1		date-entity	:year	1.1.1.2.1.1	2002	2002
+::edge	1.1	report	report	:topic	1.1.2	anti	oppose-01
+::edge	1	to	say-01	:ARG0	1.1	report	report
+::edge	1.1.1.1		government-organization	:mod	1.1.1.1.3		country
+::edge	1.1.1.2	earlier	early	:degree	1.1.1.2.2	earlier	more
+::edge	1.1.1.1		government-organization	:name	1.1.1.1.2		name
+::edge	1.1.1.2	earlier	early	:op1	1.1.1.2.1		date-entity
+::edge	1.1.1.1		government-organization	:wiki	1.1.1.1.1		"United_States_Department_of_State"
+::edge	1.1.1.1.3.2		name	:op1	1.1.1.1.3.2.1	US	"US"
+::edge	1.1	report	report	:ARG1-of	1.1.1	published	publish-01
+9	Following the destruction of poppy fields in Afghanistan, Myanmar has become the world's largest producer of illegal opium.
+9	Following the destruction of poppy fields in Afghanistan , Myanmar has become the world 's largest producer of illegal opium .
+9	0-1 2-1.2 3-1.2.1.r 4-1.2.1.1 5-1.2.1 6-1.2.1.2.r 7-1.2.1.2.2.1 9-1.1.1.2.1 11-1.1 13-1.1.2.1.3 14-1.1.2.1.3.r 15-1.1.2.1.2 15-1.1.2.1.2.1 15-1.1.2.1.2.1.r 16-1.1.2 16-1.1.2.1 16-1.1.2.1.r 17-1.1.2.1.1.r 18-1.1.2.1.1.1 18-1.1.2.1.1.1.1 18-1.1.2.1.1.1.1.r 19-1.1.2.1.1
+::node	-	1.1.2.1.1.1.1	-	illegal
+::node	"Burma"	1.1.1.1	"Burma"	
+::node	n3	1.1.1.2	name	
+::node	p	1.1.2.1	produce-01	producer
+::node	m	1.1.2.1.2.1	most	largest
+::node	l	1.1.2.1.1.1	law	illegal
+::node	l2	1.1.2.1.2	large	largest
+::node	o	1.1.2.1.1	opium	opium
+::node	n4	1.2.1.2.2	name	
+::node	t	1.1.2	thing	producer
+::node	f2	1.2.1	field	fields
+::node	f	1	follow-01	Following
+::node	"Afghanistan"	1.2.1.2.2.1	"Afghanistan"	Afghanistan
+::node	"Afghanistan"	1.2.1.2.1	"Afghanistan"	
+::node	b	1.1	become-01	become
+::node	w	1.1.2.1.3	world	world
+::node	d	1.2	destroy-01	destruction
+::node	"Myanmar"	1.1.1.2.1	"Myanmar"	Myanmar
+::node	c4	1.2.1.2	country	
+::node	p2	1.2.1.1	poppy	poppy
+::node	c3	1.1.1	country	
+::edge	1.1.2.1.1.1	illegal	law	:polarity	1.1.2.1.1.1.1	illegal	-
+::edge	1.1.1		country	:wiki	1.1.1.1		"Burma"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2	producer	thing	:ARG0-of	1.1.2.1	producer	produce-01
+::edge	1.1.2.1.2	largest	large	:degree	1.1.2.1.2.1	largest	most
+::edge	1.1.2.1.1	opium	opium	:mod	1.1.2.1.1.1	illegal	law
+::edge	1.1.2.1	producer	produce-01	:mod	1.1.2.1.2	largest	large
+::edge	1.1.2.1	producer	produce-01	:ARG1	1.1.2.1.1	opium	opium
+::edge	1.2.1.2		country	:name	1.2.1.2.2		name
+::edge	1.1	become	become-01	:ARG2	1.1.2	producer	thing
+::edge	1.2	destruction	destroy-01	:ARG1	1.2.1	fields	field
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	Afghanistan	"Afghanistan"
+::edge	1.2.1.2		country	:wiki	1.2.1.2.1		"Afghanistan"
+::edge	1	Following	follow-01	:ARG1	1.1	become	become-01
+::edge	1.1.2.1	producer	produce-01	:location	1.1.2.1.3	world	world
+::edge	1	Following	follow-01	:ARG2	1.2	destruction	destroy-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Myanmar	"Myanmar"
+::edge	1.2.1	fields	field	:location	1.2.1.2		country
+::edge	1.2.1	fields	field	:consist-of	1.2.1.1	poppy	poppy
+::edge	1.1	become	become-01	:ARG1	1.1.1		country
+10	Myanmar is the primary source of amphetamine-type stimulants in Asia.
+10	Myanmar is the primary source of amphetamine @-@ type stimulants in Asia .
+10	0-1.2.1 1-1.3 3-1.3.2 4-1.3 6-1.3.1.1 8-1.3.1.1.1 9-1.3.1 11-1.3.3.2.1
+::node	a	1.3.1.1	amphetamine	amphetamine
+::node	"Asia"	1.3.3.1	"Asia"	
+::node	t	1.3.1.1.1	type	type
+::node	n3	1.3.3.2	name	
+::node	"Myanmar"	1.2.1	"Myanmar"	Myanmar
+::node	c4	1	country	
+::node	s	1.3.1	stimulant	stimulants
+::node	p	1.3.2	primary	primary
+::node	"Asia"	1.3.3.2.1	"Asia"	Asia
+::node	c3	1.3.3	continent	
+::node	"Burma"	1.1	"Burma"	
+::node	n4	1.2	name	
+::node	b	1.3	be-from-91	source
+::edge	1.2		name	:op1	1.2.1	Myanmar	"Myanmar"
+::edge	1.3	source	be-from-91	:ARG1	1.3.1	stimulants	stimulant
+::edge	1.3	source	be-from-91	:mod	1.3.2	primary	primary
+::edge	1.3.3.2		name	:op1	1.3.3.2.1	Asia	"Asia"
+::edge	1.3	source	be-from-91	:location	1.3.3		continent
+::edge	1		country	:wiki	1.1		"Burma"
+::edge	1		country	:name	1.2		name
+::edge	1		country	:ARG2-of	1.3	source	be-from-91
+::edge	1.3.1	stimulants	stimulant	:consist-of	1.3.1.1	amphetamine	amphetamine
+::edge	1.3.3		continent	:wiki	1.3.3.1		"Asia"
+::edge	1.3.1.1	amphetamine	amphetamine	:mod	1.3.1.1.1	type	type
+::edge	1.3.3		continent	:name	1.3.3.2		name
+11	Director of Myanmar's International Relations Department Colonel sit Aye addressed reporters at a two-day meeting of senior officials from the Association of Southeast Asian Nations (ASEAN).
+11	Director of Myanmar 's International Relations Department Colonel sit Aye addressed reporters at a two @-@ day meeting of senior officials from the Association of Southeast Asian Nations ( ASEAN ) .
+11	0-1.1.4.2 1-1.1.4 2-1.1.4.1.3.2.1 3-1.1.4.1.3.r 4-1.1.4.1.2.1 5-1.1.4.1.2.2 6-1.1.4.1.2.3 7-1.1.3.1 8-1.1.2.1 9-1.1.2.2 10-1 11-1.2 11-1.2.1 11-1.2.1.r 12-1.3.r 14-1.3.2.1 16-1.3.2.2 17-1.3 18-1.3.1.r 19-1.3.1.1.2.1 20-1.3.1.1.2 23-1.3.1.1.1.2.1 24-1.3.1.1.1.2.2 25-1.3.1.1.1.2.3 26-1.3.1.1.1.2.4 27-1.3.1.1.1.2.5
+::node	"Myanmar"	1.1.4.1.3.2.1	"Myanmar"	Myanmar
+::node	h3	1.3.1.1	have-org-role-91	
+::node	2	1.3.2.1	2	two
+::node	d3	1.3.2.2	day	day
+::node	o5	1.3.1.1.1	organization	
+::node	c3	1.1.4.1.3	country	
+::node	"Foreign_minister"	1.1.4.1.1	"Foreign_minister"	
+::node	n6	1.1.4.1.2	name	
+::node	"Department"	1.1.4.1.2.3	"Department"	Department
+::node	n7	1.1.4.1.3.2	name	
+::node	"International"	1.1.4.1.2.1	"International"	International
+::node	"Relations"	1.1.4.1.2.2	"Relations"	Relations
+::node	"Burma"	1.1.4.1.3.1	"Burma"	
+::node	"Asian"	1.3.1.1.1.2.4	"Asian"	Asian
+::node	"Southeast"	1.3.1.1.1.2.3	"Southeast"	Southeast
+::node	"Sit"	1.1.2.1	"Sit"	sit
+::node	"Nations"	1.3.1.1.1.2.5	"Nations"	Nations
+::node	"Aye"	1.1.2.2	"Aye"	Aye
+::node	c	1.1.3.1	colonel	Colonel
+::node	g	1.1.4.1	government-organization	
+::node	d2	1.1.4.2	director	Director
+::node	n8	1.3.1.1.1.2	name	
+::node	s	1.3.1.1.2.1	senior	senior
+::node	"Association_of_Southeast_Asian_Nations"	1.3.1.1.1.1	"Association_of_Southeast_Asian_Nations"	
+::node	"of"	1.3.1.1.1.2.2	"of"	of
+::node	"Association"	1.3.1.1.1.2.1	"Association"	Association
+::node	n5	1.1.2	name	
+::node	r	1.2.1	report-01	reporters
+::node	a	1	address-01	addressed
+::node	h	1.1.3	have-org-role-91	
+::node	p3	1.3.1	person	
+::node	h2	1.1.4	have-org-role-91	of
+::node	t2	1.3.2	temporal-quantity	
+::node	p2	1.1	person	
+::node	o	1.3.1.1.2	official	officials
+::node	p	1.2	person	reporters
+::node	m	1.3	meet-03	meeting
+::node	-	1.1.1	-	
+::edge	1.1.4.1.3.2		name	:op1	1.1.4.1.3.2.1	Myanmar	"Myanmar"
+::edge	1.3.1		person	:ARG0-of	1.3.1.1		have-org-role-91
+::edge	1.3.2		temporal-quantity	:quant	1.3.2.1	two	2
+::edge	1.3.2		temporal-quantity	:unit	1.3.2.2	day	day
+::edge	1.3.1.1		have-org-role-91	:ARG1	1.3.1.1.1		organization
+::edge	1.1.4.1		government-organization	:poss	1.1.4.1.3		country
+::edge	1.1.4.1		government-organization	:wiki	1.1.4.1.1		"Foreign_minister"
+::edge	1.1.4.1		government-organization	:name	1.1.4.1.2		name
+::edge	1.1.4.1.2		name	:op3	1.1.4.1.2.3	Department	"Department"
+::edge	1.1.4.1.3		country	:name	1.1.4.1.3.2		name
+::edge	1.1.4.1.2		name	:op1	1.1.4.1.2.1	International	"International"
+::edge	1.1.4.1.2		name	:op2	1.1.4.1.2.2	Relations	"Relations"
+::edge	1.1.4.1.3		country	:wiki	1.1.4.1.3.1		"Burma"
+::edge	1.3.1.1.1.2		name	:op4	1.3.1.1.1.2.4	Asian	"Asian"
+::edge	1.3.1.1.1.2		name	:op3	1.3.1.1.1.2.3	Southeast	"Southeast"
+::edge	1.1.2		name	:op1	1.1.2.1	sit	"Sit"
+::edge	1.3.1.1.1.2		name	:op5	1.3.1.1.1.2.5	Nations	"Nations"
+::edge	1.1.2		name	:op2	1.1.2.2	Aye	"Aye"
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.1	Colonel	colonel
+::edge	1.1.4	of	have-org-role-91	:ARG1	1.1.4.1		government-organization
+::edge	1.1.4	of	have-org-role-91	:ARG2	1.1.4.2	Director	director
+::edge	1.3.1.1.1		organization	:name	1.3.1.1.1.2		name
+::edge	1.3.1.1.2	officials	official	:mod	1.3.1.1.2.1	senior	senior
+::edge	1.3.1.1.1		organization	:wiki	1.3.1.1.1.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.3.1.1.1.2		name	:op2	1.3.1.1.1.2.2	of	"of"
+::edge	1.3.1.1.1.2		name	:op1	1.3.1.1.1.2.1	Association	"Association"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	reporters	person	:ARG0-of	1.2.1	reporters	report-01
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.3	meeting	meet-03	:ARG0	1.3.1		person
+::edge	1.1		person	:ARG0-of	1.1.4	of	have-org-role-91
+::edge	1.3	meeting	meet-03	:duration	1.3.2		temporal-quantity
+::edge	1	addressed	address-01	:ARG0	1.1		person
+::edge	1.3.1.1		have-org-role-91	:ARG2	1.3.1.1.2	officials	official
+::edge	1	addressed	address-01	:ARG2	1.2	reporters	person
+::edge	1	addressed	address-01	:location	1.3	meeting	meet-03
+::edge	1.1		person	:wiki	1.1.1		-
+12	Aye announced --
+12	Aye announced --
+12	0-1.1.2.1 1-1
+::node	n	1.1.2	name	
+::node	a	1	announce-01	announced
+::node	"Aye"	1.1.2.1	"Aye"	Aye
+::node	p	1.1	person	
+::node	-	1.1.1	-	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Aye	"Aye"
+::edge	1	announced	announce-01	:ARG0	1.1		person
+::edge	1.1		person	:wiki	1.1.1		-
+13	Myanmar, Thailand and Laos must cooperate to effectively end the drug trade.
+13	Myanmar , Thailand and Laos must cooperate to effectively end the drug trade .
+13	0-1.1.1.1.2.1 2-1.1.1.2.2.1 3-1.1.1 4-1.1.1.3.2.1 5-1 6-1.1 8-1.1.2.3 8-1.1.2.3.r 9-1.1.2 11-1.1.2.2.1 12-1.1.2.2
+::node	"Myanmar"	1.1.1.1.2.1	"Myanmar"	Myanmar
+::node	c5	1.1.1.1	country	
+::node	c6	1.1.1.2	country	
+::node	a	1.1.2.1	and	
+::node	c7	1.1.1.3	country	
+::node	t	1.1.2.2	trade-01	trade
+::node	e2	1.1.2.3	effective	effectively
+::node	n6	1.1.1.3.2	name	
+::node	d	1.1.2.2.1	drug	drug
+::node	"Thailand"	1.1.1.2.2.1	"Thailand"	Thailand
+::node	e	1.1.2	end-01	end
+::node	o	1	obligate-01	must
+::node	c4	1.1	cooperate-01	cooperate
+::node	n5	1.1.1.2.2	name	
+::node	"Laos"	1.1.1.3.1	"Laos"	
+::node	n4	1.1.1.1.2	name	
+::node	"Thailand"	1.1.1.2.1	"Thailand"	
+::node	"Burma"	1.1.1.1.1	"Burma"	
+::node	a	1.1.1	and	and
+::node	"Laos"	1.1.1.3.2.1	"Laos"	Laos
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Myanmar	"Myanmar"
+::edge	1.1.1	and	and	:op1	1.1.1.1		country
+::edge	1.1.1	and	and	:op2	1.1.1.2		country
+::edge	1.1.2	end	end-01	:ARG0	1.1.2.1		and
+::edge	1.1.1	and	and	:op3	1.1.1.3		country
+::edge	1.1.2	end	end-01	:ARG1	1.1.2.2	trade	trade-01
+::edge	1.1.2	end	end-01	:manner	1.1.2.3	effectively	effective
+::edge	1.1.1.3		country	:name	1.1.1.3.2		name
+::edge	1.1.2.2	trade	trade-01	:ARG1	1.1.2.2.1	drug	drug
+::edge	1.1.1.2.2		name	:op1	1.1.1.2.2.1	Thailand	"Thailand"
+::edge	1.1	cooperate	cooperate-01	:purpose	1.1.2	end	end-01
+::edge	1	must	obligate-01	:ARG2	1.1	cooperate	cooperate-01
+::edge	1.1.1.2		country	:name	1.1.1.2.2		name
+::edge	1.1.1.3		country	:wiki	1.1.1.3.1		"Laos"
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.2		country	:wiki	1.1.1.2.1		"Thailand"
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Burma"
+::edge	1.1	cooperate	cooperate-01	:ARG0	1.1.1	and	and
+::edge	1.1.1.3.2		name	:op1	1.1.1.3.2.1	Laos	"Laos"
+14	Myanmar does not yet have confirmation from Thailand and Laos.
+14	Myanmar does not yet have confirmation from Thailand and Laos .
+14	0-1.2.2.1 2-1.1 2-1.1.r 3-1.4 4-1 5-1.3 6-1.3.1.r 7-1.3.1.1.2.1 8-1.3.1 9-1.3.1.2.2.1
+::node	c6	1.3.1.1	country	
+::node	c7	1.3.1.2	country	
+::node	"Thailand"	1.3.1.1.2.1	"Thailand"	Thailand
+::node	"Thailand"	1.3.1.1.1	"Thailand"	
+::node	"Burma"	1.2.1	"Burma"	
+::node	h	1	have-03	have
+::node	n4	1.2.2	name	
+::node	a	1.3.1	and	and
+::node	"Laos"	1.3.1.2.2.1	"Laos"	Laos
+::node	-	1.1	-	not
+::node	n5	1.3.1.1.2	name	
+::node	"Laos"	1.3.1.2.1	"Laos"	
+::node	c4	1.2	country	
+::node	n6	1.3.1.2.2	name	
+::node	c5	1.3	confirm-01	confirmation
+::node	y	1.4	yet	yet
+::node	"Myanmar"	1.2.2.1	"Myanmar"	Myanmar
+::edge	1.3.1	and	and	:op1	1.3.1.1		country
+::edge	1.3.1	and	and	:op2	1.3.1.2		country
+::edge	1.3.1.1.2		name	:op1	1.3.1.1.2.1	Thailand	"Thailand"
+::edge	1.3.1.1		country	:wiki	1.3.1.1.1		"Thailand"
+::edge	1.2		country	:wiki	1.2.1		"Burma"
+::edge	1.2		country	:name	1.2.2		name
+::edge	1.3	confirmation	confirm-01	:ARG0	1.3.1	and	and
+::edge	1.3.1.2.2		name	:op1	1.3.1.2.2.1	Laos	"Laos"
+::edge	1	have	have-03	:polarity	1.1	not	-
+::edge	1.3.1.1		country	:name	1.3.1.1.2		name
+::edge	1.3.1.2		country	:wiki	1.3.1.2.1		"Laos"
+::edge	1	have	have-03	:ARG0	1.2		country
+::edge	1.3.1.2		country	:name	1.3.1.2.2		name
+::edge	1	have	have-03	:ARG1	1.3	confirmation	confirm-01
+::edge	1	have	have-03	:mod	1.4	yet	yet
+::edge	1.2.2		name	:op1	1.2.2.1	Myanmar	"Myanmar"
+15	Myanmar has difficulty ending drug-planting activities due to lack of funds and technical expertise.
+15	Myanmar has difficulty ending drug @-@ planting activities due to lack of funds and technical expertise .
+15	0-1.1.1.2.1 2-1 3-1.1 4-1.1.2.1.1 6-1.1.2.1 7-1.1.2 8-1.2 9-1.2 10-1.2.1 11-1.2.1.2.r 12-1.2.1.2.1 13-1.2.1.2 14-1.2.1.2.2.1 15-1.2.1.2.2
+::node	"Burma"	1.1.1.1	"Burma"	
+::node	n2	1.1.1.2	name	
+::node	p	1.1.2.1	plant-01	planting
+::node	d2	1.1.2.1.1	drug	drug
+::node	e2	1.2.1.2.2	expertise	expertise
+::node	a	1.1.2	activity	activities
+::node	l	1.2.1	lack-01	lack
+::node	d	1	difficult	difficulty
+::node	t	1.2.1.2.2.1	technical	technical
+::node	f	1.2.1.2.1	fund	funds
+::node	e	1.1	end-01	ending
+::node	c3	1.2	cause-01	to
+::node	"Myanmar"	1.1.1.2.1	"Myanmar"	Myanmar
+::node	a2	1.2.1.2	and	and
+::node	c2	1.2.1.1	country	
+::node	c2	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"Burma"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2	activities	activity	:mod	1.1.2.1	planting	plant-01
+::edge	1.1.2.1	planting	plant-01	:ARG1	1.1.2.1.1	drug	drug
+::edge	1.2.1.2	and	and	:op2	1.2.1.2.2	expertise	expertise
+::edge	1.1	ending	end-01	:ARG1	1.1.2	activities	activity
+::edge	1.2	to	cause-01	:ARG0	1.2.1	lack	lack-01
+::edge	1.2.1.2.2	expertise	expertise	:mod	1.2.1.2.2.1	technical	technical
+::edge	1.2.1.2	and	and	:op1	1.2.1.2.1	funds	fund
+::edge	1	difficulty	difficult	:domain	1.1	ending	end-01
+::edge	1	difficulty	difficult	:ARG1-of	1.2	to	cause-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Myanmar	"Myanmar"
+::edge	1.2.1	lack	lack-01	:ARG1	1.2.1.2	and	and
+::edge	1.2.1	lack	lack-01	:ARG0	1.2.1.1		country
+::edge	1.1	ending	end-01	:ARG0	1.1.1		country
+16	The majority of poppy growing in Myanmar takes place in a remote, mountainous area along the borders of China and Thailand.
+16	The majority of poppy growing in Myanmar takes place in a remote , mountainous area along the borders of China and Thailand .
+16	1-1.2 2-1.2.r 3-1.1 4-1 5-1.3.r 6-1.3.2.1 9-1.4.r 11-1.4.1 14-1.4 15-1.4.3 17-1.4.3.1 19-1.4.3.1.1.2.1.2.1 20-1.4.3.1.1.2 21-1.4.3.1.1.2.2.2.1
+::node	"China"	1.4.3.1.1.2.1.2.1	"China"	China
+::node	"Myanmar"	1.3.2.1	"Myanmar"	Myanmar
+::node	"Thailand"	1.4.3.1.1.2.2.2.1	"Thailand"	Thailand
+::node	g	1	grow-03	growing
+::node	"Burma"	1.3.1	"Burma"	
+::node	n4	1.3.2	name	
+::node	r	1.4.1	remote	remote
+::node	m2	1.4.2	mountain	
+::node	p	1.1	poppy	poppy
+::node	a2	1.4.3	along	along
+::node	b2	1.4.3.1.1	between	
+::node	n6	1.4.3.1.1.2.2.2	name	
+::node	m	1.2	majority	majority
+::node	c4	1.3	country	
+::node	"China"	1.4.3.1.1.2.1.1	"China"	
+::node	a	1.4	area	area
+::node	n5	1.4.3.1.1.2.1.2	name	
+::node	"Thailand"	1.4.3.1.1.2.2.1	"Thailand"	
+::node	a3	1.4.3.1.1.2	and	and
+::node	b	1.4.3.1	border	borders
+::node	c6	1.4.3.1.1.2.2	country	
+::node	c5	1.4.3.1.1.2.1	country	
+::node	c4	1.4.3.1.1.1	country	
+::edge	1.4.3.1.1.2.1.2		name	:op1	1.4.3.1.1.2.1.2.1	China	"China"
+::edge	1.3.2		name	:op1	1.3.2.1	Myanmar	"Myanmar"
+::edge	1.4.3.1.1.2.2.2		name	:op1	1.4.3.1.1.2.2.2.1	Thailand	"Thailand"
+::edge	1.3		country	:wiki	1.3.1		"Burma"
+::edge	1.3		country	:name	1.3.2		name
+::edge	1.4	area	area	:mod	1.4.1	remote	remote
+::edge	1.4	area	area	:mod	1.4.2		mountain
+::edge	1	growing	grow-03	:ARG1	1.1	poppy	poppy
+::edge	1.4	area	area	:location	1.4.3	along	along
+::edge	1.4.3.1	borders	border	:location	1.4.3.1.1		between
+::edge	1.4.3.1.1.2.2		country	:name	1.4.3.1.1.2.2.2		name
+::edge	1	growing	grow-03	:quant	1.2	majority	majority
+::edge	1	growing	grow-03	:location	1.3		country
+::edge	1.4.3.1.1.2.1		country	:wiki	1.4.3.1.1.2.1.1		"China"
+::edge	1	growing	grow-03	:location	1.4	area	area
+::edge	1.4.3.1.1.2.1		country	:name	1.4.3.1.1.2.1.2		name
+::edge	1.4.3.1.1.2.2		country	:wiki	1.4.3.1.1.2.2.1		"Thailand"
+::edge	1.4.3.1.1		between	:op2	1.4.3.1.1.2	and	and
+::edge	1.4.3	along	along	:op1	1.4.3.1	borders	border
+::edge	1.4.3.1.1.2	and	and	:op2	1.4.3.1.1.2.2		country
+::edge	1.4.3.1.1.2	and	and	:op1	1.4.3.1.1.2.1		country
+::edge	1.4.3.1.1		between	:op1	1.4.3.1.1.1		country
+17	ASEAN and the rest of the international community are responsible to help fight drug production and trafficking.
+17	ASEAN and the rest of the international community are responsible to help fight drug production and trafficking .
+17	0-1.1.1.2.1 1-1.1 3-1.1.2 4-1.1.2.1.r 6-1.1.2.1.1 7-1.1.2.1 9-1 11-1.2 12-1.2.2 13-1.2.2.1.1.1 14-1.2.2.1.1 15-1.2.2.1 16-1.2.2.1.2
+::node	"Association_of_Southeast_Asian_Nations"	1.1.1.1	"Association_of_Southeast_Asian_Nations"	
+::node	n2	1.1.1.2	name	
+::node	c	1.1.2.1	community	community
+::node	p	1.2.2.1.1	produce-01	production
+::node	d	1.2.2.1.1.1	drug	drug
+::node	d	1.2.2.1.2.1	drug	
+::node	i	1.1.2.1.1	international	international
+::node	r2	1.1.2	rest	rest
+::node	a2	1.2.1	and	
+::node	r	1	responsible-41	responsible
+::node	f	1.2.2	fight-01	fight
+::node	a2	1.1	and	and
+::node	h	1.2	help-01	help
+::node	"ASEAN"	1.1.1.2.1	"ASEAN"	ASEAN
+::node	a	1.2.2.1	and	and
+::node	t	1.2.2.1.2	traffic-01	trafficking
+::node	o2	1.1.1	organization	
+::edge	1.1.1		organization	:wiki	1.1.1.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.1.1		organization	:name	1.1.1.2		name
+::edge	1.1.2	rest	rest	:part-of	1.1.2.1	community	community
+::edge	1.2.2.1	and	and	:op1	1.2.2.1.1	production	produce-01
+::edge	1.2.2.1.1	production	produce-01	:ARG1	1.2.2.1.1.1	drug	drug
+::edge	1.2.2.1.2	trafficking	traffic-01	:ARG1	1.2.2.1.2.1		drug
+::edge	1.1.2.1	community	community	:mod	1.1.2.1.1	international	international
+::edge	1.1	and	and	:op2	1.1.2	rest	rest
+::edge	1.2	help	help-01	:ARG0	1.2.1		and
+::edge	1.2	help	help-01	:ARG1	1.2.2	fight	fight-01
+::edge	1	responsible	responsible-41	:ARG1	1.1	and	and
+::edge	1	responsible	responsible-41	:ARG2	1.2	help	help-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	ASEAN	"ASEAN"
+::edge	1.2.2	fight	fight-01	:ARG1	1.2.2.1	and	and
+::edge	1.2.2.1	and	and	:op2	1.2.2.1.2	trafficking	traffic-01
+::edge	1.1	and	and	:op1	1.1.1		organization
+18	Myanmar is optimistic that drug planting in the country would be eradicated with the introduction of alternate cash crop planting in April and tough policing.
+18	Myanmar is optimistic that drug planting in the country would be eradicated with the introduction of alternate cash crop planting in April and tough policing .
+18	0-1.1.2.1 1-1.1.r 2-1 4-1.2.2.1 5-1.2.2 6-1.2.2.2.r 8-1.2.2.2 9-1.2.2.2 10-1.2.2.2 11-1.2 12-1.2.1.r 14-1.2.1 15-1.2.1.1.r 16-1.2.1.1.1.1.2 17-1.2.1.1.1.1.1 18-1.2.1.1.1.1 19-1.2.1.1.1 20-1.2.1.1.1.2.r 21-1.2.1.1.1.2.1 21-1.2.1.1.1.2.1.r 22-1.2.1.1 23-1.2.1.1.2.1 24-1.2.1.1.2
+::node	c4	1.2.1.1.1.1.1	cash	cash
+::node	a2	1.2.1.1.1.1.2	alternate	alternate
+::node	4	1.2.1.1.1.2.1	4	April
+::node	"Myanmar"	1.1.2.1	"Myanmar"	Myanmar
+::node	c3	1.2.1.1.1.1	crop	crop
+::node	d3	1.2.1.1.1.2	date-entity	
+::node	t	1.2.1.1.2.1	tough	tough
+::node	n2	1.1.2	name	
+::node	i	1.2.1	introduce-02	introduction
+::node	o	1	optimistic	optimistic
+::node	p	1.2.2	plant-01	planting
+::node	p3	1.2.1.1.2	police-01	policing
+::node	p2	1.2.1.1.1	plant-01	planting
+::node	c2	1.1	country	
+::node	e	1.2	eradicate-01	eradicated
+::node	d2	1.2.2.1	drug	drug
+::node	c2	1.2.2.2	country	be
+::node	a	1.2.1.1	and	and
+::node	"Burma"	1.1.1	"Burma"	
+::edge	1.2.1.1.1.1	crop	crop	:mod	1.2.1.1.1.1.1	cash	cash
+::edge	1.2.1.1.1.1	crop	crop	:mod	1.2.1.1.1.1.2	alternate	alternate
+::edge	1.2.1.1.1.2		date-entity	:month	1.2.1.1.1.2.1	April	4
+::edge	1.1.2		name	:op1	1.1.2.1	Myanmar	"Myanmar"
+::edge	1.2.1.1.1	planting	plant-01	:ARG1	1.2.1.1.1.1	crop	crop
+::edge	1.2.1.1.1	planting	plant-01	:time	1.2.1.1.1.2		date-entity
+::edge	1.2.1.1.2	policing	police-01	:manner	1.2.1.1.2.1	tough	tough
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	eradicated	eradicate-01	:ARG0	1.2.1	introduction	introduce-02
+::edge	1.2	eradicated	eradicate-01	:ARG1	1.2.2	planting	plant-01
+::edge	1.2.1.1	and	and	:op2	1.2.1.1.2	policing	police-01
+::edge	1.2.1.1	and	and	:op1	1.2.1.1.1	planting	plant-01
+::edge	1	optimistic	optimistic	:domain	1.1		country
+::edge	1	optimistic	optimistic	:topic	1.2	eradicated	eradicate-01
+::edge	1.2.2	planting	plant-01	:ARG1	1.2.2.1	drug	drug
+::edge	1.2.2	planting	plant-01	:location	1.2.2.2	be	country
+::edge	1.2.1	introduction	introduce-02	:ARG1	1.2.1.1	and	and
+::edge	1.1		country	:wiki	1.1.1		"Burma"
+19	Fears that drug money is being used to finance terror groups are unfounded.
+19	Fears that drug money is being used to finance terror groups are unfounded .
+19	0-1.2 1-1.2.1.r 2-1.2.1.1.1 3-1.2.1.1 6-1.2.1 8-1.2.1.2 9-1.2.1.2.1.1 10-1.2.1.2.1
+::node	u	1.2.1	use-01	used
+::node	t	1.2.1.2.1.1	terror	terror
+::node	f	1	found-01	
+::node	g	1.2.1.2.1	group	groups
+::node	d	1.2.1.1.1	drug	drug
+::node	-	1.1	-	
+::node	f2	1.2	fear-01	Fears
+::node	f3	1.2.1.2	finance-01	finance
+::node	m	1.2.1.1	money	money
+::node	m	1.2.1.2.2	money	
+::edge	1.2	Fears	fear-01	:ARG1	1.2.1	used	use-01
+::edge	1.2.1.2.1	groups	group	:purpose	1.2.1.2.1.1	terror	terror
+::edge	1.2.1.2	finance	finance-01	:ARG1	1.2.1.2.1	groups	group
+::edge	1.2.1.1	money	money	:mod	1.2.1.1.1	drug	drug
+::edge	1		found-01	:polarity	1.1		-
+::edge	1		found-01	:ARG1	1.2	Fears	fear-01
+::edge	1.2.1	used	use-01	:ARG2	1.2.1.2	finance	finance-01
+::edge	1.2.1	used	use-01	:ARG1	1.2.1.1	money	money
+::edge	1.2.1.2	finance	finance-01	:ARG2	1.2.1.2.2		money
+20	ASEAN members are Brunei, Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore, Thailand and Vietnam.
+20	ASEAN members are Brunei , Cambodia , Indonesia , Laos , Malaysia , Myanmar , Philippines , Singapore , Thailand and Vietnam .
+20	0-1.2.2.1 1-1 2-1.1.r 3-1.1.1.2.1 5-1.1.2.2.1 7-1.1.3.2.1 9-1.1.4.2.1 11-1.1.5.2.1 13-1.1.6.2.1 15-1.1.7.2.1 17-1.1.8.2.1 19-1.1.9.2.1 20-1.1 21-1.1.10.2.1
+::node	"Indonesia"	1.1.3.2.1	"Indonesia"	Indonesia
+::node	"Cambodia"	1.1.2.2.1	"Cambodia"	Cambodia
+::node	"Vietnam"	1.1.10.2.1	"Vietnam"	Vietnam
+::node	"Singapore"	1.1.8.2.1	"Singapore"	Singapore
+::node	"Laos"	1.1.4.2.1	"Laos"	Laos
+::node	n7	1.1.6.2	name	
+::node	"Philippines"	1.1.7.1	"Philippines"	
+::node	"Brunei"	1.1.1.2.1	"Brunei"	Brunei
+::node	n8	1.1.7.2	name	
+::node	"Singapore"	1.1.8.1	"Singapore"	
+::node	n9	1.1.8.2	name	
+::node	"Thailand"	1.1.9.1	"Thailand"	
+::node	"ASEAN"	1.2.2.1	"ASEAN"	ASEAN
+::node	n10	1.1.9.2	name	
+::node	"Thailand"	1.1.9.2.1	"Thailand"	Thailand
+::node	"Brunei"	1.1.1.1	"Brunei"	
+::node	"Malaysia"	1.1.5.2.1	"Malaysia"	Malaysia
+::node	n2	1.1.1.2	name	
+::node	"Cambodia"	1.1.2.1	"Cambodia"	
+::node	n3	1.1.2.2	name	
+::node	"Indonesia"	1.1.3.1	"Indonesia"	
+::node	n4	1.1.3.2	name	
+::node	"Laos"	1.1.4.1	"Laos"	
+::node	c10	1.1.10	country	
+::node	n5	1.1.4.2	name	
+::node	"Malaysia"	1.1.5.1	"Malaysia"	
+::node	n6	1.1.5.2	name	
+::node	"Burma"	1.1.6.1	"Burma"	
+::node	"Vietnam"	1.1.10.1	"Vietnam"	
+::node	n11	1.1.10.2	name	
+::node	"Myanmar"	1.1.6.2.1	"Myanmar"	Myanmar
+::node	c2	1.1.2	country	
+::node	"Association_of_Southeast_Asian_Nations"	1.2.1	"Association_of_Southeast_Asian_Nations"	
+::node	m	1	member	members
+::node	c3	1.1.3	country	
+::node	n	1.2.2	name	
+::node	c4	1.1.4	country	
+::node	c5	1.1.5	country	
+::node	a	1.1	and	and
+::node	c6	1.1.6	country	
+::node	c7	1.1.7	country	
+::node	o	1.2	organization	
+::node	c8	1.1.8	country	
+::node	c9	1.1.9	country	
+::node	"Philippines"	1.1.7.2.1	"Philippines"	Philippines
+::node	c	1.1.1	country	
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	Indonesia	"Indonesia"
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Cambodia	"Cambodia"
+::edge	1.1.10.2		name	:op1	1.1.10.2.1	Vietnam	"Vietnam"
+::edge	1.1.8.2		name	:op1	1.1.8.2.1	Singapore	"Singapore"
+::edge	1.1.4.2		name	:op1	1.1.4.2.1	Laos	"Laos"
+::edge	1.1.6		country	:name	1.1.6.2		name
+::edge	1.1.7		country	:wiki	1.1.7.1		"Philippines"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Brunei	"Brunei"
+::edge	1.1.7		country	:name	1.1.7.2		name
+::edge	1.1.8		country	:wiki	1.1.8.1		"Singapore"
+::edge	1.1.8		country	:name	1.1.8.2		name
+::edge	1.1.9		country	:wiki	1.1.9.1		"Thailand"
+::edge	1.2.2		name	:op1	1.2.2.1	ASEAN	"ASEAN"
+::edge	1.1.9		country	:name	1.1.9.2		name
+::edge	1.1.9.2		name	:op1	1.1.9.2.1	Thailand	"Thailand"
+::edge	1.1.1		country	:wiki	1.1.1.1		"Brunei"
+::edge	1.1.5.2		name	:op1	1.1.5.2.1	Malaysia	"Malaysia"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		country	:wiki	1.1.2.1		"Cambodia"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.3		country	:wiki	1.1.3.1		"Indonesia"
+::edge	1.1.3		country	:name	1.1.3.2		name
+::edge	1.1.4		country	:wiki	1.1.4.1		"Laos"
+::edge	1.1	and	and	:op10	1.1.10		country
+::edge	1.1.4		country	:name	1.1.4.2		name
+::edge	1.1.5		country	:wiki	1.1.5.1		"Malaysia"
+::edge	1.1.5		country	:name	1.1.5.2		name
+::edge	1.1.6		country	:wiki	1.1.6.1		"Burma"
+::edge	1.1.10		country	:wiki	1.1.10.1		"Vietnam"
+::edge	1.1.10		country	:name	1.1.10.2		name
+::edge	1.1.6.2		name	:op1	1.1.6.2.1	Myanmar	"Myanmar"
+::edge	1.1	and	and	:op2	1.1.2		country
+::edge	1.2		organization	:wiki	1.2.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.1	and	and	:op3	1.1.3		country
+::edge	1.2		organization	:name	1.2.2		name
+::edge	1.1	and	and	:op4	1.1.4		country
+::edge	1.1	and	and	:op5	1.1.5		country
+::edge	1	members	member	:domain	1.1	and	and
+::edge	1.1	and	and	:op6	1.1.6		country
+::edge	1.1	and	and	:op7	1.1.7		country
+::edge	1	members	member	:poss	1.2		organization
+::edge	1.1	and	and	:op8	1.1.8		country
+::edge	1.1	and	and	:op9	1.1.9		country
+::edge	1.1.7.2		name	:op1	1.1.7.2.1	Philippines	"Philippines"
+::edge	1.1	and	and	:op1	1.1.1		country
+21	Myanmar, Thailand and Laos are known as the Golden Triangle countries.
+21	Myanmar , Thailand and Laos are known as the Golden Triangle countries .
+21	0-1.1.1.2.1 2-1.1.2.2.1 3-1.1 4-1.1.3.2.1 6-1 6-1.2.1.2.r 7-1.1.3.2.r 7-1.2.1.2.r 7-1.2.r 9-1.2.1.2.1 10-1.2.1.2.2 11-1.2
+::node	"Burma"	1.1.1.1	"Burma"	
+::node	n5	1.1.1.2	name	
+::node	"Thailand"	1.1.2.1	"Thailand"	
+::node	"Laos"	1.1.3.2.1	"Laos"	Laos
+::node	n6	1.1.2.2	name	
+::node	"Laos"	1.1.3.1	"Laos"	
+::node	n7	1.1.3.2	name	
+::node	"Thailand"	1.1.2.2.1	"Thailand"	Thailand
+::node	"Triangle"	1.2.1.2.2	"Triangle"	Triangle
+::node	c5	1.1.2	country	
+::node	w	1.2.1	world-region	
+::node	k	1	know-01	known
+::node	c6	1.1.3	country	
+::node	"Golden"	1.2.1.2.1	"Golden"	Golden
+::node	a	1.1	and	and
+::node	c7	1.2	country	countries
+::node	"Myanmar"	1.1.1.2.1	"Myanmar"	Myanmar
+::node	n8	1.2.1.2	name	
+::node	"Golden_Triangle_BLANKETPAIR1"	1.2.1.1	"Golden_Triangle_BLANKETPAIR1"	
+::node	c4	1.1.1	country	
+::edge	1.1.1		country	:wiki	1.1.1.1		"Burma"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		country	:wiki	1.1.2.1		"Thailand"
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	Laos	"Laos"
+::edge	1.1.2		country	:name	1.1.2.2		name
+::edge	1.1.3		country	:wiki	1.1.3.1		"Laos"
+::edge	1.1.3		country	:name	1.1.3.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Thailand	"Thailand"
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	Triangle	"Triangle"
+::edge	1.1	and	and	:op2	1.1.2		country
+::edge	1.2	countries	country	:location	1.2.1		world-region
+::edge	1.1	and	and	:op3	1.1.3		country
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Golden	"Golden"
+::edge	1	known	know-01	:ARG1	1.1	and	and
+::edge	1	known	know-01	:ARG2	1.2	countries	country
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Myanmar	"Myanmar"
+::edge	1.2.1		world-region	:name	1.2.1.2		name
+::edge	1.2.1		world-region	:wiki	1.2.1.1		"Golden_Triangle_BLANKETPAIR1"
+::edge	1.1	and	and	:op1	1.1.1		country

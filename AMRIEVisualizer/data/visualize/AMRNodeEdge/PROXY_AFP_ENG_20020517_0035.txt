@@ -1,0 +1,744 @@
+1	2002-05-17
+1	2002 @-@ 05 @-@ 17
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	5	1.2	5	05
+::node	17	1.3	17	17
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	05	5
+::edge	1		date-entity	:day	1.3	17	17
+2	Malaysia (MY)
+2	Malaysia ( MY )
+2	0-1.2.1
+::node	"Malaysia"	1.2.1	"Malaysia"	Malaysia
+::node	c	1	country	
+::node	"Malaysia"	1.1	"Malaysia"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	Malaysia	"Malaysia"
+::edge	1		country	:wiki	1.1		"Malaysia"
+::edge	1		country	:name	1.2		name
+3	International; Government; terrorism; crime
+3	International ; Government ; terrorism ; crime
+3	0-1.1 2-1.2 2-1.2.1 2-1.2.1.r 4-1.3 6-1.4
+::node	g2	1.2.1	govern-01	Government
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	g	1.2	government-organization	Government
+::node	t	1.3	terrorism	terrorism
+::node	c	1.4	crime	crime
+::edge	1.2	Government	government-organization	:ARG0-of	1.2.1	Government	govern-01
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	Government	government-organization
+::edge	1		and	:op3	1.3	terrorism	terrorism
+::edge	1		and	:op4	1.4	crime	crime
+4	Senior officials from the 10-member Association of Southeast Asian Nations (ASEAN) drew up a joint draft statement to be adopted by security ministers next week.
+4	Senior officials from the 10 @-@ member Association of Southeast Asian Nations ( ASEAN ) drew up a joint draft statement to be adopted by security ministers next week .
+4	0-1.1.1.2.1 1-1.1.1.2 4-1.1.1.1.3.1.1 6-1.1.1.1.3.2 7-1.1.1.1.2.1 8-1.1.1.1.2.2 9-1.1.1.1.2.3 10-1.1.1.1.2.4 11-1.1.1.1.2.5 15-1 16-1 18-1.2.4 19-1.2.3 20-1.2 20-1.2.1 20-1.2.1.r 23-1.2.2 24-1.2.2.1.r 25-1.2.2.1.1.1 26-1.2.2.1 26-1.2.2.1.1 26-1.2.2.1.1.r 27-1.2.2.2.1 28-1.2.2.2
+::node	s3	1.2.2.1.1.1	security	security
+::node	h2	1.1.1.1.3	have-org-role-91	
+::node	n	1.1.1.1.2	name	
+::node	s	1.1.1.2.1	senior	Senior
+::node	"Association_of_Southeast_Asian_Nations"	1.1.1.1.1	"Association_of_Southeast_Asian_Nations"	
+::node	p	1.2.2.1	person	ministers
+::node	w	1.2.2.2	week	week
+::node	o2	1.2.3.1	organization	
+::node	n2	1.2.2.2.1	next	next
+::node	"Association"	1.1.1.1.2.1	"Association"	Association
+::node	o2	1.1.1.1	organization	
+::node	"of"	1.1.1.1.2.2	"of"	of
+::node	c	1.1.1.1.3.1	country	
+::node	"Southeast"	1.1.1.1.2.3	"Southeast"	Southeast
+::node	m	1.1.1.1.3.2	member	member
+::node	o	1.1.1.2	official	officials
+::node	m2	1.2.2.1.1	minister-01	ministers
+::node	"Asian"	1.1.1.1.2.4	"Asian"	Asian
+::node	"Nations"	1.1.1.1.2.5	"Nations"	Nations
+::node	s2	1.2.1	state-01	statement
+::node	d	1	draw-03	up
+::node	a	1.2.2	adopt-01	adopted
+::node	d2	1.2.3	draft-01	draft
+::node	j	1.2.4	joint	joint
+::node	p2	1.1	person	
+::node	t	1.2	thing	statement
+::node	10	1.1.1.1.3.1.1	10	10
+::node	h	1.1.1	have-org-role-91	
+::edge	1.2.2.1.1	ministers	minister-01	:ARG2	1.2.2.1.1.1	security	security
+::edge	1.1.1.1		organization	:ARG1-of	1.1.1.1.3		have-org-role-91
+::edge	1.1.1.1		organization	:name	1.1.1.1.2		name
+::edge	1.1.1.2	officials	official	:mod	1.1.1.2.1	Senior	senior
+::edge	1.1.1.1		organization	:wiki	1.1.1.1.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.2.2	adopted	adopt-01	:ARG0	1.2.2.1	ministers	person
+::edge	1.2.2	adopted	adopt-01	:time	1.2.2.2	week	week
+::edge	1.2.3	draft	draft-01	:ARG0	1.2.3.1		organization
+::edge	1.2.2.2	week	week	:mod	1.2.2.2.1	next	next
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Association	"Association"
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		organization
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	of	"of"
+::edge	1.1.1.1.3		have-org-role-91	:ARG0	1.1.1.1.3.1		country
+::edge	1.1.1.1.2		name	:op3	1.1.1.1.2.3	Southeast	"Southeast"
+::edge	1.1.1.1.3		have-org-role-91	:ARG2	1.1.1.1.3.2	member	member
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.2.2.1	ministers	person	:ARG0-of	1.2.2.1.1	ministers	minister-01
+::edge	1.1.1.1.2		name	:op4	1.1.1.1.2.4	Asian	"Asian"
+::edge	1.1.1.1.2		name	:op5	1.1.1.1.2.5	Nations	"Nations"
+::edge	1.2	statement	thing	:ARG1-of	1.2.1	statement	state-01
+::edge	1.2	statement	thing	:ARG1-of	1.2.2	adopted	adopt-01
+::edge	1.2	statement	thing	:ARG1-of	1.2.3	draft	draft-01
+::edge	1.2	statement	thing	:mod	1.2.4	joint	joint
+::edge	1	up	draw-03	:ARG0	1.1		person
+::edge	1	up	draw-03	:ARG1	1.2	statement	thing
+::edge	1.1.1.1.3.1		country	:quant	1.1.1.1.3.1.1	10	10
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+5	The statement stated that closer cooperation amongst the nations was needed to counter terrorism.
+5	The statement stated that closer cooperation amongst the nations was needed to counter terrorism .
+5	1-1 1-1.1.1 2-1 2-1.1.1 3-1.2.r 4-1.2.2 4-1.2.2.1 4-1.2.2.1.r 5-1.2 8-1.2.1 10-1.2.3 12-1.2.3.1 13-1.2.3.1.1
+::node	n	1.2.1	nation	nations
+::node	s	1	state-01	stated
+::node	c2	1.2.2	close	closer
+::node	n2	1.2.3	need-01	needed
+::node	t	1.1	thing	
+::node	c	1.2	cooperate-01	cooperation
+::node	m	1.2.2.1	more	closer
+::node	t2	1.2.3.1.1	terrorism	terrorism
+::node	c3	1.2.3.1	counter-01	counter
+::node	s2	1.1.1	state-01	stated
+::edge	1.2	cooperation	cooperate-01	:ARG0	1.2.1	nations	nation
+::edge	1.2	cooperation	cooperate-01	:mod	1.2.2	closer	close
+::edge	1.2	cooperation	cooperate-01	:ARG0-of	1.2.3	needed	need-01
+::edge	1	stated	state-01	:ARG0	1.1		thing
+::edge	1	stated	state-01	:ARG1	1.2	cooperation	cooperate-01
+::edge	1.2.2	closer	close	:degree	1.2.2.1	closer	more
+::edge	1.2.3.1	counter	counter-01	:ARG1	1.2.3.1.1	terrorism	terrorism
+::edge	1.2.3	needed	need-01	:ARG1	1.2.3.1	counter	counter-01
+::edge	1.1		thing	:ARG1-of	1.1.1	stated	state-01
+6	17 May 2002 -- in a draft statement the Association of Southeast Asian Nations (ASEAN) agreed closer cooperation was needed to counter terrorism and transnational crime.
+6	17 May 2002 -- in a draft statement the Association of Southeast Asian Nations ( ASEAN ) agreed closer cooperation was needed to counter terrorism and transnational crime .
+6	0-1.4.3 1-1.4.2 1-1.4.2.r 2-1.4.1 6-1.3.2 7-1.3 7-1.3.1 7-1.3.1.r 9-1.1.2.1 10-1.1.2.2 11-1.1.2.3 12-1.1.2.4 13-1.1.2.5 15-1.1.2.1 15-1.1.2.2 15-1.1.2.3 15-1.1.2.4 15-1.1.2.5 17-1 18-1.2.1.1.1 18-1.2.1.1.1.1 18-1.2.1.1.1.1.r 19-1.2.1.1 21-1.2.1 23-1.2.2 24-1.2.2.1.1 25-1.2.2.1 26-1.2.2.1.2.1 27-1.2.2.1.2
+::node	t3	1.2.2.1.2.1	transnational	transnational
+::node	"BLANKETPAIR0"	1.1.2.6	"BLANKETPAIR0"	
+::node	a2	1.2.2.1	and	and
+::node	c4	1.2.2.1.2	crime	crime
+::node	c	1.2.1.1	cooperate-01	cooperation
+::node	"Association"	1.1.2.1	"Association"	ASEAN
+::node	t	1.2.2.1.1	terrorism	terrorism
+::node	"of"	1.1.2.2	"of"	ASEAN
+::node	"Southeast"	1.1.2.3	"Southeast"	ASEAN
+::node	m	1.2.1.1.1.1	more	closer
+::node	"Asian"	1.1.2.4	"Asian"	ASEAN
+::node	"Nations"	1.1.2.5	"Nations"	ASEAN
+::node	n	1.1.2	name	
+::node	n2	1.2.1	need-01	needed
+::node	a	1	agree-01	agreed
+::node	c3	1.2.2	counter-01	counter
+::node	s	1.3.1	state-01	statement
+::node	d	1.3.2	draft-01	draft
+::node	2002	1.4.1	2002	2002
+::node	c2	1.2.1.1.1	close	closer
+::node	5	1.4.2	5	May
+::node	o	1.1	organization	
+::node	17	1.4.3	17	17
+::node	h	1.2	have-purpose-91	
+::node	t2	1.3	thing	statement
+::node	d2	1.4	date-entity	
+::node	"Association_of_Southeast_Asian_Nations"	1.1.1	"Association_of_Southeast_Asian_Nations"	
+::edge	1.2.2.1.2	crime	crime	:location	1.2.2.1.2.1	transnational	transnational
+::edge	1.1.2		name	:op6	1.1.2.6		"BLANKETPAIR0"
+::edge	1.2.2	counter	counter-01	:ARG1	1.2.2.1	and	and
+::edge	1.2.2.1	and	and	:op2	1.2.2.1.2	crime	crime
+::edge	1.2.1	needed	need-01	:ARG1	1.2.1.1	cooperation	cooperate-01
+::edge	1.1.2		name	:op1	1.1.2.1	ASEAN	"Association"
+::edge	1.2.2.1	and	and	:op1	1.2.2.1.1	terrorism	terrorism
+::edge	1.1.2		name	:op2	1.1.2.2	ASEAN	"of"
+::edge	1.1.2		name	:op3	1.1.2.3	ASEAN	"Southeast"
+::edge	1.2.1.1.1	closer	close	:degree	1.2.1.1.1.1	closer	more
+::edge	1.1.2		name	:op4	1.1.2.4	ASEAN	"Asian"
+::edge	1.1.2		name	:op5	1.1.2.5	ASEAN	"Nations"
+::edge	1.1		organization	:name	1.1.2		name
+::edge	1.2		have-purpose-91	:ARG1	1.2.1	needed	need-01
+::edge	1.2		have-purpose-91	:ARG2	1.2.2	counter	counter-01
+::edge	1.3	statement	thing	:ARG1-of	1.3.1	statement	state-01
+::edge	1.3	statement	thing	:ARG1-of	1.3.2	draft	draft-01
+::edge	1.4		date-entity	:year	1.4.1	2002	2002
+::edge	1.2.1.1	cooperation	cooperate-01	:manner	1.2.1.1.1	closer	close
+::edge	1.4		date-entity	:month	1.4.2	May	5
+::edge	1	agreed	agree-01	:ARG0	1.1		organization
+::edge	1.4		date-entity	:day	1.4.3	17	17
+::edge	1	agreed	agree-01	:ARG1	1.2		have-purpose-91
+::edge	1	agreed	agree-01	:manner	1.3	statement	thing
+::edge	1	agreed	agree-01	:time	1.4		date-entity
+::edge	1.1		organization	:wiki	1.1.1		"Association_of_Southeast_Asian_Nations"
+7	The statement will be adopted by security ministers next week.
+7	The statement will be adopted by security ministers next week .
+7	1-1.2 1-1.2.1 1-1.2.1.r 4-1 5-1.1.r 6-1.1.1.1 7-1.1 7-1.1.1 7-1.1.1.r 8-1.3.1 9-1.3
+::node	s2	1.2.1	state-01	statement
+::node	a	1	adopt-01	adopted
+::node	n	1.3.1	next	next
+::node	s	1.1.1.1	security	security
+::node	p	1.1	person	ministers
+::node	t	1.2	thing	statement
+::node	w	1.3	week	week
+::node	m	1.1.1	minister-01	ministers
+::edge	1.2	statement	thing	:ARG1-of	1.2.1	statement	state-01
+::edge	1.3	week	week	:mod	1.3.1	next	next
+::edge	1.1.1	ministers	minister-01	:ARG2	1.1.1.1	security	security
+::edge	1	adopted	adopt-01	:ARG0	1.1	ministers	person
+::edge	1	adopted	adopt-01	:ARG1	1.2	statement	thing
+::edge	1	adopted	adopt-01	:time	1.3	week	week
+::edge	1.1	ministers	person	:ARG0-of	1.1.1	ministers	minister-01
+8	An anonymous ASEAN senior official stated --
+8	An anonymous ASEAN senior official stated --
+8	1-1.1.1 2-1.1.2.1.2.1 3-1.1.2.2.1 4-1.1.2.2 5-1
+::node	h	1.1.2	have-org-role-91	
+::node	s	1	state-01	stated
+::node	o2	1.1.2.1	organization	
+::node	p	1.1	person	
+::node	"ASEAN"	1.1.2.1.2.1	"ASEAN"	ASEAN
+::node	o	1.1.2.2	official	official
+::node	n	1.1.2.1.2	name	
+::node	s2	1.1.2.2.1	senior	senior
+::node	"Association_of_Southeast_Asian_Nations"	1.1.2.1.1	"Association_of_Southeast_Asian_Nations"	
+::node	a	1.1.1	anonymous	anonymous
+::edge	1.1		person	:ARG0-of	1.1.2		have-org-role-91
+::edge	1.1.2		have-org-role-91	:ARG1	1.1.2.1		organization
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.1.2.1.2		name	:op1	1.1.2.1.2.1	ASEAN	"ASEAN"
+::edge	1.1.2		have-org-role-91	:ARG2	1.1.2.2	official	official
+::edge	1.1.2.1		organization	:name	1.1.2.1.2		name
+::edge	1.1.2.2	official	official	:mod	1.1.2.2.1	senior	senior
+::edge	1.1.2.1		organization	:wiki	1.1.2.1.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.1		person	:mod	1.1.1	anonymous	anonymous
+9	The ASEAN ministers' joint statement addressed the need for closer cooperation.
+9	The ASEAN ministers ' joint statement addressed the need for closer cooperation .
+9	1-1.1.1.1.1.1.2.1 2-1.1.1.1.1.2 3-1.1.1.1.r 4-1.1.1.2 5-1.1 5-1.1.1 5-1.1.1.r 6-1 8-1.2 9-1.2.1.r 10-1.2.1.1 10-1.2.1.1.1 10-1.2.1.1.1.r 11-1.2.1
+::node	o	1.1.1.1.1.1	organization	
+::node	m	1.1.1.1.1.2	minister	ministers
+::node	p	1.1.1.1	person	
+::node	"Association_of_Southeast_Asian_Nations"	1.1.1.1.1.1.1	"Association_of_Southeast_Asian_Nations"	
+::node	j	1.1.1.2	joint	joint
+::node	n2	1.1.1.1.1.1.2	name	
+::node	c	1.2.1	cooperate-01	cooperation
+::node	a	1	address-01	addressed
+::node	m2	1.2.1.1.1	more	closer
+::node	t	1.1	thing	statement
+::node	n	1.2	need-01	need
+::node	h	1.1.1.1.1	have-org-role-91	
+::node	c2	1.2.1.1	close	closer
+::node	"ASEAN"	1.1.1.1.1.1.2.1	"ASEAN"	ASEAN
+::node	s	1.1.1	state-01	statement
+::edge	1.1.1.1.1		have-org-role-91	:ARG1	1.1.1.1.1.1		organization
+::edge	1.1.1.1.1		have-org-role-91	:ARG2	1.1.1.1.1.2	ministers	minister
+::edge	1.1.1	statement	state-01	:ARG0	1.1.1.1		person
+::edge	1.1.1.1.1.1		organization	:wiki	1.1.1.1.1.1.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.1.1	statement	state-01	:manner	1.1.1.2	joint	joint
+::edge	1.1.1.1.1.1		organization	:name	1.1.1.1.1.1.2		name
+::edge	1.2	need	need-01	:ARG1	1.2.1	cooperation	cooperate-01
+::edge	1.2.1.1	closer	close	:degree	1.2.1.1.1	closer	more
+::edge	1	addressed	address-01	:ARG0	1.1	statement	thing
+::edge	1	addressed	address-01	:ARG1	1.2	need	need-01
+::edge	1.1.1.1		person	:ARG0-of	1.1.1.1.1		have-org-role-91
+::edge	1.2.1	cooperation	cooperate-01	:manner	1.2.1.1	closer	close
+::edge	1.1.1.1.1.1.2		name	:op1	1.1.1.1.1.1.2.1	ASEAN	"ASEAN"
+::edge	1.1	statement	thing	:ARG1-of	1.1.1	statement	state-01
+10	Proceeds from organized crime syndicates often fund terrorist activities.
+10	Proceeds from organized crime syndicates often fund terrorist activities .
+10	0-1.1 1-1.1.1.r 2-1.1.1.1 3-1.1.1.1.1 4-1.1.1 5-1.3 6-1 7-1.2.1 8-1.2
+::node	t	1.2.1	terrorist	terrorist
+::node	f	1	fund-01	fund
+::node	o2	1.1.1.1	organize-01	organized
+::node	p	1.1	proceed	Proceeds
+::node	a	1.2	activity	activities
+::node	o	1.3	often	often
+::node	c	1.1.1.1.1	crime	crime
+::node	s	1.1.1	syndicate	syndicates
+::edge	1.2	activities	activity	:mod	1.2.1	terrorist	terrorist
+::edge	1.1.1	syndicates	syndicate	:ARG0-of	1.1.1.1	organized	organize-01
+::edge	1	fund	fund-01	:ARG0	1.1	Proceeds	proceed
+::edge	1	fund	fund-01	:ARG1	1.2	activities	activity
+::edge	1	fund	fund-01	:frequency	1.3	often	often
+::edge	1.1.1.1	organized	organize-01	:ARG1	1.1.1.1.1	crime	crime
+::edge	1.1	Proceeds	proceed	:source	1.1.1	syndicates	syndicate
+11	ASEAN has a plan to counter terrorism together.
+11	ASEAN has a plan to counter terrorism together .
+11	0-1.1.2.1 3-1 5-1.2 6-1.2.2 7-1.2.3
+::node	n	1.1.2	name	
+::node	o	1.2.1	organization	
+::node	p	1	plan-01	plan
+::node	t	1.2.2	terrorism	terrorism
+::node	t2	1.2.3	together	together
+::node	"ASEAN"	1.1.2.1	"ASEAN"	ASEAN
+::node	o	1.1	organization	
+::node	c	1.2	counter-01	counter
+::node	"Association_of_Southeast_Asian_Nations"	1.1.1	"Association_of_Southeast_Asian_Nations"	
+::edge	1.1		organization	:name	1.1.2		name
+::edge	1.2	counter	counter-01	:ARG0	1.2.1		organization
+::edge	1.2	counter	counter-01	:ARG1	1.2.2	terrorism	terrorism
+::edge	1.2	counter	counter-01	:manner	1.2.3	together	together
+::edge	1.1.2		name	:op1	1.1.2.1	ASEAN	"ASEAN"
+::edge	1	plan	plan-01	:ARG0	1.1		organization
+::edge	1	plan	plan-01	:ARG1	1.2	counter	counter-01
+::edge	1.1		organization	:wiki	1.1.1		"Association_of_Southeast_Asian_Nations"
+12	The plan will be implemented within 3 months.
+12	The plan will be implemented within 3 months .
+12	1-1.1 1-1.1.1 1-1.1.1.r 4-1 5-1.2 6-1.2.1.1 7-1.2.1.2
+::node	t3	1.2.1	temporal-quantity	
+::node	i	1	implement-01	implemented
+::node	t2	1.1	thing	plan
+::node	w	1.2	within	within
+::node	m2	1.2.1.2	month	months
+::node	3	1.2.1.1	3	3
+::node	p	1.1.1	plan-01	plan
+::edge	1.2	within	within	:quant	1.2.1		temporal-quantity
+::edge	1	implemented	implement-01	:ARG1	1.1	plan	thing
+::edge	1	implemented	implement-01	:time	1.2	within	within
+::edge	1.2.1		temporal-quantity	:unit	1.2.1.2	months	month
+::edge	1.2.1		temporal-quantity	:quant	1.2.1.1	3	3
+::edge	1.1	plan	thing	:ARG1-of	1.1.1	plan	plan-01
+13	The meeting has been fruitful.
+13	The meeting has been fruitful .
+13	1-1.1 2-1.1 3-1.1.r 4-1
+::node	f	1	fruitful	fruitful
+::node	m	1.1	meet-03	has
+::edge	1	fruitful	fruitful	:domain	1.1	has	meet-03
+14	The draft statement stated --
+14	The draft statement stated --
+14	1-1.1 2-1 2-1.1.1.1 3-1 3-1.1.1.1
+::node	s	1	state-01	stated
+::node	s2	1.1.1.1	state-01	stated
+::node	d	1.1	draft-01	draft
+::node	t	1.1.1	thing	
+::edge	1.1.1		thing	:ARG1-of	1.1.1.1	stated	state-01
+::edge	1	stated	state-01	:mod	1.1	draft	draft-01
+::edge	1.1	draft	draft-01	:ARG1	1.1.1		thing
+15	ASEAN Ministers are concerned about the links between transnational crime and terrorism.
+15	ASEAN Ministers are concerned about the links between transnational crime and terrorism .
+15	0-1.2.1.1.2.1 1-1.2.1.2 3-1 4-1.1.r 6-1.1 7-1.1.1.r 8-1.1.1.3 9-1.1.1.1 10-1.1.1 11-1.1.1.2
+::node	c2	1.1.1.1	crime	crime
+::node	t	1.1.1.2	terrorism	terrorism
+::node	t2	1.1.1.3	transnational	transnational
+::node	"ASEAN"	1.2.1.1.2.1	"ASEAN"	ASEAN
+::node	h	1.2.1	have-org-role-91	
+::node	c	1	concern-01	concerned
+::node	n	1.2.1.1.2	name	
+::node	"Association_of_Southeast_Asian_Nations"	1.2.1.1.1	"Association_of_Southeast_Asian_Nations"	
+::node	l	1.1	link-01	links
+::node	p	1.2	person	
+::node	m	1.2.1.2	minister	Ministers
+::node	o	1.2.1.1	organization	
+::node	a	1.1.1	and	and
+::edge	1.2		person	:ARG0-of	1.2.1		have-org-role-91
+::edge	1.1.1	and	and	:op1	1.1.1.1	crime	crime
+::edge	1.2.1.1		organization	:name	1.2.1.1.2		name
+::edge	1.1.1	and	and	:op2	1.1.1.2	terrorism	terrorism
+::edge	1.2.1.1		organization	:wiki	1.2.1.1.1		"Association_of_Southeast_Asian_Nations"
+::edge	1	concerned	concern-01	:ARG0	1.1	links	link-01
+::edge	1.1.1	and	and	:location	1.1.1.3	transnational	transnational
+::edge	1	concerned	concern-01	:ARG1	1.2		person
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	ASEAN	"ASEAN"
+::edge	1.2.1		have-org-role-91	:ARG2	1.2.1.2	Ministers	minister
+::edge	1.2.1		have-org-role-91	:ARG1	1.2.1.1		organization
+::edge	1.1	links	link-01	:ARG1	1.1.1	and	and
+16	The link between transnational crime and terrorism lends greater urgency to ASEAN's efforts to combat transnational crime.
+16	The link between transnational crime and terrorism lends greater urgency to ASEAN 's efforts to combat transnational crime .
+16	1-1.1 2-1.1.1.r 3-1.1.1.3 4-1.1.1.1 5-1.1.1 6-1.1.1.2 7-1 8-1.2.1 8-1.2.1.1 8-1.2.1.1.r 9-1.2 10-1.3.r 11-1.3.2.2.1 12-1.3.2.r 13-1.3 15-1.3.1 16-1.1.1.3 17-1.1.1.1
+::node	c	1.1.1.1	crime	crime
+::node	t	1.1.1.2	terrorism	terrorism
+::node	"ASEAN"	1.3.2.2.1	"ASEAN"	ASEAN
+::node	t2	1.1.1.3	transnational	transnational
+::node	c	1.3.1.1	crime	
+::node	"Association_of_Southeast_Asian_Nations"	1.3.2.1	"Association_of_Southeast_Asian_Nations"	
+::node	n	1.3.2.2	name	
+::node	g	1.2.1	great	greater
+::node	l	1	lend-01	lends
+::node	c2	1.3.1	combat-01	combat
+::node	o	1.3.2	organization	
+::node	l2	1.1	link-01	link
+::node	u	1.2	urgent	urgency
+::node	e	1.3	effort	efforts
+::node	m	1.2.1.1	more	greater
+::node	a	1.1.1	and	and
+::edge	1.1.1	and	and	:op1	1.1.1.1	crime	crime
+::edge	1.1.1	and	and	:op2	1.1.1.2	terrorism	terrorism
+::edge	1.3.2.2		name	:op1	1.3.2.2.1	ASEAN	"ASEAN"
+::edge	1.1.1	and	and	:location	1.1.1.3	transnational	transnational
+::edge	1.3.1	combat	combat-01	:ARG1	1.3.1.1		crime
+::edge	1.3.2		organization	:wiki	1.3.2.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.3.2		organization	:name	1.3.2.2		name
+::edge	1.2	urgency	urgent	:mod	1.2.1	greater	great
+::edge	1.3	efforts	effort	:purpose	1.3.1	combat	combat-01
+::edge	1.3	efforts	effort	:poss	1.3.2		organization
+::edge	1	lends	lend-01	:ARG0	1.1	link	link-01
+::edge	1	lends	lend-01	:ARG1	1.2	urgency	urgent
+::edge	1	lends	lend-01	:ARG2	1.3	efforts	effort
+::edge	1.2.1	greater	great	:degree	1.2.1.1	greater	more
+::edge	1.1	link	link-01	:ARG1	1.1.1	and	and
+17	ASEAN senior officials agreed on the draft after 2 days of intense discussion.
+17	ASEAN senior officials agreed on the draft after 2 days of intense discussion .
+17	0-1.1.1.1.2.1 1-1.1.1.2.1 2-1.1.1.2 3-1 4-1.2.r 6-1.2 6-1.2.1 6-1.2.1.r 7-1.3 8-1.3.1.1.1 9-1.3.1.1.2 11-1.3.1.2 12-1.3.1
+::node	"ASEAN"	1.1.1.1.2.1	"ASEAN"	ASEAN
+::node	o2	1.1.1.1	organization	
+::node	o	1.1.1.2	official	officials
+::node	t3	1.3.1.1	temporal-quantity	
+::node	i	1.3.1.2	intense	intense
+::node	2	1.3.1.1.1	2	2
+::node	d2	1.2.1	draft-01	draft
+::node	a	1	agree-01	agreed
+::node	d3	1.3.1	discuss-01	discussion
+::node	p	1.1	person	
+::node	d4	1.3.1.1.2	day	days
+::node	t2	1.2	thing	draft
+::node	a2	1.3	after	after
+::node	n	1.1.1.1.2	name	
+::node	s	1.1.1.2.1	senior	senior
+::node	"Association_of_Southeast_Asian_Nations"	1.1.1.1.1	"Association_of_Southeast_Asian_Nations"	
+::node	h	1.1.1	have-org-role-91	
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	ASEAN	"ASEAN"
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		organization
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.3.1	discussion	discuss-01	:duration	1.3.1.1		temporal-quantity
+::edge	1.3.1	discussion	discuss-01	:mod	1.3.1.2	intense	intense
+::edge	1.3.1.1		temporal-quantity	:quant	1.3.1.1.1	2	2
+::edge	1.2	draft	thing	:ARG1-of	1.2.1	draft	draft-01
+::edge	1.3	after	after	:op1	1.3.1	discussion	discuss-01
+::edge	1	agreed	agree-01	:ARG0	1.1		person
+::edge	1.3.1.1		temporal-quantity	:unit	1.3.1.1.2	days	day
+::edge	1	agreed	agree-01	:ARG1	1.2	draft	thing
+::edge	1	agreed	agree-01	:time	1.3	after	after
+::edge	1.1.1.1		organization	:name	1.1.1.1.2		name
+::edge	1.1.1.2	officials	official	:mod	1.1.1.2.1	senior	senior
+::edge	1.1.1.1		organization	:wiki	1.1.1.1.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+18	The draft will be submitted to ASEAN's respective ministers to discuss and adopt.
+18	The draft will be submitted to ASEAN 's respective ministers to discuss and adopt .
+18	1-1.1 1-1.1.1 1-1.1.1.r 4-1 5-1.2.r 6-1.2.2.2.1 7-1.2.2.r 8-1.2.3 9-1.2 9-1.2.1 9-1.2.1.r 10-1.3.r 11-1.3.1 12-1.3 13-1.3.2
+::node	m	1.3.1.1	minister-01	
+::node	t	1.3.1.2	thing	
+::node	m	1.3.2.1	minister-01	
+::node	t	1.3.2.2	thing	
+::node	m	1.2.1	minister-01	ministers
+::node	s	1	submit-01	submitted
+::node	o	1.2.2	organization	
+::node	d2	1.3.1	discuss-01	discuss
+::node	r	1.2.3	respective	respective
+::node	a2	1.3.2	adopt-01	adopt
+::node	t	1.1	thing	draft
+::node	p	1.2	person	ministers
+::node	a	1.3	and	and
+::node	"Association_of_Southeast_Asian_Nations"	1.2.2.1	"Association_of_Southeast_Asian_Nations"	
+::node	n	1.2.2.2	name	
+::node	"ASEAN"	1.2.2.2.1	"ASEAN"	ASEAN
+::node	d	1.1.1	draft-01	draft
+::edge	1.3.1	discuss	discuss-01	:ARG0	1.3.1.1		minister-01
+::edge	1.3.1	discuss	discuss-01	:ARG1	1.3.1.2		thing
+::edge	1.3.2	adopt	adopt-01	:ARG0	1.3.2.1		minister-01
+::edge	1.3.2	adopt	adopt-01	:ARG1	1.3.2.2		thing
+::edge	1.2	ministers	person	:ARG0-of	1.2.1	ministers	minister-01
+::edge	1.2	ministers	person	:poss	1.2.2		organization
+::edge	1.3	and	and	:op1	1.3.1	discuss	discuss-01
+::edge	1.2	ministers	person	:mod	1.2.3	respective	respective
+::edge	1.3	and	and	:op2	1.3.2	adopt	adopt-01
+::edge	1	submitted	submit-01	:ARG1	1.1	draft	thing
+::edge	1	submitted	submit-01	:ARG2	1.2	ministers	person
+::edge	1	submitted	submit-01	:ARG3	1.3	and	and
+::edge	1.2.2		organization	:wiki	1.2.2.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.2.2		organization	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	ASEAN	"ASEAN"
+::edge	1.1	draft	thing	:ARG1-of	1.1.1	draft	draft-01
+19	From 19 May 2002 the interior ministers of the ASEAN countries will meet for 2 days in Kuala Lumpur.
+19	From 19 May 2002 the interior ministers of the ASEAN countries will meet for 2 days in Kuala Lumpur .
+19	0-1.3 1-1.3.1.3 2-1.3.1.2 2-1.3.1.2.r 3-1.3.1.1 5-1.1.1.2.1 6-1.1.1.2 7-1.1.1 9-1.1.1.1.1.1.2.1 10-1.1.1.1 12-1 13-1.2.r 14-1.2.1 15-1.2.2 16-1.4.r 17-1.4.2.1 18-1.4.2.2
+::node	o	1.1.1.1.1.1	organization	
+::node	c	1.1.1.1	country	countries
+::node	"Association_of_Southeast_Asian_Nations"	1.1.1.1.1.1.1	"Association_of_Southeast_Asian_Nations"	
+::node	m2	1.1.1.2	minister	ministers
+::node	n	1.1.1.1.1.1.2	name	
+::node	2002	1.3.1.1	2002	2002
+::node	5	1.3.1.2	5	May
+::node	19	1.3.1.3	19	19
+::node	2	1.2.1	2	2
+::node	m	1	meet-03	meet
+::node	d3	1.2.2	day	days
+::node	d4	1.3.1	date-entity	
+::node	"Kuala_Lumpur"	1.4.1	"Kuala_Lumpur"	
+::node	n2	1.4.2	name	
+::node	p	1.1	person	
+::node	t2	1.2	temporal-quantity	
+::node	f	1.3	from	From
+::node	c2	1.4	city	
+::node	i	1.1.1.2.1	interior	interior
+::node	h2	1.1.1.1.1	have-org-role-91	
+::node	"Kuala"	1.4.2.1	"Kuala"	Kuala
+::node	"Lumpur"	1.4.2.2	"Lumpur"	Lumpur
+::node	"ASEAN"	1.1.1.1.1.1.2.1	"ASEAN"	ASEAN
+::node	h	1.1.1	have-org-role-91	of
+::edge	1.1.1.1.1		have-org-role-91	:ARG1	1.1.1.1.1.1		organization
+::edge	1.1.1	of	have-org-role-91	:ARG1	1.1.1.1	countries	country
+::edge	1.1.1.1.1.1		organization	:wiki	1.1.1.1.1.1.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.1.1	of	have-org-role-91	:ARG2	1.1.1.2	ministers	minister
+::edge	1.1.1.1.1.1		organization	:name	1.1.1.1.1.1.2		name
+::edge	1.3.1		date-entity	:year	1.3.1.1	2002	2002
+::edge	1.3.1		date-entity	:month	1.3.1.2	May	5
+::edge	1.3.1		date-entity	:day	1.3.1.3	19	19
+::edge	1.2		temporal-quantity	:quant	1.2.1	2	2
+::edge	1.2		temporal-quantity	:unit	1.2.2	days	day
+::edge	1.3	From	from	:op1	1.3.1		date-entity
+::edge	1.4		city	:wiki	1.4.1		"Kuala_Lumpur"
+::edge	1.4		city	:name	1.4.2		name
+::edge	1	meet	meet-03	:ARG0	1.1		person
+::edge	1	meet	meet-03	:duration	1.2		temporal-quantity
+::edge	1	meet	meet-03	:time	1.3	From	from
+::edge	1	meet	meet-03	:location	1.4		city
+::edge	1.1.1.2	ministers	minister	:topic	1.1.1.2.1	interior	interior
+::edge	1.1.1.1	countries	country	:ARG0-of	1.1.1.1.1		have-org-role-91
+::edge	1.4.2		name	:op1	1.4.2.1	Kuala	"Kuala"
+::edge	1.4.2		name	:op2	1.4.2.2	Lumpur	"Lumpur"
+::edge	1.1.1.1.1.1.2		name	:op1	1.1.1.1.1.1.2.1	ASEAN	"ASEAN"
+::edge	1.1		person	:ARG0-of	1.1.1	of	have-org-role-91
+20	The work program includes an exchange of information and development of multilateral or bilateral legal arrangements to facilitate apprehension.
+20	The work program includes an exchange of information and development of multilateral or bilateral legal arrangements to facilitate apprehension .
+20	1-1.2.1 2-1.2 3-1 5-1.1.1 6-1.1.1.1.r 7-1.1.1.1 8-1.1 9-1.1.2 10-1.1.2.1.r 11-1.1.2.1.3.1 12-1.1.2.1.3 13-1.1.2.1.3.2 14-1.1.2.1.2 15-1.1.2.1 15-1.1.2.1.1 15-1.1.2.1.1.r 17-1.1.3 18-1.1.3.1
+::node	i2	1.1.1.1	information	information
+::node	b	1.1.2.1.3.2	bilateral	bilateral
+::node	t	1.1.2.1	thing	arrangements
+::node	a3	1.1.3.1	apprehend-01	apprehension
+::node	m	1.1.2.1.3.1	multilateral	multilateral
+::node	l	1.1.2.1.2	law	legal
+::node	a2	1.1.2.1.1	arrange-01	arrangements
+::node	d	1.1.2	develop-02	development
+::node	w	1.2.1	work	work
+::node	i	1	include-01	includes
+::node	f	1.1.3	facilitate-01	facilitate
+::node	a	1.1	and	and
+::node	o	1.1.2.1.3	or	or
+::node	p	1.2	program	program
+::node	e	1.1.1	exchange-01	exchange
+::edge	1.1.1	exchange	exchange-01	:ARG1	1.1.1.1	information	information
+::edge	1.1.2.1.3	or	or	:op2	1.1.2.1.3.2	bilateral	bilateral
+::edge	1.1.2	development	develop-02	:ARG1	1.1.2.1	arrangements	thing
+::edge	1.1.3	facilitate	facilitate-01	:ARG1	1.1.3.1	apprehension	apprehend-01
+::edge	1.1.2.1.3	or	or	:op1	1.1.2.1.3.1	multilateral	multilateral
+::edge	1.1.2.1	arrangements	thing	:mod	1.1.2.1.2	legal	law
+::edge	1.1.2.1	arrangements	thing	:ARG1-of	1.1.2.1.1	arrangements	arrange-01
+::edge	1.1	and	and	:op2	1.1.2	development	develop-02
+::edge	1.2	program	program	:mod	1.2.1	work	work
+::edge	1.1	and	and	:purpose	1.1.3	facilitate	facilitate-01
+::edge	1	includes	include-01	:ARG1	1.1	and	and
+::edge	1.1.2.1	arrangements	thing	:mod	1.1.2.1.3	or	or
+::edge	1	includes	include-01	:ARG2	1.2	program	program
+::edge	1.1	and	and	:op1	1.1.1	exchange	exchange-01
+21	ASEAN officials agreed to enhance cooperation and coordination in law enforcement and intelligence sharing.
+21	ASEAN officials agreed to enhance cooperation and coordination in law enforcement and intelligence sharing .
+21	0-1.1.1.1.2.1 1-1.1.1.2 2-1 4-1.2 5-1.2.2.1 6-1.2.2 7-1.2.2.2 8-1.2.2.1.1.r 9-1.2.2.1.1.1.1 10-1.2.2.1.1.1 11-1.2.2.1.1 12-1.2.2.1.1.2.1 13-1.2.2.1.1.2
+::node	"ASEAN"	1.1.1.1.2.1	"ASEAN"	ASEAN
+::node	o2	1.1.1.1	organization	
+::node	o	1.1.1.2	official	officials
+::node	a3	1.2.2.1.1	and	and
+::node	e2	1.2.2.1.1.1	enforce-01	enforcement
+::node	s	1.2.2.1.1.2	share-01	sharing
+::node	l	1.2.2.1.1.1.1	law	law
+::node	i	1.2.2.1.1.2.1	intelligence	intelligence
+::node	p	1.2.1	person	
+::node	a	1	agree-01	agreed
+::node	a2	1.2.2	and	and
+::node	p	1.1	person	
+::node	e	1.2	enhance-01	enhance
+::node	n	1.1.1.1.2	name	
+::node	"Association_of_Southeast_Asian_Nations"	1.1.1.1.1	"Association_of_Southeast_Asian_Nations"	
+::node	c	1.2.2.1	cooperate-01	cooperation
+::node	e2	1.2.2.2.1.1	enforce-01	
+::node	c2	1.2.2.2	coordinate-01	coordination
+::node	a4	1.2.2.2.1	and	
+::node	s	1.2.2.2.1.2	share-01	
+::node	h	1.1.1	have-org-role-91	
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	ASEAN	"ASEAN"
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		organization
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.2.2.1	cooperation	cooperate-01	:ARG2	1.2.2.1.1	and	and
+::edge	1.2.2.1.1	and	and	:op1	1.2.2.1.1.1	enforcement	enforce-01
+::edge	1.2.2.1.1	and	and	:op2	1.2.2.1.1.2	sharing	share-01
+::edge	1.2.2.1.1.1	enforcement	enforce-01	:ARG1	1.2.2.1.1.1.1	law	law
+::edge	1.2.2.1.1.2	sharing	share-01	:ARG1	1.2.2.1.1.2.1	intelligence	intelligence
+::edge	1.2	enhance	enhance-01	:ARG0	1.2.1		person
+::edge	1.2	enhance	enhance-01	:ARG1	1.2.2	and	and
+::edge	1	agreed	agree-01	:ARG0	1.1		person
+::edge	1	agreed	agree-01	:ARG1	1.2	enhance	enhance-01
+::edge	1.1.1.1		organization	:name	1.1.1.1.2		name
+::edge	1.1.1.1		organization	:wiki	1.1.1.1.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.2.2	and	and	:op1	1.2.2.1	cooperation	cooperate-01
+::edge	1.2.2.2.1		and	:op1	1.2.2.2.1.1		enforce-01
+::edge	1.2.2	and	and	:op2	1.2.2.2	coordination	coordinate-01
+::edge	1.2.2.2	coordination	coordinate-01	:ARG1	1.2.2.2.1		and
+::edge	1.2.2.2.1		and	:op2	1.2.2.2.1.2		share-01
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+22	ASEAN officials agreed to develop regional training programs.
+22	ASEAN officials agreed to develop regional training programs .
+22	0-1.1.1.1.2.1 1-1.1.1.2 2-1 4-1.2 5-1.2.2.2 6-1.2.2.1 7-1.2.2
+::node	"ASEAN"	1.1.1.1.2.1	"ASEAN"	ASEAN
+::node	o2	1.1.1.1	organization	
+::node	o	1.1.1.2	official	officials
+::node	p2	1.2.1	person	
+::node	a	1	agree-01	agreed
+::node	p	1.2.2	program	programs
+::node	p2	1.1	person	
+::node	d	1.2	develop-02	develop
+::node	n	1.1.1.1.2	name	
+::node	"Association_of_Southeast_Asian_Nations"	1.1.1.1.1	"Association_of_Southeast_Asian_Nations"	
+::node	t	1.2.2.1	train-01	training
+::node	r	1.2.2.2	regional	regional
+::node	h	1.1.1	have-org-role-91	
+::edge	1.2	develop	develop-02	:ARG0	1.2.1		person
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	ASEAN	"ASEAN"
+::edge	1.2	develop	develop-02	:ARG1	1.2.2	programs	program
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		organization
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1	agreed	agree-01	:ARG0	1.1		person
+::edge	1	agreed	agree-01	:ARG1	1.2	develop	develop-02
+::edge	1.1.1.1		organization	:name	1.1.1.1.2		name
+::edge	1.1.1.1		organization	:wiki	1.1.1.1.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.2.2	programs	program	:purpose	1.2.2.1	training	train-01
+::edge	1.2.2	programs	program	:location	1.2.2.2	regional	regional
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+23	ASEAN officials held an expert group meeting in January 2002 in Bali, Indonesia.
+23	ASEAN officials held an expert group meeting in January 2002 in Bali , Indonesia .
+23	0-1.1.1.1.2.1 1-1.1.1.2 2-1 4-1.2.1.1 5-1.2.1 5-1.2.1.2 5-1.2.1.2.r 6-1.2 7-1.3.r 8-1.3.2 8-1.3.2.r 9-1.3.1 10-1.4.r 11-1.4.2.1 13-1.4.3.2.1
+::node	"ASEAN"	1.1.1.1.2.1	"ASEAN"	ASEAN
+::node	o2	1.1.1.1	organization	
+::node	n2	1.4.3.2	name	
+::node	o	1.1.1.2	official	officials
+::node	p	1.2.1	person	group
+::node	h	1	hold-04	held
+::node	2002	1.3.1	2002	2002
+::node	1	1.3.2	1	January
+::node	"Bali"	1.4.1	"Bali"	
+::node	n	1.4.2	name	
+::node	p2	1.1	person	
+::node	c2	1.4.3	country	
+::node	m	1.2	meet-03	meeting
+::node	"Indonesia"	1.4.3.2.1	"Indonesia"	Indonesia
+::node	d2	1.3	date-entity	
+::node	i	1.4	island	
+::node	n3	1.1.1.1.2	name	
+::node	"Association_of_Southeast_Asian_Nations"	1.1.1.1.1	"Association_of_Southeast_Asian_Nations"	
+::node	g	1.2.1.2	group-01	group
+::node	"Bali"	1.4.2.1	"Bali"	Bali
+::node	e	1.2.1.1	expert-41	expert
+::node	"Indonesia"	1.4.3.1	"Indonesia"	
+::node	h2	1.1.1	have-org-role-91	
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	ASEAN	"ASEAN"
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		organization
+::edge	1.4.3		country	:name	1.4.3.2		name
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.2	meeting	meet-03	:ARG0	1.2.1	group	person
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.3		date-entity	:month	1.3.2	January	1
+::edge	1.4		island	:wiki	1.4.1		"Bali"
+::edge	1.4		island	:name	1.4.2		name
+::edge	1	held	hold-04	:ARG0	1.1		person
+::edge	1.4		island	:location	1.4.3		country
+::edge	1	held	hold-04	:ARG1	1.2	meeting	meet-03
+::edge	1.4.3.2		name	:op1	1.4.3.2.1	Indonesia	"Indonesia"
+::edge	1	held	hold-04	:time	1.3		date-entity
+::edge	1	held	hold-04	:location	1.4		island
+::edge	1.1.1.1		organization	:name	1.1.1.1.2		name
+::edge	1.1.1.1		organization	:wiki	1.1.1.1.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.2.1	group	person	:ARG2-of	1.2.1.2	group	group-01
+::edge	1.4.2		name	:op1	1.4.2.1	Bali	"Bali"
+::edge	1.2.1	group	person	:ARG1-of	1.2.1.1	expert	expert-41
+::edge	1.4.3		country	:wiki	1.4.3.1		"Indonesia"
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+24	The Expert Group Meeting in Bali produced a work program that was discussed and finalized by the ASEAN senior officials who have been meeting in Kuala Lumpur since 16 May 2002.
+24	The Expert Group Meeting in Bali produced a work program that was discussed and finalized by the ASEAN senior officials who have been meeting in Kuala Lumpur since 16 May 2002 .
+24	1-1.1.2.1 2-1.1.2.2 3-1.1.2.3 5-1.1.3.2.1 6-1 8-1.2.1 9-1.2 12-1.2.2 14-1.2.3 15-1.2.2.1.r 17-1.2.2.1.1.1.2.1 18-1.2.2.1.1.2.1 19-1.2.2.1.1.2 21-1.2.2.1.1 23-1.2.2.1.2 24-1.2.2.1.2.1.r 25-1.2.2.1.2.1.2.1 26-1.2.2.1.2.1.2.2 27-1.2.2.1.2.2 28-1.2.2.1.2.2.1.3 29-1.2.2.1.2.2.1.2 29-1.2.2.1.2.2.1.2.r 30-1.2.2.1.2.2.1.1
+::node	"Bali"	1.1.3.2.1	"Bali"	Bali
+::node	o2	1.2.2.1.1.1	organization	
+::node	o	1.2.2.1.1.2	official	officials
+::node	c	1.2.2.1.2.1	city	
+::node	"Association_of_Southeast_Asian_Nations"	1.2.2.1.1.1.1	"Association_of_Southeast_Asian_Nations"	
+::node	"Lumpur"	1.2.2.1.2.1.2.2	"Lumpur"	Lumpur
+::node	"Kuala"	1.2.2.1.2.1.2.1	"Kuala"	Kuala
+::node	s2	1.2.2.1.2.2	since	since
+::node	n2	1.2.2.1.1.1.2	name	
+::node	s	1.2.2.1.1.2.1	senior	senior
+::node	n3	1.2.2.1.2.1.2	name	
+::node	d2	1.2.2.1.2.2.1	date-entity	
+::node	"Kuala_Lumpur"	1.2.2.1.2.1.1	"Kuala_Lumpur"	
+::node	16	1.2.2.1.2.2.1.3	16	16
+::node	p4	1.2.2.1	person	
+::node	p4	1.2.3.1	person	
+::node	m	1.2.2.1.2	meet-03	meeting
+::node	5	1.2.2.1.2.2.1.2	5	May
+::node	2002	1.2.2.1.2.2.1.1	2002	2002
+::node	"Expert"	1.1.2.1	"Expert"	Expert
+::node	h	1.2.2.1.1	have-org-role-91	have
+::node	"Group"	1.1.2.2	"Group"	Group
+::node	"Bali"	1.1.3.1	"Bali"	
+::node	"Meeting"	1.1.2.3	"Meeting"	Meeting
+::node	n4	1.1.3.2	name	
+::node	"ASEAN"	1.2.2.1.1.1.2.1	"ASEAN"	ASEAN
+::node	n	1.1.2	name	
+::node	w	1.2.1	work	work
+::node	p	1	produce-01	produced
+::node	i	1.1.3	island	
+::node	d	1.2.2	discuss-01	discussed
+::node	f	1.2.3	finalize-01	finalized
+::node	e	1.1	event	
+::node	p2	1.2	program	program
+::node	-	1.1.1	-	
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	Bali	"Bali"
+::edge	1.2.2.1.1	have	have-org-role-91	:ARG1	1.2.2.1.1.1		organization
+::edge	1.2.2.1.1	have	have-org-role-91	:ARG2	1.2.2.1.1.2	officials	official
+::edge	1.2.2.1.2	meeting	meet-03	:location	1.2.2.1.2.1		city
+::edge	1.2.2.1.1.1		organization	:wiki	1.2.2.1.1.1.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.2.2.1.2.1.2		name	:op2	1.2.2.1.2.1.2.2	Lumpur	"Lumpur"
+::edge	1.2.2.1.2.1.2		name	:op1	1.2.2.1.2.1.2.1	Kuala	"Kuala"
+::edge	1.2.2.1.2	meeting	meet-03	:time	1.2.2.1.2.2	since	since
+::edge	1.2.2.1.1.1		organization	:name	1.2.2.1.1.1.2		name
+::edge	1.2.2.1.1.2	officials	official	:mod	1.2.2.1.1.2.1	senior	senior
+::edge	1.2.2.1.2.1		city	:name	1.2.2.1.2.1.2		name
+::edge	1.2.2.1.2.2	since	since	:op1	1.2.2.1.2.2.1		date-entity
+::edge	1.2.2.1.2.1		city	:wiki	1.2.2.1.2.1.1		"Kuala_Lumpur"
+::edge	1.2.2.1.2.2.1		date-entity	:day	1.2.2.1.2.2.1.3	16	16
+::edge	1.2.2	discussed	discuss-01	:ARG0	1.2.2.1		person
+::edge	1.2.3	finalized	finalize-01	:ARG0	1.2.3.1		person
+::edge	1.2.2.1		person	:ARG0-of	1.2.2.1.2	meeting	meet-03
+::edge	1.2.2.1.2.2.1		date-entity	:month	1.2.2.1.2.2.1.2	May	5
+::edge	1.2.2.1.2.2.1		date-entity	:year	1.2.2.1.2.2.1.1	2002	2002
+::edge	1.1.2		name	:op1	1.1.2.1	Expert	"Expert"
+::edge	1.2.2.1		person	:ARG0-of	1.2.2.1.1	have	have-org-role-91
+::edge	1.1.2		name	:op2	1.1.2.2	Group	"Group"
+::edge	1.1.3		island	:wiki	1.1.3.1		"Bali"
+::edge	1.1.2		name	:op3	1.1.2.3	Meeting	"Meeting"
+::edge	1.1.3		island	:name	1.1.3.2		name
+::edge	1.2.2.1.1.1.2		name	:op1	1.2.2.1.1.1.2.1	ASEAN	"ASEAN"
+::edge	1.1		event	:name	1.1.2		name
+::edge	1.2	program	program	:mod	1.2.1	work	work
+::edge	1.1		event	:location	1.1.3		island
+::edge	1.2	program	program	:ARG1-of	1.2.2	discussed	discuss-01
+::edge	1.2	program	program	:ARG1-of	1.2.3	finalized	finalize-01
+::edge	1	produced	produce-01	:ARG0	1.1		event
+::edge	1	produced	produce-01	:ARG1	1.2	program	program
+::edge	1.1		event	:wiki	1.1.1		-
+25	The Association of Southeast Asian Nations has 10 member countries.
+25	The Association of Southeast Asian Nations has 10 member countries .
+25	1-1.2.1 2-1.2.2 3-1.2.3 4-1.2.4 5-1.2.5 7-1.3.1 8-1.3.2 9-1.3
+::node	"Association"	1.2.1	"Association"	Association
+::node	o	1	organization	
+::node	"of"	1.2.2	"of"	of
+::node	10	1.3.1	10	10
+::node	"Southeast"	1.2.3	"Southeast"	Southeast
+::node	m	1.3.2	member	member
+::node	"Asian"	1.2.4	"Asian"	Asian
+::node	"Association_of_Southeast_Asian_Nations"	1.1	"Association_of_Southeast_Asian_Nations"	
+::node	"Nations"	1.2.5	"Nations"	Nations
+::node	n	1.2	name	
+::node	c	1.3	country	countries
+::edge	1.2		name	:op1	1.2.1	Association	"Association"
+::edge	1.2		name	:op2	1.2.2	of	"of"
+::edge	1.3	countries	country	:quant	1.3.1	10	10
+::edge	1.2		name	:op3	1.2.3	Southeast	"Southeast"
+::edge	1.3	countries	country	:mod	1.3.2	member	member
+::edge	1.2		name	:op4	1.2.4	Asian	"Asian"
+::edge	1		organization	:wiki	1.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.2		name	:op5	1.2.5	Nations	"Nations"
+::edge	1		organization	:name	1.2		name
+::edge	1		organization	:consist-of	1.3	countries	country

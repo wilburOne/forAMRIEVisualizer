@@ -1,0 +1,784 @@
+1	2002-01-28
+1	2002 @-@ 01 @-@ 28
+1	0-1.3 2-1.2 4-1.1
+::node	d	1	date-entity	
+::node	28	1.1	28	28
+::node	1	1.2	1	01
+::node	2002	1.3	2002	2002
+::edge	1		date-entity	:day	1.1	28	28
+::edge	1		date-entity	:month	1.2	01	1
+::edge	1		date-entity	:year	1.3	2002	2002
+2	Russian Federation (RU)
+2	Russian Federation ( RU )
+2	0-1.2.1 1-1.2.2
+::node	"Russian"	1.2.1	"Russian"	Russian
+::node	c	1	country	
+::node	"Federation"	1.2.2	"Federation"	Federation
+::node	"Russia"	1.1	"Russia"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	Russian	"Russian"
+::edge	1.2		name	:op2	1.2.2	Federation	"Federation"
+::edge	1		country	:wiki	1.1		"Russia"
+::edge	1		country	:name	1.2		name
+3	International; space; energy
+3	International ; space ; energy
+3	0-1.1 2-1.2 4-1.3
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	s	1.2	space	space
+::node	e	1.3	energy	energy
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	space	space
+::edge	1		and	:op3	1.3	energy	energy
+4	Russian space officials warn that power cuts against the military for non-payment of bills, like the one at a command center in the Far East Kamchatka Peninsula of the Russian Space Forces, could have catastrophic consequences.
+4	Russian space officials warn that power cuts against the military for non @-@ payment of bills , like the one at a command center in the Far East Kamchatka Peninsula of the Russian Space Forces , could have catastrophic consequences .
+4	0-1.1.1.1.2.1 1-1.1.1.2.1 2-1.1.1.2 3-1 4-1.2.r 5-1.2.1.2.1.1 6-1.2.1.2.1 6-1.2.1.2.1.4.1 7-1.2.1.2.1.3.r 9-1.2.1.2.1.2.1.2 11-1.2.1.2.1.2.1.1 11-1.2.1.2.1.2.1.1.r 13-1.2.1.2.1.2.1 14-1.2.1.2.1.2.1.3.r 15-1.2.1.2.1.2.1.3 17-1.2.1.2.1.4 20-1.2.1.2.1.4.1.1.r 22-1.2.1.2.1.4.1.1.1 23-1.2.1.2.1.4.1.1 24-1.2.1.2.1.4.1.1.2.r 26-1.2.1.2.1.4.1.1.2.3.2.1 27-1.2.1.2.1.4.1.1.2.3.2.2 28-1.2.1.2.1.4.1.1.2.2.1 29-1.2.1.2.1.4.1.1.2.2.2 30-1.2.1.2.1.4.1.1.1.1.r 32-1.2.1.2.1.4.1.1.1.1.2.1 33-1.2.1.2.1.4.1.1.1.1.2.2 34-1.2.1.2.1.4.1.1.1.1.2.3 36-1.2 38-1.2.1.1 39-1.2.1 39-1.2.1.2 39-1.2.1.2.1.2 39-1.2.1.2.r
+::node	n2	1.2.1.2.1.4.1.1.1.1.2	name	
+::node	"Russian_Space_Forces"	1.2.1.2.1.4.1.1.1.1.1	"Russian_Space_Forces"	
+::node	b	1.2.1.2.1.2.1.3	bill-01	bills
+::node	m	1.2.1.2.1.2.1.2	military	military
+::node	-	1.2.1.2.1.2.1.1	-	non
+::node	m2	1.2.1.2.1.4.1.1.1.1	military	
+::node	"Kamchatka_Peninsula"	1.2.1.2.1.4.1.1.2.1	"Kamchatka_Peninsula"	
+::node	n3	1.2.1.2.1.4.1.1.2.2	name	
+::node	w2	1.2.1.2.1.4.1.1.2.3	world-region	
+::node	n	1.1.1.1.2	name	
+::node	s	1.1.1.2.1	space	space
+::node	"Russia"	1.1.1.1.1	"Russia"	
+::node	c4	1.2.1.2	cause-01	consequences
+::node	c3	1.2.1.1	catastrophic	catastrophic
+::node	c7	1.2.1.2.1.4.1.1	center	center
+::node	"Russia"	1.1.1.1.2.1	"Russia"	Russian
+::node	c	1.1.1.1	country	
+::node	o	1.1.1.2	official	officials
+::node	c9	1.2.1.2.1.4.1	cut-02	cuts
+::node	"Forces"	1.2.1.2.1.4.1.1.1.1.2.3	"Forces"	Forces
+::node	"Space"	1.2.1.2.1.4.1.1.1.1.2.2	"Space"	Space
+::node	p4	1.2.1.2.1.4.1.1.2	peninsula	
+::node	"East"	1.2.1.2.1.4.1.1.2.3.2.2	"East"	East
+::node	c8	1.2.1.2.1.4.1.1.1	command-02	command
+::node	"Russian"	1.2.1.2.1.4.1.1.1.1.2.1	"Russian"	Russian
+::node	p3	1.2.1.2.1.2.1	pay-01	payment
+::node	"Far"	1.2.1.2.1.4.1.1.2.3.2.1	"Far"	Far
+::node	c2	1.2.1	consequence	consequences
+::node	p2	1.2.1.2.1.1	power	power
+::node	w	1	warn-01	warn
+::node	c6	1.2.1.2.1.2	cause-01	consequences
+::node	c5	1.2.1.2.1	cut-02	cuts
+::node	"Kamchatka"	1.2.1.2.1.4.1.1.2.2.1	"Kamchatka"	Kamchatka
+::node	"Peninsula"	1.2.1.2.1.4.1.1.2.2.2	"Peninsula"	Peninsula
+::node	"Far_East"	1.2.1.2.1.4.1.1.2.3.1	"Far_East"	
+::node	p5	1.1	person	
+::node	p	1.2	possible	could
+::node	m	1.2.1.2.1.3	military	
+::node	r	1.2.1.2.1.4	resemble-01	like
+::node	n4	1.2.1.2.1.4.1.1.2.3.2	name	
+::node	h	1.1.1	have-org-role-91	
+::edge	1.2.1.2.1.4.1.1.1.1		military	:name	1.2.1.2.1.4.1.1.1.1.2		name
+::edge	1.2.1.2.1.4.1.1.1.1		military	:wiki	1.2.1.2.1.4.1.1.1.1.1		"Russian_Space_Forces"
+::edge	1.2.1.2.1.2.1	payment	pay-01	:ARG3	1.2.1.2.1.2.1.3	bills	bill-01
+::edge	1.2.1.2.1.2.1	payment	pay-01	:ARG0	1.2.1.2.1.2.1.2	military	military
+::edge	1.2.1.2.1.2.1	payment	pay-01	:polarity	1.2.1.2.1.2.1.1	non	-
+::edge	1.2.1.2.1.4.1.1.1	command	command-02	:ARG1	1.2.1.2.1.4.1.1.1.1		military
+::edge	1.2.1.2.1.4.1.1.2		peninsula	:wiki	1.2.1.2.1.4.1.1.2.1		"Kamchatka_Peninsula"
+::edge	1.2.1.2.1.4.1.1.2		peninsula	:name	1.2.1.2.1.4.1.1.2.2		name
+::edge	1.2.1.2.1.4.1.1.2		peninsula	:location	1.2.1.2.1.4.1.1.2.3		world-region
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.2	officials	official	:topic	1.1.1.2.1	space	space
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Russia"
+::edge	1.2.1	consequences	consequence	:ARG1-of	1.2.1.2	consequences	cause-01
+::edge	1.2.1	consequences	consequence	:mod	1.2.1.1	catastrophic	catastrophic
+::edge	1.2.1.2.1.4.1	cuts	cut-02	:location	1.2.1.2.1.4.1.1	center	center
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Russian	"Russia"
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		country
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.2.1.2.1.4	like	resemble-01	:ARG2	1.2.1.2.1.4.1	cuts	cut-02
+::edge	1.2.1.2.1.4.1.1.1.1.2		name	:op3	1.2.1.2.1.4.1.1.1.1.2.3	Forces	"Forces"
+::edge	1.2.1.2.1.4.1.1.1.1.2		name	:op2	1.2.1.2.1.4.1.1.1.1.2.2	Space	"Space"
+::edge	1.2.1.2.1.4.1.1	center	center	:location	1.2.1.2.1.4.1.1.2		peninsula
+::edge	1.2.1.2.1.4.1.1.2.3.2		name	:op2	1.2.1.2.1.4.1.1.2.3.2.2	East	"East"
+::edge	1.2.1.2.1.4.1.1	center	center	:purpose	1.2.1.2.1.4.1.1.1	command	command-02
+::edge	1.2.1.2.1.4.1.1.1.1.2		name	:op1	1.2.1.2.1.4.1.1.1.1.2.1	Russian	"Russian"
+::edge	1.2.1.2.1.2	consequences	cause-01	:ARG0	1.2.1.2.1.2.1	payment	pay-01
+::edge	1.2.1.2.1.4.1.1.2.3.2		name	:op1	1.2.1.2.1.4.1.1.2.3.2.1	Far	"Far"
+::edge	1.2	could	possible	:domain	1.2.1	consequences	consequence
+::edge	1.2.1.2.1	cuts	cut-02	:ARG1	1.2.1.2.1.1	power	power
+::edge	1.2.1.2.1	cuts	cut-02	:ARG1-of	1.2.1.2.1.2	consequences	cause-01
+::edge	1.2.1.2	consequences	cause-01	:ARG0	1.2.1.2.1	cuts	cut-02
+::edge	1.2.1.2.1.4.1.1.2.2		name	:op1	1.2.1.2.1.4.1.1.2.2.1	Kamchatka	"Kamchatka"
+::edge	1.2.1.2.1.4.1.1.2.2		name	:op2	1.2.1.2.1.4.1.1.2.2.2	Peninsula	"Peninsula"
+::edge	1.2.1.2.1.4.1.1.2.3		world-region	:wiki	1.2.1.2.1.4.1.1.2.3.1		"Far_East"
+::edge	1	warn	warn-01	:ARG0	1.1		person
+::edge	1	warn	warn-01	:ARG1	1.2	could	possible
+::edge	1.2.1.2.1	cuts	cut-02	:prep-against	1.2.1.2.1.3		military
+::edge	1.2.1.2.1	cuts	cut-02	:ARG1-of	1.2.1.2.1.4	like	resemble-01
+::edge	1.2.1.2.1.4.1.1.2.3		world-region	:name	1.2.1.2.1.4.1.1.2.3.2		name
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+5	28 January 2002 -- Russian space officials warned that power cuts against the military for non-payment of bills could have catastrophic consequences.
+5	28 January 2002 -- Russian space officials warned that power cuts against the military for non @-@ payment of bills could have catastrophic consequences .
+5	0-1.3.1 1-1.3.2.r 2-1.3.3 4-1.1.1.1.2.1 5-1.1.1.2.1 6-1.1.1.2 7-1 8-1.2.r 9-1.2.1.2.1.1 10-1.2.1.2.1 11-1.2.1.2.1.3.r 13-1.2.1.2.1.2.1.2 15-1.2.1.2.1.2.1.1 15-1.2.1.2.1.2.1.1.r 17-1.2.1.2.1.2.1 18-1.2.1.2.1.2.1.3.r 19-1.2.1.2.1.2.1.3 20-1.2 22-1.2.1.1 23-1.2.1 23-1.2.1.2 23-1.2.1.2.1.2 23-1.2.1.2.r
+::node	b	1.2.1.2.1.2.1.3	bill-01	bills
+::node	m	1.2.1.2.1.2.1.2	military	military
+::node	-	1.2.1.2.1.2.1.1	-	non
+::node	n	1.1.1.1.2	name	
+::node	s	1.1.1.2.1	space	space
+::node	"Russia"	1.1.1.1.1	"Russia"	
+::node	c4	1.2.1.2	cause-01	consequences
+::node	c3	1.2.1.1	catastrophic	catastrophic
+::node	"Russia"	1.1.1.1.2.1	"Russia"	Russian
+::node	c	1.1.1.1	country	
+::node	o	1.1.1.2	official	officials
+::node	p3	1.2.1.2.1.2.1	pay-01	payment
+::node	c2	1.2.1	consequence	consequences
+::node	p2	1.2.1.2.1.1	power-01	power
+::node	w	1	warn-01	warned
+::node	c6	1.2.1.2.1.2	cause-01	consequences
+::node	28	1.3.1	28	28
+::node	c5	1.2.1.2.1	cut-02	cuts
+::node	01	1.3.2	01	
+::node	2002	1.3.3	2002	2002
+::node	p4	1.1	person	
+::node	p	1.2	possible	could
+::node	m	1.2.1.2.1.3	military	
+::node	d	1.3	date-entity	
+::node	h	1.1.1	have-org-role-91	
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	Russian	"Russia"
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		country
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.2.1.2.1.2.1	payment	pay-01	:ARG3	1.2.1.2.1.2.1.3	bills	bill-01
+::edge	1.2.1.2.1.2.1	payment	pay-01	:ARG0	1.2.1.2.1.2.1.2	military	military
+::edge	1.2.1.2.1.2.1	payment	pay-01	:polarity	1.2.1.2.1.2.1.1	non	-
+::edge	1.2.1.2.1.2	consequences	cause-01	:ARG0	1.2.1.2.1.2.1	payment	pay-01
+::edge	1.2	could	possible	:domain	1.2.1	consequences	consequence
+::edge	1.2.1.2.1	cuts	cut-02	:ARG1	1.2.1.2.1.1	power	power-01
+::edge	1.2.1.2.1	cuts	cut-02	:ARG1-of	1.2.1.2.1.2	consequences	cause-01
+::edge	1.3		date-entity	:day	1.3.1	28	28
+::edge	1.2.1.2	consequences	cause-01	:ARG0	1.2.1.2.1	cuts	cut-02
+::edge	1.3		date-entity	:month	1.3.2		01
+::edge	1.3		date-entity	:year	1.3.3	2002	2002
+::edge	1	warned	warn-01	:ARG0	1.1		person
+::edge	1	warned	warn-01	:ARG1	1.2	could	possible
+::edge	1.2.1.2.1	cuts	cut-02	:prep-against	1.2.1.2.1.3		military
+::edge	1	warned	warn-01	:time	1.3		date-entity
+::edge	1.1.1.1		country	:name	1.1.1.1.2		name
+::edge	1.1.1.2	officials	official	:topic	1.1.1.2.1	space	space
+::edge	1.1.1.1		country	:wiki	1.1.1.1.1		"Russia"
+::edge	1.2.1	consequences	consequence	:ARG1-of	1.2.1.2	consequences	cause-01
+::edge	1.2.1	consequences	consequence	:mod	1.2.1.1	catastrophic	catastrophic
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+6	Russian space agency spokesman Sergei Gorbunov announced --
+6	Russian space agency spokesman Sergei Gorbunov announced --
+6	0-1.1.3.1.2.2.1 1-1.1.3.1.1 2-1.1.3.1 3-1.1.3.2 4-1.1.2.1 5-1.1.2.2 6-1
+::node	"Sergei"	1.1.2.1	"Sergei"	Sergei
+::node	c	1.1.3.1.2	country	
+::node	"Gorbunov"	1.1.2.2	"Gorbunov"	Gorbunov
+::node	a2	1.1.3.1	agency	agency
+::node	s	1.1.3.2	spokesman	spokesman
+::node	n2	1.1.3.1.2.2	name	
+::node	"Russia"	1.1.3.1.2.1	"Russia"	
+::node	n	1.1.2	name	
+::node	"Russia"	1.1.3.1.2.2.1	"Russia"	Russian
+::node	a	1	announce-01	announced
+::node	h	1.1.3	have-org-role-91	
+::node	p	1.1	person	
+::node	s2	1.1.3.1.1	space	space
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Sergei	"Sergei"
+::edge	1.1.3.1	agency	agency	:source	1.1.3.1.2		country
+::edge	1.1.2		name	:op2	1.1.2.2	Gorbunov	"Gorbunov"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1	agency	agency
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	spokesman	spokesman
+::edge	1.1.3.1.2		country	:name	1.1.3.1.2.2		name
+::edge	1.1.3.1.2		country	:wiki	1.1.3.1.2.1		"Russia"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.1.3.1.2.2		name	:op1	1.1.3.1.2.2.1	Russian	"Russia"
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1	announced	announce-01	:ARG0	1.1		person
+::edge	1.1.3.1	agency	agency	:mod	1.1.3.1.1	space	space
+::edge	1.1		person	:wiki	1.1.1		-
+7	A weekend black-out at a command center in the Far East Kamchatka Peninsula of the Russian space forces had not affected the international space station (ISS).
+7	A weekend black @-@ out at a command center in the Far East Kamchatka Peninsula of the Russian space forces had not affected the international space station ( ISS ) .
+7	1-1.2.1 2-1.2 4-1.2 5-1.2.2.r 7-1.2.2.1 8-1.2.2 9-1.2.2.2.r 11-1.2.2.2.3.2.1 12-1.2.2.2.3.2.2 13-1.2.2.2.2.1 14-1.2.2.2.2.2 15-1.2.2.1.1.r 17-1.2.2.1.1.2.1 18-1.2.2.1.1.2.2 19-1.2.2.1.1.2.3 21-1.1 21-1.1.r 22-1 24-1.3.2.1 25-1.3.2.2 26-1.3.2.3
+::node	"Forces"	1.2.2.1.1.2.3	"Forces"	forces
+::node	"East"	1.2.2.2.3.2.2	"East"	East
+::node	"Far"	1.2.2.2.3.2.1	"Far"	Far
+::node	"Russian_Space_Forces"	1.2.2.1.1.1	"Russian_Space_Forces"	
+::node	n2	1.2.2.1.1.2	name	
+::node	"International"	1.3.2.1	"International"	international
+::node	"Space"	1.3.2.2	"Space"	space
+::node	"Station"	1.3.2.3	"Station"	station
+::node	"Space"	1.2.2.1.1.2.2	"Space"	space
+::node	"Russian"	1.2.2.1.1.2.1	"Russian"	Russian
+::node	c2	1.2.2.1	command-02	command
+::node	p	1.2.2.2	peninsula	
+::node	"Kamchatka_Peninsula"	1.2.2.2.1	"Kamchatka_Peninsula"	
+::node	"Peninsula"	1.2.2.2.2.2	"Peninsula"	Peninsula
+::node	"Far_East"	1.2.2.2.3.1	"Far_East"	
+::node	n3	1.2.2.2.2	name	
+::node	"Kamchatka"	1.2.2.2.2.1	"Kamchatka"	Kamchatka
+::node	w2	1.2.2.2.3	world-region	
+::node	n4	1.2.2.2.3.2	name	
+::node	m	1.2.2.1.1	military	
+::node	w	1.2.1	weekend	weekend
+::node	a	1	affect-01	affected
+::node	c	1.2.2	center	center
+::node	"International_Space_Station"	1.3.1	"International_Space_Station"	
+::node	n	1.3.2	name	
+::node	-	1.1	-	not
+::node	b	1.2	black-out	out
+::node	s	1.3	spaceship	
+::edge	1.2.2.1.1.2		name	:op3	1.2.2.1.1.2.3	forces	"Forces"
+::edge	1.2.2.2.3.2		name	:op2	1.2.2.2.3.2.2	East	"East"
+::edge	1.2.2.2.3.2		name	:op1	1.2.2.2.3.2.1	Far	"Far"
+::edge	1.2.2.1.1		military	:wiki	1.2.2.1.1.1		"Russian_Space_Forces"
+::edge	1.2.2.1.1		military	:name	1.2.2.1.1.2		name
+::edge	1.3.2		name	:op1	1.3.2.1	international	"International"
+::edge	1.3.2		name	:op2	1.3.2.2	space	"Space"
+::edge	1.3.2		name	:op3	1.3.2.3	station	"Station"
+::edge	1.2.2.1.1.2		name	:op2	1.2.2.1.1.2.2	space	"Space"
+::edge	1.2.2.1.1.2		name	:op1	1.2.2.1.1.2.1	Russian	"Russian"
+::edge	1.2.2	center	center	:purpose	1.2.2.1	command	command-02
+::edge	1.2.2	center	center	:location	1.2.2.2		peninsula
+::edge	1.2.2.2		peninsula	:wiki	1.2.2.2.1		"Kamchatka_Peninsula"
+::edge	1.2.2.2.2		name	:op2	1.2.2.2.2.2	Peninsula	"Peninsula"
+::edge	1.2.2.2.3		world-region	:wiki	1.2.2.2.3.1		"Far_East"
+::edge	1.2.2.2		peninsula	:name	1.2.2.2.2		name
+::edge	1.2.2.2.2		name	:op1	1.2.2.2.2.1	Kamchatka	"Kamchatka"
+::edge	1.2.2.2		peninsula	:location	1.2.2.2.3		world-region
+::edge	1.2.2.2.3		world-region	:name	1.2.2.2.3.2		name
+::edge	1.2.2.1	command	command-02	:ARG1	1.2.2.1.1		military
+::edge	1.2	out	black-out	:time	1.2.1	weekend	weekend
+::edge	1.2	out	black-out	:location	1.2.2	center	center
+::edge	1.3		spaceship	:wiki	1.3.1		"International_Space_Station"
+::edge	1.3		spaceship	:name	1.3.2		name
+::edge	1	affected	affect-01	:polarity	1.1	not	-
+::edge	1	affected	affect-01	:ARG0	1.2	out	black-out
+::edge	1	affected	affect-01	:ARG1	1.3		spaceship
+8	The Kamchatka Command Center maintains Russia's satellite network in orbit.
+8	The Kamchatka Command Center maintains Russia 's satellite network in orbit .
+8	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 3-1.1.2.4 4-1 5-1.2.1.1.2.1 6-1.2.1.1.r 7-1.2.1 8-1.2 9-1.2.2.r 10-1.2.2
+::node	"The"	1.1.2.1	"The"	The
+::node	"Kamchatka"	1.1.2.2	"Kamchatka"	Kamchatka
+::node	"Command"	1.1.2.3	"Command"	Command
+::node	"Center"	1.1.2.4	"Center"	Center
+::node	"Russia"	1.2.1.1.2.1	"Russia"	Russia
+::node	n	1.1.2	name	
+::node	s	1.2.1	satellite	satellite
+::node	m	1	maintain-01	maintains
+::node	o	1.2.2	orbit-01	orbit
+::node	n3	1.2.1.1.2	name	
+::node	"Russia"	1.2.1.1.1	"Russia"	
+::node	f	1.1	facility	
+::node	n2	1.2	network	network
+::node	c	1.2.1.1	country	
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	The	"The"
+::edge	1.1.2		name	:op2	1.1.2.2	Kamchatka	"Kamchatka"
+::edge	1.1.2		name	:op3	1.1.2.3	Command	"Command"
+::edge	1.1.2		name	:op4	1.1.2.4	Center	"Center"
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Russia	"Russia"
+::edge	1.1		facility	:name	1.1.2		name
+::edge	1.2	network	network	:consist-of	1.2.1	satellite	satellite
+::edge	1.2	network	network	:ARG0-of	1.2.2	orbit	orbit-01
+::edge	1.2.1.1		country	:name	1.2.1.1.2		name
+::edge	1.2.1.1		country	:wiki	1.2.1.1.1		"Russia"
+::edge	1	maintains	maintain-01	:ARG0	1.1		facility
+::edge	1	maintains	maintain-01	:ARG1	1.2	network	network
+::edge	1.2.1	satellite	satellite	:poss	1.2.1.1		country
+::edge	1.1		facility	:wiki	1.1.1		-
+9	The Kamchatka command center plays a role in ISS operations.
+9	The Kamchatka command center plays a role in ISS operations .
+9	1-1.1.2.2.1 2-1.1.1 3-1.1 4-1 7-1.2.r 8-1.2.1.2.1 9-1.2
+::node	p2	1.1.2	peninsula	
+::node	s	1.2.1	spaceship	
+::node	p	1	play-02	plays
+::node	"ISS"	1.2.1.2.1	"ISS"	ISS
+::node	"Kamchatka_Peninsula"	1.1.2.1	"Kamchatka_Peninsula"	
+::node	c	1.1	center	center
+::node	n	1.1.2.2	name	
+::node	o	1.2	operate-01	operations
+::node	"Kamchatka"	1.1.2.2.1	"Kamchatka"	Kamchatka
+::node	n2	1.2.1.2	name	
+::node	"International_Space_Station"	1.2.1.1	"International_Space_Station"	
+::node	c2	1.1.1	command-02	command
+::edge	1.1	center	center	:location	1.1.2		peninsula
+::edge	1.2	operations	operate-01	:ARG1	1.2.1		spaceship
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	ISS	"ISS"
+::edge	1.1.2		peninsula	:wiki	1.1.2.1		"Kamchatka_Peninsula"
+::edge	1	plays	play-02	:ARG0	1.1	center	center
+::edge	1.1.2		peninsula	:name	1.1.2.2		name
+::edge	1	plays	play-02	:ARG1	1.2	operations	operate-01
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Kamchatka	"Kamchatka"
+::edge	1.2.1		spaceship	:name	1.2.1.2		name
+::edge	1.2.1		spaceship	:wiki	1.2.1.1		"International_Space_Station"
+::edge	1.1	center	center	:topic	1.1.1	command	command-02
+10	cutting power to command centers could pose dangers for Russian space installations.
+10	cutting power to command centers could pose dangers for Russian space installations .
+10	0-1.1.1 1-1.1.1.1 2-1.1.1.2.r 3-1.1.1.2.1 4-1.1.1.2 5-1 6-1.1 7-1.1 8-1.1.2.r 9-1.1.2.2.2.1 10-1.1.2.1 11-1.1.2
+::node	i	1.1.2	installation	installations
+::node	p	1	possible	could
+::node	p3	1.1.1.1	power	power
+::node	c2	1.1.1.2	center	centers
+::node	s	1.1.2.1	space	space
+::node	e	1.1	endanger-01	dangers
+::node	c4	1.1.2.2	country	
+::node	n	1.1.2.2.2	name	
+::node	"Russia"	1.1.2.2.2.1	"Russia"	Russian
+::node	c3	1.1.1.2.1	command-02	command
+::node	"Russia"	1.1.2.2.1	"Russia"	
+::node	c	1.1.1	cut-02	cutting
+::edge	1.1	dangers	endanger-01	:ARG1	1.1.2	installations	installation
+::edge	1.1.1	cutting	cut-02	:ARG1	1.1.1.1	power	power
+::edge	1.1.1	cutting	cut-02	:location	1.1.1.2	centers	center
+::edge	1.1.2	installations	installation	:mod	1.1.2.1	space	space
+::edge	1	could	possible	:domain	1.1	dangers	endanger-01
+::edge	1.1.2	installations	installation	:mod	1.1.2.2		country
+::edge	1.1.2.2		country	:name	1.1.2.2.2		name
+::edge	1.1.2.2.2		name	:op1	1.1.2.2.2.1	Russian	"Russia"
+::edge	1.1.1.2	centers	center	:purpose	1.1.1.2.1	command	command-02
+::edge	1.1.2.2		country	:wiki	1.1.2.2.1		"Russia"
+::edge	1.1	dangers	endanger-01	:ARG0	1.1.1	cutting	cut-02
+11	Power cuts could lead to a failure of all work with space craft.
+11	Power cuts could lead to a failure of all work with space craft .
+11	0-1.1.1.1 1-1.1.1 2-1 3-1.1 4-1.1.2.r 6-1.1.2 7-1.1.2.1.r 8-1.1.2.1.2 9-1.1.2.1 10-1.1.2.1.1.r 11-1.1.2.1.1 12-1.1.2.1.1
+::node	f	1.1.2	fail-01	failure
+::node	p	1	possible	could
+::node	p2	1.1.1.1	power	Power
+::node	w	1.1.2.1	work-01	work
+::node	l	1.1	lead-03	lead
+::node	a	1.1.2.1.2	all	all
+::node	s	1.1.2.1.1	space-craft	craft
+::node	c	1.1.1	cut-02	cuts
+::edge	1.1	lead	lead-03	:ARG2	1.1.2	failure	fail-01
+::edge	1.1.1	cuts	cut-02	:ARG1	1.1.1.1	Power	power
+::edge	1.1.2	failure	fail-01	:ARG2	1.1.2.1	work	work-01
+::edge	1	could	possible	:domain	1.1	lead	lead-03
+::edge	1.1.2.1	work	work-01	:quant	1.1.2.1.2	all	all
+::edge	1.1.2.1	work	work-01	:ARG1	1.1.2.1.1	craft	space-craft
+::edge	1.1	lead	lead-03	:ARG0	1.1.1	cuts	cut-02
+12	The ISS could function for an orbit or two without ground control by using standby systems.
+12	The ISS could function for an orbit or two without ground control by using standby systems .
+12	1-1.1.1.2.1 2-1 3-1.1 4-1.1.2.r 6-1.1.2 7-1.1.2.2 8-1.1.2.2.2 9-1.1.3.1 9-1.1.3.1.r 10-1.1.3.2 11-1.1.3 12-1.1.3.4.r 13-1.1.3.4 14-1.1.3.4.2.1 15-1.1.3.4.2
+::node	s2	1.1.3.4.2	system	systems
+::node	s	1.1.3.4.1	spaceship	
+::node	"International_Space_Station"	1.1.1.1	"International_Space_Station"	
+::node	n	1.1.1.2	name	
+::node	s	1.1.2.1	spaceship	
+::node	o2	1.1.2.2	or	or
+::node	-	1.1.3.1	-	without
+::node	g	1.1.3.2	ground	ground
+::node	s	1.1.3.3	spaceship	
+::node	u	1.1.3.4	use-01	using
+::node	1	1.1.2.2.1	1	
+::node	o	1.1.2	orbit-01	orbit
+::node	p	1	possible	could
+::node	c	1.1.3	control-01	control
+::node	s3	1.1.3.4.2.1	standby	standby
+::node	f	1.1	function-01	function
+::node	2	1.1.2.2.2	2	two
+::node	"ISS"	1.1.1.2.1	"ISS"	ISS
+::node	s	1.1.1	spaceship	
+::edge	1.1.3.4	using	use-01	:ARG1	1.1.3.4.2	systems	system
+::edge	1.1.3.4	using	use-01	:ARG0	1.1.3.4.1		spaceship
+::edge	1.1.1		spaceship	:wiki	1.1.1.1		"International_Space_Station"
+::edge	1.1.1		spaceship	:name	1.1.1.2		name
+::edge	1.1.2	orbit	orbit-01	:ARG0	1.1.2.1		spaceship
+::edge	1.1.2	orbit	orbit-01	:quant	1.1.2.2	or	or
+::edge	1.1.3	control	control-01	:polarity	1.1.3.1	without	-
+::edge	1.1.3	control	control-01	:ARG0	1.1.3.2	ground	ground
+::edge	1.1.3	control	control-01	:ARG1	1.1.3.3		spaceship
+::edge	1.1.3	control	control-01	:manner	1.1.3.4	using	use-01
+::edge	1.1.2.2	or	or	:op1	1.1.2.2.1		1
+::edge	1.1	function	function-01	:ARG1	1.1.2	orbit	orbit-01
+::edge	1.1	function	function-01	:manner	1.1.3	control	control-01
+::edge	1.1.3.4.2	systems	system	:mod	1.1.3.4.2.1	standby	standby
+::edge	1	could	possible	:domain	1.1	function	function-01
+::edge	1.1.2.2	or	or	:op2	1.1.2.2.2	two	2
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	ISS	"ISS"
+::edge	1.1	function	function-01	:ARG0	1.1.1		spaceship
+13	A total unexpected loss of power during control of military equipment could be catastrophic.
+13	A total unexpected loss of power during control of military equipment could be catastrophic .
+13	1-1.1.1.2 2-1.1.1.3.1 3-1.1.1 4-1.1.1.1.r 5-1.1.1.1 6-1.1.1.4 6-1.1.1.4.r 7-1.1.1.4.1 8-1.1.1.4.1.1.r 9-1.1.1.4.1.1.1 10-1.1.1.4.1.1 11-1 12-1.1.r 13-1.1
+::node	p	1	possible	could
+::node	p2	1.1.1.1	power	power
+::node	t	1.1.1.2	total	total
+::node	c	1.1	catastrophic	catastrophic
+::node	e	1.1.1.3	expect-01	
+::node	m	1.1.1.4.1.1.1	military	military
+::node	d	1.1.1.4	during	during
+::node	c2	1.1.1.4.1	control-01	control
+::node	-	1.1.1.3.1	-	unexpected
+::node	e2	1.1.1.4.1.1	equipment	equipment
+::node	l	1.1.1	lose-02	loss
+::edge	1.1.1	loss	lose-02	:ARG1	1.1.1.1	power	power
+::edge	1.1.1	loss	lose-02	:degree	1.1.1.2	total	total
+::edge	1	could	possible	:domain	1.1	catastrophic	catastrophic
+::edge	1.1.1	loss	lose-02	:ARG1-of	1.1.1.3		expect-01
+::edge	1.1.1.4.1.1	equipment	equipment	:mod	1.1.1.4.1.1.1	military	military
+::edge	1.1.1	loss	lose-02	:time	1.1.1.4	during	during
+::edge	1.1.1.4	during	during	:op1	1.1.1.4.1	control	control-01
+::edge	1.1.1.3		expect-01	:polarity	1.1.1.3.1	unexpected	-
+::edge	1.1.1.4.1	control	control-01	:ARG1	1.1.1.4.1.1	equipment	equipment
+::edge	1.1	catastrophic	catastrophic	:condition	1.1.1	loss	lose-02
+14	The Government or UES or the Ministry of Defense must resolve the issue.
+14	The Government or UES or the Ministry of Defense must resolve the issue .
+14	1-1.1.1 1-1.1.1.1 1-1.1.1.1.r 2-1.1 3-1.1.2.2.1 4-1.1 6-1.1.3.2.1 7-1.1.3.2.2 8-1.1.3.2.3 9-1 10-1.2 12-1.2.2
+::node	"Defense"	1.1.3.2.3	"Defense"	Defense
+::node	g2	1.1.1.1	govern-01	Government
+::node	"of"	1.1.3.2.2	"of"	of
+::node	-	1.1.2.1	-	
+::node	"Ministry"	1.1.3.2.1	"Ministry"	Ministry
+::node	n	1.1.2.2	name	
+::node	"Ministry_of_Defence_BLANKETPAIR1"	1.1.3.1	"Ministry_of_Defence_BLANKETPAIR1"	
+::node	n2	1.1.3.2	name	
+::node	"UES"	1.1.2.2.1	"UES"	UES
+::node	c	1.1.2	company	
+::node	o2	1.2.1	or	
+::node	o	1	obligate-01	must
+::node	g3	1.1.3	government-organization	
+::node	i	1.2.2	issue	issue
+::node	o2	1.1	or	or
+::node	r	1.2	resolve-01	resolve
+::node	g	1.1.1	government-organization	Government
+::edge	1.1.3.2		name	:op3	1.1.3.2.3	Defense	"Defense"
+::edge	1.1.1	Government	government-organization	:ARG0-of	1.1.1.1	Government	govern-01
+::edge	1.1.3.2		name	:op2	1.1.3.2.2	of	"of"
+::edge	1.1.2		company	:wiki	1.1.2.1		-
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	Ministry	"Ministry"
+::edge	1.1.2		company	:name	1.1.2.2		name
+::edge	1.1.3		government-organization	:wiki	1.1.3.1		"Ministry_of_Defence_BLANKETPAIR1"
+::edge	1.1.3		government-organization	:name	1.1.3.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	UES	"UES"
+::edge	1.1	or	or	:op2	1.1.2		company
+::edge	1.2	resolve	resolve-01	:ARG0	1.2.1		or
+::edge	1.1	or	or	:op3	1.1.3		government-organization
+::edge	1.2	resolve	resolve-01	:ARG1	1.2.2	issue	issue
+::edge	1	must	obligate-01	:ARG1	1.1	or	or
+::edge	1	must	obligate-01	:ARG2	1.2	resolve	resolve-01
+::edge	1.1	or	or	:op1	1.1.1	Government	government-organization
+15	The Kamchatenergo company feeds power to Kamchatka Peninsula.
+15	The Kamchatenergo company feeds power to Kamchatka Peninsula .
+15	1-1.1.2.1 2-1.1 3-1 4-1.2 5-1.3.r 6-1.3.2.1 7-1.3.2.2
+::node	n	1.1.2	name	
+::node	f	1	feed-01	feeds
+::node	"Kamchatka_Peninsula"	1.3.1	"Kamchatka_Peninsula"	
+::node	n2	1.3.2	name	
+::node	"Kamchatenergo"	1.1.2.1	"Kamchatenergo"	Kamchatenergo
+::node	c	1.1	company	company
+::node	p	1.2	power	power
+::node	p2	1.3	peninsula	
+::node	"Kamchatka"	1.3.2.1	"Kamchatka"	Kamchatka
+::node	"Peninsula"	1.3.2.2	"Peninsula"	Peninsula
+::node	-	1.1.1	-	
+::edge	1.1	company	company	:name	1.1.2		name
+::edge	1.3		peninsula	:wiki	1.3.1		"Kamchatka_Peninsula"
+::edge	1.3		peninsula	:name	1.3.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Kamchatenergo	"Kamchatenergo"
+::edge	1	feeds	feed-01	:ARG0	1.1	company	company
+::edge	1	feeds	feed-01	:ARG1	1.2	power	power
+::edge	1	feeds	feed-01	:ARG2	1.3		peninsula
+::edge	1.3.2		name	:op1	1.3.2.1	Kamchatka	"Kamchatka"
+::edge	1.3.2		name	:op2	1.3.2.2	Peninsula	"Peninsula"
+::edge	1.1	company	company	:wiki	1.1.1		-
+16	On 26 January 2002 Kamchatenergo disconnected the Russian Space Forces center for most of the day.
+16	On 26 January 2002 Kamchatenergo disconnected the Russian Space Forces center for most of the day .
+16	1-1.4.3 2-1.4.2 2-1.4.2.r 3-1.4.1 4-1.1.2.1 5-1 7-1.2.1.2.1 8-1.2.1.2.2 9-1.2.1.2.3 10-1.2 11-1.3.r 12-1.3.1 13-1.3.1 15-1.3
+::node	"Kamchatenergo"	1.1.2.1	"Kamchatenergo"	Kamchatenergo
+::node	"Forces"	1.2.1.2.3	"Forces"	Forces
+::node	"Space"	1.2.1.2.2	"Space"	Space
+::node	n	1.1.2	name	
+::node	m	1.2.1	military	
+::node	d	1	disconnect-01	disconnected
+::node	m2	1.3.1	most-of	of
+::node	"Russian"	1.2.1.2.1	"Russian"	Russian
+::node	2002	1.4.1	2002	2002
+::node	1	1.4.2	1	January
+::node	c	1.1	company	
+::node	26	1.4.3	26	26
+::node	c2	1.2	center	center
+::node	d4	1.3	day	day
+::node	d3	1.4	date-entity	
+::node	n2	1.2.1.2	name	
+::node	"Russian_Space_Forces"	1.2.1.1	"Russian_Space_Forces"	
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Kamchatenergo	"Kamchatenergo"
+::edge	1.2.1.2		name	:op3	1.2.1.2.3	Forces	"Forces"
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	Space	"Space"
+::edge	1.1		company	:name	1.1.2		name
+::edge	1.2	center	center	:poss	1.2.1		military
+::edge	1.3	day	day	:op1	1.3.1	of	most-of
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Russian	"Russian"
+::edge	1.4		date-entity	:year	1.4.1	2002	2002
+::edge	1.4		date-entity	:month	1.4.2	January	1
+::edge	1	disconnected	disconnect-01	:ARG0	1.1		company
+::edge	1.4		date-entity	:day	1.4.3	26	26
+::edge	1	disconnected	disconnect-01	:ARG1	1.2	center	center
+::edge	1	disconnected	disconnect-01	:duration	1.3	day	day
+::edge	1	disconnected	disconnect-01	:time	1.4		date-entity
+::edge	1.2.1		military	:name	1.2.1.2		name
+::edge	1.2.1		military	:wiki	1.2.1.1		"Russian_Space_Forces"
+::edge	1.1		company	:wiki	1.1.1		-
+17	Kamchatenergo is 1 of several regional subsidiaries of State power monopoly United energy services (UES).
+17	Kamchatenergo is 1 of several regional subsidiaries of State power monopoly United energy services ( UES ) .
+17	0-1.2.2.1 2-1.1 4-1.3.1 5-1.3.2 6-1.3 7-1.3.3.r 8-1.3.3.3.2 9-1.3.3.3.1 10-1.3.3.3 11-1.3.3.2.1 12-1.3.3.2.2 13-1.3.3.2.3
+::node	-	1.3.3.1	-	
+::node	n2	1.3.3.2	name	
+::node	-	1.2.1	-	
+::node	i	1	include-91	
+::node	n	1.2.2	name	
+::node	s2	1.3.1	several	several
+::node	r	1.3.2	regional	regional
+::node	"United"	1.3.3.2.1	"United"	United
+::node	c2	1.3.3	company	
+::node	"Energy"	1.3.3.2.2	"Energy"	energy
+::node	p	1.3.3.3.1	power	power
+::node	1	1.1	1	1
+::node	"Services"	1.3.3.2.3	"Services"	services
+::node	m	1.3.3.3	monopoly	monopoly
+::node	s3	1.3.3.3.2	state	State
+::node	c	1.2	company	
+::node	s	1.3	subsidiary	subsidiaries
+::node	"Kamchatenergo"	1.2.2.1	"Kamchatenergo"	Kamchatenergo
+::edge	1.3.3		company	:wiki	1.3.3.1		-
+::edge	1.3.3		company	:name	1.3.3.2		name
+::edge	1.2		company	:wiki	1.2.1		-
+::edge	1.2		company	:name	1.2.2		name
+::edge	1.3	subsidiaries	subsidiary	:quant	1.3.1	several	several
+::edge	1.3	subsidiaries	subsidiary	:location	1.3.2	regional	regional
+::edge	1.3.3.2		name	:op1	1.3.3.2.1	United	"United"
+::edge	1.3	subsidiaries	subsidiary	:part-of	1.3.3		company
+::edge	1.3.3.2		name	:op2	1.3.3.2.2	energy	"Energy"
+::edge	1.3.3.3	monopoly	monopoly	:mod	1.3.3.3.1	power	power
+::edge	1		include-91	:ARG3	1.1	1	1
+::edge	1.3.3.2		name	:op3	1.3.3.2.3	services	"Services"
+::edge	1.3.3		company	:domain	1.3.3.3	monopoly	monopoly
+::edge	1.3.3.3	monopoly	monopoly	:mod	1.3.3.3.2	State	state
+::edge	1		include-91	:ARG1	1.2		company
+::edge	1		include-91	:ARG2	1.3	subsidiaries	subsidiary
+::edge	1.2.2		name	:op1	1.2.2.1	Kamchatenergo	"Kamchatenergo"
+18	On 25 January 2002 UES cut power to long-term debtors.
+18	On 25 January 2002 UES cut power to long @-@ term debtors .
+18	1-1.3.3 2-1.3.2 2-1.3.2.r 3-1.3.1 4-1.1.2.1 5-1 6-1.2 7-1.2.1.r 8-1.2.1.1 10-1.2.1.1.r 11-1.2.1
+::node	n	1.1.2	name	
+::node	d	1.2.1	debtor	debtors
+::node	c	1	cut-02	cut
+::node	2002	1.3.1	2002	2002
+::node	1	1.3.2	1	January
+::node	"UES"	1.1.2.1	"UES"	UES
+::node	25	1.3.3	25	25
+::node	c2	1.1	company	
+::node	p	1.2	power	power
+::node	d2	1.3	date-entity	
+::node	l	1.2.1.1	long	long
+::node	-	1.1.1	-	
+::edge	1.1		company	:name	1.1.2		name
+::edge	1.2	power	power	:destination	1.2.1	debtors	debtor
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.3		date-entity	:month	1.3.2	January	1
+::edge	1.1.2		name	:op1	1.1.2.1	UES	"UES"
+::edge	1.3		date-entity	:day	1.3.3	25	25
+::edge	1	cut	cut-02	:ARG0	1.1		company
+::edge	1	cut	cut-02	:ARG1	1.2	power	power
+::edge	1	cut	cut-02	:time	1.3		date-entity
+::edge	1.2.1	debtors	debtor	:duration	1.2.1.1	long	long
+::edge	1.1		company	:wiki	1.1.1		-
+19	Kamchatenergo stated that non-payment of bills prevent it from maintaining power supplies.
+19	Kamchatenergo stated that non @-@ payment of bills prevent it from maintaining power supplies .
+19	0-1.1.2.1 1-1 2-1.2.r 3-1.2.1.1 3-1.2.1.1.r 5-1.2.1 6-1.2.1.2.r 7-1.2.1.2 8-1.2 9-1.2.2.1 11-1.2.2 12-1.2.2.2.1 13-1.2.2.2
+::node	"Kamchatenergo"	1.1.2.1	"Kamchatenergo"	Kamchatenergo
+::node	n	1.1.2	name	
+::node	p2	1.2.1	pay-01	payment
+::node	s	1	state-01	stated
+::node	m	1.2.2	maintain-01	maintaining
+::node	c	1.1	company	
+::node	p	1.2	prevent-01	prevent
+::node	b	1.2.1.2	bill-01	bills
+::node	c	1.2.2.1	company	it
+::node	s2	1.2.2.2	supply-01	supplies
+::node	p3	1.2.2.2.1	power	power
+::node	-	1.2.1.1	-	non
+::node	-	1.1.1	-	
+::edge	1.1		company	:name	1.1.2		name
+::edge	1.2	prevent	prevent-01	:ARG0	1.2.1	payment	pay-01
+::edge	1.2	prevent	prevent-01	:ARG1	1.2.2	maintaining	maintain-01
+::edge	1.1.2		name	:op1	1.1.2.1	Kamchatenergo	"Kamchatenergo"
+::edge	1	stated	state-01	:ARG0	1.1		company
+::edge	1	stated	state-01	:ARG1	1.2	prevent	prevent-01
+::edge	1.2.1	payment	pay-01	:ARG3	1.2.1.2	bills	bill-01
+::edge	1.2.2	maintaining	maintain-01	:ARG0	1.2.2.1	it	company
+::edge	1.2.2	maintaining	maintain-01	:ARG1	1.2.2.2	supplies	supply-01
+::edge	1.2.2.2	supplies	supply-01	:ARG1	1.2.2.2.1	power	power
+::edge	1.2.1	payment	pay-01	:polarity	1.2.1.1	non	-
+::edge	1.1		company	:wiki	1.1.1		-
+20	The ISS --
+20	The ISS --
+20	1-1.2.1
+::node	"ISS"	1.2.1	"ISS"	ISS
+::node	s	1	spaceship	
+::node	"International_Space_Station"	1.1	"International_Space_Station"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	ISS	"ISS"
+::edge	1		spaceship	:wiki	1.1		"International_Space_Station"
+::edge	1		spaceship	:name	1.2		name
+21	consists of 16 nations
+21	consists of 16 nations
+21	0-1 1-1.1.r 2-1.1.1 3-1.1
+::node	c	1	consist-01	consists
+::node	n	1.1	nation	nations
+::node	16	1.1.1	16	16
+::edge	1	consists	consist-01	:ARG2	1.1	nations	nation
+::edge	1.1	nations	nation	:quant	1.1.1	16	16
+22	is hailed as an example of international cooperation in space
+22	is hailed as an example of international cooperation in space
+22	1-1 2-1.1.r 4-1.1 5-1.1.1.r 6-1.1.1.1 7-1.1.1 8-1.1.1.2.r 9-1.1.1.2
+::node	h	1	hail-02	hailed
+::node	i	1.1.1.1	international	international
+::node	s	1.1.1.2	space	space
+::node	e	1.1	exemplify-01	example
+::node	c	1.1.1	cooperate-01	cooperation
+::edge	1.1.1	cooperation	cooperate-01	:mod	1.1.1.1	international	international
+::edge	1.1.1	cooperation	cooperate-01	:location	1.1.1.2	space	space
+::edge	1	hailed	hail-02	:ARG2	1.1	example	exemplify-01
+::edge	1.1	example	exemplify-01	:ARG1	1.1.1	cooperation	cooperate-01
+23	has been largely built by Russia.
+23	has been largely built by Russia .
+23	2-1.2 3-1 4-1.1.r 5-1.1.2.1
+::node	n	1.1.2	name	
+::node	b	1	build-01	built
+::node	"Russia"	1.1.2.1	"Russia"	Russia
+::node	c	1.1	country	
+::node	l	1.2	large	largely
+::node	"Russia"	1.1.1	"Russia"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Russia	"Russia"
+::edge	1	built	build-01	:ARG0	1.1		country
+::edge	1	built	build-01	:degree	1.2	largely	large
+::edge	1.1		country	:wiki	1.1.1		"Russia"
+24	Russia provided several ISS modules including Zvezda and Zarya
+24	Russia provided several ISS modules including Zvezda and Zarya
+24	0-1.1.2.1 1-1 2-1.2.2 3-1.2.1.2.1 4-1.2 5-1.2.3 6-1.2.3.1.1.2.1 7-1.2.3.1 8-1.2.3.1.2.2.1
+::node	"Russia"	1.1.2.1	"Russia"	Russia
+::node	s	1.2.3.1.1	spaceship	
+::node	"Zvezda"	1.2.3.1.1.2.1	"Zvezda"	Zvezda
+::node	s2	1.2.3.1.2	spaceship	
+::node	n	1.1.2	name	
+::node	s3	1.2.1	spaceship	
+::node	p	1	provide-01	provided
+::node	s4	1.2.2	several	several
+::node	"ISS"	1.2.1.2.1	"ISS"	ISS
+::node	i	1.2.3	include-91	including
+::node	"Zvezda_BLANKETPAIR1"	1.2.3.1.1.1	"Zvezda_BLANKETPAIR1"	
+::node	"Zarya"	1.2.3.1.2.2.1	"Zarya"	Zarya
+::node	c	1.1	country	
+::node	n3	1.2.3.1.2.2	name	
+::node	m	1.2	module	modules
+::node	n2	1.2.3.1.1.2	name	
+::node	"Zarya"	1.2.3.1.2.1	"Zarya"	
+::node	n4	1.2.1.2	name	
+::node	a	1.2.3.1	and	and
+::node	"International_Space_Station"	1.2.1.1	"International_Space_Station"	
+::node	"Russia"	1.1.1	"Russia"	
+::edge	1.1.2		name	:op1	1.1.2.1	Russia	"Russia"
+::edge	1.2.3.1	and	and	:op1	1.2.3.1.1		spaceship
+::edge	1.2.3.1.1.2		name	:op1	1.2.3.1.1.2.1	Zvezda	"Zvezda"
+::edge	1.2.3.1	and	and	:op2	1.2.3.1.2		spaceship
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	modules	module	:poss	1.2.1		spaceship
+::edge	1.2	modules	module	:quant	1.2.2	several	several
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	ISS	"ISS"
+::edge	1.2	modules	module	:ARG2-of	1.2.3	including	include-91
+::edge	1.2.3.1.1		spaceship	:wiki	1.2.3.1.1.1		"Zvezda_BLANKETPAIR1"
+::edge	1.2.3.1.2.2		name	:op1	1.2.3.1.2.2.1	Zarya	"Zarya"
+::edge	1	provided	provide-01	:ARG0	1.1		country
+::edge	1.2.3.1.2		spaceship	:name	1.2.3.1.2.2		name
+::edge	1	provided	provide-01	:ARG1	1.2	modules	module
+::edge	1.2.3.1.1		spaceship	:name	1.2.3.1.1.2		name
+::edge	1.2.3.1.2		spaceship	:wiki	1.2.3.1.2.1		"Zarya"
+::edge	1.2.1		spaceship	:name	1.2.1.2		name
+::edge	1.2.3	including	include-91	:ARG1	1.2.3.1	and	and
+::edge	1.2.1		spaceship	:wiki	1.2.1.1		"International_Space_Station"
+::edge	1.1		country	:wiki	1.1.1		"Russia"
+25	Several other military bases including some strategic defense units were affected by the power outage.
+25	Several other military bases including some strategic defense units were affected by the power outage .
+25	0-1.1.2.1 1-1.1.2 2-1.1.1 3-1.1 4-1.1.3 5-1.1.3.1.2 7-1.1.3.1.1 8-1.1.3.1 10-1 11-1.2.r 13-1.2.1 14-1.2
+::node	o	1.1.2	other	other
+::node	p	1.2.1	power-01	power
+::node	a	1	affect-01	affected
+::node	i	1.1.3	include-91	including
+::node	s	1.1.2.1	several	Several
+::node	s3	1.1.3.1.2	some	some
+::node	b	1.1	base	bases
+::node	u	1.1.3.1	unit	units
+::node	o2	1.2	outage	outage
+::node	d	1.1.3.1.1	defense	defense
+::node	s2	1.1.3.1.1.1	strategy	
+::node	m	1.1.1	military	military
+::edge	1.1	bases	base	:mod	1.1.2	other	other
+::edge	1.2	outage	outage	:mod	1.2.1	power	power-01
+::edge	1.1	bases	base	:ARG2-of	1.1.3	including	include-91
+::edge	1.1.2	other	other	:quant	1.1.2.1	Several	several
+::edge	1.1.3.1	units	unit	:quant	1.1.3.1.2	some	some
+::edge	1	affected	affect-01	:ARG1	1.1	bases	base
+::edge	1.1.3	including	include-91	:ARG1	1.1.3.1	units	unit
+::edge	1	affected	affect-01	:ARG2	1.2	outage	outage
+::edge	1.1.3.1	units	unit	:mod	1.1.3.1.1	defense	defense
+::edge	1.1.3.1.1	defense	defense	:mod	1.1.3.1.1.1		strategy
+::edge	1.1	bases	base	:mod	1.1.1	military	military
+26	Russian space forces is the space branch of Russia's armed forces.
+26	Russian space forces is the space branch of Russia 's armed forces .
+26	0-1.3.2.1 1-1.3.2.2 2-1.3.2.3 3-1.3.r 5-1.1 6-1 7-1.2.r 8-1.2.2.2.1 9-1.2.2.r 9-1.3.r 10-1.2.1 11-1.2
+::node	"Russian"	1.3.2.1	"Russian"	Russian
+::node	"Space"	1.3.2.2	"Space"	space
+::node	"Forces"	1.3.2.3	"Forces"	forces
+::node	a	1.2.1	arm-01	armed
+::node	b	1	branch	branch
+::node	c	1.2.2	country	
+::node	"Russian_Space_Forces"	1.3.1	"Russian_Space_Forces"	
+::node	n2	1.3.2	name	
+::node	s	1.1	space	space
+::node	f	1.2	force	forces
+::node	m	1.3	military	
+::node	"Russia"	1.2.2.1	"Russia"	
+::node	n	1.2.2.2	name	
+::node	"Russia"	1.2.2.2.1	"Russia"	Russia
+::edge	1.3.2		name	:op1	1.3.2.1	Russian	"Russian"
+::edge	1.3.2		name	:op2	1.3.2.2	space	"Space"
+::edge	1.3.2		name	:op3	1.3.2.3	forces	"Forces"
+::edge	1.2	forces	force	:ARG1-of	1.2.1	armed	arm-01
+::edge	1.2	forces	force	:poss	1.2.2		country
+::edge	1.3		military	:wiki	1.3.1		"Russian_Space_Forces"
+::edge	1.3		military	:name	1.3.2		name
+::edge	1	branch	branch	:mod	1.1	space	space
+::edge	1	branch	branch	:part-of	1.2	forces	force
+::edge	1	branch	branch	:domain	1.3		military
+::edge	1.2.2		country	:wiki	1.2.2.1		"Russia"
+::edge	1.2.2		country	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Russia	"Russia"
+27	ISS module unity was built by the US.
+27	ISS module unity was built by the US .
+27	0-1.2.3.2.1 1-1.2 2-1.2.2.1 4-1 5-1.1.r 7-1.1.2.1
+::node	"US"	1.1.2.1	"US"	US
+::node	"ISS"	1.2.3.2.1	"ISS"	ISS
+::node	n	1.1.2	name	
+::node	-	1.2.1	-	
+::node	b	1	build-01	built
+::node	n2	1.2.2	name	
+::node	s2	1.2.3	spaceship	
+::node	c	1.1	country	
+::node	m	1.2	module	module
+::node	n3	1.2.3.2	name	
+::node	"Unity"	1.2.2.1	"Unity"	unity
+::node	"International_Space_Station"	1.2.3.1	"International_Space_Station"	
+::node	"United_States"	1.1.1	"United_States"	
+::edge	1.1		country	:name	1.1.2		name
+::edge	1.2	module	module	:wiki	1.2.1		-
+::edge	1.2	module	module	:name	1.2.2		name
+::edge	1.2	module	module	:part-of	1.2.3		spaceship
+::edge	1.1.2		name	:op1	1.1.2.1	US	"US"
+::edge	1	built	build-01	:ARG0	1.1		country
+::edge	1	built	build-01	:ARG1	1.2	module	module
+::edge	1.2.3		spaceship	:name	1.2.3.2		name
+::edge	1.2.2		name	:op1	1.2.2.1	unity	"Unity"
+::edge	1.2.3		spaceship	:wiki	1.2.3.1		"International_Space_Station"
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	ISS	"ISS"
+::edge	1.1		country	:wiki	1.1.1		"United_States"

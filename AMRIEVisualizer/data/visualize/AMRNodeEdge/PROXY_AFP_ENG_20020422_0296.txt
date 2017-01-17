@@ -1,0 +1,1098 @@
+1	2002-04-22
+1	2002 @-@ 04 @-@ 22
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	4	1.2	4	04
+::node	22	1.3	22	22
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	04	4
+::edge	1		date-entity	:day	1.3	22	22
+2	Thailand (TH)
+2	Thailand ( TH )
+2	0-1.2.1
+::node	"Thailand"	1.2.1	"Thailand"	Thailand
+::node	c	1	country	
+::node	"Thailand"	1.1	"Thailand"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	Thailand	"Thailand"
+::edge	1		country	:wiki	1.1		"Thailand"
+::edge	1		country	:name	1.2		name
+3	International; economy; business
+3	International ; economy ; business
+3	0-1.1 2-1.2 4-1.3
+::node	a	1	and	
+::node	i	1.1	international	International
+::node	e	1.2	economy	economy
+::node	b	1.3	business	business
+::edge	1		and	:op1	1.1	International	international
+::edge	1		and	:op2	1.2	economy	economy
+::edge	1		and	:op3	1.3	business	business
+4	Southeast Asian nations are collaborating with the European Union in the European Commission-ASEAN intellectual rights cooperation program in order to strengthen intellectual property rights in Southeast Asia with the goal of strengthening business and investor confidence.
+4	Southeast Asian nations are collaborating with the European Union in the European Commission @-@ ASEAN intellectual rights cooperation program in order to strengthen intellectual property rights in Southeast Asia with the goal of strengthening business and investor confidence .
+4	0-1.1.1.2.1 1-1.1.1.2.2 2-1.1 4-1 5-1.2.r 7-1.2.2.1 8-1.2.2.2 9-1.3.r 11-1.3.1.1.2.1 12-1.3.1.1.2.2 14-1.3.1.2.2.1 15-1.3.1.3.1 16-1.3.1.3 17-1.3.1 18-1.3 19-1.4.4.r 20-1.4.4.r 21-1.4.4.r 21-1.4.r 22-1.4 22-1.4.4 23-1.4.2.1.1 24-1.4.2.1 25-1.4.2 27-1.4.4.1 28-1.4.4.1 33-1.4.4 34-1.4.4.2.1.1 35-1.4.4.2.1 36-1.4.4.2.1.2 36-1.4.4.2.1.2.1 36-1.4.4.2.1.2.1.r 37-1.4.4.2
+::node	a	1.4.4.2.1	and	and
+::node	n	1.4.4.1	nation	Asia
+::node	c3	1.4.4.2	confidence	confidence
+::node	o2	1.3.1.1	organization	
+::node	o3	1.3.1.2	organization	
+::node	r	1.3.1.3	right	rights
+::node	i3	1.4.4.2.1.2.1	invest-01	investor
+::node	"European_Commission"	1.3.1.1.1	"European_Commission"	
+::node	"Asia"	1.1.1.2.2	"Asia"	Asian
+::node	"Southeast"	1.1.1.2.1	"Southeast"	Southeast
+::node	"European"	1.2.2.1	"European"	European
+::node	"Union"	1.2.2.2	"Union"	Union
+::node	"Southeast_Asia"	1.1.1.1	"Southeast_Asia"	
+::node	n2	1.1.1.2	name	
+::node	p3	1.4.4.2.1.2	person	investor
+::node	i2	1.4.2.1.1	intellectual	intellectual
+::node	b	1.4.4.2.1.1	business	business
+::node	"European"	1.3.1.1.2.1	"European"	European
+::node	"Commission"	1.3.1.1.2.2	"Commission"	Commission
+::node	"European_Union"	1.2.1	"European_Union"	
+::node	c	1	collaborate-01	collaborating
+::node	n3	1.2.2	name	
+::node	c2	1.3.1	cooperate-01	cooperation
+::node	n	1.4.1	nation	
+::node	"ASEAN"	1.3.1.2.2.1	"ASEAN"	ASEAN
+::node	r2	1.4.2	right	rights
+::node	n	1.1	nation	nations
+::node	n4	1.3.1.1.2	name	
+::node	"Association_of_Southeast_Asian_Nations"	1.3.1.2.1	"Association_of_Southeast_Asian_Nations"	
+::node	w	1.4.3	world-region	
+::node	o	1.2	organization	
+::node	n5	1.3.1.2.2	name	
+::node	i	1.3.1.3.1	intellectual	intellectual
+::node	s2	1.4.4	strengthen-01	strengthening
+::node	p	1.3	program	program
+::node	s	1.4	strengthen-01	strengthen
+::node	p2	1.4.2.1	property	property
+::node	w	1.1.1	world-region	
+::edge	1.4.4.2	confidence	confidence	:poss	1.4.4.2.1	and	and
+::edge	1.4.4	strengthening	strengthen-01	:ARG0	1.4.4.1	Asia	nation
+::edge	1.4.4	strengthening	strengthen-01	:ARG1	1.4.4.2	confidence	confidence
+::edge	1.3.1	cooperation	cooperate-01	:ARG0	1.3.1.1		organization
+::edge	1.3.1	cooperation	cooperate-01	:ARG1	1.3.1.2		organization
+::edge	1.3.1	cooperation	cooperate-01	:ARG2	1.3.1.3	rights	right
+::edge	1.4.4.2.1.2	investor	person	:ARG0-of	1.4.4.2.1.2.1	investor	invest-01
+::edge	1.3.1.1		organization	:wiki	1.3.1.1.1		"European_Commission"
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Asian	"Asia"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Southeast	"Southeast"
+::edge	1.2.2		name	:op1	1.2.2.1	European	"European"
+::edge	1.2.2		name	:op2	1.2.2.2	Union	"Union"
+::edge	1.1.1		world-region	:wiki	1.1.1.1		"Southeast_Asia"
+::edge	1.1.1		world-region	:name	1.1.1.2		name
+::edge	1.4.4.2.1	and	and	:op2	1.4.4.2.1.2	investor	person
+::edge	1.4.2.1	property	property	:mod	1.4.2.1.1	intellectual	intellectual
+::edge	1.4.4.2.1	and	and	:op1	1.4.4.2.1.1	business	business
+::edge	1.3.1.1.2		name	:op1	1.3.1.1.2.1	European	"European"
+::edge	1.3.1.1.2		name	:op2	1.3.1.1.2.2	Commission	"Commission"
+::edge	1.2		organization	:wiki	1.2.1		"European_Union"
+::edge	1.2		organization	:name	1.2.2		name
+::edge	1.3	program	program	:topic	1.3.1	cooperation	cooperate-01
+::edge	1.4	strengthen	strengthen-01	:ARG0	1.4.1		nation
+::edge	1.3.1.2.2		name	:op1	1.3.1.2.2.1	ASEAN	"ASEAN"
+::edge	1.4	strengthen	strengthen-01	:ARG1	1.4.2	rights	right
+::edge	1	collaborating	collaborate-01	:ARG0	1.1	nations	nation
+::edge	1.3.1.1		organization	:name	1.3.1.1.2		name
+::edge	1.3.1.2		organization	:wiki	1.3.1.2.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.4	strengthen	strengthen-01	:location	1.4.3		world-region
+::edge	1	collaborating	collaborate-01	:ARG1	1.2		organization
+::edge	1.3.1.2		organization	:name	1.3.1.2.2		name
+::edge	1.3.1.3	rights	right	:mod	1.3.1.3.1	intellectual	intellectual
+::edge	1.4	strengthen	strengthen-01	:purpose	1.4.4	strengthening	strengthen-01
+::edge	1	collaborating	collaborate-01	:ARG2	1.3	program	program
+::edge	1	collaborating	collaborate-01	:purpose	1.4	strengthen	strengthen-01
+::edge	1.4.2	rights	right	:mod	1.4.2.1	property	property
+::edge	1.1	nations	nation	:location	1.1.1		world-region
+5	European Union officials stated on April 22, 2002 that Southeast Asians would boost their trade and investment prospects by introducing stricter intellectual property rights.
+5	European Union officials stated on April 22 , 2002 that Southeast Asians would boost their trade and investment prospects by introducing stricter intellectual property rights .
+5	0-1.1.1.1.2.1 1-1.1.1.1.2.2 2-1.1.1.2 3-1 4-1.3.r 5-1.3.2 5-1.3.2.r 6-1.3.3 8-1.3.1 9-1.2.r 10-1.2.1.1.2.1 11-1.2.1.1.2.2 13-1.2 14-1.2.2.1 14-1.2.2.1.r 15-1.2.2.2 17-1.2.2.3 18-1.2.2 19-1.2.3.r 20-1.2.3 21-1.2.3.2.2 21-1.2.3.2.2.1 21-1.2.3.2.2.1.r 22-1.2.3.2.1.1 23-1.2.3.2.1 24-1.2.3.2
+::node	i	1.2.2.3	invest-01	investment
+::node	r	1.2.3.2	right	rights
+::node	n	1.1.1.1.2	name	
+::node	"European_Union"	1.1.1.1.1	"European_Union"	
+::node	p	1.2.2.1	person	their
+::node	t	1.2.2.2	trade-01	trade
+::node	p	1.2.3.1	person	
+::node	w	1.2.1.1	world-region	
+::node	"European"	1.1.1.1.2.1	"European"	European
+::node	o2	1.1.1.1	organization	
+::node	"Union"	1.1.1.1.2.2	"Union"	Union
+::node	o	1.1.1.2	official	officials
+::node	"Southeast"	1.2.1.1.2.1	"Southeast"	Southeast
+::node	"Asia"	1.2.1.1.2.2	"Asia"	Asians
+::node	s2	1.2.3.2.2	strict	stricter
+::node	p3	1.2.3.2.1	property	property
+::node	p	1.2.1	person	
+::node	s	1	state-01	stated
+::node	p2	1.2.2	prospect	prospects
+::node	2002	1.3.1	2002	2002
+::node	n2	1.2.1.1.2	name	
+::node	i2	1.2.3	introduce-02	introducing
+::node	4	1.3.2	4	April
+::node	"Southeast_Asia"	1.2.1.1.1	"Southeast_Asia"	
+::node	22	1.3.3	22	22
+::node	p4	1.1	person	
+::node	b	1.2	boost-01	boost
+::node	d	1.3	date-entity	
+::node	m	1.2.3.2.2.1	more	stricter
+::node	i3	1.2.3.2.1.1	intellectual	intellectual
+::node	h	1.1.1	have-org-role-91	
+::edge	1.2.2	prospects	prospect	:mod	1.2.2.3	investment	invest-01
+::edge	1.2.3	introducing	introduce-02	:ARG1	1.2.3.2	rights	right
+::edge	1.1.1.1		organization	:name	1.1.1.1.2		name
+::edge	1.1.1.1		organization	:wiki	1.1.1.1.1		"European_Union"
+::edge	1.2.2	prospects	prospect	:poss	1.2.2.1	their	person
+::edge	1.2.2	prospects	prospect	:mod	1.2.2.2	trade	trade-01
+::edge	1.2.3	introducing	introduce-02	:ARG0	1.2.3.1		person
+::edge	1.2.1		person	:mod	1.2.1.1		world-region
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	European	"European"
+::edge	1.1.1		have-org-role-91	:ARG1	1.1.1.1		organization
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	Union	"Union"
+::edge	1.1.1		have-org-role-91	:ARG2	1.1.1.2	officials	official
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Southeast	"Southeast"
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	Asians	"Asia"
+::edge	1.2.3.2	rights	right	:mod	1.2.3.2.2	stricter	strict
+::edge	1.2.3.2	rights	right	:mod	1.2.3.2.1	property	property
+::edge	1.2	boost	boost-01	:ARG0	1.2.1		person
+::edge	1.2	boost	boost-01	:ARG1	1.2.2	prospects	prospect
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.2.1.1		world-region	:name	1.2.1.1.2		name
+::edge	1.2	boost	boost-01	:manner	1.2.3	introducing	introduce-02
+::edge	1.3		date-entity	:month	1.3.2	April	4
+::edge	1.2.1.1		world-region	:wiki	1.2.1.1.1		"Southeast_Asia"
+::edge	1.3		date-entity	:day	1.3.3	22	22
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	boost	boost-01
+::edge	1	stated	state-01	:time	1.3		date-entity
+::edge	1.2.3.2.2	stricter	strict	:degree	1.2.3.2.2.1	stricter	more
+::edge	1.2.3.2.1	property	property	:mod	1.2.3.2.1.1	intellectual	intellectual
+::edge	1.1		person	:ARG0-of	1.1.1		have-org-role-91
+6	European Union officers and the Association of Southeast Asian Nations started negotiating how to strengthen intellectual property rights.
+6	European Union officers and the Association of Southeast Asian Nations started negotiating how to strengthen intellectual property rights .
+6	0-1.1.1.1.1.2.1 1-1.1.1.1.1.2.2 2-1.1.1 3-1.1 5-1.1.2.2.1 6-1.1.2.2.2 7-1.1.2.2.3 8-1.1.2.2.4 9-1.1.2.2.5 10-1 11-1.2 12-1.2.3.1.r 14-1.2.3.1 15-1.2.3.1.1.1.1 16-1.2.3.1.1.1 17-1.2.3.1.1
+::node	"Association"	1.1.2.2.1	"Association"	Association
+::node	i	1.2.3.1.1.1.1	intellectual	intellectual
+::node	o2	1.1.1.1.1	organization	
+::node	s2	1.2.3.1	strengthen-01	strengthen
+::node	"European_Union"	1.1.1.1.1.1	"European_Union"	
+::node	n	1.1.1.1.1.2	name	
+::node	h	1.1.1.1	have-org-role-91	
+::node	"Association_of_Southeast_Asian_Nations"	1.1.2.1	"Association_of_Southeast_Asian_Nations"	
+::node	"European"	1.1.1.1.1.2.1	"European"	European
+::node	n2	1.1.2.2	name	
+::node	"Union"	1.1.1.1.1.2.2	"Union"	Union
+::node	e	1.2.3.1.1	entitle-01	rights
+::node	o3	1.1.2	organization	
+::node	o	1.2.1	officer	
+::node	s	1	start-01	started
+::node	o3	1.2.2	organization	
+::node	t	1.2.3	thing	
+::node	p	1.2.3.1.1.1	property	property
+::node	a	1.1	and	and
+::node	"Southeast"	1.1.2.2.3	"Southeast"	Southeast
+::node	"of"	1.1.2.2.2	"of"	of
+::node	n3	1.2	negotiate-01	negotiating
+::node	"Nations"	1.1.2.2.5	"Nations"	Nations
+::node	"Asian"	1.1.2.2.4	"Asian"	Asian
+::node	o	1.1.1	officer	officers
+::edge	1.1.1.1.1		organization	:wiki	1.1.1.1.1.1		"European_Union"
+::edge	1.1.1.1.1		organization	:name	1.1.1.1.1.2		name
+::edge	1.1.1	officers	officer	:ARG0-of	1.1.1.1		have-org-role-91
+::edge	1.1.2		organization	:wiki	1.1.2.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.1.1.1.1.2		name	:op1	1.1.1.1.1.2.1	European	"European"
+::edge	1.1.2		organization	:name	1.1.2.2		name
+::edge	1.1.1.1.1.2		name	:op2	1.1.1.1.1.2.2	Union	"Union"
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Association	"Association"
+::edge	1.2.3.1	strengthen	strengthen-01	:ARG1	1.2.3.1.1	rights	entitle-01
+::edge	1.2.3.1.1.1	property	property	:mod	1.2.3.1.1.1.1	intellectual	intellectual
+::edge	1.1	and	and	:op2	1.1.2		organization
+::edge	1.2	negotiating	negotiate-01	:ARG0	1.2.1		officer
+::edge	1.2	negotiating	negotiate-01	:ARG1	1.2.2		organization
+::edge	1.2	negotiating	negotiate-01	:ARG2	1.2.3		thing
+::edge	1.2.3.1.1	rights	entitle-01	:ARG1	1.2.3.1.1.1	property	property
+::edge	1	started	start-01	:ARG0	1.1	and	and
+::edge	1.1.2.2		name	:op3	1.1.2.2.3	Southeast	"Southeast"
+::edge	1.1.2.2		name	:op2	1.1.2.2.2	of	"of"
+::edge	1	started	start-01	:ARG1	1.2	negotiating	negotiate-01
+::edge	1.1.2.2		name	:op5	1.1.2.2.5	Nations	"Nations"
+::edge	1.1.2.2		name	:op4	1.1.2.2.4	Asian	"Asian"
+::edge	1.1.1.1		have-org-role-91	:ARG1	1.1.1.1.1		organization
+::edge	1.2.3		thing	:manner-of	1.2.3.1	strengthen	strengthen-01
+::edge	1.1	and	and	:op1	1.1.1	officers	officer
+7	The negotiation began with a two-day workshop in Bangkok on April 22, 2002.
+7	The negotiation began with a two @-@ day workshop in Bangkok on April 22 , 2002 .
+7	1-1.1 2-1 3-1.2.r 5-1.2.1.1 7-1.2.1.2 8-1.2 9-1.2.2.r 10-1.2.2.2.1 11-1.3.r 12-1.3.2 12-1.3.2.r 13-1.3.3 15-1.3.1
+::node	t	1.2.1	temporal-quantity	
+::node	b	1	begin-01	began
+::node	c	1.2.2	city	
+::node	2002	1.3.1	2002	2002
+::node	4	1.3.2	4	April
+::node	22	1.3.3	22	22
+::node	n	1.1	negotiate-01	negotiation
+::node	w	1.2	workshop	workshop
+::node	d2	1.3	date-entity	
+::node	d	1.2.1.2	day	day
+::node	"Bangkok"	1.2.2.1	"Bangkok"	
+::node	n2	1.2.2.2	name	
+::node	"Bangkok"	1.2.2.2.1	"Bangkok"	Bangkok
+::node	2	1.2.1.1	2	two
+::edge	1.2	workshop	workshop	:duration	1.2.1		temporal-quantity
+::edge	1.2	workshop	workshop	:location	1.2.2		city
+::edge	1.3		date-entity	:year	1.3.1	2002	2002
+::edge	1.3		date-entity	:month	1.3.2	April	4
+::edge	1.3		date-entity	:day	1.3.3	22	22
+::edge	1	began	begin-01	:ARG1	1.1	negotiation	negotiate-01
+::edge	1	began	begin-01	:ARG2	1.2	workshop	workshop
+::edge	1	began	begin-01	:time	1.3		date-entity
+::edge	1.2.1		temporal-quantity	:unit	1.2.1.2	day	day
+::edge	1.2.2		city	:wiki	1.2.2.1		"Bangkok"
+::edge	1.2.2		city	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	Bangkok	"Bangkok"
+::edge	1.2.1		temporal-quantity	:quant	1.2.1.1	two	2
+8	The negotiation was organized under the new European Commission-ASEAN intellectual property rights cooperation program.
+8	The negotiation was organized under the new European Commission @-@ ASEAN intellectual property rights cooperation program .
+8	1-1.1 3-1 4-1.2.r 6-1.2.2 7-1.2.1.1.2.1 8-1.2.1.1.2.2 10-1.2.1.2.2.1 11-1.2.1.3.1.1 12-1.2.1.3.1 13-1.2.1.3 14-1.2.1 15-1.2
+::node	i	1.2.1.3.1.1	intellectual	intellectual
+::node	"European"	1.2.1.1.2.1	"European"	European
+::node	"Commission"	1.2.1.1.2.2	"Commission"	Commission
+::node	n3	1.2.1.2.2	name	
+::node	p2	1.2.1.3.1	property	property
+::node	c	1.2.1	cooperate-01	cooperation
+::node	o	1	organize-01	organized
+::node	"ASEAN"	1.2.1.2.2.1	"ASEAN"	ASEAN
+::node	n4	1.2.2	new	new
+::node	n2	1.2.1.1.2	name	
+::node	"Association_of_Southeast_Asian_Nations"	1.2.1.2.1	"Association_of_Southeast_Asian_Nations"	
+::node	"European_Commission"	1.2.1.1.1	"European_Commission"	
+::node	n	1.1	negotiate-01	negotiation
+::node	p	1.2	program	program
+::node	o3	1.2.1.2	organization	
+::node	e	1.2.1.3	entitle-01	rights
+::node	o2	1.2.1.1	organization	
+::edge	1.2.1.3.1	property	property	:mod	1.2.1.3.1.1	intellectual	intellectual
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	European	"European"
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	Commission	"Commission"
+::edge	1.2.1.2		organization	:name	1.2.1.2.2		name
+::edge	1.2.1.3	rights	entitle-01	:ARG1	1.2.1.3.1	property	property
+::edge	1.2	program	program	:topic	1.2.1	cooperation	cooperate-01
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	ASEAN	"ASEAN"
+::edge	1.2	program	program	:mod	1.2.2	new	new
+::edge	1.2.1.1		organization	:name	1.2.1.1.2		name
+::edge	1.2.1.2		organization	:wiki	1.2.1.2.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.2.1.1		organization	:wiki	1.2.1.1.1		"European_Commission"
+::edge	1	organized	organize-01	:ARG1	1.1	negotiation	negotiate-01
+::edge	1	organized	organize-01	:prep-under	1.2	program	program
+::edge	1.2.1	cooperation	cooperate-01	:ARG1	1.2.1.2		organization
+::edge	1.2.1	cooperation	cooperate-01	:ARG2	1.2.1.3	rights	entitle-01
+::edge	1.2.1	cooperation	cooperate-01	:ARG0	1.2.1.1		organization
+9	Head of the delegation of the European Commission in Bangkok Klauspeter schmallenbach stated that the ability to comply with intellectual property rights rules would help developing nations take part in global trade.
+9	Head of the delegation of the European Commission in Bangkok Klauspeter schmallenbach stated that the ability to comply with intellectual property rights rules would help developing nations take part in global trade .
+9	0-1.1 0-1.1.3 0-1.1.3.r 1-1.1.3.1.r 3-1.1.3.1 4-1.1.3.1.1.r 6-1.1.3.1.1.2.1 7-1.1.3.1.1.2.2 8-1.1.3.1.2.r 9-1.1.3.1.2.2.1 10-1.1.2.1 11-1.1.2.2 12-1 13-1.2.r 15-1.2.1 17-1.2.1.1 18-1.2.1.1.2.r 19-1.2.1.1.2.1.1.1 20-1.2.1.1.2.1.1 21-1.2.1.1.2.1 22-1.2.1.1.2 24-1.2 25-1.2.1.1.1.1 26-1.2.1.1.1 27-1.2.2 28-1.2.2 29-1.2.2.2.r 30-1.2.2.2.1 31-1.2.2.2
+::node	c	1.1.3.1.2	city	
+::node	p3	1.2.1.1.2.1.1	property	property
+::node	n4	1.2.2.1	nation	
+::node	t	1.2.2.2	trade-01	trade
+::node	g	1.2.2.2.1	globe	global
+::node	c2	1.2.1.1	comply-01	comply
+::node	"Klauspeter"	1.1.2.1	"Klauspeter"	Klauspeter
+::node	"Schmallenbach"	1.1.2.2	"Schmallenbach"	schmallenbach
+::node	d	1.1.3.1	delegation	delegation
+::node	d2	1.2.1.1.1.1	develop-02	developing
+::node	e	1.2.1.1.2.1	entitle-01	rights
+::node	n3	1.1.3.1.2.2	name	
+::node	i	1.2.1.1.2.1.1.1	intellectual	intellectual
+::node	"European_Commission"	1.1.3.1.1.1	"European_Commission"	
+::node	"Commission"	1.1.3.1.1.2.2	"Commission"	Commission
+::node	n2	1.1.3.1.1.2	name	
+::node	"European"	1.1.3.1.1.2.1	"European"	European
+::node	"Bangkok"	1.1.3.1.2.1	"Bangkok"	
+::node	n	1.1.2	name	
+::node	"Bangkok"	1.1.3.1.2.2.1	"Bangkok"	Bangkok
+::node	c3	1.2.1	capable-41	ability
+::node	s	1	state-01	stated
+::node	h	1.1.3	head-01	Head
+::node	p4	1.2.2	participate-01	part
+::node	r	1.2.1.1.2	rule	rules
+::node	n4	1.2.3	nation	
+::node	n4	1.2.1.1.1	nation	nations
+::node	p	1.1	person	Head
+::node	h2	1.2	help-01	help
+::node	o	1.1.3.1.1	organization	
+::node	-	1.1.1	-	
+::edge	1.1.3.1	delegation	delegation	:location	1.1.3.1.2		city
+::edge	1.2.1.1.2.1	rights	entitle-01	:ARG1	1.2.1.1.2.1.1	property	property
+::edge	1.2.2	part	participate-01	:ARG0	1.2.2.1		nation
+::edge	1.2.2	part	participate-01	:ARG1	1.2.2.2	trade	trade-01
+::edge	1.2.2.2	trade	trade-01	:location	1.2.2.2.1	global	globe
+::edge	1.2.1	ability	capable-41	:ARG2	1.2.1.1	comply	comply-01
+::edge	1.1.2		name	:op1	1.1.2.1	Klauspeter	"Klauspeter"
+::edge	1.1.2		name	:op2	1.1.2.2	schmallenbach	"Schmallenbach"
+::edge	1.1.3	Head	head-01	:ARG1	1.1.3.1	delegation	delegation
+::edge	1.2.1.1.1	nations	nation	:ARG1-of	1.2.1.1.1.1	developing	develop-02
+::edge	1.2.1.1.2	rules	rule	:topic	1.2.1.1.2.1	rights	entitle-01
+::edge	1.1.3.1.2		city	:name	1.1.3.1.2.2		name
+::edge	1.2.1.1.2.1.1	property	property	:mod	1.2.1.1.2.1.1.1	intellectual	intellectual
+::edge	1.1.3.1.1		organization	:wiki	1.1.3.1.1.1		"European_Commission"
+::edge	1.1.3.1.1.2		name	:op2	1.1.3.1.1.2.2	Commission	"Commission"
+::edge	1.1.3.1.1		organization	:name	1.1.3.1.1.2		name
+::edge	1.1.3.1.1.2		name	:op1	1.1.3.1.1.2.1	European	"European"
+::edge	1.1.3.1.2		city	:wiki	1.1.3.1.2.1		"Bangkok"
+::edge	1.1	Head	person	:name	1.1.2		name
+::edge	1.1.3.1.2.2		name	:op1	1.1.3.1.2.2.1	Bangkok	"Bangkok"
+::edge	1.2	help	help-01	:ARG0	1.2.1	ability	capable-41
+::edge	1.1	Head	person	:ARG0-of	1.1.3	Head	head-01
+::edge	1.2	help	help-01	:ARG1	1.2.2	part	participate-01
+::edge	1.2.1.1	comply	comply-01	:ARG1	1.2.1.1.2	rules	rule
+::edge	1.2	help	help-01	:ARG2	1.2.3		nation
+::edge	1.2.1.1	comply	comply-01	:ARG0	1.2.1.1.1	nations	nation
+::edge	1	stated	state-01	:ARG0	1.1	Head	person
+::edge	1	stated	state-01	:ARG1	1.2	help	help-01
+::edge	1.1.3.1	delegation	delegation	:part-of	1.1.3.1.1		organization
+::edge	1.1	Head	person	:wiki	1.1.1		-
+10	Klauspeter schmallenbach stated intellectual property rights form one of the basic pillars upon which business and investor confidence are based.
+10	Klauspeter schmallenbach stated intellectual property rights form one of the basic pillars upon which business and investor confidence are based .
+10	0-1.1.2.1 1-1.1.2.2 2-1 3-1.2.1.1.1 4-1.2.1.1 5-1.2.1 6-1.2 7-1.2.2 8-1.2.2.1.r 10-1.2.2.1.1 11-1.2.2.1 14-1.2.2.1.2.1.1 16-1.2.2.1.2.1.2 16-1.2.2.1.2.1.2.1 16-1.2.2.1.2.1.2.1.r 17-1.2.2.1.2.1 19-1.2.2.1.2
+::node	"Klauspeter"	1.1.2.1	"Klauspeter"	Klauspeter
+::node	b	1.2.2.1.1	basic	basic
+::node	"Schmallenbach"	1.1.2.2	"Schmallenbach"	schmallenbach
+::node	c	1.2.2.1.2.1	confidence	confidence
+::node	i2	1.2.2.1.2.1.2.1	invest-01	investor
+::node	n	1.1.2	name	
+::node	e	1.2.1	entitle-01	rights
+::node	p4	1.2.2.1.2.1.2	person	investor
+::node	s	1	state-01	stated
+::node	o	1.2.2	one	one
+::node	b3	1.2.2.1.2.1.1	business	business
+::node	i	1.2.1.1.1	intellectual	intellectual
+::node	p	1.1	person	
+::node	f	1.2	form-02	form
+::node	p3	1.2.2.1	pillar	pillars
+::node	b2	1.2.2.1.2	base-02	based
+::node	p2	1.2.1.1	property	property
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Klauspeter	"Klauspeter"
+::edge	1.2.2.1	pillars	pillar	:mod	1.2.2.1.1	basic	basic
+::edge	1.1.2		name	:op2	1.1.2.2	schmallenbach	"Schmallenbach"
+::edge	1.2.2.1.2	based	base-02	:ARG1	1.2.2.1.2.1	confidence	confidence
+::edge	1.2.2.1.2.1.2	investor	person	:ARG0-of	1.2.2.1.2.1.2.1	investor	invest-01
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	form	form-02	:ARG0	1.2.1	rights	entitle-01
+::edge	1.2.2.1.2.1	confidence	confidence	:mod	1.2.2.1.2.1.2	investor	person
+::edge	1.2	form	form-02	:ARG1	1.2.2	one	one
+::edge	1.2.2.1.2.1	confidence	confidence	:mod	1.2.2.1.2.1.1	business	business
+::edge	1.2.1.1	property	property	:mod	1.2.1.1.1	intellectual	intellectual
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	form	form-02
+::edge	1.2.2	one	one	:subset-of	1.2.2.1	pillars	pillar
+::edge	1.2.2.1	pillars	pillar	:ARG2-of	1.2.2.1.2	based	base-02
+::edge	1.2.1	rights	entitle-01	:ARG1	1.2.1.1	property	property
+::edge	1.1		person	:wiki	1.1.1		-
+11	Klauspeter schmallenbach also stated that the intellectual property rights for essential for any country's economic development.
+11	Klauspeter schmallenbach also stated that the intellectual property rights for essential for any country 's economic development .
+11	0-1.1.2.1 1-1.1.2.2 2-1.3 3-1 4-1.2.r 6-1.2.1.1.1 7-1.2.1.1 8-1.2.1 10-1.2 11-1.2.2.r 12-1.2.2.1.1.1 13-1.2.2.1.1 14-1.2.2.1.1.r 15-1.2.2.1 16-1.2.2
+::node	"Klauspeter"	1.1.2.1	"Klauspeter"	Klauspeter
+::node	c	1.2.2.1.1	country	country
+::node	"Schmallenbach"	1.1.2.2	"Schmallenbach"	schmallenbach
+::node	a2	1.2.2.1.1.1	any	any
+::node	n	1.1.2	name	
+::node	e3	1.2.1	entitle-01	rights
+::node	s	1	state-01	stated
+::node	d	1.2.2	develop-02	development
+::node	i	1.2.1.1.1	intellectual	intellectual
+::node	p	1.1	person	
+::node	e	1.2	essential	essential
+::node	a	1.3	also	also
+::node	e2	1.2.2.1	economy	economic
+::node	p2	1.2.1.1	property	property
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Klauspeter	"Klauspeter"
+::edge	1.2.2.1	economic	economy	:poss	1.2.2.1.1	country	country
+::edge	1.1.2		name	:op2	1.1.2.2	schmallenbach	"Schmallenbach"
+::edge	1.2.2.1.1	country	country	:mod	1.2.2.1.1.1	any	any
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	essential	essential	:domain	1.2.1	rights	entitle-01
+::edge	1.2	essential	essential	:purpose	1.2.2	development	develop-02
+::edge	1.2.1.1	property	property	:mod	1.2.1.1.1	intellectual	intellectual
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	essential	essential
+::edge	1	stated	state-01	:mod	1.3	also	also
+::edge	1.2.2	development	develop-02	:ARG1	1.2.2.1	economic	economy
+::edge	1.2.1	rights	entitle-01	:ARG1	1.2.1.1	property	property
+::edge	1.1		person	:wiki	1.1.1		-
+12	Klauspeter schmallenbach stated that intellectual property rights may help boost European investment in Southeast Asia to pre-crisis levels.
+12	Klauspeter schmallenbach stated that intellectual property rights may help boost European investment in Southeast Asia to pre @-@ crisis levels .
+12	0-1.1.2.1 1-1.1.2.2 2-1 3-1.2.r 4-1.2.1.1.1.1 5-1.2.1.1.1 6-1.2.1.1 7-1.2 8-1.2.1 9-1.2.1.2 10-1.2.1.2.1.1.2.1 11-1.2.1.2.1 12-1.2.1.2.1.2.r 13-1.2.1.2.1.2.2.1 14-1.2.1.2.1.2.2.2 15-1.2.1.2.2.r 16-1.2.1.2.2.1 18-1.2.1.2.2.1 19-1.2.1.2.2
+::node	"Klauspeter"	1.1.2.1	"Klauspeter"	Klauspeter
+::node	"Schmallenbach"	1.1.2.2	"Schmallenbach"	schmallenbach
+::node	"Asia"	1.2.1.2.1.2.2.2	"Asia"	Asia
+::node	i	1.2.1.1.1.1	intellectual	intellectual
+::node	"Southeast"	1.2.1.2.1.2.2.1	"Southeast"	Southeast
+::node	"Europe"	1.2.1.2.1.1.2.1	"Europe"	European
+::node	n3	1.2.1.2.1.2.2	name	
+::node	n2	1.2.1.2.1.1.2	name	
+::node	"Southeast_Asia"	1.2.1.2.1.2.1	"Southeast_Asia"	
+::node	l	1.2.1.2.2	level	levels
+::node	"Europe"	1.2.1.2.1.1.1	"Europe"	
+::node	n	1.1.2	name	
+::node	h	1.2.1	help-01	help
+::node	c	1.2.1.2.1.1	continent	
+::node	s	1	state-01	stated
+::node	w	1.2.1.2.1.2	world-region	
+::node	p4	1.2.1.2.2.1	pre-crisis	crisis
+::node	i2	1.2.1.2.1	invest-01	investment
+::node	p3	1.2.1.1.1	property	property
+::node	p	1.1	person	
+::node	p2	1.2	possible	may
+::node	b	1.2.1.2	boost-01	boost
+::node	e	1.2.1.1	entitle-01	rights
+::node	-	1.1.1	-	
+::edge	1.1.2		name	:op1	1.1.2.1	Klauspeter	"Klauspeter"
+::edge	1.1.2		name	:op2	1.1.2.2	schmallenbach	"Schmallenbach"
+::edge	1.2.1.2.1.2.2		name	:op2	1.2.1.2.1.2.2.2	Asia	"Asia"
+::edge	1.2.1.1.1	property	property	:mod	1.2.1.1.1.1	intellectual	intellectual
+::edge	1.2.1.2.1.2.2		name	:op1	1.2.1.2.1.2.2.1	Southeast	"Southeast"
+::edge	1.2.1.2.1.1.2		name	:op1	1.2.1.2.1.1.2.1	European	"Europe"
+::edge	1.2.1.2.1.2		world-region	:name	1.2.1.2.1.2.2		name
+::edge	1.2.1.2.1.1		continent	:name	1.2.1.2.1.1.2		name
+::edge	1.2.1.2.1.2		world-region	:wiki	1.2.1.2.1.2.1		"Southeast_Asia"
+::edge	1.2.1.2	boost	boost-01	:ARG4	1.2.1.2.2	levels	level
+::edge	1.2.1.2.1.1		continent	:wiki	1.2.1.2.1.1.1		"Europe"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	may	possible	:domain	1.2.1	help	help-01
+::edge	1.2.1.2.1	investment	invest-01	:ARG0	1.2.1.2.1.1		continent
+::edge	1.2.1.2.1	investment	invest-01	:ARG2	1.2.1.2.1.2		world-region
+::edge	1.2.1.2.2	levels	level	:time	1.2.1.2.2.1	crisis	pre-crisis
+::edge	1.2.1.2	boost	boost-01	:ARG1	1.2.1.2.1	investment	invest-01
+::edge	1.2.1.1	rights	entitle-01	:ARG1	1.2.1.1.1	property	property
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	may	possible
+::edge	1.2.1	help	help-01	:ARG1	1.2.1.2	boost	boost-01
+::edge	1.2.1	help	help-01	:ARG0	1.2.1.1	rights	entitle-01
+::edge	1.1		person	:wiki	1.1.1		-
+13	European patents office President Ingo Kober said that it was vital that Southeast Asian Nations introduced proper legal and technical infrastructure to defend trademarks.
+13	European patents office President Ingo Kober said that it was vital that Southeast Asian Nations introduced proper legal and technical infrastructure to defend trademarks .
+13	0-1.1.3.1.2.1 1-1.1.3.1.2.2 2-1.1.3.1.2.3 3-1.1.3.2 4-1.1.2.1 5-1.1.2.2 6-1 9-1.2.1.r 10-1.2 12-1.2.1.1.1.2.1 13-1.2.1.1.1.2.2 14-1.2.1.1 15-1.2.1 16-1.2.1.2.1.1 16-1.2.1.2.2.1 17-1.2.1.2.1.2 18-1.2.1.2 19-1.2.1.2.2.2 20-1.2.1.2.1 20-1.2.1.2.2 22-1.2.1.3 23-1.2.1.3.2
+::node	"Southeast"	1.2.1.1.1.2.1	"Southeast"	Southeast
+::node	"Asia"	1.2.1.1.1.2.2	"Asia"	Asian
+::node	n2	1.1.3.1.2	name	
+::node	t2	1.2.1.3.2	trademark-01	trademarks
+::node	i3	1.2.1.2.2	infrastructure	infrastructure
+::node	n3	1.2.1.3.1	nation	
+::node	a	1.2.1.2	and	and
+::node	d	1.2.1.3	defend-01	defend
+::node	n3	1.2.1.1	nation	Nations
+::node	"Ingo"	1.1.2.1	"Ingo"	Ingo
+::node	"Kober"	1.1.2.2	"Kober"	Kober
+::node	o	1.1.3.1	organization	
+::node	p3	1.1.3.2	president	President
+::node	"Southeast_Asia"	1.2.1.1.1.1	"Southeast_Asia"	
+::node	n4	1.2.1.1.1.2	name	
+::node	"Patent"	1.1.3.1.2.2	"Patent"	patents
+::node	"Office"	1.1.3.1.2.3	"Office"	office
+::node	"European"	1.1.3.1.2.1	"European"	European
+::node	n	1.1.2	name	
+::node	i	1.2.1	introduce-02	introduced
+::node	p2	1.2.1.2.1.1	proper	proper
+::node	s	1	say-01	said
+::node	h	1.1.3	have-org-role-91	
+::node	l	1.2.1.2.1.2	law	legal
+::node	p4	1.2.1.2.2.1	proper	proper
+::node	i2	1.2.1.2.1	infrastructure	infrastructure
+::node	w	1.2.1.1.1	world-region	
+::node	p	1.1	person	
+::node	v	1.2	vital	vital
+::node	t	1.2.1.2.2.2	technical	technical
+::node	"European_Patent_Office"	1.1.3.1.1	"European_Patent_Office"	
+::node	"Ingo_Kober"	1.1.1	"Ingo_Kober"	
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	Southeast	"Southeast"
+::edge	1.2.1.1.1.2		name	:op2	1.2.1.1.1.2.2	Asian	"Asia"
+::edge	1.1.3.1		organization	:name	1.1.3.1.2		name
+::edge	1.2.1.3	defend	defend-01	:ARG1	1.2.1.3.2	trademarks	trademark-01
+::edge	1.2.1.2	and	and	:op2	1.2.1.2.2	infrastructure	infrastructure
+::edge	1.2.1.3	defend	defend-01	:ARG0	1.2.1.3.1		nation
+::edge	1.2.1	introduced	introduce-02	:ARG1	1.2.1.2	and	and
+::edge	1.2.1	introduced	introduce-02	:purpose	1.2.1.3	defend	defend-01
+::edge	1.2.1	introduced	introduce-02	:ARG0	1.2.1.1	Nations	nation
+::edge	1.1.2		name	:op1	1.1.2.1	Ingo	"Ingo"
+::edge	1.1.2		name	:op2	1.1.2.2	Kober	"Kober"
+::edge	1.1.3		have-org-role-91	:ARG1	1.1.3.1		organization
+::edge	1.1.3		have-org-role-91	:ARG2	1.1.3.2	President	president
+::edge	1.2.1.1.1		world-region	:wiki	1.2.1.1.1.1		"Southeast_Asia"
+::edge	1.2.1.1.1		world-region	:name	1.2.1.1.1.2		name
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	patents	"Patent"
+::edge	1.1.3.1.2		name	:op3	1.1.3.1.2.3	office	"Office"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	European	"European"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	vital	vital	:domain	1.2.1	introduced	introduce-02
+::edge	1.2.1.2.1	infrastructure	infrastructure	:mod	1.2.1.2.1.1	proper	proper
+::edge	1.1		person	:ARG0-of	1.1.3		have-org-role-91
+::edge	1.2.1.2.1	infrastructure	infrastructure	:mod	1.2.1.2.1.2	legal	law
+::edge	1.2.1.2.2	infrastructure	infrastructure	:mod	1.2.1.2.2.1	proper	proper
+::edge	1.2.1.2	and	and	:op1	1.2.1.2.1	infrastructure	infrastructure
+::edge	1.2.1.1	Nations	nation	:location	1.2.1.1.1		world-region
+::edge	1	said	say-01	:ARG0	1.1		person
+::edge	1	said	say-01	:ARG1	1.2	vital	vital
+::edge	1.2.1.2.2	infrastructure	infrastructure	:mod	1.2.1.2.2.2	technical	technical
+::edge	1.1.3.1		organization	:wiki	1.1.3.1.1		"European_Patent_Office"
+::edge	1.1		person	:wiki	1.1.1		"Ingo_Kober"
+14	Ingo Kober stated that intellectual property rights are currently developing in Southeast Asian nations.
+14	Ingo Kober stated that intellectual property rights are currently developing in Southeast Asian nations .
+14	0-1.1.2.1 1-1.1.2.2 2-1 3-1.2.r 4-1.2.1.1.1 5-1.2.1.1 6-1.2.1 8-1.2.2 9-1.2 10-1.2.3.r 11-1.2.3.1.2.1 12-1.2.3.1.2.2 13-1.2.3
+::node	"Ingo"	1.1.2.1	"Ingo"	Ingo
+::node	"Kober"	1.1.2.2	"Kober"	Kober
+::node	"Southeast_Asia"	1.2.3.1.1	"Southeast_Asia"	
+::node	n3	1.2.3.1.2	name	
+::node	n	1.1.2	name	
+::node	e	1.2.1	entitle-01	rights
+::node	s	1	state-01	stated
+::node	c	1.2.2	current	currently
+::node	n2	1.2.3	nation	nations
+::node	i	1.2.1.1.1	intellectual	intellectual
+::node	p	1.1	person	
+::node	"Asia"	1.2.3.1.2.2	"Asia"	Asian
+::node	d	1.2	develop-02	developing
+::node	"Southeast"	1.2.3.1.2.1	"Southeast"	Southeast
+::node	w	1.2.3.1	world-region	
+::node	p2	1.2.1.1	property	property
+::node	"Ingo_Kober"	1.1.1	"Ingo_Kober"	
+::edge	1.1.2		name	:op1	1.1.2.1	Ingo	"Ingo"
+::edge	1.1.2		name	:op2	1.1.2.2	Kober	"Kober"
+::edge	1.2.3.1		world-region	:wiki	1.2.3.1.1		"Southeast_Asia"
+::edge	1.2.3.1		world-region	:name	1.2.3.1.2		name
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	developing	develop-02	:ARG1	1.2.1	rights	entitle-01
+::edge	1.2	developing	develop-02	:time	1.2.2	currently	current
+::edge	1.2	developing	develop-02	:location	1.2.3	nations	nation
+::edge	1.2.1.1	property	property	:mod	1.2.1.1.1	intellectual	intellectual
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.2.3.1.2		name	:op2	1.2.3.1.2.2	Asian	"Asia"
+::edge	1	stated	state-01	:ARG1	1.2	developing	develop-02
+::edge	1.2.3.1.2		name	:op1	1.2.3.1.2.1	Southeast	"Southeast"
+::edge	1.2.3	nations	nation	:location	1.2.3.1		world-region
+::edge	1.2.1	rights	entitle-01	:ARG1	1.2.1.1	property	property
+::edge	1.1		person	:wiki	1.1.1		"Ingo_Kober"
+15	Ingo Kober stated there is larger interest in intellectual property rights now than 20 or 30 years ago.
+15	Ingo Kober stated there is larger interest in intellectual property rights now than 20 or 30 years ago .
+15	0-1.1.2.1 1-1.1.2.2 2-1 5-1.2.2 5-1.2.2.1 5-1.2.2.1.r 6-1.2 7-1.2.1.r 8-1.2.1.1.1 9-1.2.1.1 10-1.2.1 11-1.2.3 12-1.2.2.2.r 13-1.2.2.2.2.1.1 14-1.2.2.2.2 15-1.2.2.2.2.2.1 16-1.2.2.2.2.1.2 16-1.2.2.2.2.2.2 17-1.2.2.2 17-1.2.2.2.1 17-1.2.2.2.1.r
+::node	"Ingo"	1.1.2.1	"Ingo"	Ingo
+::node	"Kober"	1.1.2.2	"Kober"	Kober
+::node	n	1.1.2	name	
+::node	e	1.2.1	entitle-01	rights
+::node	s	1	state-01	stated
+::node	l	1.2.2	large	larger
+::node	n2	1.2.3	now	now
+::node	i2	1.2.1.1.1	intellectual	intellectual
+::node	p	1.1	person	
+::node	y2	1.2.2.2.2.2.2	year	years
+::node	i	1.2	interest-01	interest
+::node	y	1.2.2.2.2.1.2	year	years
+::node	30	1.2.2.2.2.2.1	30	30
+::node	m	1.2.2.1	more	larger
+::node	20	1.2.2.2.2.1.1	20	20
+::node	b	1.2.2.2	before	ago
+::node	n3	1.2.2.2.1	now	ago
+::node	t2	1.2.2.2.2.2	temporal-quantity	
+::node	p2	1.2.1.1	property	property
+::node	o2	1.2.2.2.2	or	or
+::node	t	1.2.2.2.2.1	temporal-quantity	
+::node	"Ingo_Kober"	1.1.1	"Ingo_Kober"	
+::edge	1.1.2		name	:op1	1.1.2.1	Ingo	"Ingo"
+::edge	1.1.2		name	:op2	1.1.2.2	Kober	"Kober"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	interest	interest-01	:ARG2	1.2.1	rights	entitle-01
+::edge	1.2	interest	interest-01	:mod	1.2.2	larger	large
+::edge	1.2	interest	interest-01	:time	1.2.3	now	now
+::edge	1.2.1.1	property	property	:mod	1.2.1.1.1	intellectual	intellectual
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.2.2.2.2.2		temporal-quantity	:unit	1.2.2.2.2.2.2	years	year
+::edge	1	stated	state-01	:ARG1	1.2	interest	interest-01
+::edge	1.2.2.2.2.1		temporal-quantity	:unit	1.2.2.2.2.1.2	years	year
+::edge	1.2.2.2.2.2		temporal-quantity	:quant	1.2.2.2.2.2.1	30	30
+::edge	1.2.2	larger	large	:degree	1.2.2.1	larger	more
+::edge	1.2.2.2.2.1		temporal-quantity	:quant	1.2.2.2.2.1.1	20	20
+::edge	1.2.2	larger	large	:compared-to	1.2.2.2	ago	before
+::edge	1.2.2.2	ago	before	:op1	1.2.2.2.1	ago	now
+::edge	1.2.2.2.2	or	or	:op2	1.2.2.2.2.2		temporal-quantity
+::edge	1.2.1	rights	entitle-01	:ARG1	1.2.1.1	property	property
+::edge	1.2.2.2	ago	before	:quant	1.2.2.2.2	or	or
+::edge	1.2.2.2.2	or	or	:op1	1.2.2.2.2.1		temporal-quantity
+::edge	1.1		person	:wiki	1.1.1		"Ingo_Kober"
+16	Ingo Kober stated that some nations had stronger intellectual property rights than others.
+16	Ingo Kober stated that some nations had stronger intellectual property rights than others .
+16	0-1.1.2.1 1-1.1.2.2 2-1 3-1.2.r 4-1.2.2.1 5-1.2.2 5-1.2.3.1.1 6-1.2 7-1.2.3 7-1.2.3.1 7-1.2.3.1.r 8-1.2.1.1 9-1.2.1 10-1.2 11-1.2.3.1.1.r 12-1.2.3.1.1.1
+::node	"Ingo"	1.1.2.1	"Ingo"	Ingo
+::node	"Kober"	1.1.2.2	"Kober"	Kober
+::node	n3	1.2.3.1.1	nation	nations
+::node	n	1.1.2	name	
+::node	p2	1.2.1	property	property
+::node	s	1	state-01	stated
+::node	n2	1.2.2	nation	nations
+::node	s3	1.2.3	strong	stronger
+::node	o	1.2.3.1.1.1	other	others
+::node	p	1.1	person	
+::node	e	1.2	entitle-01	rights
+::node	s2	1.2.2.1	some	some
+::node	m	1.2.3.1	more	stronger
+::node	i	1.2.1.1	intellectual	intellectual
+::node	"Ingo_Kober"	1.1.1	"Ingo_Kober"	
+::edge	1.1.2		name	:op1	1.1.2.1	Ingo	"Ingo"
+::edge	1.1.2		name	:op2	1.1.2.2	Kober	"Kober"
+::edge	1.2.3.1	stronger	more	:compared-to	1.2.3.1.1	nations	nation
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	rights	entitle-01	:ARG1	1.2.1	property	property
+::edge	1.2	rights	entitle-01	:ARG2	1.2.2	nations	nation
+::edge	1.2	rights	entitle-01	:mod	1.2.3	stronger	strong
+::edge	1.2.3.1.1	nations	nation	:mod	1.2.3.1.1.1	others	other
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	rights	entitle-01
+::edge	1.2.2	nations	nation	:quant	1.2.2.1	some	some
+::edge	1.2.3	stronger	strong	:degree	1.2.3.1	stronger	more
+::edge	1.2.1	property	property	:mod	1.2.1.1	intellectual	intellectual
+::edge	1.1		person	:wiki	1.1.1		"Ingo_Kober"
+17	Ingo Kober also stated that one should not tell the countries that are lagging in intellectual property rights that they are lagging in intellectual property rights.
+17	Ingo Kober also stated that one should not tell the countries that are lagging in intellectual property rights that they are lagging in intellectual property rights .
+17	0-1.1.2.1 1-1.1.2.2 2-1.3 3-1 4-1.2.r 5-1.2.2.1 6-1.2 7-1.2.1 7-1.2.1.r 8-1.2.2 10-1.2.2.3 13-1.2.2.2 13-1.2.2.3.1 15-1.2.2.3.1.1.1.1 16-1.2.2.3.1.1.1 17-1.2.2.3.1.1 21-1.2.2.3.1 23-1.2.2.3.1.1.1.1 24-1.2.2.3.1.1.1 25-1.2.2.3.1.1
+::node	i	1.2.2.3.1.1.1.1	intellectual	intellectual
+::node	"Ingo"	1.1.2.1	"Ingo"	Ingo
+::node	e	1.2.2.3.1.1	entitle-01	rights
+::node	"Kober"	1.1.2.2	"Kober"	Kober
+::node	n	1.1.2	name	
+::node	-	1.2.1	-	not
+::node	s	1	state-01	stated
+::node	t	1.2.2	tell-01	tell
+::node	p2	1.2.2.3.1.1.1	property	property
+::node	p	1.1	person	
+::node	r	1.2	recommend-01	should
+::node	a	1.3	also	also
+::node	c	1.2.2.3	country	countries
+::node	o	1.2.2.1	one	one
+::node	l2	1.2.2.2	lag-01	lagging
+::node	c	1.2.2.2.1	country	
+::node	e	1.2.2.2.2	entitle-01	
+::node	l	1.2.2.3.1	lag-01	lagging
+::node	"Ingo_Kober"	1.1.1	"Ingo_Kober"	
+::edge	1.2.2.3.1.1.1	property	property	:mod	1.2.2.3.1.1.1.1	intellectual	intellectual
+::edge	1.1.2		name	:op1	1.1.2.1	Ingo	"Ingo"
+::edge	1.2.2.3.1	lagging	lag-01	:topic	1.2.2.3.1.1	rights	entitle-01
+::edge	1.1.2		name	:op2	1.1.2.2	Kober	"Kober"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	should	recommend-01	:polarity	1.2.1	not	-
+::edge	1.2	should	recommend-01	:ARG1	1.2.2	tell	tell-01
+::edge	1.2.2.3.1.1	rights	entitle-01	:ARG1	1.2.2.3.1.1.1	property	property
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	should	recommend-01
+::edge	1	stated	state-01	:mod	1.3	also	also
+::edge	1.2.2	tell	tell-01	:ARG2	1.2.2.3	countries	country
+::edge	1.2.2	tell	tell-01	:ARG0	1.2.2.1	one	one
+::edge	1.2.2	tell	tell-01	:ARG1	1.2.2.2	lagging	lag-01
+::edge	1.2.2.2	lagging	lag-01	:ARG0	1.2.2.2.1		country
+::edge	1.2.2.2	lagging	lag-01	:topic	1.2.2.2.2		entitle-01
+::edge	1.2.2.3	countries	country	:ARG0-of	1.2.2.3.1	lagging	lag-01
+::edge	1.1		person	:wiki	1.1.1		"Ingo_Kober"
+18	Director General of Thailand's Department of intellectual property yanyong phuangranch stated that Southeast Asian nations had to work together to ensure trademarks were protected.
+18	Director General of Thailand 's Department of intellectual property yanyong phuangranch stated that Southeast Asian nations had to work together to ensure trademarks were protected .
+18	0-1.1.3.2 1-1.1.3.2.1 2-1.1.3 3-1.1.3.1.3.2.1 4-1.1.3.1.3.r 5-1.1.3.1.2.1 6-1.1.3.1.2.2 7-1.1.3.1.2.3 8-1.1.3.1.2.4 9-1.1.2.1 10-1.1.2.2 11-1 13-1.2.1.1.1.2.1 14-1.2.1.1.1.2.2 15-1.2.1.1 18-1.2.1 19-1.2.1.4 21-1.2.1.2 22-1.2.1.2.2.1 24-1.2.1.2.2
+::node	"Southeast"	1.2.1.1.1.2.1	"Southeast"	Southeast
+::node	c	1.1.3.1.3	country	
+::node	"Asia"	1.2.1.1.1.2.2	"Asia"	Asian
+::node	n2	1.1.3.1.2	name	
+::node	g	1.1.3.2.1	general	General
+::node	"Thailand"	1.1.3.1.3.2.1	"Thailand"	Thailand
+::node	p	1.2.1.2.2	protect-01	protected
+::node	t2	1.2.1.4	together	together
+::node	e	1.2.1.2	ensure-01	ensure
+::node	n4	1.2.1.3	nation	
+::node	n4	1.2.1.1	nation	nations
+::node	"Yanyong"	1.1.2.1	"Yanyong"	yanyong
+::node	"Phuangranch"	1.1.2.2	"Phuangranch"	phuangranch
+::node	g2	1.1.3.1	government-organization	
+::node	d	1.1.3.2	director	Director
+::node	"Southeast_Asia"	1.2.1.1.1.1	"Southeast_Asia"	
+::node	n5	1.2.1.1.1.2	name	
+::node	"of"	1.1.3.1.2.2	"of"	of
+::node	"Thailand"	1.1.3.1.3.1	"Thailand"	
+::node	"Intellectual"	1.1.3.1.2.3	"Intellectual"	intellectual
+::node	n3	1.1.3.1.3.2	name	
+::node	"Property"	1.1.3.1.2.4	"Property"	property
+::node	"Department"	1.1.3.1.2.1	"Department"	Department
+::node	n	1.1.2	name	
+::node	w	1.2.1	work-01	work
+::node	s	1	state-01	stated
+::node	h	1.1.3	have-org-role-91	of
+::node	t	1.2.1.2.2.1	trademark-01	trademarks
+::node	n4	1.2.1.2.1	nation	
+::node	w2	1.2.1.1.1	world-region	
+::node	p2	1.1	person	
+::node	o	1.2	obligate-01	
+::node	-	1.1.3.1.1	-	
+::node	-	1.1.1	-	
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	Southeast	"Southeast"
+::edge	1.1.3.1		government-organization	:poss	1.1.3.1.3		country
+::edge	1.2.1.1.1.2		name	:op2	1.2.1.1.1.2.2	Asian	"Asia"
+::edge	1.1.3.1		government-organization	:name	1.1.3.1.2		name
+::edge	1.1.3.2	Director	director	:mod	1.1.3.2.1	General	general
+::edge	1.1.3.1.3.2		name	:op1	1.1.3.1.3.2.1	Thailand	"Thailand"
+::edge	1.2.1.2	ensure	ensure-01	:ARG1	1.2.1.2.2	protected	protect-01
+::edge	1.2.1	work	work-01	:mod	1.2.1.4	together	together
+::edge	1.2.1	work	work-01	:ARG1	1.2.1.2	ensure	ensure-01
+::edge	1.2.1	work	work-01	:ARG3	1.2.1.3		nation
+::edge	1.2.1	work	work-01	:ARG0	1.2.1.1	nations	nation
+::edge	1.1.2		name	:op1	1.1.2.1	yanyong	"Yanyong"
+::edge	1.1.2		name	:op2	1.1.2.2	phuangranch	"Phuangranch"
+::edge	1.1.3	of	have-org-role-91	:ARG1	1.1.3.1		government-organization
+::edge	1.1.3	of	have-org-role-91	:ARG2	1.1.3.2	Director	director
+::edge	1.2.1.1.1		world-region	:wiki	1.2.1.1.1.1		"Southeast_Asia"
+::edge	1.2.1.1.1		world-region	:name	1.2.1.1.1.2		name
+::edge	1.1.3.1.2		name	:op2	1.1.3.1.2.2	of	"of"
+::edge	1.1.3.1.3		country	:wiki	1.1.3.1.3.1		"Thailand"
+::edge	1.1.3.1.2		name	:op3	1.1.3.1.2.3	intellectual	"Intellectual"
+::edge	1.1.3.1.3		country	:name	1.1.3.1.3.2		name
+::edge	1.1.3.1.2		name	:op4	1.1.3.1.2.4	property	"Property"
+::edge	1.1.3.1.2		name	:op1	1.1.3.1.2.1	Department	"Department"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2		obligate-01	:ARG2	1.2.1	work	work-01
+::edge	1.1		person	:ARG0-of	1.1.3	of	have-org-role-91
+::edge	1.2.1.2.2	protected	protect-01	:ARG1	1.2.1.2.2.1	trademarks	trademark-01
+::edge	1.2.1.2	ensure	ensure-01	:ARG0	1.2.1.2.1		nation
+::edge	1.2.1.1	nations	nation	:location	1.2.1.1.1		world-region
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2		obligate-01
+::edge	1.1.3.1		government-organization	:wiki	1.1.3.1.1		-
+::edge	1.1		person	:wiki	1.1.1		-
+19	The European Commission-ASEAN intellectual property rights cooperation program fosters trade, investment and technology transfer between the European Union and Southeast Asian nations.
+19	The European Commission @-@ ASEAN intellectual property rights cooperation program fosters trade , investment and technology transfer between the European Union and Southeast Asian nations .
+19	1-1.1.1.1.2.1 2-1.1.1.1.2.2 4-1.1.1.2.2.1 5-1.1.1.3.1.1 6-1.1.1.3.1 7-1.1.1.3 8-1.1.1 9-1.1 10-1 11-1.2.1.1 13-1.2.1.2 14-1.2.1 15-1.2.1.3 16-1.2 19-1.2.3.2.1 20-1.2.3.2.2 21-1.2.1 22-1.2.2.1.2.1 23-1.2.2.1.2.2 24-1.2.2
+::node	"Southeast"	1.2.2.1.2.1	"Southeast"	Southeast
+::node	"Asia"	1.2.2.1.2.2	"Asia"	Asian
+::node	n2	1.1.1.2.2	name	
+::node	p2	1.1.1.3.1	property	property
+::node	n3	1.2.3.2	name	
+::node	n	1.1.1.1.2	name	
+::node	"Association_of_Southeast_Asian_Nations"	1.1.1.2.1	"Association_of_Southeast_Asian_Nations"	
+::node	"European_Commission"	1.1.1.1.1	"European_Commission"	
+::node	i2	1.2.1.2	invest-01	investment
+::node	w	1.2.2.1	world-region	
+::node	t3	1.2.1.3	technology	technology
+::node	"European_Union"	1.2.3.1	"European_Union"	
+::node	n5	1.2.2.1.2	name	
+::node	t2	1.2.1.1	trade-01	trade
+::node	"European"	1.1.1.1.2.1	"European"	European
+::node	o	1.1.1.1	organization	
+::node	"Commission"	1.1.1.1.2.2	"Commission"	Commission
+::node	o2	1.1.1.2	organization	
+::node	"Southeast_Asia"	1.2.2.1.1	"Southeast_Asia"	
+::node	e	1.1.1.3	entitle-01	rights
+::node	"Union"	1.2.3.2.2	"Union"	Union
+::node	"European"	1.2.3.2.1	"European"	European
+::node	"ASEAN"	1.1.1.2.2.1	"ASEAN"	ASEAN
+::node	a	1.2.1	and	and
+::node	f	1	foster-01	fosters
+::node	n4	1.2.2	nation	nations
+::node	o3	1.2.3	organization	
+::node	p	1.1	program	program
+::node	t	1.2	transfer-01	transfer
+::node	i	1.1.1.3.1.1	intellectual	intellectual
+::node	c	1.1.1	cooperate-01	cooperation
+::edge	1.2.2.1.2		name	:op1	1.2.2.1.2.1	Southeast	"Southeast"
+::edge	1.2.2.1.2		name	:op2	1.2.2.1.2.2	Asian	"Asia"
+::edge	1.1.1.2		organization	:name	1.1.1.2.2		name
+::edge	1.1.1.3	rights	entitle-01	:ARG1	1.1.1.3.1	property	property
+::edge	1.2.3		organization	:name	1.2.3.2		name
+::edge	1.1.1.1		organization	:name	1.1.1.1.2		name
+::edge	1.1.1.2		organization	:wiki	1.1.1.2.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.1.1.1		organization	:wiki	1.1.1.1.1		"European_Commission"
+::edge	1.2.1	and	and	:op2	1.2.1.2	investment	invest-01
+::edge	1.2.2	nations	nation	:location	1.2.2.1		world-region
+::edge	1.2.1	and	and	:op3	1.2.1.3	technology	technology
+::edge	1.2.3		organization	:wiki	1.2.3.1		"European_Union"
+::edge	1.2.2.1		world-region	:name	1.2.2.1.2		name
+::edge	1.2.1	and	and	:op1	1.2.1.1	trade	trade-01
+::edge	1.1.1.1.2		name	:op1	1.1.1.1.2.1	European	"European"
+::edge	1.1.1	cooperation	cooperate-01	:ARG0	1.1.1.1		organization
+::edge	1.1.1.1.2		name	:op2	1.1.1.1.2.2	Commission	"Commission"
+::edge	1.1.1	cooperation	cooperate-01	:ARG1	1.1.1.2		organization
+::edge	1.2.2.1		world-region	:wiki	1.2.2.1.1		"Southeast_Asia"
+::edge	1.1.1	cooperation	cooperate-01	:ARG2	1.1.1.3	rights	entitle-01
+::edge	1.2.3.2		name	:op2	1.2.3.2.2	Union	"Union"
+::edge	1.2.3.2		name	:op1	1.2.3.2.1	European	"European"
+::edge	1.1.1.2.2		name	:op1	1.1.1.2.2.1	ASEAN	"ASEAN"
+::edge	1.2	transfer	transfer-01	:ARG1	1.2.1	and	and
+::edge	1.2	transfer	transfer-01	:ARG2	1.2.2	nations	nation
+::edge	1.2	transfer	transfer-01	:ARG3	1.2.3		organization
+::edge	1	fosters	foster-01	:ARG0	1.1	program	program
+::edge	1	fosters	foster-01	:ARG1	1.2	transfer	transfer-01
+::edge	1.1.1.3.1	property	property	:mod	1.1.1.3.1.1	intellectual	intellectual
+::edge	1.1	program	program	:topic	1.1.1	cooperation	cooperate-01
+20	Klauspeter schmallenbach stated that the European Commission-ASEAN intellectual property rights cooperation program would help Southeast Asian Nations draw on European expertise in how to protect and enforce intellectual property rights in compliance with World Trade Organization rules.
+20	Klauspeter schmallenbach stated that the European Commission @-@ ASEAN intellectual property rights cooperation program would help Southeast Asian Nations draw on European expertise in how to protect and enforce intellectual property rights in compliance with World Trade Organization rules .
+20	0-1.1.2.1 1-1.1.2.2 2-1 3-1.2.r 5-1.2.1.1.1.2.1 6-1.2.1.1.1.2.2 8-1.2.1.1.2.2.1 9-1.2.1.1.3.1.1 10-1.2.1.1.3.1 11-1.2.1.1.3 12-1.2.1.1 13-1.2.1 15-1.2 16-1.2.2.1.1.2.1 17-1.2.2.1.1.2.2 18-1.2.2.1 19-1.2.2 20-1.2.2.3.r 21-1.2.2.3.2.1 24-1.2.2.2.2.1.r 26-1.2.2.2.2.1.1 27-1.2.2.2.2.1 28-1.2.2.2.2.1.2 29-1.2.2.2.2.1.2.1 30-1.2.2.2.2.1.2.1 31-1.2.2.2.2.1.2.1 33-1.2.2.2.2.1.3 34-1.2.2.2.2.1.3.1.r 35-1.2.2.2.2.1.3.1.1.2.1 36-1.2.2.2.2.1.3.1.1.2.2 37-1.2.2.2.2.1.3.1.1.2.3 38-1.2.2.2.2.1.3.1
+::node	r2	1.2.2.2.2.1.3.1	rule	rules
+::node	"European"	1.2.1.1.1.2.1	"European"	European
+::node	"Commission"	1.2.1.1.1.2.2	"Commission"	Commission
+::node	"Organization"	1.2.2.2.2.1.3.1.1.2.3	"Organization"	Organization
+::node	e3	1.2.2.2.2.1.2.1	entitle-01	rights
+::node	"Southeast_Asia"	1.2.2.1.1.1	"Southeast_Asia"	
+::node	n5	1.2.2.1.1.2	name	
+::node	"Trade"	1.2.2.2.2.1.3.1.1.2.2	"Trade"	Trade
+::node	"World"	1.2.2.2.2.1.3.1.1.2.1	"World"	World
+::node	e3	1.2.1.1.3	entitle-01	rights
+::node	"Asia"	1.2.2.1.1.2.2	"Asia"	Asian
+::node	"Southeast"	1.2.2.1.1.2.1	"Southeast"	Southeast
+::node	"ASEAN"	1.2.1.1.2.2.1	"ASEAN"	ASEAN
+::node	c2	1.2.2.3	continent	
+::node	o3	1.2.2.2.2.1.3.1.1	organization	
+::node	n4	1.2.2.1	nation	Nations
+::node	e	1.2.2.2	expert-41	
+::node	c2	1.2.2.2.1	continent	
+::node	c	1.2.1.1	cooperate-01	cooperation
+::node	t	1.2.2.2.2	thing	
+::node	a	1.2.2.2.2.1	and	and
+::node	"Europe"	1.2.2.3.1	"Europe"	
+::node	n6	1.2.2.3.2	name	
+::node	"Europe"	1.2.2.3.2.1	"Europe"	European
+::node	"Klauspeter"	1.1.2.1	"Klauspeter"	Klauspeter
+::node	w	1.2.2.1.1	world-region	
+::node	"Schmallenbach"	1.1.2.2	"Schmallenbach"	schmallenbach
+::node	"European_Commission"	1.2.1.1.1.1	"European_Commission"	
+::node	n2	1.2.1.1.1.2	name	
+::node	"Association_of_Southeast_Asian_Nations"	1.2.1.1.2.1	"Association_of_Southeast_Asian_Nations"	
+::node	n3	1.2.1.1.2.2	name	
+::node	p3	1.2.1.1.3.1	property	property
+::node	i	1.2.1.1.3.1.1	intellectual	intellectual
+::node	n7	1.2.2.2.2.1.3.1.1.2	name	
+::node	"World_Trade_Organization"	1.2.2.2.2.1.3.1.1.1	"World_Trade_Organization"	
+::node	n	1.1.2	name	
+::node	p2	1.2.1	program	program
+::node	s	1	state-01	stated
+::node	d	1.2.2	draw-02	draw
+::node	o2	1.2.1.1.2	organization	
+::node	o	1.2.1.1.1	organization	
+::node	p	1.1	person	
+::node	c3	1.2.2.2.2.1.3	comply-01	compliance
+::node	h	1.2	help-01	help
+::node	e2	1.2.2.2.2.1.2	enforce-01	enforce
+::node	p4	1.2.2.2.2.1.1	protect-01	protect
+::node	-	1.1.1	-	
+::edge	1.2.2.2.2.1.3	compliance	comply-01	:ARG1	1.2.2.2.2.1.3.1	rules	rule
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	European	"European"
+::edge	1.2.1.1.1.2		name	:op2	1.2.1.1.1.2.2	Commission	"Commission"
+::edge	1.2.2.2.2.1.3.1.1.2		name	:op3	1.2.2.2.2.1.3.1.1.2.3	Organization	"Organization"
+::edge	1.2.2.2.2.1.2	enforce	enforce-01	:ARG1	1.2.2.2.2.1.2.1	rights	entitle-01
+::edge	1.2.2.1.1		world-region	:wiki	1.2.2.1.1.1		"Southeast_Asia"
+::edge	1.2.2.1.1		world-region	:name	1.2.2.1.1.2		name
+::edge	1.2.2.2.2.1.3.1.1.2		name	:op2	1.2.2.2.2.1.3.1.1.2.2	Trade	"Trade"
+::edge	1.2.2.2.2.1.3.1.1.2		name	:op1	1.2.2.2.2.1.3.1.1.2.1	World	"World"
+::edge	1.2.1.1	cooperation	cooperate-01	:ARG2	1.2.1.1.3	rights	entitle-01
+::edge	1.2.2.1.1.2		name	:op2	1.2.2.1.1.2.2	Asian	"Asia"
+::edge	1.2.2.1.1.2		name	:op1	1.2.2.1.1.2.1	Southeast	"Southeast"
+::edge	1.2.1.1.2.2		name	:op1	1.2.1.1.2.2.1	ASEAN	"ASEAN"
+::edge	1.2.2	draw	draw-02	:ARG2	1.2.2.3		continent
+::edge	1.2.2.2.2.1.3.1	rules	rule	:poss	1.2.2.2.2.1.3.1.1		organization
+::edge	1.2.2	draw	draw-02	:ARG0	1.2.2.1	Nations	nation
+::edge	1.2.2	draw	draw-02	:ARG1	1.2.2.2		expert-41
+::edge	1.2.2.2		expert-41	:ARG1	1.2.2.2.1		continent
+::edge	1.2.1	program	program	:topic	1.2.1.1	cooperation	cooperate-01
+::edge	1.2.2.2		expert-41	:ARG2	1.2.2.2.2		thing
+::edge	1.2.2.2.2		thing	:manner-of	1.2.2.2.2.1	and	and
+::edge	1.2.2.3		continent	:wiki	1.2.2.3.1		"Europe"
+::edge	1.2.2.3		continent	:name	1.2.2.3.2		name
+::edge	1.2.2.3.2		name	:op1	1.2.2.3.2.1	European	"Europe"
+::edge	1.1.2		name	:op1	1.1.2.1	Klauspeter	"Klauspeter"
+::edge	1.2.2.1	Nations	nation	:location	1.2.2.1.1		world-region
+::edge	1.1.2		name	:op2	1.1.2.2	schmallenbach	"Schmallenbach"
+::edge	1.2.1.1.1		organization	:wiki	1.2.1.1.1.1		"European_Commission"
+::edge	1.2.1.1.1		organization	:name	1.2.1.1.1.2		name
+::edge	1.2.1.1.2		organization	:wiki	1.2.1.1.2.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.2.1.1.2		organization	:name	1.2.1.1.2.2		name
+::edge	1.2.1.1.3	rights	entitle-01	:ARG1	1.2.1.1.3.1	property	property
+::edge	1.2.1.1.3.1	property	property	:mod	1.2.1.1.3.1.1	intellectual	intellectual
+::edge	1.2.2.2.2.1.3.1.1		organization	:name	1.2.2.2.2.1.3.1.1.2		name
+::edge	1.2.2.2.2.1.3.1.1		organization	:wiki	1.2.2.2.2.1.3.1.1.1		"World_Trade_Organization"
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	help	help-01	:ARG0	1.2.1	program	program
+::edge	1.2	help	help-01	:ARG1	1.2.2	draw	draw-02
+::edge	1.2.1.1	cooperation	cooperate-01	:ARG1	1.2.1.1.2		organization
+::edge	1.2.1.1	cooperation	cooperate-01	:ARG0	1.2.1.1.1		organization
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.2.2.2.2.1	and	and	:ARG0-of	1.2.2.2.2.1.3	compliance	comply-01
+::edge	1	stated	state-01	:ARG1	1.2	help	help-01
+::edge	1.2.2.2.2.1	and	and	:op2	1.2.2.2.2.1.2	enforce	enforce-01
+::edge	1.2.2.2.2.1	and	and	:op1	1.2.2.2.2.1.1	protect	protect-01
+::edge	1.1		person	:wiki	1.1.1		-
+21	50 experts in intellectual property rights attended the European Commission-ASEAN intellectual property rights cooperation program.
+21	50 experts in intellectual property rights attended the European Commission @-@ ASEAN intellectual property rights cooperation program .
+21	0-1.1.1 1-1.1.2 2-1.1.2.1.r 3-1.1.2.1.1.1 4-1.1.2.1.1 5-1.1.2.1 6-1 8-1.2.1.1.2.1 9-1.2.1.1.2.2 11-1.2.1.2.2.1 12-1.2.1.3 13-1.2.1.3 14-1.2.1.3 15-1.2.1 16-1.2
+::node	e2	1.1.2.1	entitle-01	rights
+::node	"European"	1.2.1.1.2.1	"European"	European
+::node	i	1.1.2.1.1.1	intellectual	intellectual
+::node	"Commission"	1.2.1.1.2.2	"Commission"	Commission
+::node	p2	1.1.2.1.1	property	property
+::node	n2	1.2.1.2.2	name	
+::node	e	1.1.2	expert-41	experts
+::node	c	1.2.1	cooperate-01	cooperation
+::node	a	1	attend-01	attended
+::node	"ASEAN"	1.2.1.2.2.1	"ASEAN"	ASEAN
+::node	n	1.2.1.1.2	name	
+::node	"Association_of_Southeast_Asian_Nations"	1.2.1.2.1	"Association_of_Southeast_Asian_Nations"	
+::node	"European_Commission"	1.2.1.1.1	"European_Commission"	
+::node	p	1.1	person	
+::node	p3	1.2	program	program
+::node	o2	1.2.1.2	organization	
+::node	e2	1.2.1.3	entitle-01	rights
+::node	o	1.2.1.1	organization	
+::node	50	1.1.1	50	50
+::edge	1.1.2	experts	expert-41	:ARG2	1.1.2.1	rights	entitle-01
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	European	"European"
+::edge	1.1.2.1.1	property	property	:mod	1.1.2.1.1.1	intellectual	intellectual
+::edge	1.2.1.1.2		name	:op2	1.2.1.1.2.2	Commission	"Commission"
+::edge	1.1.2.1	rights	entitle-01	:mod	1.1.2.1.1	property	property
+::edge	1.2.1.2		organization	:name	1.2.1.2.2		name
+::edge	1.1		person	:ARG1-of	1.1.2	experts	expert-41
+::edge	1.2	program	program	:topic	1.2.1	cooperation	cooperate-01
+::edge	1.2.1.2.2		name	:op1	1.2.1.2.2.1	ASEAN	"ASEAN"
+::edge	1.2.1.1		organization	:name	1.2.1.1.2		name
+::edge	1.2.1.2		organization	:wiki	1.2.1.2.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.2.1.1		organization	:wiki	1.2.1.1.1		"European_Commission"
+::edge	1	attended	attend-01	:ARG0	1.1		person
+::edge	1	attended	attend-01	:ARG1	1.2	program	program
+::edge	1.2.1	cooperation	cooperate-01	:ARG1	1.2.1.2		organization
+::edge	1.2.1	cooperation	cooperate-01	:ARG2	1.2.1.3	rights	entitle-01
+::edge	1.2.1	cooperation	cooperate-01	:ARG0	1.2.1.1		organization
+::edge	1.1		person	:quant	1.1.1	50	50
+22	Ingo Kober stated that the European Commission-ASEAN intellectual property rights cooperation program is further proof of the growing importance of intellectual property rights protection to world trade.
+22	Ingo Kober stated that the European Commission @-@ ASEAN intellectual property rights cooperation program is further proof of the growing importance of intellectual property rights protection to world trade .
+22	0-1.1.2.1 1-1.1.2.2 2-1 3-1.2.r 5-1.2.1.1.1.2.1 6-1.2.1.1.1.2.2 8-1.2.1.1.2.2.1 9-1.2.1.1.3.1.1 10-1.2.1.1.3.1 11-1.2.1.1.3 12-1.2.1.1 13-1.2.1 15-1.2.3 16-1.2 17-1.2.2.r 19-1.2.2 20-1.2.2.1 21-1.2.2.1.1.r 22-1.2.2.1.1.1 23-1.2.2.1.1.1 24-1.2.2.1.1.1 25-1.2.2.1.1 27-1.2.2.1.1.2.1 28-1.2.2.1.1.2
+::node	"European"	1.2.1.1.1.2.1	"European"	European
+::node	"Commission"	1.2.1.1.1.2.2	"Commission"	Commission
+::node	e	1.2.2.1.1.1	entitle-01	rights
+::node	t	1.2.2.1.1.2	trade-01	trade
+::node	e	1.2.1.1.3	entitle-01	rights
+::node	w	1.2.2.1.1.2.1	world	world
+::node	"ASEAN"	1.2.1.1.2.2.1	"ASEAN"	ASEAN
+::node	i2	1.2.2.1	important	importance
+::node	c	1.2.1.1	cooperate-01	cooperation
+::node	"Ingo"	1.1.2.1	"Ingo"	Ingo
+::node	p5	1.2.2.1.1	protect-01	protection
+::node	"Kober"	1.1.2.2	"Kober"	Kober
+::node	"European_Commission"	1.2.1.1.1.1	"European_Commission"	
+::node	n2	1.2.1.1.1.2	name	
+::node	"Association_of_Southeast_Asian_Nations"	1.2.1.1.2.1	"Association_of_Southeast_Asian_Nations"	
+::node	n3	1.2.1.1.2.2	name	
+::node	p4	1.2.1.1.3.1	property	property
+::node	i	1.2.1.1.3.1.1	intellectual	intellectual
+::node	n	1.1.2	name	
+::node	p3	1.2.1	program	program
+::node	s	1	state-01	stated
+::node	g	1.2.2	grow-01	growing
+::node	o2	1.2.1.1.2	organization	
+::node	f	1.2.3	further	further
+::node	o	1.2.1.1.1	organization	
+::node	p	1.1	person	
+::node	p2	1.2	prove-01	proof
+::node	"Ingo_Kober"	1.1.1	"Ingo_Kober"	
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	European	"European"
+::edge	1.2.1.1.1.2		name	:op2	1.2.1.1.1.2.2	Commission	"Commission"
+::edge	1.2.2.1.1	protection	protect-01	:ARG0	1.2.2.1.1.1	rights	entitle-01
+::edge	1.2.2.1.1	protection	protect-01	:ARG1	1.2.2.1.1.2	trade	trade-01
+::edge	1.2.1.1	cooperation	cooperate-01	:ARG2	1.2.1.1.3	rights	entitle-01
+::edge	1.2.2.1.1.2	trade	trade-01	:ARG0	1.2.2.1.1.2.1	world	world
+::edge	1.2.1.1.2.2		name	:op1	1.2.1.1.2.2.1	ASEAN	"ASEAN"
+::edge	1.2.2	growing	grow-01	:ARG1	1.2.2.1	importance	important
+::edge	1.2.1	program	program	:topic	1.2.1.1	cooperation	cooperate-01
+::edge	1.1.2		name	:op1	1.1.2.1	Ingo	"Ingo"
+::edge	1.2.2.1	importance	important	:domain	1.2.2.1.1	protection	protect-01
+::edge	1.1.2		name	:op2	1.1.2.2	Kober	"Kober"
+::edge	1.2.1.1.1		organization	:wiki	1.2.1.1.1.1		"European_Commission"
+::edge	1.2.1.1.1		organization	:name	1.2.1.1.1.2		name
+::edge	1.2.1.1.2		organization	:wiki	1.2.1.1.2.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.2.1.1.2		organization	:name	1.2.1.1.2.2		name
+::edge	1.2.1.1.3	rights	entitle-01	:ARG1	1.2.1.1.3.1	property	property
+::edge	1.2.1.1.3.1	property	property	:mod	1.2.1.1.3.1.1	intellectual	intellectual
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	proof	prove-01	:ARG0	1.2.1	program	program
+::edge	1.2	proof	prove-01	:ARG1	1.2.2	growing	grow-01
+::edge	1.2.1.1	cooperation	cooperate-01	:ARG1	1.2.1.1.2		organization
+::edge	1.2	proof	prove-01	:mod	1.2.3	further	further
+::edge	1.2.1.1	cooperation	cooperate-01	:ARG0	1.2.1.1.1		organization
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1	stated	state-01	:ARG1	1.2	proof	prove-01
+::edge	1.1		person	:wiki	1.1.1		"Ingo_Kober"
+23	Ingo Kober also stated that the European Commission-ASEAN intellectual property rights cooperation program marks the latest stage in a successful initiative to develop effective systems for protecting patents, trademarks, designs, and copyrights in the region.
+23	Ingo Kober also stated that the European Commission @-@ ASEAN intellectual property rights cooperation program marks the latest stage in a successful initiative to develop effective systems for protecting patents , trademarks , designs , and copyrights in the region .
+23	0-1.1.2.1 1-1.1.2.2 2-1.3 3-1 4-1.2.r 6-1.2.1.1.1.2.1 7-1.2.1.1.1.2.2 9-1.2.1.1.2.2.1 10-1.2.1.1.3.1.1 11-1.2.1.1.3.1 12-1.2.1.1.3 13-1.2.1.1 14-1.2.1 15-1.2 17-1.2.2.1 17-1.2.2.1.1 17-1.2.2.1.1.r 18-1.2.2 19-1.2.2.2.r 21-1.2.2.2.1 22-1.2.2.2 24-1.2.2.2.2 25-1.2.2.2.2.1.2 26-1.2.2.2.2.1 27-1.2.2.2.2.1.1.r 28-1.2.2.2.2.1.1 29-1.2.2.2.2.1.1.1.1 31-1.2.2.2.2.1.1.1.2 33-1.2.2.2.2.1.1.1.3 35-1.2.2.2.2.1.1.1 36-1.2.2.2.2.1.1.1.4 37-1.2.2.2.2.1.1.2.r 39-1.2.2.2.2.1.1.2
+::node	"European"	1.2.1.1.1.2.1	"European"	European
+::node	"Commission"	1.2.1.1.1.2.2	"Commission"	Commission
+::node	a	1.2.2.2.2.1.1.1	and	and
+::node	r2	1.2.2.2.2.1.1.2	region	region
+::node	e	1.2.1.1.3	entitle-01	rights
+::node	"ASEAN"	1.2.1.1.2.2.1	"ASEAN"	ASEAN
+::node	l	1.2.2.1	late	latest
+::node	i2	1.2.2.2	initiative	initiative
+::node	s3	1.2.2.2.1	succeed-01	successful
+::node	c	1.2.1.1	cooperate-01	cooperation
+::node	d	1.2.2.2.2	develop-02	develop
+::node	s4	1.2.2.2.2.1	system	systems
+::node	"Ingo"	1.1.2.1	"Ingo"	Ingo
+::node	m2	1.2.2.1.1	most	latest
+::node	"Kober"	1.1.2.2	"Kober"	Kober
+::node	"European_Commission"	1.2.1.1.1.1	"European_Commission"	
+::node	n2	1.2.1.1.1.2	name	
+::node	"Association_of_Southeast_Asian_Nations"	1.2.1.1.2.1	"Association_of_Southeast_Asian_Nations"	
+::node	n3	1.2.1.1.2.2	name	
+::node	p3	1.2.1.1.3.1	property	property
+::node	i	1.2.1.1.3.1.1	intellectual	intellectual
+::node	c2	1.2.2.2.2.1.1.1.4	copyright-01	copyrights
+::node	n	1.1.2	name	
+::node	p2	1.2.1	program	program
+::node	s	1	state-01	stated
+::node	s2	1.2.2	stage	stage
+::node	o2	1.2.1.1.2	organization	
+::node	o	1.2.1.1.1	organization	
+::node	p	1.1	person	
+::node	t	1.2.2.2.2.1.1.1.2	trademark-01	trademarks
+::node	m	1.2	mark-01	marks
+::node	d2	1.2.2.2.2.1.1.1.3	design-01	designs
+::node	e2	1.2.2.2.2.1.2	effective	effective
+::node	a2	1.3	also	also
+::node	p5	1.2.2.2.2.1.1.1.1	patent-01	patents
+::node	p4	1.2.2.2.2.1.1	protect-01	protecting
+::node	"Ingo_Kober"	1.1.1	"Ingo_Kober"	
+::edge	1.2.1.1.1.2		name	:op1	1.2.1.1.1.2.1	European	"European"
+::edge	1.2.1.1.1.2		name	:op2	1.2.1.1.1.2.2	Commission	"Commission"
+::edge	1.2.2.2.2.1.1	protecting	protect-01	:ARG1	1.2.2.2.2.1.1.1	and	and
+::edge	1.2.2.2.2.1.1	protecting	protect-01	:location	1.2.2.2.2.1.1.2	region	region
+::edge	1.2.1.1	cooperation	cooperate-01	:ARG2	1.2.1.1.3	rights	entitle-01
+::edge	1.2.1.1.2.2		name	:op1	1.2.1.1.2.2.1	ASEAN	"ASEAN"
+::edge	1.2.2	stage	stage	:frequency	1.2.2.1	latest	late
+::edge	1.2.2	stage	stage	:part-of	1.2.2.2	initiative	initiative
+::edge	1.2.2.2	initiative	initiative	:ARG1-of	1.2.2.2.1	successful	succeed-01
+::edge	1.2.1	program	program	:topic	1.2.1.1	cooperation	cooperate-01
+::edge	1.2.2.2	initiative	initiative	:purpose	1.2.2.2.2	develop	develop-02
+::edge	1.2.2.2.2	develop	develop-02	:ARG1	1.2.2.2.2.1	systems	system
+::edge	1.1.2		name	:op1	1.1.2.1	Ingo	"Ingo"
+::edge	1.2.2.1	latest	late	:degree	1.2.2.1.1	latest	most
+::edge	1.1.2		name	:op2	1.1.2.2	Kober	"Kober"
+::edge	1.2.1.1.1		organization	:wiki	1.2.1.1.1.1		"European_Commission"
+::edge	1.2.1.1.1		organization	:name	1.2.1.1.1.2		name
+::edge	1.2.1.1.2		organization	:wiki	1.2.1.1.2.1		"Association_of_Southeast_Asian_Nations"
+::edge	1.2.1.1.2		organization	:name	1.2.1.1.2.2		name
+::edge	1.2.1.1.3	rights	entitle-01	:ARG1	1.2.1.1.3.1	property	property
+::edge	1.2.1.1.3.1	property	property	:mod	1.2.1.1.3.1.1	intellectual	intellectual
+::edge	1.2.2.2.2.1.1.1	and	and	:op4	1.2.2.2.2.1.1.1.4	copyrights	copyright-01
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2	marks	mark-01	:ARG0	1.2.1	program	program
+::edge	1.2	marks	mark-01	:ARG1	1.2.2	stage	stage
+::edge	1.2.1.1	cooperation	cooperate-01	:ARG1	1.2.1.1.2		organization
+::edge	1.2.1.1	cooperation	cooperate-01	:ARG0	1.2.1.1.1		organization
+::edge	1	stated	state-01	:ARG0	1.1		person
+::edge	1.2.2.2.2.1.1.1	and	and	:op2	1.2.2.2.2.1.1.1.2	trademarks	trademark-01
+::edge	1	stated	state-01	:ARG1	1.2	marks	mark-01
+::edge	1.2.2.2.2.1.1.1	and	and	:op3	1.2.2.2.2.1.1.1.3	designs	design-01
+::edge	1.2.2.2.2.1	systems	system	:mod	1.2.2.2.2.1.2	effective	effective
+::edge	1	stated	state-01	:mod	1.3	also	also
+::edge	1.2.2.2.2.1.1.1	and	and	:op1	1.2.2.2.2.1.1.1.1	patents	patent-01
+::edge	1.2.2.2.2.1	systems	system	:purpose	1.2.2.2.2.1.1	protecting	protect-01
+::edge	1.1		person	:wiki	1.1.1		"Ingo_Kober"

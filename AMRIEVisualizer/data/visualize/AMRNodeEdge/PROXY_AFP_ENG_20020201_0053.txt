@@ -1,0 +1,796 @@
+1	2002-02-01
+1	2002 @-@ 02 @-@ 01
+1	0-1.1 2-1.2 4-1.3
+::node	d	1	date-entity	
+::node	2002	1.1	2002	2002
+::node	2	1.2	2	02
+::node	1	1.3	1	01
+::edge	1		date-entity	:year	1.1	2002	2002
+::edge	1		date-entity	:month	1.2	02	2
+::edge	1		date-entity	:day	1.3	01	1
+2	Australia (AU)
+2	Australia ( AU )
+2	0-1.2.1
+::node	"Australia"	1.2.1	"Australia"	Australia
+::node	c	1	country	
+::node	"Australia"	1.1	"Australia"	
+::node	n	1.2	name	
+::edge	1.2		name	:op1	1.2.1	Australia	"Australia"
+::edge	1		country	:wiki	1.1		"Australia"
+::edge	1		country	:name	1.2		name
+3	Narcotics; crime; international
+3	Narcotics ; crime ; international
+3	0-1.1 2-1.2 4-1.3
+::node	a	1	and	
+::node	n	1.1	narcotic	Narcotics
+::node	c	1.2	crime	crime
+::node	i	1.3	international	international
+::edge	1		and	:op1	1.1	Narcotics	narcotic
+::edge	1		and	:op2	1.2	crime	crime
+::edge	1		and	:op3	1.3	international	international
+4	An Australian jury found that an Uzbekistan Olympic boxing official was defamed in a book about alleged Olympic corruption in which he was depicted as a major international heroin dealer and racketeer.
+4	An Australian jury found that an Uzbekistan Olympic boxing official was defamed in a book about alleged Olympic corruption in which he was depicted as a major international heroin dealer and racketeer .
+4	1-1.1.1.2.1 2-1.1 3-1 4-1.2.r 6-1.2.2.2.2.1 7-1.2.2.1.1 8-1.2.2.1.2.1 9-1.2.2.1.2 11-1.2 12-1.2.1.r 14-1.2.1 15-1.2.1.2.r 16-1.2.1.2.2 17-1.2.1.2.1.2.1 18-1.2.1.2 21-1.2.1.1.1 23-1.2.1.1 24-1.2.1.1.2.r 26-1.2.1.1.2.3 27-1.2.1.1.2.4 28-1.2.1.1.2.1.1.1 29-1.2.1.1.2.1 29-1.2.1.1.2.1.1 29-1.2.1.1.2.1.1.r 30-1.2.1.1.2 31-1.2.1.1.2.2
+::node	b2	1.2.2.1.2.1	boxing	boxing
+::node	a2	1.2.1.2.2	allege-01	alleged
+::node	d3	1.2.1.1.2.1.1	deal-01	dealer
+::node	"Australia"	1.1.1.2.1	"Australia"	Australian
+::node	c4	1.2.1.2	corrupt-01	corruption
+::node	h2	1.2.2.1	have-org-role-91	
+::node	c3	1.2.2.2	country	
+::node	o	1.2.2.1.2	official	official
+::node	"Uzbekistan"	1.2.2.2.1	"Uzbekistan"	
+::node	d2	1.2.1.1	depict-01	depicted
+::node	n6	1.2.2.2.2	name	
+::node	"Uzbekistan"	1.2.2.2.2.1	"Uzbekistan"	Uzbekistan
+::node	m	1.2.1.1.2.3	major	major
+::node	i	1.2.1.1.2.4	international	international
+::node	"Australia"	1.1.1.1	"Australia"	
+::node	n	1.1.1.2	name	
+::node	g	1.2.2.1.1	game	Olympic
+::node	p	1.2.1.1.2.1	person	dealer
+::node	r	1.2.1.1.2.2	racketeer	racketeer
+::node	h	1.2.1.1.2.1.1.1	heroin	heroin
+::node	"Games"	1.2.1.2.1.2.2	"Games"	
+::node	"Olympic"	1.2.1.2.1.2.1	"Olympic"	Olympic
+::node	b	1.2.1	book	book
+::node	"Olympic_Games"	1.2.1.2.1.1	"Olympic_Games"	
+::node	f	1	find-02	found
+::node	n7	1.2.1.2.1.2	name	
+::node	p2	1.2.2	person	
+::node	a	1.2.1.1.2	and	and
+::node	g	1.2.1.2.1	game	
+::node	p2	1.2.1.1.1	person	he
+::node	j	1.1	jury	jury
+::node	d	1.2	defame-01	defamed
+::node	c	1.1.1	country	
+::edge	1.2.2.1.2	official	official	:topic	1.2.2.1.2.1	boxing	boxing
+::edge	1.2.1.2	corruption	corrupt-01	:ARG1-of	1.2.1.2.2	alleged	allege-01
+::edge	1.2.1.1.2.1	dealer	person	:ARG0-of	1.2.1.1.2.1.1	dealer	deal-01
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Australian	"Australia"
+::edge	1.2.1	book	book	:topic	1.2.1.2	corruption	corrupt-01
+::edge	1.2.2		person	:ARG0-of	1.2.2.1		have-org-role-91
+::edge	1.2.2		person	:mod	1.2.2.2		country
+::edge	1.2.2.1		have-org-role-91	:ARG2	1.2.2.1.2	official	official
+::edge	1.2.2.2		country	:wiki	1.2.2.2.1		"Uzbekistan"
+::edge	1.2.1	book	book	:ARG0-of	1.2.1.1	depicted	depict-01
+::edge	1.2.2.2		country	:name	1.2.2.2.2		name
+::edge	1.2.2.2.2		name	:op1	1.2.2.2.2.1	Uzbekistan	"Uzbekistan"
+::edge	1.2.1.1.2	and	and	:mod	1.2.1.1.2.3	major	major
+::edge	1.2.1.1.2	and	and	:mod	1.2.1.1.2.4	international	international
+::edge	1.1.1		country	:wiki	1.1.1.1		"Australia"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.2.2.1		have-org-role-91	:ARG1	1.2.2.1.1	Olympic	game
+::edge	1.2.1.1.2	and	and	:op1	1.2.1.1.2.1	dealer	person
+::edge	1.2.1.1.2	and	and	:op2	1.2.1.1.2.2	racketeer	racketeer
+::edge	1.2.1.1.2.1.1	dealer	deal-01	:ARG1	1.2.1.1.2.1.1.1	heroin	heroin
+::edge	1.2.1.2.1.2		name	:op2	1.2.1.2.1.2.2		"Games"
+::edge	1.2.1.2.1.2		name	:op1	1.2.1.2.1.2.1	Olympic	"Olympic"
+::edge	1.2	defamed	defame-01	:ARG0	1.2.1	book	book
+::edge	1.2.1.2.1		game	:wiki	1.2.1.2.1.1		"Olympic_Games"
+::edge	1.2.1.2.1		game	:name	1.2.1.2.1.2		name
+::edge	1.2	defamed	defame-01	:ARG1	1.2.2		person
+::edge	1.2.1.1	depicted	depict-01	:ARG2	1.2.1.1.2	and	and
+::edge	1.2.1.2	corruption	corrupt-01	:ARG1	1.2.1.2.1		game
+::edge	1.2.1.1	depicted	depict-01	:ARG1	1.2.1.1.1	he	person
+::edge	1	found	find-02	:ARG0	1.1	jury	jury
+::edge	1	found	find-02	:ARG1	1.2	defamed	defame-01
+::edge	1.1	jury	jury	:mod	1.1.1		country
+5	A New South Wales Supreme Court jury took just over 2 hours on 020201 to find Gafur Rakhimov had been libelled in a book the Great Olympic swindle which alleges Olympic corruption.
+5	A New South Wales Supreme Court jury took just over 2 hours on 020201 to find Gafur Rakhimov had been libelled in a book the Great Olympic swindle which alleges Olympic corruption .
+5	1-1.1.1.2.1 2-1.1.1.2.2 3-1.1.1.2.3 4-1.1.2.2.1 5-1.1.2.2.2 6-1.1 7-1 8-1.2.2.2 9-1.2.2 10-1.2.2.1 11-1.2.1 12-1.3.r 13-1.3 13-1.3.1 13-1.3.1.r 13-1.3.2 13-1.3.2.r 13-1.3.3 13-1.3.3.r 15-1.4 16-1.4.2.2.2.1 17-1.4.2.2.2.2 23-1.4.2.1 24-1.4.2.1.2.1 25-1.4.2.1.2.2 26-1.4.2.1.2.3 27-1.4.2.1.2.4 29-1.4.2.1.3 31-1.4.2.1.3.1
+::node	"Olympics"	1.4.2.1.3.1.1.2.1	"Olympics"	
+::node	"Supreme"	1.1.2.2.1	"Supreme"	Supreme
+::node	"Olympic"	1.4.2.1.2.3	"Olympic"	Olympic
+::node	"Great"	1.4.2.1.2.2	"Great"	Great
+::node	c	1.4.2.1.3.1	corrupt-01	corruption
+::node	"The"	1.4.2.1.2.1	"The"	the
+::node	"South"	1.1.1.2.2	"South"	South
+::node	"New"	1.1.1.2.1	"New"	New
+::node	2	1.2.2.1	2	2
+::node	j2	1.2.2.2	just	just
+::node	"Swindle"	1.4.2.1.2.4	"Swindle"	swindle
+::node	"New_South_Wales"	1.1.1.1	"New_South_Wales"	
+::node	n	1.1.1.2	name	
+::node	"Supreme_Court_of_New_South_Wales"	1.1.2.1	"Supreme_Court_of_New_South_Wales"	
+::node	n2	1.1.2.2	name	
+::node	"Rakhimov"	1.4.2.2.2.2	"Rakhimov"	Rakhimov
+::node	"Wales"	1.1.1.2.3	"Wales"	Wales
+::node	g2	1.4.2.1.3.1.1	game	
+::node	"Gafur"	1.4.2.2.2.1	"Gafur"	Gafur
+::node	-	1.4.2.1.1	-	
+::node	n3	1.4.2.1.2	name	
+::node	"Gafur_Rakhimov"	1.4.2.2.1	"Gafur_Rakhimov"	
+::node	a	1.4.2.1.3	allege-01	alleges
+::node	n4	1.4.2.2.2	name	
+::node	g	1.1.2	government-organization	
+::node	h2	1.2.1	hour	hours
+::node	t2	1	take-01	took
+::node	o2	1.2.2	over	over
+::node	2002	1.3.1	2002	020201
+::node	2	1.3.2	2	020201
+::node	j	1.4.1	jury	
+::node	1	1.3.3	1	020201
+::node	l	1.4.2	libel-01	
+::node	j	1.1	jury	jury
+::node	"Court"	1.1.2.2.2	"Court"	Court
+::node	t3	1.2	temporal-quantity	
+::node	d2	1.3	date-entity	020201
+::node	f	1.4	find-02	find
+::node	"Olympic_Games"	1.4.2.1.3.1.1.1	"Olympic_Games"	
+::node	n5	1.4.2.1.3.1.1.2	name	
+::node	b	1.4.2.1	book	book
+::node	p	1.4.2.2	person	
+::node	s	1.1.1	state	
+::edge	1.4.2.1.3.1.1.2		name	:op1	1.4.2.1.3.1.1.2.1		"Olympics"
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Supreme	"Supreme"
+::edge	1.4.2.1.2		name	:op3	1.4.2.1.2.3	Olympic	"Olympic"
+::edge	1.4.2.1.2		name	:op2	1.4.2.1.2.2	Great	"Great"
+::edge	1.4.2.1.3	alleges	allege-01	:ARG1	1.4.2.1.3.1	corruption	corrupt-01
+::edge	1.4.2.1.2		name	:op1	1.4.2.1.2.1	the	"The"
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	South	"South"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	New	"New"
+::edge	1.2.2	over	over	:op1	1.2.2.1	2	2
+::edge	1.2.2	over	over	:mod	1.2.2.2	just	just
+::edge	1.4.2.1.2		name	:op4	1.4.2.1.2.4	swindle	"Swindle"
+::edge	1.1.1		state	:wiki	1.1.1.1		"New_South_Wales"
+::edge	1.1.1		state	:name	1.1.1.2		name
+::edge	1.1.2		government-organization	:wiki	1.1.2.1		"Supreme_Court_of_New_South_Wales"
+::edge	1.1.2		government-organization	:name	1.1.2.2		name
+::edge	1.4.2.2.2		name	:op2	1.4.2.2.2.2	Rakhimov	"Rakhimov"
+::edge	1.1.1.2		name	:op3	1.1.1.2.3	Wales	"Wales"
+::edge	1.4.2.1.3.1	corruption	corrupt-01	:ARG1	1.4.2.1.3.1.1		game
+::edge	1.4.2.2.2		name	:op1	1.4.2.2.2.1	Gafur	"Gafur"
+::edge	1.4.2.1	book	book	:wiki	1.4.2.1.1		-
+::edge	1.4.2.1	book	book	:name	1.4.2.1.2		name
+::edge	1.4.2.2		person	:wiki	1.4.2.2.1		"Gafur_Rakhimov"
+::edge	1.4.2.1	book	book	:ARG0-of	1.4.2.1.3	alleges	allege-01
+::edge	1.4.2.2		person	:name	1.4.2.2.2		name
+::edge	1.1	jury	jury	:mod	1.1.2		government-organization
+::edge	1.2		temporal-quantity	:unit	1.2.1	hours	hour
+::edge	1.2		temporal-quantity	:quant	1.2.2	over	over
+::edge	1.3	020201	date-entity	:year	1.3.1	020201	2002
+::edge	1.3	020201	date-entity	:month	1.3.2	020201	2
+::edge	1.4	find	find-02	:ARG0	1.4.1		jury
+::edge	1.3	020201	date-entity	:day	1.3.3	020201	1
+::edge	1.4	find	find-02	:ARG1	1.4.2		libel-01
+::edge	1	took	take-01	:ARG0	1.1	jury	jury
+::edge	1.1.2.2		name	:op2	1.1.2.2.2	Court	"Court"
+::edge	1	took	take-01	:ARG1	1.2		temporal-quantity
+::edge	1	took	take-01	:time	1.3	020201	date-entity
+::edge	1	took	take-01	:purpose	1.4	find	find-02
+::edge	1.4.2.1.3.1.1		game	:wiki	1.4.2.1.3.1.1.1		"Olympic_Games"
+::edge	1.4.2.1.3.1.1		game	:name	1.4.2.1.3.1.1.2		name
+::edge	1.4.2		libel-01	:ARG0	1.4.2.1	book	book
+::edge	1.4.2		libel-01	:ARG1	1.4.2.2		person
+::edge	1.1	jury	jury	:location	1.1.1		state
+6	Gafur Rakhimov is an Uzbekistan Olympic boxing official and was depicted in the book as a major international heroin dealer and racketeer.
+6	Gafur Rakhimov is an Uzbekistan Olympic boxing official and was depicted in the book as a major international heroin dealer and racketeer .
+6	0-1.1.3.2.1 1-1.1.3.2.2 2-1.1.3.r 4-1.1.1.2.1 5-1.1.2.1.2.1 6-1.1.2.2.1 7-1.1.2.2 9-1.1.3.r 10-1.2 11-1.2.1.r 13-1.2.1 14-1.2.3.r 16-1.2.3.3 17-1.2.3.4 18-1.2.3.1.1.1 19-1.2.3.1 19-1.2.3.1.1 19-1.2.3.1.1.r 20-1.2.3 21-1.2.3.2
+::node	"Rakhimov"	1.1.3.2.2	"Rakhimov"	Rakhimov
+::node	"Gafur"	1.1.3.2.1	"Gafur"	Gafur
+::node	"Olympic"	1.1.2.1.2.1	"Olympic"	Olympic
+::node	"Games"	1.1.2.1.2.2	"Games"	
+::node	n3	1.1.2.1.2	name	
+::node	b	1.1.2.2.1	boxing	boxing
+::node	"Olympic_Games"	1.1.2.1.1	"Olympic_Games"	
+::node	r	1.2.3.2	racketeer	racketeer
+::node	"Uzbekistan"	1.1.1.2.1	"Uzbekistan"	Uzbekistan
+::node	m	1.2.3.3	major	major
+::node	p2	1.2.3.1	person	dealer
+::node	"Uzbekistan"	1.1.1.1	"Uzbekistan"	
+::node	n	1.1.1.2	name	
+::node	g	1.1.2.1	game	
+::node	o	1.1.2.2	official	official
+::node	"Gafur_Rakhimov"	1.1.3.1	"Gafur_Rakhimov"	
+::node	n2	1.1.3.2	name	
+::node	i	1.2.3.4	international	international
+::node	d2	1.2.3.1.1	deal-01	dealer
+::node	h2	1.1.2	have-org-role-91	
+::node	b2	1.2.1	book	book
+::node	a	1	and	
+::node	p	1.1.3	person	
+::node	p	1.2.2	person	
+::node	a2	1.2.3	and	and
+::node	h	1.2.3.1.1.1	heroin	heroin
+::node	p3	1.1	person	
+::node	d	1.2	depict-01	depicted
+::node	c	1.1.1	country	
+::edge	1.1.3.2		name	:op2	1.1.3.2.2	Rakhimov	"Rakhimov"
+::edge	1.1.3.2		name	:op1	1.1.3.2.1	Gafur	"Gafur"
+::edge	1.1.2.1.2		name	:op1	1.1.2.1.2.1	Olympic	"Olympic"
+::edge	1.1.2.1.2		name	:op2	1.1.2.1.2.2		"Games"
+::edge	1.1.2.1		game	:name	1.1.2.1.2		name
+::edge	1.1.2.2	official	official	:topic	1.1.2.2.1	boxing	boxing
+::edge	1.1.2.1		game	:wiki	1.1.2.1.1		"Olympic_Games"
+::edge	1.2.3	and	and	:op2	1.2.3.2	racketeer	racketeer
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Uzbekistan	"Uzbekistan"
+::edge	1.2.3	and	and	:mod	1.2.3.3	major	major
+::edge	1.2.3	and	and	:op1	1.2.3.1	dealer	person
+::edge	1.1.1		country	:wiki	1.1.1.1		"Uzbekistan"
+::edge	1.1.1		country	:name	1.1.1.2		name
+::edge	1.1.2		have-org-role-91	:ARG1	1.1.2.1		game
+::edge	1.1.2		have-org-role-91	:ARG2	1.1.2.2	official	official
+::edge	1.1.3		person	:wiki	1.1.3.1		"Gafur_Rakhimov"
+::edge	1.1.3		person	:name	1.1.3.2		name
+::edge	1.2.3	and	and	:mod	1.2.3.4	international	international
+::edge	1.2.3.1	dealer	person	:ARG0-of	1.2.3.1.1	dealer	deal-01
+::edge	1.1		person	:ARG0-of	1.1.2		have-org-role-91
+::edge	1.2	depicted	depict-01	:ARG0	1.2.1	book	book
+::edge	1.1		person	:domain	1.1.3		person
+::edge	1.2	depicted	depict-01	:ARG1	1.2.2		person
+::edge	1.2	depicted	depict-01	:ARG2	1.2.3	and	and
+::edge	1.2.3.1.1	dealer	deal-01	:ARG1	1.2.3.1.1.1	heroin	heroin
+::edge	1		and	:op1	1.1		person
+::edge	1		and	:op2	1.2	depicted	depict-01
+::edge	1.1		person	:mod	1.1.1		country
+7	The Great Olympic swindle was written by British journalist Andrew Jennings and published by Simon and Schuster.
+7	The Great Olympic swindle was written by British journalist Andrew Jennings and published by Simon and Schuster .
+7	0-1.1.2.2.1 1-1.1.2.2.2 2-1.1.2.2.3 3-1.1.2.2.4 5-1.1 6-1.1.1.r 7-1.1.1.3.2.1 8-1.1.1 9-1.1.1.2.1 10-1.1.1.2.2 11-1 12-1.2 13-1.2.1.r 14-1.2.1.2.1 15-1.2.1.2.2 16-1.2.1.2.3
+::node	"The"	1.1.2.2.1	"The"	The
+::node	"Schuster"	1.2.1.2.3	"Schuster"	Schuster
+::node	"and"	1.2.1.2.2	"and"	and
+::node	"Jennings"	1.1.1.2.2	"Jennings"	Jennings
+::node	"United_Kingdom"	1.1.1.3.1	"United_Kingdom"	
+::node	"Andrew"	1.1.1.2.1	"Andrew"	Andrew
+::node	n4	1.2.1.2	name	
+::node	"Simon_&_Schuster"	1.2.1.1	"Simon_&_Schuster"	
+::node	"Andrew_Jennings"	1.1.1.1	"Andrew_Jennings"	
+::node	n	1.1.1.2	name	
+::node	-	1.1.2.1	-	
+::node	c	1.1.1.3	country	
+::node	n3	1.1.2.2	name	
+::node	n2	1.1.1.3.2	name	
+::node	b	1.1.2	book	
+::node	c2	1.2.1	company	
+::node	a	1	and	and
+::node	b	1.2.2	book	
+::node	"Simon"	1.2.1.2.1	"Simon"	Simon
+::node	w	1.1	write-01	written
+::node	"Olympic"	1.1.2.2.3	"Olympic"	Olympic
+::node	"Great"	1.1.2.2.2	"Great"	Great
+::node	p	1.2	publish-01	published
+::node	"Swindle"	1.1.2.2.4	"Swindle"	swindle
+::node	j	1.1.1	journalist	journalist
+::node	"Britain"	1.1.1.3.2.1	"Britain"	British
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	The	"The"
+::edge	1.2.1.2		name	:op3	1.2.1.2.3	Schuster	"Schuster"
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	and	"and"
+::edge	1.1.1.2		name	:op2	1.1.1.2.2	Jennings	"Jennings"
+::edge	1.1.1.3		country	:wiki	1.1.1.3.1		"United_Kingdom"
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Andrew	"Andrew"
+::edge	1.2.1		company	:name	1.2.1.2		name
+::edge	1.2.1		company	:wiki	1.2.1.1		"Simon_&_Schuster"
+::edge	1.1.1	journalist	journalist	:wiki	1.1.1.1		"Andrew_Jennings"
+::edge	1.1.1	journalist	journalist	:name	1.1.1.2		name
+::edge	1.1.2		book	:wiki	1.1.2.1		-
+::edge	1.1.1	journalist	journalist	:mod	1.1.1.3		country
+::edge	1.1.2		book	:name	1.1.2.2		name
+::edge	1.1.1.3		country	:name	1.1.1.3.2		name
+::edge	1.1	written	write-01	:ARG1	1.1.2		book
+::edge	1.2	published	publish-01	:ARG0	1.2.1		company
+::edge	1.2	published	publish-01	:ARG1	1.2.2		book
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Simon	"Simon"
+::edge	1	and	and	:op1	1.1	written	write-01
+::edge	1.1.2.2		name	:op3	1.1.2.2.3	Olympic	"Olympic"
+::edge	1.1.2.2		name	:op2	1.1.2.2.2	Great	"Great"
+::edge	1	and	and	:op2	1.2	published	publish-01
+::edge	1.1.2.2		name	:op4	1.1.2.2.4	swindle	"Swindle"
+::edge	1.1	written	write-01	:ARG0	1.1.1	journalist	journalist
+::edge	1.1.1.3.2		name	:op1	1.1.1.3.2.1	British	"Britain"
+8	The Rakhimov case will now go to a single judge to hear defences and decide any damages to be awarded to Rakhimov.
+8	The Rakhimov case will now go to a single judge to hear defences and decide any damages to be awarded to Rakhimov .
+8	1-1.1.1.2.1 2-1.1 4-1.3 5-1 6-1.2.r 8-1.2.1 9-1.2 9-1.2.4 9-1.2.4.r 11-1.2.2 12-1.2.2.1 14-1.2.3 15-1.2.3.1.1 16-1.2.3.1 19-1.2.3.1.2 20-1.2.3.1.2.1.r 21-1.2.3.1.2.1
+::node	"Gafur_Rakhimov"	1.1.1.1	"Gafur_Rakhimov"	
+::node	n	1.1.1.2	name	
+::node	a	1.2.3.1.1	any	any
+::node	a2	1.2.3.1.2	award-01	awarded
+::node	s	1.2.1	single	single
+::node	g	1	go-01	go
+::node	h	1.2.2	hear-01	hear
+::node	d2	1.2.3	decide-01	decide
+::node	j	1.2.4	judge-01	judge
+::node	c	1.1	case	case
+::node	p2	1.2	person	judge
+::node	p	1.2.3.1.2.1	person	Rakhimov
+::node	n2	1.3	now	now
+::node	"Rakhimov"	1.1.1.2.1	"Rakhimov"	Rakhimov
+::node	d	1.2.2.1	defend-01	defences
+::node	d3	1.2.3.1	damage	damages
+::node	p	1.1.1	person	
+::edge	1.1.1		person	:wiki	1.1.1.1		"Gafur_Rakhimov"
+::edge	1.1.1		person	:name	1.1.1.2		name
+::edge	1.2.3.1	damages	damage	:mod	1.2.3.1.1	any	any
+::edge	1.2.3.1	damages	damage	:ARG1-of	1.2.3.1.2	awarded	award-01
+::edge	1.2	judge	person	:quant	1.2.1	single	single
+::edge	1.2	judge	person	:ARG0-of	1.2.2	hear	hear-01
+::edge	1.2	judge	person	:ARG0-of	1.2.3	decide	decide-01
+::edge	1.2	judge	person	:ARG0-of	1.2.4	judge	judge-01
+::edge	1	go	go-01	:ARG1	1.1	case	case
+::edge	1	go	go-01	:ARG4	1.2	judge	person
+::edge	1.2.3.1.2	awarded	award-01	:ARG2	1.2.3.1.2.1	Rakhimov	person
+::edge	1	go	go-01	:time	1.3	now	now
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Rakhimov	"Rakhimov"
+::edge	1.2.2	hear	hear-01	:ARG1	1.2.2.1	defences	defend-01
+::edge	1.2.3	decide	decide-01	:ARG1	1.2.3.1	damages	damage
+::edge	1.1	case	case	:mod	1.1.1		person
+9	The Great Olympic swindle implied that Gafur Rakhimov had been engaged in fraud, prostitution, assassination, gun running and plutonium smuggling.
+9	The Great Olympic swindle implied that Gafur Rakhimov had been engaged in fraud , prostitution , assassination , gun running and plutonium smuggling .
+9	0-1.1.2.1 1-1.1.2.2 2-1.1.2.3 3-1.1.2.4 4-1 5-1.2.r 6-1.2.1.2.1 7-1.2.1.2.2 10-1.2 11-1.2.2.r 12-1.2.2.1 14-1.2.2.2 16-1.2.2.3 18-1.2.2.4.1 19-1.2.2.4 20-1.2.2 21-1.2.2.5.1 22-1.2.2.5
+::node	"The"	1.1.2.1	"The"	The
+::node	"Great"	1.1.2.2	"Great"	Great
+::node	"Olympic"	1.1.2.3	"Olympic"	Olympic
+::node	"Swindle"	1.1.2.4	"Swindle"	swindle
+::node	s	1.2.2.5	smuggle-01	smuggling
+::node	"Rakhimov"	1.2.1.2.2	"Rakhimov"	Rakhimov
+::node	n	1.1.2	name	
+::node	p	1.2.1	person	
+::node	i	1	imply-01	implied
+::node	a	1.2.2	and	and
+::node	"Gafur"	1.2.1.2.1	"Gafur"	Gafur
+::node	b	1.1	book	
+::node	e	1.2	engage-01	engaged
+::node	a2	1.2.2.3	assassinate-01	assassination
+::node	r	1.2.2.4	run-08	running
+::node	n2	1.2.1.2	name	
+::node	d	1.2.2.1	defraud-01	fraud
+::node	p2	1.2.2.2	prostitute-01	prostitution
+::node	"Gafur_Rakhimov"	1.2.1.1	"Gafur_Rakhimov"	
+::node	g	1.2.2.4.1	gun	gun
+::node	-	1.1.1	-	
+::node	p3	1.2.2.5.1	plutonium	plutonium
+::edge	1.1.2		name	:op1	1.1.2.1	The	"The"
+::edge	1.1.2		name	:op2	1.1.2.2	Great	"Great"
+::edge	1.1.2		name	:op3	1.1.2.3	Olympic	"Olympic"
+::edge	1.1.2		name	:op4	1.1.2.4	swindle	"Swindle"
+::edge	1.2.2	and	and	:op5	1.2.2.5	smuggling	smuggle-01
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	Rakhimov	"Rakhimov"
+::edge	1.1		book	:name	1.1.2		name
+::edge	1.2	engaged	engage-01	:ARG1	1.2.1		person
+::edge	1.2	engaged	engage-01	:ARG2	1.2.2	and	and
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	Gafur	"Gafur"
+::edge	1	implied	imply-01	:ARG0	1.1		book
+::edge	1	implied	imply-01	:ARG1	1.2	engaged	engage-01
+::edge	1.2.2	and	and	:op3	1.2.2.3	assassination	assassinate-01
+::edge	1.2.2	and	and	:op4	1.2.2.4	running	run-08
+::edge	1.2.1		person	:name	1.2.1.2		name
+::edge	1.2.2	and	and	:op1	1.2.2.1	fraud	defraud-01
+::edge	1.2.2	and	and	:op2	1.2.2.2	prostitution	prostitute-01
+::edge	1.2.1		person	:wiki	1.2.1.1		"Gafur_Rakhimov"
+::edge	1.2.2.4	running	run-08	:ARG1	1.2.2.4.1	gun	gun
+::edge	1.1		book	:wiki	1.1.1		-
+::edge	1.2.2.5	smuggling	smuggle-01	:ARG1	1.2.2.5.1	plutonium	plutonium
+10	The book also implied that the businessman was a gangster in the Soviet black economy and had traded sporting medals for bribes.
+10	The book also implied that the businessman was a gangster in the Soviet black economy and had traded sporting medals for bribes .
+10	1-1.1 2-1.3 3-1 4-1.2.r 6-1.2.1.2 7-1.2.1.2.r 9-1.2.1 10-1.2.1.1.r 12-1.2.1.1.2.2.1 13-1.2.1.1.1 14-1.2.1.1 15-1.2 17-1.2.2 18-1.2.2.2.1 19-1.2.2.2 20-1.2.2.3.r 21-1.2.2.3
+::node	"Soviet_Union"	1.2.1.1.2.1	"Soviet_Union"	
+::node	n	1.2.1.1.2.2	name	
+::node	g	1.2.1	gangster	gangster
+::node	i	1	imply-01	implied
+::node	t	1.2.2	trade-01	traded
+::node	c	1.2.1.1.2	country	
+::node	b2	1.2.1.1.1	black	black
+::node	b	1.1	book	book
+::node	"Union"	1.2.1.1.2.2.2	"Union"	
+::node	a	1.2	and	and
+::node	"Soviet"	1.2.1.1.2.2.1	"Soviet"	Soviet
+::node	a2	1.3	also	also
+::node	b4	1.2.2.3	bribe-01	bribes
+::node	b3	1.2.1.2	businessman	businessman
+::node	b3	1.2.2.1	businessman	
+::node	m	1.2.2.2	medal	medals
+::node	s	1.2.2.2.1	sport	sporting
+::node	e	1.2.1.1	economy	economy
+::edge	1.2.1.1.2		country	:wiki	1.2.1.1.2.1		"Soviet_Union"
+::edge	1.2.1.1.2		country	:name	1.2.1.1.2.2		name
+::edge	1.2	and	and	:op1	1.2.1	gangster	gangster
+::edge	1.2	and	and	:op2	1.2.2	traded	trade-01
+::edge	1.2.1.1	economy	economy	:mod	1.2.1.1.2		country
+::edge	1.2.1.1	economy	economy	:mod	1.2.1.1.1	black	black
+::edge	1	implied	imply-01	:ARG0	1.1	book	book
+::edge	1.2.1.1.2.2		name	:op2	1.2.1.1.2.2.2		"Union"
+::edge	1	implied	imply-01	:ARG1	1.2	and	and
+::edge	1.2.1.1.2.2		name	:op1	1.2.1.1.2.2.1	Soviet	"Soviet"
+::edge	1	implied	imply-01	:mod	1.3	also	also
+::edge	1.2.2	traded	trade-01	:ARG3	1.2.2.3	bribes	bribe-01
+::edge	1.2.1	gangster	gangster	:domain	1.2.1.2	businessman	businessman
+::edge	1.2.2	traded	trade-01	:ARG0	1.2.2.1		businessman
+::edge	1.2.2	traded	trade-01	:ARG1	1.2.2.2	medals	medal
+::edge	1.2.2.2	medals	medal	:mod	1.2.2.2.1	sporting	sport
+::edge	1.2.1	gangster	gangster	:location	1.2.1.1	economy	economy
+11	Rakhimov was Vice-President of the Olympic Council of Asia and an Executive Member of the International Amateur Boxing Association.
+11	Rakhimov was Vice @-@ President of the Olympic Council of Asia and an Executive Member of the International Amateur Boxing Association .
+11	0-1.3.2.1 1-1.3.r 2-1.1.1 4-1.1 5-1.1.2.r 7-1.1.2.2.1 8-1.1.2.2.2 9-1.1.2.2.3 10-1.1.2.2.4 11-1 13-1.2.1 14-1.2 15-1.2.2.r 17-1.2.2.2.1 18-1.2.2.2.2 19-1.2.2.2.3 20-1.2.2.2.4
+::node	"Olympic_Council_of_Asia"	1.1.2.1	"Olympic_Council_of_Asia"	
+::node	n	1.1.2.2	name	
+::node	"Rakhimov"	1.3.2.1	"Rakhimov"	Rakhimov
+::node	"Olympic"	1.1.2.2.1	"Olympic"	Olympic
+::node	o	1.1.2	organization	
+::node	e	1.2.1	executive	Executive
+::node	a	1	and	and
+::node	o2	1.2.2	organization	
+::node	"Gafur_Rakhimov"	1.3.1	"Gafur_Rakhimov"	
+::node	n3	1.3.2	name	
+::node	p	1.1	president	President
+::node	"of"	1.1.2.2.3	"of"	of
+::node	"Council"	1.1.2.2.2	"Council"	Council
+::node	m	1.2	member	Member
+::node	p2	1.3	person	
+::node	"Asia"	1.1.2.2.4	"Asia"	Asia
+::node	"International_Boxing_Association_BLANKETPAIR0"	1.2.2.1	"International_Boxing_Association_BLANKETPAIR0"	
+::node	n2	1.2.2.2	name	
+::node	"International"	1.2.2.2.1	"International"	International
+::node	"Amateur"	1.2.2.2.2	"Amateur"	Amateur
+::node	"Boxing"	1.2.2.2.3	"Boxing"	Boxing
+::node	v	1.1.1	vice	Vice
+::node	"Association"	1.2.2.2.4	"Association"	Association
+::edge	1.1.2		organization	:wiki	1.1.2.1		"Olympic_Council_of_Asia"
+::edge	1.1.2		organization	:name	1.1.2.2		name
+::edge	1.3.2		name	:op1	1.3.2.1	Rakhimov	"Rakhimov"
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Olympic	"Olympic"
+::edge	1.1	President	president	:poss	1.1.2		organization
+::edge	1.2	Member	member	:mod	1.2.1	Executive	executive
+::edge	1.2	Member	member	:poss	1.2.2		organization
+::edge	1.3		person	:wiki	1.3.1		"Gafur_Rakhimov"
+::edge	1.3		person	:name	1.3.2		name
+::edge	1	and	and	:op1	1.1	President	president
+::edge	1.1.2.2		name	:op3	1.1.2.2.3	of	"of"
+::edge	1.1.2.2		name	:op2	1.1.2.2.2	Council	"Council"
+::edge	1	and	and	:op2	1.2	Member	member
+::edge	1	and	and	:domain	1.3		person
+::edge	1.1.2.2		name	:op4	1.1.2.2.4	Asia	"Asia"
+::edge	1.2.2		organization	:wiki	1.2.2.1		"International_Boxing_Association_BLANKETPAIR0"
+::edge	1.2.2		organization	:name	1.2.2.2		name
+::edge	1.2.2.2		name	:op1	1.2.2.2.1	International	"International"
+::edge	1.2.2.2		name	:op2	1.2.2.2.2	Amateur	"Amateur"
+::edge	1.2.2.2		name	:op3	1.2.2.2.3	Boxing	"Boxing"
+::edge	1.1	President	president	:mod	1.1.1	Vice	vice
+::edge	1.2.2.2		name	:op4	1.2.2.2.4	Association	"Association"
+12	Rakhimov was also said to have bribed members of the International Amateur Boxing Federation in the vote for the Federation Presidency.
+12	Rakhimov was also said to have bribed members of the International Amateur Boxing Federation in the vote for the Federation Presidency .
+12	0-1.1.1.2.1 2-1.2 3-1 6-1.1 7-1.1.2 8-1.1.2.1.r 10-1.1.2.1.2.1 11-1.1.2.1.2.2 12-1.1.2.1.2.3 13-1.1.2.1.2.4 14-1.1.3.r 16-1.1.3 17-1.1.3.1.r 19-1.1.3.1.1 20-1.1.3.1
+::node	"Gafur_Rakhimov"	1.1.1.1	"Gafur_Rakhimov"	
+::node	"Boxing"	1.1.2.1.2.3	"Boxing"	Boxing
+::node	n	1.1.1.2	name	
+::node	o	1.1.2.1	organization	
+::node	"Federation"	1.1.2.1.2.4	"Federation"	Federation
+::node	"International"	1.1.2.1.2.1	"International"	International
+::node	p2	1.1.3.1	presidency	Presidency
+::node	"Amateur"	1.1.2.1.2.2	"Amateur"	Amateur
+::node	n2	1.1.2.1.2	name	
+::node	"International_Boxing_Association_BLANKETPAIR0"	1.1.2.1.1	"International_Boxing_Association_BLANKETPAIR0"	
+::node	m	1.1.2	member	members
+::node	s	1	say-01	said
+::node	v	1.1.3	vote-01	vote
+::node	b	1.1	bribe-01	bribed
+::node	a	1.2	also	also
+::node	"Rakhimov"	1.1.1.2.1	"Rakhimov"	Rakhimov
+::node	o	1.1.3.1.1	organization	Federation
+::node	p	1.1.1	person	
+::edge	1.1.1		person	:wiki	1.1.1.1		"Gafur_Rakhimov"
+::edge	1.1.2.1.2		name	:op3	1.1.2.1.2.3	Boxing	"Boxing"
+::edge	1.1.1		person	:name	1.1.1.2		name
+::edge	1.1.2	members	member	:poss	1.1.2.1		organization
+::edge	1.1.2.1.2		name	:op4	1.1.2.1.2.4	Federation	"Federation"
+::edge	1.1.2.1.2		name	:op1	1.1.2.1.2.1	International	"International"
+::edge	1.1.3	vote	vote-01	:ARG1	1.1.3.1	Presidency	presidency
+::edge	1.1.2.1.2		name	:op2	1.1.2.1.2.2	Amateur	"Amateur"
+::edge	1.1.2.1		organization	:name	1.1.2.1.2		name
+::edge	1.1.2.1		organization	:wiki	1.1.2.1.1		"International_Boxing_Association_BLANKETPAIR0"
+::edge	1.1	bribed	bribe-01	:ARG1	1.1.2	members	member
+::edge	1.1	bribed	bribe-01	:purpose	1.1.3	vote	vote-01
+::edge	1	said	say-01	:ARG1	1.1	bribed	bribe-01
+::edge	1	said	say-01	:mod	1.2	also	also
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	Rakhimov	"Rakhimov"
+::edge	1.1.3.1	Presidency	presidency	:poss	1.1.3.1.1	Federation	organization
+::edge	1.1	bribed	bribe-01	:ARG0	1.1.1		person
+13	Jennings is a long-time critic of the International Olympic Committee.
+13	Jennings is a long @-@ time critic of the International Olympic Committee .
+13	0-1.1.2.1 3-1.3 5-1.3 9-1.2.2.1 10-1.2.2.2 11-1.2.2.3
+::node	n	1.1.2	name	
+::node	"International_Olympic_Committee"	1.2.1	"International_Olympic_Committee"	
+::node	c	1	criticize-01	
+::node	n2	1.2.2	name	
+::node	"Jennings"	1.1.2.1	"Jennings"	Jennings
+::node	p	1.1	person	
+::node	o	1.2	organization	
+::node	l	1.3	long-time	time
+::node	"Committee"	1.2.2.3	"Committee"	Committee
+::node	"International"	1.2.2.1	"International"	International
+::node	"Olympic"	1.2.2.2	"Olympic"	Olympic
+::node	"Andrew_Jennings"	1.1.1	"Andrew_Jennings"	
+::edge	1.1		person	:name	1.1.2		name
+::edge	1.2		organization	:wiki	1.2.1		"International_Olympic_Committee"
+::edge	1.2		organization	:name	1.2.2		name
+::edge	1.1.2		name	:op1	1.1.2.1	Jennings	"Jennings"
+::edge	1		criticize-01	:ARG0	1.1		person
+::edge	1		criticize-01	:ARG1	1.2		organization
+::edge	1		criticize-01	:duration	1.3	time	long-time
+::edge	1.2.2		name	:op3	1.2.2.3	Committee	"Committee"
+::edge	1.2.2		name	:op1	1.2.2.1	International	"International"
+::edge	1.2.2		name	:op2	1.2.2.2	Olympic	"Olympic"
+::edge	1.1		person	:wiki	1.1.1		"Andrew_Jennings"
+14	The 020201 verdict followed 2 defamation actions brought last year by Rakhimov against the Australian Broadcasting Corporation (ABC) and Jennings and against the Sydney Morning Herald (SMH) and Jennings.
+14	The 020201 verdict followed 2 defamation actions brought last year by Rakhimov against the Australian Broadcasting Corporation ( ABC ) and Jennings and against the Sydney Morning Herald ( SMH ) and Jennings .
+14	1-1.1.1 1-1.1.1.1 1-1.1.1.1.r 1-1.1.1.2 1-1.1.1.2.r 1-1.1.1.3 1-1.1.1.3.r 2-1.1 3-1 4-1.2.1 5-1.2.2 6-1.2 7-1.2.3 8-1.2.3.2.1 9-1.2.3.2 10-1.2.3.1.r 11-1.2.3.1.2.1 12-1.2.3.3.r 14-1.2.3.3.1.2.1 15-1.2.3.3.1.2.2 16-1.2.3.3.1.2.3 20-1.2.3.3 21-1.2.3.3.2.2.1 22-1.2.3.3 23-1.2.3.3.r 25-1.2.3.3.3.2.1 26-1.2.3.3.3.2.2 27-1.2.3.3.3.2.3 31-1.2.3.3 32-1.2.3.3.2.2.1
+::node	n4	1.2.3.3.3.2	name	
+::node	"Australian_Broadcasting_Corporation"	1.2.3.3.1.1	"Australian_Broadcasting_Corporation"	
+::node	n3	1.2.3.3.2.2	name	
+::node	"The_Sydney_Morning_Herald"	1.2.3.3.3.1	"The_Sydney_Morning_Herald"	
+::node	n2	1.2.3.3.1.2	name	
+::node	"Andrew_Jennings"	1.2.3.3.2.1	"Andrew_Jennings"	
+::node	"Broadcasting"	1.2.3.3.1.2.2	"Broadcasting"	Broadcasting
+::node	"Corporation"	1.2.3.3.1.2.3	"Corporation"	Corporation
+::node	"Australian"	1.2.3.3.1.2.1	"Australian"	Australian
+::node	y	1.2.3.2	year	year
+::node	a2	1.2.3.3	and	and
+::node	p	1.2.3.1	person	
+::node	2002	1.1.1.1	2002	020201
+::node	"Jennings"	1.2.3.3.2.2.1	"Jennings"	Jennings
+::node	2	1.1.1.2	2	020201
+::node	1	1.1.1.3	1	020201
+::node	p3	1.2.3.3.1	publication	
+::node	p2	1.2.3.3.2	person	
+::node	"Gafur_Rakhimov"	1.2.3.1.1	"Gafur_Rakhimov"	
+::node	n	1.2.3.1.2	name	
+::node	l	1.2.3.2.1	last	last
+::node	n5	1.2.3.3.3	newspaper	
+::node	2	1.2.1	2	2
+::node	f	1	follow-01	followed
+::node	d3	1.2.2	defame-01	defamation
+::node	b	1.2.3	bring-01	brought
+::node	v	1.1	verdict	verdict
+::node	a	1.2	action	actions
+::node	"Rakhimov"	1.2.3.1.2.1	"Rakhimov"	Rakhimov
+::node	"Morning"	1.2.3.3.3.2.2	"Morning"	Morning
+::node	"Herald"	1.2.3.3.3.2.3	"Herald"	Herald
+::node	"Sydney"	1.2.3.3.3.2.1	"Sydney"	Sydney
+::node	d2	1.1.1	date-entity	020201
+::edge	1.2.3.3.3		newspaper	:name	1.2.3.3.3.2		name
+::edge	1.2.3.3.1		publication	:wiki	1.2.3.3.1.1		"Australian_Broadcasting_Corporation"
+::edge	1.2.3.3.2		person	:name	1.2.3.3.2.2		name
+::edge	1.2.3.3.3		newspaper	:wiki	1.2.3.3.3.1		"The_Sydney_Morning_Herald"
+::edge	1.2.3.3.1		publication	:name	1.2.3.3.1.2		name
+::edge	1.2.3.3.2		person	:wiki	1.2.3.3.2.1		"Andrew_Jennings"
+::edge	1.2.3.3.1.2		name	:op2	1.2.3.3.1.2.2	Broadcasting	"Broadcasting"
+::edge	1.2.3.3.1.2		name	:op3	1.2.3.3.1.2.3	Corporation	"Corporation"
+::edge	1.2.3.3.1.2		name	:op1	1.2.3.3.1.2.1	Australian	"Australian"
+::edge	1.2.3	brought	bring-01	:time	1.2.3.2	year	year
+::edge	1.2.3	brought	bring-01	:prep-against	1.2.3.3	and	and
+::edge	1.2.3	brought	bring-01	:ARG0	1.2.3.1		person
+::edge	1.1.1	020201	date-entity	:year	1.1.1.1	020201	2002
+::edge	1.2.3.3.2.2		name	:op1	1.2.3.3.2.2.1	Jennings	"Jennings"
+::edge	1.1.1	020201	date-entity	:month	1.1.1.2	020201	2
+::edge	1.1.1	020201	date-entity	:day	1.1.1.3	020201	1
+::edge	1.2.3.3	and	and	:op1	1.2.3.3.1		publication
+::edge	1.2.3.3	and	and	:op2	1.2.3.3.2		person
+::edge	1.2.3.1		person	:wiki	1.2.3.1.1		"Gafur_Rakhimov"
+::edge	1.2.3.1		person	:name	1.2.3.1.2		name
+::edge	1.2.3.2	year	year	:mod	1.2.3.2.1	last	last
+::edge	1.2.3.3	and	and	:op3	1.2.3.3.3		newspaper
+::edge	1.2	actions	action	:quant	1.2.1	2	2
+::edge	1.2	actions	action	:mod	1.2.2	defamation	defame-01
+::edge	1.2	actions	action	:ARG1-of	1.2.3	brought	bring-01
+::edge	1	followed	follow-01	:ARG1	1.1	verdict	verdict
+::edge	1	followed	follow-01	:ARG2	1.2	actions	action
+::edge	1.2.3.1.2		name	:op1	1.2.3.1.2.1	Rakhimov	"Rakhimov"
+::edge	1.2.3.3.3.2		name	:op2	1.2.3.3.3.2.2	Morning	"Morning"
+::edge	1.2.3.3.3.2		name	:op3	1.2.3.3.3.2.3	Herald	"Herald"
+::edge	1.2.3.3.3.2		name	:op1	1.2.3.3.3.2.1	Sydney	"Sydney"
+::edge	1.1	verdict	verdict	:time	1.1.1	020201	date-entity
+15	A jury found in the case involving the ABC that ABC's flagship current affairs program four corners had implied Rakhimov knew some of the world's most dangerous criminals and was suspected by the FBI of drug trafficking.
+15	A jury found in the case involving the ABC that ABC 's flagship current affairs program four corners had implied Rakhimov knew some of the world 's most dangerous criminals and was suspected by the FBI of drug trafficking .
+15	1-1.1 2-1 3-1.3.r 5-1.3 6-1.3.1 8-1.3.1.1.2.1 10-1.3.1.1.2.1 12-1.2.1.4 13-1.2.1.3.1 14-1.2.1.3 15-1.2.1 16-1.2.1.2.1 17-1.2.1.2.2 19-1.2 20-1.2.2.1.1.2.1 21-1.2.2.1 22-1.2.2.1.2.3 23-1.2.2.1.2.3.r 25-1.2.2.1.2.2 26-1.2.2.1.2.2.r 27-1.2.2.1.2.1.1 28-1.2.2.1.2.1 29-1.2.2.1.2 30-1.2.2 32-1.2.2.2 33-1.2.2.2.1.r 35-1.2.2.2.1.2.1 36-1.2.2.2.2.r 37-1.2.2.2.2.2 38-1.2.2.2.2
+::node	"Gafur_Rakhimov"	1.2.2.1.1.1	"Gafur_Rakhimov"	
+::node	p3	1.3.1.1	publication	
+::node	n3	1.2.2.1.1.2	name	
+::node	d	1.2.2.1.2.1	dangerous	dangerous
+::node	"Australian_Broadcasting_Corporation"	1.3.1.1.1	"Australian_Broadcasting_Corporation"	
+::node	"Corners"	1.2.1.2.2	"Corners"	corners
+::node	c3	1.2.1.3.1	current	current
+::node	w	1.2.2.1.2.2	world	world
+::node	"Rakhimov"	1.2.2.1.1.2.1	"Rakhimov"	Rakhimov
+::node	s	1.2.2.1.2.3	some	some
+::node	m	1.2.2.1.2.1.1	most	most
+::node	f2	1.2.1.4	flagship	flagship
+::node	p3	1.2.1.5	publication	
+::node	n2	1.2.1.2	name	
+::node	k	1.2.2.1	know-01	knew
+::node	"Federal_Bureau_of_Investigation"	1.2.2.2.1.1	"Federal_Bureau_of_Investigation"	
+::node	a	1.2.1.3	affair	affairs
+::node	s2	1.2.2.2	suspect-01	suspected
+::node	c4	1.2.2.1.2	criminal	criminals
+::node	g	1.2.2.2.1	government-organization	
+::node	d2	1.2.2.2.2.2	drug	drug
+::node	"Four_Corners_BLANKETPAIR0"	1.2.1.1	"Four_Corners_BLANKETPAIR0"	
+::node	n4	1.2.2.2.1.2	name	
+::node	t	1.2.2.2.2	traffic-01	trafficking
+::node	p2	1.2.2.2.2.1	person	
+::node	p2	1.2.2.2.3	person	
+::node	p2	1.2.2.1.1	person	
+::node	"FBI"	1.2.2.2.1.2.1	"FBI"	FBI
+::node	"ABC"	1.3.1.1.2.1	"ABC"	ABC
+::node	p	1.2.1	program	program
+::node	f	1	find-02	found
+::node	a2	1.2.2	and	and
+::node	i2	1.3.1	involve-01	involving
+::node	"Four"	1.2.1.2.1	"Four"	four
+::node	j	1.1	jury	jury
+::node	n	1.3.1.1.2	name	
+::node	i	1.2	imply-01	implied
+::node	c	1.3	case	case
+::edge	1.2.2.1.1		person	:wiki	1.2.2.1.1.1		"Gafur_Rakhimov"
+::edge	1.3.1	involving	involve-01	:ARG1	1.3.1.1		publication
+::edge	1.2.2.1.1		person	:name	1.2.2.1.1.2		name
+::edge	1.2.2.1.2	criminals	criminal	:mod	1.2.2.1.2.1	dangerous	dangerous
+::edge	1.3.1.1		publication	:wiki	1.3.1.1.1		"Australian_Broadcasting_Corporation"
+::edge	1.2.1.2		name	:op2	1.2.1.2.2	corners	"Corners"
+::edge	1.2.1.3	affairs	affair	:mod	1.2.1.3.1	current	current
+::edge	1.2.2.1.2	criminals	criminal	:location	1.2.2.1.2.2	world	world
+::edge	1.2.2.1.1.2		name	:op1	1.2.2.1.1.2.1	Rakhimov	"Rakhimov"
+::edge	1.2.2.1.2	criminals	criminal	:quant	1.2.2.1.2.3	some	some
+::edge	1.2.2.1.2.1	dangerous	dangerous	:degree	1.2.2.1.2.1.1	most	most
+::edge	1.2.1	program	program	:mod	1.2.1.4	flagship	flagship
+::edge	1.2.1	program	program	:poss	1.2.1.5		publication
+::edge	1.2.1	program	program	:name	1.2.1.2		name
+::edge	1.2.2	and	and	:op1	1.2.2.1	knew	know-01
+::edge	1.2.2.2.1		government-organization	:wiki	1.2.2.2.1.1		"Federal_Bureau_of_Investigation"
+::edge	1.2.1	program	program	:topic	1.2.1.3	affairs	affair
+::edge	1.2.2	and	and	:op2	1.2.2.2	suspected	suspect-01
+::edge	1.2.2.1	knew	know-01	:ARG1	1.2.2.1.2	criminals	criminal
+::edge	1.2.2.2	suspected	suspect-01	:ARG0	1.2.2.2.1		government-organization
+::edge	1.2.2.2.2	trafficking	traffic-01	:ARG1	1.2.2.2.2.2	drug	drug
+::edge	1.2.1	program	program	:wiki	1.2.1.1		"Four_Corners_BLANKETPAIR0"
+::edge	1.2.2.2.1		government-organization	:name	1.2.2.2.1.2		name
+::edge	1.2.2.2	suspected	suspect-01	:ARG1	1.2.2.2.2	trafficking	traffic-01
+::edge	1.2.2.2.2	trafficking	traffic-01	:ARG0	1.2.2.2.2.1		person
+::edge	1.2.2.2	suspected	suspect-01	:ARG2	1.2.2.2.3		person
+::edge	1.2.2.1	knew	know-01	:ARG0	1.2.2.1.1		person
+::edge	1.2.2.2.1.2		name	:op1	1.2.2.2.1.2.1	FBI	"FBI"
+::edge	1.3.1.1.2		name	:op1	1.3.1.1.2.1	ABC	"ABC"
+::edge	1.2	implied	imply-01	:ARG0	1.2.1	program	program
+::edge	1.2	implied	imply-01	:ARG1	1.2.2	and	and
+::edge	1.3	case	case	:ARG2-of	1.3.1	involving	involve-01
+::edge	1.2.1.2		name	:op1	1.2.1.2.1	four	"Four"
+::edge	1	found	find-02	:ARG0	1.1	jury	jury
+::edge	1.3.1.1		publication	:name	1.3.1.1.2		name
+::edge	1	found	find-02	:ARG1	1.2	implied	imply-01
+::edge	1	found	find-02	:topic	1.3	case	case
+16	That Panel found those insinuations were not defamatory and threw out the case against the ABC and Jennings.
+16	That Panel found those insinuations were not defamatory and threw out the case against the ABC and Jennings .
+16	0-1.1.1.1 1-1.1.1 2-1.1 3-1.1.2.2.1 4-1.1.2.2 6-1.1.2.1 6-1.1.2.1.r 8-1 9-1.2 10-1.2 12-1.2.2 13-1.2.2.1.r 15-1.2.2.1.1.2.1 16-1.2.2.1 17-1.2.2.1.2.2.1
+::node	t	1.1.1.1	that	That
+::node	-	1.1.2.1	-	not
+::node	p3	1.2.2.1.1	publication	
+::node	i	1.1.2.2	insinuate-01	insinuations
+::node	"Australian_Broadcasting_Corporation"	1.2.2.1.1.1	"Australian_Broadcasting_Corporation"	
+::node	n	1.2.2.1.1.2	name	
+::node	"Andrew_Jennings"	1.2.2.1.2.1	"Andrew_Jennings"	
+::node	t2	1.1.2.2.1	that	those
+::node	n2	1.2.2.1.2.2	name	
+::node	"ABC"	1.2.2.1.1.2.1	"ABC"	ABC
+::node	d	1.1.2	defame-01	
+::node	p	1.2.1	panel	
+::node	"Jennings"	1.2.2.1.2.2.1	"Jennings"	Jennings
+::node	a	1	and	and
+::node	c	1.2.2	case	case
+::node	f	1.1	find-02	found
+::node	t3	1.2	throw-06	out
+::node	a2	1.2.2.1	and	and
+::node	p2	1.2.2.1.2	person	
+::node	p	1.1.1	panel	Panel
+::edge	1.1.1	Panel	panel	:mod	1.1.1.1	That	that
+::edge	1.1.2		defame-01	:polarity	1.1.2.1	not	-
+::edge	1.2.2.1	and	and	:op1	1.2.2.1.1		publication
+::edge	1.1.2		defame-01	:ARG0	1.1.2.2	insinuations	insinuate-01
+::edge	1.2.2.1.1		publication	:wiki	1.2.2.1.1.1		"Australian_Broadcasting_Corporation"
+::edge	1.2.2.1.1		publication	:name	1.2.2.1.1.2		name
+::edge	1.2.2.1.2		person	:wiki	1.2.2.1.2.1		"Andrew_Jennings"
+::edge	1.1.2.2	insinuations	insinuate-01	:mod	1.1.2.2.1	those	that
+::edge	1.2.2.1.2		person	:name	1.2.2.1.2.2		name
+::edge	1.2.2.1.1.2		name	:op1	1.2.2.1.1.2.1	ABC	"ABC"
+::edge	1.1	found	find-02	:ARG1	1.1.2		defame-01
+::edge	1.2	out	throw-06	:ARG0	1.2.1		panel
+::edge	1.2.2.1.2.2		name	:op1	1.2.2.1.2.2.1	Jennings	"Jennings"
+::edge	1.2	out	throw-06	:ARG1	1.2.2	case	case
+::edge	1	and	and	:op1	1.1	found	find-02
+::edge	1	and	and	:op2	1.2	out	throw-06
+::edge	1.2.2	case	case	:prep-against	1.2.2.1	and	and
+::edge	1.2.2.1	and	and	:op2	1.2.2.1.2		person
+::edge	1.1	found	find-02	:ARG0	1.1.1	Panel	panel
+17	The SMH and Jennings were then sued over 3 articles published in the lead-up to the 000000 Olympics.
+17	The SMH and Jennings were then sued over 3 articles published in the lead @-@ up to the 000000 Olympics .
+17	1-1.1.1.2.1 2-1.1 3-1.1.2.2.1 5-1.3 6-1 8-1.2.1 9-1.2 10-1.2.2 11-1.2.2.1.r 13-1.2.2.1 15-1.2.2.1 16-1.2.2.1.1.r 18-1.2.2.1.1.3 18-1.2.2.1.1.3.1 18-1.2.2.1.1.3.1.r 19-1.2.2.1.1.2.1
+::node	"The_Sydney_Morning_Herald"	1.1.1.1	"The_Sydney_Morning_Herald"	
+::node	n	1.1.1.2	name	
+::node	"Andrew_Jennings"	1.1.2.1	"Andrew_Jennings"	
+::node	g	1.2.2.1.1	game	
+::node	n2	1.1.2.2	name	
+::node	"Olympic_Games"	1.2.2.1.1.1	"Olympic_Games"	
+::node	n3	1.2.2.1.1.2	name	
+::node	"Jennings"	1.1.2.2.1	"Jennings"	Jennings
+::node	d2	1.2.2.1.1.3	date-entity	000000
+::node	2000	1.2.2.1.1.3.1	2000	000000
+::node	"Olympics"	1.2.2.1.1.2.1	"Olympics"	Olympics
+::node	p	1.1.2	person	
+::node	3	1.2.1	3	3
+::node	s	1	sue-01	sued
+::node	p2	1.2.2	publish-01	published
+::node	a	1.1	and	and
+::node	a2	1.2	article	articles
+::node	t	1.3	then	then
+::node	"SMH"	1.1.1.2.1	"SMH"	SMH
+::node	l	1.2.2.1	lead-05	up
+::node	n4	1.1.1	newspaper	
+::edge	1.1.1		newspaper	:wiki	1.1.1.1		"The_Sydney_Morning_Herald"
+::edge	1.1.1		newspaper	:name	1.1.1.2		name
+::edge	1.1.2		person	:wiki	1.1.2.1		"Andrew_Jennings"
+::edge	1.2.2.1	up	lead-05	:ARG2	1.2.2.1.1		game
+::edge	1.1.2		person	:name	1.1.2.2		name
+::edge	1.2.2.1.1		game	:wiki	1.2.2.1.1.1		"Olympic_Games"
+::edge	1.2.2.1.1		game	:name	1.2.2.1.1.2		name
+::edge	1.1.2.2		name	:op1	1.1.2.2.1	Jennings	"Jennings"
+::edge	1.2.2.1.1		game	:time	1.2.2.1.1.3	000000	date-entity
+::edge	1.2.2.1.1.3	000000	date-entity	:year	1.2.2.1.1.3.1	000000	2000
+::edge	1.2.2.1.1.2		name	:op1	1.2.2.1.1.2.1	Olympics	"Olympics"
+::edge	1.1	and	and	:op2	1.1.2		person
+::edge	1.2	articles	article	:quant	1.2.1	3	3
+::edge	1.2	articles	article	:ARG1-of	1.2.2	published	publish-01
+::edge	1	sued	sue-01	:ARG1	1.1	and	and
+::edge	1	sued	sue-01	:ARG2	1.2	articles	article
+::edge	1	sued	sue-01	:mod	1.3	then	then
+::edge	1.1.1.2		name	:op1	1.1.1.2.1	SMH	"SMH"
+::edge	1.2.2	published	publish-01	:time	1.2.2.1	up	lead-05
+::edge	1.1	and	and	:op1	1.1.1		newspaper
+18	The jury in that case found Rakhimov had been painted as a major international criminal and had been defamed.
+18	The jury in that case found Rakhimov had been painted as a major international criminal and had been defamed .
+18	1-1.1 3-1.3.1 4-1.3 5-1 6-1.2.1.1.2.1 9-1.2.1 10-1.2.1.2.r 12-1.2.1.2.1 13-1.2.1.2.2 14-1.2.1.2 15-1.2 18-1.2.2
+::node	"Rakhimov"	1.2.1.1.2.1	"Rakhimov"	Rakhimov
+::node	i	1.2.1.2.2	international	international
+::node	p	1.2.1	paint-03	painted
+::node	f	1	find-02	found
+::node	d	1.2.2	defame-01	defamed
+::node	t	1.3.1	that	that
+::node	n	1.2.1.1.2	name	
+::node	m	1.2.1.2.1	major	major
+::node	"Gafur_Rakhimov"	1.2.1.1.1	"Gafur_Rakhimov"	
+::node	j	1.1	jury	jury
+::node	a	1.2	and	and
+::node	c	1.3	case	case
+::node	c2	1.2.1.2	criminal	criminal
+::node	p2	1.2.2.1	person	
+::node	p2	1.2.1.1	person	
+::edge	1.2.1.1.2		name	:op1	1.2.1.1.2.1	Rakhimov	"Rakhimov"
+::edge	1.2.1.2	criminal	criminal	:mod	1.2.1.2.2	international	international
+::edge	1.2	and	and	:op1	1.2.1	painted	paint-03
+::edge	1.2	and	and	:op2	1.2.2	defamed	defame-01
+::edge	1.3	case	case	:mod	1.3.1	that	that
+::edge	1.2.1.1		person	:name	1.2.1.1.2		name
+::edge	1.2.1.2	criminal	criminal	:mod	1.2.1.2.1	major	major
+::edge	1.2.1.1		person	:wiki	1.2.1.1.1		"Gafur_Rakhimov"
+::edge	1	found	find-02	:ARG0	1.1	jury	jury
+::edge	1	found	find-02	:ARG1	1.2	and	and
+::edge	1	found	find-02	:topic	1.3	case	case
+::edge	1.2.1	painted	paint-03	:ARG2	1.2.1.2	criminal	criminal
+::edge	1.2.2	defamed	defame-01	:ARG1	1.2.2.1		person
+::edge	1.2.1	painted	paint-03	:ARG1	1.2.1.1		person
